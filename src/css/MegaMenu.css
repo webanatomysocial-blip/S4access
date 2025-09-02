@@ -1,0 +1,197 @@
+.megamenu-services-grid {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 75%;
+  justify-content: flex-start;
+}
+
+.megamenu-title-container {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.megamenu-categories {
+  width: 100%;
+}
+
+.megamenu-category-title {
+  font-family: "barlow", monospace;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.megamenu-category-title:hover {
+  background-color: #40FFC9;
+  color: #111;
+}
+
+.active-category {
+  background-color: #40FFC9;
+  color: #111;
+}
+
+.megamenu-services-content {
+  display: none;
+  flex: 1;
+  /* background: #40FFC9; */
+  padding: 1rem;
+  border-radius: 8px;
+}
+ 
+.megamenu-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.megamenu-grid-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: #2E3840;
+  border-radius: 4px;
+  /* color: #40FFC9; */
+}
+
+.megamenu-icon-large {
+  font-size: 1.5rem;
+  /* color: #40FFC9; */
+}
+
+
+/* MegaMenu styles */
+.megamenu {
+  display: none;
+  position: absolute;
+  right: 30%;
+  top: 100%;
+  width: 100%;
+  max-width: 700px;
+  background-color: #2E3840;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.megamenu.show {
+  display: flex;
+}
+
+.megamenu-content {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.megamenu-categories-container {
+  width: 30%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.megamenu-title {
+  font-family: "barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.megamenu-category-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-color: #d3d3d3;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.megamenu-category-item:hover,
+.megamenu-category-item.active {
+  background-color: #40FFC9;
+  color: #003377;
+}
+
+.megamenu-category-icon {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.megamenu-category-text {
+  flex-grow: 1;
+   font-family: "barlow", monospace;
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+.megamenu-category-arrow {
+  font-size: 1.2rem;
+}
+
+.megamenu-services-container {
+  width: 70%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.megamenu-service-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  background-color: #003377;
+  transition: background-color 0.3s;
+}
+
+.megamenu-service-item:hover {
+  background-color: #40FFC9;
+}
+.megamenu-service-item:hover .megamenu-service-text {
+  color: #003377;
+}
+.megamenu-service-item:hover .megamenu-service-icon {
+  color: #003377;
+}
+
+.megamenu-service-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.megamenu-service-text {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.megamenu-service-text:hover {
+  color: #003377 !important;
+  text-decoration: none !important;
+}
+
+/* MegaMenu hover logic */
+.header:hover .megamenu,
+.megamenu:hover {
+  display: flex !important;
+}
+
+.megamenu-arrow {
+  display: inline-block;
+  margin-left: 10px;
+  transform: rotate(-45deg);
+}
