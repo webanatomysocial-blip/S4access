@@ -615,3 +615,17 @@
 }
 
 
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .service-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+}

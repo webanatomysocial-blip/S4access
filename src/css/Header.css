@@ -6,7 +6,16 @@ html {
 * {
   margin: 0;
   padding: 0;
+  /* background-color: #003377; */
 }
+
+
+.only-windows{
+  display: block !important;
+}
+.only-mobile{
+    display: none !important;
+  }
 
 .green-bg-text-heading {
   color: rgb(255, 255, 255);
@@ -541,4 +550,26 @@ nav.scrolled {
 .button-contact a:hover {
   background-color: #2d856c;
   color: white;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .only-windows{
+  display: none !important;
+}
+  .only-mobile{
+    display: block !important;
+  }
+  .extra-big-heading-text-white {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+footer{
+  display: none !important;
+}
 }

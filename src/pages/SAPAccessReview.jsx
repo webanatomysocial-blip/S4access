@@ -54,7 +54,7 @@ export default function SAPAccessReview() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
@@ -213,7 +213,7 @@ export default function SAPAccessReview() {
         </div>
       </section> */}
 
-      <section className="strength-showcase" id="strength-show">
+      <section className="strength-showcase only-windows" id="strength-show">
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">
@@ -258,7 +258,7 @@ export default function SAPAccessReview() {
 
       </section>
 
-      <section className="strength-bottom">
+      <section className="strength-bottom  only-windows">
         <div className="stat-card">
           <div className="stat-box">
             <div className="stat-topline">
@@ -300,7 +300,7 @@ export default function SAPAccessReview() {
       <FAQTemplate title="FAQs" faqs={faqs} />
       {/* FAQs section end */}
 
-      <section className="service-cta-section">
+      <section className="service-cta-section only-windows">
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
