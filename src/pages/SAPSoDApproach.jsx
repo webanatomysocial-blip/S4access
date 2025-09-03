@@ -46,16 +46,16 @@ export default function SAPSoDApproach() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
         </div>
       </section>
 
-      <section className="service-journey-container sod-journey-container">
-        <div className="service-journey-content sod-journey-content">
-          <div className="journey-card sod-journey-card">
+      <section className="service-journey-container ">
+        <div className="service-journey-content ">
+          <div className="journey-card ">
             <div className="card-header">
               <h3 className="big-heading-text-white">Effective SoD Management in SAP: Why a Proactive Approach Matters</h3>
               <div className="card-sub-content">
@@ -76,10 +76,10 @@ export default function SAPSoDApproach() {
 
 
 
-      <section className="service-solution-container sod-solution-container">
-        <div className="service-solution-content sod-solution-content">
-          <div className="solution-grid sod-solution-grid">
-            <div className="solution-intro-card sod-solution-intro-card">
+      <section className="service-solution-container ">
+        <div className="service-solution-content ">
+          <div className="solution-grid ">
+            <div className="solution-intro-card only-windows">
               <h2 className="big-heading-text-white">SAP SoD Strategy and Approach Consulting</h2>
               <div className="card-sub-content">
                 <p className="text-white">
@@ -90,8 +90,19 @@ export default function SAPSoDApproach() {
               </div>
             </div>
 
+            <div className="solution-intro-card only-mobile">
+              <h2 className="big-heading-text-black">SAP SoD Strategy and Approach Consulting</h2>
+              <div className="card-sub-content">
+                <p className="text-black">
+                  Our consulting service helps organizations design a structured, proactive approach to managing Segregation of Duties (SoD) and SAP access controls.
+                  We work with you to define clear objectives, organize responsibilities, and select the right tools—moving beyond reactive audit responses to a sustainable, cost-effective access management model.
+                </p>
+                <p className="text-black">Key deliverables include:</p>
+              </div>
+            </div>
 
-            <div className="solution-cards sod-deliverables-cards">
+
+            <div className="solution-cards ">
               <div className="solution-card">
                 <div className="card-icon">
                   <FaCogs className="icon" />
@@ -307,8 +318,8 @@ export default function SAPSoDApproach() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>

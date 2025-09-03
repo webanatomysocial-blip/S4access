@@ -46,16 +46,16 @@ export default function SAPaccess() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
         </div>
       </section>
 
-      <section className="service-journey-container sod-journey-container">
-        <div className="service-journey-content sod-journey-content">
-          <div className="journey-card sod-journey-card">
+      <section className="service-journey-container ">
+        <div className="service-journey-content ">
+          <div className="journey-card ">
             <div className="card-header">
               <h3 className="big-heading-text-white">Technology-Driven SAP Access Management: Avoiding Common Pitfalls
               </h3>
@@ -73,10 +73,10 @@ export default function SAPaccess() {
 
 
 
-      <section className="service-solution-container sod-solution-container">
-        <div className="service-solution-content sod-solution-content">
+      <section className="service-solution-container ">
+        <div className="service-solution-content ">
           <div className="solution-grid sod-solution-grid">
-            <div className="solution-intro-card sod-solution-intro-card">
+            <div className="solution-intro-card only-windows">
               <h2 className="big-heading-text-white">SAP Access Management Automation Consulting
               </h2>
               <div className="card-sub-content">
@@ -84,6 +84,18 @@ export default function SAPaccess() {
                   This service helps organizations design a technology strategy that supports effective SAP Access Management and Segregation of Duties (SoD). We guide you in aligning tool selection with your overall access management approach—ensuring that technology investments deliver real value in compliance, security, and efficiency.
                 </p>
                 <p className="text-white">What we deliver:
+                </p>
+              </div>
+            </div>
+
+            <div className="solution-intro-card only-mobile ">
+              <h2 className="big-heading-text-black">SAP Access Management Automation Consulting
+              </h2>
+              <div className="card-sub-content">
+                <p className="text-black">
+                  This service helps organizations design a technology strategy that supports effective SAP Access Management and Segregation of Duties (SoD). We guide you in aligning tool selection with your overall access management approach—ensuring that technology investments deliver real value in compliance, security, and efficiency.
+                </p>
+                <p className="text-black">What we deliver:
                 </p>
               </div>
             </div>
@@ -297,8 +309,8 @@ export default function SAPaccess() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>

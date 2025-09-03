@@ -101,13 +101,48 @@ export default function SAPAccessReview() {
       <section className="service-solution-container">
         <div className="service-solution-content">
           <div className="solution-grid">
-            <div className="solution-intro-card">
+
+
+
+            <div className="solution-intro-card only-windows">
               <h2 className="big-heading-text-white">SAP Access Management Improvement Service</h2>
               <div className="card-sub-content">
-                <p className="small-text-white">Our service provides a comprehensive understanding of the organization's SAP Access Management landscape and identifies improvement opportunities by analyzing the current state
+                <p className="text-white">Our service provides a comprehensive understanding of the organization's SAP Access Management landscape and identifies improvement opportunities by analyzing the current state
                   against s4access best practice standards.</p>
               </div>
             </div>
+
+
+
+            {/* only mobile start  */}
+
+
+            <div className="solution-intro-card only-mobile">
+              <h2 className="big-heading-text-black">SAP Access Management Improvement Service</h2>
+              <div className="card-sub-content">
+                <p className="text-black">Our service provides a comprehensive understanding of the organization's SAP Access Management landscape and identifies improvement opportunities by analyzing the current state
+                  against s4access best practice standards.</p>
+              </div>
+            </div>
+
+            {/* only mobile end  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div className="solution-cards">
               <div className="solution-card">
                 <div className="card-icon">
@@ -213,7 +248,7 @@ export default function SAPAccessReview() {
         </div>
       </section> */}
 
-      <section className="strength-showcase only-windows" id="strength-show">
+      <section className="strength-showcase" id="strength-show">
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">
@@ -258,7 +293,7 @@ export default function SAPAccessReview() {
 
       </section>
 
-      <section className="strength-bottom  only-windows">
+      <section className="strength-bottom">
         <div className="stat-card">
           <div className="stat-box">
             <div className="stat-topline">
@@ -304,8 +339,8 @@ export default function SAPAccessReview() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>

@@ -45,16 +45,16 @@ export default function SAPAccessSecurityConsulting() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
         </div>
       </section>
 
-      <section className="service-journey-container sod-journey-container">
-        <div className="service-journey-content sod-journey-content">
-          <div className="journey-card sod-journey-card">
+      <section className="service-journey-container ">
+        <div className="service-journey-content ">
+          <div className="journey-card ">
             <div className="card-header">
               <h2 className="big-heading-text-white">
                 The Challenge of Change: Managing SAP Access in a Moving Business Landscape
@@ -78,12 +78,23 @@ export default function SAPAccessSecurityConsulting() {
       <section className="service-solution-container">
         <div className="service-solution-content">
           <div className="solution-grid">
-            <div className="solution-intro-card">
+            <div className="solution-intro-card only-windows">
               <h2 className="big-heading-text-white">
                 Specialist Support for SAP Access Challenges During Business Change
               </h2>
               <div className="card-sub-content">
-                <p className="small-text-white">
+                <p className="text-white">
+                  Here's why we help organizations overcome these challenges:
+                </p>
+              </div>
+            </div>
+
+            <div className="solution-intro-card only-mobile">
+              <h2 className="big-heading-text-black">
+                Specialist Support for SAP Access Challenges During Business Change
+              </h2>
+              <div className="card-sub-content">
+                <p className="text-black">
                   Here's why we help organizations overcome these challenges:
                 </p>
               </div>
@@ -317,8 +328,8 @@ export default function SAPAccessSecurityConsulting() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>

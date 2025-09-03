@@ -19,7 +19,7 @@ const Careers = () => {
 
           </p>
           <p className="text-white">
-             We believe that great people build great companies. Whether you're just starting your career or looking to take the next big step, we offer opportunities to grow, innovate, and make a real impact. Explore our open roles and discover how you can be part of something meaningful. 
+            We believe that great people build great companies. Whether you're just starting your career or looking to take the next big step, we offer opportunities to grow, innovate, and make a real impact. Explore our open roles and discover how you can be part of something meaningful.
           </p>
 
 
@@ -74,11 +74,11 @@ const Careers = () => {
           <h2 className="big-heading-text-white">Why <br />
             S4access?</h2>
           <p className="text-white">
-            <strong style={{fontSize:"30px"}}>We are different</strong> <br /><br />
+            <strong style={{ fontSize: "30px" }}>We are different</strong> <br /><br />
 
             At s4access, 'We are different' isn't just a slogan—it's a promise. Here, you might work remote but never alone with a challenge. Whether you're leading a major project or navigating a new role, there's always a colleague ready to support you. We believe in collaboration over competition, and we foster a culture where asking for help is a strength, not a weakness. This is how we grow together—and why our people stay and thrive.
             <br /><br /><br />
-            <strong style={{fontSize:"30px"}}>We grow</strong>
+            <strong style={{ fontSize: "30px" }}>We grow</strong>
             <br /><br />
             Growth brings opportunities for the staff to grow and develop.
           </p>
@@ -86,9 +86,27 @@ const Careers = () => {
       </section>
       {/* why s4access section End */}
 
+      {/* why s4access section start */}
 
+      <section className="careers-why-s4access-section only-mobile">
+        <div className="careers-why-s4access-content">
+          <h2 className="big-heading-text-white">Why <br />
+            S4access?</h2>
+          <p className="sub-big-heading-text-white">
+            We are different </p> <br /><br />
+          <p className="text-white">
+            At s4access, 'We are different' isn't just a slogan—it's a promise. Here, you might work remote but never alone with a challenge. Whether you're leading a major project or navigating a new role, there's always a colleague ready to support you. We believe in collaboration over competition, and we foster a culture where asking for help is a strength, not a weakness. This is how we grow together—and why our people stay and thrive.
+          </p>
+          <br /><br /><br />
+          < p className="sub-big-heading-text-white">We grow</p>
+          <br /><br />
+          <p className="text-white">
+            Growth brings opportunities for the staff to grow and develop.
+          </p>
+        </div>
+      </section>
+      {/* why s4access section End */}
 
-      
 
 
 
@@ -109,7 +127,7 @@ const Careers = () => {
             </p></strong>
 
             <p className="sub-big-heading-text-black-lite">
-             Community and teamwork
+              Community and teamwork
             </p>
 
           </div>
@@ -120,7 +138,7 @@ const Careers = () => {
             </p></strong>
 
             <p className="sub-big-heading-text-black-lite">
-             Professional excellence
+              Professional excellence
             </p>
 
           </div>
@@ -131,7 +149,7 @@ const Careers = () => {
             </p></strong>
 
             <p className="sub-big-heading-text-black-lite">
-             Freedom and responsibility
+              Freedom and responsibility
             </p>
 
           </div>
@@ -142,7 +160,7 @@ const Careers = () => {
             </p></strong>
 
             <p className="sub-big-heading-text-black-lite">
-            Compensation with modern benefits and good <br /> occupational health care
+              Compensation with modern benefits and good <br /> occupational health care
             </p>
 
           </div>
@@ -167,7 +185,7 @@ const Careers = () => {
 
 
 
-{/* careers Open roles start */}
+      {/* careers Open roles start */}
       <section className="careers-open-roles-section">
         <div className="careers-open-roles-header">
           <h2 className="big-heading-text-black">Open roles</h2>
@@ -178,11 +196,11 @@ const Careers = () => {
         <div className="careers-open-roles-content">
 
 
-         
 
 
 
-           <div className="open-role-card">
+
+          <div className="open-role-card">
             <div className="open-role-info">
               <h3 className="sub-big-heading-text-black">Role name</h3>
               <div className="sub-heading-text-black">
@@ -201,7 +219,7 @@ const Careers = () => {
 
 
 
-           <div className="open-role-card">
+          <div className="open-role-card">
             <div className="open-role-info">
               <h3 className="sub-big-heading-text-black">Role name</h3>
               <div className="sub-heading-text-black">
@@ -220,7 +238,7 @@ const Careers = () => {
 
 
 
-           <div className="open-role-card">
+          <div className="open-role-card">
             <div className="open-role-info">
               <h3 className="sub-big-heading-text-black">Role name</h3>
               <div className="sub-heading-text-black">
@@ -239,7 +257,7 @@ const Careers = () => {
 
 
 
-           <div className="open-role-card">
+          <div className="open-role-card">
             <div className="open-role-info">
               <h3 className="sub-big-heading-text-black">Role name</h3>
               <div className="sub-heading-text-black">
@@ -254,26 +272,26 @@ const Careers = () => {
               ABOUT&nbsp;US&nbsp;<i className="bi bi-arrow-up-right"></i>
             </a>
           </div>
-          
+
         </div>
       </section>
-{/* careers Open roles End */}
+      {/* careers Open roles End */}
 
 
 
 
 
-{/* Careers Gallery Section Start */}
-<section className="careers-gallery-section">
+      {/* Careers Gallery Section Start */}
+      <section className="careers-gallery-section">
 
-<h2 className="big-heading-text-black">Life at S4Access</h2>
-
-
-<CareersGallerySection/>
+        <h2 className="big-heading-text-black">Life at S4Access</h2>
 
 
-</section>
-{/* Careers Gallery Section End */}
+        <CareersGallerySection />
+
+
+      </section>
+      {/* Careers Gallery Section End */}
 
 
 
@@ -287,3 +305,16 @@ const Careers = () => {
 };
 
 export default Careers;
+
+
+
+{/* why s4access section End */ }
+
+
+
+
+
+
+
+
+

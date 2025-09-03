@@ -37,7 +37,7 @@ export default function SAPLicenseCompliance() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
@@ -46,9 +46,35 @@ export default function SAPLicenseCompliance() {
 
       <section className="service-solution-container-not">
         <div className="service-solution-content">
-          <div className="solution-grid">
+          <div className="solution-grid ">
+            <div className="solution-intro-card only-windows">
+              <h2 className="big-heading-text-white">Navigating SAP Licensing in the S/4 Era</h2>
 
-            <div className="solution-intro-card">
+              <div className="card-sub-content">
+                <p className="text-white">
+                  SAP licensing has become a growing area of focus due to the introduction of the SAP S/4HANA strategy and its various deployment models.
+                  With new licensing frameworks now in place, organizations must carefully evaluate their options—not only during the purchasing phase but also throughout implementation and ongoing maintenance.
+                </p>
+                <p className="text-white">
+                  Recent insights highlight the importance of having a clear understanding of contractual terms, as licensing implications extend well beyond initial acquisition.
+                  This shift presents a new and complex challenge for SAP customers, requiring specialized knowledge and dedicated tools to manage licensing effectively and avoid unexpected costs or compliance risks.
+                </p>
+              </div>
+
+              <h2 className="big-heading-text-white">S4 Access SAP License Compliance & Optimization Service</h2>
+              <div className="card-sub-content">
+                <p className="text-white">
+                  Over the years, s4access has helped numerous organizations establish effective practices to improve their SAP license compliance.
+                  Our proprietary license usage analysis service, part of the s4access platform, is available either as a standalone offering or integrated into our ongoing maintenance services—providing customers with optimal control and visibility over their licensing landscape.
+                </p>
+                <p className="text-white">
+                  The platform includes specialized tools that simulate the cost impact of role designs and user-level changes, even down to individual ticket-level adjustments.
+                  This enables informed decision-making without the need for additional costly license management software or services.
+                </p>
+              </div>
+            </div>
+            
+            <div className="solution-intro-card-2 only-mobile">
               <h2 className="big-heading-text-white">Navigating SAP Licensing in the S/4 Era</h2>
 
               <div className="card-sub-content">
@@ -168,8 +194,8 @@ export default function SAPLicenseCompliance() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>

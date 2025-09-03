@@ -35,7 +35,7 @@ export default function SAPAuthorisationConceptDesign() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
@@ -56,7 +56,7 @@ export default function SAPAuthorisationConceptDesign() {
                   In response, a role redesign project is launched—often with a fresh strategy and renewed focus. Yet, within 2–3 years, the same issues resurface, bringing the organization back to square one. This cycle highlights the need for a sustainable, well-governed access management approach rather than one-off fixes.
                 </p>
               </div>
-                <h2 className="big-heading-text-white">Breaking the Cycle: Our Approach to SAP Role Redesign</h2>
+              <h2 className="big-heading-text-white">Breaking the Cycle: Our Approach to SAP Role Redesign</h2>
               <div className="card-sub-content">
                 <p className="text-white">
                   Our SAP role redesign approach begins with a deep analysis of the root causes that prevent organizations from escaping the recurring cycle of role redesign. In most cases, we uncover gaps across all key areas: governance, processes, technology, resourcing, skills and tools.
@@ -152,8 +152,8 @@ export default function SAPAuthorisationConceptDesign() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>

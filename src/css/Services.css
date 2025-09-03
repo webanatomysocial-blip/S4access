@@ -1,5 +1,5 @@
-.services-page-hero-banner{
-    background-color:rgb(0, 0, 0);
+.services-page-hero-banner {
+    background-color: rgb(0, 0, 0);
     height: 50vh;
     display: flex;
     align-items: start;
@@ -9,7 +9,8 @@
 
 
 }
-.services-hero-left{
+
+.services-hero-left {
     width: 50%;
     height: 100%;
     display: flex;
@@ -20,10 +21,11 @@
     /* background-color: rebeccapurple; */
 
 }
-.services-hero-right{
+
+.services-hero-right {
     width: 30%;
     height: 100%;
-     background: url(../assets/images/services-img/banner-bg.png);
+    background: url(../assets/images/services-img/banner-bg.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -43,9 +45,11 @@
     justify-content: space-between;
     gap: 100px;
 }
+
 .our-Service-Section-left-container-sticky {
     width: 40%;
 }
+
 .our-Service-left-container-green {
     margin-top: 30px;
     display: flex;
@@ -53,6 +57,7 @@
     flex-direction: column;
     gap: 20px;
 }
+
 .our-Service-Section-right-container {
     position: sticky;
     top: 230px;
@@ -64,29 +69,33 @@
     padding-bottom: 50px;
     padding-top: 50px;
 }
+
 .scrolling-container-our-services {
     display: flex;
     align-items: start;
     flex-direction: column;
     gap: 20px;
-    
+
 }
+
 .active-link {
     color: #003377;
     font-weight: 600;
     transition: 0.5s ease-in-out;
 }
-.scrolling-link-our-services{
+
+.scrolling-link-our-services {
     /* background-color: #003377; */
     width: fit-content;
 }
-.scrolling-link-our-services-container{
+
+.scrolling-link-our-services-container {
     display: flex;
     align-items: start;
     gap: 10px;
     justify-content: start;
     flex-direction: column;
-                              
+
 }
 
 /* our-Service-Section End */
@@ -101,14 +110,16 @@
 .partners-section {
     background: #F4F4F4;
     padding: 100px 50px;
-    margin: 100px 0px; 
+    margin: 100px 0px;
 }
+
 .partners-container {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 25px;
 }
+
 .partners-logos-row {
     margin-top: 80px;
     display: flex;
@@ -116,24 +127,13 @@
     align-items: center;
 }
 
-.partner-logo-item{
+.partner-logo-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap:10px;
+    gap: 10px;
 }
 
 
 /* Partners and Alliances Section  end*/
-
-
-
-
-
-
-
-
-
-
-

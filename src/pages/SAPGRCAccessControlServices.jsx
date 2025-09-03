@@ -44,16 +44,16 @@ export default function SAPGRCAccessControlServices() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
         </div>
       </section>
 
-      <section className="service-journey-container sod-journey-container">
-        <div className="service-journey-content sod-journey-content">
-          <div className="journey-card sod-journey-card">
+      <section className="service-journey-container ">
+        <div className="service-journey-content ">
+          <div className="journey-card ">
             <div className="card-header">
               <h3 className="big-heading-text-white">The Growing Demand for SAP Security Architects</h3>
               <div className="card-sub-content">
@@ -72,16 +72,25 @@ export default function SAPGRCAccessControlServices() {
         </div>
       </section>
 
-      <section className="service-solution-container sod-solution-container">
-        <div className="service-solution-content sod-solution-content">
+      <section className="service-solution-container ">
+        <div className="service-solution-content ">
           <div className="solution-grid sod-solution-grid">
-            <div className="solution-intro-card sod-solution-intro-card">
+            <div className="solution-intro-card only-windows">
               <h2 className="big-heading-text-white">SAP Security Architecture & Design – Ongoing Consulting Service</h2>
               <div className="card-sub-content">
                 <p className="text-white">
                   We provide continuous support to help organizations build and maintain a strong SAP security architecture that evolves with their business and IT landscape. Our ongoing consulting service ensures your SAP access management remains aligned with compliance requirements, operational needs, and enterprise architecture.
                 </p >
                 <p className="text-white"  >Delivered by experienced SAP security professionals, the service includes:</p>
+              </div>
+            </div>
+            <div className="solution-intro-card only-mobile">
+              <h2 className="big-heading-text-black">SAP Security Architecture & Design – Ongoing Consulting Service</h2>
+              <div className="card-sub-content">
+                <p className="text-black">
+                  We provide continuous support to help organizations build and maintain a strong SAP security architecture that evolves with their business and IT landscape. Our ongoing consulting service ensures your SAP access management remains aligned with compliance requirements, operational needs, and enterprise architecture.
+                </p >
+                <p className="text-black"  >Delivered by experienced SAP security professionals, the service includes:</p>
               </div>
             </div>
 
@@ -306,8 +315,8 @@ export default function SAPGRCAccessControlServices() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>

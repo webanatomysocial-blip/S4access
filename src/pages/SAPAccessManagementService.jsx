@@ -45,16 +45,16 @@ export default function SAPAccessManagementService() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
         </div>
       </section>
 
-      <section className="service-journey-container sod-journey-container">
-        <div className="service-journey-content sod-journey-content">
-          <div className="journey-card sod-journey-card">
+      <section className="service-journey-container ">
+        <div className="service-journey-content ">
+          <div className="journey-card ">
             <div className="card-header">
               <h2 className="big-heading-text-white">Managing SAP Access: A New Reality</h2>
               <div className="card-sub-content">
@@ -73,10 +73,25 @@ export default function SAPAccessManagementService() {
         </div>
       </section>
 
-      <section className="service-solution-container sod-solution-container">
-        <div className="service-solution-content sod-solution-content">
-          <div className="solution-grid sod-solution-grid">
-            <div className="solution-intro-card sod-solution-intro-card">
+      <section className="service-solution-container ">
+        <div className="service-solution-content ">
+          <div className="solution-grid ">
+            <div className="solution-intro-card only-windows">
+              <h2 className="big-heading-text-white">SAM – Proven SAP Access Management Outsourcing Service</h2>
+              <div className="card-sub-content">
+                <p className="text-white">
+                  SAM (SAP Access Management) is our complete outsourcing service covering all key areas of SAP access management. Developed in close collaboration with our clients over more than a decade, SAM has been successfully implemented across a wide range of industries and organization sizes.
+                </p>
+                <p className="text-white">
+                  SAM combines expert consulting, s4access access management best practices, and cloud-based analytics into a single, streamlined service—offered at a fixed monthly price. This proven model reduces complexity, ensures compliance, and actively manages access risks, Segregation of Duties (SoD), and SAP license compliance.
+                </p>
+                <p className="text-white">
+                  With SAM, organizations gain a scalable, low-risk service that delivers consistent results and frees internal SAP teams to focus on other priorities.
+                </p>
+              </div>
+            </div>
+
+            <div className="solution-intro-card-2 only-mobile">
               <h2 className="big-heading-text-white">SAM – Proven SAP Access Management Outsourcing Service</h2>
               <div className="card-sub-content">
                 <p className="text-white">
@@ -274,8 +289,8 @@ export default function SAPAccessManagementService() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>

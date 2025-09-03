@@ -46,7 +46,7 @@ export default function SAPSoDApproach() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
@@ -57,7 +57,7 @@ export default function SAPSoDApproach() {
         <div className="service-solution-content ">
           <div className="solution-grid ">
 
-            <div className="solution-intro-card ">
+            <div className="solution-intro-card only-windows ">
               <h2 className="big-heading-text-white">Choosing and Implementing an SAP SoD Tool: Common Challenges</h2>
               <div className="card-sub-content">
                 <p className="text-white">
@@ -76,7 +76,7 @@ export default function SAPSoDApproach() {
               </div>
             </div>
 
-            <div className="solution-intro-card sod-solution-intro-card">
+            <div className="solution-intro-card only-windows ">
               <h2 className="big-heading-text-white">SAM Platform – Streamlined SAP Access Risk & SoD Management</h2>
               <div className="card-sub-content">
                 <p className="text-white">
@@ -85,6 +85,40 @@ export default function SAPSoDApproach() {
                   and requires no specialized skills or resources from the customer.
                 </p>
                 <p className="text-white">
+                  The solution includes a comprehensive set of ready-to-use SAP SoD risk definitions, enabling organizations to gain meaningful insights into access risks
+                  without needing deep technical expertise. Delivered as a fully managed service with a fixed monthly fee, it offers a low-risk, high-value approach to access governance.
+                </p>
+              </div>
+            </div>
+
+            <div className="solution-intro-card-2      only-mobile ">
+              <h2 className="big-heading-text-white">Choosing and Implementing an SAP SoD Tool: Common Challenges</h2>
+              <div className="card-sub-content-2">
+                <p className="text-white">
+                  Every SAP organization requires a clear Segregation of Duties (SoD) approach, supported by the right tool.
+                  However, selecting and implementing such a solution is often challenging. Many organizations lack deep SAP security expertise,
+                  making it difficult to evaluate options and define the necessary risk and control frameworks.
+                </p>
+                <p className="text-white">
+                  Implementation projects can be lengthy and resource-intensive, and the license costs for SoD tools can be significant.
+                  Moreover, operating the solution effectively requires specialized skills and dedicated headcount—resources that are often scarce.
+                </p>
+                <p className="text-white">
+                  Without the right foundation and ongoing support, these projects can result in high long-term costs with limited improvement
+                  in compliance or operational efficiency.
+                </p>
+              </div>
+            </div>
+
+            <div className="solution-intro-card-not only-mobile">
+              <h2 className="big-heading-text-black">SAM Platform – Streamlined SAP Access Risk & SoD Management</h2>
+              <div className="card-sub-content">
+                <p className="text-black">
+                  s4access offers a proven solution for SAP Access Risk Management and Segregation of Duties (SoD), designed to overcome the common challenges organizations face.
+                  As part of the proprietary s4access platform, the service is fast to implement, typically operational within just a few weeks,
+                  and requires no specialized skills or resources from the customer.
+                </p>
+                <p className="text-black">
                   The solution includes a comprehensive set of ready-to-use SAP SoD risk definitions, enabling organizations to gain meaningful insights into access risks
                   without needing deep technical expertise. Delivered as a fully managed service with a fixed monthly fee, it offers a low-risk, high-value approach to access governance.
                 </p>
@@ -305,8 +339,8 @@ export default function SAPSoDApproach() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>

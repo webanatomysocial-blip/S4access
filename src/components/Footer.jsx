@@ -6,6 +6,8 @@ import '../css/Header.css';
 function Footer() {
   return (
     <footer>
+      <div className="footer">
+
       <div className="left-logo-container-footer">
         <img src={mainlogo} alt="S4access Logo" />
         <p className="text-white">
@@ -82,6 +84,13 @@ function Footer() {
           </a>
         </div>
       </div>
+      </div>
+      <div className="footer-end">
+        <div className="end">
+          <p className="small-text-white">&copy; 2025 S4access. All rights reserved | Designed and Developed by <a  href="https://webanatomy.in/" target="_blank">WebAnatomy</a></p>
+        </div>
+      </div>
+
     </footer>
   );
 }

@@ -43,7 +43,7 @@ export default function SAPAuthorisationRedesign() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
@@ -74,7 +74,7 @@ export default function SAPAuthorisationRedesign() {
             <h3 className="big-heading-text-white">
               From Planning to Execution – SAP S/4 Access Done Right!
             </h3>
-            <div className="card-sub-content text-white">
+            <div className="card-sub-content ">
               <p className="text-white">
                 We’ve supported numerous organizations in designing and successfully implementing their complete SAP S/4HANA security roadmap—on time and within budget. We believe there’s no one-size-fits-all solution, just honest, focused work.
               </p>
@@ -273,8 +273,8 @@ export default function SAPAuthorisationRedesign() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>

@@ -164,16 +164,14 @@ function Home() {
           <div className="inner-service-container">
             <div>
               <img src="./src/assets/images/home-img/s45.png" alt="" />
-              <p className="sub-heading-text-white">S/4 Access architecture design</p>
+              <p className="sub-heading-text-white">SAP Access Management review</p>
               <p className="small-text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                eius in molestiae reprehenderit quos laudantium praesentium
-                doloremque perferendis veritatis eos?
+                Enhance SAP access management by identifying risks, optimizing processes, and improving efficiency. Gain clear insights into governance, technical setup, and SoD risks. Receive actionable guidance for secure operations.
               </p>
             </div>
 
             <div>
-              <a href="#" className="read-more-btn">
+              <a href="/sap-access-management-review" className="read-more-btn">
                 Read More <i className="bi bi-arrow-right arrow-icon"></i>
               </a>
             </div>
@@ -185,17 +183,15 @@ function Home() {
           <div className="inner-service-container">
             <div>
               <img src="./src/assets/images/home-img/s45.png" alt="" />
-              <p className="sub-heading-text-white">S/4 Access projects <br /><br /></p>
+              <p className="sub-heading-text-white">SoD strategy and approach</p>
 
               <p className="small-text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                eius in molestiae reprehenderit quos laudantium praesentium
-                doloremque perferendis veritatis eos?
+                Adopt a proactive SoD strategy to reduce risks, optimize resources, and ensure SAP compliance. Gain structured guidance on governance, processes, tools, and continuous improvement for sustainable access management.
               </p>
             </div>
 
             <div>
-              <a href="#" className="read-more-btn">
+              <a href="/sod-stratergy-approach" className="read-more-btn">
                 Read More <i className="bi bi-arrow-right arrow-icon"></i>
               </a>
             </div>
@@ -204,16 +200,14 @@ function Home() {
           <div className="inner-service-container">
             <div>
               <img src="./src/assets/images/home-img/s45.png" alt="" />
-              <p className="sub-heading-text-white">SAP access / security consulting</p>
+              <p className="sub-heading-text-white">SAP Access Management Automation</p>
               <p className="small-text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                eius in molestiae reprehenderit quos laudantium praesentium
-                doloremque perferendis veritatis eos?
+                Align SAP access technology with a clear strategy to avoid wasted costs and weak results. Our consulting ensures the right tools enhance compliance, security, and efficiency.
               </p>
             </div>
 
             <div>
-              <a href="#" className="read-more-btn">
+              <a href="/sap-access-management-automation" className="read-more-btn">
                 Read More <i className="bi bi-arrow-right arrow-icon"></i>
               </a>
             </div>
@@ -224,16 +218,14 @@ function Home() {
           <div className="inner-service-container">
             <div>
               <img src="./src/assets/images/home-img/s45.png" alt="" />
-              <p className="sub-heading-text-white">SAP Authorisation concept owner service</p>
+              <p className="sub-heading-text-white">SAP S/4 access implementation</p>
               <p className="small-text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                eius in molestiae reprehenderit quos laudantium praesentium
-                doloremque perferendis veritatis eos?
+                Modernize SAP access during S/4 transformation with expert planning, tailored tools, and deep expertise. Ensure secure, efficient, and cost-effective implementation while avoiding rework and ongoing maintenance challenges.
               </p>
             </div>
 
             <div>
-              <a href="#" className="read-more-btn">
+              <a href="/sap-s4-access-implementation" className="read-more-btn">
                 Read More <i className="bi bi-arrow-right arrow-icon"></i>
               </a>
             </div>
@@ -242,16 +234,14 @@ function Home() {
           <div className="inner-service-container">
             <div>
               <img src="./src/assets/images/home-img/s45.png" alt="" />
-              <p className="sub-heading-text-white">SAP / Emergency user automation</p>
+              <p className="sub-heading-text-white">SoD/Role redesign</p>
               <p className="small-text-white">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-                eius in molestiae reprehenderit quos laudantium praesentium
-                doloremque perferendis veritatis eos?
+                Break the recurring SAP role redesign cycle with a sustainable, well-governed access approach. Our tailored projects address governance, processes, and technology to ensure lasting, adaptable role structures.
               </p>
             </div>
 
             <div>
-              <a href="#" className="read-more-btn">
+              <a href="/sod-role-redesign" className="read-more-btn">
                 Read More <i className="bi bi-arrow-right arrow-icon"></i>
               </a>
             </div>
@@ -259,7 +249,7 @@ function Home() {
         </div>
 
         <div className="inner-services-btn">
-          <a href="#" className="button-green">
+          <a href="/services" className="button-green">
             <span>View All</span>
             <span>
               <i className="bi bi-arrow-up"></i>

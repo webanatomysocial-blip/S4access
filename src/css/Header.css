@@ -10,12 +10,13 @@ html {
 }
 
 
-.only-windows{
+.only-windows {
   display: block !important;
 }
-.only-mobile{
-    display: none !important;
-  }
+
+.only-mobile {
+  display: none !important;
+}
 
 .green-bg-text-heading {
   color: rgb(255, 255, 255);
@@ -81,6 +82,7 @@ html {
   font-weight: 600;
   line-height: 1.3em;
 }
+
 .sub-big-heading-text-black-lite {
   color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
@@ -558,18 +560,77 @@ nav.scrolled {
 
 
 @media only screen and (max-width: 800px) {
-  .only-windows{
-  display: none !important;
-}
-  .only-mobile{
+  .only-windows {
+    display: none !important;
+  }
+
+  .only-mobile {
     display: block !important;
   }
+
   .extra-big-heading-text-white {
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 1.3em;
-}
-footer{
-  display: none !important;
-}
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.3em;
+  }
+
+  .big-heading-text-white {
+    color: white;
+    font-family: "barlow", monospace;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.3em;
+  }
+
+  .big-heading-text-black {
+    color: rgb(0, 0, 0);
+    font-family: "barlow", monospace;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.3em;
+  }
+
+  .sub-big-heading-text-white {
+    color: rgb(255, 255, 255);
+    font-family: "barlow", monospace;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.3em;
+  }
+
+  .text-white {
+    color: rgb(255, 255, 255);
+    font-family: "barlow", monospace;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .text-black {
+    color: rgb(0, 0, 0);
+    font-family: "barlow", monospace;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .small-text-white {
+    color: rgb(255, 255, 255);
+    font-family: "barlow", monospace;
+    font-size: 14px !important;
+    font-weight: 300;
+  }
+
+  .small-text-black {
+    color: rgb(0, 0, 0);
+    font-family: "barlow", monospace;
+    font-size: 14px !important;
+    font-weight: 300;
+  }
+
+  .faq-section {
+    padding: 60px 20px 60px 20px;
+  }
+
+  footer {
+    display: none !important;
+  }
 }

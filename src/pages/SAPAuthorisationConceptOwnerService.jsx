@@ -54,16 +54,16 @@ export default function SAPAuthorisationConceptOwnerService() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>
         </div>
-        <div className="service-right">
+        <div className="service-right only-windows">
           <div className="service-image">
             <img src={image} alt="cloud compliance" />
           </div>
         </div>
       </section>
 
-      <section className="service-journey-container sod-journey-container">
-        <div className="service-journey-content sod-journey-content">
-          <div className="journey-card sod-journey-card">
+      <section className="service-journey-container ">
+        <div className="service-journey-content ">
+          <div className="journey-card ">
             <div className="card-header">
               <h3 className="big-heading-text-white">The SAP Authorization Concept Owner: A Role Under Pressure</h3>
               <div className="card-sub-content">
@@ -82,18 +82,29 @@ export default function SAPAuthorisationConceptOwnerService() {
         </div>
       </section>
 
-      <section className="service-solution-container sod-solution-container">
-        <div className="service-solution-content sod-solution-content">
-          <div className="solution-grid sod-solution-grid">
-            <div className="solution-intro-card sod-solution-intro-card">
+      <section className="service-solution-container">
+        <div className="service-solution-content  ">
+          <div className="solution-grid">
+            <div className="solution-intro-card only-windows">
               <h2 className="big-heading-text-white">SAP Authorization Concept Owner Service</h2>
               <div className="card-sub-content">
-              <p className="text-white">
-                We offer a powerful solution to address this critical role through a scalable, multi-skilled outsourcing model, delivered at a predictable fixed monthly fee. The service is provided by experienced, named consultants, supported by the full breadth of our company’s expertise, proprietary tools, and proven methodologies—including s4access access management best practices.
-              </p>
-              <p className="text-white">
-                Organizations consistently recognize the value we deliver: access to rare SAP expertise, enhanced operational stability, and measurable cost savings. This model not only fills a vital capability gap but also enables long-term continuity and compliance in increasingly complex SAP environments.
-              </p>
+                <p className="text-white">
+                  We offer a powerful solution to address this critical role through a scalable, multi-skilled outsourcing model, delivered at a predictable fixed monthly fee. The service is provided by experienced, named consultants, supported by the full breadth of our company’s expertise, proprietary tools, and proven methodologies—including s4access access management best practices.
+                </p>
+                <p className="text-white">
+                  Organizations consistently recognize the value we deliver: access to rare SAP expertise, enhanced operational stability, and measurable cost savings. This model not only fills a vital capability gap but also enables long-term continuity and compliance in increasingly complex SAP environments.
+                </p>
+              </div>
+            </div>
+            <div className="solution-intro-card-2 only-mobile ">
+              <h2 className="big-heading-text-white">SAP Authorization Concept Owner Service</h2>
+              <div className="card-sub-content">
+                <p className="text-white">
+                  We offer a powerful solution to address this critical role through a scalable, multi-skilled outsourcing model, delivered at a predictable fixed monthly fee. The service is provided by experienced, named consultants, supported by the full breadth of our company’s expertise, proprietary tools, and proven methodologies—including s4access access management best practices.
+                </p>
+                <p className="text-white">
+                  Organizations consistently recognize the value we deliver: access to rare SAP expertise, enhanced operational stability, and measurable cost savings. This model not only fills a vital capability gap but also enables long-term continuity and compliance in increasingly complex SAP environments.
+                </p>
               </div>
             </div>
           </div>
@@ -280,8 +291,8 @@ export default function SAPAuthorisationConceptOwnerService() {
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">
-              <h2 className="cta-heading">Ready to Transform Your SAP Access Management?</h2>
-              <p className="cta-description">
+              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+              <p className="text-white">
                 Get expert guidance and solutions tailored to your organization's needs
               </p>
             </div>
