@@ -335,7 +335,7 @@ export default function SAPAccessReview() {
       <FAQTemplate title="FAQs" faqs={faqs} />
       {/* FAQs section end */}
 
-      <section className="service-cta-section only-windows">
+      <section className="service-cta-section">
         <div className="service-cta-content">
           <div className="cta-flex-container">
             <div className="cta-text">

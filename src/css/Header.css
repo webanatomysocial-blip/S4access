@@ -577,7 +577,7 @@ nav.scrolled {
   .big-heading-text-white {
     color: white;
     font-family: "barlow", monospace;
-    font-size: 25px;
+    font-size: 25px !important;
     font-weight: 500;
     line-height: 1.3em;
   }
@@ -593,7 +593,14 @@ nav.scrolled {
   .sub-big-heading-text-white {
     color: rgb(255, 255, 255);
     font-family: "barlow", monospace;
-    font-size: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3em;
+  }
+  .sub-big-heading-text-black {
+    color: rgb(0, 0, 0);
+    font-family: "barlow", monospace;
+    font-size: 22px;
     font-weight: 600;
     line-height: 1.3em;
   }
@@ -628,6 +635,25 @@ nav.scrolled {
 
   .faq-section {
     padding: 60px 20px 60px 20px;
+  }
+
+  .faq-question {
+    width: 100%;
+    background: none;
+    text-align: left;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-family: "barlow", monospace;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1.3em;
+    padding: 36px 0 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: color 0.2s;
   }
 
   footer {

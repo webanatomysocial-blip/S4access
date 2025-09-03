@@ -96,3 +96,10 @@
 .swiper-pagination-bullet-active {
   background: #646464;
 }
+
+@media only screen and (max-width: 800px) {
+.testimonialcarousel-section {
+    padding: 60px 20px;
+    background: white;
+}
+}

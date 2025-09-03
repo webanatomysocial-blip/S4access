@@ -8,6 +8,11 @@
 
 }
 
+.service-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .service-left {
   width: 50%;
   display: flex;
@@ -654,6 +659,7 @@
     padding: 60px 20px;
 
   }
+
   .solution-intro-card-not {
     background: transparent;
     border-radius: 0px 20px;
@@ -681,14 +687,16 @@
     gap: 10px;
     width: 100%;
   }
-.service-solution-container-not {
-  display: flex;
-  flex-direction: column;
-  padding: 60px 20px 60px 20px;
-  position: relative;
-  overflow: hidden;
-  background-color: #ffffff;
-}
+
+  .service-solution-container-not {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 60px 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
   .journey-card {
     width: auto;
     padding: 60px 20px;

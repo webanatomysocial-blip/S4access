@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/Home.css";
-
-const CustomerSuccess = ({ onReadMore, onReadMoretwo }) => (
+   
+const CustomerSuccessCards = ({ onReadMore, onReadMoretwo }) => (
   <section className="Customer-success-stories-section">
     <div>
       <p className="big-heading-text-black">Customer success stories</p>
@@ -117,4 +117,4 @@ const CustomerSuccess = ({ onReadMore, onReadMoretwo }) => (
   </section>
 );
 
-export default CustomerSuccess;
+export default CustomerSuccessCards;

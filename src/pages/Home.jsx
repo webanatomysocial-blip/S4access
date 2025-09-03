@@ -5,7 +5,7 @@ import Popup from '../components/popup/Popup.jsx';
 import SmoothLink from '../components/SmoothLink';
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
-import CustomerSuccess from "../components/CustomerSuccess.jsx";
+import CustomerSuccessCards from "../components/CustomerSuccessCards.jsx";
 import '../css/Home.css';
 import banner1 from '../assets/images/home-img/home-bgimg.png';
 import HomeSlider from '../components/HomeSlider.jsx';
@@ -264,7 +264,7 @@ function Home() {
 
 
       {/* Customer success stories section start */}
-      <CustomerSuccess onReadMore={handleReadMoreClick} onReadMoretwo={handleReadMoreClickTwo} />
+      <CustomerSuccessCards onReadMore={handleReadMoreClick} onReadMoretwo={handleReadMoreClickTwo} />
       {/* Customer success stories section End */}
 
 

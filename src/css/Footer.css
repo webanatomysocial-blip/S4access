@@ -1,8 +1,5 @@
-footer {
-  background-color: black;
-}
-
 .footer {
+  background-color: black !important;
 
   padding: 100px 50px 30px 50px;
   z-index: 1000000000 !important;
@@ -111,14 +108,17 @@ footer {
 .footer-end {
   padding: 0px 50px 50px 50px;
   height: 40px;
+  background-color: black;
+  z-index: 1000000000 !important;
+  position: relative;
+
 }
-.end{
-  padding-top: 25px ;
+
+.end {
+  padding-top: 25px;
   text-align: center;
   border-top: 2px solid white;
   height: 20px;
 }
 
-@media only screen and (max-width: 800px) {
-    
-}
+@media only screen and (max-width: 800px) {}

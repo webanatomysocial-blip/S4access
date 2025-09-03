@@ -69,7 +69,7 @@ const Careers = () => {
 
 
       {/* why s4access section start */}
-      <section className="careers-why-s4access-section">
+      <section className="careers-why-s4access-section only-windows">
         <div className="careers-why-s4access-content">
           <h2 className="big-heading-text-white">Why <br />
             S4access?</h2>
@@ -90,16 +90,15 @@ const Careers = () => {
 
       <section className="careers-why-s4access-section only-mobile">
         <div className="careers-why-s4access-content">
-          <h2 className="big-heading-text-white">Why <br />
-            S4access?</h2>
+          <h2 className="big-heading-text-white">Why S4access?</h2> <br />
           <p className="sub-big-heading-text-white">
-            We are different </p> <br /><br />
+            We are different </p> <br />
           <p className="text-white">
             At s4access, 'We are different' isn't just a slogan—it's a promise. Here, you might work remote but never alone with a challenge. Whether you're leading a major project or navigating a new role, there's always a colleague ready to support you. We believe in collaboration over competition, and we foster a culture where asking for help is a strength, not a weakness. This is how we grow together—and why our people stay and thrive.
           </p>
-          <br /><br /><br />
+          <br />
           < p className="sub-big-heading-text-white">We grow</p>
-          <br /><br />
+          <br />
           <p className="text-white">
             Growth brings opportunities for the staff to grow and develop.
           </p>
@@ -173,7 +172,7 @@ const Careers = () => {
 
       {/* Testimonial section start */}
 
-      <TestimonialCarousel />
+      {/* <TestimonialCarousel /> */}
 
       {/* Testimonial section End */}
 
@@ -186,7 +185,7 @@ const Careers = () => {
 
 
       {/* careers Open roles start */}
-      <section className="careers-open-roles-section">
+      <section className="careers-open-roles-section ">
         <div className="careers-open-roles-header">
           <h2 className="big-heading-text-black">Open roles</h2>
           <a href="#" className="read-more-btn-blue ">
@@ -282,7 +281,7 @@ const Careers = () => {
 
 
       {/* Careers Gallery Section Start */}
-      <section className="careers-gallery-section">
+      <section className="careers-gallery-section ">
 
         <h2 className="big-heading-text-black">Life at S4Access</h2>
 
