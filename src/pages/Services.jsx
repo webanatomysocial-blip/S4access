@@ -49,7 +49,7 @@ function Services() {
 
         </div>
 
-        <div className="services-hero-right">
+        <div className="services-hero-right only-windows">
 
           {/* <WholeWebsiteIcon color={"red"}  /> */}
 

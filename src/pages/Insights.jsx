@@ -8,7 +8,7 @@ function Insights() {
       <Header />
        <section className="careers-hero-section">
               <div className="careers-hero-left-content">
-                <p className="big-heading-text-white">
+                <p className="extra-big-heading-text-white">
                   Welcome message
       
                 </p>

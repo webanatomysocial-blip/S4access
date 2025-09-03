@@ -46,7 +46,7 @@ function CustomerSuccess() {
       if (lenis && typeof lenis.stop === 'function') {
         lenis.stop();
       }
-    };
+    }; 
   
     const [popupOpen, setPopupOpen] = useState(false);
     const [popupContent, setPopupContent] = useState({});

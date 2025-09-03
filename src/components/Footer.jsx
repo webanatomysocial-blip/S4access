@@ -10,7 +10,7 @@ function Footer() {
 
       <div className="left-logo-container-footer">
         <img src={mainlogo} alt="S4access Logo" />
-        <p className="text-white">
+        <p className="text-white only-windows">
           A new era of SAP access security has begun. Combining over two decades
           of experience with passion for adopting latest technology we deliver
           new services and solutions to simplify your SAP access management

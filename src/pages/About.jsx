@@ -27,7 +27,7 @@ function About() {
 <section className="about-banner-section">
 
   <div className="about-banner-content-left">
-    <p className="big-heading-text-white">
+    <p className="extra-big-heading-text-white">
       Specialist in SAP<br /> access management
     </p><br />
     <p className="text-white">

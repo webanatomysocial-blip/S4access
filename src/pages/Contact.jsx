@@ -10,7 +10,7 @@ function Contact() {
 
       <section className="contact-hero-section">
              
-                <p className="big-heading-text-white">
+                <p className="extra-big-heading-text-white">
                   Contact Us
       
                 </p>
