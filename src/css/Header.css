@@ -165,6 +165,17 @@ html {
 
 
 
+
+.sub-heading-text {
+  /* color: rgb(0, 0, 0); */
+  font-family: "barlow", monospace;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1.3em;
+}
+
+
+
 .button-green {
   width: fit-content;
   padding: 16px 20px;
@@ -390,15 +401,16 @@ html {
 
 
 
-nav {
+.navbar {
   position: sticky;
   top: 0px;
   left: 0;
   color: white;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   padding-left: 50px;
+  flex-direction: row;
   padding-right: 50px;
   z-index: 10000000000000;
 }
@@ -656,7 +668,5 @@ nav.scrolled {
     transition: color 0.2s;
   }
 
-  footer {
-    /* display: none !important; */
-  }
+
 }

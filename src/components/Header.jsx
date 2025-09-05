@@ -27,8 +27,8 @@ function Header() {
   };
 
   return (
-    <div className=' only-windows'>
-    <nav className={isScrolled ? 'scrolled' : '' }>
+    // <div className=' only-windows'>
+    <nav className={` only-windows navbar ${isScrolled ? 'scrolled' : ''} only-windows`}>
       <div className="logo">
         <Link to="/">
           <img className="main-logo" src={logo} alt="S4access Logo" />
@@ -97,7 +97,7 @@ function Header() {
         <Link to="/contact">Contact Us</Link>
       </div>
     </nav>
-    </div>
+    // </div>
   );
 }
 

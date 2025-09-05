@@ -3,7 +3,7 @@ import Footer from '../components/Footer.jsx';
 import '../css/App.css';
 import CustomerSuccessCards from "../components/CustomerSuccessCards.jsx";
 import React, { useState } from "react";
-import banner1 from '../assets/images/home-img/home-bgimg.png';
+import banner1 from '../assets/images/home-img/home-bgimg.jpg';
 
 
 function CustomerSuccess() {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 // import './HomeSlider.css';
-import banner1 from '../assets/images/home-img/home-bgimg.png';
+import banner1 from '../assets/images/home-img/home-bgimg.jpg';
 import banner2 from '../assets/images/home-img/banner-home/1.jpg';
 import banner3 from '../assets/images/home-img/banner-home/2.jpg';
 import banner4 from '../assets/images/home-img/banner-home/3.jpg';
@@ -30,18 +30,22 @@ const HomeSlider = () => {
     {
       image: banner1,
       text: 'Leading SAP Access Management Specialist',
+      link: null, // No link for the first slide
     },
     {
       image: banner2,
-      text: 'Leading SAP Access Management Specialist',
+      text: 'S/4 Access – Get it right from the beginning !',
+      link: '/sap-s4-access-implementation', // Unique link for slide 2
     },
     {
       image: banner3,
-      text: 'Leading SAP Access Management Specialist',
+      text: 'What is the current status of your SAP Access Management?',
+      link: '/sap-access-management-review', // Unique link for slide 3
     },
     {
       image: banner4,
-      text: 'Leading SAP Access Management Specialist',
+      text: 'Join the company of leading SAP experts',
+      link: '/careers', // Unique link for slide 4
     },
   ];
 
@@ -56,8 +60,6 @@ const HomeSlider = () => {
     return () => clearInterval(interval); // Cleanup on unmount
   }, [slides.length]);
 
-
-
   return (
     <section className="carousel-section">
       <div className="carousel">
@@ -70,12 +72,14 @@ const HomeSlider = () => {
               <img src={slide.image} alt={`Slide ${index + 1}`} />
               <div className="slide-content">
                 <p>{slide.text}</p>
-                <a href="/" className="slide-button">
-                  <span>Learn More</span>
-                  <span>
-                    <i className="bi bi-arrow-up"></i>
-                  </span>
-                </a>
+                {slide.link && (
+                  <Link to={slide.link} className="slide-button">
+                    <span>Learn More</span>
+                    <span>
+                      <i className="bi bi-arrow-up"></i>
+                    </span>
+                  </Link>
+                )}
               </div>
             </div>
           ))}

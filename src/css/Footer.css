@@ -1,20 +1,21 @@
 .footer {
   background-color: black !important;
-
   padding: 100px 50px 30px 50px;
   z-index: 1000000000 !important;
   position: relative;
   display: flex;
   align-items: start;
   justify-content: space-between;
+  gap: 50px;
   flex-direction: row;
-  height: 50vh;
+  /* height: 50vh; */
 
 }
 
 .left-logo-container-footer {
-  width: 40%;
+  width: 30%;
   height: 100%;
+  /* background-color: green; */
   display: flex;
   align-items: start;
   justify-content: start;
@@ -26,12 +27,39 @@
   width: auto;
   height: 40px;
 }
+.right-logo-container-footer{
+  width: 60%;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 50px;
+  
+}
+.inner-right-container-footer{
+  width: 100%;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: row;
+  gap: 50px;
+
+  
+}
 
 .quicklinks-footer {
-  width: 20%;
-  padding-top: 87px;
+  width: 30%;
+  /* padding-top: 87px; */
   display: flex;
+  /* background-color: red; */
   flex-direction: column;
+  position: absolute;
+  top: 100px;
+  right: -180px;
   gap: 30px;
 
 }
@@ -62,9 +90,48 @@
 
 
 
+.services-footer {
+  width: 30%;
+  /* padding-top: 87px; */
+  display: flex;
+  /* background-color: red; */
+  flex-direction: column;
+  gap: 30px;
+
+}
+
+.services-footer .footer-nav {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+
+.services-footer .footer-link {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+
+.services-footer .footer-link:hover {
+  color: #40ffc9;
+}
+
+
+
+
+
+
+
+
 .contact-details {
-  width: 25%;
-  padding-top: 87px;
+  width: 100%;
+  /* padding-top: 87px; */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -103,6 +170,17 @@
   gap: 10px;
 
 
+}
+.footer-services-section{
+    background-color: black !important;
+  padding: 30px 50px 50px 50px;
+  z-index: 1000000000 !important;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
+  /* height: 50vh; */
 }
 
 .footer-end {

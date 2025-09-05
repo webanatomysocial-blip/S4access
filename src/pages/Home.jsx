@@ -2,14 +2,15 @@ import { useState } from "react";
 import { useContext } from "react";
 import { LenisContext } from "../components/LenisContext";
 import Popup from '../components/popup/Popup.jsx';
-import SmoothLink from '../components/SmoothLink';
+// import SmoothLink from '../components/SmoothLink';
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import CustomerSuccessCards from "../components/CustomerSuccessCards.jsx";
 import '../css/Home.css';
-import banner1 from '../assets/images/home-img/home-bgimg.png';
+import banner1 from '../assets/images/home-img/home-bgimg.jpg';
 import HomeSlider from '../components/HomeSlider.jsx';
 import { Link } from "react-router-dom";
+import ServiceTabs from "../components/ServiceTabs.jsx";
 
 function Home() {
   const lenis = useContext(LenisContext);
@@ -87,7 +88,7 @@ function Home() {
       {/* carousel section End */}
 
       {/* our-highlightupper section start */}
-      <section className="our-highlightupper" id="go-down-section">
+      {/* <section className="our-highlightupper" >
         <p className="text-black">
           A new era of SAP access security is here. Backed by over two decades of expertise and a passion for embracing the latest technologies, we provide innovative services and solutions designed to simplify and strengthen your SAP access management.
         </p>
@@ -97,11 +98,11 @@ function Home() {
             <i className="bi bi-arrow-up"></i>
           </span>
         </Link>
-      </section>
+      </section> */}
       {/* our-highlightupper section end */}
 
       {/* Our Highlights section start*/}
-      <section className="our-hightlights-section">
+      <section className="our-hightlights-section" id="go-down-section">
         <div className="hightlight-tittle-container">
           <p className="big-heading-text-black">
             Our <br /> Highlights
@@ -110,8 +111,8 @@ function Home() {
 
         <div className="hightlight-number-containers">
           <div className="inner-number-container">
-            <p className="small-text-black">Access Risk Analysis</p>
-            <p className="big-number-text-black">~150</p>
+            <p className="small-text-black">SAP Access projects delivered successfully</p>
+            <p className="big-number-text-black">+300</p>
           </div>
 
           <div>
@@ -123,8 +124,8 @@ function Home() {
 
         <div className="hightlight-number-containers">
           <div className="inner-number-container">
-            <p className="small-text-black">Experience Level</p>
-            <p className="big-number-text-black">13+</p>
+            <p className="small-text-black">SAP Access management professionals</p>
+            <p className="big-number-text-black">+140</p>
           </div>
 
           <div>
@@ -136,8 +137,8 @@ function Home() {
 
         <div className="hightlight-number-containers">
           <div className="inner-number-container">
-            <p className="small-text-black">Team Diversity</p>
-            <p className="big-number-text-black">5</p>
+            <p className="small-text-black">SAP Access risk values analyzed annually</p>
+            <p className="big-number-text-black">+50,000,000</p>
           </div>
 
           <div>
@@ -155,7 +156,7 @@ function Home() {
 
       {/* services section start */}
 
-      <section className="services-section">
+      {/* <section className="services-section">
         <div>
           <p className="big-heading-text-white">Services</p>
         </div>
@@ -256,6 +257,19 @@ function Home() {
             </span>
           </a>
         </div>
+      </section> */}
+
+
+
+
+
+
+       <section className="services-section">
+        <div>
+          <p className="big-heading-text-white">Services</p>
+        </div>
+
+        <ServiceTabs />
       </section>
 
       {/* services section End */}
@@ -272,7 +286,7 @@ function Home() {
 
 
       {/* image-cta start */}
-      <section className="image-cta-section">
+      {/* <section className="image-cta-section">
         <div className="first-container-image-cta">
           <p className="sub-heading-text-white">
 
@@ -287,7 +301,7 @@ function Home() {
             <i className="bi bi-arrow-up"></i>
           </span>
         </a>
-      </section>
+      </section> */}
       {/* image-cta End */}
 
 
@@ -471,7 +485,7 @@ function Home() {
 
       {/* last-cta-section start */}
 
-      <section className="last-cta-section">
+      {/* <section className="last-cta-section">
         <div className="inner-end-inner-cta-left">
           <p className="big-heading-text-black">
             Find out more
@@ -495,7 +509,7 @@ function Home() {
         </Link>
 
 
-      </section>
+      </section> */}
 
       {/* last-cta-section End  */}
       <Footer />
