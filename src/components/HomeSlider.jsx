@@ -4,6 +4,8 @@ import banner1 from '../assets/images/home-img/home-bgimg.jpg';
 import banner2 from '../assets/images/home-img/banner-home/1.jpg';
 import banner3 from '../assets/images/home-img/banner-home/2.jpg';
 import banner4 from '../assets/images/home-img/banner-home/3.jpg';
+import mainlogo from "../assets/images/Mainlogo.png";
+
 import { Link } from 'react-router-dom'; // For SmoothLink (assuming it's a wrapper for smooth scrolling)
 
 // SmoothLink component for smooth scrolling (if not already defined)
@@ -28,23 +30,27 @@ const HomeSlider = () => {
 
   const slides = [
     {
+      textImg: mainlogo,
       image: banner1,
       text: 'Leading SAP Access Management Specialist',
       link: null, // No link for the first slide
     },
     {
+      textImg: null,
       image: banner2,
       text: 'S/4 Access – Get it right from the beginning !',
       link: '/sap-s4-access-implementation', // Unique link for slide 2
     },
     {
+      textImg: null,
       image: banner3,
       text: 'What is the current status of your SAP Access Management?',
       link: '/sap-access-management-review', // Unique link for slide 3
     },
     {
+      textImg: null,
       image: banner4,
-      text: 'Join the company of leading SAP experts',
+      text: 'We are not just hiring. We are building a team - join the journey.',
       link: '/careers', // Unique link for slide 4
     },
   ];
@@ -71,6 +77,7 @@ const HomeSlider = () => {
             <div key={index} className="carousel-slide">
               <img src={slide.image} alt={`Slide ${index + 1}`} />
               <div className="slide-content">
+                {slide.textImg && <img src={slide.textImg} alt="Slide logo" />}
                 <p>{slide.text}</p>
                 {slide.link && (
                   <Link to={slide.link} className="slide-button">

@@ -48,6 +48,14 @@
   text-align: left;
   width: 85%;
 }
+.slide-content img{
+  width: 160px;
+  height: auto;
+  margin-bottom: 30px;
+  position: absolute;
+  top: -40px;
+  left: 0px;
+}
 
 .carousel-slide p {
   position: relative;
@@ -188,7 +196,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 700px;
+  margin-top: 800px;
 }
 .hightlight-tittle-container {
   width: 30%;

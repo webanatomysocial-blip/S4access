@@ -25,10 +25,10 @@ import SAPAuthorisationRedesign from './pages/SAPAuthorisationRedesign.jsx';
 import SAPSoDApproach from './pages/SAPSoDApproach.jsx';
 import SAPaccess from './pages/SAPaccess.jsx';
 import ScrollToTop from '../src/components/ScrollToTop.jsx';
+import BlogPage from '../src/pages/BlogPage.jsx'; // Import BlogPage
 
-console.log('Main.jsx loaded'); // Test log
+console.log('Main.jsx loaded');
 
-// Initialize Lenis globally
 const lenis = new Lenis({
   duration: 1.2,
   easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -40,10 +40,9 @@ const lenis = new Lenis({
   touchMultiplier: 2,
   infinite: false,
 });
-window.lenis = lenis; // Make Lenis accessible globally
-console.log('Lenis initialized:', lenis); // Debug log
+window.lenis = lenis;
+console.log('Lenis initialized:', lenis);
 
-// Animation frame loop
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
@@ -54,7 +53,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <LenisProvider>
       <BrowserRouter>
-        <ScrollToTop /> {/* Add ScrollToTop here */}
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -64,29 +63,24 @@ createRoot(document.getElementById('root')).render(
           <Route path="/services" element={<Services />} />
           <Route path="/s4-access-architecture-design" element={<S4AccessArchitectureDesign />} />
           <Route path="/careers" element={<Careers />} />
-
-          {/* Service Pages Routes */}   
           <Route path="/sap-access-management-review" element={<SAPAccessReview />} />
           <Route path="/sod-stratergy-approach" element={<SAPSoDApproach />} />
           <Route path="/sap-access-management-automation" element={<SAPaccess />} />
-
           <Route path="/sap-s4-access-implementation" element={<SAPAuthorisationRedesign />} />
           <Route path="/sod-role-redesign" element={<SAPAuthorisationConceptDesign />} />
           <Route path="/reorganisation-ma-projects" element={<SAPAccessSecurityConsulting />} />
-
           <Route path="/outsourced-access-management" element={<SAPAccessManagementService />} />
           <Route path="/authorisation-concept-owner" element={<SAPAuthorisationConceptOwnerService />} />
           <Route path="/security-architect" element={<SAPGRCAccessControlServices />} />
-
           <Route path="/access-risk-sod-management" element={<SAPSoDManagement />} />
           <Route path="/ff-log-review-automation" element={<S4FFEmergencyUserAutomation />} />
           <Route path="/sap-license-optimisation" element={<SAPLicenseCompliance />} />
-          {/* Service Pages Routes ends */}
-
-
           <Route path="/s4accessprojects" element={<S4AccessProjects />} />
+          <Route path="/blogs/:blogName" element={<BlogPage />} /> {/* Add BlogPage route */}
         </Routes>
       </BrowserRouter>
     </LenisProvider>
   </StrictMode>
 );
+
+// Define a simple NotFound component

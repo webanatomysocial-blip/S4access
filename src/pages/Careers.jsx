@@ -5,6 +5,8 @@ import Footer from "../components/Footer.jsx";
 import TestimonialCarousel from "../components/TestimonialCarousel.jsx";
 import "../css/Careers.css";
 import CareersGallerySection from "../components/CareersGallerySection.jsx";
+import { FaUsers, FaTrophy, FaDove, FaHeartbeat } from 'react-icons/fa';
+// import Blogs from "../components/Blog.jsx";
 
 
 const Careers = () => {
@@ -15,7 +17,8 @@ const Careers = () => {
       <section className="careers-hero-section">
         <div className="careers-hero-left-content">
           <p className="big-heading-text-white">
-            Welcome message
+            Your Next Chapter <br /> Starts Here
+
 
           </p>
           <p className="text-white">
@@ -113,61 +116,45 @@ const Careers = () => {
 
       {/* careers Our promise to you section start */}
 
-      <section className="careers-our-promise-section">
-        <div className="careers-our-promise-content-left">
-          <h2 className="big-heading-text-black">Our promise to you</h2>
-
-        </div>
-        <div className="careers-our-promise-content-right">
-
-          <div className="careers-our-promise-content-right-inner">
-            <strong><p className="text-black">
-              01
-            </p></strong>
-
-            <p className="sub-big-heading-text-black-lite">
-              Community and teamwork
-            </p>
-
-          </div>
-
-          <div className="careers-our-promise-content-right-inner">
-            <strong><p className="text-black">
-              02
-            </p></strong>
-
-            <p className="sub-big-heading-text-black-lite">
-              Professional excellence
-            </p>
-
-          </div>
-
-          <div className="careers-our-promise-content-right-inner">
-            <strong><p className="text-black">
-              03
-            </p></strong>
-
-            <p className="sub-big-heading-text-black-lite">
-              Freedom and responsibility
-            </p>
-
-          </div>
-
-          <div className="careers-our-promise-content-right-inner">
-            <strong><p className="text-black">
-              04
-            </p></strong>
-
-            <p className="sub-big-heading-text-black-lite">
-              Compensation with modern benefits and good <br /> occupational health care
-            </p>
-
-          </div>
 
 
 
-        </div>
-      </section>
+     <section className="careers-our-promise-section">
+  <div className="careers-our-promise-content-left">
+    <h2 className="big-heading-text-black">Our promise to you</h2>
+  </div>
+  <div className="careers-our-promise-content-right">
+    <div className="careers-our-promise-content-right-inner">
+      <FaUsers className="text-black" size={24} />
+      <p className="sub-big-heading-text-black-lite">
+        Community and teamwork
+      </p>
+    </div>
+    <div className="careers-our-promise-content-right-inner">
+      <FaTrophy className="text-black" size={24} />
+      <p className="sub-big-heading-text-black-lite">
+        Professional excellence
+      </p>
+    </div>
+  </div>
+  <div className="careers-our-promise-content-right">
+    <div className="careers-our-promise-content-right-inner">
+      <FaDove className="text-black" size={24} />
+      <p className="sub-big-heading-text-black-lite">
+        Freedom and responsibility
+      </p>
+    </div>
+    <div className="careers-our-promise-content-right-inner">
+      <FaHeartbeat className="text-black" size={24} />
+      <p className="sub-big-heading-text-black-lite">
+       Modern benefits with health care.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
       {/* careers Our promise to you section end */}
 
       {/* Testimonial section start */}
@@ -177,6 +164,8 @@ const Careers = () => {
       {/* Testimonial section End */}
 
 
+
+{/* <Blogs /> */}
 
 
 

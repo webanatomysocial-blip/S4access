@@ -5,14 +5,14 @@ import fav from '../assets/images/favic-white.svg';
 import '../css/Header.css';
 import MegaMenu from './MegaMenu.jsx';
 
-function Header() {
+function Header(props) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showMegaMenu, setShowMegaMenu] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const hideTimeout = useRef();
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = ( ) => {
       setIsScrolled(window.scrollY > 0);
     };
     window.addEventListener('scroll', handleScroll);
@@ -39,7 +39,7 @@ function Header() {
   return (
     <>
       {/* Desktop Header */}
-      <nav className={`only-windows navbar ${isScrolled ? 'scrolled' : ''}`}>
+      <nav className={`only-windows navbar ${isScrolled ? 'scrolled' : ''}` } style={{ background: props.backgroundColor }}>
         <div className="logo">
           <Link to="/">
             <img className="main-logo" src={logo} alt="S4access Logo" />

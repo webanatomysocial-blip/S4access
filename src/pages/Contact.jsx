@@ -15,7 +15,10 @@ function Contact() {
       
                 </p>
                 <p className="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                 Curious to learn more about what we do? <br />
+
+Let’s talk—just fill out the form and we’ll be in touch soon.
+
       
                 </p>
       

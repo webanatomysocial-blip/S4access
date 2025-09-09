@@ -120,38 +120,41 @@
 /* careers-our-promise-section start */
 .careers-our-promise-section {
   display: flex;
-  flex-direction: row;
-  align-items: start;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   padding: 100px 50px 100px 50px;
 }
 
 .careers-our-promise-content-left {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  margin-bottom: 30px;
+  align-items: center;
 }
 
 .careers-our-promise-content-right {
-  width: 50%;
+  width: 100%;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   gap: 40px;
-  flex-direction: column;
+  /* background-color: green; */
+  flex-direction: row;
   padding-top: 20px;
 }
 
 .careers-our-promise-content-right-inner {
-  width: 100%;
+  width: 30%;
   display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
   gap: 10px;
-  border-bottom: 1px solid black;
-  padding-bottom: 20px;
+  box-shadow: 0 6px 15px rgb(0, 51, 119, 0.2); 
+border-radius: 5px;
+  padding: 20px;
 }
 
 /* careers-our-promise-section End */
