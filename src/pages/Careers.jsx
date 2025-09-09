@@ -172,7 +172,7 @@ const Careers = () => {
 
       {/* Testimonial section start */}
 
-      {/* <TestimonialCarousel /> */}
+      <TestimonialCarousel />
 
       {/* Testimonial section End */}
 

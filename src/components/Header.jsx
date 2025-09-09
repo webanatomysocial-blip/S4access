@@ -1,13 +1,14 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import logo from '../assets/images/mainlogo.png';
-import fav from '../assets/images/favic.svg';
+import fav from '../assets/images/favic-white.svg';
 import '../css/Header.css';
 import MegaMenu from './MegaMenu.jsx';
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showMegaMenu, setShowMegaMenu] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const hideTimeout = useRef();
 
   useEffect(() => {
@@ -22,82 +23,177 @@ function Header() {
     clearTimeout(hideTimeout.current);
     setShowMegaMenu(true);
   };
+  
   const handleMenuLeave = () => {
     hideTimeout.current = setTimeout(() => setShowMegaMenu(false), 200);
   };
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    // <div className=' only-windows'>
-    <nav className={` only-windows navbar ${isScrolled ? 'scrolled' : ''} only-windows`}>
-      <div className="logo">
-        <Link to="/">
-          <img className="main-logo" src={logo} alt="S4access Logo" />
-        </Link>
-        <img className="star-logo" src={fav} alt="Star Logo" />
-      </div>
-      <div className="nav-list">
-        <ul>
+    <>
+      {/* Desktop Header */}
+      <nav className={`only-windows navbar ${isScrolled ? 'scrolled' : ''}`}>
+        <div className="logo">
+          <Link to="/">
+            <img className="main-logo" src={logo} alt="S4access Logo" />
+          </Link>
+          <img className="star-logo" src={fav} alt="Star Logo" />
+        </div>
+        <div className="nav-list">
+          <ul>
+            <li>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Home
+              </NavLink>
+            </li>
+           
+            <li
+              onMouseEnter={handleMenuEnter}
+              onMouseLeave={handleMenuLeave}
+            >
+              <NavLink
+                to="/services"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Services
+              </NavLink>
+              <MegaMenu show={showMegaMenu} setShow={setShowMegaMenu} />
+            </li>
+            <li>
+              <NavLink
+                to="/customer-success"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Customer Success
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/insights"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Insights
+              </NavLink>
+            </li>
           <li>
             <NavLink
-              to="/"
-              end
+              to="/careers"
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
-              Home
+              Careers
             </NavLink>
           </li>
-         
-          <li
-            onMouseEnter={handleMenuEnter}
-            onMouseLeave={handleMenuLeave}
+           <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                About
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="button-contact">
+          <Link to="/contact">Contact Us</Link>
+        </div>
+      </nav>
+
+      {/* Mobile Header */}
+      <nav className={`only-mobile mobile-navbar ${isScrolled ? 'scrolled' : ''}`}>
+        <div className="mobile-nav-top">
+          <div className="mobile-logo">
+            <Link to="/" onClick={closeMobileMenu}>
+              <img src={logo} alt="S4access Logo" />
+            </Link>
+          </div>
+          <button 
+            className={`mobile-menu-toggle ${isMobileMenuOpen ? 'open' : ''}`}
+            onClick={toggleMobileMenu}
+            aria-label="Toggle menu"
           >
-            <NavLink
-              to="/services"
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              Services
-            </NavLink>
-            <MegaMenu show={showMegaMenu} setShow={setShowMegaMenu} />
-          </li>
-          <li>
-            <NavLink
-              to="/customer-success"
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              Customer Success
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/insights"
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              Insights
-            </NavLink>
-          </li>
-        <li>
-          <NavLink
-            to="/careers"
-            className={({ isActive }) => (isActive ? 'active' : '')}
-          >
-            Careers
-          </NavLink>
-        </li>
-         <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
-              About
-            </NavLink>
-          </li>
-        </ul>
-      </div>
-      <div className="button-contact">
-        <Link to="/contact">Contact Us</Link>
-      </div>
-    </nav>
-    // </div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        
+        <div className={`mobile-nav-menu ${isMobileMenuOpen ? 'open' : ''}`}>
+          <ul>
+            <li>
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) => (isActive ? 'active' : '')}
+                onClick={closeMobileMenu}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/services"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+                onClick={closeMobileMenu}
+              >
+                Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/customer-success"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+                onClick={closeMobileMenu}
+              >
+                Customer Success
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/insights"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+                onClick={closeMobileMenu}
+              >
+                Insights
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/careers"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+                onClick={closeMobileMenu}
+              >
+                Careers
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+                onClick={closeMobileMenu}
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="mobile-contact-btn">
+              <Link to="/contact" onClick={closeMobileMenu}>
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </>
   );
 }
 

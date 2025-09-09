@@ -52,16 +52,16 @@
 }
 
 .quicklinks-footer {
-  width: 30%;
-  /* padding-top: 87px; */
-  display: flex;
-  /* background-color: red; */
-  flex-direction: column;
-  position: absolute;
-  top: 100px;
-  right: -180px;
-  gap: 30px;
-
+    width: 15%;
+    /* padding-top: 87px; */
+    display: flex
+;
+    /* background-color: red; */
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 60px;
+    gap: 30px;
 }
 
 .quicklinks-footer .footer-nav {

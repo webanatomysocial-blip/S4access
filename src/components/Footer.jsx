@@ -14,8 +14,6 @@ function Footer() {
             New SAP access security era begins. With 20+ years of expertise and advanced tech, we provide solutions to streamline your SAP access management.
           </p>
 
-
-
           <div className="contact-details">
             <p className="sub-heading-text-white">Contact Information</p>
 
@@ -23,85 +21,80 @@ function Footer() {
               <a href="tel:+358 20 719 1010">
                 <span><svg id="fi_17486479" enable-background="new 0 0 100 100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m97.4972763 82.1141434c.0027695 8.7985001-7.3660278 15.8329773-16.1520081 15.3636627-17.9030838-.9563217-37.4408378-9.7243195-53.2625522-25.5465851-15.8331375-15.8237877-24.603457-35.3706779-25.5578964-53.2793598-.4681449-8.7840672 6.5623119-16.1518612 15.3588455-16.1518612h9.9519863c2.4168205 0 3.8527546 2.0451765 4.400322 4.4003186l4.3269119 18.7974339c.5525246 2.4003391-.18293 4.9152927-1.9416771 6.6397419l-4.5546856 4.4658546c-3.2576084 3.1940765-3.7772274 8.2572289-1.233017 12.0441971 2.8479004 4.2390022 6.217371 8.3523521 10.0855618 12.2275314 3.8692322 3.8692284 7.9856758 7.2397728 12.2282028 10.0881691 3.7870102 2.5425644 8.8487968 2.022644 12.0422516-1.2343292l4.4671249-4.5559845c1.7244492-1.7587471 4.2394028-2.4941978 6.63974-1.9416733l18.7974396 4.3269119c2.3551407.5475616 4.4003143 1.9827957 4.4003143 4.4003143z" fill-rule="evenodd"></path></svg></span><span>
                   +358 20 719 1010
-
                 </span>
-
               </a>
-
-
 
               <a href="mailto:contact@s4access.com">
                 <span><svg id="fi_16935745" enable-background="new 0 0 100 100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m45.7953949 57.5565643-43.1575694-31.3894138c-.0835295.0425339-.0542982.0276489-.1378276.0701828v47.5c0 5.2467041 4.2532949 9.5 9.5 9.5h76c5.2467041 0 9.5-4.2532959 9.5-9.5v-47.6137638c-.0153503-.0078182-.0099869-.0050869-.0253372-.012907l-43.2689913 31.4473705c-2.5074387 1.8223762-5.9034691 1.821785-8.4102745-.0014687z"></path><path d="m54.205761 45.826828 38.328907-27.8734989c-1.3426667-.7346668-2.8880005-1.1906662-4.534668-1.1906662h-76c-1.6466665 0-3.166667.4560013-4.534667 1.1906662l38.328906 27.8734989c2.5073853 1.8234177 5.9041367 1.8234177 8.411522 0z"></path></svg></span><span>
                   contact@s4access.com
                 </span>
+              </a>
+              
+              <a href="https://www.google.com/maps/place/K%C3%A4sity%C3%B6l%C3%A4iskatu+23,+06100+Porvoo,+Finland/@60.3665,25.6632,17z/data=!3m1!4b1!4m6!3m5!1s0x4691a5c5c5c5c5c5:0x5c5c5c5c5c5c5c5!8m2!3d60.3665!4d25.6632!16s%2Fg%2F11c1t1t1t1">
+                <span><svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" id="fi_3179068"><path d="m12 0c-4.962 0-9 4.066-9 9.065 0 7.103 8.154 14.437 8.501 14.745.143.127.321.19.499.19s.356-.063.499-.189c.347-.309 8.501-7.643 8.501-14.746 0-4.999-4.038-9.065-9-9.065zm0 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg></span><span>
+                  Main office Helsinki / Finland
+                </span>
+              </a>
+              <a href="https://www.google.com/maps/place/K%C3%A4sity%C3%B6l%C3%A4iskatu+23,+06100+Porvoo,+Finland/@60.3665,25.6632,17z/data=!3m1!4b1!4m6!3m5!1s0x4691a5c5c5c5c5c5:0x5c5c5c5c5c5c5c5!8m2!3d60.3665!4d25.6632!16s%2Fg%2F11c1t1t1t1">
+                <span><svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" id="fi_3179068"><path d="m12 0c-4.962 0-9 4.066-9 9.065 0 7.103 8.154 14.437 8.501 14.745.143.127.321.19.499.19s.356-.063.499-.189c.347-.309 8.501-7.643 8.501-14.746 0-4.999-4.038-9.065-9-9.065zm0 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg></span><span>
+                  HQ Porvoo / Finland
 
+                </span>
               </a>
             </div>
           </div>
-
         </div>
 
-
-
-
-
-
-
-
         <div className="right-logo-container-footer">
-
-
           <div className="inner-right-container-footer">
             <div className="services-footer">
-              <p className="sub-heading-text-white">SAP Access Design</p>
+              <p className="sub-heading-text-white" style={{color: "#40ffc9"}}>SAP Access Design</p>
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/" className="footer-link">
+                  <Link to="/sap-access-management-review" className="footer-link">
                     SAP Access Management Review
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/services" className="footer-link">
-                    SOD Stratergy Approach
+                  <Link to="/sod-stratergy-approach" className="footer-link">
+                    SOD Strategy Approach
                   </Link>
                 </li>
                 <li>
-                  <Link to="/customer-success" className="footer-link">
+                  <Link to="/sap-access-management-automation" className="footer-link">
                     SAP Access Management Automation
                   </Link>
                 </li>
               </ul>
             </div>
 
-
-
             <div className="services-footer">
-              <p className="sub-heading-text-white">SAP Access Projects</p>
+              <p className="sub-heading-text-white"  style={{color: "#40ffc9"}}>SAP Access Projects</p>
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/" className="footer-link">
-                    SAP Access Management Review
+                  <Link to="/sap-s4-access-implementation" className="footer-link">
+                    SAP S/4 Access Implementation
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/services" className="footer-link">
-                    SOD Stratergy Approach
+                  <Link to="/sod-role-redesign" className="footer-link">
+                    SoD / Role redesign
                   </Link>
                 </li>
                 <li>
-                  <Link to="/customer-success" className="footer-link">
-                    SAP Access Management Automation
+                  <Link to="/reorganisation-ma-projects" className="footer-link">
+                    Reorganisation / M&A projects
                   </Link>
                 </li>
               </ul>
             </div>
 
             <div className="quicklinks-footer">
-              <p className="sub-heading-text-white">Quick Links</p>
+              <p className="sub-heading-text-white"  style={{color: "#40ffc9"}}>Quick Links</p>
 
               <ul className="footer-nav">
                 <li>
@@ -143,96 +136,63 @@ function Footer() {
                 </li>
               </ul>
             </div>
-
-
-
-
-
-
-
-
-
-
-
           </div>
-
 
           <div className="inner-right-container-footer">
             <div className="services-footer">
-              <p className="sub-heading-text-white">SAP Access Projects</p>
+              <p className="sub-heading-text-white"  style={{color: "#40ffc9"}}>SAP Access Services</p>
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/" className="footer-link">
-                    SAP Access Management Review
+                  <Link to="/outsourced-access-management" className="footer-link">
+                    Outsourced Access Management
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/services" className="footer-link">
-                    SOD Stratergy Approach
+                  <Link to="/authorisation-concept-owner" className="footer-link">
+                    Authorisation Concept Owner
                   </Link>
                 </li>
                 <li>
-                  <Link to="/customer-success" className="footer-link">
-                    SAP Access Management Automation
+                  <Link to="/security-architect" className="footer-link">
+                    Security Architect
                   </Link>
                 </li>
               </ul>
             </div>
-
-
-
 
             <div className="services-footer">
-              <p className="sub-heading-text-white">SAP Access Projects</p>
+              <p className="sub-heading-text-white"  style={{color: "#40ffc9"}}>SAP Access Solutions</p>
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/" className="footer-link">
-                    SAP Access Management Review
+                  <Link to="/access-risk-sod-management" className="footer-link">
+                    Access Risk SoD Management
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/services" className="footer-link">
-                    SOD Stratergy Approach
+                  <Link to="/ff-log-review-automation" className="footer-link">
+                    FF Log Review Automation
                   </Link>
                 </li>
                 <li>
-                  <Link to="/customer-success" className="footer-link">
-                    SAP Access Management Automation
+                  <Link to="/sap-license-optimisation" className="footer-link">
+                    SAP Licence Optimisation
                   </Link>
                 </li>
               </ul>
             </div>
-
-
-
-
-
-
           </div>
-
-
-
-
-
         </div>
-
-
       </div>
-
-
-
-
 
       <div className="footer-end">
         <div className="end">
           <p className="small-text-white">&copy; 2025 S4access. All rights reserved | Designed and Developed by <a href="https://webanatomy.in/" target="_blank">WebAnatomy</a></p>
         </div>
       </div>
-
     </footer>
   );
 }
