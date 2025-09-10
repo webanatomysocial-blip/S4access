@@ -104,14 +104,15 @@ html {
   font-family: "barlow", monospace;
   font-size: 18px;
   line-height: 1.6;
+  text-decoration: none;
 }
 
 .text-black {
-  color: rgb(0, 0, 0);
+ color: rgb(0, 0, 0);
   font-family: "barlow", monospace;
   font-size: 18px;
+  line-height: 1.6;
   text-decoration: none;
-  line-height: 1.3em;
 }
 
 .small-text-black {
@@ -212,12 +213,13 @@ html {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-size: 14px;
   font-family: "Roboto Mono", sans-serif;
   width: 110px;
   overflow: hidden;
   transition: 0.3s ease-in-out;
+  border-radius: 5px;
 }
 
 .border-button span:last-child {

@@ -136,41 +136,62 @@ function About() {
 
         <div className="hightlight-number-containers">
           <div className="inner-number-container">
-            <p className="small-text-black">SAP Access projects delivered successfully</p>
-            <p className="big-number-text-black">+300</p>
+            <p className="small-text-black">SAP Access risk values analyzed annually</p>
+            {/* <p className="big-number-text-black">+100,000,000
+            </p> */}
           </div>
 
           <div>
             <p className="text-black">
-              We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> security vulnerabilities.
+              We perform hundreds of risk evaluations
+              annually, proactively addressing
+              security vulnerabilities.
+
             </p>
           </div>
         </div>
+
+
+
 
         <div className="hightlight-number-containers">
           <div className="inner-number-container">
             <p className="small-text-black">SAP Access management professionals</p>
-            <p className="big-number-text-black">+140</p>
+            {/* <p className="big-number-text-black">+140</p> */}
           </div>
 
           <div>
             <p className="text-black">
-              Our team’s 13+ years of average <br /> experience tackles complex security <br />challenges effectively.
+              Representing 5 nationalities and 13+ years of average experience, our team tackles security challenges effectively.
+              *s4access & partners
+
             </p>
           </div>
+
+
         </div>
 
+
+
+
+
         <div className="hightlight-number-containers">
+
+
           <div className="inner-number-container">
-            <p className="small-text-black">SAP Access risk values analyzed annually</p>
-            <p className="big-number-text-black">+50,000,000</p>
+            <p className="small-text-black">SAP Access projects delivered
+            </p>
+            {/* <p className="big-number-text-black">+300</p> */}
           </div>
 
           <div>
             <p className="text-black">
-              Representing 5 nationalities, our diverse <br /> team enhances problem-solving and <br /> global strategies.
+              We support S/4 transitions, SoD reviews and project reorganisations to strengthen SAP Access control.
             </p>
           </div>
+
+
+
         </div>
       </section>
       {/* Our Highlights section End */}

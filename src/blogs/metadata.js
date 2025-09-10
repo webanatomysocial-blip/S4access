@@ -11,6 +11,24 @@ export const blogMetadata = [
     image: img22, // Imported image
     date: "2025-08-26",
   },
+    {
+    id: "Autumn-2025-Outlook", // Matches file name without .jsx
+    title: "Autumn 2025 Outlook: Navigating SAP Security and Access Management in a New Market Reality – Is There a Way Forward ?",
+    slug: "Autumn-2025-Outlook", // URL-friendly slug
+    metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
+    excerpt: "In Autumn 2025, economic pressures demand smarter SAP security and access management. Discover common pitfalls and a clear, actionable plan to strengthen your SAP systems while aligning with business needs in a transforming market.",
+    image: img22, // Imported image
+    date: "2025-08-26",
+  },
+    {
+    id: "Turning-Frustration-into-Value", 
+    title: "Understanding SAP Access Management Audits: Turning Frustration into Value ",
+    slug: "Turning-Frustration-into-Value", 
+    metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
+    excerpt: "In Autumn 2025, economic pressures demand smarter SAP security and access management. Discover common pitfalls and a clear, actionable plan to strengthen your SAP systems while aligning with business needs in a transforming market.",
+    image: img22, // Imported image
+    date: "2025-08-26",
+  },
 ];
 
 // Preload images with error handling

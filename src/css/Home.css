@@ -425,7 +425,7 @@
   flex-direction: row;
 }
 
-.news-blogs-container {
+/* .news-blogs-container {
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -483,7 +483,7 @@
   justify-content: space-between;
   flex-direction: column;
   gap: 20px;
-}
+} */
 /* news-blogs-section End */
 
 

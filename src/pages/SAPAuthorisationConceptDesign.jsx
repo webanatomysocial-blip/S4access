@@ -45,10 +45,13 @@ export default function SAPAuthorisationConceptDesign() {
       {/* Role Redesign Journey */}
       <section className="service-journey-container">
         <div className="service-journey-content">
+
+
           <div className="journey-card">
-            <div className="card-header">
-              <h2 className="big-heading-text-white">The Role Redesign Cycle: A Common SAP Challenge</h2>
-              <div className="card-sub-content">
+            <div className="card-header left-right-container-inner-service">
+              
+              <div className="card-sub-content card-sub-content-only-some">
+                <h2 className="sub-big-heading-text-white">The Role Redesign Cycle: <br /> A Common SAP Challenge </h2>
                 <p className="text-white">
                   Many organizations using SAP eventually face a familiar challenge: access and role structures become difficult to manage, leading to rising Segregation of Duties (SoD) risks, audit findings, and security concerns.
                 </p>
@@ -56,8 +59,10 @@ export default function SAPAuthorisationConceptDesign() {
                   In response, a role redesign project is launched—often with a fresh strategy and renewed focus. Yet, within 2–3 years, the same issues resurface, bringing the organization back to square one. This cycle highlights the need for a sustainable, well-governed access management approach rather than one-off fixes.
                 </p>
               </div>
-              <h2 className="big-heading-text-white">Breaking the Cycle: Our Approach to SAP Role Redesign</h2>
-              <div className="card-sub-content">
+
+             
+              <div className="card-sub-content card-sub-content-only-some">
+                 <h2 className="sub-big-heading-text-white">Breaking the Cycle: <br /> Our Approach to SAP Role Redesign</h2>
                 <p className="text-white">
                   Our SAP role redesign approach begins with a deep analysis of the root causes that prevent organizations from escaping the recurring cycle of role redesign. In most cases, we uncover gaps across all key areas: governance, processes, technology, resourcing, skills and tools.
                 </p>
@@ -90,6 +95,9 @@ export default function SAPAuthorisationConceptDesign() {
             </p>
             <h3 className="sub-heading-text-black">Mark R.</h3>
             <p className="text-black">CIO, FinCore Solutions</p>
+            <div className="image-container-showcase">
+              {/* <img src={image} alt="case study" /> */}
+            </div>
           </div>
         </div>
 
@@ -101,6 +109,9 @@ export default function SAPAuthorisationConceptDesign() {
               Role redesign and SoD (Segregation of Duties) checks helped the client
               cut down access violations while improving user productivity.
             </p>
+            <div className="image-container-showcase">
+              {/* <img src={image} alt="case study" /> */}
+            </div>
           </div>
         </div>
       </section>

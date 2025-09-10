@@ -4,6 +4,8 @@ import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
+import case1img from "../assets/images/About-img/Top-banner-img.jpg"
+
 import image from "../assets/images/About-img/Access.png";
 
 export default function SAPAuthorisationRedesign() {
@@ -52,29 +54,31 @@ export default function SAPAuthorisationRedesign() {
 
       <section className="service-journey-container">
         <div className="service-journey-content">
-          <div className="journey-card">
+          <div className="journey-card left-right-container-inner-service">
 
-            <h3 className="big-heading-text-white">
-              Modernizing SAP Access Management During S/4 Transformation
-            </h3>
-            <div className="card-sub-content">
-              <div className="card-sub-content">
+
+           
+              <div className="card-sub-content card-sub-content-only-some">
+                <h3 className="sub-big-heading-text-white">
+                  Modernizing SAP Access Management During S/4 Transformation
+                </h3>
                 <p className="text-white">
-                  The transition to SAP S/4 presents a valuable opportunity to modernize your SAP access design. However, the complexity of the environment and heightened security requirements make this task more challenging than ever.
+                  The transition to SAP S/4 presents a valuable opportunity to modernize your SAP access design. However, the complexity of the environment and heightened security requirements make this task more challenging than ever. <br /><br />
+
+                   In many cases, access management is underplanned and underbudgeted—especially when relying on a single large system integrator. This often results in costly rework during implementation and ongoing maintenance. A common issue is the lack of deep expertise and strategic focus in this area. <br /><br />
+
+                    Recognizing these challenges, a growing number of organizations are choosing to carve out SAP access management and partner with specialist firms to ensure it is handled with the attention and expertise it demands.
                 </p>
-                <p className="text-white">
-                  In many cases, access management is underplanned and underbudgeted—especially when relying on a single large system integrator. This often results in costly rework during implementation and ongoing maintenance. A common issue is the lack of deep expertise and strategic focus in this area.
-                </p>
-                <p className="text-white">
-                  Recognizing these challenges, a growing number of organizations are choosing to carve out SAP access management and partner with specialist firms to ensure it is handled with the attention and expertise it demands.
-                </p>
+             
               </div>
-            </div>
+           
 
-            <h3 className="big-heading-text-white">
-              From Planning to Execution – SAP S/4 Access Done Right!
-            </h3>
-            <div className="card-sub-content ">
+
+            <div className="card-sub-content card-sub-content-only-some">
+              <h3 className="sub-big-heading-text-white">
+                From Planning to Execution – SAP S/4 Access Done Right!
+              </h3>
+              
               <p className="text-white">
                 We’ve supported numerous organizations in designing and successfully implementing their complete SAP S/4HANA security roadmap—on time and within budget. We believe there’s no one-size-fits-all solution, just honest, focused work.
               </p>
@@ -171,51 +175,42 @@ export default function SAPAuthorisationRedesign() {
         </div>
       </section> */}
 
-      <section className="strength-showcase">
-        <div className="strength-left">
-          <h2 className="big-heading-text-white">Case Studies</h2>
-          <p className="text-white">
-            Explore how organizations improved compliance, strengthened security, and
-            reduced risks with SAP Access Management Reviews. These studies showcase
-            real-world results, best practices, and measurable business impact.
-          </p>
+     <section className="strength-showcase">
+    <div className="strength-left">
+      <h2 className="big-heading-text-white">Case Studies</h2>
+      <p className="text-white">
+        Explore how our S/4 HANA/Fiori Digital Transformation revitalized SAP access and user experience for a global home furnishing brand, ensuring a successful rollout.
+      </p>
+    </div>
+
+    {/* Case Study 1 - Project Detail */}
+    <div className="strength-right">
+      <div className="stats-card">
+        <h3 className="sub-heading-text-black">Global Home Furnishing</h3>
+        <h4 className="text-black">Reengineered Role Design</h4>
+        <p className="text-black">
+          Revamped SAP S/4 role design and implemented a user access tool with GRC and SOD checks for seamless provisioning.
+        </p>
+        <div className="image-container-showcase">
+          <img src={case1img} alt="case study" />
         </div>
+      </div>
+    </div>
 
-        {/* Case Study 1 - Testimonial */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <p className="small-text-black">⭐ 4.8 (Rating)</p>
-            <p className="text-black">
-              The SAP Access Management review identified critical risks and gave us a
-              clear roadmap to strengthen controls without slowing down operations.
-            </p>
-            <h3 className="sub-heading-text-black">Mark R.</h3>
-            <p className="text-black">CIO, FinCore Solutions</p>
-
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="testimonial" /> */}
-            </div>
-          </div>
+    {/* Case Study 2 - Business Outcome */}
+    <div className="strength-right">
+      <div className="stats-card">
+        <h3 className="sub-heading-text-black">Global Home Furnishing</h3>
+        <h4 className="text-black">100% Fiori Adoption</h4>
+        <p className="text-black">
+          Achieved successful go-live and full transition from SAP GUI to Fiori, boosting user satisfaction and project success.
+        </p>
+        <div className="image-container-showcase">
+          <img src={case1img} alt="case study" />
         </div>
-
-        {/* Case Study 2 - Business Outcome */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <h3 className="sub-heading-text-black">Global Retailer</h3>
-            <h4 className="text-black">40% reduction in access risks</h4>
-            <p className="text-black">
-              Role redesign and SoD (Segregation of Duties) checks helped the client
-              cut down access violations while improving user productivity.
-            </p>
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="case study" /> */}
-            </div>
-          </div>
-        </div>
-
-
-      </section>
-
+      </div>
+    </div>
+  </section>
       <section className="strength-bottom">
         <div className="stat-card">
           <div className="stat-box">

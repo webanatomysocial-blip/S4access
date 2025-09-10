@@ -29,7 +29,7 @@ const services = [
 
 const MegaMenu = ({ show, setShow }) => {
   const hideTimeout = useRef();
-  const [hoveredCategory, setHoveredCategory] = useState(0); 
+  const [hoveredCategory, setHoveredCategory] = useState(0);
   const handleMouseEnter = (index) => {
     clearTimeout(hideTimeout.current);
     setShow(true);

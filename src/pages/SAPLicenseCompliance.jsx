@@ -47,10 +47,11 @@ export default function SAPLicenseCompliance() {
       <section className="service-solution-container-not">
         <div className="service-solution-content">
           <div className="solution-grid ">
-            <div className="solution-intro-card only-windows">
-              <h2 className="big-heading-text-white">Navigating SAP Licensing in the S/4 Era</h2>
+            <div className="solution-intro-card left-right-container-inner-service ">
+             
 
-              <div className="card-sub-content">
+              <div className="card-sub-content card-sub-content-only-some">
+                 <h2 className="sub-big-heading-text-white">Navigating SAP Licensing in the S/4 Era</h2>
                 <p className="text-white">
                   SAP licensing has become a growing area of focus due to the introduction of the SAP S/4HANA strategy and its various deployment models.
                   With new licensing frameworks now in place, organizations must carefully evaluate their options—not only during the purchasing phase but also throughout implementation and ongoing maintenance.
@@ -61,8 +62,9 @@ export default function SAPLicenseCompliance() {
                 </p>
               </div>
 
-              <h2 className="big-heading-text-white">S4 Access SAP License Compliance & Optimization Service</h2>
-              <div className="card-sub-content">
+              
+              <div className="card-sub-content card-sub-content-only-some">
+                <h2 className="sub-big-heading-text-white">S4 Access SAP License Compliance & Optimization Service</h2>
                 <p className="text-white">
                   Over the years, s4access has helped numerous organizations establish effective practices to improve their SAP license compliance.
                   Our proprietary license usage analysis service, part of the s4access platform, is available either as a standalone offering or integrated into our ongoing maintenance services—providing customers with optimal control and visibility over their licensing landscape.

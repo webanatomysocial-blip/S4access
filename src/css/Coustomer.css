@@ -1,0 +1,195 @@
+.Coustomer-success-page-hero-section {
+  background-color: rgb(0, 0, 0);
+  height: 60vh;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 100px 0px 0px 50px;
+  margin-top: -100px;
+}
+
+.Coustomer-success-page-hero-container-left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Coustomer-success-page-hero-container-right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Coustomer-success-page-hero-container-right img {
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+
+
+
+.Coustomer-success-page-scope-of-service-section {
+  padding: 100px 50px;
+  position: relative;
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+}
+
+.Coustomer-success-page-card {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Coustomer-success-page-card-right {
+  width: 50%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.Coustomer-success-page-card-right img {
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+.Coustomer-success-page-Achievements-section {
+  padding: 100px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #ffffff;
+  /* margin-bottom: 100px; */
+}
+
+.Coustomer-success-page-achievements-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Coustomer-success-page-achievement-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  background: #F4F4F4;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.Coustomer-success-page-achievement-card:hover {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+
+}
+
+
+
+
+
+
+.Coustomer-success-page-Achievements-section-diff-content{
+   padding: 100px 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+  background-color: #ffffff;
+  /* margin-bottom: 100px; */
+}
+
+
+.Coustomer-success-inner-achievements-right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+}
+.Coustomer-success-inner-achievements-right img{
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+
+}
+.Coustomer-success-inner-achievements-left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: start;
+}
+
+
+
+
+
+
+
+
+
+.CustomerSuccess-service-cta {
+  margin: 0px;
+  background: linear-gradient(135deg, #40ffc9 -30%, #003377 80%, #40ffc9 120%);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2E3840;
+  padding: 60px 70px;
+  /* margin: 40px 0; */
+}
+
+.CustomerSuccess-cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+
+.CustomerSuccess-cta-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.CustomerSuccess-cta-content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  width: 60%;
+}

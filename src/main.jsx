@@ -26,6 +26,10 @@ import SAPSoDApproach from './pages/SAPSoDApproach.jsx';
 import SAPaccess from './pages/SAPaccess.jsx';
 import ScrollToTop from '../src/components/ScrollToTop.jsx';
 import BlogPage from '../src/pages/BlogPage.jsx'; // Import BlogPage
+import SAPAuthorizationConceptOwner from './coustomer-pages/SAP-Authorization-Concept-Owner-Service.jsx';
+import S4AccessManagementReview from './coustomer-pages/S4Access-Management-Review.jsx';
+import S4TransitionAnalysis from './coustomer-pages/S4-Transition-Analysis.jsx';
+import S4HanaFioriTransformation from './coustomer-pages/S4-Hana-Fiori-Transformation.jsx';
 
 console.log('Main.jsx loaded');
 
@@ -77,6 +81,10 @@ createRoot(document.getElementById('root')).render(
           <Route path="/sap-license-optimisation" element={<SAPLicenseCompliance />} />
           <Route path="/s4accessprojects" element={<S4AccessProjects />} />
           <Route path="/blogs/:blogName" element={<BlogPage />} /> {/* Add BlogPage route */}
+          <Route path="/sap-authorisation-concept-owner" element={<SAPAuthorizationConceptOwner />} />
+          <Route path="/s4-access-management-review" element={<S4AccessManagementReview />} />
+          <Route path="/s4-transition-analysis" element={<S4TransitionAnalysis />} />
+          <Route path="/s4-hana-fiori-transformation" element={<S4HanaFioriTransformation />} />
         </Routes>
       </BrowserRouter>
     </LenisProvider>

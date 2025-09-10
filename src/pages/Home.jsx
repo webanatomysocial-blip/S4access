@@ -24,24 +24,13 @@ function Home() {
   return (
     <div>
       <Header />
+
       {/* carousel section start */}
 
       <HomeSlider />
       {/* carousel section End */}
 
-      {/* our-highlightupper section start */}
-      {/* <section className="our-highlightupper" >
-        <p className="text-black">
-          A new era of SAP access security is here. Backed by over two decades of expertise and a passion for embracing the latest technologies, we provide innovative services and solutions designed to simplify and strengthen your SAP access management.
-        </p>
-        <Link to="/About" className="main-button-blue">
-          <span>Learn More </span>
-          <span>
-            <i className="bi bi-arrow-up"></i>
-          </span>
-        </Link>
-      </section> */}
-      {/* our-highlightupper section end */}
+
 
       {/* Our Highlights section start*/}
       <section className="our-hightlights-section" id="go-down-section">
@@ -53,16 +42,23 @@ function Home() {
 
         <div className="hightlight-number-containers">
           <div className="inner-number-container">
-            <p className="small-text-black">SAP Access projects delivered successfully</p>
-            <p className="big-number-text-black">+300</p>
+            <p className="small-text-black">SAP Access risk values analyzed annually</p>
+            <p className="big-number-text-black">+100,000,000
+</p>
           </div>
 
           <div>
             <p className="text-black">
-              We perform ~150 risk evaluations <br /> annually, proactively addressing <br /> security vulnerabilities.
+             We perform hundreds of risk evaluations
+annually, proactively addressing
+security vulnerabilities.
+
             </p>
-          </div>
+          </div>       
         </div>
+
+
+
 
         <div className="hightlight-number-containers">
           <div className="inner-number-container">
@@ -72,22 +68,36 @@ function Home() {
 
           <div>
             <p className="text-black">
-              Our team’s 13+ years of average <br /> experience tackles complex security <br />challenges effectively.
+              Representing 5 nationalities and 13+ years of average experience, our team tackles security challenges effectively.
+*s4access & partners
+
             </p>
           </div>
+          
+         
         </div>
 
+
+
+
+
         <div className="hightlight-number-containers">
-          <div className="inner-number-container">
-            <p className="small-text-black">SAP Access risk values analyzed annually</p>
-            <p className="big-number-text-black">+50,000,000</p>
+
+
+           <div className="inner-number-container">
+            <p className="small-text-black">SAP Access projects delivered
+</p>
+            <p className="big-number-text-black">+300</p>
           </div>
 
           <div>
             <p className="text-black">
-              Representing 5 nationalities, our diverse <br /> team enhances problem-solving and <br /> global strategies.
+             We support S/4 transitions, SoD reviews and project reorganisations to strengthen SAP Access control. 
             </p>
           </div>
+
+          
+          
         </div>
       </section>
       {/* Our Highlights section End */}
@@ -227,24 +237,6 @@ function Home() {
 
 
 
-      {/* image-cta start */}
-      {/* <section className="image-cta-section">
-        <div className="first-container-image-cta">
-          <p className="sub-heading-text-white">
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quaerat minus debitis soluta aliquam velit ullam, minima cupiditate enim! Voluptates!
-
-          </p>
-        </div>
-
-        <a href="/" className="border-button">
-          <span>Learn More </span>
-          <span>
-            <i className="bi bi-arrow-up"></i>
-          </span>
-        </a>
-      </section> */}
-      {/* image-cta End */}
 
 
 
@@ -267,85 +259,7 @@ function Home() {
           
         </div>
 
-        {/* <div className="news-blogs-container">
-          <div className="inner-news-blogs-container">
-            <div className="blog-text">
-              <p className="text-black">NEWS</p>
-              <p className="sub-big-heading-text-black">
-                Future of Access <br /> Management
-              </p>
-            </div>
-
-            <div className="image-hover-text-come">
-              <div className="inner-text-come">
-                <div>
-                  <p className="sub-heading-text-black">SAP S/4</p>
-                  <p className="small-text-black">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Labore eius in molestiae reprehenderit quos laudantium
-                    praesentium doloremque perferendis veritatis eos?
-                  </p>
-                </div>
-
-                <a href="#" className="read-more-btn-blue">
-                  Read More <i className="bi bi-arrow-right arrow-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="inner-news-blogs-container">
-            <div className="blog-text">
-              <p className="text-black">NEWS</p>
-              <p className="sub-big-heading-text-black">
-                Future of Access <br /> Management
-              </p>
-            </div>
-
-            <div className="image-hover-text-come">
-              <div className="inner-text-come">
-                <div>
-                  <p className="sub-heading-text-black">SAP S/4</p>
-                  <p className="small-text-black">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Labore eius in molestiae reprehenderit quos laudantium
-                    praesentium doloremque perferendis veritatis eos?
-                  </p>
-                </div>
-
-                <a href="#" className="read-more-btn-blue">
-                  Read More <i className="bi bi-arrow-right arrow-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="inner-news-blogs-container">
-            <div className="blog-text">
-              <p className="text-black">NEWS</p>
-              <p className="sub-big-heading-text-black">
-                Future of Access <br /> Management
-              </p>
-            </div>
-
-            <div className="image-hover-text-come">
-              <div className="inner-text-come">
-                <div>
-                  <p className="sub-heading-text-black">SAP S/4</p>
-                  <p className="small-text-black">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Labore eius in molestiae reprehenderit quos laudantium
-                    praesentium doloremque perferendis veritatis eos?
-                  </p>
-                </div>
-
-                <a href="#" className="read-more-btn-blue">
-                  Read More <i className="bi bi-arrow-right arrow-icon"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> */}
+       
       </section>
       {/* news and blogs section End */}
 
@@ -354,7 +268,7 @@ function Home() {
 
    
 
-      {/* last-cta-section End  */}
+    
       <Footer />
       
     </div>

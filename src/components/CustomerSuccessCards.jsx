@@ -1,118 +1,68 @@
 import React from "react";
 import "../css/Home.css";
-   
-const CustomerSuccessCards = ({ onReadMore, onReadMoretwo }) => (
+import { Link } from "react-router-dom";
+
+const CustomerSuccessCards = () => (
   <section className="Customer-success-stories-section">
     <div>
-      <p className="big-heading-text-black">Customer success stories</p>
+      <p className="big-heading-text-black">Customer Success Stories</p>
     </div>
     <div className="coustomer-success-container">
       <div className="innercoustomer-success-container-left">
         <div className="innercoustomer-heading-cont">
-          <p className="sub-heading-text-white">S4 Transition analysis  <br /><br /></p>
+          <p className="sub-heading-text-white">SAP Authorization <br /> Concept Owner</p>
           <p className="small-text-white">
-            A multinational material handling solutions company was preparing for their S4-upgrade project. They needed to plan ahead for the Fiori introduction as well as the authorization work in a setup where the aim was to perform a technical upgrade and only implement some new mandatory features.
+            Since 2019, we’ve managed SAP authorization for a leading steel manufacturer, streamlining user management and ensuring audit compliance. Our service optimized security and license usage effectively.
           </p>
         </div>
         <div>
-          <a href="#" className="read-more-btn" onClick={onReadMore}>
+          <Link to="/sap-authorisation-concept-owner" className="read-more-btn">
             Read More <i className="bi bi-arrow-right arrow-icon"></i>
-          </a>
+          </Link>
         </div>
       </div>
-
-
-      
-      <div className="innercoustomer-success-container-left">
-        <div className="innercoustomer-heading-cont">
-          <p className="sub-heading-text-white">Scandinavian Forest & Paper company</p>
-          <p className="small-text-white">
-            Customer began implementing SAP S/4 with a large international service integrator. An external audit identified basic SAP access management issues, raising top management concerns. s4access was hired to conduct a detailed review to assess the severity and propose actionable solutions.
-          </p>
-        </div>
-        <div>
-          <a href="#" className="read-more-btn" onClick={onReadMoretwo}>
-            Read More <i className="bi bi-arrow-right arrow-icon"></i>
-          </a>
-        </div>
-
-      </div>
-
-
-
 
       <div className="innercoustomer-success-container-left">
         <div className="innercoustomer-heading-cont">
-          <p className="sub-heading-text-white">Scandinavian Forest & Paper company</p>
+          <p className="sub-heading-text-white">S/4 Access <br /> Management Review</p>
           <p className="small-text-white">
-            Customer began implementing SAP S/4 with a large international service integrator. An external audit identified basic SAP access management issues, raising top management concerns. s4access was hired to conduct a detailed review to assess the severity and propose actionable solutions.
+            An external audit revealed critical SAP S/4 access issues for a client. s4access conducted a thorough review, delivering a prioritized roadmap to enhance governance and reduce risks.
           </p>
         </div>
         <div>
-          <a href="#" className="read-more-btn" onClick={onReadMoretwo}>
+          <Link to="/s4-access-management-review" className="read-more-btn">
             Read More <i className="bi bi-arrow-right arrow-icon"></i>
-          </a>
+          </Link>
         </div>
-
       </div>
-
 
       <div className="innercoustomer-success-container-left">
         <div className="innercoustomer-heading-cont">
-          <p className="sub-heading-text-white">Scandinavian Forest & Paper company</p>
+          <p className="sub-heading-text-white">S/4 Transition <br /> Analysis</p>
           <p className="small-text-white">
-            Customer began implementing SAP S/4 with a large international service integrator. An external audit identified basic SAP access management issues, raising top management concerns. s4access was hired to conduct a detailed review to assess the severity and propose actionable solutions.
+            For a material handling solutions company, we analyzed their SAP S/4 upgrade needs. Our work delivered a clear resource plan, preventing disruptions and optimizing the transition process.
           </p>
         </div>
         <div>
-          <a href="#" className="read-more-btn" onClick={onReadMoretwo}>
+          <Link to="/s4-transition-analysis" className="read-more-btn">
             Read More <i className="bi bi-arrow-right arrow-icon"></i>
-          </a>
+          </Link>
         </div>
-
       </div>
 
-
-      
-
-
-      {/* <div className="innercoustomer-success-container-right">
+      <div className="innercoustomer-success-container-left">
         <div className="innercoustomer-heading-cont">
-          <p className="sub-heading-text-white">Coming Soon...</p>
+          <p className="sub-heading-text-white">S/4 HANA/Fiori <br /> Transformation</p>
+          <p className="small-text-white">
+            We transformed SAP S/4 access and Fiori UX for a global home furnishing brand after a failed go-live. Our reengineered role design and GRC tools ensured a successful Fiori-first rollout.
+          </p>
         </div>
-        <div className="inner-scroll-container">
-          <div className="scroll-item">
-            <p className="text-white">Coming Soon...</p>
-            <a href="#" className="read-more-btn">
-              Read More <i className="bi bi-arrow-right arrow-icon"></i>
-            </a>
-          </div>
-          <div className="scroll-item">
-            <p className="text-white">Coming Soon...</p>
-            <a href="#" className="read-more-btn" >
-              Read More <i className="bi bi-arrow-right arrow-icon"></i>
-            </a>
-          </div>
-          <div className="scroll-item">
-            <p className="text-white">Coming Soon...</p>
-            <a href="#" className="read-more-btn">
-              Read More <i className="bi bi-arrow-right arrow-icon"></i>
-            </a>
-          </div>
-          <div className="scroll-item">
-            <p className="text-white">Coming Soon...</p>
-            <a href="#" className="read-more-btn">
-              Read More <i className="bi bi-arrow-right arrow-icon"></i>
-            </a>
-          </div>
-          <div className="scroll-item">
-            <p className="text-white">Coming Soon...</p>
-            <a href="#" className="read-more-btn">
-              Read More <i className="bi bi-arrow-right arrow-icon"></i>
-            </a>
-          </div>
+        <div>
+          <Link to="/s4-hana-fiori-transformation" className="read-more-btn">
+            Read More <i className="bi bi-arrow-right arrow-icon"></i>
+          </Link>
         </div>
-      </div> */}
+      </div>
     </div>
   </section>
 );

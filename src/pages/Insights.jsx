@@ -1,38 +1,22 @@
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import '../css/App.css';
+import '../css/Insights.css';
+import Blogs from '../components/Blog.jsx';
 
 function Insights() {
   return (
     <div>
-      <Header />
-       <section className="careers-hero-section">
-              <div className="careers-hero-left-content">
-                <p className="extra-big-heading-text-white">
-                  Welcome message
-      
-                </p>
-                <p className="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      
-                </p>
-      
-      
-                 <a href="/" className="main-button-blue">
-                <span>EXPLORE ALL ROLES CTA </span>
-                <span>
-                  <i className="bi bi-arrow-up"></i>
-                </span>
-              </a>
-                </div>
-      
-      
-      
-                 <div className="careers-hero-right-content">
-               
-                </div>
-      
-            </section>
+       <Header backgroundColor="#000000ff" />
+       <section className="insights-hero-section">
+
+<p className="big-heading-text-black" style={{ marginBottom:"40px"
+}}> Blogs</p>
+        
+       <Blogs />
+       </section>
+
+
+
       <Footer />
     </div>
   );

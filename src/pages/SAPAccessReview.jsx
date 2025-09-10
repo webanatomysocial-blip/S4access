@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
+import case1img from "../assets/images/About-img/Top-banner-img.jpg"
+
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
 import {
@@ -248,50 +250,42 @@ export default function SAPAccessReview() {
         </div>
       </section> */}
 
-      <section className="strength-showcase" id="strength-show">
-        <div className="strength-left">
-          <h2 className="big-heading-text-white">Case Studies</h2>
-          <p className="text-white">
-            Explore how organizations improved compliance, strengthened security, and
-            reduced risks with SAP Access Management Reviews. These studies showcase
-            real-world results, best practices, and measurable business impact.
-          </p>
+       <section className="strength-showcase">
+    <div className="strength-left">
+      <h2 className="big-heading-text-white">Case Studies</h2>
+      <p className="text-white">
+        Learn how our S/4 Access Management Review identified critical issues and provided a clear roadmap to strengthen SAP access controls for a client.
+      </p>
+    </div>
+
+    {/* Case Study 1 - Project Detail */}
+    <div className="strength-right">
+      <div className="stats-card">
+        <h3 className="sub-heading-text-black">SAP S/4 Implementation</h3>
+        <h4 className="text-black">Comprehensive Access Review</h4>
+        <p className="text-black">
+          Assessed governance, processes, and technical configuration using the s4access SAP Access Analytics Platform to identify critical issues.
+        </p>
+        <div className="image-container-showcase">
+          <img src={case1img} alt="case study" />
         </div>
+      </div>
+    </div>
 
-        {/* Case Study 1 - Testimonial */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <p className="small-text-black">⭐ 4.8 (Rating)</p>
-            <p className="text-black">
-              The SAP Access Management review identified critical risks and gave us a
-              clear roadmap to strengthen controls without slowing down operations.
-            </p>
-            <h3 className="sub-heading-text-black">Mark R.</h3>
-            <p className="text-black">CIO, FinCore Solutions</p>
-
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="testimonial" /> */}
-            </div>
-          </div>
+    {/* Case Study 2 - Business Outcome */}
+    <div className="strength-right">
+      <div className="stats-card">
+        <h3 className="sub-heading-text-black">SAP S/4 Implementation</h3>
+        <h4 className="text-black">Reduced Compliance Risks</h4>
+        <p className="text-black">
+          Delivered a prioritized roadmap aligning with audit requirements, enhancing access management security and compliance.
+        </p>
+        <div className="image-container-showcase">
+          <img src={case1img} alt="case study" />
         </div>
-
-        {/* Case Study 2 - Business Outcome */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <h3 className="sub-heading-text-black">Global Retailer</h3>
-            <h4 className="text-black">40% reduction in access risks</h4>
-            <p className="text-black">
-              Role redesign and SoD (Segregation of Duties) checks helped the client
-              cut down access violations while improving user productivity.
-            </p>
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="case study" /> */}
-            </div>
-          </div>
-        </div>
-
-
-      </section>
+      </div>
+    </div>
+  </section>
 
       <section className="strength-bottom">
         <div className="stat-card">
