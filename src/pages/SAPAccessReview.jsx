@@ -2,7 +2,9 @@ import React from "react";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
-import case1img from "../assets/images/About-img/Top-banner-img.jpg"
+import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
+import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
+import banner from "../assets/images/inner-services-images/SAP-Access-managment-review-banner.jpg";
 
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
@@ -17,27 +19,46 @@ import {
   FaCogs,
   FaShieldAlt,
 } from "react-icons/fa";
-import image from "../assets/images/About-img/Access.png";
+
 
 export default function SAPAccessReview() {
 
 
 
-  const faqs = [
+const faqs = [
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 1 goes here. You can customize this content for each page.'
+      question: 'What is included in your SAP Access Management service?',
+      answer: 'Our SAP Access Management service includes user provisioning and de-provisioning, role design and optimization, Segregation of Duties (SoD) conflict management, access risk analysis, periodic access reviews, and integration with Identity Access Management (IAM) systems to ensure efficient and secure access control.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 2 goes here. You can customize this content for each page.'
+      question: 'How does your SAP Access Management service improve security?',
+      answer: 'We perform continuous risk evaluations and analyze over 50 million access risk values annually to identify and remediate vulnerabilities. Our proactive approach ensures that users have the right access levels, reducing the risk of unauthorized transactions and data breaches.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 3 goes here. You can customize this content for each page.'
+      question: 'What industries do you serve with your SAP Access Management service?',
+      answer: 'We serve a wide range of industries including manufacturing, finance, healthcare, retail, energy, and public sector organizations, helping them manage complex SAP landscapes while maintaining compliance and security standards.'
+    },
+    {
+      question: 'How do you manage Segregation of Duties (SoD) conflicts in SAP Access?',
+      answer: 'Our service includes automated SoD conflict detection using industry best practices and predefined rule sets. We evaluate and resolve potential conflicts during role design and periodic risk evaluations, ensuring compliance with regulations like SOX and GDPR.'
+    },
+    {
+      question: 'Can you support SAP Access Management for global organizations?',
+      answer: 'Yes. With a diverse team representing 5 nationalities and extensive experience managing multi-country SAP environments, we provide scalable and flexible Access Management solutions that address local compliance requirements and global security strategies.'
+    },
+    {
+      question: 'How frequently should SAP Access be reviewed, and is this part of the service?',
+      answer: 'We recommend regular access reviews—typically quarterly or biannually—and include periodic user access reviews as part of our service. This ensures that outdated or excessive access is removed in a timely manner, maintaining security and compliance.'
+    },
+    {
+      question: 'Do you provide role design and optimization as part of the service?',
+      answer: 'Absolutely. Our service includes designing and optimizing SAP roles to align with business needs and reduce access risk, leveraging best practices to simplify role structures, reduce SoD conflicts, and improve overall system performance.'
+    },
+    {
+      question: 'How do you ensure compliance through your SAP Access Management service?',
+      answer: 'We provide ongoing risk monitoring, detailed access reports, automated SoD conflict detection, and periodic audits. Our service helps companies meet regulatory standards such as SOX, GDPR, HIPAA, and industry-specific compliance requirements by enforcing secure access controls.'
     }
   ];
-
 
 
 
@@ -50,15 +71,15 @@ export default function SAPAccessReview() {
       <section className="service-container-1">
         <div className="service-left">
           <h2 className="extra-big-heading-text-white">
-            SAP Access Management review
+            SAP Access <br /> Management review
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
+          We provide a clear review of your SAP access setup, identifying risks, compliance gaps, and improvement areas to strengthen security and ensure smooth operations.
           </p>
         </div>
         <div className="service-right only-windows">
           <div className="service-image">
-            <img src={image} alt="cloud compliance" />
+            <img src={banner} alt="cloud compliance" />
           </div>
         </div>
       </section>
@@ -281,7 +302,7 @@ export default function SAPAccessReview() {
           Delivered a prioritized roadmap aligning with audit requirements, enhancing access management security and compliance.
         </p>
         <div className="image-container-showcase">
-          <img src={case1img} alt="case study" />
+          <img src={case2img} alt="case study" />
         </div>
       </div>
     </div>
@@ -345,7 +366,7 @@ export default function SAPAccessReview() {
               {/* <Link to="/customer-success" className="border-button">
                 Case Studies
               </Link> */}
-              <a className="border-button" href="#strength-show">Case Studies</a>
+              <a className="border-button" href="/customer-success">Case Studies</a>
             </div>
           </div>
         </div>

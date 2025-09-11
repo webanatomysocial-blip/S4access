@@ -36,6 +36,9 @@
 
 
 /* our-Service-Section start */
+.service-page-services-section{
+    padding: 100px 50px;
+}
 .our-Service-Section {
     padding: 100px 50px;
     background-color: white;
@@ -109,7 +112,7 @@
 .partners-section {
     background: #F4F4F4;
     padding: 100px 50px;
-    margin: 100px 0px;
+    /* margin: 0px 0px 100px 0px; */
 }
 
 .partners-container {

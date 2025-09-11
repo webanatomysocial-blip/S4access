@@ -6,27 +6,41 @@ import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
 import { FaSearch, FaShieldAlt, FaUsers, FaCheckCircle } from "react-icons/fa";
 
-import image from "../assets/images/About-img/Access.png";
+import image from "../assets/images/inner-services-images/reorganisation-ma-projects-banner.jpg";
+import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
+import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
+
 
 export default function SAPAccessSecurityConsulting() {
 
 
 
-  const faqs = [
+const faqs = [
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 1 goes here. You can customize this content for each page.'
+      question: 'Why is SAP Access management critical during M&A or reorganisations?',
+      answer: 'During M&A or reorganisations, there are major changes in business structure, processes, and systems, which often lead to access redundancies, SoD conflicts, and security risks. Proper access management ensures seamless integration, prevents compliance gaps, and protects sensitive data.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 2 goes here. You can customize this content for each page.'
+      question: 'How do you handle SAP Access during mergers and acquisitions?',
+      answer: 'We conduct a detailed assessment of both companies’ SAP environments, analyze existing roles and access, identify overlaps and conflicts, and implement a consolidated access strategy. This includes harmonizing roles, resolving SoD conflicts, and integrating identity management systems while maintaining operational continuity.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 3 goes here. You can customize this content for each page.'
+      question: 'What is your approach to managing SAP Access in reorganisations or process changes?',
+      answer: 'Our approach includes analyzing current access assignments against the reorganised business processes, identifying outdated or excessive roles, redesigning roles as needed, and aligning user access with new process flows, ensuring compliance and minimizing disruption.'
+    },
+    {
+      question: 'How do you ensure compliance during these business changes?',
+      answer: 'We apply automated risk analysis to identify and resolve SoD conflicts and excessive access before go-live. We ensure that the reorganised or merged SAP landscape meets regulatory standards such as SOX, GDPR, and industry-specific compliance by providing audit-ready documentation and clear risk mitigation.'
+    },
+    {
+      question: 'Can you help simplify the role structure after a merger or reorganisation?',
+      answer: 'Yes, as part of the service, we consolidate and rationalize the role landscape by removing redundant roles, harmonizing role definitions, and applying role templates. This reduces complexity, simplifies future maintenance, and lowers the risk of uncontrolled access growth.'
+    },
+    {
+      question: 'What challenges do you solve in SAP Access during M&A projects?',
+      answer: 'We address key challenges such as conflicting SoD requirements, duplicated user roles, inconsistent access policies, and lack of visibility into combined user access. Our solution ensures a secure, compliant, and efficient transition of SAP access environments.'
     }
   ];
-
 
 
 
@@ -42,7 +56,7 @@ export default function SAPAccessSecurityConsulting() {
             Reorganisation/ Process changes / M&A
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
+            We support access management through organisational shifts, process changes, and mergers & acquisitions, ensuring compliance and security remain intact during transitions.
           </p>
         </div>
         <div className="service-right only-windows">
@@ -149,106 +163,27 @@ export default function SAPAccessSecurityConsulting() {
 
 
 
-      {/* <section className="service-cards-container">
-        <h2 className="big-heading-text-black">Lorem ipsum dolor </h2>
-        <div className="our-service-cards">
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUserPlus className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
 
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaClock className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
 
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaChartLine className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaMoneyBillWave className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaFileAlt className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit cumque earum. Voluptatum, cumque! Autem?
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUsers className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum dolor.</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus vitae eos non recusandae inventore culpa.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
+      {/* Case Studies / Strength Showcase */}
       <section className="strength-showcase">
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">
-            Explore how organizations improved compliance, strengthened security, and
-            reduced risks with SAP Access Management Reviews. These studies showcase
-            real-world results, best practices, and measurable business impact.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
           </p>
         </div>
 
-        {/* Case Study 1 - Testimonial */}
+        {/* Case Study 1 - Project Detail */}
         <div className="strength-right">
           <div className="stats-card">
-            <p className="small-text-black">⭐ 4.8 (Rating)</p>
+            <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+            <h4 className="text-black">Lorem, ipsum dolor.</h4>
             <p className="text-black">
-              The SAP Access Management review identified critical risks and gave us a
-              clear roadmap to strengthen controls without slowing down operations.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
             </p>
-            <h3 className="sub-heading-text-black">Mark R.</h3>
-            <p className="text-black">CIO, FinCore Solutions</p>
-
             <div className="image-container-showcase">
-              {/* <img src={image} alt="testimonial" /> */}
+              <img src={case1img} alt="case study" />
             </div>
           </div>
         </div>
@@ -256,19 +191,16 @@ export default function SAPAccessSecurityConsulting() {
         {/* Case Study 2 - Business Outcome */}
         <div className="strength-right">
           <div className="stats-card">
-            <h3 className="sub-heading-text-black">Global Retailer</h3>
-            <h4 className="text-black">40% reduction in access risks</h4>
+            <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+            <h4 className="text-black">Lorem, ipsum dolor.</h4>
             <p className="text-black">
-              Role redesign and SoD (Segregation of Duties) checks helped the client
-              cut down access violations while improving user productivity.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
             </p>
             <div className="image-container-showcase">
-              {/* <img src={image} alt="case study" /> */}
+              <img src={case2img} alt="case study" />
             </div>
           </div>
         </div>
-
-
       </section>
 
       <section className="strength-bottom">

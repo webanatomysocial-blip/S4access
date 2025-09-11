@@ -5,29 +5,42 @@ import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
-import image from "../assets/images/About-img/Access.png";
-import { FaCheckCircle, FaDatabase, FaUserCheck, FaShieldAlt } from "react-icons/fa"
+import image from "../assets/images/inner-services-images/ff-log-review-automation-banner.jpg";
+import { FaCheckCircle, FaDatabase, FaUserCheck, FaShieldAlt } from "react-icons/fa";
+import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
+import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
 
 
 export default function SAPSoDApproach() {
 
 
 
-  const faqs = [
+ const faqs = [
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 1 goes here. You can customize this content for each page.'
+      question: 'Why is automating FF Log Review important?',
+      answer: 'Manual FF log reviews are time-consuming, error-prone, and may miss critical compliance gaps. Automation ensures faster, more consistent log analysis, highlights suspicious activities immediately, reduces human error, and helps maintain compliance with regulations like SOX and GDPR.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 2 goes here. You can customize this content for each page.'
+      question: 'What does your FF Log Review Automation service include?',
+      answer: 'Our service automates the collection, correlation, and analysis of FF log entries. It includes predefined rule sets to detect risk patterns, automatic generation of review reports, notification of anomalies, and integration with compliance workflows for efficient and timely remediation.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 3 goes here. You can customize this content for each page.'
+      question: 'How does FF Log Review Automation improve compliance?',
+      answer: 'Automated reviews provide consistent and complete oversight of all firefighter sessions. Detailed audit trails and exception reports are generated automatically, helping organizations prove compliance during audits and ensuring any misuse of privileged access is quickly identified and resolved.'
+    },
+    {
+      question: 'Can the FF Log Review be customized to specific business needs?',
+      answer: 'Yes, we tailor the automation rules and thresholds based on your company’s risk tolerance, regulatory requirements, and industry-specific practices, ensuring that the FF log review aligns with your internal policies and audit expectations.'
+    },
+    {
+      question: 'How frequently are FF logs reviewed with automation?',
+      answer: 'Automation enables continuous, real-time or daily log reviews, depending on your business needs and risk appetite. This ensures that any unauthorized or suspicious activities are detected immediately rather than waiting for periodic manual audits.'
+    },
+    {
+      question: 'What industries benefit most from FF Log Review Automation?',
+      answer: 'Industries with high compliance demands—such as banking, healthcare, pharmaceuticals, and energy—benefit greatly, as they face strict regulatory frameworks and require near real-time monitoring of privileged access to maintain security and audit readiness.'
     }
   ];
-
 
 
 
@@ -43,7 +56,7 @@ export default function SAPSoDApproach() {
             FF Log Review Automation
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
+            We automate Firefighter (FF) log reviews to improve accuracy, reduce manual workload, and ensure faster, compliant audit reporting.
           </p>
         </div>
         <div className="service-right">
@@ -170,127 +183,45 @@ export default function SAPSoDApproach() {
 
 
 
-      {/* <section className="service-cards-container">
-        <h2 className="big-heading-text-black">Lorem ipsum dolor </h2>
-        <div className="our-service-cards">
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUserPlus className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaClock className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaChartLine className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaMoneyBillWave className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaFileAlt className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit cumque earum. Voluptatum, cumque! Autem?
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUsers className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum dolor.</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus vitae eos non recusandae inventore culpa.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
 
       <section className="strength-showcase">
-        <div className="strength-left">
-          <h2 className="big-heading-text-white">Case Studies</h2>
-          <p className="text-white">
-            Explore how organizations improved compliance, strengthened security, and
-            reduced risks with SAP Access Management Reviews. These studies showcase
-            real-world results, best practices, and measurable business impact.
-          </p>
-        </div>
-
-        {/* Case Study 1 - Testimonial */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <p className="small-text-black">⭐ 4.8 (Rating)</p>
-            <p className="text-black">
-              The SAP Access Management review identified critical risks and gave us a
-              clear roadmap to strengthen controls without slowing down operations.
-            </p>
-            <h3 className="sub-heading-text-black">Mark R.</h3>
-            <p className="text-black">CIO, FinCore Solutions</p>
-
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="testimonial" /> */}
-            </div>
-          </div>
-        </div>
-
-        {/* Case Study 2 - Business Outcome */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <h3 className="sub-heading-text-black">Global Retailer</h3>
-            <h4 className="text-black">40% reduction in access risks</h4>
-            <p className="text-black">
-              Role redesign and SoD (Segregation of Duties) checks helped the client
-              cut down access violations while improving user productivity.
-            </p>
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="case study" /> */}
-            </div>
-          </div>
-        </div>
-
-
-      </section>
+              <div className="strength-left">
+                <h2 className="big-heading-text-white">Case Studies</h2>
+                <p className="text-white">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
+                </p>
+              </div>
+      
+              {/* Case Study 1 - Project Detail */}
+              <div className="strength-right">
+                <div className="stats-card">
+                  <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+                  <h4 className="text-black">Lorem, ipsum dolor.</h4>
+                  <p className="text-black">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
+                  </p>
+                  <div className="image-container-showcase">
+                    <img src={case1img} alt="case study" />
+                  </div>
+                </div>
+              </div>
+      
+              {/* Case Study 2 - Business Outcome */}
+              <div className="strength-right">
+                <div className="stats-card">
+                  <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+                  <h4 className="text-black">Lorem, ipsum dolor.</h4>
+                  <p className="text-black">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
+                  </p>
+                  <div className="image-container-showcase">
+                    <img src={case2img} alt="case study" />
+                  </div>
+                </div>
+              </div>
+            </section>
+      
 
       <section className="strength-bottom">
         <div className="stat-card">

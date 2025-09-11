@@ -3,37 +3,32 @@ import Footer from '../components/Footer.jsx';
 import '../css/App.css';
 import CustomerSuccessCards from "../components/CustomerSuccessCards.jsx";
 // import React, { useState } from "react";
-// import banner1 from '../assets/images/home-img/home-bgimg.jpg';
+import banner1 from '../assets/images/home-img/Success-top-img.jpg';
 
 
 function CustomerSuccess() {
-    // Popup handlers
-  
+  // Popup handlers
+
   return (
     <div>
       <Header />
       <section className="customer-hero-section">
         <div className="customer-hero-left-content">
           <p className="extra-big-heading-text-white">
-            Welcome message
+            Our Approach
+
           </p>
           <p className="text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
+            We focus on long-term partnerships with our customers, ensuring SAP security through expertise, consistency, and trust. From the start, we make onboarding simple and build lasting value—not quick wins. That’s why our customers stay with us. If you’re not yet a customer, we’d be glad to discuss a partnership with you.
           </p>
 
 
-          <a href="/" className="main-button-blue">
-            <span>EXPLORE ALL ROLES CTA </span>
-            <span>
-              <i className="bi bi-arrow-up"></i>
-            </span>
-          </a>
         </div>
 
 
 
-        <div className="careers-hero-right-content only-windows">
+        <div className="careers-hero-right-content">
+          <img src={banner1} alt="" srcset="" />
 
         </div>
 

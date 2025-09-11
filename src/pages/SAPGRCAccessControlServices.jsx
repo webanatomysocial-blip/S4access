@@ -5,28 +5,40 @@ import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
 import { FaProjectDiagram, FaNetworkWired, FaUserShield, FaUsersCog, FaCogs } from "react-icons/fa";
-import image from "../assets/images/About-img/Access.png";
+import image from "../assets/images/inner-services-images/security-architect-banner.jpg";
+import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
+import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
 
 export default function SAPGRCAccessControlServices() {
 
 
 
-  const faqs = [
+const faqs = [
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 1 goes here. You can customize this content for each page.'
+      question: 'Why is there a growing demand for SAP Security Architects?',
+      answer: 'As SAP systems grow more complex and integrate tightly with other IT systems, ad hoc role design and fragmented security practices often result in inefficiencies and security risks. Organizations need strategic, future-proof security architectures to manage risks, improve compliance, and optimize performance.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 2 goes here. You can customize this content for each page.'
+      question: 'What challenges do organizations face without a dedicated SAP Security Architect?',
+      answer: 'Without a dedicated Security Architect, companies face uncoordinated role growth, uncontrolled SoD conflicts, inconsistent compliance controls, high complexity in access management, and poor alignment between business requirements and security practices.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 3 goes here. You can customize this content for each page.'
+      question: 'What does your SAP Security Architect service provide?',
+      answer: 'We deliver end-to-end design and governance of SAP security architecture, including role design strategy, SoD framework development, risk-based role modeling, integration with identity and access management (IAM) systems, compliance alignment, and future-proof design recommendations.'
+    },
+    {
+      question: 'How does an SAP Security Architect help ensure compliance?',
+      answer: 'The Security Architect establishes a structured, risk-based approach to role design and SoD management, ensuring that access assignments follow regulatory frameworks like SOX, GDPR, and industry-specific mandates. They provide strategic guidance for access reviews, audit readiness, and continuous risk mitigation.'
+    },
+    {
+      question: 'Why is it hard for companies to fill the SAP Security Architect role internally?',
+      answer: 'There is a global shortage of experienced SAP security professionals. The role requires a unique combination of deep SAP technical knowledge, risk management expertise, and strategic business alignment capabilities, making recruitment and retention highly challenging.'
+    },
+    {
+      question: 'Can your SAP Security Architect service be adapted for specific industries or business models?',
+      answer: 'Absolutely. We customize the architecture strategy based on industry-specific compliance needs, business processes, system complexity, and organizational structure, ensuring the solution is fully aligned with your unique goals and risk profile.'
     }
   ];
-
-
 
 
 
@@ -41,8 +53,7 @@ export default function SAPGRCAccessControlServices() {
             Security Architect
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
-          </p>
+            We provide expert Security Architecture services, designing robust SAP security frameworks that safeguard systems, reduce risks, and support long-term business goals.          </p>
         </div>
         <div className="service-right only-windows">
           <div className="service-image">
@@ -136,127 +147,44 @@ export default function SAPGRCAccessControlServices() {
       </section>
 
 
-      {/* <section className="service-cards-container">
-        <h2 className="big-heading-text-black">Lorem ipsum dolor </h2>
-        <div className="our-service-cards">
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUserPlus className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaClock className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaChartLine className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaMoneyBillWave className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaFileAlt className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit cumque earum. Voluptatum, cumque! Autem?
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUsers className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum dolor.</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus vitae eos non recusandae inventore culpa.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section className="strength-showcase">
-        <div className="strength-left">
-          <h2 className="big-heading-text-white">Case Studies</h2>
-          <p className="text-white">
-            Explore how organizations improved compliance, strengthened security, and
-            reduced risks with SAP Access Management Reviews. These studies showcase
-            real-world results, best practices, and measurable business impact.
-          </p>
-        </div>
-
-        {/* Case Study 1 - Testimonial */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <p className="small-text-black">⭐ 4.8 (Rating)</p>
-            <p className="text-black">
-              The SAP Access Management review identified critical risks and gave us a
-              clear roadmap to strengthen controls without slowing down operations.
-            </p>
-            <h3 className="sub-heading-text-black">Mark R.</h3>
-            <p className="text-black">CIO, FinCore Solutions</p>
-
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="testimonial" /> */}
-            </div>
-          </div>
-        </div>
-
-        {/* Case Study 2 - Business Outcome */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <h3 className="sub-heading-text-black">Global Retailer</h3>
-            <h4 className="text-black">40% reduction in access risks</h4>
-            <p className="text-black">
-              Role redesign and SoD (Segregation of Duties) checks helped the client
-              cut down access violations while improving user productivity.
-            </p>
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="case study" /> */}
-            </div>
-          </div>
-        </div>
-
-
-      </section>
+     
+     {/* Case Studies / Strength Showcase */}
+           <section className="strength-showcase">
+             <div className="strength-left">
+               <h2 className="big-heading-text-white">Case Studies</h2>
+               <p className="text-white">
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
+               </p>
+             </div>
+     
+             {/* Case Study 1 - Project Detail */}
+             <div className="strength-right">
+               <div className="stats-card">
+                 <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+                 <h4 className="text-black">Lorem, ipsum dolor.</h4>
+                 <p className="text-black">
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
+                 </p>
+                 <div className="image-container-showcase">
+                   <img src={case1img} alt="case study" />
+                 </div>
+               </div>
+             </div>
+     
+             {/* Case Study 2 - Business Outcome */}
+             <div className="strength-right">
+               <div className="stats-card">
+                 <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+                 <h4 className="text-black">Lorem, ipsum dolor.</h4>
+                 <p className="text-black">
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
+                 </p>
+                 <div className="image-container-showcase">
+                   <img src={case2img} alt="case study" />
+                 </div>
+               </div>
+             </div>
+           </section>
 
       <section className="strength-bottom">
         <div className="stat-card">

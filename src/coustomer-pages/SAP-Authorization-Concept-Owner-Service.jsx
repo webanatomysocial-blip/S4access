@@ -1,10 +1,13 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import img22 from '../assets/images/About-img/Top-banner-img22.jpg';
+// import img22 from '../assets/images/About-img/Top-banner-img22.jpg';
 import { Link } from 'react-router-dom';
 import "../css/Coustomer.css";
 import { FaCheckCircle } from 'react-icons/fa';
+import img10 from "../assets/images/success-images/10.jpg";
+import img11 from "../assets/images/success-images/11.jpg";
+
 
 const SAPAuthorizationConceptOwner = () => {
   return (
@@ -19,7 +22,7 @@ const SAPAuthorizationConceptOwner = () => {
           </p>
         </div>
         <div className="Coustomer-success-page-hero-container-right">
-          <img src={img22} alt="SAP Success" />
+          <img src={img11} alt="SAP Success" />
         </div>
       </section>
 
@@ -47,7 +50,7 @@ const SAPAuthorizationConceptOwner = () => {
 
 
         <div className="Coustomer-success-page-card-right">
-          <img src={img22} alt="SAP Success" />
+          <img src={img10} alt="SAP Success" />
 
         </div>
 

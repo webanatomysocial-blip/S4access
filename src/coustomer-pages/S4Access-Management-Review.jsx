@@ -1,9 +1,14 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import img22 from '../assets/images/About-img/Top-banner-img22.jpg';
+// import img22 from '../assets/images/About-img/Top-banner-img22.jpg';
 import { Link } from 'react-router-dom';
 import "../css/Coustomer.css";
+import img7 from "../assets/images/success-images/7.jpg";
+import img8 from "../assets/images/success-images/8.jpg";
+import img9 from "../assets/images/success-images/9.jpg";
+
+
 
 const S4AccessManagementReview = () => {
     return (
@@ -18,7 +23,7 @@ const S4AccessManagementReview = () => {
                     </p>
                 </div>
                 <div className="Coustomer-success-page-hero-container-right">
-                    <img src={img22} alt="S/4 Access Management" />
+                    <img src={img7} alt="S/4 Access Management" />
                 </div>
             </section>
 
@@ -30,7 +35,7 @@ const S4AccessManagementReview = () => {
                     </p>
                 </div>
                 <div className="Coustomer-success-page-card-right">
-                    <img src={img22} alt="S/4 Access Management" />
+                    <img src={img8} alt="S/4 Access Management" />
                 </div>
             </section>
 
@@ -38,7 +43,7 @@ const S4AccessManagementReview = () => {
 
 
                 <div className="Coustomer-success-inner-achievements-right">
-                    <img src={img22} alt="S/4 Access Management" />
+                    <img src={img9} alt="S/4 Access Management" />
                 </div>
 
 

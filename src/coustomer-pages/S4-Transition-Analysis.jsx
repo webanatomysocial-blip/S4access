@@ -1,9 +1,14 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import img22 from '../assets/images/About-img/Top-banner-img22.jpg';
+// import img22 from '../assets/images/About-img/Top-banner-img22.jpg';
 import { Link } from 'react-router-dom';
 import "../css/Coustomer.css";
+import img4 from "../assets/images/success-images/4.jpg"
+import img5 from "../assets/images/success-images/5.jpg"
+import img6 from "../assets/images/success-images/6.jpg"
+
+
 
 const S4TransitionAnalysis = () => {
     return (
@@ -18,7 +23,7 @@ const S4TransitionAnalysis = () => {
                     </p>
                 </div>
                 <div className="Coustomer-success-page-hero-container-right">
-                    <img src={img22} alt="S/4 Transition Analysis" />
+                    <img src={img4} alt="S/4 Transition Analysis" />
                 </div>
             </section>
 
@@ -30,13 +35,13 @@ const S4TransitionAnalysis = () => {
                     </p>
                 </div>
                 <div className="Coustomer-success-page-card-right">
-                    <img src={img22} alt="S/4 Transition Analysis" />
+                    <img src={img5} alt="S/4 Transition Analysis" />
                 </div>
             </section>
 
             <section className="Coustomer-success-page-Achievements-section-diff-content">
                 <div className="Coustomer-success-inner-achievements-right">
-                    <img src={img22} alt="S/4 Transition Analysis" />
+                    <img src={img6} alt="S/4 Transition Analysis" />
                 </div>
                 <div className="Coustomer-success-inner-achievements-left">
                     <h2 className="big-heading-text-black">Achievements & Benefits</h2>

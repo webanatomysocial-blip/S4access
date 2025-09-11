@@ -5,29 +5,42 @@ import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
-import image from "../assets/images/About-img/Access.png";
+import banner from "../assets/images/inner-services-images/sap-access-management-automation-banner.jpg";
 import { FaCogs, FaUserTie, FaShieldAlt, FaChartLine } from "react-icons/fa";
+import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
+import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
 
 
 export default function SAPaccess() {
 
 
 
-  const faqs = [
+const faqs = [
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 1 goes here. You can customize this content for each page.'
+      question: 'What are the key benefits of automating SAP Access Management?',
+      answer: 'Automation accelerates access provisioning and de-provisioning, reduces human errors, improves compliance with regulatory requirements, ensures timely access changes, increases process efficiency, and enhances visibility into access controls.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 2 goes here. You can customize this content for each page.'
+      question: 'Which processes do you automate in SAP Access Management?',
+      answer: 'We automate critical processes such as user onboarding/offboarding, role assignment and adjustment, automated SoD conflict detection, access risk analysis, periodic access reviews, and audit reporting to ensure faster and more secure access management.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 3 goes here. You can customize this content for each page.'
+      question: 'How does automation help with compliance in SAP environments?',
+      answer: 'Automated workflows ensure consistent enforcement of access policies, real-time SoD conflict checks, and automatic generation of audit trails and compliance reports. This enables faster audit readiness and reduces the risk of non-compliance penalties.'
+    },
+    {
+      question: 'Is your SAP Access Automation solution customizable?',
+      answer: 'Yes, our automation solution is fully customizable to reflect each organization’s business rules, risk appetite, SoD policies, and integration needs with other Identity Access Management (IAM) systems, ensuring the right level of control for every unique SAP landscape.'
+    },
+    {
+      question: 'How does automation improve the speed of user provisioning?',
+      answer: 'Automated workflows enable immediate role assignments based on predefined rules and approvals, reducing the time it takes from user request to access being provisioned—often from days or weeks down to hours or minutes.'
+    },
+    {
+      question: 'Can automation help with periodic access reviews?',
+      answer: 'Absolutely. Automation enables scheduled and systematic user access reviews, sending reminders to managers, automatically highlighting anomalies, and providing structured reports to speed up the review process while ensuring nothing is missed.'
     }
   ];
-
 
 
 
@@ -40,15 +53,15 @@ export default function SAPaccess() {
       <section className="service-container-1">
         <div className="service-left">
           <h2 className="extra-big-heading-text-white">
-            SAP Access Management Automation
+            SAP Access <br /> Management Automation
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
+            We simplify and accelerate access processes with automation, reducing manual effort, minimizing errors, and ensuring compliance with greater efficiency.
           </p>
         </div>
         <div className="service-right only-windows">
           <div className="service-image">
-            <img src={image} alt="cloud compliance" />
+            <img src={banner} alt="cloud compliance" />
           </div>
         </div>
       </section>
@@ -141,127 +154,45 @@ export default function SAPaccess() {
 
 
 
-      {/* <section className="service-cards-container">
-        <h2 className="big-heading-text-black">Lorem ipsum dolor </h2>
-        <div className="our-service-cards">
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUserPlus className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaClock className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaChartLine className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaMoneyBillWave className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaFileAlt className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit cumque earum. Voluptatum, cumque! Autem?
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUsers className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum dolor.</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus vitae eos non recusandae inventore culpa.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
+    
 
       <section className="strength-showcase">
-        <div className="strength-left">
-          <h2 className="big-heading-text-white">Case Studies</h2>
-          <p className="text-white">
-            Explore how organizations improved compliance, strengthened security, and
-            reduced risks with SAP Access Management Reviews. These studies showcase
-            real-world results, best practices, and measurable business impact.
-          </p>
-        </div>
-
-        {/* Case Study 1 - Testimonial */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <p className="small-text-black">⭐ 4.8 (Rating)</p>
-            <p className="text-black">
-              The SAP Access Management review identified critical risks and gave us a
-              clear roadmap to strengthen controls without slowing down operations.
-            </p>
-            <h3 className="sub-heading-text-black">Mark R.</h3>
-            <p className="text-black">CIO, FinCore Solutions</p>
-
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="testimonial" /> */}
-            </div>
-          </div>
-        </div>
-
-        {/* Case Study 2 - Business Outcome */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <h3 className="sub-heading-text-black">Global Retailer</h3>
-            <h4 className="text-black">40% reduction in access risks</h4>
-            <p className="text-black">
-              Role redesign and SoD (Segregation of Duties) checks helped the client
-              cut down access violations while improving user productivity.
-            </p>
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="case study" /> */}
-            </div>
-          </div>
-        </div>
-
-
-      </section>
+                <div className="strength-left">
+                  <h2 className="big-heading-text-white">Case Studies</h2>
+                  <p className="text-white">
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
+                  </p>
+                </div>
+            
+                {/* Case Study 1 - Project Detail */}
+                <div className="strength-right">
+                  <div className="stats-card">
+                    <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+                    <h4 className="text-black">Lorem, ipsum dolor.</h4>
+                    <p className="text-black">
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio 
+                    </p>
+                    <div className="image-container-showcase">
+                      <img src={case1img} alt="case study" />
+                    </div>
+                  </div>
+                </div>
+            
+                {/* Case Study 2 - Business Outcome */}
+                <div className="strength-right">
+                  <div className="stats-card">
+                    <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+                    <h4 className="text-black">Lorem, ipsum dolor.</h4>
+                    <p className="text-black">
+                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio 
+                    </p>
+                    <div className="image-container-showcase">
+                      <img src={case2img} alt="case study" />
+                    </div>
+                  </div>
+                </div>
+              </section>
+      
 
       <section className="strength-bottom">
         <div className="stat-card">

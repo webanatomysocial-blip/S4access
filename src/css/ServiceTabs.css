@@ -42,16 +42,16 @@ background-color: #40ffc9 ;
 
 .tab:hover{
   cursor: pointer;
-  background-color: #003377;
-  color: #40ffc9;
+  background-color: #2E3841;
+  color: #ffffff;
 }
 .tab.active {
-  background-color: #003377;
-  color: #40ffc9;
+   background-color: #2E3841;
+  color: #ffffff;
 }
 .service-item{
   border: 1px solid white;
-  background-color: #ffffff;
+  background-color: #F4F4F4;
   padding: 20px;
   display: flex;
   flex-direction: column;

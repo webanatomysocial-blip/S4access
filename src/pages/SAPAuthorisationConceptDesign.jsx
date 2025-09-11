@@ -4,24 +4,42 @@ import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
-import image from "../assets/images/About-img/Access.png";
+import image from "../assets/images/inner-services-images/sod-role-redesign-banner.jpg";
+import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
+import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
 
 export default function SAPAuthorisationConceptDesign() {
 
-  const faqs = [
+const faqs = [
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 1 goes here. You can customize this content for each page.'
+      question: 'Why is SoD/Role Redesign important?',
+      answer: 'Over time, roles can accumulate excessive access due to business changes, outdated designs, or manual modifications, increasing risk and complexity. SoD/Role Redesign ensures that roles are aligned with current business processes, minimizes risk of conflicting access, and improves system performance and auditability.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 2 goes here. You can customize this content for each page.'
+      question: 'What does your SoD/Role Redesign service include?',
+      answer: 'Our service includes detailed analysis of existing roles and access assignments, identification of SoD conflicts, business process alignment, role optimization to reduce complexity, consolidation of roles where possible, and implementation of a clean, compliant role structure.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 3 goes here. You can customize this content for each page.'
+      question: 'How do you approach SoD conflict resolution during role redesign?',
+      answer: 'We first perform a comprehensive SoD risk analysis using industry-standard rule sets. Each identified conflict is assessed in collaboration with business stakeholders and resolved by adjusting role design, splitting roles, or applying risk mitigation strategies, ensuring ongoing compliance and usability.'
+    },
+    {
+      question: 'Can you help reduce the number of SAP roles for easier management?',
+      answer: 'Yes. Part of our role redesign strategy focuses on optimizing the role landscape by eliminating redundant or overlapping roles, consolidating roles where appropriate, and applying role templates to simplify management, reduce maintenance effort, and ensure scalability.'
+    },
+    {
+      question: 'How does role redesign improve compliance and security?',
+      answer: 'By redesigning roles based on business needs and predefined SoD policies, we eliminate unnecessary access and conflicting permissions, enforce principle of least privilege, and provide clear audit trails, helping organizations meet compliance requirements such as SOX and GDPR.'
+    },
+    {
+      question: 'How often should SoD/Role Redesign be performed?',
+      answer: 'We recommend performing a role redesign whenever major organizational or system changes occur (e.g., mergers, process overhauls, SAP upgrades) or at least every 1-2 years to prevent role bloat, ensure compliance, and maintain system efficiency.'
     }
   ];
+
+
+
+  
 
   return (
     <>
@@ -32,7 +50,7 @@ export default function SAPAuthorisationConceptDesign() {
         <div className="service-left">
           <h2 className="extra-big-heading-text-white">SoD/Role redesign</h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
+            We reshape roles and SoD rules to eliminate conflicts, strengthen compliance, and align access with evolving business needs.
           </p>
         </div>
         <div className="service-right only-windows">
@@ -77,45 +95,41 @@ export default function SAPAuthorisationConceptDesign() {
 
       {/* Case Studies / Strength Showcase */}
       <section className="strength-showcase">
-        <div className="strength-left">
-          <h2 className="big-heading-text-white">Case Studies</h2>
-          <p className="text-white">
-            Explore how organizations improved compliance, strengthened security, and
-            reduced risks with SAP Access Management Reviews. These studies showcase
-            real-world results, best practices, and measurable business impact.
-          </p>
-        </div>
-
-        <div className="strength-right">
-          <div className="stats-card">
-            <p className="small-text-black">⭐ 4.8 (Rating)</p>
-            <p className="text-black">
-              The SAP Access Management review identified critical risks and gave us a
-              clear roadmap to strengthen controls without slowing down operations.
-            </p>
-            <h3 className="sub-heading-text-black">Mark R.</h3>
-            <p className="text-black">CIO, FinCore Solutions</p>
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="case study" /> */}
-            </div>
-          </div>
-        </div>
-
-        <div className="strength-right">
-          <div className="stats-card">
-            <h3 className="sub-heading-text-black">Global Retailer</h3>
-            <h4 className="text-black">40% reduction in access risks</h4>
-            <p className="text-black">
-              Role redesign and SoD (Segregation of Duties) checks helped the client
-              cut down access violations while improving user productivity.
-            </p>
-            <div className="image-container-showcase">
-              {/* <img src={image} alt="case study" /> */}
-            </div>
-          </div>
-        </div>
-      </section>
-
+                     <div className="strength-left">
+                       <h2 className="big-heading-text-white">Case Studies</h2>
+                       <p className="text-white">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
+                       </p>
+                     </div>
+                 
+                     {/* Case Study 1 - Project Detail */}
+                     <div className="strength-right">
+                       <div className="stats-card">
+                         <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+                         <h4 className="text-black">Lorem, ipsum dolor.</h4>
+                         <p className="text-black">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio 
+                         </p>
+                         <div className="image-container-showcase">
+                           <img src={case1img} alt="case study" />
+                         </div>
+                       </div>
+                     </div>
+                 
+                     {/* Case Study 2 - Business Outcome */}
+                     <div className="strength-right">
+                       <div className="stats-card">
+                         <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+                         <h4 className="text-black">Lorem, ipsum dolor.</h4>
+                         <p className="text-black">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio 
+                         </p>
+                         <div className="image-container-showcase">
+                           <img src={case2img} alt="case study" />
+                         </div>
+                       </div>
+                     </div>
+                   </section>
       {/* Stats Section */}
       <section className="strength-bottom">
         <div className="stat-card">

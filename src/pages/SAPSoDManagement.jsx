@@ -6,8 +6,9 @@ import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
 import { FaCogs, FaChartLine, FaShieldAlt, FaUserTie, FaUsersCog } from "react-icons/fa";
-
-import image from "../assets/images/About-img/Access.png";
+import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
+import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
+import image from "../assets/images/inner-services-images/access-risk-sod-management-banner.jpg";
 
 export default function SAPSoDApproach() {
 
@@ -15,19 +16,30 @@ export default function SAPSoDApproach() {
 
   const faqs = [
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 1 goes here. You can customize this content for each page.'
+      question: 'Why is SoD Management critical for SAP environments?',
+      answer: 'SoD controls prevent users from holding conflicting access rights that could lead to unauthorized activities or financial misstatements. Without proper SoD management, companies face high compliance risks, potential fraud, audit failures, and reputational damage.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 2 goes here. You can customize this content for each page.'
+      question: 'What are common SoD conflicts in SAP systems?',
+      answer: 'Typical conflicts include combining financial transaction approvals (e.g., vendor creation and payment processing), system administration and process execution access, or access to both master data maintenance and transactional functions, which could allow fraudulent actions.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 3 goes here. You can customize this content for each page.'
+      question: 'How does your SoD Management service work?',
+      answer: 'We use automated tools and expert analysis to assess existing user access against a predefined SoD rule set. We identify conflicts, analyze risk exposure, and implement mitigation strategies, such as role redesign, user reassignment, or compensating controls, to ensure compliance and reduce risk.'
+    },
+    {
+      question: 'How often should SoD conflicts be reviewed?',
+      answer: 'We recommend continuous or at least quarterly SoD risk assessments, particularly after significant changes such as system upgrades, role redesigns, process changes, or M&A activities, to ensure ongoing compliance and prevent new conflicts from emerging.'
+    },
+    {
+      question: 'What industries benefit most from SoD Management services?',
+      answer: 'Industries with high regulatory oversight—such as financial services, healthcare, manufacturing, and energy—benefit greatly from our SoD Management service, as they face strict audit requirements and high risks related to financial or data security breaches.'
+    },
+    {
+      question: 'How do you handle SoD conflict resolution?',
+      answer: 'Our approach includes detailed risk analysis, business stakeholder validation, role and access redesign, applying mitigating controls where needed, and providing transparent documentation for audit purposes. We focus on sustainable solutions that balance compliance with operational efficiency.'
     }
   ];
-
 
 
 
@@ -43,7 +55,7 @@ export default function SAPSoDApproach() {
             Access Risk SoD Management
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
+            We identify, monitor, and mitigate access risks and Segregation of Duties (SoD) conflicts, ensuring stronger compliance, smoother audits, and secure SAP operations.
           </p>
         </div>
         <div className="service-right only-windows">
@@ -160,106 +172,26 @@ export default function SAPSoDApproach() {
 
 
 
-      {/* <section className="service-cards-container">
-        <h2 className="big-heading-text-black">Lorem ipsum dolor </h2>
-        <div className="our-service-cards">
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUserPlus className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaClock className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaChartLine className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaMoneyBillWave className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaFileAlt className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit cumque earum. Voluptatum, cumque! Autem?
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUsers className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum dolor.</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus vitae eos non recusandae inventore culpa.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
+      
 
       <section className="strength-showcase">
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">
-            Explore how organizations improved compliance, strengthened security, and
-            reduced risks with SAP Access Management Reviews. These studies showcase
-            real-world results, best practices, and measurable business impact.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
           </p>
         </div>
 
-        {/* Case Study 1 - Testimonial */}
+        {/* Case Study 1 - Project Detail */}
         <div className="strength-right">
           <div className="stats-card">
-            <p className="small-text-black">⭐ 4.8 (Rating)</p>
+            <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+            <h4 className="text-black">Lorem, ipsum dolor.</h4>
             <p className="text-black">
-              The SAP Access Management review identified critical risks and gave us a
-              clear roadmap to strengthen controls without slowing down operations.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
             </p>
-            <h3 className="sub-heading-text-black">Mark R.</h3>
-            <p className="text-black">CIO, FinCore Solutions</p>
-
             <div className="image-container-showcase">
-              {/* <img src={image} alt="testimonial" /> */}
+              <img src={case1img} alt="case study" />
             </div>
           </div>
         </div>
@@ -267,20 +199,19 @@ export default function SAPSoDApproach() {
         {/* Case Study 2 - Business Outcome */}
         <div className="strength-right">
           <div className="stats-card">
-            <h3 className="sub-heading-text-black">Global Retailer</h3>
-            <h4 className="text-black">40% reduction in access risks</h4>
+            <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+            <h4 className="text-black">Lorem, ipsum dolor.</h4>
             <p className="text-black">
-              Role redesign and SoD (Segregation of Duties) checks helped the client
-              cut down access violations while improving user productivity.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
             </p>
             <div className="image-container-showcase">
-              {/* <img src={image} alt="case study" /> */}
+              <img src={case2img} alt="case study" />
             </div>
           </div>
         </div>
-
-
       </section>
+
+
 
       <section className="strength-bottom">
         <div className="stat-card">

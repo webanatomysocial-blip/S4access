@@ -3,7 +3,8 @@ import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
-import case1img from "../assets/images/About-img/Top-banner-img.jpg";
+import case1img from "../assets/images/inner-services-images/authorisation-concept-owner-case1.jpg";
+import case2img from "../assets/images/inner-services-images/authorisation-concept-owner-case2.jpg";
 import FAQTemplate from '../components/FAQTemplate.jsx';
 import {
   FaUserPlus,
@@ -16,27 +17,38 @@ import {
   FaCogs,
   FaShieldAlt,
 } from "react-icons/fa";
-import image from "../assets/images/About-img/Access.png";
+import image from "../assets/images/inner-services-images/authorisation-concept-owner-banner.jpg";
 
 export default function SAPAuthorisationConceptOwnerService() {
 
 
 
-  const faqs = [
+const faqs = [
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 1 goes here. You can customize this content for each page.'
+      question: 'Why is the SAP Authorization Concept Owner role under pressure?',
+      answer: 'Increasing SAP landscape complexity, stricter compliance regulations (e.g., SOX, GDPR), rapidly evolving security threats, and a global shortage of experienced SAP security professionals are making it difficult for organizations to find and retain skilled in-house Authorization Concept Owners.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 2 goes here. You can customize this content for each page.'
+      question: 'What challenges does an SAP Authorization Concept Owner typically face?',
+      answer: 'Key challenges include managing growing role complexity, continuously addressing SoD conflicts, aligning the authorization strategy with dynamic business processes, ensuring regulatory compliance, staying current with SAP system updates, and handling the demand for fast provisioning and audits.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 3 goes here. You can customize this content for each page.'
+      question: 'Why should companies consider outsourcing the SAP Authorization Concept Owner role?',
+      answer: 'Outsourcing provides access to specialized expertise, reduces the risk of skills shortages, ensures up-to-date industry best practices, helps manage costs effectively, and delivers continuity in strategic authorization management without the need to hire and retain scarce internal resources.'
+    },
+    {
+      question: 'What benefits do organizations gain by outsourcing the Authorization Concept Owner function?',
+      answer: 'Organizations benefit from a sustainable, expert-led authorization strategy, consistent enforcement of SoD rules, continuous alignment with business changes, access to advanced tools for risk analysis, and faster, compliant access management—without the burden of internal hiring challenges.'
+    },
+    {
+      question: 'How does the Authorization Concept Owner contribute to SAP security and compliance?',
+      answer: 'The Concept Owner defines the access governance framework, designs roles and SoD policies based on business processes, ensures access reviews are in place, monitors compliance requirements, and guides the organization in adapting to changes in regulation or system upgrades.'
+    },
+    {
+      question: 'Is your Authorization Concept Owner service customizable to different industries?',
+      answer: 'Yes, our service is industry-agnostic and fully customizable. We adapt the authorization concept based on industry-specific compliance requirements, risk tolerance, business processes, and SAP landscape complexity, delivering a tailored, business-aligned solution.'
     }
   ];
-
 
 
 
@@ -49,11 +61,10 @@ export default function SAPAuthorisationConceptOwnerService() {
       <section className="service-container-1">
         <div className="service-left">
           <h2 className="extra-big-heading-text-white">
-            Authorisation Concept Owner
+            Authorisation <br />Concept Owner
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
-          </p>
+            We act as your dedicated Authorization Concept Owner, ensuring your SAP access framework stays consistent, compliant, and aligned with both business and regulatory needs.          </p>
         </div>
         <div className="service-right only-windows">
           <div className="service-image">
@@ -115,41 +126,41 @@ export default function SAPAuthorisationConceptOwnerService() {
 
 
       <section className="strength-showcase">
-    <div className="strength-left">
-      <h2 className="big-heading-text-white">Case Studies</h2>
-      <p className="text-white">
-        Discover how our SAP Authorization Concept Owner Service transformed user management for a steel manufacturer, enhancing security, compliance, and efficiency since 2019.
-      </p>
-    </div>
-
-    {/* Case Study 1 - Project Detail */}
-    <div className="strength-right">
-      <div className="stats-card">
-        <h3 className="sub-heading-text-black">Steel Manufacturer</h3>
-        <h4 className="text-black">Streamlined User Management</h4>
-        <p className="text-black">
-          Implemented structured passive user removal and optimized SAP license usage for consistent, secure access management.
-        </p>
-        <div className="image-container-showcase">
-          <img src={case1img} alt="case study" />
+        <div className="strength-left">
+          <h2 className="big-heading-text-white">Case Studies</h2>
+          <p className="text-white">
+            Discover how our SAP Authorization Concept Owner Service transformed user management for a steel manufacturer, enhancing security, compliance, and efficiency since 2019.
+          </p>
         </div>
-      </div>
-    </div>
 
-    {/* Case Study 2 - Business Outcome */}
-    <div className="strength-right">
-      <div className="stats-card">
-        <h3 className="sub-heading-text-black">Steel Manufacturer</h3>
-        <h4 className="text-black">30% Reduction in License Costs</h4>
-        <p className="text-black">
-          Reduced SAP_ALL profile usage and enhanced audit compliance, improving system security and cost efficiency.
-        </p>
-        <div className="image-container-showcase">
-          <img src={case1img} alt="case study" />
+        {/* Case Study 1 - Project Detail */}
+        <div className="strength-right">
+          <div className="stats-card">
+            <h3 className="sub-heading-text-black">Steel Manufacturer</h3>
+            <h4 className="text-black">Streamlined User Management</h4>
+            <p className="text-black">
+              Implemented structured passive user removal and optimized SAP license usage for consistent, secure access management.
+            </p>
+            <div className="image-container-showcase">
+              <img src={case1img} alt="case study" />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+
+        {/* Case Study 2 - Business Outcome */}
+        <div className="strength-right">
+          <div className="stats-card">
+            <h3 className="sub-heading-text-black">Steel Manufacturer</h3>
+            <h4 className="text-black">30% Reduction in License Costs</h4>
+            <p className="text-black">
+              Reduced SAP_ALL profile usage and enhanced audit compliance, improving system security and cost efficiency.
+            </p>
+            <div className="image-container-showcase">
+              <img src={case2img} alt="case study" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="strength-bottom">
         <div className="stat-card">

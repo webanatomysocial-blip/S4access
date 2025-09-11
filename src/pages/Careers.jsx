@@ -26,12 +26,12 @@ const Careers = () => {
           </p>
 
 
-          <a href="/" className="main-button-blue">
+          {/* <a href="/" className="main-button-blue">
             <span>EXPLORE ALL ROLES CTA </span>
             <span>
               <i className="bi bi-arrow-up"></i>
             </span>
-          </a>
+          </a> */}
         </div>
 
 

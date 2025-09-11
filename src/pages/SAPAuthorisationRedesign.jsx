@@ -4,9 +4,10 @@ import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
-import case1img from "../assets/images/About-img/Top-banner-img.jpg"
+import case1img from "../assets/images/inner-services-images/sap-s4-access-implementation-case1.jpg";
+import case2img from "../assets/images/inner-services-images/sap-s4-access-implementation-case2.jpg";
 
-import image from "../assets/images/About-img/Access.png";
+import image from "../assets/images/inner-services-images/sap-s4-access-implementation-banner.jpg";
 
 export default function SAPAuthorisationRedesign() {
 
@@ -14,19 +15,30 @@ export default function SAPAuthorisationRedesign() {
 
   const faqs = [
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 1 goes here. You can customize this content for each page.'
+      question: 'Why is a proper access implementation important in SAP S/4HANA projects?',
+      answer: 'A correct access implementation ensures that users can perform their business tasks without security risks or compliance gaps. It reduces future remediation costs, prevents unauthorized transactions, supports business continuity, and helps achieve regulatory compliance from the start.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 2 goes here. You can customize this content for each page.'
+      question: 'What is included in your SAP S/4 Access Implementation service?',
+      answer: 'Our service covers role design and optimization, user provisioning strategies, SoD rule definition and conflict prevention, integration with SAP GRC and IAM systems, automated workflows for provisioning, and initial access risk assessment to ensure a secure foundation.'
     },
     {
-      question: 'Lorem ipsum over two decades of experience with passion for adopting latest technology',
-      answer: 'Answer for FAQ 3 goes here. You can customize this content for each page.'
+      question: 'How do you handle role design during SAP S/4 Access Implementation?',
+      answer: 'We analyze business processes and design simplified, modular roles that align with user job functions while minimizing SoD conflicts. Our approach ensures scalability, easier role maintenance, and improved security across the SAP S/4HANA system.'
+    },
+    {
+      question: 'Do you address Segregation of Duties (SoD) conflicts during implementation?',
+      answer: 'Yes, SoD conflict management is a key part of our implementation strategy. We define an SoD rule set, analyze potential conflicts upfront, and resolve them through appropriate role design, risk acceptance, or process changes, ensuring a compliant access structure from go-live.'
+    },
+    {
+      question: 'How do you ensure smooth integration with existing identity and access management (IAM) systems?',
+      answer: 'We work closely with your team to integrate SAP S/4 Access with existing IAM solutions, enabling automated provisioning, centralized user management, and seamless de-provisioning. This provides a single source of truth for identities and enhances security controls.'
+    },
+    {
+      question: 'What are the benefits of implementing access management during an S/4 migration or new implementation?',
+      answer: 'Implementing access management during S/4 projects ensures security and compliance are built in from the start, reduces the complexity of post-go-live remediation, improves process efficiency, and enables faster go-live with minimal risk of access-related disruptions.'
     }
   ];
-
 
 
 
@@ -42,7 +54,7 @@ export default function SAPAuthorisationRedesign() {
             SAP S/4 Access Implementation
           </h2>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
+            We deliver secure and compliant access design for SAP S/4, ensuring smooth transitions, minimized risks, and a strong foundation for future growth.
           </p>
         </div>
         <div className="service-right only-windows">
@@ -55,6 +67,7 @@ export default function SAPAuthorisationRedesign() {
       <section className="service-journey-container">
         <div className="service-journey-content">
           <div className="journey-card left-right-container-inner-service">
+            
 
 
            
@@ -95,86 +108,6 @@ export default function SAPAuthorisationRedesign() {
 
 
 
-
-
-
-      {/* <section className="service-cards-container">
-        <h2 className="big-heading-text-black">Lorem ipsum dolor </h2>
-        <div className="our-service-cards">
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUserPlus className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaClock className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaChartLine className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum.</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaMoneyBillWave className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae numquam quasi est libero eaque!
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaFileAlt className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem ipsum dolor</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi reprehenderit cumque earum. Voluptatum, cumque! Autem?
-              </p>
-            </div>
-          </div>
-
-          <div className="serviceCard">
-            <div className="serviceInner">
-              <div className="icon">
-                <FaUsers className="service-icon" />
-              </div>
-              <h3 className="sub-heading-text-black ">Lorem, ipsum dolor.</h3>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus vitae eos non recusandae inventore culpa.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
      <section className="strength-showcase">
     <div className="strength-left">
       <h2 className="big-heading-text-white">Case Studies</h2>
@@ -206,7 +139,7 @@ export default function SAPAuthorisationRedesign() {
           Achieved successful go-live and full transition from SAP GUI to Fiori, boosting user satisfaction and project success.
         </p>
         <div className="image-container-showcase">
-          <img src={case1img} alt="case study" />
+          <img src={case2img} alt="case study" />
         </div>
       </div>
     </div>

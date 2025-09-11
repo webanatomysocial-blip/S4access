@@ -1,6 +1,7 @@
 // Import the local image
-import img22 from './blogs-images/blog1-img.jpg'; // Ensure this path is correct
-
+import img22 from './blogs-images/blog1-img.jpg'; 
+import img21 from './blogs-images/2.jpg';
+import img23 from './blogs-images/1.jpg';
 export const blogMetadata = [
   {
     id: "Is-SAP-Certification-Still-Valid-for-Your-Career-in-2025", // Matches file name without .jsx
@@ -17,7 +18,7 @@ export const blogMetadata = [
     slug: "Autumn-2025-Outlook", // URL-friendly slug
     metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
     excerpt: "In Autumn 2025, economic pressures demand smarter SAP security and access management. Discover common pitfalls and a clear, actionable plan to strengthen your SAP systems while aligning with business needs in a transforming market.",
-    image: img22, // Imported image
+    image: img21, // Imported image
     date: "2025-08-26",
   },
     {
@@ -26,7 +27,7 @@ export const blogMetadata = [
     slug: "Turning-Frustration-into-Value", 
     metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
     excerpt: "In Autumn 2025, economic pressures demand smarter SAP security and access management. Discover common pitfalls and a clear, actionable plan to strengthen your SAP systems while aligning with business needs in a transforming market.",
-    image: img22, // Imported image
+    image: img23, // Imported image
     date: "2025-08-26",
   },
 ];

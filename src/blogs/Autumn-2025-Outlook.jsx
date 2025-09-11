@@ -1,6 +1,6 @@
 import React from 'react';
 import './Internal-Blog.css';
-import img22 from './blogs-images/blog1-img.jpg';
+import img22 from './blogs-images/2.jpg';
 
 export default function Blog2() {
   return (

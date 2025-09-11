@@ -77,7 +77,7 @@
 
 
 .Coustomer-success-page-Achievements-section {
-  padding: 100px 70px;
+  padding: 100px 50px;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -118,7 +118,7 @@
 
 
 .Coustomer-success-page-Achievements-section-diff-content{
-   padding: 100px 70px;
+   padding: 100px 50px;
   display: flex;
   flex-direction: row-reverse;
   gap: 50px;

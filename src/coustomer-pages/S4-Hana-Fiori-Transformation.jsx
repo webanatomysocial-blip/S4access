@@ -1,9 +1,12 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
-import img22 from '../assets/images/About-img/Top-banner-img22.jpg';
+// import img22 from '../assets/images/About-img/Top-banner-img22.jpg';
 import { Link } from 'react-router-dom';
 import "../css/Coustomer.css";
+import img1 from "../assets/images/success-images/1.jpg"
+import img2 from "../assets/images/success-images/2.jpg"
+import img3 from "../assets/images/success-images/3.jpg"
 
 const S4HanaFioriTransformation = () => {
     return (
@@ -18,7 +21,7 @@ const S4HanaFioriTransformation = () => {
                     </p>
                 </div>
                 <div className="Coustomer-success-page-hero-container-right">
-                    <img src={img22} alt="S/4 HANA Fiori Transformation" />
+                    <img src={img1} alt="S/4 HANA Fiori Transformation" />
                 </div>
             </section>
 
@@ -30,13 +33,13 @@ const S4HanaFioriTransformation = () => {
                     </p>
                 </div>
                 <div className="Coustomer-success-page-card-right">
-                    <img src={img22} alt="S/4 HANA Fiori Transformation" />
+                    <img src={img2} alt="S/4 HANA Fiori Transformation" />
                 </div>
             </section>
 
             <section className="Coustomer-success-page-Achievements-section-diff-content">
                 <div className="Coustomer-success-inner-achievements-right">
-                    <img src={img22} alt="S/4 HANA Fiori Transformation" />
+                    <img src={img3} alt="S/4 HANA Fiori Transformation" />
                 </div>
                 <div className="Coustomer-success-inner-achievements-left">
                     <h2 className="big-heading-text-black">Achievements & Benefits</h2>
