@@ -3,23 +3,15 @@ import React from 'react';
 import Footer from '../components/Footer.jsx';
 import '../css/About.css';
 import star from '../assets/images/home-img/star-black.png'
-// import team1 from '../assets/images/About-img/our-team/teammate-1.jpg.webp'
-// import team2 from '../assets/images/About-img/our-team/teammate-2.jpg.webp';
-// import team3 from '../assets/images/About-img/our-team/teammate-3.jpg.webp';
-// import team4 from '../assets/images/About-img/our-team/teammate-4.jpg.webp';
-// import WholeWebsiteIcon from '../components/WholeWebsiteIcon.jsx';
 import Topbanner from '../assets/images/About-img/Top-banner-img.jpg';
 import whoweare from '../assets/images/About-img/Who-We-Are.jpg';
-// import mapimg from '../assets/images/About-img/googlemap.png'
 import TeamSection from '../components/TeamSection.jsx';
+import { Link } from 'react-router-dom';
 
 function About() {
 
 
-  // const [color1, setColor1] = React.useState('white');
-  // const [color2, setColor2] = React.useState('white');
-  // const [color3, setColor3] = React.useState('white');
-  // const [color4, setColor4] = React.useState('white');
+ 
 
   return (
     <div>
@@ -127,7 +119,7 @@ function About() {
 
 
       {/* Our Highlights section start*/}
-      <section className="our-hightlights-section" style={{ marginTop: "0px" }} >
+      <section className="our-hightlights-section" style={{ marginTop: "0px", display: "none" }} >
         <div className="hightlight-tittle-container">
           <p className="big-heading-text-black">
             Our <br /> Highlights
@@ -204,234 +196,6 @@ function About() {
       {/* Our Team section start */}
 
 
-      {/* <section className="our-team-section">
-        <p className="big-heading-text-black">
-          Managament team
-
-        </p>
-
-
-
-        <div className="inner-about-out-team">
-
-
-
-          <div
-            className="about-team-container"
-            onMouseEnter={() => setColor1('#40FFC9')}
-            onMouseLeave={() => setColor1('white')}
-          >
-
-            <div className="our-team-img-container">
-
-
-
-              <div className="ourteam-logo">
-                <WholeWebsiteIcon color={color1} />
-
-              </div>
-
-              <img src={team3} alt="" />
-
-
-              <div className="our-team-names">
-
-                <p className='team-name-text'>Matti Halonen</p>
-                <p className='team-ceo-text'>Managing director
-                </p>
-
-
-
-              </div>
-
-
-
-
-            </div>
-            <div className="ourteam-container-contacts">
-
-
-              <a href="tel:+358405589069" className="text-black">
-                +358 40 558 9069
-
-              </a>
-              <br />
-              <a href="mailto:matti.halonen@s4access.com" className="text-black">
-                matti.halonen@s4access.com
-
-              </a>
-
-            </div>
-
-          </div>
-
-
-
-
-          <div
-            className="about-team-container"
-            onMouseEnter={() => setColor2('#40FFC9')}
-            onMouseLeave={() => setColor2('white')}
-          >
-
-            <div className="our-team-img-container">
-
-
-
-              <div className="ourteam-logo">
-                <WholeWebsiteIcon color={color2} />
-
-              </div>
-
-              <img src={team1} alt="" />
-
-
-              <div className="our-team-names">
-
-                <p className='team-name-text'>Christa Coulter</p>
-                <p className='team-ceo-text'>Director, Sap security architect
-                </p>
-
-
-
-              </div>
-
-
-
-
-            </div>
-            <div className="ourteam-container-contacts">
-
-
-              <a href="tel:+358405532204" className="text-black">
-                +358 40 553 2204
-
-              </a>
-              <br />
-              <a href="mailto:christa.coulter@s4access.com" className="text-black">
-                christa.coulter@s4access.com
-
-              </a>
-
-            </div>
-
-          </div>
-
-
-
-
-
-          <div
-            className="about-team-container"
-            onMouseEnter={() => setColor3('#40FFC9')}
-            onMouseLeave={() => setColor3('white')}
-          >
-
-            <div className="our-team-img-container">
-
-
-
-              <div className="ourteam-logo">
-                <WholeWebsiteIcon color={color3} />
-
-              </div>
-
-              <img src={team2} alt="" />
-
-
-              <div className="our-team-names">
-
-                <p className='team-name-text'>Heli Kokkala</p>
-                <p className='team-ceo-text'>Director, Head of Services</p>
-
-
-
-              </div>
-
-
-
-
-            </div>
-            <div className="ourteam-container-contacts">
-
-
-              <a href="tel:+358404823589" className="text-black">
-                +358 40 482 3589
-
-              </a>
-              <br />
-              <a href="mailto:heli.kokkala@s4access.com" className="text-black">
-                heli.kokkala@s4access.com
-
-              </a>
-
-            </div>
-
-          </div>
-
-
-
-
-
-          <div
-            className="about-team-container"
-            onMouseEnter={() => setColor4('#40FFC9')}
-            onMouseLeave={() => setColor4('white')}
-          >
-
-            <div className="our-team-img-container">
-
-
-
-              <div className="ourteam-logo">
-                <WholeWebsiteIcon color={color4} />
-
-              </div>
-
-              <img src={team4} alt="" />
-
-
-              <div className="our-team-names">
-
-                <p className='team-name-text'>Sameer Hawaldar</p>
-                <p className='team-ceo-text'>Director, Head of projects
-                </p>
-
-
-
-              </div>
-
-
-
-
-            </div>
-            <div className="ourteam-container-contacts">
-
-
-              <a href="tel:+358405807659" className="text-black">
-                +358 40 580 7659
-
-              </a>
-              <br />
-              <a href="mailto:sameer.hawaldar@s4access.com" className="text-black">
-                sameer.hawaldar@s4access.com
-
-              </a>
-
-            </div>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-      </section> */}
-
-
       <TeamSection />
 
       {/* Our Team section End */}
@@ -457,7 +221,7 @@ function About() {
             </div>
 
 
-            <div className="about-contact-us-dark-inner-bottom-container">
+            <div className="about-contact-us-dark-inner-bottom-containr">
               <p className="small-text-white ">
 
                 Interested in our services or our partnership with GRC Nordic?
@@ -595,12 +359,26 @@ function About() {
 
       {/* about-contact-us-section  light color start */}
       <section className="about-contact-us-section">
-        <p className="big-heading-text-white">
-          Contact us and reset your<br></br> password to SAP security !
+        <div>
+          <p className="big-heading-text-white">
+          Contact us and reset your<br className='only-windows'></br> password to SAP security !
         </p>
         <p className="text-white">
           We’re here to help with all your SAP security needs. Whether you're a client, partner,<br /> vendor, or potential team member, here's how to reach the right person
         </p>
+
+        </div>
+
+        <div>
+            <Link to="/contact" className="button-green ">
+                    <span>Contact </span>
+                    <span>
+                      <i className="bi bi-arrow-up"></i>
+                    </span>
+                  </Link>
+
+        </div>
+        
 
       </section>
 

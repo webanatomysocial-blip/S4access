@@ -1,0 +1,76 @@
+.hsm-swiper-container {
+  width: 100%;
+  margin-top: 0px !important;
+  min-height: 400px; /* Ensure Swiper has space */
+}
+.mobile-logo-s4-car{
+    width: 100px;
+    height: auto;
+    padding-left: 10px;
+    margin-bottom: -30px;
+}
+
+.hsm-slider-card {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 100%;
+  /* min-height: 350px; */
+  position: relative;
+  color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  /* border-radius: 8px; */
+  /* border: 1px solid #333;  */
+}
+
+.hsm-slider-content-overlay {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+.hsm-slider-content-overlay p{
+    width: 60%;
+    padding-left: 10px;
+}
+
+.hsm-slider-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Custom pagination styles */
+.hsm-custom-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: antiquewhite; */
+  gap: 8px;
+  /* margin-top: 20px; */
+}
+
+.hsm-custom-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: #40ffc9;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: -60px;
+  z-index: 1000000000000000000000000000 !important;
+}
+
+.hsm-custom-bullet-active {
+  background-color: #ffffff;
+}
+

@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import '../css/About.css';
 import team1 from '../assets/images/About-img/our-team/teammate-1.jpg.webp';
 import team2 from '../assets/images/About-img/our-team/teammate-2.jpg';
@@ -23,14 +19,16 @@ const TeamSection = () => {
       name: 'Matti Halonen',
       title: 'Managing Director',
       email: 'matti.halonen@s4access.com',
+      phone: '',
       image: team3,
       color: color1,
       setColor: setColor1
     },
     {
       name: 'Christa Coulter',
-      title: 'Director, Sap Security Architect',
+      title: 'Director, SAP Security Architect',
       email: 'christa.coulter@s4access.com',
+      phone: '',
       image: team1,
       color: color2,
       setColor: setColor2
@@ -39,6 +37,7 @@ const TeamSection = () => {
       name: 'Heli Kokkala',
       title: 'Director, Head of Services',
       email: 'heli.kokkala@s4access.com',
+      phone: '',
       image: team2,
       color: color3,
       setColor: setColor3
@@ -47,6 +46,7 @@ const TeamSection = () => {
       name: 'Sameer Hawaldar',
       title: 'Director, Head of Projects',
       email: 'sameer.hawaldar@s4access.com',
+      phone: '',
       image: team4,
       color: color4,
       setColor: setColor4
@@ -54,7 +54,8 @@ const TeamSection = () => {
     {
       name: 'Tiina Hartikainen',
       title: 'HR Lead',
-      email: 'tiina.hartikainen@s4access.com',
+      email: 'tiina.hartikainen@4access.com',
+      phone: '',
       image: team5,
       color: color5,
       setColor: setColor5
@@ -63,55 +64,67 @@ const TeamSection = () => {
 
   return (
     <section className="our-team-section">
-      <p className="big-heading-text-black">
-        Management Team
-      </p>
-      <Swiper
-        modules={[Pagination]}
-        spaceBetween={50}
-        slidesPerView={4}
-        pagination={{
-          clickable: true,
-          el: '.swiper-pagination',
-          renderCustom: (swiper, current, total) => {
-            return `<div class="swiper-pagination-custom">${current} of ${total}</div>`;
-          }
-        }}
-        breakpoints={{
-          320: { slidesPerView: 1 },
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-          1280: { slidesPerView: 4 }
-        }}
-        className="inner-about-out-team"
-      >
-        {teamMembers.map((member, index) => (
-          <SwiperSlide key={index}>
-            <div
-              className="about-team-container"
-              onMouseEnter={() => member.setColor('#40FFC9')}
-              onMouseLeave={() => member.setColor('white')}
-            >
-              <div className="our-team-img-container">
-                <div className="ourteam-logo">
-                  <WholeWebsiteIcon color={member.color} />
+      <div className="team-section-container">
+        
+        <div className="team-members-column">
+          <div className="team-members-top">
+            <div className="team-heading-column">
+          <p className="big-heading-text-black">Managment Team</p>
+          <p className="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla adipisci officiis architecto, aliquid ea necessitatibus autem, ratione suscipit odit asperiores, iste molestias distinctio! Sit soluta nihil, accusamus eveniet nobis deserunt!</p>
+        </div>
+            {teamMembers.slice(0, 2).map((member, index) => (
+              <div
+                key={index}
+                className="about-team-container"
+                onMouseEnter={() => member.setColor('#40FFC9')}
+                onMouseLeave={() => member.setColor('white')}
+              >
+                <div className="our-team-img-container">
+                  <div className="ourteam-logo">
+                    <WholeWebsiteIcon color={member.color} />
+                  </div>
+                  <img src={member.image} alt={member.name} />
+                  <div className="our-team-names">
+                    <p className="team-ceo-text">{member.title}</p>
+                  </div>
                 </div>
-                <img src={member.image} alt={member.name} />
-                <div className="our-team-names">
-                  <p className="team-ceo-text">{member.title}</p>
+                <div className="ourteam-container-contacts">
+                  <p className="team-name-text">{member.name}</p>
+                  <a href={`mailto:${member.email}`} className="text-black">
+                    {member.email}
+                  </a>
                 </div>
               </div>
-              <div className="ourteam-container-contacts">
-                <p className="sub-heading-text-black">{member.name}</p>
-                <a href={`mailto:${member.email}`} className="text-black">
-                  {member.email}
-                </a>
+            ))}
+          </div>
+          <div className="team-members-bottom">
+            {teamMembers.slice(2).map((member, index) => (
+              <div
+                key={index + 2}
+                className="about-team-container"
+                onMouseEnter={() => member.setColor('#40FFC9')}
+                onMouseLeave={() => member.setColor('white')}
+              >
+                <div className="our-team-img-container">
+                  <div className="ourteam-logo">
+                    <WholeWebsiteIcon color={member.color} />
+                  </div>
+                  <img src={member.image} alt={member.name} />
+                  <div className="our-team-names">
+                    <p className="team-ceo-text">{member.title}</p>
+                  </div>
+                </div>
+                <div className="ourteam-container-contacts">
+                  <p className="team-name-text">{member.name}</p>
+                  <a href={`mailto:${member.email}`} className="text-black">
+                    {member.email}
+                  </a>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-        <div className="swiper-pagination"></div>
-      </Swiper>
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

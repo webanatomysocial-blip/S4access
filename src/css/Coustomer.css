@@ -1,3 +1,24 @@
+.customer-hero-section {
+  background-color: rgb(0, 0, 0);
+  height: 60vh;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 100px 0px 0px 50px;
+  margin-top: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .Coustomer-success-page-hero-section {
   background-color: rgb(0, 0, 0);
   height: 60vh;
@@ -192,4 +213,20 @@
   gap: 2rem;
   align-items: start;
   width: 60%;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .customer-hero-section {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    height: fit-content;
+    flex-direction: column-reverse;
+    align-items: start;
+    justify-content: space-between;
+    padding:60px 20px;
+    margin: 0px;
+  }
+
 }

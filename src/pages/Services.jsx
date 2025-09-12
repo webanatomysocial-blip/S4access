@@ -60,7 +60,7 @@ function Services() {
 
         <div className="services-hero-left">
           <p className="big-heading-text-white">
-            Services designed to solve <br />
+            Services designed to solve <br className='only-windows' />
             SAP access management challenges
           </p>
           <p className="text-white">
@@ -119,7 +119,7 @@ function Services() {
 
 
       {/* Partners and alliances section start */}
-      <section className="partners-section">
+      {/* <section className="partners-section">
         <div className="partners-container">
           <p className="big-heading-text-black">Partners and alliances</p>
           <p className="text-black">
@@ -149,7 +149,7 @@ function Services() {
           </div>
         </div>
 
-      </section>
+      </section> */}
       {/* Partners and alliances section end */}
 
         {/* image-cta start */}

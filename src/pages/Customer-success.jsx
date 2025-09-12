@@ -1,6 +1,7 @@
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import '../css/App.css';
+// import 
 import CustomerSuccessCards from "../components/CustomerSuccessCards.jsx";
 // import React, { useState } from "react";
 import banner1 from '../assets/images/home-img/Success-top-img.jpg';
@@ -33,6 +34,8 @@ function CustomerSuccess() {
         </div>
 
       </section>
+
+      
       <CustomerSuccessCards />
       <Footer />
     </div>

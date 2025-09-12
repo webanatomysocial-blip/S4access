@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import './HomeSlider.css';
+import '../css/HomeSlider.css';
 import banner1 from '../assets/images/home-img/home-bgimg.jpg';
 import banner2 from '../assets/images/home-img/banner-home/1.jpg';
 import banner3 from '../assets/images/home-img/banner-home/2.jpg';
@@ -67,7 +67,7 @@ const HomeSlider = () => {
   }, [slides.length]);
 
   return (
-    <section className="carousel-section">
+    <section className="carousel-section only-windows">
       <div className="carousel">
         <div
           className="carousel-slides"

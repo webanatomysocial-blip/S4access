@@ -33,6 +33,7 @@ html {
   font-family: "barlow", monospace;
   font-size: 65px;
   font-weight: 400;
+  
   line-height: 1.3em;
 }
 
@@ -281,6 +282,7 @@ html {
   text-decoration: none;
   padding-bottom: 4px;
   transition: color 0.3s ease;
+  cursor: pointer;
   width: fit-content;
 }
 
@@ -591,7 +593,7 @@ nav.scrolled {
   .big-heading-text-white {
     color: white;
     font-family: "barlow", monospace;
-    font-size: 25px !important;
+    font-size: 35px !important;
     font-weight: 400;
     line-height: 1.3em;
   }
@@ -599,7 +601,7 @@ nav.scrolled {
   .big-heading-text-black {
     color: rgb(0, 0, 0);
     font-family: "barlow", monospace;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 500;
     line-height: 1.3em;
   }
@@ -690,8 +692,8 @@ nav.scrolled {
   left: 0;
   color: white;
   z-index: 10000000000000;
-  padding: 15px 20px;
-  background-color: transparent;
+  padding: 30px 20px;
+  background-color: black;
   transition: background-color 0.3s ease;
 }
 

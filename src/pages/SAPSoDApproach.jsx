@@ -5,7 +5,7 @@ import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
-import banner from "../assets/images/inner-services-images/sod-stratergy-approach-banner.jpg";
+import banner from "../assets/images/inner-services-images/sod-Stratergy-approach-banner.jpg";
 import { FaCogs, FaUserTie, FaShieldAlt, FaChartLine } from "react-icons/fa";
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
 import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";

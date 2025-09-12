@@ -7,7 +7,7 @@ import "../css/MegaMenu.css";
 const services = [
   { category: "SAP Access Design", items: [
     { name: "SAP Access Management Review", icon: <FaClipboardCheck />, link: "/sap-access-management-review" },
-    { name: "SOD Stratergy Approach", icon: <FaBalanceScale />, link: "/sod-stratergy-approach" },
+    { name: "SOD strategy Approach", icon: <FaBalanceScale />, link: "/sod-strategy-approach" },
     { name: "SAP Access Management Automation", icon: <FaSyncAlt />, link: "/sap-access-management-automation" }
   ]},
   { category: "SAP Access Projects", items: [

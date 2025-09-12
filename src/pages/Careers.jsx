@@ -26,12 +26,7 @@ const Careers = () => {
           </p>
 
 
-          {/* <a href="/" className="main-button-blue">
-            <span>EXPLORE ALL ROLES CTA </span>
-            <span>
-              <i className="bi bi-arrow-up"></i>
-            </span>
-          </a> */}
+          
         </div>
 
 
@@ -41,9 +36,6 @@ const Careers = () => {
         </div>
 
       </section>
-
-
-
 
 
 
@@ -88,6 +80,10 @@ const Careers = () => {
         </div>
       </section>
       {/* why s4access section End */}
+
+
+
+      
 
       {/* why s4access section start */}
 
@@ -174,7 +170,7 @@ const Careers = () => {
 
 
       {/* careers Open roles start */}
-      <section className="careers-open-roles-section ">
+      {/* <section className="careers-open-roles-section only-windows">
         <div className="careers-open-roles-header">
           <h2 className="big-heading-text-black">Open roles</h2>
           <a href="#" className="read-more-btn-blue ">
@@ -262,7 +258,7 @@ const Careers = () => {
           </div>
 
         </div>
-      </section>
+      </section> */}
       {/* careers Open roles End */}
 
 

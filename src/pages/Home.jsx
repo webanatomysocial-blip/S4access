@@ -10,6 +10,7 @@ import '../css/Home.css';
 // import banner1 from '../assets/images/home-img/home-bgimg.jpg';
 
 import HomeSlider from '../components/HomeSlider.jsx';
+import HomeSlidersMobile from '../components/HomeSlidersMobile.jsx';
 import { Link } from "react-router-dom";
 import ServiceTabs from "../components/ServiceTabs.jsx";
 import Blogs from "../components/Blog.jsx";
@@ -28,6 +29,7 @@ function Home() {
       {/* carousel section start */}
 
       <HomeSlider />
+      <HomeSlidersMobile />
       {/* carousel section End */}
 
 
@@ -36,7 +38,7 @@ function Home() {
       <section className="our-hightlights-section" id="go-down-section">
         <div className="hightlight-tittle-container">
           <p className="big-heading-text-black">
-            Our <br /> Highlights
+            Our <br className="only-windows" /> Highlights
           </p>
         </div>
 

@@ -47,6 +47,49 @@ function Footer() {
 
         <div className="right-logo-container-footer">
           <div className="inner-right-container-footer">
+            <div className="quicklinks-footer only-mobile">
+              <p className="sub-heading-text-white"  style={{color: "#40ffc9"}}>Quick Links</p>
+
+              <ul className="footer-nav">
+                <li>
+                  <Link to="/" className="footer-link">
+                    Home
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/services" className="footer-link">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/customer-success" className="footer-link">
+                    Customer Success
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/insights" className="footer-link">
+                    Insights
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/careers" className="footer-link">
+                    Careers
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/about" className="footer-link">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="footer-link">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
             <div className="services-footer">
               <p className="sub-heading-text-white" style={{color: "#40ffc9"}}>SAP Access Design</p>
 
@@ -93,7 +136,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="quicklinks-footer">
+            <div className="quicklinks-footer only-windows">
               <p className="sub-heading-text-white"  style={{color: "#40ffc9"}}>Quick Links</p>
 
               <ul className="footer-nav">

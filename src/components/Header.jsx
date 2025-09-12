@@ -185,8 +185,9 @@ function Header(props) {
                 About
               </NavLink>
             </li>
-            <li className="mobile-contact-btn">
-              <Link to="/contact" onClick={closeMobileMenu}>
+            <li >
+              <Link to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}
+                onClick={closeMobileMenu}>
                 Contact Us
               </Link>
             </li>

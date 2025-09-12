@@ -11,9 +11,9 @@ const services = [
         link: '/sap-access-management-review' 
       },
       { 
-        title: 'SoD Stratergy Approach', 
+        title: 'SoD strategy Approach', 
         desc: 'Adopt a proactive SoD strategy to reduce risks, optimize resources, and ensure SAP compliance. Gain structured guidance on governance, processes, tools, and continuous improvement for sustainable access management.', 
-        link: '/sod-stratergy-approach' 
+        link: '/sod-strategy-approach' 
       },
       { 
         title: 'SAP Access Management Automation', 

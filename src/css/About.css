@@ -112,125 +112,149 @@
 
 
 
-/* our team section start  */
+/* our team section start */
 .our-team-section {
-    padding: 100px 50px;
-    display: flex;
-    flex-direction: column;
-    /* gap: 50px; */
-    transition: 0.4s ease-in-out;
-    /* margin-bottom: 50px; */
-
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s ease-in-out;
 }
 
-.inner-about-out-team {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    transition: 0.4s ease-in-out;
-     padding-bottom: 80px; /* Increased padding for pagination space */
+.team-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 
+.team-heading-column {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
+}
 
+.team-members-column {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.team-members-top,
+.team-members-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.team-members-top .about-team-container {
+  flex: 1;
+}
+
+.team-members-bottom .about-team-container {
+  flex: 1;
 }
 
 .about-team-container {
-    background-color: #E6E6E6;
-    height: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.4s ease-in-out;
-    border: 1px solid transparent;
-    overflow: hidden;
-}
-
-.team-wrapper:hover .about-team-container {
-    flex: 1;
+  background-color: #E6E6E6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid transparent;
+  overflow: hidden;
 }
 
 .about-team-container:hover {
-    flex: 1.15;
-    border-color: black;
+  flex: 1.15;
+  border-color: black;
 }
 
 .our-team-img-container {
-    height: 60vh;
-    position: relative;
-    overflow: hidden;
-
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .our-team-img-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 1);
-    opacity: 0.4;
-    transition: opacity 0.4s ease-in-out;
-    z-index: 10;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 1);
+  opacity: 0.4;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 10;
 }
-
-
 
 .our-team-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.4s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.4s ease-in-out;
 }
-
-
 
 .ourteam-container-contacts {
-    padding: 30px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
+  padding: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
 }
 
-
-
 .our-team-names {
-    position: absolute;
-    top: 85%;
-    left: 20px;
-    z-index: 200;
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 35px;
-
+  position: absolute;
+  top: 85%;
+  left: 20px;
+  z-index: 200;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 35px;
 }
 
 .ourteam-logo {
-    width: 30px;
-    height: 30px;
-    /* background-color: white; */
-    right: 20px;
-    top: 20px;
-    position: absolute;
-    z-index: 20;
+  width: 30px;
+  height: 30px;
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  z-index: 20;
 }
 
 .team-name-text {
-    color: rgb(0, 0, 0);
-    font-family: "barlow", monospace;
-    font-size: 14px;
-    font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-family: "barlow", monospace;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .team-ceo-text {
-    color: white;
-    font-family: "barlow", monospace;
-    font-size: 15px;
-    font-weight: 300;
+  color: white;
+  font-family: "barlow", monospace;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .team-section-container {
+    flex-direction: column;
+  }
+
+  .team-heading-column {
+    justify-content: flex-start;
+  }
+
+  .team-members-top,
+  .team-members-bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 
@@ -272,6 +296,10 @@
 .about-contact-us-section {
     padding: 100px 50px;
     background-color: #2E3840;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .about-contact-us-section .text-white {
@@ -344,3 +372,106 @@
 }
 
 /* about-map-section End */
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .about-banner-section {
+        height: fit-content;
+        padding: 60px 20px;
+        margin-top: 0px;
+        flex-direction: column-reverse;
+
+    }
+
+    .about-banner-content-left {
+        width: 100%;
+    }
+
+    .about-banner-content-right {
+        width: 100%;
+    }
+
+    .about-banner-content-right img {
+        width: 100%;
+    }
+    .about-image-section {
+    height: 30vh;
+    background-color: #D9D9D9;
+    background: url('../assets/images/About-img/banner-about.jpg') no-repeat center center;
+    background-size: cover;
+    filter: brightness(0.6);
+
+
+}
+
+
+.about-who-we-are-section {
+    /* background-color: red;  */
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.img-who-we-are-left-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+
+}
+.who-we-are-right-container {
+    width: 100%;
+}
+
+.our-team-section {
+    padding: 60px 20px 120px 20px  ;
+
+}
+
+
+
+.about-contact-us-dark-section {
+    padding: 60px 20px;
+    margin-top: -70px;
+    /* background-color: black; */
+}
+.about-contact-us-dark-container{
+    flex-direction: column;
+}
+.about-contact-us-dark-inner-container {
+    /* background-color: red; */
+    width: 100%;
+    padding-left: 0px;
+    border-left:none;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 0px;
+    height: fit-content;
+
+
+}
+.about-contact-us-dark-inner-bottom-container:not(:first-child) {
+    margin-top: -30px;
+}
+.about-contact-us-dark-inner-bottom-containr{
+    margin-top: 13px;
+}
+.about-contact-us-section {
+    padding: 60px 20px;
+    background-color: #2E3840;
+    flex-direction: column;
+    text-align: center;
+}
+.about-contact-us-section .text-white {
+    margin: 20px 0px;
+}
+}
