@@ -70,8 +70,8 @@ security vulnerabilities.
 
           <div>
             <p className="text-black">
-              Representing 5 nationalities and 13+ years of average experience, our team tackles security challenges effectively.
-*s4access & partners
+              Representing 5 nationalities and 13+ years of average experience.<br></br> *s4access & partners
+
 
             </p>
           </div>
@@ -94,7 +94,8 @@ security vulnerabilities.
 
           <div>
             <p className="text-black">
-             We support S/4 transitions, SoD reviews and project reorganisations to strengthen SAP Access control. 
+            Proven expertise across all <br /> types of SAP Access  Management <br />projects.
+ 
             </p>
           </div>
           

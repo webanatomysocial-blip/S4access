@@ -18,26 +18,24 @@ export default function SAPAccessManagementService() {
       question: 'Why should a company consider outsourcing SAP Access Management?',
       answer: 'Outsourcing helps reduce internal workload, access management costs, and reliance on scarce internal expertise. It provides access to specialized SAP security knowledge, industry best practices, and advanced automation tools, ensuring secure, scalable, and compliant access management.'
     },
-    {
-      question: 'What services are included in your Outsourced SAP Access Management offering?',
-      answer: 'We provide full lifecycle management of SAP access, including role design and maintenance, user provisioning and de-provisioning, SoD risk analysis, automated access reviews, compliance reporting, integration with IAM systems, and continuous monitoring of access risks.'
-    },
-    {
-      question: 'How do you ensure ongoing compliance when managing SAP Access externally?',
-      answer: 'We implement automated workflows for access provisioning and reviews, perform regular SoD conflict and risk analyses, maintain detailed audit trails, and provide transparent reporting. This ensures your SAP environment stays compliant with SOX, GDPR, and other regulatory requirements.'
-    },
+
     {
       question: 'Is the outsourced service customizable to our specific business needs?',
       answer: 'Absolutely. We tailor our outsourced access management services to align with your organization’s industry requirements, internal policies, risk appetite, and SAP landscape complexity, providing a flexible solution that evolves with your business.'
     },
     {
-      question: 'How does outsourcing improve access management efficiency?',
-      answer: 'By leveraging automation and expert knowledge, we significantly reduce manual processes, accelerate user provisioning and de-provisioning, ensure accurate role assignments, and streamline compliance reporting—resulting in faster service delivery and reduced operational risk.'
+      question: 'How easy is it to outsource SAP Access Management to s4access?',
+      answer: 'Outsourcing SAP Access Management to s4access is fast and easy—we’ve successfully taken over responsibilities within weeks, with no disruptions.'
     },
     {
-      question: 'What industries or companies benefit most from outsourced SAP Access Management?',
-      answer: 'Industries with strict regulatory requirements (finance, healthcare, manufacturing, energy, etc.), large organizations with complex SAP landscapes, companies undergoing frequent business changes (M&A, reorganizations), or those lacking in-house security expertise benefit greatly from our outsourced services.'
-    }
+      question: 'How does the cost of outsourcing to s4access compare with traditional system integrators?',
+      answer: 'You’d better ask our customers—many have found outsourcing to s4access not only cost-effective but also more efficient than traditional system integrators.'
+    },
+    {
+      question: 'How satisfied are s4access customers with their SAP Access Management outsourcing experience?',
+      answer: 'We’re happy to connect you directly with our customers for an unbiased view—one strong indication of satisfaction is that no organization has ever switched away from s4access'
+    },
+
   ];
 
 
@@ -124,7 +122,7 @@ export default function SAPAccessManagementService() {
 
 
       {/* Case Studies / Strength Showcase */}
-      <section className="strength-showcase">
+      <section className="strength-showcase" style={{display:'none'}}>
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">

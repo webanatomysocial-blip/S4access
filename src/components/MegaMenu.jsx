@@ -23,7 +23,7 @@ const services = [
   { category: "SAP Access Solutions", items: [
     { name: "Access Risk SoD Management", icon: <FaBalanceScale />, link: "/access-risk-sod-management" },
     { name: "FF Log Review Automation", icon: <FaUserSecret />, link: "/ff-log-review-automation" },
-    { name: "SAP Licence Optimisation", icon: <FaIdBadge />, link: "/sap-license-optimisation" }
+    { name: "SAP License Optimisation", icon: <FaIdBadge />, link: "/sap-license-optimisation" }
   ]}
 ];
 

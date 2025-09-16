@@ -76,7 +76,7 @@ const services = [
         link: '/ff-log-review-automation'
       },
       { 
-        title: 'SAP Licence optimisation', 
+        title: 'SAP License optimisation', 
         desc: 'Optimize SAP licensing in the S/4 era with s4access compliance and optimization service. Gain visibility, simulate cost impacts, and ensure control to avoid compliance risks and unexpected expenses.', 
         link: '/sap-license-optimisation'
       }

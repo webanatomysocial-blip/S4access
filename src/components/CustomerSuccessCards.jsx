@@ -12,7 +12,8 @@ const CustomerSuccessCards = () => (
         <div className="innercoustomer-heading-cont">
           <p className="sub-heading-text-white">SAP Authorization <br /> Concept Owner</p>
           <p className="small-text-white">
-            Since 2019, we’ve managed SAP authorization for a leading steel manufacturer, streamlining user management and ensuring audit compliance. Our service optimized security and license usage effectively.
+            For several years, we've successfully managed SAP access for a leading steel manufacturer—streamlining processes, ensuring audit compliance, and optimizing both security and license usage. 
+
           </p>
         </div>
         <div>

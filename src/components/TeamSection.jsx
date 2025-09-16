@@ -69,7 +69,7 @@ const TeamSection = () => {
         <div className="team-members-column">
           <div className="team-members-top">
             <div className="team-heading-column">
-          <p className="big-heading-text-black">Managment Team</p>
+          <p className="big-heading-text-black">Management Team</p>
           <p className="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla adipisci officiis architecto, aliquid ea necessitatibus autem, ratione suscipit odit asperiores, iste molestias distinctio! Sit soluta nihil, accusamus eveniet nobis deserunt!</p>
         </div>
             {teamMembers.slice(0, 2).map((member, index) => (

@@ -15,32 +15,32 @@ export default function SAPSoDApproach() {
 
 
 
-  const faqs = [
-    {
-      question: 'What is your approach to SoD strategy in SAP environments?',
-      answer: 'Our approach involves defining a comprehensive SoD rule set based on industry best practices and regulatory requirements, performing automated SoD risk analysis, resolving existing conflicts through role redesign, and continuously monitoring for new violations to maintain a compliant environment.'
-    },
-    {
-      question: 'How do you identify and manage SoD conflicts in SAP?',
-      answer: 'We use automated tools to analyze user roles and access assignments against a predefined SoD rule set, identifying conflicts proactively. Each conflict is reviewed and addressed through role remediation, risk acceptance processes, or role restructuring in collaboration with stakeholders.'
-    },
-    {
-      question: 'Why is a well-defined SoD strategy important for organizations?',
-      answer: 'A robust SoD strategy helps prevent fraud, errors, and non-compliance penalties by ensuring that no individual can perform incompatible tasks. It supports internal controls, strengthens auditability, and enhances operational security across SAP landscapes.'
-    },
-    {
-      question: 'Do you customize SoD rules based on specific business needs?',
-      answer: 'Yes, we customize SoD rules based on each organization’s business processes, industry regulations (e.g., SOX, GDPR, HIPAA), and risk appetite, ensuring a tailored approach that aligns compliance requirements with practical operational needs.'
-    },
-    {
-      question: 'How often do you recommend performing SoD risk analysis?',
-      answer: 'We recommend performing SoD risk analysis continuously or at least on a quarterly basis, depending on the size and complexity of the SAP environment, to detect new conflicts arising from role changes, new users, or system updates.'
-    },
-    {
-      question: 'How does your SoD strategy help with compliance audits?',
-      answer: 'Our SoD strategy includes detailed reporting and documentation of risk analyses, conflict resolutions, and ongoing monitoring activities. This enables organizations to provide transparent and audit-ready evidence demonstrating compliance with regulations and internal policies.'
-    }
-  ];
+ const faqs = [
+  {
+    question: 'What kind of deliverables can we expect from the service?',
+    answer: 'You will receive an optimized SoD approach tailored to your organization, along with a roadmap for continuous improvement and long-term compliance.'
+  },
+  {
+    question: 'Can you help us build a sustainable SoD governance model?',
+    answer: 'Yes. Once the SoD strategy and approach are defined, we can support you in implementing a governance model with clear ownership, processes, and tools.'
+  },
+  {
+    question: 'Will this help us pass internal and external audits?',
+    answer: 'Not always directly but defining a clear SoD strategy and approach brings transparency, reduces risk, and significantly improves your chances of meeting audit requirements.'
+  },
+  {
+    question: 'Do we need SAP GRC or another tool in place to benefit from this service?',
+    answer: 'No specific tool is required. We work with or without SAP GRC, adapting to your current setup and recommending tools only if they add value.'
+  },
+  {
+    question: 'How much calendar time does this typically require?',
+    answer: 'Typically 2-3 calendar months, depending on the size and complexity of your SAP environment.'
+  },
+  {
+    question: 'How much involvement is required from our internal team during the review?',
+    answer: 'Key stakeholders from internal controls, internal audit and IT are involved in workshops and decision-making, while we handle the bulk of analysis and documentation.'
+  }
+];
 
 
 
@@ -153,7 +153,7 @@ export default function SAPSoDApproach() {
 
 
     
-       <section className="strength-showcase">
+       <section className="strength-showcase" style={{display:'none'}}>
           <div className="strength-left">
             <h2 className="big-heading-text-white">Case Studies</h2>
             <p className="text-white">

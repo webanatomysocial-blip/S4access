@@ -11,31 +11,31 @@ import case2img from "../assets/images/inner-services-images/SAP-Access-managmen
 export default function SAPAuthorisationConceptDesign() {
 
 const faqs = [
-    {
-      question: 'Why is SoD/Role Redesign important?',
-      answer: 'Over time, roles can accumulate excessive access due to business changes, outdated designs, or manual modifications, increasing risk and complexity. SoD/Role Redesign ensures that roles are aligned with current business processes, minimizes risk of conflicting access, and improves system performance and auditability.'
-    },
-    {
-      question: 'What does your SoD/Role Redesign service include?',
-      answer: 'Our service includes detailed analysis of existing roles and access assignments, identification of SoD conflicts, business process alignment, role optimization to reduce complexity, consolidation of roles where possible, and implementation of a clean, compliant role structure.'
-    },
-    {
-      question: 'How do you approach SoD conflict resolution during role redesign?',
-      answer: 'We first perform a comprehensive SoD risk analysis using industry-standard rule sets. Each identified conflict is assessed in collaboration with business stakeholders and resolved by adjusting role design, splitting roles, or applying risk mitigation strategies, ensuring ongoing compliance and usability.'
-    },
-    {
-      question: 'Can you help reduce the number of SAP roles for easier management?',
-      answer: 'Yes. Part of our role redesign strategy focuses on optimizing the role landscape by eliminating redundant or overlapping roles, consolidating roles where appropriate, and applying role templates to simplify management, reduce maintenance effort, and ensure scalability.'
-    },
-    {
-      question: 'How does role redesign improve compliance and security?',
-      answer: 'By redesigning roles based on business needs and predefined SoD policies, we eliminate unnecessary access and conflicting permissions, enforce principle of least privilege, and provide clear audit trails, helping organizations meet compliance requirements such as SOX and GDPR.'
-    },
-    {
-      question: 'How often should SoD/Role Redesign be performed?',
-      answer: 'We recommend performing a role redesign whenever major organizational or system changes occur (e.g., mergers, process overhauls, SAP upgrades) or at least every 1-2 years to prevent role bloat, ensure compliance, and maintain system efficiency.'
-    }
-  ];
+  {
+    question: 'How does your implementation help break the cycle of recurring role redesigns?',
+    answer: 'Our implementation breaks the cycle of recurring role redesigns by identifying and resolving the root causes of access issues. We deliver a clean, SoD-compliant role design that is stable, scalable, and easy to maintain—eliminating the need for frequent rework.'
+  },
+  {
+    question: 'Can you support both ECC and S/4HANA environments in your role redesign approach?',
+    answer: 'Yes, we have delivered hundreds of SAP role projects across all major SAP solutions and installation types.'
+  },
+  {
+    question: 'How do you ensure the new role design is evergreen and cost-efficient to maintain?',
+    answer: 'This is where we stand apart from many other vendors in the market. As a specialist company, we’ve built deep expertise in understanding how SAP Access Management design and maintenance are interconnected.'
+  },
+  {
+    question: 'Is there an ideal time to redesign SAP roles?',
+    answer: 'If the security level of the SAP system is low, the question of timing becomes irrelevant—redesign should happen immediately. A weak access design poses ongoing risks, and delaying action only increases exposure.'
+  },
+  {
+    question: 'Do you have accelerators to help automate parts of the work?',
+    answer: 'Yes, we have proven tools and methods that help automate and accelerate key parts of the work, making the process efficient and reliable. However, there are no silver bullets in SAP Access Management—success requires a thoughtful approach, deep expertise, and attention to detail.'
+  },
+  {
+    question: 'What sets your approach apart from the competition?',
+    answer: 'As a specialist company, we know there’s no one-size-fits-all approach to SAP role design. We create realistic, tailored plans and combine deep SAP authorization expertise with SoD knowledge in a single team—ensuring both compliance and operational efficiency.'
+  }
+];
 
 
 
@@ -50,7 +50,8 @@ const faqs = [
         <div className="service-left">
           <h2 className="extra-big-heading-text-white">SoD/Role redesign</h2>
           <p className="text-white">
-            We reshape roles and SoD rules to eliminate conflicts, strengthen compliance, and align access with evolving business needs.
+           We break the role redesign cycle by addressing root cause issues and implementing a secure, SoD-compliant access design that is evergreen and cost-efficient to maintain..
+
           </p>
         </div>
         <div className="service-right only-windows">
@@ -94,7 +95,7 @@ const faqs = [
       </section>
 
       {/* Case Studies / Strength Showcase */}
-      <section className="strength-showcase">
+      <section className="strength-showcase" style={{display:'none'}}>
                      <div className="strength-left">
                        <h2 className="big-heading-text-white">Case Studies</h2>
                        <p className="text-white">

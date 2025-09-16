@@ -170,12 +170,9 @@ const Careers = () => {
 
 
       {/* careers Open roles start */}
-      {/* <section className="careers-open-roles-section only-windows">
+      <section className="careers-open-roles-section">
         <div className="careers-open-roles-header">
           <h2 className="big-heading-text-black">Open roles</h2>
-          <a href="#" className="read-more-btn-blue ">
-            Read More <i className="bi bi-arrow-right arrow-icon"></i>
-          </a>
         </div>
         <div className="careers-open-roles-content">
 
@@ -184,18 +181,35 @@ const Careers = () => {
 
 
 
-          <div className="open-role-card">
+          <div className="open-role-card only-mobile">
             <div className="open-role-info">
-              <h3 className="sub-big-heading-text-black">Role name</h3>
+              <h3 className="sub-big-heading-text-black">Senior consultant</h3>
               <div className="sub-heading-text-black">
-                <span>Department</span>
+                <span>SAP Security and GRC</span> <br  className="only-mobile"/>
+                {/* <span className="open-role-divider">|</span> */}
+                <span>Helsinki </span>
                 <span className="open-role-divider">|</span>
-                <span>Location</span>
+                <span>Remote</span>
+              </div>
+            </div><br />
+            <a href="https://s4access.careers.haileyhr.app/en-GB/job/d2cecbb3-f88b-4005-8543-00c9ba8001db/857b7db4-75f0-4d14-94bb-96b387738356/73848863-0220-4c22-942a-91508294e5e0" className="main-button-blue ">
+              ABOUT&nbsp;US&nbsp;<i className="bi bi-arrow-up-right"></i>
+            </a>
+          </div>
+
+
+          <div className="open-role-card only-windows">
+            <div className="open-role-info">
+              <h3 className="sub-big-heading-text-black">Senior consultant</h3>
+              <div className="sub-heading-text-black">
+                <span>SAP Security and GRC</span> <br  className="only-mobile"/>
                 <span className="open-role-divider">|</span>
-                <span>Experience level</span>
+                <span>Helsinki </span>
+                <span className="open-role-divider">|</span>
+                <span>Remote</span>
               </div>
             </div>
-            <a href="/" className="main-button-blue ">
+            <a href="https://s4access.careers.haileyhr.app/en-GB/job/d2cecbb3-f88b-4005-8543-00c9ba8001db/857b7db4-75f0-4d14-94bb-96b387738356/73848863-0220-4c22-942a-91508294e5e0" className="main-button-blue ">
               ABOUT&nbsp;US&nbsp;<i className="bi bi-arrow-up-right"></i>
             </a>
           </div>
@@ -203,62 +217,9 @@ const Careers = () => {
 
 
 
-          <div className="open-role-card">
-            <div className="open-role-info">
-              <h3 className="sub-big-heading-text-black">Role name</h3>
-              <div className="sub-heading-text-black">
-                <span>Department</span>
-                <span className="open-role-divider">|</span>
-                <span>Location</span>
-                <span className="open-role-divider">|</span>
-                <span>Experience level</span>
-              </div>
-            </div>
-            <a href="/" className="main-button-blue ">
-              ABOUT&nbsp;US&nbsp;<i className="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
-
-
-
-          <div className="open-role-card">
-            <div className="open-role-info">
-              <h3 className="sub-big-heading-text-black">Role name</h3>
-              <div className="sub-heading-text-black">
-                <span>Department</span>
-                <span className="open-role-divider">|</span>
-                <span>Location</span>
-                <span className="open-role-divider">|</span>
-                <span>Experience level</span>
-              </div>
-            </div>
-            <a href="/" className="main-button-blue ">
-              ABOUT&nbsp;US&nbsp;<i className="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
-
-
-
-          <div className="open-role-card">
-            <div className="open-role-info">
-              <h3 className="sub-big-heading-text-black">Role name</h3>
-              <div className="sub-heading-text-black">
-                <span>Department</span>
-                <span className="open-role-divider">|</span>
-                <span>Location</span>
-                <span className="open-role-divider">|</span>
-                <span>Experience level</span>
-              </div>
-            </div>
-            <a href="/" className="main-button-blue ">
-              ABOUT&nbsp;US&nbsp;<i className="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
 
         </div>
-      </section> */}
+      </section>
       {/* careers Open roles End */}
 
 

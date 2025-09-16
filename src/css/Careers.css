@@ -144,8 +144,8 @@
   align-items: center;
   justify-content: start;
   gap: 10px;
-  box-shadow: 0 6px 15px rgb(0, 51, 119, 0.2); 
-border-radius: 5px;
+  box-shadow: 0 6px 15px rgb(0, 51, 119, 0.2);
+  border-radius: 5px;
   padding: 20px;
 }
 
@@ -216,33 +216,41 @@ border-radius: 5px;
 
 .careers-gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns for the grid */
-  grid-template-rows: auto auto auto; /* 3 rows */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns for the grid */
+  grid-template-rows: auto auto auto;
+  /* 3 rows */
   gap: 2rem;
 }
 
 /* Top row: 4 smaller images */
 .gallery-img.top-row {
   width: 100%;
-  height: 300px; /* Smaller height for top row */
+  height: 300px;
+  /* Smaller height for top row */
   object-fit: cover;
   border-radius: 8px;
-  grid-column: span 1; /* Each image spans 1 column */
-  grid-row: 1 / 2; /* First row */
+  grid-column: span 1;
+  /* Each image spans 1 column */
+  grid-row: 1 / 2;
+  /* First row */
 }
 
 /* Middle row: 3 larger images */
 .gallery-img.middle-row.left {
-  grid-column: 1 / 2; /* Spans 1 column */
+  grid-column: 1 / 2;
+  /* Spans 1 column */
   grid-row: 2 / 3;
   width: 100%;
-  height: 300px; /* Larger height */
+  height: 300px;
+  /* Larger height */
   object-fit: cover;
   border-radius: 8px;
 }
 
 .gallery-img.middle-row.center {
-  grid-column: 2 / 3; /* Spans 1 column */
+  grid-column: 2 / 3;
+  /* Spans 1 column */
   grid-row: 2 / 3;
   width: 100%;
   height: 300px;
@@ -251,9 +259,11 @@ border-radius: 5px;
 }
 
 .gallery-img.middle-row.right {
-  grid-column: 3 / 5; /* Spans 2 columns */
+  grid-column: 3 / 5;
+  /* Spans 2 columns */
   grid-row: 2 / 3;
-  width: 100%; /* Full width of the spanned columns */
+  width: 100%;
+  /* Full width of the spanned columns */
   height: 300px;
   object-fit: cover;
   border-radius: 8px;
@@ -261,7 +271,8 @@ border-radius: 5px;
 
 /* Bottom row: 2 larger images */
 .gallery-img.bottom-row.left {
-  grid-column: 1 / 3; /* Spans 2 columns */
+  grid-column: 1 / 3;
+  /* Spans 2 columns */
   grid-row: 3 / 4;
   width: 100%;
   height: 400px;
@@ -270,7 +281,8 @@ border-radius: 5px;
 }
 
 .gallery-img.bottom-row.right {
-  grid-column: 3 / 5; /* Spans 2 columns */
+  grid-column: 3 / 5;
+  /* Spans 2 columns */
   grid-row: 3 / 4;
   width: 100%;
   height: 400px;
@@ -279,7 +291,7 @@ border-radius: 5px;
 }
 
 @media only screen and (max-width: 800px) {
-  
+
 
 
   .customer-hero-left-content {
@@ -413,6 +425,7 @@ border-radius: 5px;
     padding: 10px 20px 10px 27px;
     width: 80%;
   }
+ 
 
   .careers-open-roles-header {
     display: flex;
@@ -425,18 +438,19 @@ border-radius: 5px;
     background: #f6f6f6;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 10px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     margin-bottom: 24px;
     border-radius: 5px;
-    width: 90%;
+    width: 100%;
   }
+
   .open-role-info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
   .careers-gallery-section {
     padding: 30px 20px 60px 20px;
@@ -475,10 +489,11 @@ border-radius: 5px;
     grid-column: auto !important;
     grid-row: auto !important;
   }
-.careers-our-promise-content-right-inner {
-  width: 90%;
- gap: 20px;
-  
-}
- 
+
+  .careers-our-promise-content-right-inner {
+    width: 90%;
+    gap: 20px;
+
+  }
+
 }

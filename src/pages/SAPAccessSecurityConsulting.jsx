@@ -16,32 +16,31 @@ export default function SAPAccessSecurityConsulting() {
 
 
 const faqs = [
-    {
-      question: 'Why is SAP Access management critical during M&A or reorganisations?',
-      answer: 'During M&A or reorganisations, there are major changes in business structure, processes, and systems, which often lead to access redundancies, SoD conflicts, and security risks. Proper access management ensures seamless integration, prevents compliance gaps, and protects sensitive data.'
-    },
-    {
-      question: 'How do you handle SAP Access during mergers and acquisitions?',
-      answer: 'We conduct a detailed assessment of both companies’ SAP environments, analyze existing roles and access, identify overlaps and conflicts, and implement a consolidated access strategy. This includes harmonizing roles, resolving SoD conflicts, and integrating identity management systems while maintaining operational continuity.'
-    },
-    {
-      question: 'What is your approach to managing SAP Access in reorganisations or process changes?',
-      answer: 'Our approach includes analyzing current access assignments against the reorganised business processes, identifying outdated or excessive roles, redesigning roles as needed, and aligning user access with new process flows, ensuring compliance and minimizing disruption.'
-    },
-    {
-      question: 'How do you ensure compliance during these business changes?',
-      answer: 'We apply automated risk analysis to identify and resolve SoD conflicts and excessive access before go-live. We ensure that the reorganised or merged SAP landscape meets regulatory standards such as SOX, GDPR, and industry-specific compliance by providing audit-ready documentation and clear risk mitigation.'
-    },
-    {
-      question: 'Can you help simplify the role structure after a merger or reorganisation?',
-      answer: 'Yes, as part of the service, we consolidate and rationalize the role landscape by removing redundant roles, harmonizing role definitions, and applying role templates. This reduces complexity, simplifies future maintenance, and lowers the risk of uncontrolled access growth.'
-    },
-    {
-      question: 'What challenges do you solve in SAP Access during M&A projects?',
-      answer: 'We address key challenges such as conflicting SoD requirements, duplicated user roles, inconsistent access policies, and lack of visibility into combined user access. Our solution ensures a secure, compliant, and efficient transition of SAP access environments.'
-    }
-  ];
-
+  {
+    question: 'How do reorganisations impact SAP Access Management?',
+    answer: 'Reorganisations can significantly impact SAP Access Management by changing reporting lines, job roles, and responsibilities. This often leads to outdated or misaligned access rights, increased SoD risks, and the need for role redesign.'
+  },
+  {
+    question: 'Do reorganizations require a full role redesign in SAP?',
+    answer: 'Not often. Reorganizations don’t always require a full role redesign, but they do demand careful analysis. The key is to identify the impact early and choose the best way to adapt roles without compromising the existing SAP authorization concept.'
+  },
+  {
+    question: 'Do you leverage technology or accelerators to improve efficiency in your work?',
+    answer: 'Yes, we use technology and accelerators during both planning and implementation phases whenever feasible. These tools help streamline the process, improve accuracy, and make the work more efficient—without compromising quality or compliance.'
+  },
+  {
+    question: 'Why are Mergers and Acquisitions challenging for SAP Access Management?',
+    answer: 'M&A often require rapid changes, and these actions are rarely designed with SAP security in mind, leading to difficult situations such as access risks, compliance gaps, and operational disruptions.'
+  },
+  {
+    question: 'How do you approach these challenging situations?',
+    answer: 'We leverage deep expertise to quickly assess the situation and deploy a specialized team on short notice to ensure secure and compliant SAP access management.'
+  },
+  {
+    question: 'How can organizations running SAP effectively prepare for M&A scenarios from an access management perspective?',
+    answer: 'Thanks to our experience across various M&A scenarios, we can advise internal teams early—helping them prepare proactively and avoid surprises in SAP access management.'
+  }
+];
 
 
 
@@ -166,7 +165,7 @@ const faqs = [
 
 
       {/* Case Studies / Strength Showcase */}
-      <section className="strength-showcase">
+      <section className="strength-showcase" style={{display:'none'}}>
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">

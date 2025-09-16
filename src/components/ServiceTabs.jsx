@@ -52,7 +52,7 @@ const services = [
             },
             {
                 title: 'Authorisation Concept Owner',
-                desc: 'Address the SAP Authorization Concept Owner gap with our scalable outsourcing service. Gain rare expertise, enhanced stability, and cost savings through experienced consultants, proven methods, and sustainable continuity.',
+                desc: 'Address the SAP Authorization Concept Owner gap with our scalable outsourcing service. Gain rare expertise, enhanced stability, and cost savings through experienced professionals, proven methods, and sustainable continuity.',
                 link: '/authorisation-concept-owner'
             },
             {
@@ -76,7 +76,7 @@ const services = [
                 link: '/ff-log-review-automation'
             },
             {
-                title: 'SAP Licence optimisation',
+                title: 'SAP License optimisation',
                 desc: 'Optimize SAP licensing in the S/4 era with s4access compliance and optimization service. Gain visibility, simulate cost impacts, and ensure control to avoid compliance risks and unexpected expenses.',
                 link: '/sap-license-optimisation'
             }

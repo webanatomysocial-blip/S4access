@@ -13,31 +13,31 @@ import case2img from "../assets/images/inner-services-images/SAP-Access-managmen
 export default function SAPLicenseCompliance() {
 
  const faqs = [
-    {
-      question: 'Why is SAP License Optimization important?',
-      answer: 'Without proper optimization, companies often overpay for unused licenses or under-license their systems, exposing them to compliance risks and unexpected audit penalties. Optimization ensures cost-efficiency, prevents compliance issues, and provides better visibility into license consumption.'
-    },
-    {
-      question: 'What does your SAP License Optimization service include?',
-      answer: 'We perform a comprehensive analysis of your current license usage, assess user activities, identify unused or underused licenses, provide recommendations for reclassification or reallocation, and design a sustainable licensing strategy that aligns with your business goals and compliance requirements.'
-    },
-    {
-      question: 'How does SAP License Optimization help with cost savings?',
-      answer: 'By identifying and removing unused or underutilized licenses, reclassifying user types based on actual system usage, and right-sizing the licensing model, we help reduce licensing costs—often by 20–40%—while ensuring compliance with SAP’s licensing terms.'
-    },
-    {
-      question: 'How often should SAP License Optimization be performed?',
-      answer: 'We recommend conducting license optimization assessments at least annually or after major system changes (e.g., business process changes, user role updates, system upgrades, or mergers) to maintain an efficient and compliant licensing posture.'
-    },
-    {
-      question: 'Can your service help with preparing for SAP license audits?',
-      answer: 'Yes, our service provides detailed usage reports, documented evidence of license assignment logic, and a clear strategy for optimization, which are critical to demonstrating compliance and mitigating risks during SAP license audits.'
-    },
-    {
-      question: 'Is the SAP License Optimization service industry-specific?',
-      answer: 'Our service is flexible and designed to cater to all industries. Whether in manufacturing, healthcare, finance, or energy, we adapt the licensing strategy based on your specific user roles, industry regulations, and SAP usage patterns.'
-    }
-  ];
+  {
+    question: 'How does the service help optimize SAP license usage?',
+    answer: 'We combine technical data from your SAP system with predefined license rules and compare the results against your actual SAP contract. This allows us to identify mismatches, over-licensing, and hidden usage—giving you a clear path to optimize costs and stay compliant.'
+  },
+  {
+    question: 'Do we need separate software for this service?',
+    answer: 'No. The service runs on our platform and uses your SAP data—no additional software installations are required.'
+  },
+  {
+    question: 'Do you know all the details of SAP licensing agreements?',
+    answer: 'Honestly? We think nobody does—they\'re complex, ever-evolving, and full of nuances. But we’re deeply familiar with many licensing models and scenarios, and we can help you interpret your specific situation to make informed decisions and avoid surprises.'
+  },
+  {
+    question: 'Will you support us in reporting the license status to SAP?',
+    answer: 'Yes. We’ll assist you throughout the reporting process, ensuring that the license data is accurate, aligned with your contract, and ready for submission to SAP.'
+  },
+  {
+    question: 'Is the service compatible with both ECC and S/4HANA environments?',
+    answer: 'Yes. The service works seamlessly with both SAP ECC and SAP S/4HANA, ensuring consistent license optimization across your SAP landscape.'
+  },
+  {
+    question: 'Can you support us in making the needed changes after the analysis?',
+    answer: 'Yes. We’ll help you implement the necessary adjustments based on the analysis—whether it’s reassigning licenses, updating user classifications, or aligning your setup with SAP’s licensing model.'
+  }
+];
 
   return (
     <>
@@ -122,7 +122,7 @@ export default function SAPLicenseCompliance() {
         </div>
       </section>
 
-      <section className="strength-showcase">
+      <section className="strength-showcase" style={{display:'none'}}>
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">

@@ -25,41 +25,44 @@ export default function SAPAccessReview() {
 
 
 
-const faqs = [
+  const faqs = [
     {
-      question: 'What is included in your SAP Access Management service?',
-      answer: 'Our SAP Access Management service includes user provisioning and de-provisioning, role design and optimization, Segregation of Duties (SoD) conflict management, access risk analysis, periodic access reviews, and integration with Identity Access Management (IAM) systems to ensure efficient and secure access control.'
+      question: 'What is the purpose of the SAP Access Management Review?',
+      answer: 'To assess the current situation and identify root causes. Based on this, we create a clear, actionable plan to move forward and improve your SAP Access Management.'
     },
     {
-      question: 'How does your SAP Access Management service improve security?',
-      answer: 'We perform continuous risk evaluations and analyze over 50 million access risk values annually to identify and remediate vulnerabilities. Our proactive approach ensures that users have the right access levels, reducing the risk of unauthorized transactions and data breaches.'
+      question: 'What kind of insights will we gain from the review?',
+      answer: 'The review will help you understand your current situation clearly—identifying not just the symptoms but the actual root causes of access-related challenges. This insight supports the development of permanent solutions that lead to improved SAP Access Management, with stronger security and compliance.'
     },
     {
-      question: 'What industries do you serve with your SAP Access Management service?',
-      answer: 'We serve a wide range of industries including manufacturing, finance, healthcare, retail, energy, and public sector organizations, helping them manage complex SAP landscapes while maintaining compliance and security standards.'
+      question: 'How do you assess our current access management situation?',
+      answer: 'We review your governance, skills, resourcing, processes, and technical reality through interviews, system analysis, and documentation review.'
     },
     {
-      question: 'How do you manage Segregation of Duties (SoD) conflicts in SAP Access?',
-      answer: 'Our service includes automated SoD conflict detection using industry best practices and predefined rule sets. We evaluate and resolve potential conflicts during role design and periodic risk evaluations, ensuring compliance with regulations like SOX and GDPR.'
+      question: 'What makes your review different from a standard audit?',
+      answer: 'Unlike a traditional audit, we focus on root causes, practical improvements, and long-term sustainability—not just compliance checks.'
     },
     {
-      question: 'Can you support SAP Access Management for global organizations?',
-      answer: 'Yes. With a diverse team representing 5 nationalities and extensive experience managing multi-country SAP environments, we provide scalable and flexible Access Management solutions that address local compliance requirements and global security strategies.'
+      question: 'Will we receive a concrete action plan after the review?',
+      answer: 'Yes. You’ll receive a realistic, prioritized action plan tailored to your organization’s needs and goals.'
     },
     {
-      question: 'How frequently should SAP Access be reviewed, and is this part of the service?',
-      answer: 'We recommend regular access reviews—typically quarterly or biannually—and include periodic user access reviews as part of our service. This ensures that outdated or excessive access is removed in a timely manner, maintaining security and compliance.'
+      question: 'How long does the review process typically take?',
+      answer: 'Most reviews are completed within 1–2 calendar months, depending on the size and complexity of your SAP environment.'
     },
     {
-      question: 'Do you provide role design and optimization as part of the service?',
-      answer: 'Absolutely. Our service includes designing and optimizing SAP roles to align with business needs and reduce access risk, leveraging best practices to simplify role structures, reduce SoD conflicts, and improve overall system performance.'
+      question: 'Can the review be followed by support for implementation and ongoing improvements?',
+      answer: 'Absolutely. We offer full support from planning and implementation to continuous improvement and operations.'
     },
     {
-      question: 'How do you ensure compliance through your SAP Access Management service?',
-      answer: 'We provide ongoing risk monitoring, detailed access reports, automated SoD conflict detection, and periodic audits. Our service helps companies meet regulatory standards such as SOX, GDPR, HIPAA, and industry-specific compliance requirements by enforcing secure access controls.'
+      question: 'How much involvement is required from our internal team during the review?',
+      answer: 'Minimal. We handle most of the work, but we’ll need input from key stakeholders to ensure accuracy and relevance.'
+    },
+    {
+      question: 'Is there an ideal time for the review?',
+      answer: 'The review provides valuable insights at any time. Whether you\'re preparing for changes, responding to issues, or simply aiming to improve, it helps uncover root causes and supports lasting improvements in SAP Access Management—making it a smart investment year-round.'
     }
   ];
-
 
 
 
@@ -74,7 +77,7 @@ const faqs = [
             SAP Access <br /> Management review
           </h2>
           <p className="text-white">
-          We provide a clear review of your SAP access setup, identifying risks, compliance gaps, and improvement areas to strengthen security and ensure smooth operations.
+            We provide an understandable view of your organization’s SAP Access Management situation and deliver a clear, actionable plan forward to improve efficiency, compliance, and long-term sustainability.
           </p>
         </div>
         <div className="service-right only-windows">
@@ -271,42 +274,46 @@ const faqs = [
         </div>
       </section> */}
 
-       <section className="strength-showcase">
-    <div className="strength-left">
-      <h2 className="big-heading-text-white">Case Studies</h2>
-      <p className="text-white">
-        Learn how our S/4 Access Management Review identified critical issues and provided a clear roadmap to strengthen SAP access controls for a client.
-      </p>
-    </div>
-
-    {/* Case Study 1 - Project Detail */}
-    <div className="strength-right">
-      <div className="stats-card">
-        <h3 className="sub-heading-text-black">SAP S/4 Implementation</h3>
-        <h4 className="text-black">Comprehensive Access Review</h4>
-        <p className="text-black">
-          Assessed governance, processes, and technical configuration using the s4access SAP Access Analytics Platform to identify critical issues.
-        </p>
-        <div className="image-container-showcase">
-          <img src={case1img} alt="case study" />
+      <section className="strength-showcase">
+        <div className="strength-left">
+          <h2 className="big-heading-text-white">Case Studies</h2>
+          <p className="text-white">
+            Learn how our S/4 Access Management Review identified critical issues and provided a clear roadmap to strengthen SAP access controls for a client.
+          </p>
+          <Link to="/s4-access-management-review" className="read-more-btn ">
+            Read More  <i className="bi bi-arrow-right arrow-icon"></i>
+          </Link>
         </div>
-      </div>
-    </div>
 
-    {/* Case Study 2 - Business Outcome */}
-    <div className="strength-right">
-      <div className="stats-card">
-        <h3 className="sub-heading-text-black">SAP S/4 Implementation</h3>
-        <h4 className="text-black">Reduced Compliance Risks</h4>
-        <p className="text-black">
-          Delivered a prioritized roadmap aligning with audit requirements, enhancing access management security and compliance.
-        </p>
-        <div className="image-container-showcase">
-          <img src={case2img} alt="case study" />
+        {/* Case Study 1 - Project Detail */}
+        <div className="strength-right">
+          <div className="stats-card">
+            <h3 className="sub-heading-text-black">SAP S/4 Implementation</h3>
+            <h4 className="text-black">Comprehensive Access Review</h4>
+            <p className="text-black">
+              Assessed governance, processes, and technical configuration using the s4access SAP Access Analytics Platform to identify critical issues.
+            </p>
+            <div className="image-container-showcase">
+              <img src={case1img} alt="case study" />
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+
+        {/* Case Study 2 - Business Outcome */}
+        <div className="strength-right">
+          <div className="stats-card">
+            <h3 className="sub-heading-text-black">SAP S/4 Implementation</h3>
+            <h4 className="text-black">Comprehensive Access Review</h4>
+            <p className="text-black">
+              “This review was totally  something else we<br /> get from normal audits” <br /> – SAP Director
+
+            </p>
+            <div className="image-container-showcase">
+              <img src={case2img} alt="case study" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="strength-bottom">
         <div className="stat-card">

@@ -11,7 +11,7 @@ function Footer() {
         <div className="left-logo-container-footer">
           <img src={mainlogo} alt="S4access Logo" />
           <p className="text-white only-windows">
-            New SAP access security era begins. With 20+ years of expertise and advanced tech, we provide solutions to streamline your SAP access management.
+           A New Era in SAP Access Management Begins. Backed by deep expertise and experience, we deliver sustainable SAP Access management solutions.
           </p>
 
           <div className="contact-details">
@@ -222,7 +222,7 @@ function Footer() {
                 </li>
                 <li>
                   <Link to="/sap-license-optimisation" className="footer-link">
-                    SAP Licence Optimisation
+                    SAP License Optimisation
                   </Link>
                 </li>
               </ul>

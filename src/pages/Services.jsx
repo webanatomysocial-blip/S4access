@@ -14,7 +14,7 @@ function Services() {
   const faqs = [
     {
       question: 'What SAP Access Management challenges do your services address?',
-      answer: 'We address critical challenges such as managing complex user roles, preventing segregation of duties (SoD) conflicts, controlling unauthorized access, reducing license costs, ensuring compliance with regulations, and handling evolving business processes or mergers.'
+      answer: 'We provide end-to-end services—from design and implementation to ongoing operations—bringing deep, market-scarce expertise to address critical challenges such as designing evergreen SAP access management, preventing segregation of duties (SoD) conflicts, controlling unauthorized access, reducing license costs, ensuring regulatory compliance, and adapting to evolving business processes or organizational changes like mergers.'
     },
     {
       question: 'How do your services help prevent security risks in SAP systems?',
@@ -22,11 +22,11 @@ function Services() {
     },
     {
       question: 'Can your services simplify the management of SAP authorizations?',
-      answer: 'Yes. We streamline access governance by automating user provisioning, access reviews, role assignments, and license management—reducing administrative burden while ensuring that each user has the appropriate level of system access.'
+      answer: 'Yes. By applying best practices across governance, processes, and technology, we simplify authorizations—ensuring each user has the appropriate level of system access while reducing administrative burden.'
     },
     {
       question: 'How do you handle SAP Access challenges during business reorganizations or M&A?',
-      answer: 'We provide structured support for process changes, role realignment, and system integrations. Our experts ensure access policies are realigned to reflect new organizational structures while maintaining compliance and minimizing disruption.'
+      answer: 'With extensive experience in handling these critical transitions, we understand that time is of the essence. As a specialist company, we can act quickly and decisively. We provide structured support for process changes, role realignment, and system integrations. Our experts ensure that access policies are swiftly and accurately realigned to reflect new organizational structures—maintaining compliance and minimizing disruption throughout the change.'
     },
     {
       question: 'Do your services help with SAP licensing challenges?',
@@ -34,15 +34,15 @@ function Services() {
     },
     {
       question: 'What makes your approach effective in solving access management challenges?',
-      answer: 'We combine deep SAP security expertise, proven methodologies, advanced automation tools, and a risk-based approach. This allows us to solve challenges in a systematic, scalable, and business-aligned way, delivering sustainable solutions.'
+      answer: 'We always begin by analyzing the root causes behind access management challenges—ensuring we don’t just treat symptoms but solve the real issues. Based on this insight, we create realistic, actionable plans and design sustainable, evergreen SAP access management solutions.'
     },
     {
       question: 'Are your solutions adaptable to industry-specific compliance requirements?',
-      answer: 'Yes. We tailor our solutions to meet industry-specific regulations such as SOX, GDPR, HIPAA, and others, providing frameworks and controls designed to help you pass audits and avoid penalties.'
+      answer: 'Yes. Our solutions are fully adaptable to industry-specific compliance requirements. With proven experience across key industries, we tailor our approach to address their unique challenges—ensuring access controls and processes meet all relevant standards.'
     },
     {
       question: 'How do your services ensure continuous improvement in SAP Access Management?',
-      answer: 'Through periodic access reviews, automated log analysis, risk assessments, and regular optimization of roles and licenses, our services help maintain long-term control, reduce complexity, and continuously improve security and compliance postures.'
+      answer: 'Over the years, we’ve developed efficient householding methods in close cooperation with our customers. Our service ensures continuous improvement in SAP Access Management through root cause analysis, regular reviews, and iterative enhancements—keeping your access design efficient, compliant, and evergreen.'
     }
   ];
 
@@ -64,7 +64,7 @@ function Services() {
             SAP access management challenges
           </p>
           <p className="text-white">
-            We deliver end-to-end solutions tailored to tackle complex SAP access management issues, from risk reduction and compliance to automation and long-term governance.
+            We deliver services—from design and implementation to ongoing operations—in true partnership with our clients to achieve lasting results.
           </p>
 
         </div>
@@ -98,7 +98,7 @@ function Services() {
       {/* ServiceSection section start */}
       {/* <ServiceSection /> */}
 
-       <section className="service-page-services-section">
+      <section className="service-page-services-section">
 
         <ServiceTabs />
       </section>
@@ -113,7 +113,7 @@ function Services() {
 
 
 
-    
+
 
 
 
@@ -152,7 +152,7 @@ function Services() {
       </section> */}
       {/* Partners and alliances section end */}
 
-        {/* image-cta start */}
+      {/* image-cta start */}
       <section className="image-cta-section">
         <div className="first-container-image-cta">
           <p className="sub-heading-text-white">

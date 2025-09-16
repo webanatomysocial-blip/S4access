@@ -1,14 +1,13 @@
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import '../css/App.css';
-// import 
 import CustomerSuccessCards from "../components/CustomerSuccessCards.jsx";
-// import React, { useState } from "react";
 import banner1 from '../assets/images/home-img/Success-top-img.jpg';
+import banner2 from '../assets/images/home-img/Success-top-img-2.jpg';
 
 
 function CustomerSuccess() {
-  // Popup handlers
+
 
   return (
     <div>
@@ -16,12 +15,13 @@ function CustomerSuccess() {
       <section className="customer-hero-section">
         <div className="customer-hero-left-content">
           <p className="extra-big-heading-text-white">
-            Our Approach
+            Expert Care for SAP Security
 
           </p>
           <p className="text-white">
-            We focus on long-term partnerships with our customers, ensuring SAP security through expertise, consistency, and trust. From the start, we make onboarding simple and build lasting value—not quick wins. That’s why our customers stay with us. If you’re not yet a customer, we’d be glad to discuss a partnership with you.
-          </p>
+            Our approach to daily work is built on two core principles:
+            We focus on our current customers, and we do this in true long-term partnership.
+            SAP security is never fixed overnight. It requires deep expertise, consistency, and trust. From day one, we bring together the collective knowledge of our company to ensure your SAP Access Management is handled with more care than even you might expect.          </p>
 
 
         </div>
@@ -35,7 +35,45 @@ function CustomerSuccess() {
 
       </section>
 
-      
+
+
+      <section className="customer-hero-section-reverse">
+        <div className="customer-hero-left-content-reverse">
+          <p className="extra-big-heading-text-black">
+            Join Easily, Stay for Success
+
+          </p>
+          <p className="text-black">
+            We’re proud to say our customers stay with us. Our commitment to long-term success means we don’t chase quick wins—we build lasting value. And becoming our customer? It’s easy. No complicated onboarding, no endless paperwork—just a straightforward start to a partnership that’s built to last.
+            We understand our approach might differ from other vendors in the market. But that’s exactly why it works. In case you are not already our customer, kindly contact us and we are happy to discuss a partnership with you!        </p>
+
+
+        </div>
+
+        <div className="careers-hero-right-content-reverse">
+          <img src={banner2} alt="" srcset="" />
+
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <CustomerSuccessCards />
       <Footer />
     </div>

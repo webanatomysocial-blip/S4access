@@ -1,16 +1,43 @@
 .customer-hero-section {
   background-color: rgb(0, 0, 0);
-  height: 60vh;
+  height: fit-content;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
-  padding: 100px 0px 0px 50px;
+  padding: 160px 0px 100px 50px;
   margin-top: -100px;
 }
 
-
-
-
+.customer-hero-section-reverse {
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 50px 100px 50px;
+}
+.customer-hero-left-content-reverse{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+}
+.customer-hero-right-content-reverse{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+  justify-content: center
+}
+.careers-hero-right-content-reverse img{
+  width: 400px;
+  height: auto;
+  border-radius: 5px;
+}
 
 
 
@@ -218,15 +245,176 @@
 
 
 @media only screen and (max-width: 800px) {
-    .customer-hero-section {
+  .customer-hero-section{
+    padding: 60px 20px;
+    flex-direction:column-reverse;
+    gap:40px;
+    position:static;
+    margin:0;
+  }
+    .Coustomer-success-page-hero-section {
     background-color: rgb(0, 0, 0);
-    display: flex;
     height: fit-content;
     flex-direction: column-reverse;
     align-items: start;
     justify-content: space-between;
     padding:60px 20px;
     margin: 0px;
+    gap:30px;
   }
+  .Coustomer-success-page-hero-container-left{
+    width:100%;
+  }
+  .Coustomer-success-page-hero-container-right img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+
+
+.Coustomer-success-page-scope-of-service-section {
+  padding: 60px 20px;
+  position: relative;
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+}
+
+.Coustomer-success-page-card-right img {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+.Coustomer-success-page-card{
+  width:100%;
+}
+.Coustomer-success-page-Achievements-section-diff-content{
+   padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #ffffff;
+  /* margin-bottom: 100px; */
+}
+.Coustomer-success-inner-achievements-left{
+  width:100%;
+}
+.Coustomer-success-inner-achievements-right img{
+  width: 330px;
+  height: auto;
+  border-radius: 5px;
+
+}
+.Coustomer-success-inner-achievements-right {
+  width:100%;
+}
+.CustomerSuccess-service-cta {
+  margin: 0px;
+  background: linear-gradient(135deg, #40ffc9 -30%, #003377 80%, #40ffc9 120%);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2E3840;
+  padding: 60px 20px;
+  gap:40px;
+  /* margin: 40px 0; */
+}
+
+.CustomerSuccess-cta-content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  width:100%;
+  text-align:center;
+}
+
+
+
+
+
+.Coustomer-success-page-Achievements-section {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #ffffff;
+  /* margin-bottom: 100px; */
+}
+
+.Coustomer-success-page-achievements-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Coustomer-success-page-achievement-card {
+  width: 89%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  background: #F4F4F4;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.Coustomer-success-page-card li{
+  overflow:visible;
+}
+.Coustomer-success-page-card ul{
+  padding-left:20px;
+}
+
+
+
+
+
+
+
+
+
+.customer-hero-section-reverse {
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px 60px 20px;
+}
+.customer-hero-left-content-reverse{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+}
+.customer-hero-right-content-reverse{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: end;
+  justify-content: center
+}
+.careers-hero-right-content-reverse img{
+  width: 370px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+
 
 }

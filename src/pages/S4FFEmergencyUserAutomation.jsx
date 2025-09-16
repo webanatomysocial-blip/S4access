@@ -16,31 +16,27 @@ export default function SAPSoDApproach() {
 
 
  const faqs = [
-    {
-      question: 'Why is automating FF Log Review important?',
-      answer: 'Manual FF log reviews are time-consuming, error-prone, and may miss critical compliance gaps. Automation ensures faster, more consistent log analysis, highlights suspicious activities immediately, reduces human error, and helps maintain compliance with regulations like SOX and GDPR.'
-    },
-    {
-      question: 'What does your FF Log Review Automation service include?',
-      answer: 'Our service automates the collection, correlation, and analysis of FF log entries. It includes predefined rule sets to detect risk patterns, automatic generation of review reports, notification of anomalies, and integration with compliance workflows for efficient and timely remediation.'
-    },
-    {
-      question: 'How does FF Log Review Automation improve compliance?',
-      answer: 'Automated reviews provide consistent and complete oversight of all firefighter sessions. Detailed audit trails and exception reports are generated automatically, helping organizations prove compliance during audits and ensuring any misuse of privileged access is quickly identified and resolved.'
-    },
-    {
-      question: 'Can the FF Log Review be customized to specific business needs?',
-      answer: 'Yes, we tailor the automation rules and thresholds based on your company’s risk tolerance, regulatory requirements, and industry-specific practices, ensuring that the FF log review aligns with your internal policies and audit expectations.'
-    },
-    {
-      question: 'How frequently are FF logs reviewed with automation?',
-      answer: 'Automation enables continuous, real-time or daily log reviews, depending on your business needs and risk appetite. This ensures that any unauthorized or suspicious activities are detected immediately rather than waiting for periodic manual audits.'
-    },
-    {
-      question: 'What industries benefit most from FF Log Review Automation?',
-      answer: 'Industries with high compliance demands—such as banking, healthcare, pharmaceuticals, and energy—benefit greatly, as they face strict regulatory frameworks and require near real-time monitoring of privileged access to maintain security and audit readiness.'
-    }
-  ];
+  {
+    question: 'Do we need SAP GRC for this service?',
+    answer: 'No, you don’t. If you already have SAP GRC, we can deliver the service using your existing setup. If not, we offer a fully functional alternative that does not require SAP GRC installation, making it easier and faster to get started.'
+  },
+  {
+    question: 'Is it fast to implement?',
+    answer: 'Yes. Once the initial paperwork and technical enablement are complete, the first complete automated review cycle can be started immediately.'
+  },
+  {
+    question: 'Is the service audit-proven?',
+    answer: 'Absolutely. Our customers have been using this service for years and have successfully passed audits by all major auditing firms—without comments. It consistently meets audit standards and supports transparent, well-documented access risk management.'
+  },
+  {
+    question: 'What is expected from us as the customer?',
+    answer: 'Very little to get started. The service is up and running with minimal effort on your side. Once enabled, we’ll guide you through setting up the necessary governance and processes to ensure you get full value from the log review.'
+  },
+  {
+    question: 'Does it cover ECC and S/4 environments?',
+    answer: 'Yes. The service fully supports both SAP ECC and SAP S/4HANA environments.'
+  }
+];
 
 
 
@@ -59,8 +55,8 @@ export default function SAPSoDApproach() {
             We automate Firefighter (FF) log reviews to improve accuracy, reduce manual workload, and ensure faster, compliant audit reporting.
           </p>
         </div>
-        <div className="service-right">
-          <div className="service-image only-windows">
+        <div className="service-right only-windows">
+          <div className="service-image ">
             <img src={image} alt="cloud compliance" />
           </div>
         </div>
@@ -122,7 +118,7 @@ export default function SAPSoDApproach() {
             </div>
             <div className="solution-intro-card only-mobile ">
               <h2 className="big-heading-text-black">
-                S4 Access Automated Log Review Service
+                S4Access Automated Log Review Service
               </h2>
               <div className="card-sub-content">
                 <p className="text-black">
@@ -185,7 +181,7 @@ export default function SAPSoDApproach() {
 
      
 
-      <section className="strength-showcase">
+      <section className="strength-showcase" style={{display: 'none'}}>
               <div className="strength-left">
                 <h2 className="big-heading-text-white">Case Studies</h2>
                 <p className="text-white">

@@ -15,31 +15,31 @@ export default function SAPSoDApproach() {
 
 
   const faqs = [
-    {
-      question: 'Why is SoD Management critical for SAP environments?',
-      answer: 'SoD controls prevent users from holding conflicting access rights that could lead to unauthorized activities or financial misstatements. Without proper SoD management, companies face high compliance risks, potential fraud, audit failures, and reputational damage.'
-    },
-    {
-      question: 'What are common SoD conflicts in SAP systems?',
-      answer: 'Typical conflicts include combining financial transaction approvals (e.g., vendor creation and payment processing), system administration and process execution access, or access to both master data maintenance and transactional functions, which could allow fraudulent actions.'
-    },
-    {
-      question: 'How does your SoD Management service work?',
-      answer: 'We use automated tools and expert analysis to assess existing user access against a predefined SoD rule set. We identify conflicts, analyze risk exposure, and implement mitigation strategies, such as role redesign, user reassignment, or compensating controls, to ensure compliance and reduce risk.'
-    },
-    {
-      question: 'How often should SoD conflicts be reviewed?',
-      answer: 'We recommend continuous or at least quarterly SoD risk assessments, particularly after significant changes such as system upgrades, role redesigns, process changes, or M&A activities, to ensure ongoing compliance and prevent new conflicts from emerging.'
-    },
-    {
-      question: 'What industries benefit most from SoD Management services?',
-      answer: 'Industries with high regulatory oversight—such as financial services, healthcare, manufacturing, and energy—benefit greatly from our SoD Management service, as they face strict audit requirements and high risks related to financial or data security breaches.'
-    },
-    {
-      question: 'How do you handle SoD conflict resolution?',
-      answer: 'Our approach includes detailed risk analysis, business stakeholder validation, role and access redesign, applying mitigating controls where needed, and providing transparent documentation for audit purposes. We focus on sustainable solutions that balance compliance with operational efficiency.'
-    }
-  ];
+  {
+    question: 'When should we use this service?',
+    answer: 'There’s virtually no situation where this service isn’t valuable. Whether you\'re designing new roles, implementing SAP systems, or optimizing existing SoD controls, continuous access risk management helps ensure compliance, reduce audit findings, and improve security.'
+  },
+  {
+    question: 'Is it fast to implement?',
+    answer: 'Yes. Once the initial paperwork and technical enablement are complete, the first access risk results are typically available within 1–2 days, allowing for a quick start to analysis and decision-making.'
+  },
+  {
+    question: 'Is the service audit-proven?',
+    answer: 'Absolutely. Our customers have been using this service for years and have successfully passed audits by all major auditing firms—without comments. It consistently meets audit standards and supports transparent, well-documented access risk management.'
+  },
+  {
+    question: 'What is expected from us as the customer?',
+    answer: 'Very little to get started. The service is up and running with minimal effort on your side. Once enabled, we’ll guide you through setting up the necessary governance and processes to ensure you get full value from the access risk results.'
+  },
+  {
+    question: 'How does the cost compare to other alternatives in the market?',
+    answer: 'The service is based on a reasonable fixed monthly fee, which keeps budgeting simple and predictable. Compared to several software-based solutions, the total cost of ownership is significantly lower, especially when factoring in implementation, maintenance, and complexity.'
+  },
+  {
+    question: 'Does it cover ECC and S/4 environments?',
+    answer: 'Yes. The service fully supports both SAP ECC and SAP S/4HANA environments, ensuring consistent access risk management across legacy and modern SAP landscapes.'
+  }
+];
 
 
 
@@ -55,7 +55,7 @@ export default function SAPSoDApproach() {
             Access Risk SoD Management
           </h2>
           <p className="text-white">
-            We identify, monitor, and mitigate access risks and Segregation of Duties (SoD) conflicts, ensuring stronger compliance, smoother audits, and secure SAP operations.
+            We identify, monitor, and prevent access risks and Segregation of Duties (SoD) conflicts, ensuring stronger compliance, smoother audits, and secure SAP operations.
           </p>
         </div>
         <div className="service-right only-windows">
@@ -174,7 +174,7 @@ export default function SAPSoDApproach() {
 
       
 
-      <section className="strength-showcase">
+      <section className="strength-showcase" style={{display:'none'}}>
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">

@@ -14,32 +14,31 @@ export default function SAPGRCAccessControlServices() {
 
 
 const faqs = [
-    {
-      question: 'Why is there a growing demand for SAP Security Architects?',
-      answer: 'As SAP systems grow more complex and integrate tightly with other IT systems, ad hoc role design and fragmented security practices often result in inefficiencies and security risks. Organizations need strategic, future-proof security architectures to manage risks, improve compliance, and optimize performance.'
-    },
-    {
-      question: 'What challenges do organizations face without a dedicated SAP Security Architect?',
-      answer: 'Without a dedicated Security Architect, companies face uncoordinated role growth, uncontrolled SoD conflicts, inconsistent compliance controls, high complexity in access management, and poor alignment between business requirements and security practices.'
-    },
-    {
-      question: 'What does your SAP Security Architect service provide?',
-      answer: 'We deliver end-to-end design and governance of SAP security architecture, including role design strategy, SoD framework development, risk-based role modeling, integration with identity and access management (IAM) systems, compliance alignment, and future-proof design recommendations.'
-    },
-    {
-      question: 'How does an SAP Security Architect help ensure compliance?',
-      answer: 'The Security Architect establishes a structured, risk-based approach to role design and SoD management, ensuring that access assignments follow regulatory frameworks like SOX, GDPR, and industry-specific mandates. They provide strategic guidance for access reviews, audit readiness, and continuous risk mitigation.'
-    },
-    {
-      question: 'Why is it hard for companies to fill the SAP Security Architect role internally?',
-      answer: 'There is a global shortage of experienced SAP security professionals. The role requires a unique combination of deep SAP technical knowledge, risk management expertise, and strategic business alignment capabilities, making recruitment and retention highly challenging.'
-    },
-    {
-      question: 'Can your SAP Security Architect service be adapted for specific industries or business models?',
-      answer: 'Absolutely. We customize the architecture strategy based on industry-specific compliance needs, business processes, system complexity, and organizational structure, ensuring the solution is fully aligned with your unique goals and risk profile.'
-    }
-  ];
-
+  {
+    question: 'Why should a company consider outsourcing the SAP Security Architect role?',
+    answer: 'Many organizations first need to recognize that SAP Security Architecture is a critical competence—especially in S/4HANA environments where security, compliance, and integration challenges are more demanding. Recruiting and retaining experts with deep, cross-functional SAP security knowledge is increasingly difficult. Most companies can\'t justify hiring multiple high-level specialists to cover all areas, making it hard to build and maintain the necessary expertise in-house.'
+  },
+  {
+    question: 'Is outsourcing the SAP Security Architect more expensive than hiring internal personnel?',
+    answer: 'Surprisingly, no. Many organizations discover—especially when moving to S/4HANA or improving their SAP Access Management—that the full cost of maintaining an internal team with the required expertise is significantly higher. In many cases, the role is covered through a mix of internal staff and external consultants, which often leads to a higher total cost.'
+  },
+  {
+    question: 'What if we don’t need a full-time Authorisation Concept Owner—can the service be scaled to our needs?',
+    answer: 'Absolutely. Our SAP Security Architect service is designed to be flexible. Whether you\'re a smaller organization with limited needs or a larger enterprise facing complex projects, we can scale the service up or down accordingly. This ensures you get the right level of expertise when needed—without the cost or commitment of a full-time hire.'
+  },
+  {
+    question: 'How will the SAP Security Architect service learn and understand our organization’s structure, processes, and SAP environment?',
+    answer: 'Our service is delivered by experienced, named experts who stay with your organization long-term. We work closely with your internal teams, becoming part of your operations and taking time to understand your structure, business processes, and SAP landscape. This approach ensures continuity, deep domain knowledge, and tailored support that evolves with your needs.'
+  },
+  {
+    question: 'Is it difficult to get started with the outsourced SAP Security Architect service?',
+    answer: 'Not at all. We can onboard quickly and begin adding value right away. Our experts are familiar with a wide range of SAP environments and know how to integrate smoothly into your organization, making the startup process fast, efficient, and low effort for your internal team.'
+  },
+  {
+    question: 'Are your customers satisfied with the outsourced SAP Security Architect service?',
+    answer: 'Yes, our customers consistently report high satisfaction with the service. They value the deep expertise, continuity, and flexibility we provide—especially during complex projects, audits, and transitions to S/4HANA. Long-term relationships and repeat engagements are a strong indicator of the trust and results we deliver.'
+  }
+];
 
 
 
@@ -149,7 +148,7 @@ const faqs = [
 
      
      {/* Case Studies / Strength Showcase */}
-           <section className="strength-showcase">
+           <section className="strength-showcase" style={{display: "none"}}>
              <div className="strength-left">
                <h2 className="big-heading-text-white">Case Studies</h2>
                <p className="text-white">

@@ -16,32 +16,31 @@ export default function SAPaccess() {
 
 
 const faqs = [
-    {
-      question: 'What are the key benefits of automating SAP Access Management?',
-      answer: 'Automation accelerates access provisioning and de-provisioning, reduces human errors, improves compliance with regulatory requirements, ensures timely access changes, increases process efficiency, and enhances visibility into access controls.'
-    },
-    {
-      question: 'Which processes do you automate in SAP Access Management?',
-      answer: 'We automate critical processes such as user onboarding/offboarding, role assignment and adjustment, automated SoD conflict detection, access risk analysis, periodic access reviews, and audit reporting to ensure faster and more secure access management.'
-    },
-    {
-      question: 'How does automation help with compliance in SAP environments?',
-      answer: 'Automated workflows ensure consistent enforcement of access policies, real-time SoD conflict checks, and automatic generation of audit trails and compliance reports. This enables faster audit readiness and reduces the risk of non-compliance penalties.'
-    },
-    {
-      question: 'Is your SAP Access Automation solution customizable?',
-      answer: 'Yes, our automation solution is fully customizable to reflect each organization’s business rules, risk appetite, SoD policies, and integration needs with other Identity Access Management (IAM) systems, ensuring the right level of control for every unique SAP landscape.'
-    },
-    {
-      question: 'How does automation improve the speed of user provisioning?',
-      answer: 'Automated workflows enable immediate role assignments based on predefined rules and approvals, reducing the time it takes from user request to access being provisioned—often from days or weeks down to hours or minutes.'
-    },
-    {
-      question: 'Can automation help with periodic access reviews?',
-      answer: 'Absolutely. Automation enables scheduled and systematic user access reviews, sending reminders to managers, automatically highlighting anomalies, and providing structured reports to speed up the review process while ensuring nothing is missed.'
-    }
-  ];
-
+  {
+    question: 'What is SAP Access Management Automation?',
+    answer: 'It refers to using various technologies to streamline how user access, roles, and authorizations are handled in SAP systems. There are many point solutions available, each addressing specific challenges, but without a clear strategy, organizations risk overinvesting in tools that don’t align with their broader access management goals.'
+  },
+  {
+    question: 'Can we automate everything in SAP access management?',
+    answer: 'Not entirely. Many areas are good candidates for automation, but introducing automation in the wrong place can lead to severe security problems, such as inappropriate access or compliance violations. A thoughtful strategy is essential to ensure automation supports—not compromises—your access management.'
+  },
+  {
+    question: 'How does automation improve compliance in SAP systems?',
+    answer: 'Automation can support compliance in many ways—by enforcing access policies, reducing manual errors, and maintaining audit trails. It helps streamline processes like access reviews and role changes, making them more consistent and timely. However, tools alone don’t guarantee compliance. Without proper governance, clear processes, and human oversight, automation can miss critical context or even introduce new risks. Success depends on combining the right technology with a well-defined strategy and accountability.'
+  },
+  {
+    question: 'Can automated access management reduce audit risks?',
+    answer: 'Yes, automation can reduce audit risks by minimizing human errors, enforcing consistent access policies, and maintaining clear documentation. Technology can also be used to analyze weaknesses in access controls and improve the quality of manual reviews. However, tools alone aren’t enough—effective audit readiness still depends on strong governance, well-defined processes, and regular oversight.'
+  },
+  {
+    question: 'How is AI used in SAP access management automation?',
+    answer: 'AI is increasingly being explored to enhance access management processes. However, using AI to interpret organization-specific security data is not without challenges—issues like data quality, context, and policy complexity can limit its reliability. Time will tell how this fundamental question is solved, but for now, AI should be seen as a supportive tool, not a standalone solution.'
+  },
+  {
+    question: 'How do we know which technology to select for automation?',
+    answer: 'There are many technology options available for SAP access management automation, each with different strengths, limitations, and integration capabilities. We understand these tools well and are ready to guide you in comparing them, aligning choices with your desired level of automation, compliance needs, and budget. With the right strategy, you can avoid overinvesting and ensure your automation efforts deliver real value.'
+  }
+];
 
 
 
@@ -155,8 +154,8 @@ const faqs = [
 
 
     
-
-      <section className="strength-showcase">
+ 
+      <section className="strength-showcase" style={{display:'none'}}>
                 <div className="strength-left">
                   <h2 className="big-heading-text-white">Case Studies</h2>
                   <p className="text-white">

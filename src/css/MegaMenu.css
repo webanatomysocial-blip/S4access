@@ -177,11 +177,13 @@
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
+   text-transform: capitalize;
 }
 
 .megamenu-service-text:hover {
   color: #003377 !important;
   text-decoration: none !important;
+ 
 }
 
 /* MegaMenu hover logic */

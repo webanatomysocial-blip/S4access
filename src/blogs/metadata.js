@@ -26,7 +26,7 @@ export const blogMetadata = [
     title: "Understanding SAP Access Management Audits: Turning Frustration into Value ",
     slug: "Turning-Frustration-into-Value", 
     metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
-    excerpt: "In Autumn 2025, economic pressures demand smarter SAP security and access management. Discover common pitfalls and a clear, actionable plan to strengthen your SAP systems while aligning with business needs in a transforming market.",
+    excerpt: "When speaking with SAP customers, one sentiment comes up again and again: audits are frustrating. Many teams feel that audit processes are disconnected from the realities of day-to-day SAP operations. Findings often focus on technical details that seem minor or irrelevant, while overlooking business context and practical constraints.",
     image: img23, // Imported image
     date: "2025-08-26",
   },
