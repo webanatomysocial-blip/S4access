@@ -27,10 +27,10 @@ function ContactForm() {
     
     try {
   const result = await emailjs.send(
-    'service_51oe5u6',  // Replace with your Service ID from Step 2 (e.g., 'service_abc123')
-    'template_k1szbpq', // Replace with your Template ID from Step 3 (e.g., 'template_def456')
+    'service_376vrqg',  // Replace with your Service ID from Step 2 (e.g., 'service_abc123')
+    'template_4bp4iaf', // Replace with your Template ID from Step 3 (e.g., 'template_def456')
     formData,           // This passes your form data to the template placeholders
-    'SvF2Dsw7xViR60Kq_'   // Replace with your Public Key from Step 1
+    '3elTz7j9ua405geXK'   // Replace with your Public Key from Step 1
   );
   
   console.log('Email sent successfully:', result.text);
