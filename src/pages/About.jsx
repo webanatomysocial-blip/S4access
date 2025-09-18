@@ -224,14 +224,17 @@ function About() {
             <div className="about-contact-us-dark-inner-bottom-containr">
               <p className="small-text-white ">
 
-                Interested in our services or our partnership with GRC Nordic?
+               Interested in our services & partnership ?
+
 
                 <br />
                 <br />
 
-                Reach out to <strong>Matti Halonen</strong> at <br /><br />
+                {/* Reach out to <strong>Matti Halonen</strong> at <br /><br /> */}
+                Reach out to <strong>Matti Halonen</strong> at
+                <br /><br />
 
-                <a href="tel:+358405589069"> +358 40 558 9069</a><br />
+                {/* <a href="tel:+358405589069"> +358 40 558 9069</a><br /> */}
                 <a href="mailto:matti.halonen@s4access.com">matti.halonen@s4access.com</a>
 
               </p>
@@ -259,10 +262,10 @@ function About() {
                 Want to join the leading community of SAP security professionals?
                 <br /><br />
 
-                Reach out to <strong>Christa Coulter</strong>  at <br /><br />
+                Reach out to <strong>Tiina Hartikainen</strong>  at <br /><br />
 
-                <a href="tel:+358405532204">+358 40 553 2204</a><br />
-                <a href="mailto:christa.coulter@s4access.com">christa.coulter@s4access.com</a>
+                {/* <a href="tel:+358405532204">+358 40 553 2204</a><br /> */}
+                <a href="mailto:tiina.hartikainen@4access.com">tiina.hartikainen@4access.com</a>
               </p>
 
             </div>

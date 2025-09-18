@@ -191,11 +191,14 @@
   .blog-text {
     max-height: 200px; /* Adjusted for mobile */
   }
+  .blog-page-container {
+  padding: 60px 20px 60px 20px;
+}
 }
 
 /* Blog page container */
 .blog-page-container {
-  padding: 100px 50px 100px 50px;
+  padding: 100px 50px;
 }
 
 .blog-page-container h2 {

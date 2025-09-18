@@ -177,9 +177,10 @@
 
 .open-role-card {
   background: #f6f6f6;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: end;
+  flex-direction: row !important;
   padding: 32px 40px;
   margin-bottom: 24px;
   border-radius: 2px;
@@ -199,9 +200,17 @@
 }
 
 .open-role-divider {
-  color: #222;
-  font-weight: 400;
-  margin: 0px 15px;
+  width:2px;
+  height:20px;
+  margin: 0px 10px;
+  background-color:black;
+}
+.open-role-details{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap:10px;
+
 }
 
 /* careers-open-roles-section End */
@@ -436,8 +445,8 @@
 
   .open-role-card {
     background: #f6f6f6;
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
     align-items: start;
     gap: 10px;
     padding: 20px 20px;
@@ -451,6 +460,9 @@
     flex-direction: column;
     gap: 20px;
   }
+.open-role-divider:nth-child(1){ 
+display:none;
+}
 
   .careers-gallery-section {
     padding: 30px 20px 60px 20px;

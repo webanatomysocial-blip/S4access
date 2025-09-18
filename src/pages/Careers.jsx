@@ -143,7 +143,7 @@ const Careers = () => {
     <div className="careers-our-promise-content-right-inner">
       <FaHeartbeat className="text-black" size={24} />
       <p className="sub-big-heading-text-black-lite">
-       Modern benefits with health care.
+       Modern benefits with health care
       </p>
     </div>
   </div>
@@ -181,39 +181,24 @@ const Careers = () => {
 
 
 
-          <div className="open-role-card only-mobile">
+          <div className="open-role-card">
             <div className="open-role-info">
               <h3 className="sub-big-heading-text-black">Senior consultant</h3>
-              <div className="sub-heading-text-black">
+              <div className="sub-heading-text-black  open-role-details">
                 <span>SAP Security and GRC</span> <br  className="only-mobile"/>
-                {/* <span className="open-role-divider">|</span> */}
+                <p className="open-role-divider"></p>
                 <span>Helsinki </span>
-                <span className="open-role-divider">|</span>
+                <p className="open-role-divider"></p>
                 <span>Remote</span>
               </div>
             </div><br />
-            <a href="https://s4access.careers.haileyhr.app/en-GB/job/d2cecbb3-f88b-4005-8543-00c9ba8001db/857b7db4-75f0-4d14-94bb-96b387738356/73848863-0220-4c22-942a-91508294e5e0" className="main-button-blue ">
-              ABOUT&nbsp;US&nbsp;<i className="bi bi-arrow-up-right"></i>
+             <a href="https://s4access.careers.haileyhr.app/en-GB/job/d2cecbb3-f88b-4005-8543-00c9ba8001db/857b7db4-75f0-4d14-94bb-96b387738356/73848863-0220-4c22-942a-91508294e5e0" className="main-button-blue ">
+              Apply Now<span><i className="bi bi-arrow-up-right"></i></span>
             </a>
           </div>
 
 
-          <div className="open-role-card only-windows">
-            <div className="open-role-info">
-              <h3 className="sub-big-heading-text-black">Senior consultant</h3>
-              <div className="sub-heading-text-black">
-                <span>SAP Security and GRC</span> <br  className="only-mobile"/>
-                <span className="open-role-divider">|</span>
-                <span>Helsinki </span>
-                <span className="open-role-divider">|</span>
-                <span>Remote</span>
-              </div>
-            </div>
-            <a href="https://s4access.careers.haileyhr.app/en-GB/job/d2cecbb3-f88b-4005-8543-00c9ba8001db/857b7db4-75f0-4d14-94bb-96b387738356/73848863-0220-4c22-942a-91508294e5e0" className="main-button-blue ">
-              ABOUT&nbsp;US&nbsp;<i className="bi bi-arrow-up-right"></i>
-            </a>
-          </div>
-
+         
 
 
 

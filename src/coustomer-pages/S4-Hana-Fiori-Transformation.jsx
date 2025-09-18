@@ -53,22 +53,26 @@ const S4HanaFioriTransformation = () => {
             </section>
 
             <section className="CustomerSuccess-service-cta">
+              
                 <div className="CustomerSuccess-cta-content">
-                    <h2 className="big-heading-text-white">
-                        Customer Comments About <br className="only-windows" /> S4Access Consulting
-                    </h2>
-                    <p className="text-white">
-                        Reliable; understands customer needs and tailors the service accordingly; human-centered and straightforward; continuous and patient/long-term effort to improve the customer's Access Management.
-                    </p>
+                  <h2 className="big-heading-text-white">
+                    Customer Comments About <br className='only-windows' /> S4access Service
+                  </h2>
+                  <p className="text-white">
+                   “Without the help of the specialist company, we would have been completely stuck.” <br /> – SAP Manager
+
+            
+                  </p>
                 </div>
                 <div className="CustomerSuccess-cta-actions">
-                    <Link to="/Contact" className="button-green">
-                        Contact Us
-                    </Link>
-                    <Link to="/customer-success" className="border-button">
-                        Case Studies
-                    </Link>
+                  <Link to="/Contact" className="button-green">
+                    Contact Us
+                  </Link>
+                  <Link to="/customer-success" className="border-button">
+                    Case Studies
+                  </Link>
                 </div>
+            
             </section>
 
             <Footer />

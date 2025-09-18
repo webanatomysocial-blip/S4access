@@ -18,7 +18,7 @@ const SAPAuthorizationConceptOwner = () => {
         <div className="Coustomer-success-page-hero-container-left">
           <p className="big-heading-text-white">SAP Authorization Concept Owner Service</p>
           <p className="text-white">
-            In 2019, we took on SAP Authorization Concept Ownership for a leading steel manufacturer. With their SAP environment stuck in “project mode,” user and authorization management lacked structure. Our task was to bring consistency, security, and efficiency.
+            We took on SAP Authorization Concept Ownership for a leading steel manufacturer. With their SAP environment stuck in “project mode,” user and authorization management lacked structure. Our task was to bring consistency, security, and efficiency.
           </p>
         </div>
         <div className="Coustomer-success-page-hero-container-right">
@@ -32,7 +32,7 @@ const SAPAuthorizationConceptOwner = () => {
         <div className="Coustomer-success-page-card">
           <h2 className='big-heading-text-black'>Scope of Service</h2>
           <p className='text-black'>
-            Since 2019, our SAP Authorization Concept Owner service has delivered comprehensive support, including:
+            Our SAP Authorization Concept Owner service has delivered comprehensive support, including:
           </p>
           <ul className='text-black'>
             <li>Passive user removals</li>
@@ -106,7 +106,7 @@ const SAPAuthorizationConceptOwner = () => {
   
     <div className="CustomerSuccess-cta-content">
       <h2 className="big-heading-text-white">
-        Customer Comments About <br className='only-windows' /> S4Access Consulting
+        Customer Comments About <br className='only-windows' /> S4access Service
       </h2>
       <p className="text-white">
        Reliable; understands customer needs and tailors the service accordingly; human-centered and straightforward; continuous and patient/long-term effort to improve the customer's Access Management.

@@ -348,11 +348,12 @@ html {
 
 .main-button-blue span:last-child {
   margin-left: 10px;
-  rotate: 40deg;
+  rotate: 10deg;
 }
 
 .main-button-blue span:last-child i {
   color: #40ffc9;
+  rotate: 10deg;
 }
 
 .main-button-blue:hover span:last-child i {

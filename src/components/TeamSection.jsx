@@ -70,7 +70,8 @@ const TeamSection = () => {
           <div className="team-members-top">
             <div className="team-heading-column">
           <p className="big-heading-text-black">Management Team</p>
-          <p className="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla adipisci officiis architecto, aliquid ea necessitatibus autem, ratione suscipit odit asperiores, iste molestias distinctio! Sit soluta nihil, accusamus eveniet nobis deserunt!</p>
+          <p className="text-black">Growth is more than numbers—it’s about building something that lasts. Our leaders focus on long-term development, strategic clarity, and creating the conditions for people and ideas to flourish.
+</p>
         </div>
             {teamMembers.slice(0, 2).map((member, index) => (
               <div

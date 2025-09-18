@@ -19,13 +19,13 @@ const testimonials = [
     Images: team1
   },
   {
-    text: "Joining the company as a junior employee while studying and being a new parent could have been overwhelming – but here, it hasn’t been. The flexibility I’ve been given is exceptional.I'm encouraged to grow professionally, and doing my thesis for the company is just one example of how my development is supported.It means a lot that my manager is aware of my daily work and actively helps me progress.I feel valued not just as an employee, but as a whole person.The team culture isalso incredibly supportive – I never feel like I’m going through it alone",
+    text: "Joining the company as a junior employee while studying and being a new parent could have been overwhelming but here, it hasn’t been. The flexibility I’ve been given is exceptional. I'm encouraged to grow professionally and doing my thesis for the company is just one example of how my development is supported. It means a lot that my manager is aware of my daily work and actively helps me in my progress. I feel valued not just as an employee, but as a whole person. The team culture is also incredibly supportive – I never feel like I’m going through it alone.",
     name: "Raoul",
     role: "Employee",
     Images: testimonialImg
   },
   {
-    text: "Starting at s4access as an SAP Security Consultant has been a highlight of my career. Working on international projects fuels my growth, and the team’s encouragement makes every challenge enjoyable. The flexibility and supportive culture here make it a truly unique workplace.",
+    text: "Coming back to S4access felt like the right move for many reasons. One of the biggest factors was the work culture—expectations are realistic, and there’s no pressure to work overtime. It’s clear that the company values the fact that employees have lives outside of work. The leadership team is approachable, down-to-earth, and genuinely nice. There’s no rigid hierarchy, just people working together in a human and respectful way. Project teams are well-structured and supportive, with just the right size to ensure help is always available when needed. Working with such friendly colleagues makes a real difference. The work itself is educational and offers plenty of opportunities to grow. It’s also been rewarding to witness the company’s stable position and steady, thoughtful growth over time—something I truly appreciate and value. The way things are run here makes everyday work smoother and more meaningful, without unnecessary complexity getting in the way.",
     name: "Julius",
     role: "Employee",
     Images: team2

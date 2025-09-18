@@ -23,7 +23,7 @@ const faqs = [
     answer: 'Surprisingly, no. Many organizations discover—especially when moving to S/4HANA or improving their SAP Access Management—that the full cost of maintaining an internal team with the required expertise is significantly higher. In many cases, the role is covered through a mix of internal staff and external consultants, which often leads to a higher total cost.'
   },
   {
-    question: 'What if we don’t need a full-time Authorisation Concept Owner—can the service be scaled to our needs?',
+    question: 'What if we don’t need a full-time SAP Security Architect—can the service be scaled to our needs?',
     answer: 'Absolutely. Our SAP Security Architect service is designed to be flexible. Whether you\'re a smaller organization with limited needs or a larger enterprise facing complex projects, we can scale the service up or down accordingly. This ensures you get the right level of expertise when needed—without the cost or commitment of a full-time hire.'
   },
   {

@@ -31,7 +31,8 @@ const S4TransitionAnalysis = () => {
                 <div className="Coustomer-success-page-card">
                     <h2 className='big-heading-text-black'>Project</h2>
                     <p className='text-black'>
-                        A senior consultant analyzed the authorization setup of the customer’s SAP system and familiarized himself with the upgrade project plan, scope, timeline, and organization. Discussions were held with key stakeholders to analyze the customer’s targets in the best way. The work was carried out in a month by the senior consultant, and the deliverable was a PowerPoint presentation and a resource plan for the transition to S/4.
+                       A senior team analysed the authorization setup of the customers SAP system and familiarised themselves with the upgrade project plan, scope, timeline and organization. Also discussions were held with key stakeholders to analyse the customer targets in the best way. The work was carried out in a month by the team and the deliverable was a power point presentation and a resource plan for the transition to S4.
+
                     </p>
                 </div>
                 <div className="Coustomer-success-page-card-right">
@@ -51,24 +52,28 @@ const S4TransitionAnalysis = () => {
                 </div>
             </section>
 
-            <section className="CustomerSuccess-service-cta">
-                <div className="CustomerSuccess-cta-content">
-                    <h2 className="big-heading-text-white">
-                        Customer Comments About <br className="only-windows" /> S4Access Consulting
-                    </h2>
-                    <p className="text-white">
-                        We learned so much in this small work that resulted in clear savings in the program itself but also in much higher quality in the implementation. We got a thorough analysis of the system and could prepare better as a result.
-                    </p>
-                </div>
-                <div className="CustomerSuccess-cta-actions">
-                    <Link to="/Contact" className="button-green">
-                        Contact Us
-                    </Link>
-                    <Link to="/customer-success" className="border-button">
-                        Case Studies
-                    </Link>
-                </div>
-            </section>
+           <section className="CustomerSuccess-service-cta">
+             
+               <div className="CustomerSuccess-cta-content">
+                 <h2 className="big-heading-text-white">
+                   Customer Comments About <br className='only-windows' /> S4access Service
+                 </h2>
+                 <p className="text-white">
+                 “ We learned so much in this work that resulted in clear savings in the program itself but as well in much higher quality in the implementation. We got a good through analysis of the system and could prepare better hence.” <br /> – SAP Director
+
+           
+                 </p>
+               </div>
+               <div className="CustomerSuccess-cta-actions">
+                 <Link to="/Contact" className="button-green">
+                   Contact Us
+                 </Link>
+                 <Link to="/customer-success" className="border-button">
+                   Case Studies
+                 </Link>
+               </div>
+           
+           </section>
 
             <Footer />
         </div>

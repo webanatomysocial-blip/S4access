@@ -98,7 +98,7 @@ export default function SAPSoDApproach() {
           <div className="solution-grid sod-solution-grid">
             <div className="solution-intro-card only-windows ">
               <h2 className="big-heading-text-white">
-                S4 Access Automated Log Review Service
+                S4access Automated Log Review Service
               </h2>
               <div className="card-sub-content">
                 <p className="text-white">

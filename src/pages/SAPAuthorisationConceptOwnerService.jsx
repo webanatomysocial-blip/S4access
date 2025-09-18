@@ -129,7 +129,7 @@ const faqs = [
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">
-            Discover how our SAP Authorization Concept Owner Service transformed user management for a steel manufacturer, enhancing security, compliance, and efficiency since 2019.
+            Discover how our SAP Authorization Concept Owner Service transformed user management for a steel manufacturer, enhancing security, compliance, and efficiency.
           </p>
                     <Link to="/sap-authorisation-concept-owner" className="read-more-btn ">
             Read More  <i className="bi bi-arrow-right arrow-icon"></i>
