@@ -160,4 +160,35 @@
   height: 15px;
 }
 
+
+.carousel-pagination {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10; /* Ensure dots are above slides */
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.pagination-dot.active {
+  background-color: #ffffff;
+  transform: scale(1.2); /* Slightly enlarge active dot */
+}
+
+.pagination-dot:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.2);
+}
+
 /* our-highlightupper section start */

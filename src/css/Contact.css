@@ -36,7 +36,7 @@
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .contact-form-group {
@@ -54,7 +54,7 @@
 
 .contact-input,
 .contact-textarea {
-  width: 100%;
+  width: 95%;
   padding: 0.75rem;
   border: 2px solid #003377;
   border-radius: 8px;
@@ -172,4 +172,8 @@
   width: 80%;
   
 }
+.form-row {
+  gap: 1rem;
+}
+
 }

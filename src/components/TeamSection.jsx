@@ -7,6 +7,13 @@ import team4 from '../assets/images/About-img/our-team/teammate-4.jpg';
 import team5 from '../assets/images/About-img/our-team/teammate-5.jpg';
 import WholeWebsiteIcon from '../components/WholeWebsiteIcon.jsx';
 
+// Helper function to format email
+const formatEmail = (email) => {
+  return email
+    .replace(/\./g, '<span class="small-text"> (dot) </span>')
+    .replace(/@/g, '<span class="small-text"> (at) </span>');
+};
+
 const TeamSection = () => {
   const [color1, setColor1] = useState('white');
   const [color2, setColor2] = useState('white');
@@ -65,14 +72,14 @@ const TeamSection = () => {
   return (
     <section className="our-team-section">
       <div className="team-section-container">
-        
         <div className="team-members-column">
           <div className="team-members-top">
             <div className="team-heading-column">
-          <p className="big-heading-text-black">Management Team</p>
-          <p className="text-black">Growth is more than numbers—it’s about building something that lasts. Our leaders focus on long-term development, strategic clarity, and creating the conditions for people and ideas to flourish.
-</p>
-        </div>
+              <p className="big-heading-text-black">Management Team</p>
+              <p className="text-black">
+                Growth is more than numbers—it’s about building something that lasts. Our leaders focus on long-term development, strategic clarity, and creating the conditions for people and ideas to flourish.
+              </p>
+            </div>
             {teamMembers.slice(0, 2).map((member, index) => (
               <div
                 key={index}
@@ -91,9 +98,11 @@ const TeamSection = () => {
                 </div>
                 <div className="ourteam-container-contacts">
                   <p className="team-name-text">{member.name}</p>
-                  <a href={`mailto:${member.email}`} className="text-black">
-                    {member.email}
-                  </a>
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="text-black"
+                    dangerouslySetInnerHTML={{ __html: formatEmail(member.email) }}
+                  />
                 </div>
               </div>
             ))}
@@ -117,9 +126,11 @@ const TeamSection = () => {
                 </div>
                 <div className="ourteam-container-contacts">
                   <p className="team-name-text">{member.name}</p>
-                  <a href={`mailto:${member.email}`} className="text-black">
-                    {member.email}
-                  </a>
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="text-black"
+                    dangerouslySetInnerHTML={{ __html: formatEmail(member.email) }}
+                  />
                 </div>
               </div>
             ))}

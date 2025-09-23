@@ -356,9 +356,9 @@
   }
 
   .image-cta-section {
-    height: 40vh;
+    height: fit-content;
     gap: 20px;
-    padding: 20px;
+    padding: 60px 20px;
     background-image: none;
     flex-direction: column;
     background-position: center center;

@@ -183,7 +183,7 @@ function ContactForm() {
             <path d="M7.5 10L9.5 12L12.5 7.5M18.3333 10C18.3333 14.6024 14.6024 18.3333 10 18.3333C5.39763 18.3333 1.66667 14.6024 1.66667 10C1.66667 5.39763 5.39763 1.66667 10 1.66667C14.6024 1.66667 18.3333 5.39763 18.3333 10Z" 
                   stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
-          Your message has been sent successfully!
+          Thanks for your enquiry. Our team will reach out to you shortly.
         </div>
       )}
       

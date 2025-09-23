@@ -235,7 +235,7 @@ function About() {
                 <br /><br />
 
                 {/* <a href="tel:+358405589069"> +358 40 558 9069</a><br /> */}
-                <a href="mailto:matti.halonen@s4access.com">matti.halonen@s4access.com</a>
+                <a href="mailto:matti.halonen@s4access.com">matti (dot) halonen (at) s4access (dot) com</a>
 
               </p>
 
@@ -265,7 +265,7 @@ function About() {
                 Reach out to <strong>Tiina Hartikainen</strong>  at <br /><br />
 
                 {/* <a href="tel:+358405532204">+358 40 553 2204</a><br /> */}
-                <a href="mailto:tiina.hartikainen@4access.com">tiina.hartikainen@4access.com</a>
+                <a href="mailto:tiina.hartikainen@4access.com">tiina (dot) hartikainen (at) 4access (dot) com</a>
               </p>
 
             </div>
@@ -295,7 +295,7 @@ function About() {
 
                 For general administrative inquiries
 
-                Reach out to us at <strong><a href='mailto:contact@s4access.com'>contact@s4access.com</a> </strong>
+                Reach out to us at <strong><a href='mailto:contact@s4access.com'>contact (at) s4access (dot) com</a> </strong>
 
 
               </p>
@@ -325,7 +325,7 @@ function About() {
 
                 Please note: We do not accept unsolicited calls from vendors.
 
-                All inquiries must be submitted via email: <strong><a href='mailto:contact@s4access.com'>contact@s4access.com</a> </strong>
+                All inquiries must be submitted via email: <strong><a href='mailto:contact@s4access.com'>contact (at) s4access (dot) com</a> </strong>
 
               </p>
 

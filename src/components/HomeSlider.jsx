@@ -6,9 +6,9 @@ import banner3 from '../assets/images/home-img/banner-home/2.jpg';
 import banner4 from '../assets/images/home-img/banner-home/3.jpg';
 import mainlogo from "../assets/images/Mainlogo.png";
 
-import { Link } from 'react-router-dom'; // For SmoothLink (assuming it's a wrapper for smooth scrolling)
+import { Link } from 'react-router-dom';
 
-// SmoothLink component for smooth scrolling (if not already defined)
+// SmoothLink component for smooth scrolling
 const SmoothLink = ({ to, className, children }) => (
   <Link
     to={to}
@@ -33,25 +33,25 @@ const HomeSlider = () => {
       textImg: mainlogo,
       image: banner1,
       text: 'Leading SAP Access Management Specialist',
-      link: null, // No link for the first slide
+      link: null,
     },
     {
       textImg: null,
       image: banner2,
       text: 'S/4 Access – Get it right from the beginning !',
-      link: '/sap-s4-access-implementation', // Unique link for slide 2
+      link: '/sap-s4-access-implementation',
     },
     {
       textImg: null,
       image: banner3,
       text: 'What is the current status of your SAP Access Management?',
-      link: '/sap-access-management-review', // Unique link for slide 3
+      link: '/sap-access-management-review',
     },
     {
       textImg: null,
       image: banner4,
       text: 'We are not just hiring. We are building a team - join the journey.',
-      link: '/careers', // Unique link for slide 4
+      link: '/careers',
     },
   ];
 
@@ -91,15 +91,17 @@ const HomeSlider = () => {
             </div>
           ))}
         </div>
-        <div className="carousel-buttons">
+        <div className="carousel-pagination" role="tablist" aria-label="Carousel navigation">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
-              className={currentSlide === index ? 'active' : ''}
-            >
-              Slide {index + 1}
-            </button>
+              className={`pagination-dot ${currentSlide === index ? 'active' : ''}`}
+              role="tab"
+              aria-selected={currentSlide === index}
+              aria-label={`Go to slide ${index + 1}`}
+              title={`Slide ${index + 1}`}
+            ></button>
           ))}
         </div>
       </div>

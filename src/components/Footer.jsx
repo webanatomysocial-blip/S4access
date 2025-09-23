@@ -26,7 +26,7 @@ function Footer() {
 
               <a href="mailto:contact@s4access.com">
                 <span><svg id="fi_16935745" enable-background="new 0 0 100 100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m45.7953949 57.5565643-43.1575694-31.3894138c-.0835295.0425339-.0542982.0276489-.1378276.0701828v47.5c0 5.2467041 4.2532949 9.5 9.5 9.5h76c5.2467041 0 9.5-4.2532959 9.5-9.5v-47.6137638c-.0153503-.0078182-.0099869-.0050869-.0253372-.012907l-43.2689913 31.4473705c-2.5074387 1.8223762-5.9034691 1.821785-8.4102745-.0014687z"></path><path d="m54.205761 45.826828 38.328907-27.8734989c-1.3426667-.7346668-2.8880005-1.1906662-4.534668-1.1906662h-76c-1.6466665 0-3.166667.4560013-4.534667 1.1906662l38.328906 27.8734989c2.5073853 1.8234177 5.9041367 1.8234177 8.411522 0z"></path></svg></span><span>
-                  contact@s4access.com
+                  contact(at)s4access(dot)com
                 </span>
               </a>
               
@@ -233,7 +233,7 @@ function Footer() {
 
       <div className="footer-end">
         <div className="end">
-          <p className="small-text-white">&copy; 2025 S4access. All rights reserved | Designed and Developed by <a href="https://webanatomy.in/" target="_blank">WebAnatomy</a></p>
+          <span className="small-text-white">&copy; 2025 s4access. All rights reserved</span>
         </div>
       </div>
     </footer>

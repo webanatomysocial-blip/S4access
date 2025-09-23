@@ -66,8 +66,8 @@ const Careers = () => {
       {/* why s4access section start */}
       <section className="careers-why-s4access-section only-windows">
         <div className="careers-why-s4access-content">
-          <h2 className="big-heading-text-white">Why <br />
-            S4access?</h2>
+          <h2 className="big-heading-text-white" style={{textTransform:"none"}}>Why <br />
+            s4access?</h2>
           <p className="text-white">
             <strong style={{ fontSize: "30px" }}>We are different</strong> <br /><br />
 
@@ -89,7 +89,7 @@ const Careers = () => {
 
       <section className="careers-why-s4access-section only-mobile">
         <div className="careers-why-s4access-content">
-          <h2 className="big-heading-text-white">Why S4access?</h2> <br />
+          <h2 className="big-heading-text-white" style={{textTransform:"none"}}>Why s4access?</h2> <br />
           <p className="sub-big-heading-text-white">
             We are different </p> <br />
           <p className="text-white">
@@ -185,7 +185,7 @@ const Careers = () => {
             <div className="open-role-info">
               <h3 className="sub-big-heading-text-black">Senior consultant</h3>
               <div className="sub-heading-text-black  open-role-details">
-                <span>SAP Security and GRC</span> <br  className="only-mobile"/>
+                <span>SAP Security and GRC</span> 
                 <p className="open-role-divider"></p>
                 <span>Helsinki </span>
                 <p className="open-role-divider"></p>
@@ -214,7 +214,7 @@ const Careers = () => {
       {/* Careers Gallery Section Start */}
       <section className="careers-gallery-section ">
 
-        <h2 className="big-heading-text-black">Life at S4Access</h2>
+        <h2 className="big-heading-text-black" style={{textTransform:"none"}}>Life at s4access</h2>
 
 
         <CareersGallerySection />

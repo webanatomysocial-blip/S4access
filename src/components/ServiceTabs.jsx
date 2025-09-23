@@ -88,35 +88,64 @@ const ServiceTabs = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <>
-            <div className="main-tab-container">
-                <div>
+        <div className="main-tab-container">
+            {window.innerWidth <= 800 ? (
+                // Mobile: Accordion layout
                 <div className="main-tab-left-container">
                     {services.map((service, index) => (
-                        <div
-                            key={index}
-                            className={`tab ${activeTab === index ? 'active' : ''}`}
-                            onClick={() => setActiveTab(index)}
-                        >
-                            <p className='sub-heading-text'>{index + 1}. {service.category}</p>
+                        <div key={index}>
+                            <div
+                                className={`tab ${activeTab === index ? 'active' : ''}`}
+                                onClick={() => setActiveTab(activeTab === index ? -1 : index)}
+                            >
+                                <p className='sub-heading-text'>{index + 1}. {service.category}</p>
+                            </div>
+                            {activeTab === index && (
+                                <div className="tab-content">
+                                    {service.items.map((item, idx) => (
+                                        <div key={idx} className="service-item" style={{ marginBottom: '20px' }}>
+                                            <p className='sub-big-heading-text-black'>{item.title}</p>
+                                            <p className='text-black'>{item.desc}</p>
+                                            <a className='read-more-btn-blue' href={item.link}>
+                                                Read More <i className="bi bi-arrow-right arrow-icon"></i>
+                                            </a>
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>
-                </div>
-
-                <div className="main-tab-right-container">
-                    <div className="tab-content">
-                        {services[activeTab].items.map((item, idx) => (
-                            <div key={idx} className="service-item" style={{ marginBottom: '20px' }}>
-                                <p className='sub-big-heading-text-black '>{item.title}</p>
-                                <p className='text-black'>{item.desc}</p>
-                                <a className='read-more-btn-blue' href={item.link}>Read More <i className="bi bi-arrow-right arrow-icon"></i></a>
+            ) : (
+                // Desktop: Original tab layout
+                <>
+                    <div className="main-tab-left-container">
+                        {services.map((service, index) => (
+                            <div
+                                key={index}
+                                className={`tab ${activeTab === index ? 'active' : ''}`}
+                                onClick={() => setActiveTab(index)}
+                            >
+                                <p className='sub-heading-text'>{index + 1}. {service.category}</p>
                             </div>
                         ))}
                     </div>
-                </div>
-            </div>
-        </>
+                    <div className="main-tab-right-container">
+                        <div className="tab-content">
+                            {services[activeTab].items.map((item, idx) => (
+                                <div key={idx} className="service-item" style={{ marginBottom: '20px' }}>
+                                    <p className='sub-big-heading-text-black'>{item.title}</p>
+                                    <p className='text-black'>{item.desc}</p>
+                                    <a className='read-more-btn-blue' href={item.link}>
+                                        Read More <i className="bi bi-arrow-right arrow-icon"></i>
+                                    </a>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </>
+            )}
+        </div>
     );
 };
 

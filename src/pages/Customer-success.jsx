@@ -15,7 +15,7 @@ function CustomerSuccess() {
       <section className="customer-hero-section">
         <div className="customer-hero-left-content">
           <p className="extra-big-heading-text-white">
-            Expert Care for SAP Security
+           Expert Care For SAP <br></br> Access Management
 
           </p>
           <p className="text-white">
