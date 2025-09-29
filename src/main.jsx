@@ -25,7 +25,7 @@ import SAPAuthorisationRedesign from './pages/SAPAuthorisationRedesign.jsx';
 import SAPSoDApproach from './pages/SAPSoDApproach.jsx';
 import SAPaccess from './pages/SAPaccess.jsx';
 import ScrollToTop from '../src/components/ScrollToTop.jsx';
-import BlogPage from '../src/pages/BlogPage.jsx'; // Import BlogPage
+import DynamicBlog from './components/DynamicBlog.jsx'; // Import DynamicBlog
 import SAPAuthorizationConceptOwner from './coustomer-pages/SAP-Authorization-Concept-Owner-Service.jsx';
 import S4AccessManagementReview from './coustomer-pages/S4Access-Management-Review.jsx';
 import S4TransitionAnalysis from './coustomer-pages/S4-Transition-Analysis.jsx';
@@ -80,7 +80,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/ff-log-review-automation" element={<S4FFEmergencyUserAutomation />} />
           <Route path="/sap-license-optimisation" element={<SAPLicenseCompliance />} />
           <Route path="/s4accessprojects" element={<S4AccessProjects />} />
-          <Route path="/blogs/:blogName" element={<BlogPage />} /> {/* Add BlogPage route */}
+          <Route path="/blogs/:blogName" element={<DynamicBlog />} /> {/* Replace BlogPage with DynamicBlog */}
           <Route path="/sap-authorisation-concept-owner" element={<SAPAuthorizationConceptOwner />} />
           <Route path="/s4-access-management-review" element={<S4AccessManagementReview />} />
           <Route path="/s4-transition-analysis" element={<S4TransitionAnalysis />} />
@@ -90,5 +90,3 @@ createRoot(document.getElementById('root')).render(
     </LenisProvider>
   </StrictMode>
 );
-
-// Define a simple NotFound component

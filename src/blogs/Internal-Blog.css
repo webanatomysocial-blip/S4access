@@ -1,6 +1,7 @@
 .breach-article-wrapper {
   font-family: barlow, sans-serif;
   line-height: 1.6;
+  padding: 100px 50px 60px 50px; ;
 }
 
 .breach-hero-banner {
@@ -12,7 +13,7 @@
   margin-top: 0px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .breach-hero-banner img {
@@ -75,7 +76,7 @@
 }
 
 .news-blogs-section-inner-blog-page {
-  padding: 50px 50px 100px 50px;
+  padding: 0px 50px 100px 50px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -111,4 +112,9 @@
   .breach-hero-banner {
     height: fit-content;
   }
+  .breach-article-wrapper {
+
+  padding: 60px 20px; ;
+}
+
 }

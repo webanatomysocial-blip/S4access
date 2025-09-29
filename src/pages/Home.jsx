@@ -140,8 +140,8 @@ security vulnerabilities.
         </div>
 
         <div className="news-blogs-container">
-       
-<Blogs />
+
+          <Blogs limit={3} />
 
           
         </div>

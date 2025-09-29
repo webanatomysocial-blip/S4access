@@ -9,10 +9,9 @@ function Insights() {
        <Header backgroundColor="#000000ff" />
        <section className="insights-hero-section">
 
-<p className="big-heading-text-black" style={{ marginBottom:"40px"
-}}> Blogs</p>
+<p className="big-heading-text-black" style={{ marginBottom:"40px"}}> Blogs</p>
         
-       <Blogs />
+       <Blogs limit={10} />
        </section>
 
 

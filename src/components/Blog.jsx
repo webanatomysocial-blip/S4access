@@ -7,9 +7,17 @@ import '../css/Blog.css';
 const blogModules = import.meta.glob('../blogs/*.jsx', { eager: false });
 const blogKeys = Object.keys(blogModules).sort();
 
-const Blogs = (props) => {
-  const [visibleCount, setVisibleCount] = useState(10);
+const Blogs = ({ backgroundColor, limit = 3 }) => {
+  // Log props for debugging
+  console.log('Blogs component props:', { backgroundColor, limit });
+
   const totalBlogs = blogKeys.length;
+  // Determine initial number of blogs to show: all for 'all', otherwise use limit
+  const initialVisible = limit === 'all' ? totalBlogs : Math.min(limit, totalBlogs);
+  const [visibleCount, setVisibleCount] = useState(initialVisible);
+
+  // Log blogKeys for debugging
+  console.log('Available blog keys:', blogKeys);
 
   // Preload blog components and images
   useEffect(() => {
@@ -39,11 +47,14 @@ const Blogs = (props) => {
     }, 0);
   };
 
+  // Only show "Load More" if limit='all' and there are more blogs to load
+  const showLoadMore = limit === 'all' && visibleCount < totalBlogs;
+
   return (
-    <div className="whole-blog-section" style={{ backgroundColor: props.backgroundColor }}>
+    <div className="whole-blog-section" style={{ backgroundColor }}>
       <div className="blogs-container">
-        
         <div className="blogs-grid">
+          {blogKeys.length === 0 && <p>No blogs found.</p>}
           {blogKeys.slice(0, visibleCount).map((key, index) => {
             const blogName = key.split('/').pop().replace('.jsx', '');
             const metadata = blogMetadata.find(blog => blog.id === blogName) || {
@@ -53,22 +64,23 @@ const Blogs = (props) => {
               image: '/images/placeholder.jpg',
               date: 'No date',
             };
-
-            // Debug the URL and metadata
+            // Log each blog's metadata for debugging
             console.log(`Blog: ${blogName}, URL: /blogs/${blogName}, Metadata:`, metadata);
-
             return (
               <div key={index} className="inner-news-blogs-container">
                 <Suspense fallback={<BlogCardSkeleton />}>
                   <div className="blog-text">
                     <p className="text-black">BLOG</p>
-                    <p className="sub-big-heading-text-black">{metadata.title}</p>
+                    <Link to={`/blogs/${blogName}`} style={{ textDecoration: 'none' }}>
+                      <p className="sub-big-heading-text-black">{metadata.title}</p>
+                    </Link>
                   </div>
                   <div className="image-hover-text-come" style={{ backgroundImage: `url(${metadata.image})` }}>
                     <div className="inner-text-come">
                       <div>
-                        {/* <p className="sub-heading-text-black">{metadata.title}</p> */}
-                        <p className="small-text-black">{metadata.excerpt}</p>
+                        <Link to={`/blogs/${blogName}`} style={{ textDecoration: 'none' }}>
+                          <p className="small-text-black">{metadata.excerpt}</p>
+                        </Link>
                       </div>
                       <Link
                         to={`/blogs/${blogName}`}
@@ -84,7 +96,7 @@ const Blogs = (props) => {
             );
           })}
         </div>
-        {visibleCount < totalBlogs && (
+        {showLoadMore && (
           <button className="load-more" onClick={loadMore}>
             Load More
           </button>
@@ -99,12 +111,12 @@ const BlogCardSkeleton = () => (
   <div className="inner-news-blogs-container">
     <div className="blog-text">
       <div className="skeleton-title"></div>
-      <div className="skeleton-title"></div>
+      <div className="skeleton-title" ></div>
     </div>
     <div className="image-hover-text-come">
       <div className="inner-text-come">
         <div>
-          <div className="skeleton-title"></div>
+          <div className="skeleton-title" ></div>
           <div className="skeleton-excerpt"></div>
         </div>
         <div className="skeleton-link"></div>

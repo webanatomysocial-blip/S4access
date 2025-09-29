@@ -1,18 +1,18 @@
 import React from 'react';
 import './Internal-Blog.css';
-import img23 from './blogs-images/1.jpg';
+// import img23 from './blogs-images/1.jpg';
 import Blogs from '../components/Blog';
 
 export default function Blog3() {
   return (
     <div className="breach-article-wrapper">
       {/* Hero Section */}
-      <div className="breach-hero-banner">
+      {/* <div className="breach-hero-banner">
         <img src={img23} alt="" />
         <div className="hero-overlay-section">
           <h1>Understanding SAP Access Management Audits: Turning Frustration into Value</h1>
         </div>
-      </div>
+      </div> */}
 
       {/* Blog Content */}
       <div className="breach-article-content">
@@ -84,7 +84,7 @@ export default function Blog3() {
           </p>
         </section>
       </div>
-       <section className="news-blogs-section-inner-blog-page">
+       {/* <section className="news-blogs-section-inner-blog-page">
         <div className=" heading-news-blog">
           <h1 className="big-heading-text-black">Recent Blogs</h1>
 
@@ -98,7 +98,7 @@ export default function Blog3() {
         </div>
 
 
-      </section>
+      </section> */}
     </div>
   );
 }

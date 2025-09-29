@@ -1,19 +1,19 @@
 import React from 'react';
 import './Internal-Blog.css';
-import img22 from './blogs-images/blog1-img.jpg'
+// import img22 from './blogs-images/blog1-img.jpg'
 import Blogs from '../components/Blog';
 
 export default function Blog1() {
   return (
     <div className="breach-article-wrapper">
       {/* Hero Section */}
-      <div className="breach-hero-banner">
+      {/* <div className="breach-hero-banner">
         <img src={img22} alt="" />
 
         <div className="hero-overlay-section">
           <h1>Is the SAP Certification Still Valid for Your Career in 2025?</h1>
         </div>
-      </div>
+      </div> */}
 
 
       {/* Blog Content */}
@@ -77,7 +77,7 @@ export default function Blog1() {
           </p>
         </section>
       </div>
-       <section className="news-blogs-section-inner-blog-page">
+       {/* <section className="news-blogs-section-inner-blog-page">
         <div className=" heading-news-blog">
           <h1 className="big-heading-text-black">Recent Blogs</h1>
 
@@ -91,7 +91,7 @@ export default function Blog1() {
         </div>
 
 
-      </section>
+      </section> */}
     </div>
   );
 }
