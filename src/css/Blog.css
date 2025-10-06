@@ -8,13 +8,13 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  justify-content: space-between ;
+  justify-content: start ;
 }
 
 /* Individual blog card */
 .inner-news-blogs-container {
   min-width: 300px; /* Minimum width for each card */
-  width: 30%;
+  width: 31%;
   min-height: 400px;
   display: flex;
   flex-direction: column; /* Ensure content stretches vertically */

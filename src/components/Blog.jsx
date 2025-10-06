@@ -5,23 +5,32 @@ import '../css/Blog.css';
 
 // Dynamically import all JSX files from blogs folder
 const blogModules = import.meta.glob('../blogs/*.jsx', { eager: false });
-const blogKeys = Object.keys(blogModules).sort();
+const blogKeys = Object.keys(blogModules);
+
+// Sort blogKeys by date in descending order (most recent first)
+const sortedBlogKeys = blogKeys.sort((a, b) => {
+  const blogNameA = a.split('/').pop().replace('.jsx', '');
+  const blogNameB = b.split('/').pop().replace('.jsx', '');
+  const metadataA = blogMetadata.find(blog => blog.id === blogNameA) || { date: '1970-01-01' };
+  const metadataB = blogMetadata.find(blog => blog.id === blogNameB) || { date: '1970-01-01' };
+  return new Date(metadataB.date) - new Date(metadataA.date);
+});
 
 const Blogs = ({ backgroundColor, limit = 3 }) => {
   // Log props for debugging
   console.log('Blogs component props:', { backgroundColor, limit });
 
-  const totalBlogs = blogKeys.length;
+  const totalBlogs = sortedBlogKeys.length;
   // Determine initial number of blogs to show: all for 'all', otherwise use limit
   const initialVisible = limit === 'all' ? totalBlogs : Math.min(limit, totalBlogs);
   const [visibleCount, setVisibleCount] = useState(initialVisible);
 
-  // Log blogKeys for debugging
-  console.log('Available blog keys:', blogKeys);
+  // Log sortedBlogKeys for debugging
+  console.log('Sorted blog keys:', sortedBlogKeys);
 
   // Preload blog components and images
   useEffect(() => {
-    blogKeys.slice(0, visibleCount).forEach(key => {
+    sortedBlogKeys.slice(0, visibleCount).forEach(key => {
       // Preload blog module
       blogModules[key]().catch(error => {
         console.error(`Error preloading blog ${key}:`, error);
@@ -54,8 +63,8 @@ const Blogs = ({ backgroundColor, limit = 3 }) => {
     <div className="whole-blog-section" style={{ backgroundColor }}>
       <div className="blogs-container">
         <div className="blogs-grid">
-          {blogKeys.length === 0 && <p>No blogs found.</p>}
-          {blogKeys.slice(0, visibleCount).map((key, index) => {
+          {sortedBlogKeys.length === 0 && <p>No blogs found.</p>}
+          {sortedBlogKeys.slice(0, visibleCount).map((key, index) => {
             const blogName = key.split('/').pop().replace('.jsx', '');
             const metadata = blogMetadata.find(blog => blog.id === blogName) || {
               title: blogName,
@@ -111,12 +120,12 @@ const BlogCardSkeleton = () => (
   <div className="inner-news-blogs-container">
     <div className="blog-text">
       <div className="skeleton-title"></div>
-      <div className="skeleton-title" ></div>
+      <div className="skeleton-title"></div>
     </div>
     <div className="image-hover-text-come">
       <div className="inner-text-come">
         <div>
-          <div className="skeleton-title" ></div>
+          <div className="skeleton-title"></div>
           <div className="skeleton-excerpt"></div>
         </div>
         <div className="skeleton-link"></div>

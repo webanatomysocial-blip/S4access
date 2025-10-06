@@ -3,6 +3,7 @@ import img22 from './blogs-images/blog1-img.jpg';
 import img21 from './blogs-images/2.jpg';
 import img23 from './blogs-images/1.jpg';
 import img24 from './blogs-images/3.jpg';
+import Blog5 from './blogs-images/Blog-5.jpg';
 export const blogMetadata = [
   {
     id: "Is-SAP-Certification-Still-Valid-for-Your-Career-in-2025", // Matches file name without .jsx
@@ -20,7 +21,7 @@ export const blogMetadata = [
     metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
     excerpt: "In Autumn 2025, economic pressures demand smarter SAP security and access management. Discover common pitfalls and a clear, actionable plan to strengthen your SAP systems while aligning with business needs in a transforming market.",
     image: img21,
-    date: "2025-08-26",
+    date: "2025-08-30",
   },
   {
     id: "Turning-Frustration-into-Value",
@@ -29,7 +30,7 @@ export const blogMetadata = [
     metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
     excerpt: "When speaking with SAP customers, one sentiment comes up again and again: audits are frustrating. Many teams feel that audit processes are disconnected from the realities of day-to-day SAP operations. Findings often focus on technical details that seem minor or irrelevant, while overlooking business context and practical constraints.",
     image: img23,
-    date: "2025-08-26",
+    date: "2025-09-16",
   },
   {
     id: "Best-Practices-and-Pitfalls",
@@ -38,7 +39,16 @@ export const blogMetadata = [
     metaDescription: "In SAP S/4HANA Fiori apps—whether standard or extended—public views play a key role in tailoring user experiences. These views can be created with a transport request (TR) and mapped to user-specific roles, ensuring that only authorized users with the appropriate roles can access them.",
     excerpt: "In SAP S/4HANA Fiori apps—whether standard or extended—public views play a key role in tailoring user experiences. These views can be created with a transport request (TR) and mapped to user-specific roles, ensuring that only authorized users with the appropriate roles can access them.",
     image: img24,
-    date: "2025-08-26",
+    date: "2025-09-20",
+  },
+  {
+    id: "Typical-Challenges-in-Approving-SAP-Access-Requests",
+    title: "Typical Challenges in Approving SAP Access Requests",
+    slug: "Typical-Challenges-in-Approving-SAP-Access-Requests",
+    metaDescription: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
+    excerpt: "Approving SAP access requests is not just a formality—it requires careful judgment and can directly impact the amount of access risks. Governance mandate means the permission to say no just as well as yes: approvers must actively review each request, not just rubber-stamp them.",
+    image: Blog5,
+    date: "2025-10-06",
   },
 ];
 
