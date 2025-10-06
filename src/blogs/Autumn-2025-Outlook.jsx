@@ -73,6 +73,8 @@ export default function Blog2() {
 
 
       </section> */}
+
+       
     </div>
   );
 }

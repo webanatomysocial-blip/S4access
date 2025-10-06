@@ -101,6 +101,7 @@ const Blogs = (props) => {
 
 // Skeleton loader for blog cards
 const BlogCardSkeleton = () => (
+  
   <div className="inner-news-blogs-container">
     <div className="blog-text">
       <div className="skeleton-title"></div>

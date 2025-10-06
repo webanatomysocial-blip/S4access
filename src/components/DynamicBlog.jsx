@@ -5,6 +5,7 @@ import Blogs from './Blog'; // Adjust path to match src/components/Blog.jsx
 import '../blogs/Internal-Blog.css';
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import cta from '../blogs/blogs-images/Group.png';
 
 const DynamicBlog = () => {
   const { blogName } = useParams();
@@ -42,32 +43,64 @@ const DynamicBlog = () => {
 
   return (
     <>
-        <Header backgroundColor="black" />
-    <div className="breach-article-wrapper">
-      {/* Hero Section */}
-      <div className="breach-hero-banner">
-        <img src={metadata.image} alt={metadata.title} />
-        <div className="hero-overlay-section">
-          <h1>{metadata.title}</h1>
+      <Header backgroundColor="black" />
+      <div className="breach-article-wrapper">
+        {/* Hero Section */}
+        <div className="breach-hero-banner">
+          <img src={metadata.image} alt={metadata.title} />
+          <div className="hero-overlay-section">
+            <h1>{metadata.title}</h1>
+          </div>
         </div>
+        {/* Blog Content */}
+        <div className="breach-article-content">
+          <Suspense fallback={<div>Loading blog content...</div>}>
+            <BlogComponent />
+          </Suspense>
+        </div>
+
+        {/* Cta */}
+        <section className="blog-container">
+          <div className="blog-contact-us-section">
+
+            {/* Left Image */}
+            <div className="blog-left-image only-windows">
+              <img src={cta} />
+            </div>
+
+            {/* Right Content */}
+            <div className="blog-right-content">
+              <div className="blog-right-text">
+                <p className="small-text-white">
+                  We’ll help you build
+                </p>
+                <p className="text-white" style={{fontWeight:600}}>A compliant, efficient, and scalable access governance model.</p>
+              </div>
+              <div className="blog-right-button">
+                <Link to="/contact" className="button-green">
+                  <span>Contact</span>
+                  <span>
+                    <i className="bi bi-arrow-up"></i>
+                  </span>
+                </Link>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        {/* Recent Blogs Section */}
+        <section className="news-blogs-section-inner-blog-page">
+          <div className="heading-news-blog">
+            <h1 className="big-heading-text-black">Recent Blogs</h1>
+          </div>
+          <div className="news-blogs-container">
+            <Blogs /> {/* Defaults to limit=3 */}
+          </div>
+        </section>
       </div>
-      {/* Blog Content */}
-      <div className="breach-article-content">
-        <Suspense fallback={<div>Loading blog content...</div>}>
-          <BlogComponent />
-        </Suspense>
-      </div>
-      {/* Recent Blogs Section */}
-      <section className="news-blogs-section-inner-blog-page">
-        <div className="heading-news-blog">
-          <h1 className="big-heading-text-black">Recent Blogs</h1>
-        </div>
-        <div className="news-blogs-container">
-          <Blogs /> {/* Defaults to limit=3 */}
-        </div>
-      </section>
-    </div>
-    <Footer />
+      <Footer />
     </>
   );
 };
