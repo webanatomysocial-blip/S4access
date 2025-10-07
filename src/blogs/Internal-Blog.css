@@ -1,7 +1,7 @@
 .breach-article-wrapper {
   font-family: barlow, sans-serif;
   line-height: 1.6;
-  padding: 0px 50px 0px 50px;
+  padding: 100px 50px 0px 50px;
   ;
 }
 
@@ -57,7 +57,7 @@
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  /* margin-bottom: 50px; */
+  margin-bottom: -150px;
 }
 
 .breach-hero-banner img {
@@ -181,6 +181,7 @@
 
   .breach-hero-banner {
     height: fit-content;
+    margin-bottom:0px;
   }
 
   .breach-article-wrapper {

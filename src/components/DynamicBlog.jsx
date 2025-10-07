@@ -74,7 +74,7 @@ const DynamicBlog = () => {
                 <p className="small-text-white">
                   We’ll help you build
                 </p>
-                <p className="text-white" style={{fontWeight:600}}>A compliant, Efficient, and Scalable Access Governance Model.</p>
+                <p className="text-white" style={{fontWeight:600}}>A Compliant, Efficient, and Scalable Access Governance Model.</p>
               </div>
               <div className="blog-right-button">
                 <Link to="/contact" className="button-green">
