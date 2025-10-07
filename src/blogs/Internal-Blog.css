@@ -1,7 +1,7 @@
 .breach-article-wrapper {
   font-family: barlow, sans-serif;
   line-height: 1.6;
-  padding: 100px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;
   ;
 }
 
@@ -51,10 +51,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
+  border-radius: 8px;
   margin-top: 0px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  position: relative;
   /* margin-bottom: 50px; */
 }
 
@@ -66,8 +68,12 @@
 }
 
 .hero-overlay-section {
-  padding: 20px;
+  position: absolute;
+  background-color: #ffffff59;
+  backdrop-filter: blur(14px);
+  top: 60%;
   width: 100%;
+  padding: 20px 0px;
   text-align: center;
 }
 
@@ -79,7 +85,7 @@
 
 .breach-article-content {
   margin: 0 auto;
-  padding: 24px 24px 0px 24px;
+  padding: 60px 24px 0px 24px;
 }
 
 .breach-article-content section {
@@ -139,6 +145,7 @@
 
   .blog-contact-us-section {
     padding: 0px 0px;
+    position: static;
   }
 
   .blog-right-content {
@@ -156,7 +163,9 @@
     margin: 0 auto;
     padding: 0px;
   }
-
+.hero-overlay-section{
+  position: static;
+}
   .hero-overlay-section h1 {
     font-size: 25px;
     font-weight: bold;
@@ -176,8 +185,7 @@
 
   .breach-article-wrapper {
 
-    padding: 60px 20px 0px 20px;
-    ;
+    padding: 40px 20px 0px 20px;
   }
 
 }
