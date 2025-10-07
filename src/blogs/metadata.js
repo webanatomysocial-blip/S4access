@@ -41,7 +41,15 @@ export const blogMetadata = [
     image: img24,
     date: "2025-09-20",
   },
- 
+  {
+    id: "Typical-Challenges-in-Approving-SAP-Access-Requests",
+    title: "Typical Challenges in Approving SAP Access Requests",
+    slug: "Typical-Challenges-in-Approving-SAP-Access-Requests",
+    metaDescription: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
+    excerpt: "Approving SAP access requests is not just a formality—it requires careful judgment and can directly impact the amount of access risks. Governance mandate means the permission to say no just as well as yes: approvers must actively review each request, not just rubber-stamp them.",
+    image: Blog5,
+    date: "2025-10-06",
+  },
 ];
 
 // Preload images with error handling
@@ -54,3 +62,12 @@ blogMetadata.forEach(blog => {
     blog.image = "/images/placeholder.jpg";
   };
 });
+
+
+
+
+
+
+
+
+
