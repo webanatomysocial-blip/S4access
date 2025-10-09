@@ -109,7 +109,7 @@ export default function Blog3() {
 
                     <section>
                         <p>Coming Up in Part II</p>
-                        <p>In the next post, we'll explore Enhancementd, Forms, and Workflows-components that often bypass standard SAP controls. Learn how to secure them effectively.</p>
+                        <p>In the next post, we'll explore Enhancements, Forms, and Workflows-components that often bypass standard SAP controls. Learn how to secure them effectively.</p>
                     </section>
                 </div>
                 {/* <section className="news-blogs-section-inner-blog-page">
