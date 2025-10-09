@@ -102,7 +102,7 @@ export default function Blog3() {
                             like any permanent object
                         </p>
                         <p>
-                            Backed by real project experience, S4Access knows how to design, solution, and build secure
+                            Backed by real project experience, s4access knows how to design, solution, and build secure
                             RICEFW components in S/4HANA.
                         </p>
                     </section>
