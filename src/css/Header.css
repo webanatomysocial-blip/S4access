@@ -112,11 +112,12 @@ html {
 }
 
 .text-white {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   font-family: "barlow", monospace;
-  font-size: 18px;
+  font-size: 18px !important;
   line-height: 1.6;
   text-decoration: none;
+  margin-bottom: 0px !important;
 }
 
 .text-black {
@@ -134,10 +135,11 @@ html {
 }
 
 .small-text-white {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) !important;
   font-family: "barlow", monospace;
-  font-size: 15px;
+  font-size: 15px !important;
   font-weight: 300;
+  margin-bottom: 0px !important;
 }
 
 .small-text-white a {
@@ -640,10 +642,11 @@ nav.scrolled {
   }
 
   .text-white {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     font-family: "barlow", monospace;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 1.6;
+    margin-bottom: 0px !important;
   }
 
   .text-black {
@@ -654,10 +657,11 @@ nav.scrolled {
   }
 
   .small-text-white {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255)  !important;
     font-family: "barlow", monospace;
     font-size: 14px !important;
     font-weight: 300;
+    margin-bottom: 0px !important;
   }
 
   .small-text-black {

@@ -5,7 +5,6 @@ import Blogs from './Blog'; // Adjust path to match src/components/Blog.jsx
 import '../blogs/Internal-Blog.css';
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
-import cta from '../blogs/blogs-images/Group.png';
 
 const DynamicBlog = () => {
   const { blogName } = useParams();
@@ -60,34 +59,7 @@ const DynamicBlog = () => {
         </div>
 
         {/* Cta */}
-        <section className="blog-container">
-          <div className="blog-contact-us-section">
-
-            {/* Left Image */}
-            <div className="blog-left-image only-windows">
-              <img src={cta} />
-            </div>
-
-            {/* Right Content */}
-            <div className="blog-right-content">
-              <div className="blog-right-text">
-                <p className="small-text-white">
-                  We’ll help you build
-                </p>
-                <p className="text-white" style={{fontWeight:600}}>A Compliant, Efficient, and Scalable Access Governance Model.</p>
-              </div>
-              <div className="blog-right-button">
-                <Link to="/contact" className="button-green">
-                  <span>Contact</span>
-                  <span>
-                    <i className="bi bi-arrow-up"></i>
-                  </span>
-                </Link>
-              </div>
-
-            </div>
-          </div>
-        </section>
+       
 
 
         {/* Recent Blogs Section */}

@@ -2,9 +2,13 @@ import React from 'react';
 import './Internal-Blog.css';
 // import img22 from './blogs-images/2.jpg';
 import Blogs from '../components/Blog';
+import cta from '../blogs/blogs-images/Group.png';
+import { Link } from "react-router-dom";
+
 
 export default function Blog2() {
   return (
+    <>
     <div className="breach-article-wrapper">
       {/* Hero Section */}
       {/* <div className="breach-hero-banner">
@@ -70,11 +74,38 @@ export default function Blog2() {
 
 
         </div>
-
-
       </section> */}
 
-       
     </div>
+
+      <section className="blog-container">
+        <div className="blog-contact-us-section">
+
+          {/* Left Image */}
+          <div className="blog-left-image only-windows">
+            <img src={cta} />
+          </div>
+
+          {/* Right Content */}
+          <div className="blog-right-content">
+            <div className="blog-right-text">
+              {/* <p className="small-text-white">
+                We’ll help you build
+              </p> */}
+              <p className="text-white" style={{ fontWeight: 600 }}>Navigate SAP Security and Access Risks with Confidence.</p>
+            </div>
+            <div className="blog-right-button">
+              <Link to="/contact" className="button-green">
+                <span>Get Started</span>
+                <span>
+                  <i className="bi bi-arrow-up"></i>
+                </span>
+              </Link>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      </>
   );
 }

@@ -2,9 +2,12 @@ import React from 'react';
 import './Internal-Blog.css';
 // import img22 from './blogs-images/blog1-img.jpg'
 import Blogs from '../components/Blog';
+import cta from '../blogs/blogs-images/Group.png';
+import { Link } from "react-router-dom";
 
 export default function Blog1() {
   return (
+    <>
     <div className="breach-article-wrapper">
       {/* Hero Section */}
       {/* <div className="breach-hero-banner">
@@ -40,7 +43,7 @@ export default function Blog1() {
           <p>
             SAP remains deeply embedded in many large organizations. Roles requiring SAP expertise—especially in finance, supply chain, and HR—are still in demand. Certifications can help candidates stand out, particularly in competitive markets or when transitioning into SAP-related roles. <br /><br />
             However, employers increasingly value hands-on experience with newer SAP technologies, such as SAP S/4HANA Cloud, SAP Fiori, and integration with third-party platforms. Certifications that reflect these modern capabilities are more relevant than legacy ones.<br /><br />
-            We also found an interesting visual where SAP says that 73% of job candidates received or anticipated salary increase due to the certification. <a href="https://www.sap.com/documents/2020/08/721b54de-a87d-0010-87a3-c30de2ffd8ff.html">SAP Certification Infographic</a> 
+            We also found an interesting visual where SAP says that 73% of job candidates received or anticipated salary increase due to the certification. <a href="https://www.sap.com/documents/2020/08/721b54de-a87d-0010-87a3-c30de2ffd8ff.html">SAP Certification Infographic</a>
 
           </p>
         </section>
@@ -48,7 +51,7 @@ export default function Blog1() {
         <section>
           <h2>SAP’s Own Evolution</h2>
           <p>
-            SAP has updated its certification programs to align with its cloud-first strategy. Currently old certifications are retiring at a fast pace, and the new certifications emphasize the cloud-based tools. The SAP Learning Hub and SAP Certification Hub now offer more dynamic, role-based learning paths. Continuous learning and re-certification are encouraged to keep pace with product updates and innovations. Periodic recertification is at the moment required yearly. 
+            SAP has updated its certification programs to align with its cloud-first strategy. Currently old certifications are retiring at a fast pace, and the new certifications emphasize the cloud-based tools. The SAP Learning Hub and SAP Certification Hub now offer more dynamic, role-based learning paths. Continuous learning and re-certification are encouraged to keep pace with product updates and innovations. Periodic recertification is at the moment required yearly.
 
           </p>
         </section>
@@ -77,7 +80,7 @@ export default function Blog1() {
           </p>
         </section>
       </div>
-       {/* <section className="news-blogs-section-inner-blog-page">
+      {/* <section className="news-blogs-section-inner-blog-page">
         <div className=" heading-news-blog">
           <h1 className="big-heading-text-black">Recent Blogs</h1>
 
@@ -92,6 +95,36 @@ export default function Blog1() {
 
 
       </section> */}
+
     </div>
+      <section className="blog-container">
+        <div className="blog-contact-us-section">
+
+          {/* Left Image */}
+          <div className="blog-left-image only-windows">
+            <img src={cta} />
+          </div>
+
+          {/* Right Content */}
+          <div className="blog-right-content">
+            <div className="blog-right-text">
+              {/* <p className="small-text-white">
+                We’ll help you build
+              </p> */}
+              <p className="text-white" style={{ fontWeight: 600 }}>Upgrade Your SAP Expertise — Discover The Next Steps Now.</p>
+            </div>
+            <div className="blog-right-button">
+              <Link to="/contact" className="button-green">
+                <span>Get Started</span>
+                <span>
+                  <i className="bi bi-arrow-up"></i>
+                </span>
+              </Link>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

@@ -4,6 +4,7 @@ import img21 from './blogs-images/2.jpg';
 import img23 from './blogs-images/1.jpg';
 import img24 from './blogs-images/3.jpg';
 import Blog5 from './blogs-images/Blog-5.jpg';
+import Blog6 from './blogs-images/Blog-6.jpg';
 export const blogMetadata = [
   {
     id: "Is-SAP-Certification-Still-Valid-for-Your-Career-in-2025", // Matches file name without .jsx
@@ -49,6 +50,15 @@ export const blogMetadata = [
     excerpt: "Approving SAP access requests is not just a formality—it requires careful judgment and can directly impact the amount of access risks. Governance mandate means the permission to say no just as well as yes: approvers must actively review each request, not just rubber-stamp them.",
     image: Blog5,
     date: "2025-10-06",
+  },
+  {
+    id: "RICEFW-Security-Guidelines",
+    title: "RICEFW Security Guidelines: Building Security into Custom Developments – Part I",
+    slug: "RICEFW Security Guidelines: Building Security into Custom Developments – Part I",
+    metaDescription: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
+    excerpt: "Approving SAP access requests is not just a formality—it requires careful judgment and can directly impact the amount of access risks. Governance mandate means the permission to say no just as well as yes: approvers must actively review each request, not just rubber-stamp them.",
+    image: Blog6,
+    date: "2025-10-09",
   },
 ];
 
