@@ -50,6 +50,7 @@ export default function Blog5() {
                     <section>
                         <h2>Limited Transparency to Access Leakage
                         </h2>
+                        <h3>Recommendations:</h3>
                         <p>
                             Overlapping roles can lead to access “cross-pollution,” where users gain permissions they shouldn’t have. That’s why access should be strictly limited to what’s needed for daily tasks, and outdated access should be revoked.          </p>
 
