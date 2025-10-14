@@ -366,7 +366,7 @@ function About() {
           <p className="big-heading-text-white">
           Contact us and reset your<br className='only-windows'></br> password to SAP security !
         </p>
-        <p className="text-white">
+        <p className="text-white" style={{paddingBottom:25}}>
           We’re here to help with all your SAP security needs. Whether you're a client, partner,<br /> vendor, or potential team member, here's how to reach the right person
         </p>
 

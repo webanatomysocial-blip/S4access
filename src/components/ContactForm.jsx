@@ -136,7 +136,7 @@ function ContactForm() {
           id="contact-subject"
           value={formData.contactSubject}
           onChange={handleChange}
-          className="contact-input"
+          className="contact-input contact-form-mobile"
           placeholder="What is this regarding?"
           required
           disabled={isSubmitting}
@@ -152,7 +152,7 @@ function ContactForm() {
           id="contact-message"
           value={formData.contactMessage}
           onChange={handleChange}
-          className="contact-textarea"
+          className="contact-textarea contact-form-mobile"
           rows="5"
           placeholder="Please provide details about your inquiry..."
           required
