@@ -211,9 +211,9 @@ function About() {
 
         <div className="about-contact-us-dark-container">
 
-          <div className="about-contact-us-dark-inner-container" style={{ borderLeft: 'none' }}>
+          <div className="about-contact-us-dark-inner-container" style={{ borderLeft: 'none'  }} >
             <div className="about-contact-us-dark-inner-top-container">
-              <p className="big-heading-text-white">
+              <p className="big-heading-text-white-overflow">
                 Partnerships & Services
 
               </p>
@@ -248,7 +248,7 @@ function About() {
 
           <div className="about-contact-us-dark-inner-container">
             <div className="about-contact-us-dark-inner-top-container">
-              <p className="big-heading-text-white">
+              <p className="big-heading-text-white-overflow">
                 Careers<br /><br />
 
               </p>
@@ -282,7 +282,7 @@ function About() {
 
           <div className="about-contact-us-dark-inner-container">
             <div className="about-contact-us-dark-inner-top-container">
-              <p className="big-heading-text-white">
+              <p className="big-heading-text-white-overflow">
                 Administration<br /><br />
 
               </p>
@@ -312,9 +312,8 @@ function About() {
 
           <div className="about-contact-us-dark-inner-container">
             <div className="about-contact-us-dark-inner-top-container">
-              <p className="big-heading-text-white">
+              <p className="big-heading-text-white-overflow">
                 Vendors <br /><br />
-
               </p>
 
             </div>

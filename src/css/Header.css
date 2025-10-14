@@ -57,6 +57,14 @@ html {
   line-height: 1.3em;
   text-transform: capitalize;
 }
+.big-heading-text-white-overflow {
+  color: white;
+  font-family: "barlow", monospace;
+  font-size: 40px !important;
+  font-weight: 400;
+  line-height: 1.3em;
+  text-transform: capitalize;
+}
 
 .big-heading-text-black {
   color: rgb(0, 0, 0);
@@ -614,6 +622,13 @@ nav.scrolled {
     color: white;
     font-family: "barlow", monospace;
     font-size: 35px !important;
+    font-weight: 400;
+    line-height: 1.3em;
+  }
+  .big-heading-text-white-overflow {
+    color: white;
+    font-family: "barlow", monospace;
+    font-size: 30px !important;
     font-weight: 400;
     line-height: 1.3em;
   }
