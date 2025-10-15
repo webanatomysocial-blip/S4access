@@ -5,6 +5,7 @@ import Blogs from './Blog'; // Adjust path to match src/components/Blog.jsx
 import '../blogs/Internal-Blog.css';
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
+import { Helmet } from 'react-helmet-async';
 
 const DynamicBlog = () => {
   const { blogName } = useParams();
@@ -42,6 +43,39 @@ const DynamicBlog = () => {
 
   return (
     <>
+
+
+    <Helmet>
+        <title>RICEFWS Security Guidelines - Part 2 | s4access</title>
+        <meta name="description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." /> {/* Customize to your post */}
+        
+        {/* ✅ OG TAGS FOR ALL PLATFORMS */}
+        <meta property="og:title" content="RICEFWS Security Guidelines - Part 2 | s4access" />
+        <meta property="og:description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." />
+        <meta property="og:image" content="https://s4access.com/images/black-logo-400.png" /> {/* Reuse your logo or add post-specific image */}
+        <meta property="og:image:secure_url" content="https://s4access.com/images/black-logo-400.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:image:alt" content="s4access - RICEFWS Security Guidelines" />
+        <meta property="og:url" content="https://s4access.mosol9.in/blogs/RICEFW-Security-Guidelines-Part-2" /> {/* Use full URL */}
+        <meta property="og:type" content="article" /> {/* 'article' for blog posts */}
+        <meta property="og:site_name" content="s4access" />
+        
+        {/* ✅ LINKEDIN-SPECIFIC */}
+        <meta name="linkedin:title" content="RICEFWS Security Guidelines - Part 2 | s4access" />
+        <meta name="linkedin:description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." />
+        <meta name="linkedin:image" content="https://s4access.com/images/black-logo-400.png" />
+        
+        {/* ✅ TWITTER (WHATSAPP FALLBACK) */}
+        <meta name="twitter:card" content="summary_large_image" /> {/* Or 'summary' for square */}
+        <meta name="twitter:title" content="RICEFWS Security Guidelines - Part 2 | s4access" />
+        <meta name="twitter:description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." />
+        <meta name="twitter:image" content="https://s4access.com/images/black-logo-400.png" />
+        <meta name="twitter:image:alt" content="s4access - RICEFWS Security Guidelines" />
+      </Helmet>
+
+      
       <Header backgroundColor="black" />
       <div className="breach-article-wrapper">
         {/* Hero Section */}

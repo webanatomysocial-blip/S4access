@@ -30,6 +30,7 @@ import SAPAuthorizationConceptOwner from './coustomer-pages/SAP-Authorization-Co
 import S4AccessManagementReview from './coustomer-pages/S4Access-Management-Review.jsx';
 import S4TransitionAnalysis from './coustomer-pages/S4-Transition-Analysis.jsx';
 import S4HanaFioriTransformation from './coustomer-pages/S4-Hana-Fiori-Transformation.jsx';
+import { HelmetProvider } from "react-helmet-async";
 
 console.log('Main.jsx loaded');
 
@@ -54,6 +55,7 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 createRoot(document.getElementById('root')).render(
+<HelmetProvider>
   <StrictMode>
     <LenisProvider>
       <BrowserRouter>
@@ -89,4 +91,5 @@ createRoot(document.getElementById('root')).render(
       </BrowserRouter>
     </LenisProvider>
   </StrictMode>
+</HelmetProvider>
 );

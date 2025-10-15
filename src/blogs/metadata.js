@@ -5,6 +5,7 @@ import img23 from './blogs-images/1.jpg';
 import img24 from './blogs-images/3.jpg';
 import Blog5 from './blogs-images/Blog-5.jpg';
 import Blog6 from './blogs-images/Blog-6.jpg';
+import Blog7 from './blogs-images/Blog-7.jpg';
 export const blogMetadata = [
   {
     id: "Is-SAP-Certification-Still-Valid-for-Your-Career-in-2025", // Matches file name without .jsx
@@ -54,11 +55,20 @@ export const blogMetadata = [
   {
     id: "RICEFW-Security-Guidelines",
     title: "RICEFW Security Guidelines: Building Security into Custom Developments – Part I",
-    slug: "RICEFW Security Guidelines: Building Security into Custom Developments – Part I",
+    slug: "RICEFW-Security-Guidelines-Building-Security-into-Custom-Developments-Part-I",
     metaDescription: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
-    excerpt: "Approving SAP access requests is not just a formality—it requires careful judgment and can directly impact the amount of access risks. Governance mandate means the permission to say no just as well as yes: approvers must actively review each request, not just rubber-stamp them.",
+    excerpt: "When talking about SAP security, most conversations revolve around roles, authorizations, and segregation of duties. But there’s another critical piece that often slips under the radar: RICEFW objects.",
     image: Blog6,
     date: "2025-10-09",
+  },
+  {
+    id: "RICEFW-Security-Guidelines-Part-2",
+    title: "RICEFW Security Guidelines: Building Security into Custom Developments – Part II",
+    slug: "RICEFW-Security-Guidelines-Building-Security-into-Custom-Developments-Part-II",
+    metaDescription: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
+    excerpt: "When discussing SAP security, the focus often stays on roles, authorizations, and segregation of duties. However, an equally critical aspect tends to go unnoticed, RICEFW objects. In Part II of our blog series, we’ll dive deeper into other key RICEFW artifacts, namely Enhancements, Forms, and Workflows. ",
+    image: Blog7,
+    date: "2025-10-15",
   },
 ];
 
