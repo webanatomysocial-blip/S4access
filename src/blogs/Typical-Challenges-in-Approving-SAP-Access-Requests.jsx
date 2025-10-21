@@ -1,8 +1,8 @@
 import React from 'react';
 import './Internal-Blog.css';
 // import img23 from './blogs-images/1.jpg';
-import Blogs from '../components/Blog';
-import cta from '../blogs/blogs-images/Group.png';
+import Blogs from '../../src/components/Blog';
+import cta from './blogs-images/Group.png';
 import { Link } from "react-router-dom";
 
 export default function Blog5() {

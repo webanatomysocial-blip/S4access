@@ -82,12 +82,3 @@ blogMetadata.forEach(blog => {
     blog.image = "/images/placeholder.jpg";
   };
 });
-
-
-
-
-
-
-
-
-

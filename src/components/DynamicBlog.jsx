@@ -45,10 +45,10 @@ const DynamicBlog = () => {
     <>
 
 
-    <Helmet>
+      <Helmet>
         <title>RICEFWS Security Guidelines - Part 2 | s4access</title>
-        <meta name="description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." /> {/* Customize to your post */}
-        
+        <meta name="description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." />
+
         {/* ✅ OG TAGS FOR ALL PLATFORMS */}
         <meta property="og:title" content="RICEFWS Security Guidelines - Part 2 | s4access" />
         <meta property="og:description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." />
@@ -58,15 +58,15 @@ const DynamicBlog = () => {
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" />
         <meta property="og:image:alt" content="s4access - RICEFWS Security Guidelines" />
-        <meta property="og:url" content="https://s4access.mosol9.in/blogs/RICEFW-Security-Guidelines-Part-2" /> {/* Use full URL */}
+        <meta property="og:url" content="https://s4access.com/images/black-logo-400.png" /> {/* Use full URL */}
         <meta property="og:type" content="article" /> {/* 'article' for blog posts */}
         <meta property="og:site_name" content="s4access" />
-        
+
         {/* ✅ LINKEDIN-SPECIFIC */}
         <meta name="linkedin:title" content="RICEFWS Security Guidelines - Part 2 | s4access" />
         <meta name="linkedin:description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." />
         <meta name="linkedin:image" content="https://s4access.com/images/black-logo-400.png" />
-        
+
         {/* ✅ TWITTER (WHATSAPP FALLBACK) */}
         <meta name="twitter:card" content="summary_large_image" /> {/* Or 'summary' for square */}
         <meta name="twitter:title" content="RICEFWS Security Guidelines - Part 2 | s4access" />
@@ -75,7 +75,7 @@ const DynamicBlog = () => {
         <meta name="twitter:image:alt" content="s4access - RICEFWS Security Guidelines" />
       </Helmet>
 
-      
+
       <Header backgroundColor="black" />
       <div className="breach-article-wrapper">
         {/* Hero Section */}
@@ -84,6 +84,11 @@ const DynamicBlog = () => {
           <div className="hero-overlay-section">
             <h1>{metadata.title}</h1>
           </div>
+
+
+
+
+
         </div>
         {/* Blog Content */}
         <div className="breach-article-content">
@@ -93,7 +98,7 @@ const DynamicBlog = () => {
         </div>
 
         {/* Cta */}
-       
+
 
 
         {/* Recent Blogs Section */}

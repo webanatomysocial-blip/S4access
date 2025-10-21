@@ -10,7 +10,7 @@ import HomeSlidersMobile from '../components/HomeSlidersMobile.jsx';
 import { Link } from "react-router-dom";
 import ServiceTabs from "../components/ServiceTabs.jsx";
 import Blogs from "../components/Blog.jsx";
-import { Helmet } from 'react-helmet'; // Or from 'react-helmet-async'
+import { Helmet } from 'react-helmet-async'; // Or from 'react-helmet-async'
 
 function Home() {
 

@@ -18,6 +18,10 @@ export default function Blog9() {
 
 
                 {/* Blog Content */}
+                <div className='back-btn-container'>
+                <Link to="/blogs/RICEFW-Security-Guidelines" className="back-btn">Click here to start with Part I to understand the basics of RICEFW security.</Link>
+
+                </div>
                 <div className="breach-article-content">
                     <section>
                         <p>
@@ -156,7 +160,7 @@ export default function Blog9() {
 
                         </p>
                         <p>
-                            Where SAP meets your business through RICEFW, s4Access ensures security meets reality.
+                            Where SAP meets your business through RICEFW, s4access ensures security meets reality.
                         </p>
                     </section>
 
@@ -204,7 +208,7 @@ export default function Blog9() {
                             </p>
                         </div>
                         <div className="blog-right-button">
-                            <Link to="/contact" className="button-green">
+                            <Link to="/Contact" className="button-green">
                                 <span>Get Started</span>
                                 <span>
                                     <i className="bi bi-arrow-up"></i>

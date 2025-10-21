@@ -19,6 +19,7 @@ export default function Blog3() {
       </div> */}
 
                 {/* Blog Content */}
+              
                 <div className="breach-article-content">
                     <section>
                         <p>
@@ -108,7 +109,7 @@ export default function Blog3() {
                     </section>
 
                     <section>
-                        <p>Coming Up in Part II</p>
+                         <div  className="front-btn-container" ><Link to="/blogs/RICEFW-Security-Guidelines-Part-2" className="front-btn">Continue reading part II, to learn more about RICEFW security in custom developments.</Link></div>
                         <p>In the next post, we'll explore Enhancements, Forms, and Workflows - components that often bypass standard SAP controls. Learn how to secure them effectively.</p>
                     </section>
                 </div>
@@ -146,7 +147,7 @@ export default function Blog3() {
                             <p className="text-white" style={{ fontWeight: 600 }}>Secure Your Custom Developments — Make RICEFW Security Effortless.</p>
                         </div>
                         <div className="blog-right-button">
-                            <Link to="/contact" className="button-green">
+                            <Link to="/Contact" className="button-green">
                                 <span>Get Started</span>
                                 <span>
                                     <i className="bi bi-arrow-up"></i>
@@ -155,7 +156,11 @@ export default function Blog3() {
                         </div>
                     </div>
                 </div>
+                 
             </section>
+
+           
+             
         </>
 
     );
