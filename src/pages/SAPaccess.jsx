@@ -9,44 +9,54 @@ import banner from "../assets/images/inner-services-images/sap-access-management
 import { FaCogs, FaUserTie, FaShieldAlt, FaChartLine } from "react-icons/fa";
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
 import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
+import { Helmet } from 'react-helmet-async';
 
 
 export default function SAPaccess() {
 
 
 
-const faqs = [
-  {
-    question: 'What is SAP Access Management Automation?',
-    answer: 'It refers to using various technologies to streamline how user access, roles, and authorizations are handled in SAP systems. There are many point solutions available, each addressing specific challenges, but without a clear strategy, organizations risk overinvesting in tools that don’t align with their broader access management goals.'
-  },
-  {
-    question: 'Can we automate everything in SAP access management?',
-    answer: 'Not entirely. Many areas are good candidates for automation, but introducing automation in the wrong place can lead to severe security problems, such as inappropriate access or compliance violations. A thoughtful strategy is essential to ensure automation supports—not compromises—your access management.'
-  },
-  {
-    question: 'How does automation improve compliance in SAP systems?',
-    answer: 'Automation can support compliance in many ways—by enforcing access policies, reducing manual errors, and maintaining audit trails. It helps streamline processes like access reviews and role changes, making them more consistent and timely. However, tools alone don’t guarantee compliance. Without proper governance, clear processes, and human oversight, automation can miss critical context or even introduce new risks. Success depends on combining the right technology with a well-defined strategy and accountability.'
-  },
-  {
-    question: 'Can automated access management reduce audit risks?',
-    answer: 'Yes, automation can reduce audit risks by minimizing human errors, enforcing consistent access policies, and maintaining clear documentation. Technology can also be used to analyze weaknesses in access controls and improve the quality of manual reviews. However, tools alone aren’t enough—effective audit readiness still depends on strong governance, well-defined processes, and regular oversight.'
-  },
-  {
-    question: 'How is AI used in SAP access management automation?',
-    answer: 'AI is increasingly being explored to enhance access management processes. However, using AI to interpret organization-specific security data is not without challenges—issues like data quality, context, and policy complexity can limit its reliability. Time will tell how this fundamental question is solved, but for now, AI should be seen as a supportive tool, not a standalone solution.'
-  },
-  {
-    question: 'How do we know which technology to select for automation?',
-    answer: 'There are many technology options available for SAP access management automation, each with different strengths, limitations, and integration capabilities. We understand these tools well and are ready to guide you in comparing them, aligning choices with your desired level of automation, compliance needs, and budget. With the right strategy, you can avoid overinvesting and ensure your automation efforts deliver real value.'
-  }
-];
+  const faqs = [
+    {
+      question: 'What is SAP Access Management Automation?',
+      answer: 'It refers to using various technologies to streamline how user access, roles, and authorizations are handled in SAP systems. There are many point solutions available, each addressing specific challenges, but without a clear strategy, organizations risk overinvesting in tools that don’t align with their broader access management goals.'
+    },
+    {
+      question: 'Can we automate everything in SAP access management?',
+      answer: 'Not entirely. Many areas are good candidates for automation, but introducing automation in the wrong place can lead to severe security problems, such as inappropriate access or compliance violations. A thoughtful strategy is essential to ensure automation supports—not compromises—your access management.'
+    },
+    {
+      question: 'How does automation improve compliance in SAP systems?',
+      answer: 'Automation can support compliance in many ways—by enforcing access policies, reducing manual errors, and maintaining audit trails. It helps streamline processes like access reviews and role changes, making them more consistent and timely. However, tools alone don’t guarantee compliance. Without proper governance, clear processes, and human oversight, automation can miss critical context or even introduce new risks. Success depends on combining the right technology with a well-defined strategy and accountability.'
+    },
+    {
+      question: 'Can automated access management reduce audit risks?',
+      answer: 'Yes, automation can reduce audit risks by minimizing human errors, enforcing consistent access policies, and maintaining clear documentation. Technology can also be used to analyze weaknesses in access controls and improve the quality of manual reviews. However, tools alone aren’t enough—effective audit readiness still depends on strong governance, well-defined processes, and regular oversight.'
+    },
+    {
+      question: 'How is AI used in SAP access management automation?',
+      answer: 'AI is increasingly being explored to enhance access management processes. However, using AI to interpret organization-specific security data is not without challenges—issues like data quality, context, and policy complexity can limit its reliability. Time will tell how this fundamental question is solved, but for now, AI should be seen as a supportive tool, not a standalone solution.'
+    },
+    {
+      question: 'How do we know which technology to select for automation?',
+      answer: 'There are many technology options available for SAP access management automation, each with different strengths, limitations, and integration capabilities. We understand these tools well and are ready to guide you in comparing them, aligning choices with your desired level of automation, compliance needs, and budget. With the right strategy, you can avoid overinvesting and ensure your automation efforts deliver real value.'
+    }
+  ];
 
 
 
 
   return (
     <>
+      <Helmet>
+
+        <title>SAP Access Management Automation | s4access Governance</title>
+        <meta name="title" content="SAP Access Management Automation | s4access Governance" />
+        <meta name="description" content="Automate SAP access management with s4access: streamline user
+provisioning, enforce SoD controls, boost compliance & reduce cost across S/4HANA access
+landscapes." />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">
@@ -153,45 +163,45 @@ const faqs = [
 
 
 
-    
- 
-      <section className="strength-showcase" style={{display:'none'}}>
-                <div className="strength-left">
-                  <h2 className="big-heading-text-white">Case Studies</h2>
-                  <p className="text-white">
-                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
-                  </p>
-                </div>
-            
-                {/* Case Study 1 - Project Detail */}
-                <div className="strength-right">
-                  <div className="stats-card">
-                    <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
-                    <h4 className="text-black">Lorem, ipsum dolor.</h4>
-                    <p className="text-black">
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio 
-                    </p>
-                    <div className="image-container-showcase">
-                      <img src={case1img} alt="case study" />
-                    </div>
-                  </div>
-                </div>
-            
-                {/* Case Study 2 - Business Outcome */}
-                <div className="strength-right">
-                  <div className="stats-card">
-                    <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
-                    <h4 className="text-black">Lorem, ipsum dolor.</h4>
-                    <p className="text-black">
-                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio 
-                    </p>
-                    <div className="image-container-showcase">
-                      <img src={case2img} alt="case study" />
-                    </div>
-                  </div>
-                </div>
-              </section>
-      
+
+
+      <section className="strength-showcase" style={{ display: 'none' }}>
+        <div className="strength-left">
+          <h2 className="big-heading-text-white">Case Studies</h2>
+          <p className="text-white">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
+          </p>
+        </div>
+
+        {/* Case Study 1 - Project Detail */}
+        <div className="strength-right">
+          <div className="stats-card">
+            <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+            <h4 className="text-black">Lorem, ipsum dolor.</h4>
+            <p className="text-black">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
+            </p>
+            <div className="image-container-showcase">
+              <img src={case1img} alt="case study" />
+            </div>
+          </div>
+        </div>
+
+        {/* Case Study 2 - Business Outcome */}
+        <div className="strength-right">
+          <div className="stats-card">
+            <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+            <h4 className="text-black">Lorem, ipsum dolor.</h4>
+            <p className="text-black">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
+            </p>
+            <div className="image-container-showcase">
+              <img src={case2img} alt="case study" />
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       <section className="strength-bottom">
         <div className="stat-card">

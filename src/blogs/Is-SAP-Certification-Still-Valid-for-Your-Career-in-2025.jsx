@@ -4,10 +4,18 @@ import './Internal-Blog.css';
 import Blogs from '../components/Blog';
 import cta from '../blogs/blogs-images/Group.png';
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 export default function Blog1() {
   return (
     <>
+        <Helmet>
+                <title> Is SAP Certification Still Valid in 2025? | s4access</title>
+                <meta name="title" content=" Is SAP Certification Still Valid in 2025? | s4access" />
+                <meta name="description" content="Explore the relevance of SAP certification in 2025: its value in cloud adoption,
+career growth, and staying competitive in the evolving SAP ecosystem." />
+
+            </Helmet>
     <div className="breach-article-wrapper">
       {/* Hero Section */}
       {/* <div className="breach-hero-banner">

@@ -67,9 +67,9 @@ createRoot(document.getElementById('root')).render(
           <Route path="/customer-success" element={<CustomerSuccess />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/s4-access-architecture-design" element={<S4AccessArchitectureDesign />} />
           <Route path="/careers" element={<Careers />} />
-          <Route path="/sap-access-management-review" element={<SAPAccessReview />} />
+          <Route path="/s4-access-architecture-design" element={<S4AccessArchitectureDesign />} />
+          <Route path="/sap-access-management-review" element={<SAPAccessReview />} /> 
           <Route path="/sod-strategy-approach" element={<SAPSoDApproach />} />
           <Route path="/sap-access-management-automation" element={<SAPaccess />} />
           <Route path="/sap-s4-access-implementation" element={<SAPAuthorisationRedesign />} />

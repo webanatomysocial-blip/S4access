@@ -7,14 +7,23 @@ import Topbanner from '../assets/images/About-img/Top-banner-img.jpg';
 import whoweare from '../assets/images/About-img/Who-We-Are.jpg';
 import TeamSection from '../components/TeamSection.jsx';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 function About() {
 
 
- 
+
 
   return (
     <div>
+      <Helmet>
+
+        <title> About Us SAP Access Management Experts | s4access</title>
+        <meta name="title" content=" About Us SAP Access Management Experts | s4access" />
+        <meta name="description" content=" s4access delivers expert SAP access management, governance &
+compliance solutions to mitigate risk, streamline processes and secure your enterprise systems." />
+
+      </Helmet>
       <Header />
 
       {/* banner section start */}
@@ -211,7 +220,7 @@ function About() {
 
         <div className="about-contact-us-dark-container">
 
-          <div className="about-contact-us-dark-inner-container" style={{ borderLeft: 'none'  }} >
+          <div className="about-contact-us-dark-inner-container" style={{ borderLeft: 'none' }} >
             <div className="about-contact-us-dark-inner-top-container">
               <p className="big-heading-text-white-overflow">
                 Partnerships & Services
@@ -224,7 +233,7 @@ function About() {
             <div className="about-contact-us-dark-inner-bottom-containr">
               <p className="small-text-white ">
 
-               Interested in our services & partnership ?
+                Interested in our services & partnership ?
 
 
                 <br />
@@ -363,24 +372,24 @@ function About() {
       <section className="about-contact-us-section">
         <div>
           <p className="big-heading-text-white">
-          Contact us and reset your<br className='only-windows'></br> password to SAP security !
-        </p>
-        <p className="text-white" style={{paddingBottom:25}}>
-          We’re here to help with all your SAP security needs. Whether you're a client, partner,<br /> vendor, or potential team member, here's how to reach the right person
-        </p>
+            Contact us and reset your<br className='only-windows'></br> password to SAP security !
+          </p>
+          <p className="text-white" style={{ paddingBottom: 25 }}>
+            We’re here to help with all your SAP security needs. Whether you're a client, partner,<br /> vendor, or potential team member, here's how to reach the right person
+          </p>
 
         </div>
 
         <div>
-            <Link to="/contact" className="button-green ">
-                    <span>Contact </span>
-                    <span>
-                      <i className="bi bi-arrow-up"></i>
-                    </span>
-                  </Link>
+          <Link to="/contact" className="button-green ">
+            <span>Contact </span>
+            <span>
+              <i className="bi bi-arrow-up"></i>
+            </span>
+          </Link>
 
         </div>
-        
+
 
       </section>
 

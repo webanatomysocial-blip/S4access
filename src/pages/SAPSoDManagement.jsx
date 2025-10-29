@@ -9,37 +9,38 @@ import { FaCogs, FaChartLine, FaShieldAlt, FaUserTie, FaUsersCog } from "react-i
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
 import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
 import image from "../assets/images/inner-services-images/access-risk-sod-management-banner.jpg";
+import { Helmet } from 'react-helmet-async';
 
 export default function SAPSoDApproach() {
 
 
 
   const faqs = [
-  {
-    question: 'When should we use this service?',
-    answer: 'There’s virtually no situation where this service isn’t valuable. Whether you\'re designing new roles, implementing SAP systems, or optimizing existing SoD controls, continuous access risk management helps ensure compliance, reduce audit findings, and improve security.'
-  },
-  {
-    question: 'Is it fast to implement?',
-    answer: 'Yes. Once the initial paperwork and technical enablement are complete, the first access risk results are typically available within 1–2 days, allowing for a quick start to analysis and decision-making.'
-  },
-  {
-    question: 'Is the service audit-proven?',
-    answer: 'Absolutely. Our customers have been using this service for years and have successfully passed audits by all major auditing firms—without comments. It consistently meets audit standards and supports transparent, well-documented access risk management.'
-  },
-  {
-    question: 'What is expected from us as the customer?',
-    answer: 'Very little to get started. The service is up and running with minimal effort on your side. Once enabled, we’ll guide you through setting up the necessary governance and processes to ensure you get full value from the access risk results.'
-  },
-  {
-    question: 'How does the cost compare to other alternatives in the market?',
-    answer: 'The service is based on a reasonable fixed monthly fee, which keeps budgeting simple and predictable. Compared to several software-based solutions, the total cost of ownership is significantly lower, especially when factoring in implementation, maintenance, and complexity.'
-  },
-  {
-    question: 'Does it cover ECC and S/4 environments?',
-    answer: 'Yes. The service fully supports both SAP ECC and SAP S/4HANA environments, ensuring consistent access risk management across legacy and modern SAP landscapes.'
-  }
-];
+    {
+      question: 'When should we use this service?',
+      answer: 'There’s virtually no situation where this service isn’t valuable. Whether you\'re designing new roles, implementing SAP systems, or optimizing existing SoD controls, continuous access risk management helps ensure compliance, reduce audit findings, and improve security.'
+    },
+    {
+      question: 'Is it fast to implement?',
+      answer: 'Yes. Once the initial paperwork and technical enablement are complete, the first access risk results are typically available within 1–2 days, allowing for a quick start to analysis and decision-making.'
+    },
+    {
+      question: 'Is the service audit-proven?',
+      answer: 'Absolutely. Our customers have been using this service for years and have successfully passed audits by all major auditing firms—without comments. It consistently meets audit standards and supports transparent, well-documented access risk management.'
+    },
+    {
+      question: 'What is expected from us as the customer?',
+      answer: 'Very little to get started. The service is up and running with minimal effort on your side. Once enabled, we’ll guide you through setting up the necessary governance and processes to ensure you get full value from the access risk results.'
+    },
+    {
+      question: 'How does the cost compare to other alternatives in the market?',
+      answer: 'The service is based on a reasonable fixed monthly fee, which keeps budgeting simple and predictable. Compared to several software-based solutions, the total cost of ownership is significantly lower, especially when factoring in implementation, maintenance, and complexity.'
+    },
+    {
+      question: 'Does it cover ECC and S/4 environments?',
+      answer: 'Yes. The service fully supports both SAP ECC and SAP S/4HANA environments, ensuring consistent access risk management across legacy and modern SAP landscapes.'
+    }
+  ];
 
 
 
@@ -47,6 +48,14 @@ export default function SAPSoDApproach() {
 
   return (
     <>
+      <Helmet>
+
+        <title>SAP Access Risk & SoD Management Solutions | s4access</title>
+        <meta name="title" content="SAP Access Risk & SoD Management Solutions | s4access" />
+        <meta name="description" content="Mitigate SAP access risks with s4access: expert SoD analysis, role remediation,
+and compliance-driven strategies to secure your enterprise systems." />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">
@@ -172,9 +181,9 @@ export default function SAPSoDApproach() {
 
 
 
-      
 
-      <section className="strength-showcase" style={{display:'none'}}>
+
+      <section className="strength-showcase" style={{ display: 'none' }}>
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">

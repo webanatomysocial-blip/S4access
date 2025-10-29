@@ -9,38 +9,39 @@ import banner from "../assets/images/inner-services-images/sod-Stratergy-approac
 import { FaCogs, FaUserTie, FaShieldAlt, FaChartLine } from "react-icons/fa";
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
 import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
+import { Helmet } from 'react-helmet-async';
 
 
 export default function SAPSoDApproach() {
 
 
 
- const faqs = [
-  {
-    question: 'What kind of deliverables can we expect from the service?',
-    answer: 'You will receive an optimized SoD approach tailored to your organization, along with a roadmap for continuous improvement and long-term compliance.'
-  },
-  {
-    question: 'Can you help us build a sustainable SoD governance model?',
-    answer: 'Yes. Once the SoD strategy and approach are defined, we can support you in implementing a governance model with clear ownership, processes, and tools.'
-  },
-  {
-    question: 'Will this help us pass internal and external audits?',
-    answer: 'Not always directly but defining a clear SoD strategy and approach brings transparency, reduces risk, and significantly improves your chances of meeting audit requirements.'
-  },
-  {
-    question: 'Do we need SAP GRC or another tool in place to benefit from this service?',
-    answer: 'No specific tool is required. We work with or without SAP GRC, adapting to your current setup and recommending tools only if they add value.'
-  },
-  {
-    question: 'How much calendar time does this typically require?',
-    answer: 'Typically 2-3 calendar months, depending on the size and complexity of your SAP environment.'
-  },
-  {
-    question: 'How much involvement is required from our internal team during the review?',
-    answer: 'Key stakeholders from internal controls, internal audit and IT are involved in workshops and decision-making, while we handle the bulk of analysis and documentation.'
-  }
-];
+  const faqs = [
+    {
+      question: 'What kind of deliverables can we expect from the service?',
+      answer: 'You will receive an optimized SoD approach tailored to your organization, along with a roadmap for continuous improvement and long-term compliance.'
+    },
+    {
+      question: 'Can you help us build a sustainable SoD governance model?',
+      answer: 'Yes. Once the SoD strategy and approach are defined, we can support you in implementing a governance model with clear ownership, processes, and tools.'
+    },
+    {
+      question: 'Will this help us pass internal and external audits?',
+      answer: 'Not always directly but defining a clear SoD strategy and approach brings transparency, reduces risk, and significantly improves your chances of meeting audit requirements.'
+    },
+    {
+      question: 'Do we need SAP GRC or another tool in place to benefit from this service?',
+      answer: 'No specific tool is required. We work with or without SAP GRC, adapting to your current setup and recommending tools only if they add value.'
+    },
+    {
+      question: 'How much calendar time does this typically require?',
+      answer: 'Typically 2-3 calendar months, depending on the size and complexity of your SAP environment.'
+    },
+    {
+      question: 'How much involvement is required from our internal team during the review?',
+      answer: 'Key stakeholders from internal controls, internal audit and IT are involved in workshops and decision-making, while we handle the bulk of analysis and documentation.'
+    }
+  ];
 
 
 
@@ -48,6 +49,14 @@ export default function SAPSoDApproach() {
 
   return (
     <>
+      <Helmet>
+
+        <title>S/4HANA SoD Strategy & SAP Access Governance | s4access</title>
+        <meta name="title" content="S/4HANA SoD Strategy & SAP Access Governance | s4access" />
+        <meta name="description" content="Learn s4access’s strategy for Segregation of Duties in S/4HANA—optimize role
+design, governance and compliance to reduce risk and strengthen access controls." />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">
@@ -56,7 +65,7 @@ export default function SAPSoDApproach() {
             SoD strategy and approach
           </h2>
           <p className="text-white">
-          We design and implement a clear Segregation of Duties (SoD) strategy, reducing risks of conflicts, strengthening compliance, and ensuring secure, sustainable access management.
+            We design and implement a clear Segregation of Duties (SoD) strategy, reducing risks of conflicts, strengthening compliance, and ensuring secure, sustainable access management.
           </p>
         </div>
         <div className="service-right only-windows">
@@ -152,43 +161,43 @@ export default function SAPSoDApproach() {
 
 
 
-    
-       <section className="strength-showcase" style={{display:'none'}}>
-          <div className="strength-left">
-            <h2 className="big-heading-text-white">Case Studies</h2>
-            <p className="text-white">
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
+
+      <section className="strength-showcase" style={{ display: 'none' }}>
+        <div className="strength-left">
+          <h2 className="big-heading-text-white">Case Studies</h2>
+          <p className="text-white">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
+          </p>
+        </div>
+
+        {/* Case Study 1 - Project Detail */}
+        <div className="strength-right">
+          <div className="stats-card">
+            <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+            <h4 className="text-black">Lorem, ipsum dolor.</h4>
+            <p className="text-black">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
             </p>
-          </div>
-      
-          {/* Case Study 1 - Project Detail */}
-          <div className="strength-right">
-            <div className="stats-card">
-              <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
-              <h4 className="text-black">Lorem, ipsum dolor.</h4>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio 
-              </p>
-              <div className="image-container-showcase">
-                <img src={case1img} alt="case study" />
-              </div>
+            <div className="image-container-showcase">
+              <img src={case1img} alt="case study" />
             </div>
           </div>
-      
-          {/* Case Study 2 - Business Outcome */}
-          <div className="strength-right">
-            <div className="stats-card">
-              <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
-              <h4 className="text-black">Lorem, ipsum dolor.</h4>
-              <p className="text-black">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio 
-              </p>
-              <div className="image-container-showcase">
-                <img src={case2img} alt="case study" />
-              </div>
+        </div>
+
+        {/* Case Study 2 - Business Outcome */}
+        <div className="strength-right">
+          <div className="stats-card">
+            <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+            <h4 className="text-black">Lorem, ipsum dolor.</h4>
+            <p className="text-black">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
+            </p>
+            <div className="image-container-showcase">
+              <img src={case2img} alt="case study" />
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
 
 

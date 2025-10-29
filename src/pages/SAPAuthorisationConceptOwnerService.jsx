@@ -18,6 +18,7 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import image from "../assets/images/inner-services-images/authorisation-concept-owner-banner.jpg";
+import { Helmet } from 'react-helmet-async';
 
 export default function SAPAuthorisationConceptOwnerService() {
 
@@ -56,6 +57,14 @@ const faqs = [
 
   return (
     <>
+     <Helmet>
+
+        <title>SAP Authorization Concept Owner & Roles | s4accesss</title>
+        <meta name="title" content="SAP Authorization Concept Owner & Roles | s4accesss" />
+        <meta name="description" content="Understand the role of SAP Authorization Concept Owner: define, implement,
+and maintain authorization concepts to ensure compliance and secure access management." />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">

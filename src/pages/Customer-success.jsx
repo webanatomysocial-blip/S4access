@@ -4,6 +4,7 @@ import '../css/App.css';
 import CustomerSuccessCards from "../components/CustomerSuccessCards.jsx";
 import banner1 from '../assets/images/home-img/Success-top-img.jpg';
 import banner2 from '../assets/images/home-img/Success-top-img-2.jpg';
+import { Helmet } from 'react-helmet-async';
 
 
 function CustomerSuccess() {
@@ -11,6 +12,14 @@ function CustomerSuccess() {
 
   return (
     <div>
+       <Helmet>
+
+        <title>Customer Success Stories – s4access SAP Access Projects</title>
+        <meta name="title" content="Customer Success Stories – s4access SAP Access Projects" />
+        <meta name="description" content="Discover s4access customer success stories in SAP access governance
+and compliance—real-world case studies showcasing risk mitigation and enterprise security." />
+
+      </Helmet>
       <Header />
       <section className="customer-hero-section">
         <div className="customer-hero-left-content">

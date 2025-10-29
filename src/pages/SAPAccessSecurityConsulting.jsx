@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
 import { FaSearch, FaShieldAlt, FaUsers, FaCheckCircle } from "react-icons/fa";
-
+import { Helmet } from 'react-helmet-async';
 import image from "../assets/images/inner-services-images/reorganisation-ma-projects-banner.jpg";
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
 import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
@@ -47,6 +47,14 @@ const faqs = [
 
   return (
     <>
+     <Helmet>
+
+        <title>SAP Access Management for M&A & Reorganisation | s4access</title>
+        <meta name="title" content="SAP Access Management for M&A & Reorganisation | s4access" />
+        <meta name="description" content="Navigate SAP access during mergers, acquisitions & reorganizations with
+s4access: expert role mapping, SoD compliance, and seamless user provisioning." />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">

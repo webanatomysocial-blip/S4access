@@ -9,6 +9,7 @@ import image from "../assets/images/inner-services-images/ff-log-review-automati
 import { FaCheckCircle, FaDatabase, FaUserCheck, FaShieldAlt } from "react-icons/fa";
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
 import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
+import { Helmet } from 'react-helmet-async';
 
 
 export default function SAPSoDApproach() {
@@ -44,6 +45,14 @@ export default function SAPSoDApproach() {
 
   return (
     <>
+     <Helmet>
+
+        <title>Firefighter Log Review Automation for SAP GRC | s4access</title>
+        <meta name="title" content="Firefighter Log Review Automation for SAP GRC | s4access" />
+        <meta name="description" content="Automate SAP GRC Firefighter log reviews with s4access: reduce manual
+effort, ensure compliance, and enhance audit efficiency through intelligent automation." />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">

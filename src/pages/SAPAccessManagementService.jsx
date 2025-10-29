@@ -8,6 +8,7 @@ import FAQTemplate from '../components/FAQTemplate.jsx';
 import image from "../assets/images/inner-services-images/outsourced-access-management-banner.jpg";
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
 import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
+import { Helmet } from 'react-helmet-async';
 
 export default function SAPAccessManagementService() {
 
@@ -44,6 +45,14 @@ export default function SAPAccessManagementService() {
 
   return (
     <>
+     <Helmet>
+
+        <title>Outsourced SAP Access Management & Governance | s4access</title>
+        <meta name="title" content="Outsourced SAP Access Management & Governance | s4access" />
+        <meta name="description" content="Streamline SAP access with s4access’s outsourced management: expert role
+design, SoD compliance, and seamless provisioning for secure, efficient enterprise systems." />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">

@@ -22,35 +22,38 @@ function Home() {
   return (
     <div>
 
-<Helmet>
-  <title>s4access - Home</title>
-  <meta name="description" content="Welcome to s4access, your go-to solution for SAP access management!" />
-  
-  {/* ✅ ENHANCED OG TAGS FOR ALL PLATFORMS */}
-  <meta property="og:title" content="s4access - Home" />
-  <meta property="og:description" content="Welcome to s4access, your go-to solution for SAP access management!" />
-  <meta property="og:image" content="https://s4access.com/images/black-logo-400.png" />
-  <meta property="og:image:secure_url" content="https://s4access.com/images/black-logo-400.png" /> {/* ✅ HTTPS */}
-  <meta property="og:image:type" content="image/png" /> {/* ✅ File type */}
-  <meta property="og:image:width" content="400" />
-  <meta property="og:image:height" content="400" />
-  <meta property="og:image:alt" content="s4access logo" />
-  <meta property="og:url" content="https://s4access.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="s4access" />
-  
-  {/* ✅ LINKEDIN-SPECIFIC */}
-  <meta name="linkedin:title" content="s4access - Home" />
-  <meta name="linkedin:description" content="Welcome to s4access, your go-to solution for SAP access management!" />
-  <meta name="linkedin:image" content="https://s4access.com/images/black-logo-400.png" />
-  
-  {/* ✅ TWITTER (WHATSAPP FALLBACK) */}
-  <meta name="twitter:card" content="summary" /> {/* Square image */}
-  <meta name="twitter:title" content="s4access - Home" />
-  <meta name="twitter:description" content="Welcome to s4access, your go-to solution for SAP access management!" />
-  <meta name="twitter:image" content="https://s4access.com/images/black-logo-400.png" />
-  <meta name="twitter:image:alt" content="s4access logo" />
-</Helmet>
+      <Helmet>
+        <title>Leading SAP Access Management Specialists | s4access</title>
+        <meta name="title" content="Leading SAP Access Management Specialists | s4access" />
+        <meta name="description" content="s4access provides SAP access governance, automation, and risk reduction solutions to help organisations stay secure, compliant, and efficient across SAP systems." />
+        
+
+
+        {/* ✅ ENHANCED OG TAGS FOR ALL PLATFORMS */}
+        <meta property="og:title" content="s4access - Home" />
+        <meta property="og:description" content="Welcome to s4access, your go-to solution for SAP access management!" />
+        <meta property="og:image" content="https://s4access.com/images/black-logo-400.png" />
+        <meta property="og:image:secure_url" content="https://s4access.com/images/black-logo-400.png" /> {/* ✅ HTTPS */}
+        <meta property="og:image:type" content="image/png" /> {/* ✅ File type */}
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="400" />
+        <meta property="og:image:alt" content="s4access logo" />
+        <meta property="og:url" content="https://s4access.com/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="s4access" />
+
+        {/* ✅ LINKEDIN-SPECIFIC */}
+        <meta name="linkedin:title" content="s4access - Home" />
+        <meta name="linkedin:description" content="Welcome to s4access, your go-to solution for SAP access management!" />
+        <meta name="linkedin:image" content="https://s4access.com/images/black-logo-400.png" />
+
+        {/* ✅ TWITTER (WHATSAPP FALLBACK) */}
+        <meta name="twitter:card" content="summary" /> {/* Square image */}
+        <meta name="twitter:title" content="s4access - Home" />
+        <meta name="twitter:description" content="Welcome to s4access, your go-to solution for SAP access management!" />
+        <meta name="twitter:image" content="https://s4access.com/images/black-logo-400.png" />
+        <meta name="twitter:image:alt" content="s4access logo" />
+      </Helmet>
 
 
 

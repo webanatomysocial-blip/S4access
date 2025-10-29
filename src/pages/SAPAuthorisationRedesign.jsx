@@ -6,6 +6,7 @@ import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
 import case1img from "../assets/images/inner-services-images/sap-s4-access-implementation-case1.jpg";
 import case2img from "../assets/images/inner-services-images/sap-s4-access-implementation-case2.jpg";
+import { Helmet } from 'react-helmet-async';
 
 import image from "../assets/images/inner-services-images/sap-s4-access-implementation-banner.jpg";
 
@@ -46,6 +47,14 @@ export default function SAPAuthorisationRedesign() {
 
   return (
     <>
+     <Helmet>
+
+        <title>SAP S/4HANA Access Implementation & Governance | s4access</title>
+        <meta name="title" content="SAP S/4HANA Access Implementation & Governance | s4access" />
+        <meta name="description" content="Implement SAP S/4HANA access controls with s4access: expert role design,
+risk mitigation, SoD alignment & seamless governance to secure your enterprise systems." />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">

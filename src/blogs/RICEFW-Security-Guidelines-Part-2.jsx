@@ -2,10 +2,18 @@ import React from 'react';
 import './Internal-Blog.css';
 import cta from '../blogs/blogs-images/Group.png';
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 export default function Blog9() {
     return (
         <>
+            <Helmet>
+                <title>SAP Access Controls - RICEFW Security Guidelines | s4access</title>
+                <meta name="title" content="SAP Access Controls - RICEFW Security Guidelines | s4access" />
+                <meta name="description" content="Enhance SAP security with RICEFW guidelines: implement secure custom
+developments, enforce SoD, and ensure compliance across your SAP landscape with s4access." />
+
+            </Helmet>
             <div className="breach-article-wrapper">
                 {/* Hero Section */}
                 {/* <div className="breach-hero-banner">
@@ -19,7 +27,7 @@ export default function Blog9() {
 
                 {/* Blog Content */}
                 <div className='back-btn-container'>
-                <Link to="/blogs/RICEFW-Security-Guidelines" className="back-btn">Click here to start with Part I to understand the basics of RICEFW security.</Link>
+                    <Link to="/blogs/RICEFW-Security-Guidelines" className="back-btn">Click here to start with Part I to understand the basics of RICEFW security.</Link>
 
                 </div>
                 <div className="breach-article-content">
@@ -44,7 +52,7 @@ export default function Blog9() {
                             <li> Follow ABAP secure coding practices: sanitize inputs, protect system calls, and avoid
                                 hardcoded credentials.</li>
                             <li> Run ATC/SCI checks before every transport.
-</li>
+                            </li>
                             <li>Apply change management protocols - document, review, and approve enhancements.</li>
                             <li>Maintain segregation of duties (developers ≠ approvers).</li>
                         </ul>

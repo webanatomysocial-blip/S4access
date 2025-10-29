@@ -7,6 +7,7 @@ import FAQTemplate from '../components/FAQTemplate.jsx';
 import image from "../assets/images/inner-services-images/sod-role-redesign-banner.jpg";
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
 import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
+import { Helmet } from 'react-helmet-async';
 
 export default function SAPAuthorisationConceptDesign() {
 
@@ -43,6 +44,15 @@ const faqs = [
 
   return (
     <>
+
+     <Helmet>
+
+        <title>SAP SoD Role Redesign for S/4HANA | s4access Governances</title>
+        <meta name="title" content="SAP SoD Role Redesign for S/4HANA | s4access Governance" />
+        <meta name="description" content="Enhance SAP S/4HANA security with s4access’s SoD role redesign: mitigate
+conflicts, streamline access, and ensure compliance with expert governance solutions." />
+
+      </Helmet>
       <Header />
 
       {/* Hero Section */}

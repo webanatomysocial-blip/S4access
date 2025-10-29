@@ -5,10 +5,18 @@ import Blogs from '../components/Blog';
 import cta from '../blogs/blogs-images/Group.png';
 import { Link } from "react-router-dom";
 import '../css/Header.css';
+import { Helmet } from 'react-helmet-async';
 
 export default function Blog3() {
     return (
         <>
+          <Helmet>
+                <title>RICEFW Security Guidelines for SAP Access | s4access</title>
+                <meta name="title" content="RICEFW Security Guidelines for SAP Access | s4access" />
+                <meta name="description" content="Enhance SAP security with RICEFW guidelines: implement secure custom
+developments, enforce SoD, and ensure compliance across your SAP landscape with s4access." />
+
+            </Helmet>
             <div className="breach-article-wrapper">
                 {/* Hero Section */}
                 {/* <div className="breach-hero-banner">

@@ -7,6 +7,7 @@ import WholeWebsiteIcon from '../components/WholeWebsiteIcon.jsx';
 import FAQTemplate from '../components/FAQTemplate.jsx';
 import ServiceTabs from '../components/ServiceTabs.jsx';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 
 function Services() {
@@ -52,6 +53,14 @@ function Services() {
 
 
     <div>
+       <Helmet>
+
+        <title>SAP Access Services | Governance & Compliance by s4access</title>
+        <meta name="title" content="SAP Access Services | Governance & Compliance by s4access" />
+        <meta name="description" content="Explore s4access’s SAP access services: access management, security
+audits, and compliance support to protect your enterprise and streamline governance." />
+
+      </Helmet>
       <Header />
 
 

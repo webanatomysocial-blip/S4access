@@ -4,10 +4,18 @@ import './Internal-Blog.css';
 import Blogs from '../../src/components/Blog';
 import cta from './blogs-images/Group.png';
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 export default function Blog5() {
     return (
         <>
+            <Helmet>
+                <title>Challenges in Approving SAP Access Requests | s4access</title>
+                <meta name="title" content="Challenges in Approving SAP Access Requests | s4access" />
+                <meta name="description" content="Discover common challenges in approving SAP access requests: balancing
+security, compliance, and efficiency to mitigate risks and ensure effective governance." />
+
+            </Helmet>
             <div className="breach-article-wrapper">
                 {/* Blog Content */}
                 <div className="breach-article-content">
@@ -54,7 +62,7 @@ export default function Blog5() {
                         <p>
                             Overlapping roles can lead to access “cross-pollution,” where users gain permissions they shouldn’t have. That’s why access should be strictly limited to what’s needed for daily tasks, and outdated access should be revoked.          </p>
 
-                       
+
                         <ul>
                             <li>Design system roles with clear naming and scope.</li>
                             <li>Empower business approvers to also say “no” when needed.</li>

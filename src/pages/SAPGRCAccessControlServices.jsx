@@ -8,42 +8,51 @@ import { FaProjectDiagram, FaNetworkWired, FaUserShield, FaUsersCog, FaCogs } fr
 import image from "../assets/images/inner-services-images/security-architect-banner.jpg";
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
 import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
+import { Helmet } from 'react-helmet-async';
 
 export default function SAPGRCAccessControlServices() {
 
 
 
-const faqs = [
-  {
-    question: 'Why should a company consider outsourcing the SAP Security Architect role?',
-    answer: 'Many organizations first need to recognize that SAP Security Architecture is a critical competence—especially in S/4HANA environments where security, compliance, and integration challenges are more demanding. Recruiting and retaining experts with deep, cross-functional SAP security knowledge is increasingly difficult. Most companies can\'t justify hiring multiple high-level specialists to cover all areas, making it hard to build and maintain the necessary expertise in-house.'
-  },
-  {
-    question: 'Is outsourcing the SAP Security Architect more expensive than hiring internal personnel?',
-    answer: 'Surprisingly, no. Many organizations discover—especially when moving to S/4HANA or improving their SAP Access Management—that the full cost of maintaining an internal team with the required expertise is significantly higher. In many cases, the role is covered through a mix of internal staff and external consultants, which often leads to a higher total cost.'
-  },
-  {
-    question: 'What if we don’t need a full-time SAP Security Architect—can the service be scaled to our needs?',
-    answer: 'Absolutely. Our SAP Security Architect service is designed to be flexible. Whether you\'re a smaller organization with limited needs or a larger enterprise facing complex projects, we can scale the service up or down accordingly. This ensures you get the right level of expertise when needed—without the cost or commitment of a full-time hire.'
-  },
-  {
-    question: 'How will the SAP Security Architect service learn and understand our organization’s structure, processes, and SAP environment?',
-    answer: 'Our service is delivered by experienced, named experts who stay with your organization long-term. We work closely with your internal teams, becoming part of your operations and taking time to understand your structure, business processes, and SAP landscape. This approach ensures continuity, deep domain knowledge, and tailored support that evolves with your needs.'
-  },
-  {
-    question: 'Is it difficult to get started with the outsourced SAP Security Architect service?',
-    answer: 'Not at all. We can onboard quickly and begin adding value right away. Our experts are familiar with a wide range of SAP environments and know how to integrate smoothly into your organization, making the startup process fast, efficient, and low effort for your internal team.'
-  },
-  {
-    question: 'Are your customers satisfied with the outsourced SAP Security Architect service?',
-    answer: 'Yes, our customers consistently report high satisfaction with the service. They value the deep expertise, continuity, and flexibility we provide—especially during complex projects, audits, and transitions to S/4HANA. Long-term relationships and repeat engagements are a strong indicator of the trust and results we deliver.'
-  }
-];
+  const faqs = [
+    {
+      question: 'Why should a company consider outsourcing the SAP Security Architect role?',
+      answer: 'Many organizations first need to recognize that SAP Security Architecture is a critical competence—especially in S/4HANA environments where security, compliance, and integration challenges are more demanding. Recruiting and retaining experts with deep, cross-functional SAP security knowledge is increasingly difficult. Most companies can\'t justify hiring multiple high-level specialists to cover all areas, making it hard to build and maintain the necessary expertise in-house.'
+    },
+    {
+      question: 'Is outsourcing the SAP Security Architect more expensive than hiring internal personnel?',
+      answer: 'Surprisingly, no. Many organizations discover—especially when moving to S/4HANA or improving their SAP Access Management—that the full cost of maintaining an internal team with the required expertise is significantly higher. In many cases, the role is covered through a mix of internal staff and external consultants, which often leads to a higher total cost.'
+    },
+    {
+      question: 'What if we don’t need a full-time SAP Security Architect—can the service be scaled to our needs?',
+      answer: 'Absolutely. Our SAP Security Architect service is designed to be flexible. Whether you\'re a smaller organization with limited needs or a larger enterprise facing complex projects, we can scale the service up or down accordingly. This ensures you get the right level of expertise when needed—without the cost or commitment of a full-time hire.'
+    },
+    {
+      question: 'How will the SAP Security Architect service learn and understand our organization’s structure, processes, and SAP environment?',
+      answer: 'Our service is delivered by experienced, named experts who stay with your organization long-term. We work closely with your internal teams, becoming part of your operations and taking time to understand your structure, business processes, and SAP landscape. This approach ensures continuity, deep domain knowledge, and tailored support that evolves with your needs.'
+    },
+    {
+      question: 'Is it difficult to get started with the outsourced SAP Security Architect service?',
+      answer: 'Not at all. We can onboard quickly and begin adding value right away. Our experts are familiar with a wide range of SAP environments and know how to integrate smoothly into your organization, making the startup process fast, efficient, and low effort for your internal team.'
+    },
+    {
+      question: 'Are your customers satisfied with the outsourced SAP Security Architect service?',
+      answer: 'Yes, our customers consistently report high satisfaction with the service. They value the deep expertise, continuity, and flexibility we provide—especially during complex projects, audits, and transitions to S/4HANA. Long-term relationships and repeat engagements are a strong indicator of the trust and results we deliver.'
+    }
+  ];
 
 
 
   return (
     <>
+      <Helmet>
+
+        <title>SAP Security Architect Role & Responsibilities | s4access</title>
+        <meta name="title" content="SAP Security Architect Role & Responsibilities | s4access" />
+        <meta name="description" content="Explore the SAP Security Architect role at s4access: design secure SAP
+landscapes, implement SoD controls, and ensure compliance across S/4HANA systems." />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">
@@ -146,44 +155,44 @@ const faqs = [
       </section>
 
 
-     
-     {/* Case Studies / Strength Showcase */}
-           <section className="strength-showcase" style={{display: "none"}}>
-             <div className="strength-left">
-               <h2 className="big-heading-text-white">Case Studies</h2>
-               <p className="text-white">
-                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
-               </p>
-             </div>
-     
-             {/* Case Study 1 - Project Detail */}
-             <div className="strength-right">
-               <div className="stats-card">
-                 <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
-                 <h4 className="text-black">Lorem, ipsum dolor.</h4>
-                 <p className="text-black">
-                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
-                 </p>
-                 <div className="image-container-showcase">
-                   <img src={case1img} alt="case study" />
-                 </div>
-               </div>
-             </div>
-     
-             {/* Case Study 2 - Business Outcome */}
-             <div className="strength-right">
-               <div className="stats-card">
-                 <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
-                 <h4 className="text-black">Lorem, ipsum dolor.</h4>
-                 <p className="text-black">
-                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
-                 </p>
-                 <div className="image-container-showcase">
-                   <img src={case2img} alt="case study" />
-                 </div>
-               </div>
-             </div>
-           </section>
+
+      {/* Case Studies / Strength Showcase */}
+      <section className="strength-showcase" style={{ display: "none" }}>
+        <div className="strength-left">
+          <h2 className="big-heading-text-white">Case Studies</h2>
+          <p className="text-white">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus fugit magnam velit eum aliquam eos, cumque cum corrupti rem facilis soluta quae nisi, in atque repellat eius ipsa assumenda! Alias!
+          </p>
+        </div>
+
+        {/* Case Study 1 - Project Detail */}
+        <div className="strength-right">
+          <div className="stats-card">
+            <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+            <h4 className="text-black">Lorem, ipsum dolor.</h4>
+            <p className="text-black">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
+            </p>
+            <div className="image-container-showcase">
+              <img src={case1img} alt="case study" />
+            </div>
+          </div>
+        </div>
+
+        {/* Case Study 2 - Business Outcome */}
+        <div className="strength-right">
+          <div className="stats-card">
+            <h3 className="sub-heading-text-black">Lorem, ipsum dolor.</h3>
+            <h4 className="text-black">Lorem, ipsum dolor.</h4>
+            <p className="text-black">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque fugit quam quidem eius corporis consequatur distinctio
+            </p>
+            <div className="image-container-showcase">
+              <img src={case2img} alt="case study" />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="strength-bottom">
         <div className="stat-card">

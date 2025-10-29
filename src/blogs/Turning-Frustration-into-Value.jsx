@@ -8,7 +8,13 @@ import { Link } from "react-router-dom";
 export default function Blog3() {
   return (
     <>
+    <Helmet>
+                <title>Turning SAP Access Audit Frustration into Value | s4access</title>
+                <meta name="title" content="Turning SAP Access Audit Frustration into Value | s4access" />
+                <meta name="description" content="Transform SAP access audit challenges into actionable insights: streamline
+processes, enhance compliance, and drive value with s4access’s expert strategies." />
 
+            </Helmet>
       <div className="breach-article-wrapper">
         {/* Hero Section */}
         {/* <div className="breach-hero-banner">

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
 import case2img from "../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg";
 import banner from "../assets/images/inner-services-images/SAP-Access-managment-review-banner.jpg";
+import { Helmet } from 'react-helmet-async';
 
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
@@ -69,6 +70,14 @@ export default function SAPAccessReview() {
 
   return (
     <>
+     <Helmet>
+
+        <title>SAP Access Management Review Specialists | s4access</title>
+        <meta name="title" content="SAP Access Management Review Specialists | s4access" />
+        <meta name="description" content=" Expert SAP Access Management Review to boost security, compliance &
+efficiency in S/4HANA. Get insights to optimize SoD, reduce risk & lower costs efficiently." />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">

@@ -4,10 +4,18 @@ import './Internal-Blog.css';
 import Blogs from '../components/Blog';
 import cta from './blogs-images/Group.png';
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
 
 export default function Blog4() {
   return (
     <>
+        <Helmet>
+                <title> SAP Access Management Best Practices & Pitfalls | s4access</title>
+                <meta name="title" content="SAP Access Management Best Practices & Pitfalls | s4access" />
+                <meta name="description" content="Learn SAP access management best practices and pitfalls: optimize role
+design, enforce SoD, enhance compliance, and secure your enterprise systems with s4access." />
+
+            </Helmet>
       <div className="breach-article-wrapper">
         {/* Hero Section */}
         {/* <div className="breach-hero-banner">

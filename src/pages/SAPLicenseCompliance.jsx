@@ -4,6 +4,7 @@ import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
+import { Helmet } from 'react-helmet-async';
 
 import image from "../assets/images/inner-services-images/sap-license-optimisation-banner.jpg";
 import case1img from "../assets/images/inner-services-images/SAP-Access-managment-review-case1.jpg";
@@ -41,6 +42,14 @@ export default function SAPLicenseCompliance() {
 
   return (
     <>
+     <Helmet>
+        <title>SAP License Optimization & Cost Reduction | s4accesss</title>
+        <meta name="title" content="SAP License Optimization & Cost Reduction | s4access" />
+        <meta name="description" content="Optimize SAP licensing with s4access: reduce costs, ensure compliance, and
+align licenses with actual usage through expert analysis and strategic planning.
+" />
+
+      </Helmet>
       <Header />
 
       <section className="service-container-1">
