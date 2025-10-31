@@ -7,11 +7,24 @@ import "../css/Careers.css";
 import CareersGallerySection from "../components/CareersGallerySection.jsx";
 import { FaUsers, FaTrophy, FaDove, FaHeartbeat } from 'react-icons/fa';
 // import Blogs from "../components/Blog.jsx";
+import { Helmet } from 'react-helmet-async';
 
 
 const Careers = () => {
   return (
     <>
+
+    <Helmet>
+        <title>SAP Access Management Careers | s4access
+        </title>
+        <meta name="title" content="SAP Access Management Careers | s4access" />
+        <meta name="description" content="s4access provides SAP access governance, automation, and risk reduction solutions to help organisations stay secure, compliant, and efficient across SAP systems." />
+
+      </Helmet>
+
+
+
+
       <Header />
 
       <section className="careers-hero-section">
