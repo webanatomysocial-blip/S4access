@@ -231,7 +231,9 @@
   gap: 40px;
 }
 
-
+.number-points{
+  list-style:decimal ;
+}
 
 @media only screen and (max-width: 800px) {
   .news-blogs-section-inner-blog-page {

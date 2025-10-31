@@ -6,6 +6,7 @@ import img24 from './blogs-images/3.jpg';
 import Blog5 from './blogs-images/Blog-5.jpg';
 import Blog6 from './blogs-images/Blog-6.jpg';
 import Blog7 from './blogs-images/Blog-7.jpg';
+import Blog8 from './blogs-images/Blog8.jpg';
 export const blogMetadata = [
   {
     id: "Is-SAP-Certification-Still-Valid-for-Your-Career-in-2025", // Matches file name without .jsx
@@ -17,9 +18,9 @@ export const blogMetadata = [
     date: "2025-08-26",
   },
   {
-    id: "Autumn-2025-Outlook", // Matches file name without .jsx
+    id: "Autumn-2025-Outlook", 
     title: "Autumn 2025 Outlook: Navigating SAP Security and Access Management in a New Market Reality – Is There a Way Forward ?",
-    slug: "Autumn-2025-Outlook", // URL-friendly slug
+    slug: "Autumn-2025-Outlook", 
     metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
     excerpt: "In Autumn 2025, economic pressures demand smarter SAP security and access management. Discover common pitfalls and a clear, actionable plan to strengthen your SAP systems while aligning with business needs in a transforming market.",
     image: img21,
@@ -69,6 +70,15 @@ export const blogMetadata = [
     excerpt: "When discussing SAP security, the focus often stays on roles, authorizations, and segregation of duties. However, an equally critical aspect tends to go unnoticed, RICEFW objects. In Part II of our blog series, we’ll dive deeper into other key RICEFW artifacts, namely Enhancements, Forms, and Workflows. ",
     image: Blog7,
     date: "2025-10-15",
+  },
+  {
+    id: "How-Firefighter-IDs-Help-You-Stay-Compliant",
+    title: "When Access Becomes a Risk: How Firefighter IDs Help You Stay Compliant",
+    slug: "When-Access-Becomes-a-Risk-How-Firefighter-IDs-Help-You-Stay-Compliant",
+    metaDescription: "How SAP Firefighter IDs provide controlled emergency access, prevent security risks, and keep systems audit-compliant with logging and timely review processes.",
+    excerpt: "In SAP, teams may sometimes need quick access to fix urgent issues. But giving high-level access without proper control can lead to serious compliance and security risks. Firefighter IDs help by allowing temporary access only when needed, with approvals, time limits, and detailed activity logs. This keeps emergency work fully monitored and controlled, ensuring security while the business continues without interruption",
+    image: Blog8,
+    date: "2025-10-31",
   },
 ];
 
