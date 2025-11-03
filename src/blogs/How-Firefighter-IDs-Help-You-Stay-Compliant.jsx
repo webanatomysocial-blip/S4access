@@ -18,7 +18,7 @@ export default function Blog5() {
                 <div className="breach-article-content">
                     <section>
                         <p>
-                            In the world of SAP security and compliance, emergency access is a necessary but sensitive topic. When critical issues arise - like system outages, failed batch jobs, or urgent configuration changes - users may need elevated access to resolve them quickly. This is where Firefighter IDs come into play
+                            In the world of SAP security and compliance, emergency access is a necessary but sensitive topic. When critical issues arise - like system outages, failed batch jobs, or urgent configuration changes - users may need elevated access to resolve them quickly. This is where Firefighter IDs come into play.
                         </p>
                     </section>
 

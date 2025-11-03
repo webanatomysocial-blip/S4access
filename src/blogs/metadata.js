@@ -76,7 +76,7 @@ export const blogMetadata = [
     title: "When Access Becomes a Risk: How Firefighter IDs Help You Stay Compliant",
     slug: "When-Access-Becomes-a-Risk-How-Firefighter-IDs-Help-You-Stay-Compliant",
     metaDescription: "How SAP Firefighter IDs provide controlled emergency access, prevent security risks, and keep systems audit-compliant with logging and timely review processes.",
-    excerpt: "In SAP, teams may sometimes need quick access to fix urgent issues. But giving high-level access without proper control can lead to serious compliance and security risks. Firefighter IDs help by allowing temporary access only when needed, with approvals, time limits, and detailed activity logs. This keeps emergency work fully monitored and controlled, ensuring security while the business continues without interruption",
+    excerpt: "In the world of SAP security and compliance, emergency access is a necessary but sensitive topic. When critical issues arise - like system outages, failed batch jobs, or urgent configuration changes users may need elevated access to resolve them quickly. This is where Firefighter IDs come into play.",
     image: Blog8,
     date: "2025-10-31",
   },
