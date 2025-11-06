@@ -32,10 +32,6 @@ export default function Blog5() {
                     <section>
                         <h2>Why Use Firefighter IDs? </h2>
                         <p>Here are a few scenarios where Firefighter IDs are essential:
-
-
-                            A user needs to bypass standard segregation of duties (SoD) controls temporarily to resolve an issue.
-
                         </p>
                         <ul>
                             <li>The production system is down and requires immediate troubleshooting.</li>
@@ -49,12 +45,6 @@ export default function Blog5() {
                     </section>
                     <section>
                         <h2>Key Components of Firefighter Access</h2>
-                        <p>Here are a few scenarios where Firefighter IDs are essential:
-
-
-                            A user needs to bypass standard segregation of duties (SoD) controls temporarily to resolve an issue.
-
-                        </p>
                         <ul>
 
                             <li><strong>Firefighter ID:</strong> The actual emergency user account with elevated privileges.</li>
@@ -73,7 +63,7 @@ export default function Blog5() {
                                 Approval Process: The request is routed for approval based on predefined workflows.
                             </li>
                             <li className='number-points'>
-                                Access Granted: Once approved, the user is assigned the Firefighter ID for a limited time.
+                                Access Granted: Once approved, the user is assigned the Firefighter ID for a limited time
                             </li>
                             <li className='number-points'>
                                 Activity Logging: All actions performed using the Firefighter ID are logged in detail.
@@ -90,9 +80,6 @@ export default function Blog5() {
                             <li className='number-points'>Limit usage to truly emergency scenarios.</li>
                             <li className='number-points'>
                                 Pre-defined processes for request, approval and review
-                            </li>
-                            <li className='number-points'>
-                                Access Granted: Once approved, the user is assigned the Firefighter ID for a limited time.
                             </li>
                             <li className='number-points'>
                                 Enforce time-bound access with automatic revocation.
