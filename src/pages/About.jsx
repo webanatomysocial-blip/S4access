@@ -1,29 +1,31 @@
 import Header from '../components/Header.jsx';
-import React from 'react';
+import * as React from "react"
 import Footer from '../components/Footer.jsx';
 import '../css/About.css';
-import star from '../assets/images/home-img/star-black.png'
+import star from '../assets/images/home-img/star-black.png';
 import Topbanner from '../assets/images/About-img/Top-banner-img.jpg';
 import whoweare from '../assets/images/About-img/Who-We-Are.jpg';
 import TeamSection from '../components/TeamSection.jsx';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+// import { Link, useLocation } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
+// import { Helmet } from 'react-helmet-async';
+// import ShowRenderedHTML from '../../ShowRenderedHTML.jsx';
 
-function About() {
 
+ export default function About() {
+  // const location = useLocation();
+  // const [pageUrl, setPageUrl] = useState('');
 
-
+  // useEffect(() => {
+  //   setPageUrl(`${window.location.origin}${location.pathname}`);
+  // }, [location]);
 
   return (
     <div>
-      <Helmet>
+      
+       
 
-        <title> About Us SAP Access Management Experts | s4access</title>
-        <meta name="title" content=" About Us SAP Access Management Experts | s4access" />
-        <meta name="description" content=" s4access delivers expert SAP access management, governance &
-compliance solutions to mitigate risk, streamline processes and secure your enterprise systems." />
-
-      </Helmet>
+       
       <Header />
 
       {/* banner section start */}
@@ -274,7 +276,7 @@ compliance solutions to mitigate risk, streamline processes and secure your ente
                 Reach out to <strong>Tiina Hartikainen</strong>  at <br /><br />
 
                 {/* <a href="tel:+358405532204">+358 40 553 2204</a><br /> */}
-                <a href="mailto:tiina.hartikainen@4access.com">tiina (dot) hartikainen (at) 4access (dot) com</a>
+                <a href="mailto:tiina.hartikainen@4access.com">tiina (dot) hartikainen (at) s4access (dot) com</a>
               </p>
 
             </div>
@@ -441,4 +443,11 @@ compliance solutions to mitigate risk, streamline processes and secure your ente
   );
 }
 
-export default About;
+// export default About;
+
+
+export const Head = () => (
+  <>
+    <FeaturedImage customImage="https://s4access.com/images/blog1-face.png" />
+  </>
+)

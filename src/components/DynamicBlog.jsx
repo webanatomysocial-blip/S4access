@@ -1,22 +1,60 @@
-import React, { Suspense } from 'react';
+// src/components/DynamicBlog.jsx
+import React, { Suspense, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { blogMetadata } from '../blogs/metadata.js';
-import Blogs from './Blog'; // Adjust path to match src/components/Blog.jsx
+import Blogs from './Blog';
 import '../blogs/Internal-Blog.css';
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import { Helmet } from 'react-helmet-async';
 
-const DynamicBlog = () => {
+// import all blog modules (lazy)
+const blogModules = import.meta.glob('../blogs/*.jsx', { eager: false });
+
+const SITE_ORIGIN = 'https://s4access.com';
+
+export default function DynamicBlog() {
   const { blogName } = useParams();
-  console.log('URL blogName:', blogName); // Debug: Check URL parameter
+  console.log('DynamicBlog param blogName:', blogName);
 
-  // Find metadata for the blog
-  const metadata = blogMetadata.find(blog => blog.id === blogName);
-  console.log('Found metadata:', metadata); // Debug: Check metadata
+  // find metadata case-insensitively
+  const metadata = useMemo(() => {
+    if (!blogName) return null;
+    const key = String(blogName).toLowerCase();
+    return blogMetadata.find(b => {
+      const id = String(b.id ?? b.slug ?? '').toLowerCase();
+      return id === key;
+    }) ?? null;
+  }, [blogName]);
 
-  if (!metadata) {
-    console.warn(`No metadata found for blog: ${blogName}`);
+  // If metadata not found, attempt to match by filename (best-effort)
+  const matchedBlogFile = useMemo(() => {
+    if (!blogName) return null;
+    const wanted = String(blogName).toLowerCase();
+    // find a glob key whose filename matches wanted (case-insensitive)
+    const found = Object.keys(blogModules).find(k => {
+      const fname = k.split('/').pop().replace(/\.(jsx|js|tsx?)$/, '');
+      return fname.toLowerCase() === wanted;
+    });
+    return found || null;
+  }, [blogName]);
+
+  // if we found metadata use its id for the module lookup, otherwise use matchedBlogFile
+  const blogImportKey = useMemo(() => {
+    if (metadata) {
+      // find the glob key for metadata.id (case-insensitive)
+      const target = (metadata.id ?? metadata.slug ?? '').toString().toLowerCase();
+      return Object.keys(blogModules).find(k => {
+        const fname = k.split('/').pop().replace(/\.(jsx|js|tsx?)$/, '');
+        return fname.toLowerCase() === target;
+      }) || matchedBlogFile;
+    }
+    return matchedBlogFile;
+  }, [metadata, matchedBlogFile]);
+
+  // If still not found, render not-found
+  if (!metadata && !blogImportKey) {
+    console.warn('Blog metadata AND file not found for', blogName);
     return (
       <div className="breach-article-wrapper">
         <h1>Blog Not Found</h1>
@@ -26,94 +64,80 @@ const DynamicBlog = () => {
     );
   }
 
-  // Dynamically import the blog component
-  const BlogComponent = React.lazy(() =>
-    import(`../blogs/${blogName}.jsx`).catch(error => {
-      console.error(`Failed to load blog component for ${blogName}:`, error);
+  // Build absolute image URL (ensure full URL)
+  const imageUrl = (metadata?.image && (metadata.image.startsWith('http://') || metadata.image.startsWith('https://')))
+    ? metadata.image
+    : (metadata?.image ? `${SITE_ORIGIN}${metadata.image.startsWith('/') ? '' : '/'}${metadata.image}` : `${SITE_ORIGIN}/images/black-logo-400.png`);
+
+  const pageUrl = `${SITE_ORIGIN}/blogs/${(metadata?.id ?? blogName)}`;
+
+  // Lazy load the blog component using the exact glob key
+  const BlogComponent = React.lazy(async () => {
+    const key = blogImportKey;
+    if (!key) {
       return {
-        default: () => (
-          <div>
-            <p>Error loading blog content. Please try again later.</p>
-            <Link to="/insights">Back to Blogs</Link>
-          </div>
-        ),
+        default: () => <div><p>Blog content unavailable.</p><Link to="/insights">Back to Blogs</Link></div>
       };
-    })
-  );
+    }
+    try {
+      const mod = await blogModules[key]();
+      return mod;
+    } catch (err) {
+      console.error('Error loading blog module for', key, err);
+      return {
+        default: () => <div><p>Error loading blog content. Please try again later.</p><Link to="/insights">Back to Blogs</Link></div>
+      };
+    }
+  });
+
+  const description = metadata?.metaDescription ?? metadata?.excerpt ?? 'Read this article on s4access.';
 
   return (
     <>
-
-
       <Helmet>
-        <title>RICEFWS Security Guidelines - Part 2 | s4access</title>
-        <meta name="description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." />
+        <title>{(metadata?.title ?? 'Blog') + ' | s4access'}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={pageUrl} />
 
-        {/* ✅ OG TAGS FOR ALL PLATFORMS */}
-        <meta property="og:title" content="RICEFWS Security Guidelines - Part 2 | s4access" />
-        <meta property="og:description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." />
-        <meta property="og:image" content="https://s4access.com/images/black-logo-400.png" /> {/* Reuse your logo or add post-specific image */}
-        <meta property="og:image:secure_url" content="https://s4access.com/images/black-logo-400.png" />
+        <meta property="og:title" content={`${metadata?.title ?? 'Blog'} | s4access`} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={imageUrl} />
+        <meta property="og:image:secure_url" content={imageUrl} />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="400" />
-        <meta property="og:image:height" content="400" />
-        <meta property="og:image:alt" content="s4access - RICEFWS Security Guidelines" />
-        <meta property="og:url" content="https://s4access.com/images/black-logo-400.png" /> {/* Use full URL */}
-        <meta property="og:type" content="article" /> {/* 'article' for blog posts */}
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="627" />
+        <meta property="og:image:alt" content={`${metadata?.title ?? 'Blog'} - s4access`} />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:type" content="article" />
         <meta property="og:site_name" content="s4access" />
-
-        {/* ✅ LINKEDIN-SPECIFIC */}
-        <meta name="linkedin:title" content="RICEFWS Security Guidelines - Part 2 | s4access" />
-        <meta name="linkedin:description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." />
-        <meta name="linkedin:image" content="https://s4access.com/images/black-logo-400.png" />
-
-        {/* ✅ TWITTER (WHATSAPP FALLBACK) */}
-        <meta name="twitter:card" content="summary_large_image" /> {/* Or 'summary' for square */}
-        <meta name="twitter:title" content="RICEFWS Security Guidelines - Part 2 | s4access" />
-        <meta name="twitter:description" content="Detailed guidelines for securing RICEFWS objects in SAP systems - Part 2." />
-        <meta name="twitter:image" content="https://s4access.com/images/black-logo-400.png" />
-        <meta name="twitter:image:alt" content="s4access - RICEFWS Security Guidelines" />
+        {metadata?.date && <meta property="article:published_time" content={metadata.date} />}
       </Helmet>
-
 
       <Header backgroundColor="black" />
       <div className="breach-article-wrapper">
-        {/* Hero Section */}
         <div className="breach-hero-banner">
-          <img src={metadata.image} alt={metadata.title} />
+          <img src={metadata?.image ?? '/images/black-logo-400.png'} alt={metadata?.title ?? 's4access blog'} />
           <div className="hero-overlay-section">
-            <h1>{metadata.title}</h1>
+            <h1>{metadata?.title ?? 's4access'}</h1>
           </div>
-
-
-
-
-
         </div>
-        {/* Blog Content */}
+
         <div className="breach-article-content">
           <Suspense fallback={<div>Loading blog content...</div>}>
             <BlogComponent />
           </Suspense>
         </div>
 
-        {/* Cta */}
-
-
-
-        {/* Recent Blogs Section */}
         <section className="news-blogs-section-inner-blog-page">
           <div className="heading-news-blog">
             <h1 className="big-heading-text-black">Recent Blogs</h1>
           </div>
           <div className="news-blogs-container">
-            <Blogs /> {/* Defaults to limit=3 */}
+            <Blogs />
           </div>
         </section>
       </div>
       <Footer />
     </>
   );
-};
-
-export default DynamicBlog;
+}

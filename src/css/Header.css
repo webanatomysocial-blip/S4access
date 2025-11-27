@@ -145,7 +145,7 @@ html {
 .small-text-white {
   color: rgb(255, 255, 255) !important;
   font-family: "barlow", monospace;
-  font-size: 15px !important;
+  font-size: 16px !important;
   font-weight: 300;
   margin-bottom: 0px !important;
 }
@@ -153,7 +153,7 @@ html {
 .small-text-white a {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -161,7 +161,7 @@ html {
 .small-text-white strong {
   color: rgb(255, 255, 255);
   font-family: "barlow", monospace;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -674,7 +674,7 @@ nav.scrolled {
   .small-text-white {
     color: rgb(255, 255, 255)  !important;
     font-family: "barlow", monospace;
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: 300;
     margin-bottom: 0px !important;
   }
@@ -682,7 +682,7 @@ nav.scrolled {
   .small-text-black {
     color: rgb(0, 0, 0);
     font-family: "barlow", monospace;
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: 300;
   }
 

@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postbuild": "node compress.js && node generate-sitemap.js",
-    "build-sitemap": "node generate-sitemap.js"
+   "postbuild": "node compress.mjs && node generate-sitemap.mjs",
+    "build-sitemap": "node generate-sitemap.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

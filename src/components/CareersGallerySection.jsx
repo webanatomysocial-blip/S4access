@@ -9,6 +9,7 @@ import random8 from '../assets/images/Careeres-img/random-imgs/random-8.jpg';
 import random9 from '../assets/images/Careeres-img/random-imgs/random-9.jpg';
 import random10 from '../assets/images/Careeres-img/random-imgs/random-10.jpg';
 
+
 const CareersGallerySection = () => {
   const [shuffledImages, setShuffledImages] = useState([]);
 

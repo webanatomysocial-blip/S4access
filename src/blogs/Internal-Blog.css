@@ -4,6 +4,11 @@
   padding: 100px 50px 0px 50px;
   ;
 }
+.breach-article-wrapper a{
+  color: #003377;
+  text-decoration: none;
+  font-weight: 600;
+}
 
 .blog-container {
   padding: 25px 25px 0px 25px;

@@ -61,7 +61,7 @@ const TeamSection = () => {
     {
       name: 'Tiina Hartikainen',
       title: 'Director, People and Development',
-      email: 'tiina.hartikainen@4access.com',
+      email: 'tiina.hartikainen@s4access.com',
       phone: '',
       image: team5,
       color: color5,

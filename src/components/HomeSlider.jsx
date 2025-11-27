@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import '../css/HomeSlider.css';
-import banner1 from '../assets/images/home-img/home-bgimg.jpg';
+// import banner1 from '../assets/images/home-img/home-bgimg.jpg';
 import banner2 from '../assets/images/home-img/banner-home/1.jpg';
 import banner3 from '../assets/images/home-img/banner-home/2.jpg';
 import banner4 from '../assets/images/home-img/banner-home/3.jpg';
+import banner5 from '../assets/images/home-img/banner-home/4.png'
 import mainlogo from "../assets/images/Mainlogo.png";
 
 import { Link } from 'react-router-dom';
@@ -31,7 +32,7 @@ const HomeSlider = () => {
   const slides = [
     {
       textImg: mainlogo,
-      image: banner1,
+      image: banner5,
       text: 'Leading SAP Access Management Specialist',
       link: null,
     },
@@ -52,6 +53,7 @@ const HomeSlider = () => {
       image: banner4,
       text: 'We are not just hiring. We are building a team - join the journey.',
       link: '/careers',
+      
     },
   ];
 
@@ -75,7 +77,7 @@ const HomeSlider = () => {
         >
           {slides.map((slide, index) => (
             <div key={index} className="carousel-slide">
-              <img src={slide.image} alt={`Slide ${index + 1}`} />
+              <img src={slide.image} alt={`Slide ${index + 1}`} style={slides.objectPosition} />
               <div className="slide-content">
                 {slide.textImg && <img src={slide.textImg} alt="Slide logo" />}
                 <p>{slide.text}</p>
