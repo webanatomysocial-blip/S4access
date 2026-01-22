@@ -1,0 +1,152 @@
+import React from 'react';
+import './Internal-Blog.css';
+import cta from '../blogs/blogs-images/Group.png';
+import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
+
+export default function Blog11() {
+  return (
+    <>
+      <Helmet>
+        <title>Native HANA Database Authorizations – Best Practices | s4access</title>
+        <meta
+          name="title"
+          content="Native HANA Database Authorizations – Best Practices | s4access"
+        />
+        <meta
+          name="description"
+          content="Learn how to design secure and maintainable native SAP HANA database authorizations. Avoid ad-hoc privilege chaos and implement a robust role-based access concept."
+        />
+      </Helmet>
+
+      <div className="breach-article-wrapper">
+        {/* Blog Content */}
+        <div className="breach-article-content">
+          <section>
+            <h2>Native HANA Database Authorizations</h2>
+            <p>
+              When creating HANA database users and authorizations for custom-made
+              schema structures, it is a very smart move to think ahead about how
+              the assignments will be structured and managed.
+            </p>
+            <p>
+              The quick and obvious approach—simply creating users, assigning
+              privileges, and moving on—will cause confusion, frustration, and
+              even despair over time. This article explains why this happens and
+              highlights a better way forward.
+            </p>
+          </section>
+
+          <section>
+            <h2>Challenges of Ad-Hoc Authorization Management</h2>
+            <p>So, what happens with the quick-and-dirty approach?</p>
+
+            <p>
+              Imagine a scenario where the main developer dives into the system,
+              creates schemas, and assigns access via privileges to other
+              developers. These developers then pass on the same access to
+              additional users. At first, everything works perfectly.
+            </p>
+
+            <p>
+              Trouble starts when one developer leaves and their user ID is
+              deleted. Suddenly, users begin reporting missing access. The main
+              developer has to jump in, identify who is affected, and manually
+              reassign privileges.
+            </p>
+
+            <p>
+              When another developer leaves, database objects start disappearing.
+              After resolving that issue, the main developer also exits—and the
+              entire system breaks down. A database restore becomes necessary,
+              and from that point forward, no one dares to touch user IDs anymore.
+              This leads to a slippery slope of poor user maintenance decisions.
+            </p>
+
+            <p>
+              In some cases, teams decide to rebuild database structures from
+              scratch, only to repeat the same problems because the underlying
+              authorization approach remains unchanged.
+            </p>
+
+            <p>
+              All of these issues stem from using native HANA authorization
+              mechanisms without a consistent and well-planned structure.
+            </p>
+          </section>
+
+          <section>
+            <h2>The Importance of a Well-Designed Role Concept</h2>
+            <p>
+              A well-designed HANA role concept provides the required structure
+              and enables authorization setups to be transported between systems
+              such as development, quality, and production.
+            </p>
+
+            <p>
+              Designing this role concept requires effort. In HANA, database
+              objects, access management, and user management are tightly
+              intertwined—unlike in S/4HANA, SAP ERP, or other ABAP-based systems.
+              As a result, role design must be part of the overall HANA database
+              architecture, including schemas, tables, and other objects.
+            </p>
+
+            <p>
+              During the build phase, object creation and ownership must be
+              carefully planned to avoid unwanted dependencies on individual
+              developer user IDs.
+            </p>
+          </section>
+
+          <section>
+            <h2>Transitioning to Role-Based Access</h2>
+            <p>
+              Even if a role concept was not implemented from the beginning and
+              the HANA system currently relies on randomly assigned privileges,
+              there is still a way out.
+            </p>
+
+            <p>
+              The existing authorization landscape can be analyzed, structured
+              roles can be developed, and these roles can be introduced
+              step-by-step. Once a stable solution is in place, ad-hoc privilege
+              assignments can be removed safely.
+            </p>
+
+            <p>
+              In conclusion, native HANA authorizations may seem complex and
+              intimidating—but with the right approach and mindset, they do not
+              need to be a headache.
+            </p>
+          </section>
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <section className="blog-container">
+        <div className="blog-contact-us-section">
+          <div className="blog-left-image only-windows">
+            <img src={cta} alt="CTA" />
+          </div>
+
+          <div className="blog-right-content">
+            <div className="blog-right-text">
+              <p className="text-white">
+                Build Secure and Sustainable SAP HANA Authorizations
+              </p>
+            </div>
+
+            <div className="blog-right-button">
+              <Link to="/Contact" className="button-green">
+                <span>Get Started</span>
+                <span>
+                  <i className="bi bi-arrow-up"></i>
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

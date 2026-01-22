@@ -98,7 +98,7 @@ html {
   font-size: 30px;
   font-weight: 600;
   line-height: 1.3em;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .sub-big-heading-text-black-lite {

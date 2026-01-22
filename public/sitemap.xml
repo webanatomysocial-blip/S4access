@@ -125,4 +125,67 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://s4access.com/blogs/Autumn-2025-Outlook</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://s4access.com/blogs/Turning-Frustration-into-Value</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://s4access.com/blogs/Best-Practices-and-Pitfalls</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://s4access.com/blogs/Typical-Challenges-in-Approving-SAP-Access-Requests</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://s4access.com/blogs/RICEFW-Security-Guidelines</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://s4access.com/blogs/RICEFW-Security-Guidelines-Part-2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://s4access.com/blogs/How-Firefighter-IDs-Help-You-Stay-Compliant</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://s4access.com/blogs/why-feedback-from-it-auditors-matters</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://s4access.com/blogs/Native-HANA-database-authorizations</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

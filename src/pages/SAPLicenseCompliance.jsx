@@ -13,42 +13,107 @@ import case2img from "../assets/images/inner-services-images/SAP-Access-managmen
 
 export default function SAPLicenseCompliance() {
 
- const faqs = [
-  {
-    question: 'How does the service help optimize SAP license usage?',
-    answer: 'We combine technical data from your SAP system with predefined license rules and compare the results against your actual SAP contract. This allows us to identify mismatches, over-licensing, and hidden usage—giving you a clear path to optimize costs and stay compliant.'
-  },
-  {
-    question: 'Do we need separate software for this service?',
-    answer: 'No. The service runs on our platform and uses your SAP data—no additional software installations are required.'
-  },
-  {
-    question: 'Do you know all the details of SAP licensing agreements?',
-    answer: 'Honestly? We think nobody does—they\'re complex, ever-evolving, and full of nuances. But we’re deeply familiar with many licensing models and scenarios, and we can help you interpret your specific situation to make informed decisions and avoid surprises.'
-  },
-  {
-    question: 'Will you support us in reporting the license status to SAP?',
-    answer: 'Yes. We’ll assist you throughout the reporting process, ensuring that the license data is accurate, aligned with your contract, and ready for submission to SAP.'
-  },
-  {
-    question: 'Is the service compatible with both ECC and S/4HANA environments?',
-    answer: 'Yes. The service works seamlessly with both SAP ECC and SAP S/4HANA, ensuring consistent license optimization across your SAP landscape.'
-  },
-  {
-    question: 'Can you support us in making the needed changes after the analysis?',
-    answer: 'Yes. We’ll help you implement the necessary adjustments based on the analysis—whether it’s reassigning licenses, updating user classifications, or aligning your setup with SAP’s licensing model.'
-  }
-];
+  const faqs = [
+    {
+      question: 'How does the service help optimize SAP license usage?',
+      answer: 'We combine technical data from your SAP system with predefined license rules and compare the results against your actual SAP contract. This allows us to identify mismatches, over-licensing, and hidden usage—giving you a clear path to optimize costs and stay compliant.'
+    },
+    {
+      question: 'Do we need separate software for this service?',
+      answer: 'No. The service runs on our platform and uses your SAP data—no additional software installations are required.'
+    },
+    {
+      question: 'Do you know all the details of SAP licensing agreements?',
+      answer: 'Honestly? We think nobody does—they\'re complex, ever-evolving, and full of nuances. But we’re deeply familiar with many licensing models and scenarios, and we can help you interpret your specific situation to make informed decisions and avoid surprises.'
+    },
+    {
+      question: 'Will you support us in reporting the license status to SAP?',
+      answer: 'Yes. We’ll assist you throughout the reporting process, ensuring that the license data is accurate, aligned with your contract, and ready for submission to SAP.'
+    },
+    {
+      question: 'Is the service compatible with both ECC and S/4HANA environments?',
+      answer: 'Yes. The service works seamlessly with both SAP ECC and SAP S/4HANA, ensuring consistent license optimization across your SAP landscape.'
+    },
+    {
+      question: 'Can you support us in making the needed changes after the analysis?',
+      answer: 'Yes. We’ll help you implement the necessary adjustments based on the analysis—whether it’s reassigning licenses, updating user classifications, or aligning your setup with SAP’s licensing model.'
+    }
+  ];
+
+
+
+
 
   return (
     <>
-     <Helmet>
-        <title>SAP License Optimization & Cost Reduction | s4accesss</title>
+      <Helmet>
+        <title>SAP License Optimization & Cost Reduction | s4access</title>
         <meta name="title" content="SAP License Optimization & Cost Reduction | s4access" />
         <meta name="description" content="Optimize SAP licensing with s4access: reduce costs, ensure compliance, and
 align licenses with actual usage through expert analysis and strategic planning.
 " />
-
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "How does the service help optimize SAP license usage?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "We combine technical data from your SAP system with predefined license rules and compare the results against your actual SAP contract. This allows us to identify mismatches, over-licensing, and hidden usage—giving you a clear path to optimize costs and stay compliant.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do we need separate software for this service?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "No. The service runs on our platform and uses your SAP data—no additional software installations are required.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Do you know all the details of SAP licensing agreements?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Honestly? We think nobody does—they're complex, ever-evolving, and full of nuances. But we’re deeply familiar with many licensing models and scenarios, and we can help you interpret your specific situation to make informed decisions and avoid surprises.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Will you support us in reporting the license status to SAP?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Yes. We’ll assist you throughout the reporting process, ensuring that the license data is accurate, aligned with your contract, and ready for submission to SAP.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Is the service compatible with both ECC and S/4HANA environments?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Yes. The service works seamlessly with both SAP ECC and SAP S/4HANA, ensuring consistent license optimization across your SAP landscape.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can you support us in making the needed changes after the analysis?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Yes. We’ll help you implement the necessary adjustments based on the analysis—whether it’s reassigning licenses, updating user classifications, or aligning your setup with SAP’s licensing model.",
+                },
+              },
+            ],
+          })}
+        </script>
       </Helmet>
       <Header />
 
@@ -131,7 +196,7 @@ align licenses with actual usage through expert analysis and strategic planning.
         </div>
       </section>
 
-      <section className="strength-showcase" style={{display:'none'}}>
+      <section className="strength-showcase" style={{ display: 'none' }}>
         <div className="strength-left">
           <h2 className="big-heading-text-white">Case Studies</h2>
           <p className="text-white">

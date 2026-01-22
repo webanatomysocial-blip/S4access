@@ -75,7 +75,31 @@ $blogMetadata = [
         "metaDescription" => "How to build display roles in SAP S/4HANA correctly to avoid common pitfalls and ensure compliance.",
         "image" => "/blogs-images/Blog10.jpg",
         "url" => "https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA"
-    ]
+    ],
+    [
+        "id" => "why-feedback-from-it-auditors-matters",
+        "title" => "Feedback Is a Gift – Even When It Comes from an External IT Auditor",
+        "slug" => "why-feedback-from-it-auditors-matters",
+        "metaDescription" => "Engaging external auditors is a strategic decision. Learn how to use auditor feedback to improve security and operations.",
+        "image" => "/blogs-images/Blog-img011.jpg",
+        "url" => "https://s4access.com/blogs/why-feedback-from-it-auditors-matters"
+    ],
+    [
+        "id" => "A-Year-of-Strong-Growth-s4access-and-Its-Customers-Moving-Forward-Together",
+        "title" => "A Year of Strong Growth: s4access and Its Customers Moving Forward Together",
+        "slug" => "A-Year-of-Strong-Growth-s4access-and-Its-Customers-Moving-Forward-Together",
+        "metaDescription" => "Explore how s4access and its customers achieved growth in 2025 through SAP Access Management, compliance, and innovation—while looking ahead to 2026.",
+        "image" => "/blogs-images/9298.jpg",
+        "url" => "https://s4access.com/blogs/A-Year-of-Strong-Growth-s4access-and-Its-Customers-Moving-Forward-Together"
+    ],
+    [
+        "id" => "Your-Partner-for-Efficient-SAP-Access",
+        "title" => "Your Partner for Efficient SAP Access",
+        "slug" => "Your-Partner-for-Efficient-SAP-Access",
+        "metaDescription" => "Learn how clear SAP access tickets improve service levels, reduce delays, and help support teams resolve issues faster.",
+        "image" => "/blogs-images/1165.webp",
+        "url" => "https://s4access.com/blogs/Your-Partner-for-Efficient-SAP-Access"
+    ],
 ];
 
 // Determine protocol and host dynamically
@@ -98,11 +122,11 @@ $url = $defaultUrl;
 if (strpos($path, '/blogs/') !== false) {
     $blogId = basename($path);
     foreach ($blogMetadata as $blog) {
-        if ($blog['id'] === $blogId) {
+        if ($blog['slug'] === $blogId) {
             $title = $blog['title'];
             $description = $blog['metaDescription'];
             $image = "https://s4access.com" . $blog['image'];
-            $url = $baseUrl . "/blogs/" . $blog['id'];
+            $url = $baseUrl . "/blogs/" . $blog['slug'];
             break;
         }
     }

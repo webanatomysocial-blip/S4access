@@ -43,7 +43,7 @@ security, compliance, and efficiency to mitigate risks and ensure effective gove
               should be easy to identify whether he needs a local, regional, or
               global accountant role. But when job roles are vague or system
               roles poorly named, approvers struggle to make informed decisions
-              on who should get which system access.{" "}
+              on who should get which <a href="https://s4access.com/sap-access-management-automation">system access.</a>{" "}
             </p>
           </section>
 
@@ -62,7 +62,7 @@ security, compliance, and efficiency to mitigate risks and ensure effective gove
             <p>
               When users accumulate multiple roles, they may unintentionally
               gain excessive access. This “accidental” access expansion poses
-              compliance risks and makes it harder to track what permissions are
+              <a href="https://s4access.com/sod-role-redesign">compliance risks</a> and makes it harder to track what permissions are
               truly needed. Removing access that is not needed anymore is just
               as important as adding access.{" "}
             </p>
@@ -99,7 +99,7 @@ security, compliance, and efficiency to mitigate risks and ensure effective gove
                 Start with narrow system access and expand only with valid
                 business justification.
               </li>
-              <li>Monitor access risks periodically.</li>
+              <li>Monitor <a href="https://s4access.com/access-risk-sod-management">access risks periodically.</a></li>
             </ul>
 
             <p>

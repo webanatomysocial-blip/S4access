@@ -41,13 +41,13 @@ developments, enforce SoD, and ensure compliance across your SAP landscape with 
                             business-ready, but they also introduce security risks if not designed and governed properly. We
                             will look at initial three objects – Reports, Interfaces and Conversions in this part.
                         </p>
-                        <p> Too often, RICEFW objects are developed quickly to meet business needs, only for security gaps
+                        <p> Too often, <a href="https://s4access.com/blogs/RICEFW-Security-Guidelines-Part-2">RICEFW</a> objects are developed quickly to meet business needs, only for security gaps
                             to surface later during audits or, worse, in production incidents. These gaps stem from:
                         </p>
                         <ul>
 
                             <li>Inconsistent development standards</li>
-                            <li>Lack of authorization checks in custom code</li>
+                            <li>Lack of <a href="https://s4access.com/blogs/How-Firefighter-IDs-Help-You-Stay-Compliant">authorization checks</a> in custom code</li>
                             <li>Overly broad access for developers and end users</li>
                             <li>Minimal monitoring or logging once objects go live</li>
                         </ul>
@@ -86,7 +86,7 @@ developments, enforce SoD, and ensure compliance across your SAP landscape with 
                             <li>Use secure channels: HTTPS, SFTP, TLS-encrypted RFCs.</li>
                             <li>Eliminate plain-text credentials; prefer certificates, tokens, or SSO.</li>
                             <li>Apply least privilege for interface users and review them regularly.</li>
-                            <li>Enable end-to-end logging to trace data movement.</li>
+                            <li><a href="https://s4access.com/ff-log-review-automation">Enable end-to-end logging to trace data movement.</a></li>
                             <li>Test interfaces for resilience against malicious payloads and injection attempts.</li>
                         </ul>
                         <p>

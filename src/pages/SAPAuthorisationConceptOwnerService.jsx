@@ -24,32 +24,32 @@ export default function SAPAuthorisationConceptOwnerService() {
 
 
 
-const faqs = [
-  {
-    question: 'Why should a company consider outsourcing the SAP Authorisation Concept Owner role?',
-    answer: 'Recruiting and retaining skilled SAP Authorisation experts is increasingly difficult, especially in modern environments where expertise is needed across multiple areas. Most organizations can\'t justify hiring several high-level specialists for a single role. As the ACO role has become critical, outsourcing offers a scalable expert service that often delivers better results than relying solely on internal staff.'
-  },
-  {
-    question: 'Is outsourcing the SAP Authorisation Concept Owner more expensive than hiring internal personnel?',
-    answer: 'Surprisingly, no. Many organizations discover—especially when moving to S/4HANA or improving their SAP Access Management—that the full cost of maintaining an internal team with the required expertise is significantly higher. Outsourcing provides access to a broader skill set without the overhead of recruiting, training, and retaining multiple high-level specialists.'
-  },
-  {
-    question: 'What if we don’t need a full-time Authorisation Concept Owner—can the service be scaled to our needs?',
-    answer: 'Yes, the SAP ACO service is fully scalable. It can be adjusted based on your organization’s size and activity level—scaled up for larger environments or busy periods like audits and projects, and scaled down for smaller organizations or calmer phases. This flexibility ensures you get expert support when needed, without the cost of a permanent full-time resource.'
-  },
-  {
-    question: 'How will the SAP ACO service learn and understand our organization’s structure, processes, and SAP environment?',
-    answer: 'Our SAP ACO service is delivered by experienced named experts who stay with your account long-term. We work as an integrated part of your organization, taking time to understand your structure, business processes, and SAP landscape. This close collaboration ensures continuity, deep knowledge, and tailored support that evolves with your needs.'
-  },
-  {
-    question: 'Is it difficult to get started with the outsourced SAP ACO service?',
-    answer: 'Not at all. We can start quickly and begin delivering value from day one. Our onboarding process is streamlined, and our experienced experts know how to integrate smoothly into your organization, making the transition easy and effective.'
-  },
-  {
-    question: 'Are your customers satisfied with the outsourced SAP ACO service?',
-    answer: 'We’re happy to connect you directly with our customers for an unbiased view—one strong indication of satisfaction is that no organization has ever switched away from s4access.'
-  }
-];
+  const faqs = [
+    {
+      question: 'Why should a company consider outsourcing the SAP Authorisation Concept Owner role?',
+      answer: 'Recruiting and retaining skilled SAP Authorisation experts is increasingly difficult, especially in modern environments where expertise is needed across multiple areas. Most organizations can\'t justify hiring several high-level specialists for a single role. As the ACO role has become critical, outsourcing offers a scalable expert service that often delivers better results than relying solely on internal staff.'
+    },
+    {
+      question: 'Is outsourcing the SAP Authorisation Concept Owner more expensive than hiring internal personnel?',
+      answer: 'Surprisingly, no. Many organizations discover—especially when moving to S/4HANA or improving their SAP Access Management—that the full cost of maintaining an internal team with the required expertise is significantly higher. Outsourcing provides access to a broader skill set without the overhead of recruiting, training, and retaining multiple high-level specialists.'
+    },
+    {
+      question: 'What if we don’t need a full-time Authorisation Concept Owner—can the service be scaled to our needs?',
+      answer: 'Yes, the SAP ACO service is fully scalable. It can be adjusted based on your organization’s size and activity level—scaled up for larger environments or busy periods like audits and projects, and scaled down for smaller organizations or calmer phases. This flexibility ensures you get expert support when needed, without the cost of a permanent full-time resource.'
+    },
+    {
+      question: 'How will the SAP ACO service learn and understand our organization’s structure, processes, and SAP environment?',
+      answer: 'Our SAP ACO service is delivered by experienced named experts who stay with your account long-term. We work as an integrated part of your organization, taking time to understand your structure, business processes, and SAP landscape. This close collaboration ensures continuity, deep knowledge, and tailored support that evolves with your needs.'
+    },
+    {
+      question: 'Is it difficult to get started with the outsourced SAP ACO service?',
+      answer: 'Not at all. We can start quickly and begin delivering value from day one. Our onboarding process is streamlined, and our experienced experts know how to integrate smoothly into your organization, making the transition easy and effective.'
+    },
+    {
+      question: 'Are your customers satisfied with the outsourced SAP ACO service?',
+      answer: 'We’re happy to connect you directly with our customers for an unbiased view—one strong indication of satisfaction is that no organization has ever switched away from s4access.'
+    }
+  ];
 
 
 
@@ -57,12 +57,68 @@ const faqs = [
 
   return (
     <>
-     <Helmet>
+      <Helmet>
 
         <title>SAP Authorization Concept Owner & Roles | s4accesss</title>
         <meta name="title" content="SAP Authorization Concept Owner & Roles | s4accesss" />
         <meta name="description" content="Understand the role of SAP Authorization Concept Owner: define, implement,
 and maintain authorization concepts to ensure compliance and secure access management." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Why should a company consider outsourcing the SAP Authorisation Concept Owner role?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Recruiting and retaining skilled SAP Authorisation experts is increasingly difficult, especially in modern environments where expertise is needed across multiple areas. Most organizations can’t justify hiring several high-level specialists for a single role. As the ACO role has become critical, outsourcing offers a scalable expert service that often delivers better results than relying solely on internal staff."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Is outsourcing the SAP Authorisation Concept Owner more expensive than hiring internal personnel?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Surprisingly, no. Many organizations discover—especially when moving to S/4HANA or improving their SAP Access Management—that the full cost of maintaining an internal team with the required expertise is significantly higher. Outsourcing provides access to a broader skill set without the overhead of recruiting, training, and retaining multiple high-level specialists."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "What if we don’t need a full-time Authorisation Concept Owner—can the service be scaled to our needs?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, the SAP ACO service is fully scalable. It can be adjusted based on your organization’s size and activity level—scaled up for larger environments or busy periods like audits and projects, and scaled down for smaller organizations or calmer phases. This flexibility ensures you get expert support when needed, without the cost of a permanent full-time resource."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "How will the SAP ACO service learn and understand our organization’s structure, processes, and SAP environment?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Our SAP ACO service is delivered by experienced named experts who stay with your account long-term. We work as an integrated part of your organization, taking time to understand your structure, business processes, and SAP landscape. This close collaboration ensures continuity, deep knowledge, and tailored support that evolves with your needs."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Is it difficult to get started with the outsourced SAP ACO service?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Not at all. We can start quickly and begin delivering value from day one. Our onboarding process is streamlined, and our experienced experts know how to integrate smoothly into your organization, making the transition easy and effective."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "Are your customers satisfied with the outsourced SAP ACO service?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "We’re happy to connect you directly with our customers for an unbiased view—one strong indication of satisfaction is that no organization has ever switched away from s4access."
+                }
+              }
+            ]
+          })}
+        </script>
 
       </Helmet>
       <Header />
@@ -140,7 +196,7 @@ and maintain authorization concepts to ensure compliance and secure access manag
           <p className="text-white">
             Discover how our SAP Authorization Concept Owner Service transformed user management for a steel manufacturer, enhancing security, compliance, and efficiency.
           </p>
-                    <Link to="/sap-authorisation-concept-owner" className="read-more-btn ">
+          <Link to="/sap-authorisation-concept-owner" className="read-more-btn ">
             Read More  <i className="bi bi-arrow-right arrow-icon"></i>
           </Link>
         </div>

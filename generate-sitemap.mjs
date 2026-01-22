@@ -1,6 +1,7 @@
-import { Sitemap } from 'sitemap';
-import { writeFileSync } from 'fs';
+import { SitemapStream, streamToPromise } from 'sitemap';
+import { createWriteStream } from 'fs';
 import { blogMetadata } from './src/blogs/metadata.js';
+import { Readable } from 'stream';
 
 // Static routes from main.jsx
 const staticRoutes = [
@@ -26,38 +27,33 @@ const staticRoutes = [
   { url: '/sap-license-optimisation', changefreq: 'monthly', priority: 0.7 },
   { url: '/s4accessprojects', changefreq: 'monthly', priority: 0.7 },
   { url: '/sap-authorisation-concept-owner', changefreq: 'monthly', priority: 0.7 },
-  { url: '/s4-access-management-review', changefreq: 'monthly', priority: 0.7 },
   { url: '/s4-transition-analysis', changefreq: 'monthly', priority: 0.7 },
   { url: '/s4-hana-fiori-transformation', changefreq: 'monthly', priority: 0.7 },
 ];
 
 // Generate sitemap
 (async () => {
-  // Get dynamic blog routes from blogMetadata
-  const dynamicBlogRoutes = blogMetadata.map(blog => ({
-    url: `/blogs/${blog.id}`,
-    changefreq: 'weekly',
-    priority: 0.9,
-    lastmod: blog.date || new Date().toISOString(), // Use blog.date if available
-  }));
+  try {
+    // Get dynamic blog routes from blogMetadata
+    const dynamicBlogRoutes = blogMetadata.map(blog => ({
+      url: `/blogs/${blog.slug}`,
+      changefreq: 'weekly',
+      priority: 0.9,
+      lastmod: blog.date || new Date().toISOString(),
+    }));
 
-  const allRoutes = [...staticRoutes, ...dynamicBlogRoutes];
+    const allRoutes = [...staticRoutes, ...dynamicBlogRoutes];
 
-  const sitemapInstance = new Sitemap({
-    hostname: 'https://s4access.com',
-    cacheTime: 600000, // Cache for 10 minutes
-  });
+    const stream = new SitemapStream({ hostname: 'https://s4access.com' });
 
-  allRoutes.forEach(route => {
-    sitemapInstance.add({
-      url: route.url,
-      changefreq: route.changefreq,
-      priority: route.priority,
-      lastmod: route.lastmod || new Date().toISOString(),
-    });
-  });
-
-  writeFileSync('dist/sitemap.xml', sitemapInstance.toString());
-  console.log('Sitemap generated at dist/sitemap.xml');
+    // Return a promise that resolves when the stream is finished
+    const data = await streamToPromise(Readable.from(allRoutes).pipe(stream));
+    
+    // Write to file
+    createWriteStream('dist/sitemap.xml').write(data);
+    console.log('Sitemap generated at dist/sitemap.xml');
+  } catch (error) {
+    console.error('Error generating sitemap:', error);
+    process.exit(1);
+  }
 })();
-

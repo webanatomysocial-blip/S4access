@@ -2,7 +2,7 @@ import React from "react";
 import "./Internal-Blog.css";
 // import img22 from './blogs-images/2.jpg';
 import Blogs from "../components/Blog";
-import cta from "../blogs/blogs-images/Group.png";
+// import cta from "../blogs/blogs-images/Group.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
@@ -17,10 +17,52 @@ export default function Blog10() {
         />
         <meta
           name="description"
-          content=" Explore the Autumn 2025 outlook for SAP access management: economic
-pressures, emerging trends, and actionable strategies to strengthen security and compliance."
+          content="Explore the Autumn 2025 outlook for SAP access management: economic pressures, emerging trends, and actionable strategies to strengthen security and compliance."
         />
+
+        {/* ================= ARTICLE SCHEMA ================= */}
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Smart Guide to Building SAP S/4HANA Display Roles | s4access",
+      "description": "Discover how to build smart and secure SAP S/4HANA Display Roles to improve compliance, prevent unauthorized changes, and enhance overall system control.",
+      "author": {
+        "@type": "Organization",
+        "name": "s4access"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "s4access",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://s4access.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA"
+      },
+      "keywords": [
+        "SAP S/4HANA Display Roles",
+        "SAP Authorization Roles",
+        "SAP Fiori Security",
+        "SAP Role Design Best Practices",
+        "Display-Only Roles in SAP",
+        "SAP Authorization Logging",
+        "SAP PFCG Roles",
+        "SAP Security Compliance",
+        "SAP Role Management",
+        "S4HANA Security",
+        "SAP Display Role Setup",
+        "s4access"
+      ]
+    }
+    `}
+        </script>
       </Helmet>
+
       <div className="breach-article-wrapper">
         {/* Hero Section */}
         {/* <div className="breach-hero-banner">
@@ -42,7 +84,11 @@ pressures, emerging trends, and actionable strategies to strengthen security and
               authorization excess is key for audit and compliance purposes as
               well as for smooth operations. In this post I’ll walk through why
               display roles are important, what you should watch out for, how to
-              build them, and some real-life tips to avoid common pitfalls.
+              build them, and some real-life tips to avoid{" "}
+              <a href="https://s4access.com/blogs/Best-Practices-and-Pitfalls">
+                common pitfalls
+              </a>
+              .
             </p>
           </section>
           <section>
@@ -50,7 +96,10 @@ pressures, emerging trends, and actionable strategies to strengthen security and
             <p>
               The first step is to understand exactly what the user needs to see
               - which reports, apps, and organizational levels. Once that’s
-              clear, you can start designing the role. In an on-premise S/4HANA
+              clear, you can start designing the role. In an on-premise{" "}
+              <a href="https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA">
+                S/4HANA
+              </a>
               system, transaction PFCG allows you to copy a standard role,
               remove change activities (e.g., ACTVT 01/Create, 02/Change,
               06/Delete), and leave only 03 – Display. These are just examples,
@@ -106,8 +155,11 @@ pressures, emerging trends, and actionable strategies to strengthen security and
                 track changes.
               </li>
               <li>
-                SAP Authorization Logging - monitor any attempted changes to
-                ensure read-only roles are effective.
+                <a href="https://s4access.com/authorisation-concept-owner">
+                  SAP Authorization
+                </a>{" "}
+                Logging - monitor any attempted changes to ensure read-only
+                roles are effective.
               </li>
             </ul>
           </section>

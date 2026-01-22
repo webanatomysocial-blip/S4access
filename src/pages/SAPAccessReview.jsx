@@ -10,15 +10,15 @@ import { Helmet } from 'react-helmet-async';
 import "../css/InnerServices.css";
 import FAQTemplate from '../components/FAQTemplate.jsx';
 import {
-  FaUserPlus,
-  FaClock,
-  FaChartLine,
-  FaMoneyBillWave,
-  FaFileAlt,
-  FaUsers,
-  FaUserTie,
-  FaCogs,
-  FaShieldAlt,
+    FaUserPlus,
+    FaClock,
+    FaChartLine,
+    FaMoneyBillWave,
+    FaFileAlt,
+    FaUsers,
+    FaUserTie,
+    FaCogs,
+    FaShieldAlt,
 } from "react-icons/fa";
 
 
@@ -26,187 +26,266 @@ export default function SAPAccessReview() {
 
 
 
-  const faqs = [
-    {
-      question: 'What is the purpose of the SAP Access Management Review?',
-      answer: 'To assess the current situation and identify root causes. Based on this, we create a clear, actionable plan to move forward and improve your SAP Access Management.'
-    },
-    {
-      question: 'What kind of insights will we gain from the review?',
-      answer: 'The review will help you understand your current situation clearly—identifying not just the symptoms but the actual root causes of access-related challenges. This insight supports the development of permanent solutions that lead to improved SAP Access Management, with stronger security and compliance.'
-    },
-    {
-      question: 'How do you assess our current access management situation?',
-      answer: 'We review your governance, skills, resourcing, processes, and technical reality through interviews, system analysis, and documentation review.'
-    },
-    {
-      question: 'What makes your review different from a standard audit?',
-      answer: 'Unlike a traditional audit, we focus on root causes, practical improvements, and long-term sustainability—not just compliance checks.'
-    },
-    {
-      question: 'Will we receive a concrete action plan after the review?',
-      answer: 'Yes. You’ll receive a realistic, prioritized action plan tailored to your organization’s needs and goals.'
-    },
-    {
-      question: 'How long does the review process typically take?',
-      answer: 'Most reviews are completed within 1–2 calendar months, depending on the size and complexity of your SAP environment.'
-    },
-    {
-      question: 'Can the review be followed by support for implementation and ongoing improvements?',
-      answer: 'Absolutely. We offer full support from planning and implementation to continuous improvement and operations.'
-    },
-    {
-      question: 'How much involvement is required from our internal team during the review?',
-      answer: 'Minimal. We handle most of the work, but we’ll need input from key stakeholders to ensure accuracy and relevance.'
-    },
-    {
-      question: 'Is there an ideal time for the review?',
-      answer: 'The review provides valuable insights at any time. Whether you\'re preparing for changes, responding to issues, or simply aiming to improve, it helps uncover root causes and supports lasting improvements in SAP Access Management—making it a smart investment year-round.'
-    }
-  ];
+    const faqs = [
+        {
+            question: 'What is the purpose of the SAP Access Management Review?',
+            answer: 'To assess the current situation and identify root causes. Based on this, we create a clear, actionable plan to move forward and improve your SAP Access Management.'
+        },
+        {
+            question: 'What kind of insights will we gain from the review?',
+            answer: 'The review will help you understand your current situation clearly—identifying not just the symptoms but the actual root causes of access-related challenges. This insight supports the development of permanent solutions that lead to improved SAP Access Management, with stronger security and compliance.'
+        },
+        {
+            question: 'How do you assess our current access management situation?',
+            answer: 'We review your governance, skills, resourcing, processes, and technical reality through interviews, system analysis, and documentation review.'
+        },
+        {
+            question: 'What makes your review different from a standard audit?',
+            answer: 'Unlike a traditional audit, we focus on root causes, practical improvements, and long-term sustainability—not just compliance checks.'
+        },
+        {
+            question: 'Will we receive a concrete action plan after the review?',
+            answer: 'Yes. You’ll receive a realistic, prioritized action plan tailored to your organization’s needs and goals.'
+        },
+        {
+            question: 'How long does the review process typically take?',
+            answer: 'Most reviews are completed within 1–2 calendar months, depending on the size and complexity of your SAP environment.'
+        },
+        {
+            question: 'Can the review be followed by support for implementation and ongoing improvements?',
+            answer: 'Absolutely. We offer full support from planning and implementation to continuous improvement and operations.'
+        },
+        {
+            question: 'How much involvement is required from our internal team during the review?',
+            answer: 'Minimal. We handle most of the work, but we’ll need input from key stakeholders to ensure accuracy and relevance.'
+        },
+        {
+            question: 'Is there an ideal time for the review?',
+            answer: 'The review provides valuable insights at any time. Whether you\'re preparing for changes, responding to issues, or simply aiming to improve, it helps uncover root causes and supports lasting improvements in SAP Access Management—making it a smart investment year-round.'
+        }
+    ];
 
 
 
 
-  return (
-    <>
-     <Helmet>
+    return (
+        <>
+            <Helmet>
 
-        <title>SAP Access Management Review Specialists | s4access</title>
-        <meta name="title" content="SAP Access Management Review Specialists | s4access" />
-        <meta name="description" content=" Expert SAP Access Management Review to boost security, compliance &
+                <title>SAP Access Management Review Specialists | s4access</title>
+                <meta name="title" content="SAP Access Management Review Specialists | s4access" />
+                <meta name="description" content=" Expert SAP Access Management Review to boost security, compliance &
 efficiency in S/4HANA. Get insights to optimize SoD, reduce risk & lower costs efficiently." />
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "What is the purpose of the SAP Access Management Review?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "To assess the current situation and identify root causes. Based on this, we create a clear, actionable plan to move forward and improve your SAP Access Management."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What kind of insights will we gain from the review?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "The review will help you understand your current situation clearly—identifying not just the symptoms but the actual root causes of access-related challenges. This insight supports the development of permanent solutions that lead to improved SAP Access Management, with stronger security and compliance."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "How do you assess our current access management situation?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "We review your governance, skills, resourcing, processes, and technical reality through interviews, system analysis, and documentation review."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "What makes your review different from a standard audit?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Unlike a traditional audit, we focus on root causes, practical improvements, and long-term sustainability—not just compliance checks."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Will we receive a concrete action plan after the review?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes. You’ll receive a realistic, prioritized action plan tailored to your organization’s needs and goals."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "How long does the review process typically take?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Most reviews are completed within 1–2 calendar months, depending on the size and complexity of your SAP environment."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Can the review be followed by support for implementation and ongoing improvements?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Absolutely. We offer full support from planning and implementation to continuous improvement and operations."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "How much involvement is required from our internal team during the review?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Minimal. We handle most of the work, but we’ll need input from key stakeholders to ensure accuracy and relevance."
+                                }
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "Is there an ideal time for the review?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "The review provides valuable insights at any time. Whether you're preparing for changes, responding to issues, or simply aiming to improve, it helps uncover root causes and supports lasting improvements in SAP Access Management—making it a smart investment year-round."
+                                }
+                            }
+                        ]
+                    })}
+                </script>
+            </Helmet>
+            <Header />
 
-      </Helmet>
-      <Header />
-
-      <section className="service-container-1">
-        <div className="service-left">
-          <h2 className="extra-big-heading-text-white">
-            SAP Access <br /> Management review
-          </h2>
-          <p className="text-white">
-            We provide an understandable view of your organization’s SAP Access Management situation and deliver a clear, actionable plan forward to improve efficiency, compliance, and long-term sustainability.
-          </p>
-        </div>
-        <div className="service-right only-windows">
-          <div className="service-image">
-            <img src={banner} alt="cloud compliance" />
-          </div>
-        </div>
-      </section>
-
-      <section className="service-journey-container">
-        <div className="service-journey-content">
-          <div className="journey-card">
-            <div className="card-header">
-              <h3 className="big-heading-text-white">From Uncertainty to Clarity: Mapping Your SAP Access Management Journey</h3>
-              <div className="card-sub-content">
-                <p className="text-white">
-                  Many organizations operate SAP access management without a clear strategic plan. While systems may continue to function over time, this approach often leads to recurring challenges such as weakened security, audit findings, delays in implementing necessary changes, and concerns around resourcing and skill availability. As these issues accumulate, management typically begins to ask critical questions:
-                </p>
-              </div>
-            </div>
-            <div className="questions-grid">
-              <div className="question-item">
-                <span className="question-number">01</span>
-                <p className="small-text-white">How exposed is our system, and what is our current level of Segregation of Duties (SoD)?</p>
-              </div>
-              <div className="question-item">
-                <span className="question-number">02</span>
-                <p className="small-text-white">Is our operating model truly optimized for an SAP organization of our size?</p>
-              </div>
-              <div className="question-item">
-                <span className="question-number">03</span>
-                <p className="small-text-white">How can we maximize the value of our budget—and are there opportunities to reduce costs?</p>
-              </div>
-              <div className="question-item">
-                <span className="question-number">04</span>
-                <p className="small-text-white">How should we structure our access management, and where can we find the necessary expertise?</p>
-              </div>
-              <div className="question-item">
-                <span className="question-number">05</span>
-                <p>What are the next steps we should take?</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="service-solution-container">
-        <div className="service-solution-content">
-          <div className="solution-grid">
-
-
-
-            <div className="solution-intro-card only-windows">
-              <h2 className="big-heading-text-white">SAP Access Management Improvement Service</h2>
-              <div className="card-sub-content">
-                <p className="text-white">Our service provides a comprehensive understanding of the organization's SAP Access Management landscape and identifies improvement opportunities by analyzing the current state
-                  against s4access best practice standards.</p>
-              </div>
-            </div>
-
-
-
-            {/* only mobile start  */}
-
-
-            <div className="solution-intro-card only-mobile">
-              <h2 className="big-heading-text-black">SAP Access Management Improvement Service</h2>
-              <div className="card-sub-content">
-                <p className="text-black">Our service provides a comprehensive understanding of the organization's SAP Access Management landscape and identifies improvement opportunities by analyzing the current state
-                  against s4access best practice standards.</p>
-              </div>
-            </div>
-
-            {/* only mobile end  */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div className="solution-cards">
-              <div className="solution-card">
-                <div className="card-icon">
-                  <FaUserTie className="icon" />
+            <section className="service-container-1">
+                <div className="service-left">
+                    <h2 className="extra-big-heading-text-white">
+                        SAP Access <br /> Management review
+                    </h2>
+                    <p className="text-white">
+                        We provide an understandable view of your organization’s SAP Access Management situation and deliver a clear, actionable plan forward to improve efficiency, compliance, and long-term sustainability.
+                    </p>
                 </div>
-                <h3 className="sub-big-heading-text-white">Governance</h3>
-                <p>Organizational analysis of responsibilities and skills around related tasks</p>
-              </div>
-              <div className="solution-card">
-                <div className="card-icon">
-                  <FaCogs className="icon" />
+                <div className="service-right only-windows">
+                    <div className="service-image">
+                        <img src={banner} alt="cloud compliance" />
+                    </div>
                 </div>
-                <h3 className="sub-big-heading-text-white">Processes</h3>
-                <p className="small-text-white"> Analysis of user administration and role management processes</p>
-              </div>
-              <div className="solution-card">
-                <div className="card-icon">
-                  <FaShieldAlt className="icon" />
+            </section>
+
+            <section className="service-journey-container">
+                <div className="service-journey-content">
+                    <div className="journey-card">
+                        <div className="card-header">
+                            <h3 className="big-heading-text-white">From Uncertainty to Clarity: Mapping Your SAP Access Management Journey</h3>
+                            <div className="card-sub-content">
+                                <p className="text-white">
+                                    Many organizations operate SAP access management without a clear strategic plan. While systems may continue to function over time, this approach often leads to recurring challenges such as weakened security, audit findings, delays in implementing necessary changes, and concerns around resourcing and skill availability. As these issues accumulate, management typically begins to ask critical questions:
+                                </p>
+                            </div>
+                        </div>
+                        <div className="questions-grid">
+                            <div className="question-item">
+                                <span className="question-number">01</span>
+                                <p className="small-text-white">How exposed is our system, and what is our current level of Segregation of Duties (SoD)?</p>
+                            </div>
+                            <div className="question-item">
+                                <span className="question-number">02</span>
+                                <p className="small-text-white">Is our operating model truly optimized for an SAP organization of our size?</p>
+                            </div>
+                            <div className="question-item">
+                                <span className="question-number">03</span>
+                                <p className="small-text-white">How can we maximize the value of our budget—and are there opportunities to reduce costs?</p>
+                            </div>
+                            <div className="question-item">
+                                <span className="question-number">04</span>
+                                <p className="small-text-white">How should we structure our access management, and where can we find the necessary expertise?</p>
+                            </div>
+                            <div className="question-item">
+                                <span className="question-number">05</span>
+                                <p>What are the next steps we should take?</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3 className="sub-big-heading-text-white">Technical</h3>
-                <p className="small-text-white">Snapshot analysis of technical feasibility of SAP roles and current security level</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            </section>
+
+            <section className="service-solution-container">
+                <div className="service-solution-content">
+                    <div className="solution-grid">
 
 
-      {/* <section className="service-cards-container">
+
+                        <div className="solution-intro-card only-windows">
+                            <h2 className="big-heading-text-white">SAP Access Management Improvement Service</h2>
+                            <div className="card-sub-content">
+                                <p className="text-white">Our service provides a comprehensive understanding of the organization's SAP Access Management landscape and identifies improvement opportunities by analyzing the current state
+                                    against s4access best practice standards.</p>
+                            </div>
+                        </div>
+
+
+
+                        {/* only mobile start  */}
+
+
+                        <div className="solution-intro-card only-mobile">
+                            <h2 className="big-heading-text-black">SAP Access Management Improvement Service</h2>
+                            <div className="card-sub-content">
+                                <p className="text-black">Our service provides a comprehensive understanding of the organization's SAP Access Management landscape and identifies improvement opportunities by analyzing the current state
+                                    against s4access best practice standards.</p>
+                            </div>
+                        </div>
+
+                        {/* only mobile end  */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div className="solution-cards">
+                            <div className="solution-card">
+                                <div className="card-icon">
+                                    <FaUserTie className="icon" />
+                                </div>
+                                <h3 className="sub-big-heading-text-white">Governance</h3>
+                                <p>Organizational analysis of responsibilities and skills around related tasks</p>
+                            </div>
+                            <div className="solution-card">
+                                <div className="card-icon">
+                                    <FaCogs className="icon" />
+                                </div>
+                                <h3 className="sub-big-heading-text-white">Processes</h3>
+                                <p className="small-text-white"> Analysis of user administration and role management processes</p>
+                            </div>
+                            <div className="solution-card">
+                                <div className="card-icon">
+                                    <FaShieldAlt className="icon" />
+                                </div>
+                                <h3 className="sub-big-heading-text-white">Technical</h3>
+                                <p className="small-text-white">Snapshot analysis of technical feasibility of SAP roles and current security level</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            {/* <section className="service-cards-container">
         <h2 className="big-heading-text-black">Lorem ipsum dolor </h2>
         <div className="our-service-cards">
           <div className="serviceCard">
@@ -283,112 +362,112 @@ efficiency in S/4HANA. Get insights to optimize SoD, reduce risk & lower costs e
         </div>
       </section> */}
 
-      <section className="strength-showcase">
-        <div className="strength-left">
-          <h2 className="big-heading-text-white">Case Studies</h2>
-          <p className="text-white">
-            Learn how our S/4 Access Management Review identified critical issues and provided a clear roadmap to strengthen SAP access controls for a client.
-          </p>
-          <Link to="/s4-access-management-review" className="read-more-btn ">
-            Read More  <i className="bi bi-arrow-right arrow-icon"></i>
-          </Link>
-        </div>
+            <section className="strength-showcase">
+                <div className="strength-left">
+                    <h2 className="big-heading-text-white">Case Studies</h2>
+                    <p className="text-white">
+                        Learn how our S/4 Access Management Review identified critical issues and provided a clear roadmap to strengthen SAP access controls for a client.
+                    </p>
+                    <Link to="/s4-access-management-review" className="read-more-btn ">
+                        Read More  <i className="bi bi-arrow-right arrow-icon"></i>
+                    </Link>
+                </div>
 
-        {/* Case Study 1 - Project Detail */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <h3 className="sub-heading-text-black">SAP S/4 Implementation</h3>
-            <h4 className="text-black">Comprehensive Access Review</h4>
-            <p className="text-black">
-              Assessed governance, processes, and technical configuration using the s4access SAP Access Analytics Platform to identify critical issues.
-            </p>
-            <div className="image-container-showcase">
-              <img src={case1img} alt="case study" />
-            </div>
-          </div>
-        </div>
+                {/* Case Study 1 - Project Detail */}
+                <div className="strength-right">
+                    <div className="stats-card">
+                        <h3 className="sub-heading-text-black">SAP S/4 Implementation</h3>
+                        <h4 className="text-black">Comprehensive Access Review</h4>
+                        <p className="text-black">
+                            Assessed governance, processes, and technical configuration using the s4access SAP Access Analytics Platform to identify critical issues.
+                        </p>
+                        <div className="image-container-showcase">
+                            <img src={case1img} alt="case study" />
+                        </div>
+                    </div>
+                </div>
 
-        {/* Case Study 2 - Business Outcome */}
-        <div className="strength-right">
-          <div className="stats-card">
-            <h3 className="sub-heading-text-black">SAP S/4 Implementation</h3>
-            <h4 className="text-black">Comprehensive Access Review</h4>
-            <p className="text-black">
-              “This review was totally  something else we<br /> get from normal audits” <br /> – SAP Director
+                {/* Case Study 2 - Business Outcome */}
+                <div className="strength-right">
+                    <div className="stats-card">
+                        <h3 className="sub-heading-text-black">SAP S/4 Implementation</h3>
+                        <h4 className="text-black">Comprehensive Access Review</h4>
+                        <p className="text-black">
+                            “This review was totally  something else we<br /> get from normal audits” <br /> – SAP Director
 
-            </p>
-            <div className="image-container-showcase">
-              <img src={case2img} alt="case study" />
-            </div>
-          </div>
-        </div>
-      </section>
+                        </p>
+                        <div className="image-container-showcase">
+                            <img src={case2img} alt="case study" />
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <section className="strength-bottom">
-        <div className="stat-card">
-          <div className="stat-box">
-            <div className="stat-topline">
-              <span className="dot"></span>
-              <h3 className="big-heading-text-black">30,000+</h3>
-            </div>
-            <ul className="stat-sub">
-              <li className="text-black">Access risk checks performed</li>
-            </ul>
-          </div>
-        </div>
+            <section className="strength-bottom">
+                <div className="stat-card">
+                    <div className="stat-box">
+                        <div className="stat-topline">
+                            <span className="dot"></span>
+                            <h3 className="big-heading-text-black">30,000+</h3>
+                        </div>
+                        <ul className="stat-sub">
+                            <li className="text-black">Access risk checks performed</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div className="stat-card">
-          <div className="stat-box">
-            <div className="stat-topline">
-              <span className="dot"></span>
-              <h3 className="big-heading-text-black">200M+</h3>
-            </div>
-            <ul className="stat-sub">
-              <li className="text-black">User access transactions secured</li>
-            </ul>
-          </div>
-        </div>
+                <div className="stat-card">
+                    <div className="stat-box">
+                        <div className="stat-topline">
+                            <span className="dot"></span>
+                            <h3 className="big-heading-text-black">200M+</h3>
+                        </div>
+                        <ul className="stat-sub">
+                            <li className="text-black">User access transactions secured</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <div className="stat-card">
-          <div className="stat-box">
-            <div className="stat-topline">
-              <span className="dot"></span>
-              <h3 className="big-heading-text-black">4.8</h3>
-            </div>
-            <ul className="stat-sub">
-              <li className="text-black">Average client satisfaction rating</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+                <div className="stat-card">
+                    <div className="stat-box">
+                        <div className="stat-topline">
+                            <span className="dot"></span>
+                            <h3 className="big-heading-text-black">4.8</h3>
+                        </div>
+                        <ul className="stat-sub">
+                            <li className="text-black">Average client satisfaction rating</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-      {/* FAQs section start */}
-      <FAQTemplate title="FAQs" faqs={faqs} />
-      {/* FAQs section end */}
+            {/* FAQs section start */}
+            <FAQTemplate title="FAQs" faqs={faqs} />
+            {/* FAQs section end */}
 
-      <section className="service-cta-section">
-        <div className="service-cta-content">
-          <div className="cta-flex-container">
-            <div className="cta-text">
-              <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
-              <p className="text-white">
-                Get expert guidance and solutions tailored to your organization's needs
-              </p>
-            </div>
-            <div className="cta-buttons">
-              <Link to="/Contact" className="button-green">
-                Contact Us
-              </Link>
-              {/* <Link to="/customer-success" className="border-button">
+            <section className="service-cta-section">
+                <div className="service-cta-content">
+                    <div className="cta-flex-container">
+                        <div className="cta-text">
+                            <h2 className="big-heading-text-white">Ready to Transform Your SAP Access Management?</h2>
+                            <p className="text-white">
+                                Get expert guidance and solutions tailored to your organization's needs
+                            </p>
+                        </div>
+                        <div className="cta-buttons">
+                            <Link to="/Contact" className="button-green">
+                                Contact Us
+                            </Link>
+                            {/* <Link to="/customer-success" className="border-button">
                 Case Studies
               </Link> */}
-              <a className="border-button" href="/customer-success">Case Studies</a>
-            </div>
-          </div>
-        </div>
-      </section>
+                            <a className="border-button" href="/customer-success">Case Studies</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-      <Footer />
-    </>
-  );
+            <Footer />
+        </>
+    );
 }

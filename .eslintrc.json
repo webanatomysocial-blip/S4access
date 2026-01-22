@@ -1,0 +1,14 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "overrides": [
+    {
+      "files": ["server.js", "vite.config.js", "src/entry-server.jsx"],
+      "env": {
+        "node": true
+      }
+    }
+  ]
+}

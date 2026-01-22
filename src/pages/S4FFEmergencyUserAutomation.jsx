@@ -1,4 +1,3 @@
-
 import React from "react";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
@@ -52,6 +51,55 @@ export default function SAPSoDApproach() {
         <meta name="description" content="Automate SAP GRC Firefighter log reviews with s4access: reduce manual
 effort, ensure compliance, and enhance audit efficiency through intelligent automation." />
 
+ <script type="application/ld+json">
+          {JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do we need SAP GRC for this service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, you don’t. If you already have SAP GRC, we can deliver the service using your existing setup. If not, we offer a fully functional alternative that does not require SAP GRC installation, making it easier and faster to get started."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it fast to implement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Once the initial paperwork and technical enablement are complete, the first complete automated review cycle can be started immediately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the service audit-proven?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Our customers have been using this service for years and have successfully passed audits by all major auditing firms—without comments. It consistently meets audit standards and supports transparent, well-documented access risk management."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is expected from us as the customer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Very little to get started. The service is up and running with minimal effort on your side. Once enabled, we’ll guide you through setting up the necessary governance and processes to ensure you get full value from the log review."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it cover ECC and S/4 environments?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The service fully supports both SAP ECC and SAP S/4HANA environments."
+      }
+    }
+  ]
+
+})}
+</script>
       </Helmet>
       <Header />
 

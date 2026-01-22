@@ -1,21 +1,66 @@
-import React from 'react';
-import './Internal-Blog.css';
+import React from "react";
+import "./Internal-Blog.css";
 // import img24 from './blogs-images/3.jpg'
-import Blogs from '../components/Blog';
-import cta from './blogs-images/Group.png';
+import Blogs from "../components/Blog";
+import cta from "./blogs-images/Group.png";
 import { Link } from "react-router-dom";
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "react-helmet-async";
 
 export default function Blog4() {
   return (
     <>
-        <Helmet>
-                <title> SAP Access Management Best Practices & Pitfalls | s4access</title>
-                <meta name="title" content="SAP Access Management Best Practices & Pitfalls | s4access" />
-                <meta name="description" content="Learn SAP access management best practices and pitfalls: optimize role
-design, enforce SoD, enhance compliance, and secure your enterprise systems with s4access." />
+      <Helmet>
+        <title>
+          Managing Fiori S/4HANA Public Views Best Practices | S4Access
+        </title>
+        <meta
+          name="title"
+          content="Managing Fiori S/4HANA Public Views Best Practices | S4Access"
+        />
+        <meta
+          name="description"
+          content="Discover best practices for managing Fiori S/4HANA Public Views, avoid performance issues, maintain consistency, and enhance user experience across SAP systems."
+        />
 
-            </Helmet>
+        {/* ======================= ARTICLE SCHEMA ======================= */}
+        <script type="application/ld+json">
+          {`
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Managing Fiori S/4HANA Public Views Best Practices | s4access",
+      "description": "Discover best practices for managing Fiori S/4HANA Public Views, avoid performance issues, maintain consistency, and enhance user experience across SAP systems.",
+      "author": {
+        "@type": "Organization",
+        "name": "s4access"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "s4access",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://s4access.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://s4access.com/blogs/Best-Practices-and-Pitfalls"
+      },
+      "keywords": [
+        "Fiori S/4HANA Public Views",
+        "SAP Fiori Best Practices",
+        "SAP S/4HANA Fiori Views",
+        "Fiori Performance Optimization",
+        "SAP Fiori Governance",
+        "SAP Fiori Role Management",
+        "Fiori View Consistency",
+        "SAP Landscape Performance"
+      ]
+    }
+    `}
+        </script>
+      </Helmet>
+
       <div className="breach-article-wrapper">
         {/* Hero Section */}
         {/* <div className="breach-hero-banner">
@@ -26,46 +71,53 @@ design, enforce SoD, enhance compliance, and secure your enterprise systems with
         </div>
       </div> */}
 
-
         {/* Blog Content */}
         <div className="breach-article-content">
           <section>
             <p>
-              In SAP S/4HANA Fiori apps—whether standard or extended—public views play a key role in tailoring user experiences. These views can be created with a transport request (TR) and mapped to user-specific roles, ensuring that only authorized users with the appropriate roles can access them.
-
+              In{" "}
+              <a href="https://s4access.com/blogs/Best-Practices-and-Pitfalls">
+                SAP S/4HANA Fiori
+              </a>{" "}
+              apps—whether standard or extended—public views play a key role in
+              tailoring user experiences. These views can be created with a
+              transport request (TR) and mapped to user-specific roles, ensuring
+              that only authorized users with the appropriate roles can access
+              them.
             </p>
           </section>
 
           <section>
-            <h2>Controlled Creation via Development System
-            </h2>
+            <h2>Controlled Creation via Development System</h2>
             <p>
-              To maintain governance and consistency, public views should be created in the Development system by the AMS team, based on a Ticket raised by the business key user. This ensures:
+              To maintain governance and consistency, public views should be
+              created in the Development system by the AMS team, based on a
+              Ticket raised by the business key user. This ensures:
               <ul>
                 <li>Proper testing and validation</li>
                 <li>Adherence to naming conventions</li>
                 <li>Controlled deployment through the landscape</li>
               </ul>
-
             </p>
           </section>
 
           <section>
-            <h2>Direct Creation in Production: Proceed with Caution
-            </h2>
+            <h2>Direct Creation in Production: Proceed with Caution</h2>
             <p>
-              While SAP allows business users -including key users -to create public views directly in the Production environment, this flexibility comes with limitations and risks:
+              While SAP allows business users -including key users -to create
+              public views directly in the Production environment, this
+              flexibility comes with limitations and risks:
               <ul>
-
                 <li>Role-specific views cannot be created in Production</li>
                 <li>Untested changes may be introduced without oversight</li>
                 <li>Naming conventions are often ignored</li>
                 <li>Hundreds of views per app can accumulate rapidly</li>
                 <li>App loading times may suffer due to excessive views</li>
-                <li>User confusion grows as more views clutter the interface</li>
+                <li>
+                  User confusion grows as more views clutter the interface
+                </li>
                 <li>Monitoring overhead increases significantly</li>
               </ul>
-
             </p>
           </section>
 
@@ -74,25 +126,28 @@ design, enforce SoD, enhance compliance, and secure your enterprise systems with
             <p>
               To avoid these pitfalls, organizations should:
               <ul>
-                <li>Centralize public view creation in the Development system</li>
+                <li>
+                  Centralize public view creation in the Development system
+                </li>
                 <li>Use structured service requests to initiate changes</li>
-                <li>Limit direct creation in Production to specific, well-trained users</li>
+                <li>
+                  Limit direct creation in Production to specific, well-trained
+                  users
+                </li>
                 <li>Regularly audit and clean up unused or redundant views</li>
               </ul>
-
             </p>
             <p>
-              By following these practices, you can ensure a clean, performant, and user-friendly Fiori experience across your S/4HANA landscape. Stay tuned to learn the Approach for S/4 Custom Fiori Apps/Reports deployed on BTP.
-
+              By following these practices, you can ensure a clean, performant,
+              and user-friendly Fiori experience across your{" "}
+              <a href="https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA">
+                S/4HANA landscape
+              </a>
+              . Stay tuned to learn the Approach for S/4 Custom Fiori
+              Apps/Reports deployed on BTP.
             </p>
           </section>
-
-
         </div>
-
-
-
-
 
         {/* <section className="news-blogs-section-inner-blog-page">
         <div className=" heading-news-blog">
@@ -109,12 +164,10 @@ design, enforce SoD, enhance compliance, and secure your enterprise systems with
 
 
       </section> */}
-
       </div>
 
       <section className="blog-container">
         <div className="blog-contact-us-section">
-
           {/* Left Image */}
           <div className="blog-left-image only-windows">
             <img src={cta} />
@@ -126,7 +179,8 @@ design, enforce SoD, enhance compliance, and secure your enterprise systems with
               {/* <p className="small-text-white">
                 We’ll help you build
               </p> */}
-              <p className="text-white" style={{ fontWeight: 600 }}>Keep Your Fiori Views Clean, Secure, and Compliant.
+              <p className="text-white" style={{ fontWeight: 600 }}>
+                Keep Your Fiori Views Clean, Secure, and Compliant.
               </p>
             </div>
             <div className="blog-right-button">
@@ -137,7 +191,6 @@ design, enforce SoD, enhance compliance, and secure your enterprise systems with
                 </span>
               </Link>
             </div>
-
           </div>
         </div>
       </section>
