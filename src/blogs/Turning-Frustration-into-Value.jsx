@@ -5,8 +5,28 @@ import Blogs from "../components/Blog";
 import cta from "../blogs/blogs-images/Group.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export default function Blog3() {
+  const faqs = [
+    {
+      question: "Why do SAP access management audits feel frustrating?",
+      answer:
+        "Audits often rely on generic checklists and lack SAP-specific context. This creates gaps between daily SAP operations and what auditors expect to see.",
+    },
+    {
+      question: "What types of audits review SAP access controls?",
+      answer:
+        "SAP access is reviewed during financial audits, internal audits, tax audits, privacy or GDPR audits, industry-standard audits, and special audits such as fraud investigations.",
+    },
+    {
+      question: "Why is it important to understand the audit scope in SAP audits?",
+      answer:
+        "Each audit type has different objectives and risk focus. Understanding the scope helps align evidence, controls, and explanations with what is actually being assessed.",
+    },
+
+
+  ];
   return (
     <>
       <Helmet>
@@ -64,6 +84,41 @@ export default function Blog3() {
       ]
     }
     `}
+        </script>
+
+        {/* Faq Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why do SAP access management audits feel frustrating?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SAP access management audits often rely on generic checklists and lack SAP-specific context. This creates gaps between daily SAP operations and what auditors expect to see."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What types of audits review SAP access controls?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SAP access controls are reviewed during financial audits, internal audits, tax audits, privacy or GDPR audits, industry-standard audits, and special audits such as fraud investigations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is it important to understand the audit scope in SAP audits?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Each audit type has different objectives and risk focus. Understanding the audit scope helps align evidence, controls, and explanations with what is actually being assessed."
+                }
+              }
+            ]
+          }
+          )}
         </script>
       </Helmet>
 
@@ -222,6 +277,7 @@ export default function Blog3() {
 
       </section> */}
       </div>
+      <FAQTemplate title="FAQs" faqs={faqs} />
 
       <section className="blog-container">
         <div className="blog-contact-us-section">

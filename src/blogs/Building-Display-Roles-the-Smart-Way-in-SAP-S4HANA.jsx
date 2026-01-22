@@ -5,8 +5,28 @@ import Blogs from "../components/Blog";
 // import cta from "../blogs/blogs-images/Group.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export default function Blog10() {
+  const faqs = [
+    {
+      question: "What is a display role in SAP S/4HANA?",
+      answer:
+        "A display role allows users to view data and reports without the ability to create, change, or delete information. It helps prevent accidental changes and supports audit and compliance requirements.",
+    },
+    {
+      question: " How do you create a display-only role in SAP S/4HANA?",
+      answer:
+        "In on-premise systems, a standard role is copied in PFCG and change activities like ACTVT 01, 02, and 06 are removed, leaving only ACTVT 03 (Display). The role is then tested to confirm read-only access.",
+    },
+    {
+      question: "Are SAP Fiori apps always read-only for display roles?",
+      answer:
+        "No. Some Fiori apps marked as “display” can still allow changes. Negative testing in the Fiori Launchpad is required to confirm that no modifications are possible.",
+    },
+
+
+  ];
   return (
     <>
       <Helmet>
@@ -60,6 +80,41 @@ export default function Blog10() {
       ]
     }
     `}
+        </script>
+
+        {/* Faq Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a display role in SAP S/4HANA?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A display role in SAP S/4HANA allows users to view data and reports without the ability to create, change, or delete information. It helps prevent accidental changes and supports audit and compliance requirements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do you create a display-only role in SAP S/4HANA?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In on-premise SAP S/4HANA systems, a standard role is copied in PFCG and change activities such as ACTVT 01, 02, and 06 are removed, leaving only ACTVT 03 (Display). The role is then tested to confirm read-only access."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are SAP Fiori apps always read-only for display roles?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Some SAP Fiori apps marked as display can still allow changes. Negative testing in the SAP Fiori Launchpad is required to confirm that no modifications are possible."
+                }
+              }
+            ]
+          }
+          )}
         </script>
       </Helmet>
 
@@ -196,6 +251,9 @@ export default function Blog10() {
         </div>
       </section> */}
       </div>
+
+      {/* Faq Section */}
+      <FAQTemplate title="FAQs" faqs={faqs} />
 
       <section className="blog-container">
         <div className="blog-contact-us-section">

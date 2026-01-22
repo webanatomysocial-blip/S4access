@@ -4,8 +4,27 @@ import Blogs from "../components/Blog";
 import cta from "./blogs-images/Group.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export default function Blog5() {
+  const faqs = [
+    {
+      question: " What is a Firefighter ID in SAP?",
+      answer:
+        "A Firefighter ID is an emergency access user that provides temporary elevated privileges in SAP. It is used to resolve critical issues without permanently assigning high-risk authorizations.",
+    },
+    {
+      question: "When should Firefighter IDs be used in SAP?",
+      answer:
+        "Firefighter IDs should be used only during emergencies such as production outages, failed batch jobs, or urgent transports. They allow temporary bypass of SoD controls without creating long-term compliance risks.",
+    },
+    {
+      question: "How is Firefighter access controlled and audited?",
+      answer:
+        "Firefighter access follows a request and approval workflow, is time-bound, and logs all user activities. A designated Firefighter Controller reviews the logs to confirm the access was justified and compliant.",
+    },
+
+  ];
   return (
     <>
       <Helmet>
@@ -68,48 +87,39 @@ export default function Blog5() {
     `}
         </script>
 
-        {/* ======================= FAQ SCHEMA ======================= */}
+        {/* Faq Schema */}
         <script type="application/ld+json">
-          {`
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is a Firefighter ID in SAP?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A Firefighter ID is a temporary, elevated-access account used to perform urgent or critical tasks that a normal user cannot. It ensures quick issue resolution while maintaining full monitoring and audit control."
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a Firefighter ID in SAP?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A Firefighter ID is an emergency access user that provides temporary elevated privileges in SAP. It is used to resolve critical issues without permanently assigning high-risk authorizations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "When should Firefighter IDs be used in SAP?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Firefighter IDs should be used only during emergencies such as production outages, failed batch jobs, or urgent transports. They allow temporary bypass of SoD controls without creating long-term compliance risks."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is Firefighter access controlled and audited?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Firefighter access follows a request and approval workflow, is time-bound, and logs all user activities. A designated Firefighter Controller reviews the logs to confirm the access was justified and compliant."
+                }
+              }
+            ]
           }
-        },
-        {
-          "@type": "Question",
-          "name": "Why is Firefighter access important for compliance?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Firefighter IDs ensure emergency access is controlled, logged, and reviewed. This prevents unauthorized activities, supports segregation of duties (SoD), and helps organisations stay audit-ready."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Who is responsible for reviewing Firefighter ID usage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The Firefighter Controller is responsible for analysing all logs generated during emergency access. They confirm that actions were appropriate, justified, and aligned with compliance policies."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do automated Firefighter log reviews help?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Automated log reviews reduce manual workload, increase accuracy, and speed up compliance reporting. Tools like those from s4access help organisations detect risks faster and improve audit readiness."
-          }
-        }
-      ]
-    }
-    `}
+          )}
         </script>
       </Helmet>
 
@@ -265,6 +275,9 @@ export default function Blog5() {
           </section>
         </div>
       </div>
+
+      <FAQTemplate title="FAQs" faqs={faqs} />
+
       <section className="blog-container">
         <div className="blog-contact-us-section">
           {/* Left Image */}

@@ -5,8 +5,29 @@ import Blogs from "../components/Blog";
 import cta from "./blogs-images/Group.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export default function Blog4() {
+  const faqs = [
+    {
+      question: "What are public views in SAP S/4HANA Fiori apps?",
+      answer:
+        "Public views are user-defined views that tailor how data is displayed in Fiori apps. Access to these views is controlled through roles assigned to users.",
+    },
+    {
+      question: "Where should SAP Fiori public views be created?",
+      answer:
+        "Public views should be created in the Development system by the AMS team. This allows proper testing, naming control, and safe transport across the system landscape.",
+    },
+    {
+      question: "What risks come from creating public views directly in Production?",
+      answer:
+        "Direct creation in Production can lead to untested changes, ignored naming standards, excessive views per app, slower performance, and user confusion.",
+    },
+
+
+
+  ];
   return (
     <>
       <Helmet>
@@ -58,6 +79,41 @@ export default function Blog4() {
       ]
     }
     `}
+        </script>
+
+        {/* Faq Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What are public views in SAP S/4HANA Fiori apps?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Public views are user-defined views that tailor how data is displayed in SAP S/4HANA Fiori apps. Access to these views is controlled through roles assigned to users."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where should SAP Fiori public views be created?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SAP Fiori public views should be created in the Development system by the AMS team. This enables proper testing, consistent naming, and safe transport across the system landscape."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What risks come from creating public views directly in Production?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Creating public views directly in Production can result in untested changes, ignored naming standards, excessive views per app, performance degradation, and user confusion."
+                }
+              }
+            ]
+          }
+          )}
         </script>
       </Helmet>
 
@@ -165,6 +221,7 @@ export default function Blog4() {
 
       </section> */}
       </div>
+      <FAQTemplate title="FAQs" faqs={faqs} />
 
       <section className="blog-container">
         <div className="blog-contact-us-section">

@@ -5,6 +5,25 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 export default function Blog9() {
+  const faqs = [
+    {
+      question: " What security risks do SAP enhancements create?",
+      answer:
+        "SAP enhancements can bypass standard SAP controls if not coded securely. Even small changes can weaken validations and create hidden access or compliance gaps if not reviewed properly.",
+    },
+    {
+      question: "Why are SAP forms a security concern?",
+      answer:
+        "SAP forms often expose sensitive data like bank details or personal IDs. Without masking, access control, and secure output handling, forms can cause data leakage and audit issues.",
+    },
+    {
+      question: " How can SAP workflows bypass segregation of duties?",
+      answer:
+        "Poorly designed workflows can grant excessive access through background users or missing approvals. Without role separation and authorization checks, workflows may quietly break SoD controls.",
+    },
+
+
+  ];
   return (
     <>
       <Helmet>
@@ -49,47 +68,39 @@ export default function Blog9() {
         </script>
 
         {/* ======================= FAQ SCHEMA ======================= */}
+        {/* Faq Schema */}
         <script type="application/ld+json">
-          {`
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Why is RICEFW security important in SAP projects?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "RICEFW objects often handle business-critical data and processes. If not secured properly, they can bypass SAP’s standard controls and create audit risks, compliance issues, and data exposure."
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What security risks do SAP enhancements create?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SAP enhancements can bypass standard SAP controls if not coded securely. Even small changes can weaken validations and create hidden access or compliance gaps if not reviewed properly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why are SAP forms a security concern?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SAP forms often expose sensitive data such as bank details or personal IDs. Without proper masking, access control, and secure output handling, forms can lead to data leakage and audit issues."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can SAP workflows bypass segregation of duties?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Poorly designed workflows can grant excessive access through background users or missing approvals. Without proper role separation and authorization checks, workflows may silently break segregation of duties controls."
+                }
               }
-            },
-            {
-              "@type": "Question",
-              "name": "What are common security risks in SAP Enhancements?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Enhancements can unintentionally override SAP’s built-in safeguards. Poor coding, missing reviews, or lack of approvals can introduce vulnerabilities that impact authorizations, data integrity, or system behavior."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How can SAP Forms become a security threat?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Forms often contain sensitive data such as bank details or personal information. Without masking, encryption, and strict access controls, these forms can cause data leaks or unauthorized disclosure."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Why must workflows be secured in SAP?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Unsecured workflows may escalate privileges, skip approval steps, or violate segregation-of-duties rules. Proper role separation, AUTHORITY-CHECKS, and log reviews ensure workflow automation does not compromise security."
-              }
-            }
-          ]
-        }
-        `}
+            ]
+          }
+          )}
         </script>
       </Helmet>
 

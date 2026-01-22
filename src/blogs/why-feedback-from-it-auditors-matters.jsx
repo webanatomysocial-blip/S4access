@@ -2,8 +2,28 @@ import React from "react";
 import "./Internal-Blog.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export default function FeedbackIsAGift() {
+  const faqs = [
+    {
+      question: "Why is IT auditor feedback important for SAP access controls?",
+      answer:
+        "Auditors identify access risks based on real incidents they’ve seen across organizations. Their feedback helps uncover hidden risks like excessive or overlapping SAP access before they lead to losses.",
+    },
+    {
+      question: "Can organizations accept SAP access risks flagged by auditors?",
+      answer:
+        "Yes. Auditors act as advisors, not enforcers. If risks are understood, documented, and supported by compensating controls, organizations can formally accept them.",
+    },
+    {
+      question: "Why should SAP access be reviewed beyond annual audits?",
+      answer:
+        "Access risks change throughout the year due to role changes and new projects. Continuous monitoring and periodic reviews help detect issues early, not just during audits.",
+    }
+
+
+  ];
   return (
     <>
       <Helmet>
@@ -55,6 +75,41 @@ export default function FeedbackIsAGift() {
       ]
     }
     `}
+        </script>
+
+        {/* Faq Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why is IT auditor feedback important for SAP access controls?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "IT auditors identify access risks based on real incidents they have seen across organizations. Their feedback helps uncover hidden risks such as excessive or overlapping SAP access before they lead to financial or operational losses."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can organizations accept SAP access risks flagged by auditors?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Auditors act as advisors rather than enforcers. If SAP access risks are clearly understood, properly documented, and supported by compensating controls, organizations can formally accept them."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why should SAP access be reviewed beyond annual audits?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SAP access risks change throughout the year due to role changes, new projects, and system updates. Continuous monitoring and periodic reviews help identify issues early instead of waiting for annual audits."
+                }
+              }
+            ]
+          }
+          )}
         </script>
       </Helmet>
 
@@ -163,6 +218,9 @@ export default function FeedbackIsAGift() {
           </section>
         </div>
       </div>
+
+      {/* Faq Section */}
+      <FAQTemplate title="FAQs" faqs={faqs} />
 
       <section className="blog-container">
         <div className="blog-contact-us-section">

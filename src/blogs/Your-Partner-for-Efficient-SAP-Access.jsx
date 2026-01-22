@@ -3,7 +3,7 @@ import "./Internal-Blog.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import FAQTemplate from "../components/FAQTemplate.jsx";
-
+ 
 export default function BetterSAPTickets() {
   const faqs = [
     {

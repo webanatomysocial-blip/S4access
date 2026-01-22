@@ -3,8 +3,32 @@ import "./Internal-Blog.css";
 import cta from "../blogs/blogs-images/Group.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export default function Blog12() {
+  const faqs = [
+    {
+      question: "What are native SAP HANA database authorizations?",
+      answer:
+        "Native SAP HANA authorizations are privileges assigned directly to database users for schemas, tables, and objects. When managed without a structured role concept, they can create long-term access and ownership issues.",
+    },
+    {
+      question: "Why is assigning SAP HANA privileges directly to users risky?",
+      answer:
+        "Direct privilege assignment creates dependency on individual user IDs. When users leave or are deleted, access breaks and database objects can be lost, causing system instability and audit risks.",
+    },
+    {
+      question: "Why is a role-based authorization concept important in SAP HANA?",
+      answer:
+        "A role-based concept provides structure and consistency across systems like DEV, QA, and PROD. It allows authorizations to be transported safely and reduces reliance on individual developers.",
+    },
+    {
+      question: "Can ad-hoc SAP HANA privileges be converted to roles later?",
+      answer:
+        "Yes. Existing privilege assignments can be analyzed, redesigned into proper HANA roles, and then replaced. This removes random access patterns and stabilizes long-term authorization management.",
+    },
+
+  ];
   return (
     <>
       <Helmet>
@@ -69,6 +93,49 @@ export default function Blog12() {
               "Role-based access",
             ],
           })}
+        </script>
+
+        {/* Faq Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What are native SAP HANA database authorizations?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Native SAP HANA database authorizations are privileges assigned directly to database users for schemas, tables, and objects. When managed without a structured role concept, they can create long-term access and ownership issues."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is assigning SAP HANA privileges directly to users risky?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Direct privilege assignment creates dependency on individual user IDs. When users leave or are deleted, access breaks and database objects can be lost, causing system instability and audit risks."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is a role-based authorization concept important in SAP HANA?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A role-based authorization concept provides structure and consistency across systems such as DEV, QA, and PROD. It allows authorizations to be transported safely and reduces reliance on individual developers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can ad-hoc SAP HANA privileges be converted to roles later?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Existing privilege assignments can be analyzed, redesigned into proper SAP HANA roles, and then replaced. This removes random access patterns and stabilizes long-term authorization management."
+                }
+              }
+            ]
+          }
+          )}
         </script>
       </Helmet>
 
@@ -180,6 +247,9 @@ export default function Blog12() {
           </section>
         </div>
       </div>
+
+      {/* FAQs Section */}
+      <FAQTemplate title="FAQs" faqs={faqs} />
 
       {/* CTA Section */}
       <section className="blog-container">

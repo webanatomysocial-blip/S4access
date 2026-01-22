@@ -4,8 +4,27 @@ import Blogs from "../components/Blog";
 import cta from "../blogs/blogs-images/Group.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export default function Blog13() {
+  const faqs = [
+    {
+      question: "What is the main focus for s4access in 2026?",
+      answer:
+        "In 2026, the focus is on strengthening SAP Access Management for S/4HANA environments and ongoing transformations. The priority is helping organizations manage access risks while keeping operations efficient and audit-ready.",
+    },
+    {
+      question: " Why is SAP Access Management critical in 2026?",
+      answer:
+        "SAP landscapes are becoming more complex and security expectations are higher. Strong access management helps reduce audit findings, prevent misuse of access, and protect business-critical data.",
+    },
+    {
+      question: "What challenges should SAP leaders expect in 2026?",
+      answer:
+        "Organizations will face tighter regulations, cost pressure, and more hybrid SAP environments. Managing access consistently across systems will be a key challenge for CIOs, CISOs, and audit teams.",
+    },
+
+  ];
   return (
     <>
       <Helmet>
@@ -20,6 +39,41 @@ export default function Blog13() {
           name="description"
           content="2025 has been a year of growth, innovation, and collaboration at s4access. Discover key SAP Access Management trends and what lies ahead in 2026."
         />
+
+        {/* Faq Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the main focus for s4access in 2026?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "In 2026, s4access focuses on strengthening SAP Access Management for S/4HANA environments and ongoing transformations. The priority is helping organizations manage access risks while remaining efficient and audit-ready."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is SAP Access Management critical in 2026?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SAP landscapes are becoming more complex and security expectations are increasing. Strong SAP Access Management helps reduce audit findings, prevent misuse of access, and protect business-critical data."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What challenges should SAP leaders expect in 2026?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SAP leaders should expect tighter regulations, cost pressure, and more hybrid SAP environments. Managing access consistently across systems will be a key challenge for CIOs, CISOs, and audit teams."
+                }
+              }
+            ]
+          }
+          )}
+        </script>
       </Helmet>
 
       <div className="breach-article-wrapper">
@@ -87,6 +141,7 @@ export default function Blog13() {
           </section>
         </div>
       </div>
+      <FAQTemplate title="FAQs" faqs={faqs} />
 
       {/* CTA Section */}
       <section className="blog-container">
