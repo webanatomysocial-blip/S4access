@@ -3,6 +3,7 @@ import "./Internal-Blog.css";
 import cta from "../blogs/blogs-images/Group.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export default function Blog9() {
   const faqs = [
@@ -285,7 +286,9 @@ export default function Blog9() {
 
       </section> */}
       </div>
-
+      <div className="faq-pad-section" style={{ paddingLeft: "10px" }}>
+        <FAQTemplate title="FAQs" faqs={faqs} />
+      </div>
       <section className="blog-container">
         <div className="blog-contact-us-section">
           {/* Left Image */}

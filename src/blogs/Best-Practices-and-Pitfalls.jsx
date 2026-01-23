@@ -221,8 +221,9 @@ export default function Blog4() {
 
       </section> */}
       </div>
-      <FAQTemplate title="FAQs" faqs={faqs} />
-
+      <div className="faq-pad-section" style={{ paddingLeft: "10px" }}>
+        <FAQTemplate title="FAQs" faqs={faqs} />
+      </div>
       <section className="blog-container">
         <div className="blog-contact-us-section">
           {/* Left Image */}

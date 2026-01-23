@@ -189,8 +189,10 @@ developments, enforce SoD, and ensure compliance across your SAP landscape with 
 
 
       </section> */}
-                <FAQTemplate title="FAQs" faqs={faqs} />
 
+            </div>
+            <div className="faq-pad-section" style={{ paddingLeft: "10px" }}>
+                <FAQTemplate title="FAQs" faqs={faqs} />
             </div>
             <section className="blog-container">
                 <div className="blog-contact-us-section">

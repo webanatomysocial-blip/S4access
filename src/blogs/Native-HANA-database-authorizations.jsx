@@ -249,8 +249,9 @@ export default function Blog12() {
       </div>
 
       {/* FAQs Section */}
-      <FAQTemplate title="FAQs" faqs={faqs} />
-
+      <div className="faq-pad-section" style={{ paddingLeft: "10px" }}>
+        <FAQTemplate title="FAQs" faqs={faqs} />
+      </div>
       {/* CTA Section */}
       <section className="blog-container">
         <div className="blog-contact-us-section">
