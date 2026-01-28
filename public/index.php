@@ -121,7 +121,7 @@ $blogMetadata = [
             "title" => "How to Choose the Right SAP Access Consultant: When to Bring in External SAP Security & GRC Experts",
             "slug" => "sap-access-management-consultant-guide",
             "metaDescription" => "Learn when to bring in external SAP Access, Security, and GRC experts. Discover how to choose the right SAP consultant to strengthen compliance, controls, and role design.",
-            "image" => "/blogs-images/Blog15.jpg",
+            "image" => "/blogs-images/blog15.jpg",
             "url" => "https://s4access.com/blogs/sap-access-management-consultant-guide"
         ],
 
