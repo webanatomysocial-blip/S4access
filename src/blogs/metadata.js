@@ -2,6 +2,7 @@ import blog12 from "../blogs/blogs-images/Blog-img012.jpg";
 import blog13 from "../blogs/blogs-images/9298.jpg";
 import blog11 from "../blogs/blogs-images/Blog-img011.jpg";
 import blog14 from "../blogs/blogs-images/1165.webp";
+import blog15 from "../blogs/blogs-images/blog15.jpg";
 // import blog15 from "../blogs/blogs-images/2290.webp";
 
 
@@ -134,6 +135,15 @@ export const blogMetadata = [
   //   image: blog15,
   //   date: "2026-01-08",
   // },
+  {
+    id: "sap-access-management-consultant-guide",
+    title: "How to Choose the Right SAP Access Consultant: When to Bring in External SAP Security & GRC Experts",
+    slug: "sap-access-management-consultant-guide",
+    metaDescription: "Explore how s4access and its customers achieved growth in 2025 through SAP Access Management, compliance, and innovation—while looking ahead to 2026.",
+    excerpt: "Explore how s4access and its customers achieved growth in 2025 through SAP Access Management, compliance, and innovation—while looking ahead to 2026.",
+    image: blog15,
+    date: "2026-01-28",
+  },
 ];
 
 // Preload images with error handling`
