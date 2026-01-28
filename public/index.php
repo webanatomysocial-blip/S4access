@@ -100,6 +100,23 @@ $blogMetadata = [
         "image" => "/blogs-images/1165.webp",
         "url" => "https://s4access.com/blogs/Your-Partner-for-Efficient-SAP-Access"
     ],
+    [
+        "id" => "Native-HANA-database-authorizations",
+        "title" => "Native HANA Database Authorizations",
+        "slug" => "Native-HANA-database-authorizations",
+        "metaDescription" => "When creating HANA database users and authorizations for custom-made schema structures",
+        "image" => "/blogs-images/Blog-img012.jpg",
+        "url" => "https://s4access.com/blogs/Native-HANA-database-authorizations"
+    ],
+    // [
+    //     "id" => "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
+    //     "title" => "When a company grows, what opportunities can it create for its people?",
+    //     "slug" => "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
+    //     "metaDescription" => "Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
+    //     "image" => "/blogs-images/2290.webp",
+    //     "url" => "https://s4access.com/blogs/When-a-company-grows-what-opportunities-can-it-create-for-its-people"
+    // ],
+
 ];
 
 // Determine protocol and host dynamically

@@ -1,45 +1,54 @@
-
-
-import React, { useState, useEffect, Suspense } from 'react';
-import { Link } from 'react-router-dom';
-import { blogMetadata } from '../blogs/metadata.js';
-import '../css/Blog.css';
+import React, { useState, useEffect, Suspense } from "react";
+import { Link } from "react-router-dom";
+import { blogMetadata } from "../blogs/metadata.js";
+import "../css/Blog.css";
 
 // Dynamically import all JSX files from blogs folder
-const blogModules = import.meta.glob('../blogs/*.jsx', { eager: false });
+const blogModules = import.meta.glob("../blogs/*.jsx", { eager: false });
 const blogKeys = Object.keys(blogModules);
 
 // Sort blogKeys by date in descending order (most recent first)
-const sortedBlogKeys = blogKeys.sort((a, b) => {
-  const blogNameA = a.split('/').pop().replace('.jsx', '');
-  const blogNameB = b.split('/').pop().replace('.jsx', '');
-  const metadataA = blogMetadata.find(blog => blog.id === blogNameA) || { date: '1970-01-01' };
-  const metadataB = blogMetadata.find(blog => blog.id === blogNameB) || { date: '1970-01-01' };
-  return new Date(metadataB.date) - new Date(metadataA.date);
-});
+// AND Filter out blogs that are not in metadata (e.g., commented out)
+const sortedBlogKeys = blogKeys
+  .filter((key) => {
+    const blogName = key.split("/").pop().replace(".jsx", "");
+    return blogMetadata.some((blog) => blog.id === blogName);
+  })
+  .sort((a, b) => {
+    const blogNameA = a.split("/").pop().replace(".jsx", "");
+    const blogNameB = b.split("/").pop().replace(".jsx", "");
+    const metadataA = blogMetadata.find((blog) => blog.id === blogNameA) || {
+      date: "1970-01-01",
+    };
+    const metadataB = blogMetadata.find((blog) => blog.id === blogNameB) || {
+      date: "1970-01-01",
+    };
+    return new Date(metadataB.date) - new Date(metadataA.date);
+  });
 
 const Blogs = ({ backgroundColor, limit = 3 }) => {
   // Log props for debugging
-  console.log('Blogs component props:', { backgroundColor, limit });
+  console.log("Blogs component props:", { backgroundColor, limit });
 
   const totalBlogs = sortedBlogKeys.length;
   // Determine initial number of blogs to show: all for 'all', otherwise use limit
-  const initialVisible = limit === 'all' ? totalBlogs : Math.min(limit, totalBlogs);
+  const initialVisible =
+    limit === "all" ? totalBlogs : Math.min(limit, totalBlogs);
   const [visibleCount, setVisibleCount] = useState(initialVisible);
 
   // Log sortedBlogKeys for debugging
-  console.log('Sorted blog keys:', sortedBlogKeys);
+  console.log("Sorted blog keys:", sortedBlogKeys);
 
   // Preload blog components and images
   useEffect(() => {
-    sortedBlogKeys.slice(0, visibleCount).forEach(key => {
+    sortedBlogKeys.slice(0, visibleCount).forEach((key) => {
       // Preload blog module
-      blogModules[key]().catch(error => {
+      blogModules[key]().catch((error) => {
         console.error(`Error preloading blog ${key}:`, error);
       });
       // Preload image
-      const blogName = key.split('/').pop().replace('.jsx', '');
-      const metadata = blogMetadata.find(blog => blog.id === blogName);
+      const blogName = key.split("/").pop().replace(".jsx", "");
+      const metadata = blogMetadata.find((blog) => blog.id === blogName);
       if (metadata?.image) {
         const img = new Image();
         img.src = metadata.image;
@@ -59,7 +68,7 @@ const Blogs = ({ backgroundColor, limit = 3 }) => {
   };
 
   // Only show "Load More" if limit='all' and there are more blogs to load
-  const showLoadMore = limit === 'all' && visibleCount < totalBlogs;
+  const showLoadMore = limit === "all" && visibleCount < totalBlogs;
 
   return (
     <div className="whole-blog-section" style={{ backgroundColor }}>
@@ -67,29 +76,45 @@ const Blogs = ({ backgroundColor, limit = 3 }) => {
         <div className="blogs-grid">
           {sortedBlogKeys.length === 0 && <p>No blogs found.</p>}
           {sortedBlogKeys.slice(0, visibleCount).map((key, index) => {
-            const blogName = key.split('/').pop().replace('.jsx', '');
-            const metadata = blogMetadata.find(blog => blog.id === blogName) || {
+            const blogName = key.split("/").pop().replace(".jsx", "");
+            const metadata = blogMetadata.find(
+              (blog) => blog.id === blogName,
+            ) || {
               title: blogName,
               slug: blogName.toLowerCase(),
-              excerpt: 'No excerpt available.',
-              image: '/images/placeholder.jpg',
-              date: 'No date',
+              excerpt: "No excerpt available.",
+              image: "/images/placeholder.jpg",
+              date: "No date",
             };
             // Log each blog's metadata for debugging
-            console.log(`Blog: ${blogName}, URL: /blogs/${blogName}, Metadata:`, metadata);
+            console.log(
+              `Blog: ${blogName}, URL: /blogs/${blogName}, Metadata:`,
+              metadata,
+            );
             return (
               <div key={index} className="inner-news-blogs-container">
                 <Suspense fallback={<BlogCardSkeleton />}>
                   <div className="blog-text">
                     <p className="text-black">BLOG</p>
-                    <Link to={`/blogs/${blogName}`} style={{ textDecoration: 'none' }}>
-                      <p className="sub-big-heading-text-black">{metadata.title}</p>
+                    <Link
+                      to={`/blogs/${blogName}`}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <p className="sub-big-heading-text-black">
+                        {metadata.title}
+                      </p>
                     </Link>
                   </div>
-                  <div className="image-hover-text-come" style={{ backgroundImage: `url(${metadata.image})` }}>
+                  <div
+                    className="image-hover-text-come"
+                    style={{ backgroundImage: `url(${metadata.image})` }}
+                  >
                     <div className="inner-text-come">
                       <div>
-                        <Link to={`/blogs/${blogName}`} style={{ textDecoration: 'none' }}>
+                        <Link
+                          to={`/blogs/${blogName}`}
+                          style={{ textDecoration: "none" }}
+                        >
                           <p className="small-text-black">{metadata.excerpt}</p>
                         </Link>
                       </div>
@@ -98,7 +123,8 @@ const Blogs = ({ backgroundColor, limit = 3 }) => {
                         className="read-more-btn-blue"
                         aria-label={`Read more about ${metadata.title}`}
                       >
-                        Read More <i className="bi bi-arrow-right arrow-icon"></i>
+                        Read More{" "}
+                        <i className="bi bi-arrow-right arrow-icon"></i>
                       </Link>
                     </div>
                   </div>

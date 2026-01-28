@@ -2,7 +2,7 @@ import blog12 from "../blogs/blogs-images/Blog-img012.jpg";
 import blog13 from "../blogs/blogs-images/9298.jpg";
 import blog11 from "../blogs/blogs-images/Blog-img011.jpg";
 import blog14 from "../blogs/blogs-images/1165.webp";
-import blog15 from "../blogs/blogs-images/2290.webp";
+// import blog15 from "../blogs/blogs-images/2290.webp";
 
 
 
@@ -125,15 +125,15 @@ export const blogMetadata = [
     image: blog14,
     date: "2026-01-08",
   },
-  {
-    id: "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
-    title: "When a company grows, what opportunities can it create for its people?",
-    slug: "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
-    metaDescription: " Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
-    excerpt: "Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
-    image: blog15,
-    date: "2026-01-08",
-  },
+  // {
+  //   id: "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
+  //   title: "When a company grows, what opportunities can it create for its people?",
+  //   slug: "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
+  //   metaDescription: " Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
+  //   excerpt: "Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
+  //   image: blog15,
+  //   date: "2026-01-08",
+  // },
 ];
 
 // Preload images with error handling`
