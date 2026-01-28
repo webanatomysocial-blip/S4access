@@ -33,7 +33,7 @@ export default function RightSAPAccessConsultant() {
                 />
                 <meta
                     name="description"
-                    content="Learn when to bring in external SAP Access, Security, and GRC experts. Discover how to choose the right SAP consultant to strengthen compliance, controls, and role design.    "
+                    content="Learn when to bring in external SAP Access, Security, and GRC experts. Discover how to choose the right SAP consultant to strengthen compliance, controls, and role design."
                 />
             </Helmet>
 
