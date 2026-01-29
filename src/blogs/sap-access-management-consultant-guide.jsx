@@ -26,7 +26,7 @@ export default function RightSAPAccessConsultant() {
     return (
         <>
             <Helmet>
-                {/* <title>How to Choose the Right SAP Access Consultant: When to Bring in External SAP Security & GRC Experts | s4access</title> */}
+                <title> Expert Guide: Choosing Your SAP Access Consultant | s4access</title>
                 <meta
                     name="title"
                     content=" Expert Guide: Choosing Your SAP Access Consultant | s4access"
@@ -49,7 +49,7 @@ export default function RightSAPAccessConsultant() {
                         <h2>Why Organizations Turn to External SAP access specialists</h2>
                         <p>There are times in a company's lifecycle when internal teams just lack the resources, expertise, or autonomy to address specific SAP access issues. When faced with circumstances like these organisations usually turn to outside consultants:</p>
 
-                        <h2>1. Major System Migrations or Upgrades</h2>
+                        <h2>Major System Migrations or Upgrades</h2>
                         <p>
                             Segregation-of-duties conflicts and new risks may arise from moving to S/4HANA, combining systems, or integrating new modules.Expert consultants help:
                         </p>
@@ -62,7 +62,7 @@ export default function RightSAPAccessConsultant() {
                         </ul>
                         <p>Their experience from multiple similar projects can save months of troubleshooting later.</p>
 
-                        <h2>2. Audit Findings or Compliance Pressures</h2>
+                        <h2>Audit Findings or Compliance Pressures</h2>
                         <p>
                             If internal or external auditors highlight access risks, such as excessive privileges, outdated roles, or lack of firefighter controls, an external consultant adds value by:
 
@@ -76,7 +76,7 @@ export default function RightSAPAccessConsultant() {
                         <p>They bring proven frameworks that align with SOX, GDPR, ISO, and internal governance requirements.
                         </p>
 
-                        <h2>3. High Role Complexity and Legacy Designs</h2>
+                        <h2>High Role Complexity and Legacy Designs</h2>
                         <p>
                             Over years, SAP roles tend to become cluttered. Changes are made quickly, rarely documented, and roles turn into “catch-all” permission sets. External consultants:
                         </p>
@@ -88,7 +88,7 @@ export default function RightSAPAccessConsultant() {
                         <p>This helps reduce risk, reduce firefighting, and future-proof access governance.
                         </p>
 
-                        <h2>4. Shortage of Skilled Internal Resources</h2>
+                        <h2>Shortage of Skilled Internal Resources</h2>
                         <p>
                             Not every organization has a dedicated SAP GRC or security specialist on staff. Sometimes teams need short-term expert support to:
 
@@ -108,7 +108,7 @@ export default function RightSAPAccessConsultant() {
                             Selecting the appropriate partner is the next step after determining that you require outside assistance. SAP access management is too important to leave to speculation, and not all consultants perform at the same level.Here’s what you should look for:
                         </p>
 
-                        <h2>1. Proven SAP Security & GRC Expertise</h2>
+                        <h2>Proven SAP Security & GRC Expertise</h2>
                         <p>
                             The consultant should demonstrate deep knowledge in:
                         </p>
@@ -121,7 +121,7 @@ export default function RightSAPAccessConsultant() {
                         <p>Ask about real project examples, certifications, and industries they’ve worked with.
                         </p>
 
-                        <h2>2. A Business-Aligned Approach</h2>
+                        <h2>A Business-Aligned Approach</h2>
                         <p>
                             Technical skills alone aren’t enough. The best consultants understand how access impacts:
                         </p>
@@ -134,7 +134,7 @@ export default function RightSAPAccessConsultant() {
                         <p>They don’t just “fix roles” they design access so your business runs securely and smoothly.
                         </p>
 
-                        <h2>3. Independence and Transparency</h2>
+                        <h2>Independence and Transparency</h2>
                         <p>
                             A good SAP access consultant brings clarity, not complexity. They should be:
                         </p>
@@ -146,7 +146,7 @@ export default function RightSAPAccessConsultant() {
                         <p>This independence ensures recommendations align with your best interests, not a vendor’s
                         </p>
 
-                        <h2>4. Speed, Efficiency, and Repeatable Frameworks</h2>
+                        <h2>Speed, Efficiency, and Repeatable Frameworks</h2>
                         <p>
                             Seasoned experts bring methodologies refined across many projects. This means:
                         </p>
@@ -159,7 +159,7 @@ export default function RightSAPAccessConsultant() {
                         <p>This efficiency reduces cost and boosts long-term sustainability of your access model.
                         </p>
 
-                        <h2>5. Strong Change Management Skills</h2>
+                        <h2>Strong Change Management Skills</h2>
                         <p>
                             SAP access redesigns can impact hundreds or thousands of users. A skilled consultant helps you:
                         </p>
