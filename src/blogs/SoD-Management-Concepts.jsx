@@ -71,7 +71,7 @@ pressures, emerging trends, and actionable strategies to strengthen security and
                 We’ll help you build
               </p> */}
                             <p className="text-white" style={{ fontWeight: 600 }}>
-                                Navigate SAP Security and Access Risks with Confidence.
+                               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             </p>
                         </div>
                         <div className="blog-right-button">
