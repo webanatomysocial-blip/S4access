@@ -3,6 +3,7 @@ import blog13 from "../blogs/blogs-images/9298.jpg";
 import blog11 from "../blogs/blogs-images/Blog-img011.jpg";
 import blog14 from "../blogs/blogs-images/1165.webp";
 import blog15 from "../blogs/blogs-images/blog15.jpg";
+import blog16 from "../blogs/blogs-images/blog16.jpg";
 // import blog15 from "../blogs/blogs-images/2290.webp";
 
 
@@ -143,6 +144,15 @@ export const blogMetadata = [
     excerpt: "Explore how s4access and its customers achieved growth in 2025 through SAP Access Management, compliance, and innovation—while looking ahead to 2026.",
     image: blog15,
     date: "2026-01-28",
+  },
+  {
+    id: "SoD-Management-Concepts",
+    title: "SoD Management Concepts: Keeping Access Risks Under Control",
+    slug: "SoD-Management-Concepts",
+    metaDescription: "Learn how Segregation of Duties (SoD) management reduces access risks in SAP environments through automated controls, risk-based approaches, and continuous monitoring.",
+    excerpt: "Explore how s4access and its customers achieved growth in 2025 through SAP Access Management, compliance, and innovation—while looking ahead to 2026.",
+    image: blog16,
+    date: "2026-02-10",
   },
 ];
 
