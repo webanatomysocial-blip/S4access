@@ -71,7 +71,7 @@ pressures, emerging trends, and actionable strategies to strengthen security and
                 We’ll help you build
               </p> */}
                             <p className="text-white" style={{ fontWeight: 600 }}>
-                               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                              Stay ahead of SoD risks and automate your controls with s4access 
                             </p>
                         </div>
                         <div className="blog-right-button">
