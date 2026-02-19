@@ -109,21 +109,29 @@ $blogMetadata = [
         "url" => "https://s4access.com/blogs/Native-HANA-database-authorizations"
     ],
     // [
-        //     "id" => "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
-        //     "title" => "When a company grows, what opportunities can it create for its people?",
-        //     "slug" => "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
-        //     "metaDescription" => "Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
-        //     "image" => "/blogs-images/2290.webp",
-        //     "url" => "https://s4access.com/blogs/When-a-company-grows-what-opportunities-can-it-create-for-its-people"
-        // ],
-        [
-            "id" => "sap-access-management-consultant-guide",
-            "title" => "How to Choose the Right SAP Access Consultant: When to Bring in External SAP Security & GRC Experts",
-            "slug" => "sap-access-management-consultant-guide",
-            "metaDescription" => "Learn when to bring in external SAP Access, Security, and GRC experts. Discover how to choose the right SAP consultant to strengthen compliance, controls, and role design.",
-            "image" => "/blogs-images/blog15.jpg",
-            "url" => "https://s4access.com/blogs/sap-access-management-consultant-guide"
-        ],
+    //     "id" => "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
+    //     "title" => "When a company grows, what opportunities can it create for its people?",
+    //     "slug" => "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
+    //     "metaDescription" => "Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
+    //     "image" => "/blogs-images/2290.webp",
+    //     "url" => "https://s4access.com/blogs/When-a-company-grows-what-opportunities-can-it-create-for-its-people"
+    // ],
+    [
+        "id" => "SoD-Management-Concepts",
+        "title" => "SoD Management Concepts: Keeping Access Risks Under Control",
+        "slug" => "SoD-Management-Concepts",
+        "metaDescription" => "Segregation of Duties (SoD) is a foundational internal control designed to reduce the risk of errors, fraud, and misuse of authority. In simple terms, it ensures that no single user has end-to-end control over a critical business process.",
+        "image" => "/blogs-images/Blog16.jpg",
+        "url" => "https://s4access.com/blogs/SoD-Management-Concepts"
+    ],
+    [
+        "id" => "sap-access-management-consultant-guide",
+        "title" => "How to Choose the Right SAP Access Consultant: When to Bring in External SAP Security & GRC Experts",
+        "slug" => "sap-access-management-consultant-guide",
+        "metaDescription" => "Learn when to bring in external SAP Access, Security, and GRC experts. Discover how to choose the right SAP consultant to strengthen compliance, controls, and role design.",
+        "image" => "/blogs-images/blog15.jpg",
+        "url" => "https://s4access.com/blogs/sap-access-management-consultant-guide"
+    ],
 
 ];
 
