@@ -1,0 +1,18 @@
+[33m0296bfc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: rebase (finish): returning to refs/heads/main
+[33m0296bfc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{1}: pull origin main --rebase (start): checkout 0296bfc15ce862378b55a06a3cce4e999efc6e9e
+[33m05d913e[m HEAD@{2}: commit: Removed dist.zip from tracking
+[33ma7e5f9d[m HEAD@{3}: rebase (abort): returning to refs/heads/main
+[33m0296bfc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{4}: pull origin main --rebase (start): checkout 0296bfc15ce862378b55a06a3cce4e999efc6e9e
+[33ma7e5f9d[m HEAD@{5}: commit: Blog changes and Web testing
+[33mb204ade[m HEAD@{6}: commit: Blog Schema
+[33m6fe7f47[m HEAD@{7}: commit: blog
+[33m2b8c56f[m HEAD@{8}: commit: lorem
+[33m0cd42db[m HEAD@{9}: commit: abcd
+[33m75ed48e[m HEAD@{10}: commit: New Blog changes
+[33m82f191b[m HEAD@{11}: commit: New Blog
+[33m2ae53f5[m HEAD@{12}: commit: New Blog
+[33meb60df5[m HEAD@{13}: commit: New Blog
+[33md17720c[m HEAD@{14}: pull origin main: Fast-forward
+[33m8144c1b[m HEAD@{15}: commit: Blog Padding Changes
+[33m860f3fe[m HEAD@{16}: commit: Blog Schema and Faq
+[33m87f5945[m HEAD@{17}: clone: from https://github.com/webanatomysocial-blip/S4access.git

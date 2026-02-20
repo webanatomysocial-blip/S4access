@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/mosol9srujanwhma/public_html/
-    - npm install
-    - npm run build
-    - cp -R dist/* $DEPLOYPATH
+    - export DEPLOYPATH=/home/mosol9srujanwhma/testingdev/
+    - /usr/bin/npm install
+    - /usr/bin/npm run build
+    - /bin/cp -R dist/* $DEPLOYPATH
