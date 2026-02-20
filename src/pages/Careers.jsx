@@ -14,7 +14,7 @@ const Careers = () => {
   return (
     <>
 
-    <Helmet>
+      <Helmet>
         <title>SAP Access Management Careers | s4access
         </title>
         <meta name="title" content="SAP Access Management Careers | s4access" />
@@ -39,7 +39,7 @@ const Careers = () => {
           </p>
 
 
-          
+
         </div>
 
 
@@ -79,7 +79,7 @@ const Careers = () => {
       {/* why s4access section start */}
       <section className="careers-why-s4access-section only-windows">
         <div className="careers-why-s4access-content">
-          <h2 className="big-heading-text-white" style={{textTransform:"none"}}>Why <br />
+          <h2 className="big-heading-text-white" style={{ textTransform: "none" }}>Why <br />
             s4access?</h2>
           <p className="text-white">
             <strong style={{ fontSize: "30px" }}>We are different</strong> <br /><br />
@@ -96,13 +96,13 @@ const Careers = () => {
 
 
 
-      
+
 
       {/* why s4access section start */}
 
       <section className="careers-why-s4access-section only-mobile">
         <div className="careers-why-s4access-content">
-          <h2 className="big-heading-text-white" style={{textTransform:"none"}}>Why s4access?</h2> <br />
+          <h2 className="big-heading-text-white" style={{ textTransform: "none" }}>Why s4access?</h2> <br />
           <p className="sub-big-heading-text-white">
             We are different </p> <br />
           <p className="text-white">
@@ -128,39 +128,39 @@ const Careers = () => {
 
 
 
-     <section className="careers-our-promise-section">
-  <div className="careers-our-promise-content-left">
-    <h2 className="big-heading-text-black">Our promise to you</h2>
-  </div>
-  <div className="careers-our-promise-content-right">
-    <div className="careers-our-promise-content-right-inner">
-      <FaUsers className="text-black" size={24} />
-      <p className="sub-big-heading-text-black-lite">
-        Community and teamwork
-      </p>
-    </div>
-    <div className="careers-our-promise-content-right-inner">
-      <FaTrophy className="text-black" size={24} />
-      <p className="sub-big-heading-text-black-lite">
-        Professional excellence
-      </p>
-    </div>
-  </div>
-  <div className="careers-our-promise-content-right">
-    <div className="careers-our-promise-content-right-inner">
-      <FaDove className="text-black" size={24} />
-      <p className="sub-big-heading-text-black-lite">
-        Freedom and responsibility
-      </p>
-    </div>
-    <div className="careers-our-promise-content-right-inner">
-      <FaHeartbeat className="text-black" size={24} />
-      <p className="sub-big-heading-text-black-lite">
-       Modern benefits with health care
-      </p>
-    </div>
-  </div>
-</section>
+      <section className="careers-our-promise-section">
+        <div className="careers-our-promise-content-left">
+          <h2 className="big-heading-text-black">Our promise to you</h2>
+        </div>
+        <div className="careers-our-promise-content-right">
+          <div className="careers-our-promise-content-right-inner">
+            <FaUsers className="text-black" size={24} />
+            <p className="sub-big-heading-text-black-lite">
+              Community and teamwork
+            </p>
+          </div>
+          <div className="careers-our-promise-content-right-inner">
+            <FaTrophy className="text-black" size={24} />
+            <p className="sub-big-heading-text-black-lite">
+              Professional excellence
+            </p>
+          </div>
+        </div>
+        <div className="careers-our-promise-content-right">
+          <div className="careers-our-promise-content-right-inner">
+            <FaDove className="text-black" size={24} />
+            <p className="sub-big-heading-text-black-lite">
+              Freedom and responsibility
+            </p>
+          </div>
+          <div className="careers-our-promise-content-right-inner">
+            <FaHeartbeat className="text-black" size={24} />
+            <p className="sub-big-heading-text-black-lite">
+              Modern benefits with health care
+            </p>
+          </div>
+        </div>
+      </section>
 
 
 
@@ -174,7 +174,7 @@ const Careers = () => {
 
 
 
-{/* <Blogs /> */}
+      {/* <Blogs /> */}
 
 
 
@@ -194,31 +194,33 @@ const Careers = () => {
 
 
 
-          {/* <div className="open-role-card">
+          <div className="open-role-card">
             <div className="open-role-info">
-              <h3 className="sub-big-heading-text-black">Senior consultant</h3>
+              <h3 className="sub-big-heading-text-black">Junior SAP Consultant</h3>
               <div className="sub-heading-text-black  open-role-details">
-                <span>SAP Security and GRC</span> 
+                <span>Build your next chapter bold and belong here!</span>
                 <p className="open-role-divider"></p>
                 <span>Helsinki </span>
                 <p className="open-role-divider"></p>
                 <span>Remote</span>
+                <p className="open-role-divider"></p>
+                <span>Finnish Speaking</span>
               </div>
             </div><br />
-             <a href="https://s4access.careers.haileyhr.app/en-GB/job/d2cecbb3-f88b-4005-8543-00c9ba8001db/857b7db4-75f0-4d14-94bb-96b387738356/73848863-0220-4c22-942a-91508294e5e0" className="main-button-blue ">
+            <a href="https://s4access.careers.haileyhr.app/" className="main-button-blue ">
               Apply Now<span><i className="bi bi-arrow-up-right"></i></span>
             </a>
-          </div> */}
-
-
-                    <div className="open-role-card">
-
-              <h3 className="sub-big-heading-text-black">No Open Positions</h3>
-
           </div>
 
 
-         
+          {/* <div className="open-role-card"> 
+
+          <h3 className="sub-big-heading-text-black">No Open Positions</h3>
+
+          </div> */}
+
+
+
 
 
 
@@ -234,7 +236,7 @@ const Careers = () => {
       {/* Careers Gallery Section Start */}
       <section className="careers-gallery-section ">
 
-        <h2 className="big-heading-text-black" style={{textTransform:"none"}}>Life at s4access</h2>
+        <h2 className="big-heading-text-black" style={{ textTransform: "none" }}>Life at s4access</h2>
 
 
         <CareersGallerySection />
