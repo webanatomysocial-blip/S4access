@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-   "postbuild": "node compress.mjs && node generate-sitemap.mjs",
+"postbuild": "node generate-sitemap.mjs",
     "build-sitemap": "node generate-sitemap.mjs"
   },
   "dependencies": {
