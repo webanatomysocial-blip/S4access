@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - /usr/bin/npm install
+    - /usr/bin/npm run build
+    - /bin/cp -R dist/* /home/mosol9srujanwhma/testingdev/

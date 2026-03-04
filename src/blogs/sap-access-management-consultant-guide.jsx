@@ -7,19 +7,19 @@ import FAQTemplate from "../components/FAQTemplate.jsx";
 export default function RightSAPAccessConsultant() {
     const faqs = [
         {
-            question: "Why do vague SAP access tickets slow down resolution?",
+            question: "When is external SAP access expertise needed?",
             answer:
-                " Vague tickets do not include enough details. The support team must ask follow-up questions, which increases resolution time and delays the fix.",
+                "External SAP access expertise is required during SAP S/4HANA migrations, system upgrades, or integrations that introduce new access risks. It is also needed when audit findings, compliance pressures, or complex legacy role designs cannot be handled by internal teams.",
         },
         {
-            question: "What information should a good SAP access ticket include?",
+            question: "What SAP access issues are commonly identified in audits?",
             answer:
-                "A good ticket clearly explains the problem and what the user was trying to do. This helps the support team understand the issue and act quickly.",
+                "Audits commonly highlight excessive user privileges, outdated or undocumented roles, segregation-of-duties conflicts, and gaps in emergency or sensitive access controls. These issues increase compliance and operational risk.",
         },
         {
-            question: "How does ticket quality affect service levels?",
+            question: "What should be evaluated when choosing an SAP Access Consultant?",
             answer:
-                "Clear and complete tickets reach the right team faster. This reduces back-and-forth and helps resolve issues more quickly and accurately.",
+                "A consultant should demonstrate strong SAP Security and GRC expertise, understand business and process impact, and work independently and transparently. Experience with scalable role design, clear documentation, and change management is also critical.",
         },
     ];
 
@@ -115,6 +115,7 @@ export default function RightSAPAccessConsultant() {
                         ]
                     }
 
+
                     )}
                 </script>
             </Helmet>
@@ -123,7 +124,7 @@ export default function RightSAPAccessConsultant() {
                 <div className="breach-article-content">
                     <section>
                         <p>
-                            One of the most important and frequently underappreciated tasks in an organization's IT and risk landscape is managing SAP access. It gets harder to make sure that the correct individuals have adequate access at the right time, as organisations expand, systems change, and compliance requirements tighten. External SAP access consultants are essential in this situation.
+                            One of the most important and frequently underappreciated tasks in an organization's IT and risk landscape is managing SAP access. It gets harder to make sure that the correct individuals have adequate access at the right time, as organisations expand, systems change, and compliance requirements tighten. External <a href="https://s4access.com/">SAP access consultants</a> are essential in this situation.
                         </p>
                         <p>
                             But when do you actually need external expertise? And how do you choose the right consultant? Let’s break it down.
@@ -133,7 +134,7 @@ export default function RightSAPAccessConsultant() {
 
                         <h2>Major System Migrations or Upgrades</h2>
                         <p>
-                            Segregation-of-duties conflicts and new risks may arise from moving to S/4HANA, combining systems, or integrating new modules.Expert consultants help:
+                            Segregation-of-duties conflicts and new risks may arise from moving to <a href="https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA">S/4HANA</a>, combining systems, or integrating new modules.Expert consultants help:
                         </p>
                         <ul>
                             <li>Redesign role architecture</li>
@@ -197,7 +198,7 @@ export default function RightSAPAccessConsultant() {
                         <ul>
                             <li>SAP ECC and S/4HANA security concepts</li>
                             <li>GRC Access Control (ARM, ARA, BRM, EAM)</li>
-                            <li>SoD frameworks and risk rule sets</li>
+                            <li><a href="https://s4access.com/access-risk-sod-management">SoD frameworks and risk rule sets</a></li>
                             <li>Modern access governance tools</li>
                         </ul>
                         <p>Ask about real project examples, certifications, and industries they’ve worked with.
@@ -292,9 +293,9 @@ export default function RightSAPAccessConsultant() {
             </div>
 
             {/* FAQs Section */}
-            {/* <div className="faq-pad-section" style={{ paddingLeft: "10px" }}>
+            <div className="faq-pad-section" style={{ paddingLeft: "10px" }}>
                 <FAQTemplate title="FAQs" faqs={faqs} />
-            </div> */}
+            </div>
             {/* CTA Section */}
             <section className="blog-container">
                 <div className="blog-contact-us-section">

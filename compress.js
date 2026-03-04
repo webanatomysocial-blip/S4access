@@ -13,5 +13,5 @@ archive.on('error', (err) => {
 });
 
 archive.pipe(output);
-archive.directory('dist', false); // Compress the dist folder
+archive.directory('dist', false);
 archive.finalize();
