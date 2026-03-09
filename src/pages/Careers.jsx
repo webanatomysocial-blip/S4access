@@ -194,7 +194,7 @@ const Careers = () => {
 
 
 
-          <div className="open-role-card">
+          {/* <div className="open-role-card">
             <div className="open-role-info">
               <h3 className="sub-big-heading-text-black">Junior SAP Consultant</h3>
               <div className="sub-heading-text-black  open-role-details">
@@ -210,14 +210,14 @@ const Careers = () => {
             <a href="https://s4access.careers.haileyhr.app/" className="main-button-blue ">
               Apply Now<span><i className="bi bi-arrow-up-right"></i></span>
             </a>
-          </div>
+          </div> */}
 
 
-          {/* <div className="open-role-card"> 
+          <div className="open-role-card"> 
 
           <h3 className="sub-big-heading-text-black">No Open Positions</h3>
 
-          </div> */}
+          </div>
 
 
 
