@@ -106,7 +106,7 @@ const SAPAuthorizationConceptOwner = () => {
   
     <div className="CustomerSuccess-cta-content">
       <h2 className="big-heading-text-white">
-        Customer Comments About <br className='only-windows' /> S4access Service
+        Customer Comments About <br className='only-windows' /> s4access Service
       </h2>
       <p className="text-white">
        Reliable; understands customer needs and tailors the service accordingly; human-centered and straightforward; continuous and patient/long-term effort to improve the customer's Access Management.

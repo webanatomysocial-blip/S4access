@@ -56,7 +56,7 @@ const S4HanaFioriTransformation = () => {
               
                 <div className="CustomerSuccess-cta-content">
                   <h2 className="big-heading-text-white">
-                    Customer Comments About <br className='only-windows' /> S4access Service
+                    Customer Comments About <br className='only-windows' /> s4access Service
                   </h2>
                   <p className="text-white">
                    “Without the help of the specialist company, we would have been completely stuck.” <br /> – SAP Manager

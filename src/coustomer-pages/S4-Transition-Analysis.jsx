@@ -56,7 +56,7 @@ const S4TransitionAnalysis = () => {
              
                <div className="CustomerSuccess-cta-content">
                  <h2 className="big-heading-text-white">
-                   Customer Comments About <br className='only-windows' /> S4access Service
+                   Customer Comments About <br className='only-windows' /> s4access Service
                  </h2>
                  <p className="text-white">
                  “ We learned so much in this work that resulted in clear savings in the program itself but as well in much higher quality in the implementation. We got a good through analysis of the system and could prepare better hence.” <br /> – SAP Director

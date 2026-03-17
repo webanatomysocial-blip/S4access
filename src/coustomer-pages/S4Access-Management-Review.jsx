@@ -64,7 +64,7 @@ const S4AccessManagementReview = () => {
              
                <div className="CustomerSuccess-cta-content">
                  <h2 className="big-heading-text-white">
-                   Customer Comments About <br className='only-windows' /> S4access Service
+                   Customer Comments About <br className='only-windows' /> s4access Service
                  </h2>
                  <p className="text-white">
                  “This review was totally something else we get from normal audits”<br /> – SAP Director
