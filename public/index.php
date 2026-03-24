@@ -132,6 +132,14 @@ $blogMetadata = [
         "image" => "/blogs-images/blog15.jpg",
         "url" => "https://s4access.com/blogs/sap-access-management-consultant-guide"
     ],
+    [
+        "id" => "How-Leading-CISOs-Are-Approaching-SAP-Access-Management-in-2026",
+        "title" => "How Leading CISOs Are Approaching SAP Access Management in 2026",
+        "slug" => "sap-access-management-ciso-2026",
+        "metaDescription" => "Learn how leading CISOs are transforming SAP access management from a technical IT issue into a strategic enterprise risk priority in 2026.",
+        "image" => "/blogs-images/ciso-sap-access-2026.jpg",
+        "url" => "https://s4access.com/blogs/sap-access-management-ciso-2026"
+    ],
 
 ];
 

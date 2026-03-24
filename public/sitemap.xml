@@ -188,4 +188,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <url>
+    <loc>https://s4access.com/blogs/How-Leading-CISOs-Are-Approaching-SAP-Access-Management-in-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -4,6 +4,7 @@ import blog11 from "../blogs/blogs-images/Blog-img011.jpg";
 import blog14 from "../blogs/blogs-images/1165.webp";
 import blog15 from "../blogs/blogs-images/blog15.jpg";
 import blog16 from "../blogs/blogs-images/blog16.jpg";
+import blogCiso2026 from "../blogs/blogs-images/ciso-sap-access-2026.jpg";
 // import blog15 from "../blogs/blogs-images/2290.webp";
 
 
@@ -153,6 +154,15 @@ export const blogMetadata = [
     excerpt: "Segregation of Duties (SoD) is a foundational internal control designed to reduce the risk of errors, fraud, and misuse of authority. In simple terms, it ensures that no single user has end-to-end control over a critical business process.",
     image: blog16,
     date: "2026-02-10",
+  },
+  {
+    id: "How-Leading-CISOs-Are-Approaching-SAP-Access-Management-in-2026",
+    title: "How Leading CISOs Are Approaching SAP Access Management in 2026",
+    slug: "sap-access-management-ciso-2026",
+    metaDescription: "Learn how leading CISOs are transforming SAP access management from a technical IT issue into a strategic enterprise risk priority in 2026.",
+    excerpt: "Leading CISOs are changing how SAP Access Management is handled—shifting from a technical blind spot to a strategic enterprise risk discussion. Discover the key trends for 2026.",
+    image: blogCiso2026,
+    date: "2026-03-24",
   },
 ];
 
