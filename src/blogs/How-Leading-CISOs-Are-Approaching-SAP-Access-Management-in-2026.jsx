@@ -24,42 +24,76 @@ const CISOBlogs2026 = () => {
         {/* ======================= ARTICLE SCHEMA ======================= */}
         <script type="application/ld+json">
           {`
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://s4access.com/blogs/sap-access-management-ciso-2026"
-      },
-      "headline": "How Leading CISOs Are Approaching SAP Access Management in 2026",
-      "description": "Learn how leading CISOs are transforming SAP access management from a technical IT issue into a strategic enterprise risk priority in 2026.",
-      "author": {
-        "@type": "Organization",
-        "name": "s4access"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "s4access",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://s4access.com/images/black-logo-400.png"
-        }
-      },
-      "datePublished": "2026-03-24T00:00:00+00:00",
-      "dateModified": "2026-03-24T00:00:00+00:00",
-      "inLanguage": "en-GB",
-      "keywords": [
-        "SAP Access Management",
-        "CISO strategy",
-        "SAP security",
-        "compliance",
-        "enterprise risk",
-        "S/4HANA migration",
-        "audit ready",
-        "access governance"
-      ]
+   {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How Leading CISOs Are Approaching SAP Access Management in 2026",
+  "description": "How leading CISOs approach SAP access management in 2026 linking access governance, SoD controls, and S/4HANA migration to stronger audit and compliance outcomes.",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://s4access.com/blogs/How-Leading-CISOs-Are-Approaching-SAP-Access-Management-in-2026"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "s4access"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "s4access",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://s4access.com/logo.png"
     }
+  },
+  "datePublished": "2026-03-25",
+  "dateModified": "2026-03-25",
+  "articleSection": "SAP Security",
+  "keywords": [
+    "SAP access management",
+    "SAP access governance",
+    "SAP user access review",
+    "SAP SoD conflicts",
+    "SAP S/4HANA access controls",
+    "SAP audit compliance controls"
+  ]
+}
+
     `}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Why is SAP access management important for CISOs?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SAP access management allows CISOs to control user roles, permissions, and authorizations across SAP systems. Strong access governance reduces security risks, prevents unauthorized access, and ensures user privileges align with business responsibilities and compliance requirements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do SAP access issues affect audits?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Issues such as Segregation of Duties conflicts, excessive user privileges, and outdated access roles can lead to audit findings. Effective SAP access controls help organizations meet compliance standards such as SOX and GDPR while maintaining stronger internal governance."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why review SAP access during S/4HANA migration?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "S/4HANA migration provides an opportunity to review existing roles and remove legacy permissions that may no longer be required. Many organizations redesign roles and implement stronger SAP access governance frameworks before the new environment goes live."
+                }
+              }
+            ]
+          }
+
+          )}
         </script>
       </Helmet>
 
@@ -91,7 +125,7 @@ const CISOBlogs2026 = () => {
           <p>
             SOX, GDPR, and internal audit requirements all rely heavily on SAP
             access controls, often more than organisations realise. Unresolved
-            Segregation of Duties conflicts, over‑privileged users, and outdated
+            <a href="https://s4access.com/sod-role-redesign"> Segregation of Duties</a> conflicts, over‑privileged users, and outdated
             access aren’t just technical issues — they become audit findings and
             control weaknesses. By explicitly linking SAP access risks to
             regulatory obligations, CISOs make both the risk and the remediation
@@ -112,7 +146,7 @@ const CISOBlogs2026 = () => {
 
           <h2>They use S/4HANA migration as a control reset</h2>
           <p>
-            For organisations moving or mid-journey to SAP S/4HANA, the best
+            For organisations moving or mid-journey to <a href="https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA">SAP S/4HANA</a>, the best
             time to fix access is before go‑live. Smart CISOs treat migration as
             a forcing function: an opportunity to rationalise roles, remove
             legacy entitlements, and embed access governance from day one. Those
@@ -127,8 +161,8 @@ const CISOBlogs2026 = () => {
             measured against clear and defensible standards.
           </p>
           <p>
-            If your organisation is reassessing its approach to SAP access
-            management, s4access helps organisations succeed in integrating
+            If your organisation is reassessing its approach to <a href="https://s4access.com/sap-access-management-automation">SAP access
+              management</a>, s4access helps organisations succeed in integrating
             control and accountability into SAP access, ensuring that audit
             preparedness is continuous.
           </p>
