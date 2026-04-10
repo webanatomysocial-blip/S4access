@@ -196,7 +196,7 @@ and maintain authorization concepts to ensure compliance and secure access manag
           <p className="text-white">
             Discover how our SAP Authorization Concept Owner Service transformed user management for a steel manufacturer, enhancing security, compliance, and efficiency.
           </p>
-          <Link to="/sap-authorisation-concept-owner" className="read-more-btn ">
+          <Link to="/customer-success/sap-authorisation-concept-owner" className="read-more-btn ">
             Read More  <i className="bi bi-arrow-right arrow-icon"></i>
           </Link>
         </div>

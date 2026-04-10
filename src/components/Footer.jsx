@@ -95,7 +95,7 @@ function Footer() {
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/sap-access-management-review" className="footer-link">
+                  <Link to="/services/sap-access-management-review" className="footer-link">
                     SAP Access Management Review
                   </Link>
                 </li>
@@ -106,7 +106,7 @@ function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/sap-access-management-automation" className="footer-link">
+                  <Link to="/services/sap-access-management-automation" className="footer-link">
                     SAP Access Management Automation
                   </Link>
                 </li>
@@ -118,18 +118,18 @@ function Footer() {
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/sap-s4-access-implementation" className="footer-link">
+                  <Link to="/services/sap-s4-access-implementation" className="footer-link">
                     SAP S/4 Access Implementation
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/sod-role-redesign" className="footer-link">
+                  <Link to="/services/sod-role-redesign" className="footer-link">
                     SoD / Role redesign
                   </Link>
                 </li>
                 <li>
-                  <Link to="/reorganisation-ma-projects" className="footer-link">
+                  <Link to="/services/reorganisation-ma-projects" className="footer-link">
                     Reorganisation / M&A projects
                   </Link>
                 </li>
@@ -187,18 +187,18 @@ function Footer() {
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/outsourced-access-management" className="footer-link">
+                  <Link to="/services/outsourced-access-management" className="footer-link">
                     Outsourced Access Management
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/authorisation-concept-owner" className="footer-link">
+                  <Link to="/services/authorisation-concept-owner" className="footer-link">
                     Authorisation Concept Owner
                   </Link>
                 </li>
                 <li>
-                  <Link to="/security-architect" className="footer-link">
+                  <Link to="/services/security-architect" className="footer-link">
                     Security Architect
                   </Link>
                 </li>
@@ -210,18 +210,18 @@ function Footer() {
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/access-risk-sod-management" className="footer-link">
+                  <Link to="/services/access-risk-sod-management" className="footer-link">
                     Access Risk SoD Management
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/ff-log-review-automation" className="footer-link">
+                  <Link to="/services/ff-log-review-automation" className="footer-link">
                     FF Log Review Automation
                   </Link>
                 </li>
                 <li>
-                  <Link to="/sap-license-optimisation" className="footer-link">
+                  <Link to="/services/sap-license-optimisation" className="footer-link">
                     SAP License Optimisation
                   </Link>
                 </li>

@@ -106,71 +106,76 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/sap-authorisation-concept-owner</loc>
+    <loc>https://s4access.com/customer-success/sap-authorisation-concept-owner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/s4-access-management-review</loc>
+    <loc>https://s4access.com/customer-success/s4-access-management-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/s4-transition-analysis</loc>
+    <loc>https://s4access.com/customer-success/s4-transition-analysis</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/s4-hana-fiori-transformation</loc>
+    <loc>https://s4access.com/customer-success/s4-hana-fiori-transformation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/blogs/Autumn-2025-Outlook</loc>
+    <loc>https://s4access.com/customer-success/stabilising-sap-access-at-scale</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://s4access.com/blogs/Turning-Frustration-into-Value</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://s4access.com/blogs/Best-Practices-and-Pitfalls</loc>
+    <loc>https://s4access.com/blogs/autumn-2025-outlook</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://s4access.com/blogs/Typical-Challenges-in-Approving-SAP-Access-Requests</loc>
+    <loc>https://s4access.com/blogs/turning-frustration-into-value</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://s4access.com/blogs/RICEFW-Security-Guidelines</loc>
+    <loc>https://s4access.com/blogs/best-practices-and-pitfalls</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://s4access.com/blogs/RICEFW-Security-Guidelines-Part-2</loc>
+    <loc>https://s4access.com/blogs/typical-challenges-in-approving-sap-access-requests</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://s4access.com/blogs/ricefw-security-guidelines</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
-    <loc>https://s4access.com/blogs/How-Firefighter-IDs-Help-You-Stay-Compliant</loc>
+    <loc>https://s4access.com/blogs/ricefw-security-guidelines-part-2</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
 
   <url>
-    <loc>https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA</loc>
+    <loc>https://s4access.com/blogs/how-firefighter-ids-help-you-stay-compliant</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+
+  <url>
+    <loc>https://s4access.com/blogs/building-display-roles-the-smart-way-in-sap-s4hana</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -184,13 +189,13 @@
 
 
   <url>
-    <loc>https://s4access.com/blogs/Native-HANA-database-authorizations</loc>
+    <loc>https://s4access.com/blogs/native-hana-database-authorizations</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://s4access.com/blogs/How-Leading-CISOs-Are-Approaching-SAP-Access-Management-in-2026</loc>
+    <loc>https://s4access.com/blogs/how-leading-cisos-are-approaching-sap-access-management-in-2026</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

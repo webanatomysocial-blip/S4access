@@ -368,7 +368,7 @@ efficiency in S/4HANA. Get insights to optimize SoD, reduce risk & lower costs e
                     <p className="text-white">
                         Learn how our S/4 Access Management Review identified critical issues and provided a clear roadmap to strengthen SAP access controls for a client.
                     </p>
-                    <Link to="/s4-access-management-review" className="read-more-btn ">
+                    <Link to="/customer-success/s4-access-management-review" className="read-more-btn ">
                         Read More  <i className="bi bi-arrow-right arrow-icon"></i>
                     </Link>
                 </div>

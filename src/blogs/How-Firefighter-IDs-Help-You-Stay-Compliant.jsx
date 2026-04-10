@@ -297,7 +297,7 @@ export default function Blog5() {
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/ff-log-review-automation" className="button-green">
+              <Link to="/services/ff-log-review-automation" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

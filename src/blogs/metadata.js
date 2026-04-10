@@ -23,7 +23,7 @@ export const blogMetadata = [
   {
     id: "Autumn-2025-Outlook",
     title: "Autumn 2025 Outlook: Navigating SAP Security And Access Management In A New Market Reality – Is There A Way Forward ?",
-    slug: "Autumn-2025-Outlook",
+    slug: "autumn-2025-outlook",
     metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
     excerpt: "In Autumn 2025, economic pressures demand smarter SAP security and access management. Discover common pitfalls and a clear, actionable plan to strengthen your SAP systems while aligning with business needs in a transforming market.",
     image: "/blogs-images/2.jpg",
@@ -32,7 +32,7 @@ export const blogMetadata = [
   {
     id: "Turning-Frustration-into-Value",
     title: "Understanding SAP Access Management Audits: Turning Frustration Into Value ",
-    slug: "Turning-Frustration-into-Value",
+    slug: "turning-frustration-into-value",
     metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
     excerpt: "When speaking with SAP customers, one sentiment comes up again and again: audits are frustrating. Many teams feel that audit processes are disconnected from the realities of day-to-day SAP operations. Findings often focus on technical details that seem minor or irrelevant, while overlooking business context and practical constraints.",
     image: "/blogs-images/1.jpg",
@@ -41,7 +41,7 @@ export const blogMetadata = [
   {
     id: "Best-Practices-and-Pitfalls",
     title: "Managing Public Views In Fiori S/4HANA: Best Practices And Pitfalls",
-    slug: "Best-Practices-and-Pitfalls",
+    slug: "best-practices-and-pitfalls",
     metaDescription: "In SAP S/4HANA Fiori apps—whether standard or extended—public views play a key role in tailoring user experiences. These views can be created with a transport request (TR) and mapped to user-specific roles, ensuring that only authorized users with the appropriate roles can access them.",
     excerpt: "In SAP S/4HANA Fiori apps—whether standard or extended—public views play a key role in tailoring user experiences. These views can be created with a transport request (TR) and mapped to user-specific roles, ensuring that only authorized users with the appropriate roles can access them.",
     image: "/blogs-images/3.jpg",
@@ -50,7 +50,7 @@ export const blogMetadata = [
   {
     id: "Typical-Challenges-in-Approving-SAP-Access-Requests",
     title: "Typical Challenges In Approving SAP Access Requests",
-    slug: "Typical-Challenges-in-Approving-SAP-Access-Requests",
+    slug: "typical-challenges-in-approving-sap-access-requests",
     metaDescription: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
     excerpt: "Approving SAP access requests is not just a formality—it requires careful judgment and can directly impact the amount of access risks. Governance mandate means the permission to say no just as well as yes: approvers must actively review each request, not just rubber-stamp them.",
     image: "/blogs-images/Blog-5.jpg",
@@ -59,7 +59,7 @@ export const blogMetadata = [
   {
     id: "RICEFW-Security-Guidelines",
     title: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part I",
-    slug: "RICEFW-Security-Guidelines-Building-Security-into-Custom-Developments-Part-I",
+    slug: "ricefw-security-guidelines-building-security-into-custom-developments-part-i",
     metaDescription: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
     excerpt: "When talking about SAP security, most conversations revolve around roles, authorizations, and segregation of duties. But there’s another critical piece that often slips under the radar: RICEFW objects.",
     image: "/blogs-images/Blog-6.jpg",
@@ -68,7 +68,7 @@ export const blogMetadata = [
   {
     id: "RICEFW-Security-Guidelines-Part-2",
     title: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part II",
-    slug: "RICEFW-Security-Guidelines-Building-Security-into-Custom-Developments-Part-II",
+    slug: "ricefw-security-guidelines-building-security-into-custom-developments-part-ii",
     metaDescription: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
     excerpt: "When discussing SAP security, the focus often stays on roles, authorizations, and segregation of duties. However, an equally critical aspect tends to go unnoticed, RICEFW objects. In Part II of our blog series, we’ll dive deeper into other key RICEFW artifacts, namely Enhancements, Forms, and Workflows. ",
     image: "/blogs-images/Blog-7.jpg",
@@ -77,7 +77,7 @@ export const blogMetadata = [
   {
     id: "How-Firefighter-IDs-Help-You-Stay-Compliant",
     title: "When Access Becomes A Risk: How Firefighter IDs Help You Stay Compliant",
-    slug: "When-Access-Becomes-a-Risk-How-Firefighter-IDs-Help-You-Stay-Compliant",
+    slug: "when-access-becomes-a-risk-how-firefighter-ids-help-you-stay-compliant",
     metaDescription: "How SAP Firefighter IDs provide controlled emergency access, prevent security risks, and keep systems audit-compliant with logging and timely review processes.",
     excerpt: "In the world of SAP security and compliance, emergency access is a necessary but sensitive topic. When critical issues arise - like system outages, failed batch jobs, or urgent configuration changes users may need elevated access to resolve them quickly. This is where Firefighter IDs come into play.",
     image: "/blogs-images/Blog8.jpg",
@@ -86,7 +86,7 @@ export const blogMetadata = [
   {
     id: "Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA",
     title: "Building Display Roles The Smart Way In SAP S/4HANA",
-    slug: "Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA",
+    slug: "building-display-roles-the-smart-way-in-sap-s4hana",
     metaDescription: "How SAP Firefighter IDs provide controlled emergency access, prevent security risks, and keep systems audit-compliant with logging and timely review processes.",
     excerpt: "In many SAP S/4HANA implementations, one of the under-appreciated tasks is defining roles that only allow viewing of data and functions, the so-called “display” roles. Why does this matter? Because letting users see without the risk of accidental change or authorization excess is key for audit and compliance purposes as well as for smooth operations. In this post I’ll walk through why display roles are important, what you should watch out for, how to build them, and some real-life tips to avoid common pitfalls.",
     image: "/blogs-images/Blog10.jpg",
@@ -104,7 +104,7 @@ export const blogMetadata = [
   {
     id: "Native-HANA-database-authorizations",
     title: "Native HANA Database Authorizations",
-    slug: "Native-HANA-database-authorizations",
+    slug: "native-hana-database-authorizations",
     metaDescription: "When creating HANA database users and authorizations for custom-made schema structures",
     excerpt: "When creating HANA database users and authorizations for custom-made schema structures, it is a very smart move to think ahead about how the assignments will be structured and managed.",
     image: blog12,
@@ -113,7 +113,7 @@ export const blogMetadata = [
   {
     id: "A-Year-of-Strong-Growth-s4access-and-Its-Customers-Moving-Forward-Together",
     title: "A Year Of Strong Growth: s4access And Its Customers Moving Forward Together",
-    slug: "A-Year-of-Strong-Growth-s4access-and-Its-Customers-Moving-Forward-Together",
+    slug: "a-year-of-strong-growth-s4access-and-its-customers-moving-forward-together",
     metaDescription: "2025 has been a year of strong growth, innovation, and close collaboration with our customers and partners.",
     excerpt: "2025 has been a year of strong growth, innovation, and close collaboration with our customers and partners.",
     image: blog13,
@@ -122,7 +122,7 @@ export const blogMetadata = [
   {
     id: "Your-Partner-for-Efficient-SAP-Access",
     title: "Your Partner for Efficient SAP Access",
-    slug: "Your-Partner-for-Efficient-SAP-Access",
+    slug: "your-partner-for-efficient-sap-access",
     metaDescription: "Our SAP Access Management Services handle over 1,000 service requests every month. That’s a lot of tickets, and every single one matters. The quality of the initial request directly affects how quickly and accurately we can help.",
     excerpt: "Our SAP Access Management Services handle over 1,000 service requests every month. That’s a lot of tickets, and every single one matters. The quality of the initial request directly affects how quickly and accurately we can help.",
     image: blog14,
@@ -131,7 +131,7 @@ export const blogMetadata = [
   // {
   //   id: "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
   //   title: "When a company grows, what opportunities can it create for its people?",
-  //   slug: "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
+  //   slug: "when-a-company-grows-what-opportunities-can-it-create-for-its-people",
   //   metaDescription: " Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
   //   excerpt: "Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
   //   image: blog15,
@@ -149,7 +149,7 @@ export const blogMetadata = [
   {
     id: "SoD-Management-Concepts",
     title: "SoD Management Concepts: Keeping Access Risks Under Control",
-    slug: "SoD-Management-Concepts",
+    slug: "sod-management-concepts",
     metaDescription: "Segregation of Duties (SoD) is a foundational internal control designed to reduce the risk of errors, fraud, and misuse of authority. In simple terms, it ensures that no single user has end-to-end control over a critical business process.",
     excerpt: "Segregation of Duties (SoD) is a foundational internal control designed to reduce the risk of errors, fraud, and misuse of authority. In simple terms, it ensures that no single user has end-to-end control over a critical business process.",
     image: blog16,

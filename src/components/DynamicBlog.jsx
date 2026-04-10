@@ -23,8 +23,9 @@ export default function DynamicBlog() {
     const key = String(blogName).toLowerCase();
     return (
       blogMetadata.find((b) => {
-        const id = String(b.id ?? b.slug ?? "").toLowerCase();
-        return id === key;
+        const matchSlug = b.slug ? String(b.slug).toLowerCase() : null;
+        const matchId = b.id ? String(b.id).toLowerCase() : null;
+        return matchSlug === key || matchId === key;
       }) ?? null
     );
   }, [blogName]);

@@ -23,13 +23,13 @@ const slideData = [
     textImg: null,
     image: banner2,
     text: 'S/4 Access – Get it right from the beginning !',
-    link: '/sap-s4-access-implementation', // Unique link for slide 2
+    link: '/services/sap-s4-access-implementation', // Unique link for slide 2
   },
   {
     textImg: null,
     image: banner3,
     text: 'What is the current status of your SAP Access Management?',
-    link: '/sap-access-management-review', // Unique link for slide 3
+    link: '/services/sap-access-management-review', // Unique link for slide 3
   },
   {
     textImg: null,

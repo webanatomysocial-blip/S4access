@@ -190,7 +190,7 @@ risk mitigation, SoD alignment & seamless governance to secure your enterprise s
                         <p className="text-black">
                             We transformed SAP S/4 access and Fiori UX for a global home furnishing brand after a failed <br /> go-live.
                         </p>
-                        <Link to="/s4-hana-fiori-transformation" className="read-more-btn-blue ">
+                        <Link to="/customer-success/s4-hana-fiori-transformation" className="read-more-btn-blue ">
                             Read More  <i className="bi bi-arrow-right arrow-icon"></i>
                         </Link>
                         <div className="image-container-showcase">
@@ -209,7 +209,7 @@ risk mitigation, SoD alignment & seamless governance to secure your enterprise s
                         <p className="text-black">
                             We delivered a clear resource plan, <br /> preventing disruptions and optimizing <br /> the transition process.
                         </p>
-                        <Link to="/s4-transition-analysis" className="read-more-btn-blue ">
+                        <Link to="/customer-success/s4-transition-analysis" className="read-more-btn-blue ">
                             Read More  <i className="bi bi-arrow-right arrow-icon"></i>
                         </Link>
                         <div className="image-container-showcase">

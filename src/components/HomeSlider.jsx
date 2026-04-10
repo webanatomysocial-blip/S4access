@@ -40,13 +40,13 @@ const HomeSlider = () => {
       textImg: null,
       image: banner2,
       text: 'S/4 Access – Get it right from the beginning !',
-      link: '/sap-s4-access-implementation',
+      link: '/services/sap-s4-access-implementation',
     },
     {
       textImg: null,
       image: banner3,
       text: 'What is the current status of your SAP Access Management?',
-      link: '/sap-access-management-review',
+      link: '/services/sap-access-management-review',
     },
     {
       textImg: null,

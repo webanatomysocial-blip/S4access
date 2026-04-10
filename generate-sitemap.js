@@ -25,17 +25,18 @@ const staticRoutes = [
   { url: '/ff-log-review-automation', changefreq: 'monthly', priority: 0.7 },
   { url: '/sap-license-optimisation', changefreq: 'monthly', priority: 0.7 },
   { url: '/s4accessprojects', changefreq: 'monthly', priority: 0.7 },
-  { url: '/sap-authorisation-concept-owner', changefreq: 'monthly', priority: 0.7 },
-  { url: '/s4-access-management-review', changefreq: 'monthly', priority: 0.7 },
-  { url: '/s4-transition-analysis', changefreq: 'monthly', priority: 0.7 },
-  { url: '/s4-hana-fiori-transformation', changefreq: 'monthly', priority: 0.7 },
+  { url: '/customer-success/sap-authorisation-concept-owner', changefreq: 'monthly', priority: 0.7 },
+  { url: '/customer-success/s4-access-management-review', changefreq: 'monthly', priority: 0.7 },
+  { url: '/customer-success/s4-transition-analysis', changefreq: 'monthly', priority: 0.7 },
+  { url: '/customer-success/s4-hana-fiori-transformation', changefreq: 'monthly', priority: 0.7 },
+  { url: '/customer-success/stabilising-sap-access-at-scale', changefreq: 'monthly', priority: 0.7 },
 ];
 
 // Generate sitemap
 (async () => {
   // Get dynamic blog routes from blogMetadata
   const dynamicBlogRoutes = blogMetadata.map(blog => ({
-    url: `/blogs/${blog.id}`,
+    url: `/blogs/${blog.slug}`,
     changefreq: 'weekly',
     priority: 0.9,
     lastmod: blog.date || new Date().toISOString(), // Use blog.date if available

@@ -97,7 +97,7 @@ const Blogs = ({ backgroundColor, limit = 3 }) => {
                   <div className="blog-text">
                     <p className="text-black">BLOG</p>
                     <Link
-                      to={`/blogs/${blogName}`}
+                      to={`/blogs/${metadata.slug}`}
                       style={{ textDecoration: "none" }}
                     >
                       <p className="sub-big-heading-text-black">
@@ -112,14 +112,14 @@ const Blogs = ({ backgroundColor, limit = 3 }) => {
                     <div className="inner-text-come">
                       <div>
                         <Link
-                          to={`/blogs/${blogName}`}
+                          to={`/blogs/${metadata.slug}`}
                           style={{ textDecoration: "none" }}
                         >
                           <p className="small-text-black">{metadata.excerpt}</p>
                         </Link>
                       </div>
                       <Link
-                        to={`/blogs/${blogName}`}
+                        to={`/blogs/${metadata.slug}`}
                         className="read-more-btn-blue"
                         aria-label={`Read more about ${metadata.title}`}
                       >

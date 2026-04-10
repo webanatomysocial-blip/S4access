@@ -15,66 +15,66 @@ $blogMetadata = [
     [
         "id" => "Autumn-2025-Outlook",
         "title" => "Autumn 2025 Outlook: Navigating SAP Security and Access Management in a New Market Reality – Is There a Way Forward ?",
-        "slug" => "Autumn-2025-Outlook",
+        "slug" => "autumn-2025-outlook",
         "metaDescription" => "Explore SAP security and access management in Autumn 2025's cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
         "image" => "/blogs-images/2.jpg",
-        "url" => "https://s4access.com/blogs/Autumn-2025-Outlook"
+        "url" => "https://s4access.com/blogs/autumn-2025-outlook"
     ],
     [
         "id" => "Turning-Frustration-into-Value",
         "title" => "Understanding SAP Access Management Audits: Turning Frustration into Value ",
-        "slug" => "Turning-Frustration-into-Value",
+        "slug" => "turning-frustration-into-value",
         "metaDescription" => "When speaking with SAP customers, one sentiment comes up again and again: audits are frustrating. Many teams feel that audit processes are disconnected from the realities of day-to-day SAP operations.",
         "image" => "/blogs-images/1.jpg",
-        "url" => "https://s4access.com/blogs/Turning-Frustration-into-Value"
+        "url" => "https://s4access.com/blogs/turning-frustration-into-value"
     ],
     [
         "id" => "Best-Practices-and-Pitfalls",
         "title" => "Managing Public Views in Fiori S/4HANA: Best Practices and Pitfalls",
-        "slug" => "Best-Practices-and-Pitfalls",
+        "slug" => "best-practices-and-pitfalls",
         "metaDescription" => "In SAP S/4HANA Fiori apps—whether standard or extended—public views play a key role in tailoring user experiences.",
         "image" => "/blogs-images/3.jpg",
-        "url" => "https://s4access.com/blogs/Best-Practices-and-Pitfalls"
+        "url" => "https://s4access.com/blogs/best-practices-and-pitfalls"
     ],
     [
         "id" => "Typical-Challenges-in-Approving-SAP-Access-Requests",
         "title" => "Typical Challenges in Approving SAP Access Requests",
-        "slug" => "Typical-Challenges-in-Approving-SAP-Access-Requests",
+        "slug" => "typical-challenges-in-approving-sap-access-requests",
         "metaDescription" => "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
         "image" => "/blogs-images/Blog-5.jpg",
-        "url" => "https://s4access.com/blogs/Typical-Challenges-in-Approving-SAP-Access-Requests"
+        "url" => "https://s4access.com/blogs/typical-challenges-in-approving-sap-access-requests"
     ],
     [
         "id" => "RICEFW-Security-Guidelines",
         "title" => "RICEFW Security Guidelines: Building Security into Custom Developments – Part I",
-        "slug" => "RICEFW-Security-Guidelines-Building-Security-into-Custom-Developments-Part-I",
+        "slug" => "ricefw-security-guidelines-building-security-into-custom-developments-part-i",
         "metaDescription" => "When talking about SAP security, most conversations revolve around roles, authorizations, and segregation of duties. But there's another critical piece that often slips under the radar: RICEFW objects.",
         "image" => "/blogs-images/Blog-6.jpg",
-        "url" => "https://s4access.com/blogs/RICEFW-Security-Guidelines-Building-Security-into-Custom-Developments-Part-I"
+        "url" => "https://s4access.com/blogs/ricefw-security-guidelines-building-security-into-custom-developments-part-i"
     ],
     [
         "id" => "RICEFW-Security-Guidelines-Part-2",
         "title" => "RICEFW Security Guidelines: Building Security into Custom Developments – Part II",
-        "slug" => "RICEFW-Security-Guidelines-Building-Security-into-Custom-Developments-Part-II",
+        "slug" => "ricefw-security-guidelines-building-security-into-custom-developments-part-ii",
         "metaDescription" => "In Part II of our blog series, we'll dive deeper into other key RICEFW artifacts, namely Enhancements, Forms, and Workflows.",
         "image" => "/blogs-images/Blog-7.jpg",
-        "url" => "https://s4access.com/blogs/RICEFW-Security-Guidelines-Building-Security-into-Custom-Developments-Part-II"
+        "url" => "https://s4access.com/blogs/ricefw-security-guidelines-building-security-into-custom-developments-part-ii"
     ],
     [
         "id" => "How-Firefighter-IDs-Help-You-Stay-Compliant",
         "title" => "When Access Becomes a Risk: How Firefighter IDs Help You Stay Compliant",
-        "slug" => "When-Access-Becomes-a-Risk-How-Firefighter-IDs-Help-You-Stay-Compliant",
+        "slug" => "when-access-becomes-a-risk-how-firefighter-ids-help-you-stay-compliant",
         "metaDescription" => "How SAP Firefighter IDs provide controlled emergency access, prevent security risks, and keep systems audit-compliant with logging and timely review processes.",
         "image" => "/blogs-images/Blog8.jpg",
-        "url" => "https://s4access.com/blogs/When-Access-Becomes-a-Risk-How-Firefighter-IDs-Help-You-Stay-Compliant"
+        "url" => "https://s4access.com/blogs/when-access-becomes-a-risk-how-firefighter-ids-help-you-stay-compliant"
     ],
     [
         "id" => "Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA",
         "title" => "Building Display Roles the Smart Way in SAP S/4HANA",
-        "slug" => "Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA",
+        "slug" => "building-display-roles-the-smart-way-in-sap-s4hana",
         "metaDescription" => "How to build display roles in SAP S/4HANA correctly to avoid common pitfalls and ensure compliance.",
         "image" => "/blogs-images/Blog10.jpg",
-        "url" => "https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA"
+        "url" => "https://s4access.com/blogs/building-display-roles-the-smart-way-in-sap-s4hana"
     ],
     [
         "id" => "why-feedback-from-it-auditors-matters",
@@ -87,42 +87,42 @@ $blogMetadata = [
     [
         "id" => "A-Year-of-Strong-Growth-s4access-and-Its-Customers-Moving-Forward-Together",
         "title" => "A Year of Strong Growth: s4access and Its Customers Moving Forward Together",
-        "slug" => "A-Year-of-Strong-Growth-s4access-and-Its-Customers-Moving-Forward-Together",
+        "slug" => "a-year-of-strong-growth-s4access-and-its-customers-moving-forward-together",
         "metaDescription" => "Explore how s4access and its customers achieved growth in 2025 through SAP Access Management, compliance, and innovation—while looking ahead to 2026.",
         "image" => "/blogs-images/9298.jpg",
-        "url" => "https://s4access.com/blogs/A-Year-of-Strong-Growth-s4access-and-Its-Customers-Moving-Forward-Together"
+        "url" => "https://s4access.com/blogs/a-year-of-strong-growth-s4access-and-its-customers-moving-forward-together"
     ],
     [
         "id" => "Your-Partner-for-Efficient-SAP-Access",
         "title" => "Your Partner for Efficient SAP Access",
-        "slug" => "Your-Partner-for-Efficient-SAP-Access",
+        "slug" => "your-partner-for-efficient-sap-access",
         "metaDescription" => "Learn how clear SAP access tickets improve service levels, reduce delays, and help support teams resolve issues faster.",
         "image" => "/blogs-images/1165.webp",
-        "url" => "https://s4access.com/blogs/Your-Partner-for-Efficient-SAP-Access"
+        "url" => "https://s4access.com/blogs/your-partner-for-efficient-sap-access"
     ],
     [
         "id" => "Native-HANA-database-authorizations",
         "title" => "Native HANA Database Authorizations",
-        "slug" => "Native-HANA-database-authorizations",
+        "slug" => "native-hana-database-authorizations",
         "metaDescription" => "When creating HANA database users and authorizations for custom-made schema structures",
         "image" => "/blogs-images/Blog-img012.jpg",
-        "url" => "https://s4access.com/blogs/Native-HANA-database-authorizations"
+        "url" => "https://s4access.com/blogs/native-hana-database-authorizations"
     ],
     // [
     //     "id" => "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
     //     "title" => "When a company grows, what opportunities can it create for its people?",
-    //     "slug" => "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
+    //     "slug" => "when-a-company-grows-what-opportunities-can-it-create-for-its-people",
     //     "metaDescription" => "Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
     //     "image" => "/blogs-images/2290.webp",
-    //     "url" => "https://s4access.com/blogs/When-a-company-grows-what-opportunities-can-it-create-for-its-people"
+    //     "url" => "https://s4access.com/blogs/when-a-company-grows-what-opportunities-can-it-create-for-its-people"
     // ],
     [
         "id" => "SoD-Management-Concepts",
         "title" => "SoD Management Concepts: Keeping Access Risks Under Control",
-        "slug" => "SoD-Management-Concepts",
+        "slug" => "sod-management-concepts",
         "metaDescription" => "Segregation of Duties (SoD) is a foundational internal control designed to reduce the risk of errors, fraud, and misuse of authority. In simple terms, it ensures that no single user has end-to-end control over a critical business process.",
         "image" => "/blogs-images/Blog16.jpg",
-        "url" => "https://s4access.com/blogs/SoD-Management-Concepts"
+        "url" => "https://s4access.com/blogs/sod-management-concepts"
     ],
     [
         "id" => "sap-access-management-consultant-guide",

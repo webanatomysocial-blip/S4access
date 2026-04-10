@@ -4,7 +4,7 @@ import Footer from '../components/Footer.jsx';
 // import img22 from '../assets/images/About-img/Top-banner-img22.jpg';
 import { Link } from 'react-router-dom';
 import "../css/Coustomer.css";
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaUserMinus, FaChartPie, FaShieldAlt, FaExchangeAlt, FaUserCog, FaFileAlt } from 'react-icons/fa';
 import img10 from "../assets/images/success-images/10.jpg";
 import img11 from "../assets/images/success-images/11.jpg";
 
@@ -63,34 +63,34 @@ const SAPAuthorizationConceptOwner = () => {
         <h2 className="big-heading-text-black">Achievements & Benefits</h2>
         <div className="Coustomer-success-page-achievements-grid">
           <div className="Coustomer-success-page-achievement-card">
-            <FaCheckCircle size={40} color="#003377" />
+            <FaUserMinus size={40} color="#003377" />
             <h3 className="sub-big-heading-text-black">Structured passive user removal</h3>
             <p className="small-text-black">Eliminated ad hoc practices, ensuring consistent and secure deactivation.</p>
           </div>
           <div className="Coustomer-success-page-achievement-card">
-            <FaCheckCircle size={40} color="#003377" />
+            <FaChartPie size={40} color="#003377" />
             <h3 className="sub-big-heading-text-black">Optimized SAP license usage</h3>
             <p className="small-text-black">Enabled more accurate license measurement and cost allocation across HR divisions.</p>
           </div>
           <div className="Coustomer-success-page-achievement-card">
-            <FaCheckCircle size={40} color="#003377" />
+            <FaShieldAlt size={40} color="#003377" />
             <h3 className="sub-big-heading-text-black">Reduced SAP_ALL profile usage</h3>
             <p className="small-text-black">Aligned with external audit recommendations to enhance system security.</p>
           </div>
         </div>
         <div className="Coustomer-success-page-achievements-grid">
           <div className="Coustomer-success-page-achievement-card">
-            <FaCheckCircle size={40} color="#003377" />
+            <FaExchangeAlt size={40} color="#003377" />
             <h3 className="sub-big-heading-text-black">Streamlined role transport processes</h3>
             <p className="small-text-black">Simplified development workflows by consolidating transport requests.</p>
           </div>
           <div className="Coustomer-success-page-achievement-card">
-            <FaCheckCircle size={40} color="#003377" />
+            <FaUserCog size={40} color="#003377" />
             <h3 className="sub-big-heading-text-black">Improved role management</h3>
             <p className="small-text-black">Segregated critical actions (e.g., debugging) into dedicated roles for better control.</p>
           </div>
           <div className="Coustomer-success-page-achievement-card">
-            <FaCheckCircle size={40} color="#003377" />
+            <FaFileAlt size={40} color="#003377" />
             <h3 className="sub-big-heading-text-black">Enhanced documentation</h3>
             <p className="small-text-black">Provided clearer, more actionable instructions for the third-party authorization team.</p>
           </div>

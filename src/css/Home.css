@@ -162,23 +162,30 @@
 
 .coustomer-success-container {
   /* background-color: red; */
-  height: 50vh;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 50px;
 }
 
+.success-stories-swiper {
+  width: 100%;
+  padding-bottom: 60px !important;
+}
+
+
 .innercoustomer-success-container-left {
-  width: 20%;
-  padding: 25px;
+  width: 100%;
+  padding: 30px;
   background-color: #2e3841;
-  height: 40vh;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 5px;
 }
+
 .innercoustomer-heading-cont{
   display: flex;
   flex-direction: column;
@@ -193,7 +200,27 @@
 }
 
 
+/* Swiper Pagination Styles */
+.success-stories-swiper .swiper-pagination-bullet {
+  background: #2e3841;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+}
+
+.success-stories-swiper .swiper-pagination-bullet-active {
+  background: #40ffc9 !important;
+  opacity: 1;
+  width: 12px;
+  height: 12px;
+}
+
+.success-stories-swiper .swiper-pagination {
+  bottom: 0px !important;
+}
+
 /* Customer-success-stories-section End */
+
 
 
 
@@ -335,11 +362,10 @@
   }
 
   .innercoustomer-success-container-left {
-    width: 90%;
-    padding: 20px;
+    width: 100%;
+    padding: 25px;
     background-color: #2e3841;
-    height: 30vh;
-    /* gap: 30px; */
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -347,13 +373,10 @@
   }
 
   .coustomer-success-container {
-    height: 100%;
+    height: auto;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
   }
+
 
   .image-cta-section {
     height: fit-content;
