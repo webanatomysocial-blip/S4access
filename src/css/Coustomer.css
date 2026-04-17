@@ -157,6 +157,20 @@
   gap: 20px;
 }
 
+.Coustomer-success-page-card ul {
+  list-style-type: disc !important;
+  list-style-position: outside;
+  padding-left: 25px;
+  display: block;
+}
+
+.Coustomer-success-page-card li {
+  overflow: visible;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  display: list-item;
+}
+
 .Coustomer-success-page-card-right {
   width: 50%;
   /* height: 100%; */
@@ -237,11 +251,13 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
 }
 .Coustomer-success-inner-achievements-right img{
   width: 400px;
   height: auto;
+  position: sticky;
+  top: 130px;
   border-radius: 5px;
 
 }
@@ -252,6 +268,21 @@
   gap: 20px;
   align-items: start;
   justify-content: start;
+}
+
+.Coustomer-success-inner-achievements-left ul {
+  list-style-type: disc !important;
+  list-style-position: outside;
+  padding-left: 25px;
+  margin-top: 15px;
+  display: block;
+}
+
+.Coustomer-success-inner-achievements-left li {
+  overflow: visible;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  display: list-item;
 }
 
 

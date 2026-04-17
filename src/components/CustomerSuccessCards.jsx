@@ -31,7 +31,12 @@ const successStories = [
     title: "Stabilising SAP Access at Scale During an S/4HANA Transformation",
     description: "For a global health and hygiene leader, we redesigned their SAP authorization concept during an S/4HANA transformation. Our scalable model reduced complexity and SoD conflicts for over 4,000 users.",
     link: "/customer-success/stabilising-sap-access-at-scale"
-  }
+  },
+  {
+    title: "Helsinki SAM Service",
+    description: "For a large Scandinavian city, we implemented a structured SAP access management model, improving service predictability and ensuring zero audit observations during the first two years.",
+    link: "/customer-success/helsinki-sam-service"
+  },
 ];
 
 const CustomerSuccessCards = () => (
