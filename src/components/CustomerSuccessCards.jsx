@@ -9,33 +9,46 @@ import "swiper/css/pagination";
 const successStories = [
   {
     title: "SAP Authorization Concept Owner",
-    description: "For several years, we've successfully managed SAP access for a leading steel manufacturer—streamlining processes, ensuring audit compliance, and optimizing both security and license usage.",
-    link: "/customer-success/sap-authorisation-concept-owner"
+    description:
+      "For several years, we've successfully managed SAP access for a leading steel manufacturer—streamlining processes, ensuring audit compliance, and optimizing both security and license usage.",
+    link: "/customer-success/sap-authorisation-concept-owner",
   },
   {
     title: "S/4 Access Management Review",
-    description: "An external audit revealed critical SAP S/4 access issues for a client. s4access conducted a thorough review, delivering a prioritized roadmap to enhance governance and reduce risks.",
-    link: "/customer-success/s4-access-management-review"
+    description:
+      "An external audit revealed critical SAP S/4 access issues for a client. s4access conducted a thorough review, delivering a prioritized roadmap to enhance governance and reduce risks.",
+    link: "/customer-success/s4-access-management-review",
   },
   {
     title: "S/4 Transition Analysis",
-    description: "For a material handling solutions company, we analyzed their SAP S/4 upgrade needs. Our work delivered a clear resource plan, preventing disruptions and optimizing the transition process.",
-    link: "/customer-success/s4-transition-analysis"
+    description:
+      "For a material handling solutions company, we analyzed their SAP S/4 upgrade needs. Our work delivered a clear resource plan, preventing disruptions and optimizing the transition process.",
+    link: "/customer-success/s4-transition-analysis",
   },
   {
     title: "S/4 HANA/Fiori Transformation",
-    description: "We transformed SAP S/4 access and Fiori UX for a global home furnishing brand after a failed go-live. Our reengineered role design and GRC tools ensured a successful Fiori-first rollout.",
-    link: "/customer-success/s4-hana-fiori-transformation"
+    description:
+      "We transformed SAP S/4 access and Fiori UX for a global home furnishing brand after a failed go-live. Our reengineered role design and GRC tools ensured a successful Fiori-first rollout.",
+    link: "/customer-success/s4-hana-fiori-transformation",
   },
   {
     title: "Stabilising SAP Access at Scale During an S/4HANA Transformation",
-    description: "For a global health and hygiene leader, we redesigned their SAP authorization concept during an S/4HANA transformation. Our scalable model reduced complexity and SoD conflicts for over 4,000 users.",
-    link: "/customer-success/stabilising-sap-access-at-scale"
+    description:
+      "For a global health and hygiene leader, we redesigned their SAP authorization concept during an S/4HANA transformation. Our scalable model reduced complexity and SoD conflicts for over 4,000 users.",
+    link: "/customer-success/stabilising-sap-access-at-scale",
   },
+  // {
+  //   title: "Helsinki SAM Service",
+  //   description:
+  //     "For a large Scandinavian city, we implemented a structured SAP access management model, improving service predictability and ensuring zero audit observations during the first two years.",
+  //   link: "/customer-success/helsinki-sam-service",
+  // },
   {
-    title: "Helsinki SAM Service",
-    description: "For a large Scandinavian city, we implemented a structured SAP access management model, improving service predictability and ensuring zero audit observations during the first two years.",
-    link: "/customer-success/helsinki-sam-service"
+    title:
+      "SAP UCON Implementation – Reducing the Attack Surface in Production",
+    description:
+      "s4access successfully deployed SAP UCON in a production environment, identifying 47,000 RFMs and whitelisting only the 1,500 business-critical ones, reducing the attack surface by over 95%.",
+    link: "/customer-success/sap-ucon-implementation",
   },
 ];
 
@@ -87,6 +100,5 @@ const CustomerSuccessCards = () => (
     </div>
   </section>
 );
-
 
 export default CustomerSuccessCards;

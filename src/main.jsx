@@ -32,6 +32,7 @@ import S4TransitionAnalysis from './coustomer-pages/S4-Transition-Analysis.jsx';
 import S4HanaFioriTransformation from './coustomer-pages/S4-Hana-Fiori-Transformation.jsx';
 import StabilisingSAPAccessAtScale from './coustomer-pages/Stabilising-SAP-Access-at-Scale.jsx';
 import HelsinkiSAMService from './coustomer-pages/Helsinki-SAM-Service.jsx';
+import SapUconImplementation from './coustomer-pages/SAP-UCON-Implementation.jsx';
 
 
 import { HelmetProvider } from "react-helmet-async";
@@ -97,6 +98,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/customer-success/s4-hana-fiori-transformation" element={<S4HanaFioriTransformation />} />
           <Route path="/customer-success/stabilising-sap-access-at-scale" element={<StabilisingSAPAccessAtScale />} />
           <Route path="/customer-success/helsinki-sam-service" element={<HelsinkiSAMService />} />
+          <Route path="/customer-success/sap-ucon-implementation" element={<SapUconImplementation />} />
 
 
         </Routes>
