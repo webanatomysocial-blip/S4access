@@ -28,7 +28,7 @@ const HelsinkiSAMService = () => {
       >
         <div className="Coustomer-success-page-hero-container-left">
           <p className="big-heading-text-white">
-            Helsinki SAM Service: SAP Access Management for a Large Scandinavian
+            SAM Service: SAP Access Management for a Large Scandinavian
             City
           </p>
           <p className="text-white">

@@ -97,7 +97,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/customer-success/s4-transition-analysis" element={<S4TransitionAnalysis />} />
           <Route path="/customer-success/s4-hana-fiori-transformation" element={<S4HanaFioriTransformation />} />
           <Route path="/customer-success/stabilising-sap-access-at-scale" element={<StabilisingSAPAccessAtScale />} />
-          <Route path="/customer-success/helsinki-sam-service" element={<HelsinkiSAMService />} />
+          <Route path="/customer-success/sam-service" element={<HelsinkiSAMService />} />
           <Route path="/customer-success/sap-ucon-implementation" element={<SapUconImplementation />} />
 
 
