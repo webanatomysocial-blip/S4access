@@ -164,9 +164,9 @@ audits, and compliance support to protect your enterprise and streamline governa
       {/* image-cta start */}
       <section className="image-cta-section">
         <div className="first-container-image-cta">
-          <p className="sub-heading-text-white">
+          <p className="sub-heading-text-white" style={{textTransform:'unset'}}>
 
-            Simplify SAP access management with our expert services. From SoD and automation to license optimisation and outsourced support, we help reduce risks, ensure compliance, and deliver lasting value. Let’s secure your SAP landscape together.
+            Simplify SAP access management with expert services covering SoD, automation, license optimisation, and support to reduce risk, ensure compliance, and secure your SAP landscape.
 
           </p>
         </div>

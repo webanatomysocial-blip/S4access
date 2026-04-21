@@ -233,7 +233,7 @@ function Footer() {
 
       <div className="footer-end">
         <div className="end">
-          <span className="small-text-white">&copy; 2025 s4access. All rights reserved</span>
+          <span className="small-text-white">&copy; 2026 s4access. All rights reserved</span>
         </div>
       </div>
     </footer>
