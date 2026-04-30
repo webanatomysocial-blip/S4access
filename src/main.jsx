@@ -33,6 +33,7 @@ import S4HanaFioriTransformation from './coustomer-pages/S4-Hana-Fiori-Transform
 import StabilisingSAPAccessAtScale from './coustomer-pages/Stabilising-SAP-Access-at-Scale.jsx';
 import HelsinkiSAMService from './coustomer-pages/Helsinki-SAM-Service.jsx';
 import SapUconImplementation from './coustomer-pages/SAP-UCON-Implementation.jsx';
+import LinkTree from './pages/LinkTree.jsx';
 
 
 import { HelmetProvider } from "react-helmet-async";
@@ -60,50 +61,51 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 createRoot(document.getElementById('root')).render(
-<HelmetProvider>
-  <StrictMode>
-    <LenisProvider>
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/customer-success" element={<CustomerSuccess />} />
-          <Route path="/insights" element={<Insights />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/careers" element={<Careers />} />
+  <HelmetProvider>
+    <StrictMode>
+      <LenisProvider>
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/customer-success" element={<CustomerSuccess />} />
+            <Route path="/insights" element={<Insights />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/careers" element={<Careers />} />
 
-          <Route path="/services/s4-access-architecture-design" element={<S4AccessArchitectureDesign />} />
-          <Route path="/services/sap-access-management-review" element={<SAPAccessReview />} /> 
-          <Route path="/services/sod-strategy-approach" element={<SAPSoDApproach />} />
-          <Route path="/services/sap-access-management-automation" element={<SAPaccess />} />
-          <Route path="/services/sap-s4-access-implementation" element={<SAPAuthorisationRedesign />} />
-          <Route path="/services/sod-role-redesign" element={<SAPAuthorisationConceptDesign />} />
-          <Route path="/services/reorganisation-ma-projects" element={<SAPAccessSecurityConsulting />} />
-          <Route path="/services/outsourced-access-management" element={<SAPAccessManagementService />} />
-          <Route path="/services/authorisation-concept-owner" element={<SAPAuthorisationConceptOwnerService />} />
-          <Route path="/services/security-architect" element={<SAPGRCAccessControlServices />} />
-          <Route path="/services/access-risk-sod-management" element={<SAPSoDManagement />} />
-          <Route path="/services/ff-log-review-automation" element={<S4FFEmergencyUserAutomation />} />
-          <Route path="/services/sap-license-optimisation" element={<SAPLicenseCompliance />} />
-
-
-          <Route path="/s4accessprojects" element={<S4AccessProjects />} />
-          <Route path="/blogs/:blogName" element={<DynamicBlog />} /> 
-
-          <Route path="/customer-success/sap-authorisation-concept-owner" element={<SAPAuthorizationConceptOwner />} />
-          <Route path="/customer-success/s4-access-management-review" element={<S4AccessManagementReview />} />
-          <Route path="/customer-success/s4-transition-analysis" element={<S4TransitionAnalysis />} />
-          <Route path="/customer-success/s4-hana-fiori-transformation" element={<S4HanaFioriTransformation />} />
-          <Route path="/customer-success/stabilising-sap-access-at-scale" element={<StabilisingSAPAccessAtScale />} />
-          <Route path="/customer-success/sam-service-sap-access-management" element={<HelsinkiSAMService />} />
-          <Route path="/customer-success/sap-ucon-implementation" element={<SapUconImplementation />} />
+            <Route path="/services/s4-access-architecture-design" element={<S4AccessArchitectureDesign />} />
+            <Route path="/services/sap-access-management-review" element={<SAPAccessReview />} />
+            <Route path="/services/sod-strategy-approach" element={<SAPSoDApproach />} />
+            <Route path="/services/sap-access-management-automation" element={<SAPaccess />} />
+            <Route path="/services/sap-s4-access-implementation" element={<SAPAuthorisationRedesign />} />
+            <Route path="/services/sod-role-redesign" element={<SAPAuthorisationConceptDesign />} />
+            <Route path="/services/reorganisation-ma-projects" element={<SAPAccessSecurityConsulting />} />
+            <Route path="/services/outsourced-access-management" element={<SAPAccessManagementService />} />
+            <Route path="/services/authorisation-concept-owner" element={<SAPAuthorisationConceptOwnerService />} />
+            <Route path="/services/security-architect" element={<SAPGRCAccessControlServices />} />
+            <Route path="/services/access-risk-sod-management" element={<SAPSoDManagement />} />
+            <Route path="/services/ff-log-review-automation" element={<S4FFEmergencyUserAutomation />} />
+            <Route path="/services/sap-license-optimisation" element={<SAPLicenseCompliance />} />
 
 
-        </Routes>
-      </BrowserRouter>
-    </LenisProvider>
-  </StrictMode>
-</HelmetProvider>
+            <Route path="/s4accessprojects" element={<S4AccessProjects />} />
+            <Route path="/blogs/:blogName" element={<DynamicBlog />} />
+
+            <Route path="/customer-success/sap-authorisation-concept-owner" element={<SAPAuthorizationConceptOwner />} />
+            <Route path="/customer-success/s4-access-management-review" element={<S4AccessManagementReview />} />
+            <Route path="/customer-success/s4-transition-analysis" element={<S4TransitionAnalysis />} />
+            <Route path="/customer-success/s4-hana-fiori-transformation" element={<S4HanaFioriTransformation />} />
+            <Route path="/customer-success/stabilising-sap-access-at-scale" element={<StabilisingSAPAccessAtScale />} />
+            <Route path="/customer-success/sam-service-sap-access-management" element={<HelsinkiSAMService />} />
+            <Route path="/customer-success/sap-ucon-implementation" element={<SapUconImplementation />} />
+            <Route path="/links" element={<LinkTree />} />
+
+
+          </Routes>
+        </BrowserRouter>
+      </LenisProvider>
+    </StrictMode>
+  </HelmetProvider>
 );

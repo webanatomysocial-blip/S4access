@@ -6,7 +6,6 @@ import "../css/Coustomer.css";
 import { FaShieldAlt, FaUsers, FaAward, FaBolt, FaCogs, FaHandshake } from 'react-icons/fa';
 import img1 from "../assets/images/success-images/1.jpg";
 import img2 from "../assets/images/success-images/2.jpg";
-import img3 from "../assets/images/success-images/3.jpg";
 
 const StabilisingSAPAccessAtScale = () => {
   return (

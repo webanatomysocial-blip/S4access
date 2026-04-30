@@ -29,6 +29,7 @@ import SAPAuthorizationConceptOwner from './coustomer-pages/SAP-Authorization-Co
 import S4AccessManagementReview from './coustomer-pages/S4Access-Management-Review.jsx';
 import S4TransitionAnalysis from './coustomer-pages/S4-Transition-Analysis.jsx';
 import S4HanaFioriTransformation from './coustomer-pages/S4-Hana-Fiori-Transformation.jsx';
+import LinkTree from './pages/LinkTree.jsx';
 
 export default function AppRoutes() {
   return (
@@ -62,6 +63,7 @@ export default function AppRoutes() {
           <Route path="/customer-success/s4-access-management-review" element={<S4AccessManagementReview />} />
           <Route path="/customer-success/s4-transition-analysis" element={<S4TransitionAnalysis />} />
           <Route path="/customer-success/s4-hana-fiori-transformation" element={<S4HanaFioriTransformation />} />
+          <Route path="/link-tree" element={<LinkTree />} />
         </Routes>
       </BrowserRouter>
     </LenisProvider>

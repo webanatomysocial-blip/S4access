@@ -1,0 +1,159 @@
+.linktree-container {
+    background-color: #000000;
+    min-height: 100vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.linktree-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.linktree-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.linktree-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 10px 0;
+    text-transform: lowercase;
+}
+
+.linktree-subtitle {
+    color: #888;
+    font-size: 1rem;
+}
+
+.linktree-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.linktree-tab {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #2E3841;
+    /* Inactive: Dark Gray */
+    color: #ffffff;
+}
+
+.linktree-tab.active {
+    background-color: #40ffc9;
+    /* Active: Green */
+    color: #003377;
+}
+
+.linktree-tab:hover {
+    filter: brightness(1.1);
+}
+
+.linktree-main {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.linktree-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.linktree-card:hover {
+    border-color: #40ffc9;
+    /* Removed background-color change for the whole card */
+}
+
+.linktree-card-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.linktree-icon-wrapper {
+    width: 38px;
+    height: 38px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.linktree-icon-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #40ffc9;
+    transition: width 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.linktree-card:hover .linktree-icon-wrapper::before {
+    width: 100%;
+}
+
+.linktree-arrow-icon {
+    color: #003377;
+    font-size: 1.2rem;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+.linktree-footer {
+    margin-top: auto;
+    padding-top: 60px;
+    text-align: center;
+    color: #888;
+}
+
+.linktree-footer a {
+    color: #40ffc9;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.linktree-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .linktree-title {
+        font-size: 2rem;
+    }
+
+    .linktree-card {
+        padding: 15px 20px;
+    }
+}

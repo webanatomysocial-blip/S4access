@@ -37,18 +37,18 @@ const successStories = [
       "For a global health and hygiene leader, we redesigned their SAP authorization concept during an S/4HANA transformation. Our scalable model reduced complexity and SoD conflicts for over 4,000 users.",
     link: "/customer-success/stabilising-sap-access-at-scale",
   },
-  // {
-  //   title: "Helsinki SAM Service",
-  //   description:
-  //     "For a large Scandinavian city, we implemented a structured SAP access management model, improving service predictability and ensuring zero audit observations during the first two years.",
-  //   link: "/customer-success/helsinki-sam-service",
-  // },
   {
     title:
-      "SAP UCON Implementation – Reducing the Attack Surface in Production",
+    "SAP UCON Implementation – Reducing the Attack Surface in Production",
     description:
-      "s4access successfully deployed SAP UCON in a production environment, identifying 47,000 RFMs and whitelisting only the 1,500 business-critical ones, reducing the attack surface by over 95%.",
+    "s4access successfully deployed SAP UCON in a production environment, identifying 47,000 RFMs and whitelisting only the 1,500 business-critical ones, reducing the attack surface by over 95%.",
     link: "/customer-success/sap-ucon-implementation",
+  },
+  {
+    title: "SAM Service",
+    description:
+      "For a large Scandinavian city, we implemented a structured SAP access management model, improving service predictability and ensuring zero audit observations during the first two years.",
+    link: "/customer-success/sam-service-sap-access-management",
   },
 ];
 

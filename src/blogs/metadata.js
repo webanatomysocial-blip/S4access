@@ -5,6 +5,7 @@ import blog14 from "../blogs/blogs-images/1165.webp";
 import blog15 from "../blogs/blogs-images/blog15.jpg";
 import blog16 from "../blogs/blogs-images/blog16.jpg";
 import blogCiso2026 from "../blogs/blogs-images/ciso-sap-access-2026.jpg";
+import blog45 from "../blogs/blogs-images/own.jpeg";
 // import blog15 from "../blogs/blogs-images/2290.webp";
 
 
@@ -163,6 +164,15 @@ export const blogMetadata = [
     excerpt: "Leading CISOs are changing how SAP Access Management is handled—shifting from a technical blind spot to a strategic enterprise risk discussion. Discover the key trends for 2026.",
     image: blogCiso2026,
     date: "2026-03-24",
+  },
+  {
+    id: "One-of-your-employees-can-probably-approve-their-own-purchase-orders-are-you-aware-of-it",
+    title: "One Of Your Employees Can Probably Approve Their Own Purchase Orders Are you aware of it?",
+    slug: "sap-access-governance-sod-risk",
+    metaDescription: "Discover how inadequate SAP access controls can allow employees to approve their own transactions, creating significant financial and compliance risks.",
+    excerpt: "In many organizations, employees can approve their own purchase orders—often without anyone realizing it. Learn how inadequate SAP access controls enable this risky practice and what to do about it.",
+    image: blog45,
+    date: "2026-04-29",
   },
 ];
 
