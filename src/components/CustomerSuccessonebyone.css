@@ -1,0 +1,132 @@
+.customer-success-onebyone-container {
+  margin: 0 auto;
+  padding: 100px 50px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 50px;
+}
+
+.customer-success-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.customer-success-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.customer-success-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.customer-success-image-wrapper {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+
+.customer-success-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.customer-success-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.customer-success-card-title {
+  font-family: "barlow", monospace;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.3em;
+  text-transform: capitalize;
+}
+
+.customer-success-card-desc {
+  font-family: "barlow", monospace;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6em;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.customer-success-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+.customer-success-read-more {
+  font-family: "barlow", monospace;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1e293b;
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.customer-success-read-more::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00d9a6; /* Green accent color */
+}
+
+.customer-success-arrow {
+  font-size: 18px;
+  color: #1e293b;
+  transition: transform 0.2s ease;
+}
+
+.customer-success-card:hover .customer-success-arrow {
+  transform: translateX(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .customer-success-onebyone-container {
+    padding: 60px 20px;
+  }
+  .customer-success-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .customer-success-onebyone-container {
+    padding: 60px 20px;
+  }
+  .customer-success-grid {
+    grid-template-columns: 1fr;
+  }
+}
