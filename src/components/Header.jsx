@@ -42,9 +42,9 @@ function Header(props) {
       <nav className={`only-windows navbar ${isScrolled ? 'scrolled' : ''}` } style={{ background: props.backgroundColor }}>
         <div className="logo">
           <Link to="/">
-            <img className="main-logo" src={logo} alt="S4access Logo" />
+            <img className="main-logo" src={logo} alt="S4access Logo" width="210" height="40" />
           </Link>
-          <img className="star-logo" src={fav} alt="Star Logo" />
+          <img className="star-logo" src={fav} alt="Star Logo" width="40" height="40" />
         </div>
         <div className="nav-list">
           <ul>
@@ -114,7 +114,7 @@ function Header(props) {
         <div className="mobile-nav-top">
           <div className="mobile-logo">
             <Link to="/" onClick={closeMobileMenu}>
-              <img src={logo} alt="S4access Logo" />
+              <img src={logo} alt="S4access Logo" width="210" height="40" />
             </Link>
           </div>
           <button 

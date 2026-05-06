@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer">
 
         <div className="left-logo-container-footer">
-          <img src={mainlogo} alt="S4access Logo" />
+          <img src={mainlogo} alt="S4access Logo" width="210" height="40" />
           <p className="text-white only-windows">
            A New Era in SAP Access Management Begins. Backed by deep expertise and experience, we deliver sustainable SAP Access management solutions.
           </p>
