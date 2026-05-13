@@ -47,11 +47,10 @@ export default function SAPLicenseCompliance() {
   return (
     <>
       <Helmet>
-        <title>SAP License Optimization & Cost Reduction | s4access</title>
-        <meta name="title" content="SAP License Optimization & Cost Reduction | s4access" />
-        <meta name="description" content="Optimize SAP licensing with s4access: reduce costs, ensure compliance, and
-align licenses with actual usage through expert analysis and strategic planning.
-" />
+        <title>SAP License Optimisation & S/4HANA Cost Reduction | s4access</title>
+        <meta name="title" content="SAP License Optimisation & S/4HANA Cost Reduction | s4access" />
+        <meta name="description" content="Reduce SAP licence costs without risk. Analyse usage, eliminate unused licences and stay fully compliant with S/4HANA licensing agreements. Fixed monthly fee." />
+        <meta name="keywords" content="sap license optimisation, sap license optimization, sap licence management, sap license compliance, reduce sap licensing costs, sap license cost reduction, s4hana license optimization, sap license review, lower sap licensing costs, software license optimization service" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -119,9 +118,9 @@ align licenses with actual usage through expert analysis and strategic planning.
 
       <section className="service-container-1">
         <div className="service-left">
-          <h2 className="extra-big-heading-text-white">
+          <h1 className="extra-big-heading-text-white">
             SAP License optimisation
-          </h2>
+          </h1>
           <p className="text-white">
             We analyse and optimise your SAP license usage, helping you reduce costs, eliminate unused licenses, and stay fully compliant with licensing agreements.
           </p>
@@ -140,7 +139,7 @@ align licenses with actual usage through expert analysis and strategic planning.
 
 
               <div className="card-sub-content card-sub-content-only-some">
-                <h2 className="sub-big-heading-text-white">Navigating SAP Licensing in the S/4 Era</h2>
+                <h2 className="sub-big-heading-text-white">Navigating <Link to="/services/sap-license-optimisation" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP Licensing</Link> in the S/4 Era</h2>
                 <p className="text-white">
                   SAP licensing has become a growing area of focus due to the introduction of the SAP S/4HANA strategy and its various deployment models.
                   With new licensing frameworks now in place, organizations must carefully evaluate their options—not only during the purchasing phase but also throughout implementation and ongoing maintenance.
@@ -159,7 +158,7 @@ align licenses with actual usage through expert analysis and strategic planning.
                   Our proprietary license usage analysis service, part of the s4access platform, is available either as a standalone offering or integrated into our ongoing maintenance services—providing customers with optimal control and visibility over their licensing landscape.
                 </p>
                 <p className="text-white">
-                  The platform includes specialized tools that simulate the cost impact of role designs and user-level changes, even down to individual ticket-level adjustments.
+                  The platform includes specialized tools that simulate the cost impact of <Link to="/services/sod-role-redesign" style={{ color: 'inherit', textDecoration: 'underline' }}>role designs</Link> and user-level changes, even down to individual ticket-level adjustments.
                   This enables informed decision-making without the need for additional costly license management software or services.
                 </p>
               </div>
@@ -186,7 +185,7 @@ align licenses with actual usage through expert analysis and strategic planning.
                   Our proprietary license usage analysis service, part of the s4access platform, is available either as a standalone offering or integrated into our ongoing maintenance services—providing customers with optimal control and visibility over their licensing landscape.
                 </p>
                 <p className="text-white">
-                  The platform includes specialized tools that simulate the cost impact of role designs and user-level changes, even down to individual ticket-level adjustments.
+                  The platform includes specialized tools that simulate the cost impact of <Link to="/services/sod-role-redesign" style={{ color: 'inherit', textDecoration: 'underline' }}>role designs</Link> and user-level changes, even down to individual ticket-level adjustments.
                   This enables informed decision-making without the need for additional costly license management software or services.
                 </p>
               </div>

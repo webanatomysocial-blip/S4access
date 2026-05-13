@@ -72,10 +72,10 @@ export default function SAPAccessReview() {
         <>
             <Helmet>
 
-                <title>SAP Access Management Review Specialists | s4access</title>
-                <meta name="title" content="SAP Access Management Review Specialists | s4access" />
-                <meta name="description" content=" Expert SAP Access Management Review to boost security, compliance &
-efficiency in S/4HANA. Get insights to optimize SoD, reduce risk & lower costs efficiently." />
+                <title>SAP Access Management Review & Audit Consulting | s4access</title>
+                <meta name="title" content="SAP Access Management Review & Audit Consulting | s4access" />
+                <meta name="description" content="Get a clear view of your SAP access management. Governance, process and technical review with actionable plan to improve compliance, security and reduce costs." />
+                <meta name="keywords" content="sap access management review, sap access management audit, sap access governance, sap access risk management, sap role management, sod review, sap security review, sap access management consulting, sap access management assessment, sap access management specialists" />
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
@@ -161,11 +161,11 @@ efficiency in S/4HANA. Get insights to optimize SoD, reduce risk & lower costs e
 
             <section className="service-container-1">
                 <div className="service-left">
-                    <h2 className="extra-big-heading-text-white">
+                    <h1 className="extra-big-heading-text-white">
                         SAP Access <br /> Management review
-                    </h2>
+                    </h1>
                     <p className="text-white">
-                        We provide an understandable view of your organization’s SAP Access Management situation and deliver a clear, actionable plan forward to improve efficiency, compliance, and long-term sustainability.
+                        We provide an understandable view of your organization’s <Link to="/services/sod-strategy-approach" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP Access Management</Link> situation and deliver a clear, actionable plan forward to improve efficiency, compliance, and long-term sustainability.
                     </p>
                 </div>
                 <div className="service-right only-windows">
@@ -179,10 +179,10 @@ efficiency in S/4HANA. Get insights to optimize SoD, reduce risk & lower costs e
                 <div className="service-journey-content">
                     <div className="journey-card">
                         <div className="card-header">
-                            <h3 className="big-heading-text-white">From Uncertainty to Clarity: Mapping Your SAP Access Management Journey</h3>
+                            <h2 className="big-heading-text-white">From Uncertainty to Clarity: Mapping Your SAP Access Management Journey</h2>
                             <div className="card-sub-content">
                                 <p className="text-white">
-                                    Many organizations operate SAP access management without a clear strategic plan. While systems may continue to function over time, this approach often leads to recurring challenges such as weakened security, audit findings, delays in implementing necessary changes, and concerns around resourcing and skill availability. As these issues accumulate, management typically begins to ask critical questions:
+                                    Many organizations operate SAP access management without a clear strategic plan. While systems may continue to function over time, this approach often leads to recurring challenges such as weakened security, <Link to="/customer-success/s4-access-management-review" style={{ color: 'inherit', textDecoration: 'underline' }}>audit findings</Link>, delays in implementing necessary changes, and concerns around resourcing and skill availability. As these issues accumulate, management typically begins to ask critical questions:
                                 </p>
                             </div>
                         </div>

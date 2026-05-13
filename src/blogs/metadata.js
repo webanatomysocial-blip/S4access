@@ -13,7 +13,7 @@ import blog45 from "../blogs/blogs-images/own.jpeg";
 
 export const blogMetadata = [
   {
-    id: "Is-SAP-Certification-Still-Valid-for-Your-Career-in-2025", // Matches file name without .jsx
+    id: "Is-SAP-Certification-Still-Valid-for-Your-Career-in-2025", 
     title: "Is The SAP Certification Still Valid For Your Career In 2025?",
     slug: "sap-certification-2025",
     metaDescription: "Discover if SAP certification is still worth it in 2025. Explore industry demand, SAP’s evolution, career benefits, and why continuous learning is key.",
@@ -167,9 +167,10 @@ export const blogMetadata = [
   },
   {
     id: "One-of-your-employees-can-probably-approve-their-own-purchase-orders-are-you-aware-of-it",
-    title: "One Of Your Employees Can Probably Approve Their Own Purchase Orders Are you aware of it?",
+    title: "SAP Access Governance SoD Risk in Controls",
     slug: "sap-access-governance-sod-risk",
-    metaDescription: "Discover how inadequate SAP access controls can allow employees to approve their own transactions, creating significant financial and compliance risks.",
+    metaDescription: "SAP Access Governance SoD Risk exposes control gaps where users can create and approve transactions, increasing fraud risk and audit exposure in SAP system now",
+    keywords: "SAP access reviews, Segregation of Duties conflicts, financial control gaps, audit findings, governance failure, compensating controls, SAP roles accumulation, financial fraud cases, access governance model, conflicting access",
     excerpt: "In many organizations, employees can approve their own purchase orders—often without anyone realizing it. Learn how inadequate SAP access controls enable this risky practice and what to do about it.",
     image: blog45,
     date: "2026-04-29",

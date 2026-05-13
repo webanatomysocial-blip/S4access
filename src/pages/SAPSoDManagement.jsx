@@ -51,8 +51,8 @@ export default function SAPSoDApproach() {
 
                 <title>SAP Access Risk & SoD Management Solutions | s4access</title>
                 <meta name="title" content="SAP Access Risk & SoD Management Solutions | s4access" />
-                <meta name="description" content="Mitigate SAP access risks with s4access: expert SoD analysis, role remediation,
-and compliance-driven strategies to secure your enterprise systems." />
+                <meta name="description" content="Identify and prevent SAP SoD conflicts with a fully managed access risk service. Operational within weeks, no specialist skills needed and fixed monthly fee." />
+                <meta name="keywords" content="sap access risk management, sap sod management, sod risks in sap, sap sod tool, sap segregation of duties, sap sod analysis, sod compliance, sap access governance, sap sod conflicts, sap access risk tool" />
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
@@ -114,9 +114,9 @@ and compliance-driven strategies to secure your enterprise systems." />
 
             <section className="service-container-1">
                 <div className="service-left">
-                    <h2 className="extra-big-heading-text-white">
+                    <h1 className="extra-big-heading-text-white">
                         Access Risk SoD Management
-                    </h2>
+                    </h1>
                     <p className="text-white">
                         We identify, monitor, and prevent access risks and Segregation of Duties (SoD) conflicts, ensuring stronger compliance, smoother audits, and secure SAP operations.
                     </p>
@@ -137,11 +137,11 @@ and compliance-driven strategies to secure your enterprise systems." />
                             <div className="card-sub-content">
                                 <p className="text-white">
                                     Every SAP organization requires a clear Segregation of Duties (SoD) approach, supported by the right tool.
-                                    However, selecting and implementing such a solution is often challenging. Many organizations lack deep SAP security expertise,
+                                    However, selecting and implementing such a solution is often challenging. Many organizations lack deep <Link to="/services/security-architect" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP security expertise</Link>,
                                     making it difficult to evaluate options and define the necessary risk and control frameworks.
                                 </p>
                                 <p className="text-white">
-                                    Implementation projects can be lengthy and resource-intensive, and the license costs for SoD tools can be significant.
+                                    Implementation projects can be lengthy and resource-intensive, and the <Link to="/services/sap-license-optimisation" style={{ color: 'inherit', textDecoration: 'underline' }}>license costs for SoD tools</Link> can be significant.
                                     Moreover, operating the solution effectively requires specialized skills and dedicated headcount—resources that are often scarce.
                                 </p>
                                 <p className="text-white">
@@ -155,7 +155,7 @@ and compliance-driven strategies to secure your enterprise systems." />
                             <h2 className="big-heading-text-white">SAM Platform – Streamlined SAP Access Risk & SoD Management</h2>
                             <div className="card-sub-content">
                                 <p className="text-white">
-                                    s4access offers a proven solution for SAP Access Risk Management and Segregation of Duties (SoD), designed to overcome the common challenges organizations face.
+                                    s4access offers a proven solution for <Link to="/blogs/sod-management-concepts" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP Access Risk Management</Link> and Segregation of Duties (SoD), designed to overcome the common challenges organizations face.
                                     As part of the proprietary s4access platform, the service is fast to implement, typically operational within just a few weeks,
                                     and requires no specialized skills or resources from the customer.
                                 </p>

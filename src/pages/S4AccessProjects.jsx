@@ -47,9 +47,9 @@ export default function S4AccessArchitectureDesign() {
 
       <section className="service-container-1">
         <div className="service-left">
-          <h2 className="big-heading-text-white">
+          <h1 className="big-heading-text-white">
             SAP Access Management review
-          </h2>
+          </h1>
           <p className="text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita repellendus, earum quia nobis hic, nesciunt nisi omnis iste ea dolores quas voluptates necessitatibus distinctio recusandae laboriosam fugiat assumenda in.
           </p>

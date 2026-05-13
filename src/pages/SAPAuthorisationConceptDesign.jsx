@@ -47,10 +47,10 @@ export default function SAPAuthorisationConceptDesign() {
 
             <Helmet>
 
-                <title>SAP SoD Role Redesign for S/4HANA | s4access Governances</title>
-                <meta name="title" content="SAP SoD Role Redesign for S/4HANA | s4access Governance" />
-                <meta name="description" content="Enhance SAP S/4HANA security with s4access’s SoD role redesign: mitigate
-conflicts, streamline access, and ensure compliance with expert governance solutions." />
+                <title>SAP SoD Role Redesign & Access Governance | s4access</title>
+                <meta name="title" content="SAP SoD Role Redesign & Access Governance | s4access" />
+                <meta name="description" content="Break the SAP role redesign cycle for good. Root cause analysis, SoD-compliant access design and evergreen role governance for Nordic SAP organisations." />
+                <meta name="keywords" content="sap role redesign, sod role redesign, sap role design, sap access governance, segregation of duties sap, sap sod compliance, sap role management, sap access design, sod conflicts sap, sap security redesign" />
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
@@ -113,7 +113,7 @@ conflicts, streamline access, and ensure compliance with expert governance solut
             {/* Hero Section */}
             <section className="service-container-1">
                 <div className="service-left">
-                    <h2 className="extra-big-heading-text-white">SoD/Role redesign</h2>
+                    <h1 className="extra-big-heading-text-white">SoD/Role redesign</h1>
                     <p className="text-white">
                         We break the role redesign cycle by addressing root cause issues and implementing a secure, SoD-compliant access design that is evergreen and cost-efficient to maintain..
 
@@ -137,7 +137,7 @@ conflicts, streamline access, and ensure compliance with expert governance solut
                             <div className="card-sub-content card-sub-content-only-some">
                                 <h2 className="sub-big-heading-text-white">The Role Redesign Cycle: <br /> A Common SAP Challenge </h2>
                                 <p className="text-white">
-                                    Many organizations using SAP eventually face a familiar challenge: access and role structures become difficult to manage, leading to rising Segregation of Duties (SoD) risks, audit findings, and security concerns.
+                                    Many organizations using SAP eventually face a familiar challenge: access and role structures become difficult to manage, leading to rising <Link to="/services/access-risk-sod-management" style={{ color: 'inherit', textDecoration: 'underline' }}>Segregation of Duties (SoD) risks</Link>, audit findings, and security concerns.
                                 </p>
                                 <p className="text-white">
                                     In response, a role redesign project is launched—often with a fresh strategy and renewed focus. Yet, within 2–3 years, the same issues resurface, bringing the organization back to square one. This cycle highlights the need for a sustainable, well-governed access management approach rather than one-off fixes.
@@ -146,7 +146,7 @@ conflicts, streamline access, and ensure compliance with expert governance solut
 
 
                             <div className="card-sub-content card-sub-content-only-some">
-                                <h2 className="sub-big-heading-text-white">Breaking the Cycle: <br /> Our Approach to SAP Role Redesign</h2>
+                                <h2 className="sub-big-heading-text-white">Breaking the Cycle: <br /> Our Approach to <Link to="/blogs/building-display-roles-the-smart-way-in-sap-s4hana" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP role redesign</Link></h2>
                                 <p className="text-white">
                                     Our SAP role redesign approach begins with a deep analysis of the root causes that prevent organizations from escaping the recurring cycle of role redesign. In most cases, we uncover gaps across all key areas: governance, processes, technology, resourcing, skills and tools.
                                 </p>

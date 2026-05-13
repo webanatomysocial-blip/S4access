@@ -57,7 +57,8 @@
   left: 0px;
 }
 
-.carousel-slide p {
+.carousel-slide p,
+.carousel-slide h1 {
   position: relative;
   left: 0px;
   top: 0;

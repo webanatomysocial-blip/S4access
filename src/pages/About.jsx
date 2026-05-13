@@ -8,9 +8,7 @@ import whoweare from '../assets/images/About-img/Who-We-Are.jpg';
 import TeamSection from '../components/TeamSection.jsx';
 // import { Link, useLocation } from 'react-router-dom';
 import { Link, } from 'react-router-dom';
-// import { Helmet } from 'react-helmet-async';
-// import ShowRenderedHTML from '../../ShowRenderedHTML.jsx';
-
+import { Helmet } from 'react-helmet-async';
 
  export default function About() {
   // const location = useLocation();
@@ -22,6 +20,85 @@ import { Link, } from 'react-router-dom';
 
   return (
     <div>
+      <Helmet>
+        <title>About Us – s4access SAP Access Management</title>
+        <meta name="description" content="Learn about s4access, our core principles, and the team redefining SAP access management with deep expertise and innovative solutions." />
+        
+        {/* Matti Halonen Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Matti Halonen",
+            "jobTitle": "Managing Director",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "s4access",
+              "url": "https://s4access.com/"
+            }
+          })}
+        </script>
+
+        {/* Christa Coulter Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Christa Coulter",
+            "jobTitle": "Director, SAP Security Architect",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "s4access",
+              "url": "https://s4access.com/"
+            }
+          })}
+        </script>
+
+        {/* Heli Kokkala Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Heli Kokkala",
+            "jobTitle": "Director, Head of Services",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "s4access",
+              "url": "https://s4access.com/"
+            }
+          })}
+        </script>
+
+        {/* Sameer Hawaldar Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Sameer Hawaldar",
+            "jobTitle": "Director, Head of Projects",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "s4access",
+              "url": "https://s4access.com/"
+            }
+          })}
+        </script>
+
+        {/* Tiina Hartikainen Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Tiina Hartikainen",
+            "jobTitle": "Director, People and Development",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "s4access",
+              "url": "https://s4access.com/"
+            }
+          })}
+        </script>
+      </Helmet>
       
        
 
@@ -32,10 +109,10 @@ import { Link, } from 'react-router-dom';
       <section className="about-banner-section">
 
         <div className="about-banner-content-left">
-          <p className="extra-big-heading-text-white">
+          <h1 className="extra-big-heading-text-white">
             Redefining SAP <br /> Access Management
 
-          </p><br />
+          </h1><br />
           <p className="text-white">
             Modern SAP environments demand more than traditional access controls. Redefining access management means reducing complexity, gaining a clear view of the big picture, and managing costs—while keeping security and efficiency at the core. It's about smarter, faster, and more secure access—built for today’s enterprise needs.
 
@@ -76,9 +153,9 @@ import { Link, } from 'react-router-dom';
         <div className="who-we-are-left-container">
           <span>
             <img src={star} alt="" />
-            <p className="text-black">
+            <h2 className="text-black">
               Who We Are
-            </p>
+            </h2>
 
           </span>
           <div className='img-who-we-are-left-container'>
@@ -91,10 +168,10 @@ import { Link, } from 'react-router-dom';
 
         <div className="who-we-are-right-container">
 
-          <p className="big-heading-text-black">
+          <h2 className="big-heading-text-black">
             About Us
 
-          </p>
+          </h2>
           <p className="text-black">
             We are a specialist company focused exclusively on SAP access management. With deep expertise in what drives complexity, security requirements, and cost in SAP environments, we go beyond traditional approaches. We've invested in advanced technologies and refined methodologies to develop innovative services that meet the demands of modern enterprises. Backed by one of the largest expert teams in EMEA, we help organizations simplify access, strengthen control, and manage risk—efficiently and intelligently.
 
@@ -102,11 +179,11 @@ import { Link, } from 'react-router-dom';
 
 
           <br />
-          <p className="big-heading-text-black">
+          <h2 className="big-heading-text-black">
             Our Core Principles
 
 
-          </p>
+          </h2>
           <p className="text-black">
             We focus on our current customers—building long-term partnerships based on trust, results, and continuous improvement. Our approach to SAP access management is to get it right from the start: designed with precision, built to last, and optimized for cost. We understand that solid access management is never built in a day—it requires thoughtful planning, ongoing maintenance, and the ability to adapt to change. That’s why we continuously invest in improving our technology and methods, ensuring our services stay ahead of modern requirements.
 
@@ -132,9 +209,9 @@ import { Link, } from 'react-router-dom';
       {/* Our Highlights section start*/}
       <section className="our-hightlights-section" style={{ marginTop: "0px", display: "none" }} >
         <div className="hightlight-tittle-container">
-          <p className="big-heading-text-black">
+          <h2 className="big-heading-text-black">
             Our <br /> Highlights
-          </p>
+          </h2>
         </div>
 
         <div className="hightlight-number-containers">
@@ -224,10 +301,10 @@ import { Link, } from 'react-router-dom';
 
           <div className="about-contact-us-dark-inner-container" style={{ borderLeft: 'none' }} >
             <div className="about-contact-us-dark-inner-top-container">
-              <p className="big-heading-text-white-overflow">
+              <h2 className="big-heading-text-white-overflow">
                 Partnerships & Services
 
-              </p>
+              </h2>
 
             </div>
 
@@ -259,10 +336,10 @@ import { Link, } from 'react-router-dom';
 
           <div className="about-contact-us-dark-inner-container">
             <div className="about-contact-us-dark-inner-top-container">
-              <p className="big-heading-text-white-overflow">
+              <h2 className="big-heading-text-white-overflow">
                 Careers<br /><br />
 
-              </p>
+              </h2>
 
             </div>
 
@@ -293,10 +370,10 @@ import { Link, } from 'react-router-dom';
 
           <div className="about-contact-us-dark-inner-container">
             <div className="about-contact-us-dark-inner-top-container">
-              <p className="big-heading-text-white-overflow">
+              <h2 className="big-heading-text-white-overflow">
                 Administration<br /><br />
 
-              </p>
+              </h2>
 
             </div>
 
@@ -323,9 +400,9 @@ import { Link, } from 'react-router-dom';
 
           <div className="about-contact-us-dark-inner-container">
             <div className="about-contact-us-dark-inner-top-container">
-              <p className="big-heading-text-white-overflow">
+              <h2 className="big-heading-text-white-overflow">
                 Vendors <br /><br />
-              </p>
+              </h2>
 
             </div>
 
@@ -373,9 +450,9 @@ import { Link, } from 'react-router-dom';
       {/* about-contact-us-section  light color start */}
       <section className="about-contact-us-section">
         <div>
-          <p className="big-heading-text-white">
+          <h2 className="big-heading-text-white">
             Contact us and reset your<br className='only-windows'></br> password to SAP security !
-          </p>
+          </h2>
           <p className="text-white" style={{ paddingBottom: 25 }}>
             We’re here to help with all your SAP security needs. Whether you're a client, partner,<br /> vendor, or potential team member, here's how to reach the right person
           </p>

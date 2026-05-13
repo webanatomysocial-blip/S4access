@@ -88,7 +88,11 @@ const HomeSlidersMobile = () => {
                     height="40"
                   />
                 )}
-                <p className="sub-heading-text-white">{slide.text}</p>
+                {idx === 0 ? (
+                  <p className="sub-heading-text-white" style={{ fontWeight: 'bold' }}>{slide.text}</p>
+                ) : (
+                  <p className="sub-heading-text-white">{slide.text}</p>
+                )}
                 {slide.link && (
                   <Link to={slide.link} className="button-green">
                     Learn More

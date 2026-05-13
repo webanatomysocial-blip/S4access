@@ -75,7 +75,7 @@ const TeamSection = () => {
         <div className="team-members-column">
           <div className="team-members-top">
             <div className="team-heading-column">
-              <p className="big-heading-text-black">Management Team</p>
+              <h2 className="big-heading-text-black">Management Team</h2>
               <p className="text-black">
                 Growth is more than numbers—it’s about building something that lasts. Our leaders focus on long-term development, strategic clarity, and creating the conditions for people and ideas to flourish.
               </p>
@@ -97,7 +97,7 @@ const TeamSection = () => {
                   </div>
                 </div>
                 <div className="ourteam-container-contacts">
-                  <p className="team-name-text">{member.name}</p>
+                  <h3 className="team-name-text">{member.name}</h3>
                   <a
                     href={`mailto:${member.email}`}
                     className="text-black"
@@ -125,7 +125,7 @@ const TeamSection = () => {
                   </div>
                 </div>
                 <div className="ourteam-container-contacts">
-                  <p className="team-name-text">{member.name}</p>
+                  <h3 className="team-name-text">{member.name}</h3>
                   <a
                     href={`mailto:${member.email}`}
                     className="text-black"

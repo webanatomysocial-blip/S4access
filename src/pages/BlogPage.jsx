@@ -65,7 +65,7 @@ const Blogs = (props) => {
                   <div className="blog-text">
                     <p className="text-black">BLOG</p>
                     <Link to={`/blogs/${metadata.slug}`} style={{ textDecoration: 'none' }}>
-                      <p className="sub-big-heading-text-black">{metadata.title}</p>
+                      <h3 className="sub-big-heading-text-black">{metadata.title}</h3>
                     </Link>
                   </div>
                   <div className="image-hover-text-come" style={{ backgroundImage: `url(${metadata.image})` }}>

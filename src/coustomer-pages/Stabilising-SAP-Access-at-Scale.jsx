@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import "../css/Coustomer.css";
 import { FaShieldAlt, FaUsers, FaAward, FaBolt, FaCogs, FaHandshake } from 'react-icons/fa';
 import img1 from "../assets/images/success-images/1.jpg";
@@ -10,13 +11,84 @@ import img2 from "../assets/images/success-images/2.jpg";
 const StabilisingSAPAccessAtScale = () => {
   return (
     <div>
+      <Helmet>
+        <title>SAP S/4HANA Access Redesign for Global Manufacturer | s4access</title>
+        <meta name="title" content="SAP S/4HANA Access Redesign for Global Manufacturer | s4access" />
+        <meta name="description" content="How s4access redesigned SAP authorization concept for a global manufacturer — 4,000+ users live across 6 European countries with less than 5% defect rate." />
+        <meta name="keywords" content="sap s/4hana access implementation, sap authorization concept, sap sod conflicts, sap role redesign, sap s4hana security, sap access management specialists, segregation of duties sap, sap access governance, sap s4hana transformation, sap access management consulting" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Article",
+                "@id": "https://s4access.com/customer-success/stabilising-sap-access-at-scale",
+                "headline": "SAP S/4HANA Access Redesign for Global Manufacturer | s4access",
+                "description": "How s4access redesigned SAP authorization concept for a global manufacturer — 4,000+ users live across 6 European countries with less than 5% defect rate.",
+                "url": "https://s4access.com/customer-success/stabilising-sap-access-at-scale",
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "s4access",
+                  "url": "https://s4access.com",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://s4access.com/images/black-logo-400.png",
+                    "width": 400,
+                    "height": 400
+                  }
+                },
+                "author": {
+                  "@type": "Organization",
+                  "name": "s4access",
+                  "url": "https://s4access.com"
+                },
+                "about": [
+                  "SAP S/4HANA Transformation",
+                  "SAP Authorization Concept",
+                  "Segregation of Duties",
+                  "SAP Role Redesign",
+                  "SAP Access Management"
+                ],
+                "mentions": {
+                  "@type": "Organization",
+                  "name": "Global Health and Hygiene Manufacturer",
+                  "description": "Global health and hygiene products manufacturer undergoing SAP S/4HANA transformation"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://s4access.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Customer Success",
+                    "item": "https://s4access.com/customer-success"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Stabilising SAP Access at Scale During an S/4HANA Transformation",
+                    "item": "https://s4access.com/customer-success/stabilising-sap-access-at-scale"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
       <Header />
 
       <section className="Coustomer-success-page-hero-section" style={{justifyContent:'normal',gap:'225px'}}>
         <div className="Coustomer-success-page-hero-container-left">
-          <p className="big-heading-text-white">Stabilising SAP Access at Scale During an S/4HANA Transformation</p>
+          <h1 className="big-heading-text-white">Stabilising SAP Access at Scale During an <Link to="/blogs/building-display-roles-the-smart-way-in-sap-s4hana" style={{ color: 'inherit', textDecoration: 'underline' }}>S/4HANA</Link> Transformation</h1>
           <p className="text-white">
-            A global health and hygiene products manufacturer was in the middle of an SAP S/4HANA pilot when significant issues emerged around user authorizations. The existing authorization concept was not scalable, leading to widespread segregation of duties (SoD) conflicts and difficult role maintenance.
+            A global health and hygiene products manufacturer was in the middle of an SAP <Link to="/blogs/building-display-roles-the-smart-way-in-sap-s4hana" style={{ color: 'inherit', textDecoration: 'underline' }}>S/4HANA</Link> pilot when significant issues emerged around user authorizations. The existing authorization concept was not scalable, leading to widespread segregation of duties (SoD) conflicts and difficult role maintenance.
           </p>
         </div>
         <div className="Coustomer-success-page-hero-container-right">
@@ -53,10 +125,10 @@ const StabilisingSAPAccessAtScale = () => {
 
           <h2 className='big-heading-text-black' style={{ marginTop: '0px' }}>Our Approach</h2>
           <p className='text-black'>
-            s4access was engaged to redesign the SAP authorization concept to better support both compliance and operational needs. We designed a customer-specific S/4 authorization and SoD concept, built around simplified and clearly structured SoD roles.
+            s4access was engaged to redesign the <Link to="/services/authorisation-concept-owner" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP authorization concept</Link> to better support both compliance and operational needs. We designed a customer-specific S/4 authorization and SoD concept, built around simplified and clearly structured SoD roles.
           </p>
           <p className='text-black'>
-            Rather than replacing everything at once, the new model was introduced in a phased manner. Existing pilot users were retrofitted step by step, allowing business operations to continue without disruption. Once validated, the new authorization concept was rolled out in multiple deployment waves across six European countries.
+            Rather than replacing everything at once, the new model was introduced in a phased manner. Existing pilot users were retrofitted step by step, allowing business operations to continue without disruption. Once validated, the new <Link to="/services/authorisation-concept-owner" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP authorization concept</Link> was rolled out in multiple deployment waves across six European countries.
             <br />
             <br />
             The engagement started in 2024 and continues today, with a dedicated team of approximately 14 specialists supporting the customer.

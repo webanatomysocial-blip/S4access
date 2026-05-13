@@ -49,8 +49,8 @@ export default function SAPAccessManagementService() {
 
                 <title>Outsourced SAP Access Management & Governance | s4access</title>
                 <meta name="title" content="Outsourced SAP Access Management & Governance | s4access" />
-                <meta name="description" content="Streamline SAP access with s4access’s outsourced management: expert role
-design, SoD compliance, and seamless provisioning for secure, efficient enterprise systems." />
+                <meta name="description" content="Outsource SAP access management to Nordic specialists. End-to-end SAM service covering SoD, compliance, licence management and security at a fixed monthly price." />
+                <meta name="keywords" content="sap security outsourcing, outsourced sap access management, sap access management services, sap outsourcing services, sap access management consulting, sod management, sap licence management, sap access compliance, sap outsource, access management services" />
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
@@ -104,10 +104,10 @@ design, SoD compliance, and seamless provisioning for secure, efficient enterpri
 
             <section className="service-container-1">
                 <div className="service-left">
-                    <h2 className="extra-big-heading-text-white">
+                    <h1 className="extra-big-heading-text-white">
                         Outsourced Access Management
 
-                    </h2>
+                    </h1>
                     <p className="text-white">
                         We manage your SAP access end-to-end as a trusted partner, providing expertise, consistency, and compliance without the overhead of in-house administration.          </p>
                 </div>
@@ -125,7 +125,7 @@ design, SoD compliance, and seamless provisioning for secure, efficient enterpri
                             <h2 className="big-heading-text-white">Managing SAP Access: A New Reality</h2>
                             <div className="card-sub-content">
                                 <p className="text-white">
-                                    A few years ago, organizations could manage SAP access with modest budgets, limited expertise, and relatively simple processes. But today, the landscape has changed dramatically. Access management in SAP has become complex, time-consuming, and mission-critical for maintaining compliance and security.
+                                    A few years ago, organizations could manage SAP access with modest budgets, limited expertise, and relatively simple processes. But today, the landscape has changed dramatically. <Link to="/services/sap-access-management-review" style={{ color: 'inherit', textDecoration: 'underline' }}>Access management in SAP</Link> has become complex, time-consuming, and mission-critical for maintaining compliance and security.
                                 </p>
                                 <p className="text-white">
                                     Traditional SAP AMS models no longer meet the demands of modern environments. As regulatory pressures grow and systems become more interconnected, organizations increasingly recognize that specialist providers are essential to keep pace.
@@ -149,10 +149,10 @@ design, SoD compliance, and seamless provisioning for secure, efficient enterpri
                                     SAM (SAP Access Management) is our complete outsourcing service covering all key areas of SAP access management. Developed in close collaboration with our clients over more than a decade, SAM has been successfully implemented across a wide range of industries and organization sizes.
                                 </p>
                                 <p className="text-white">
-                                    SAM combines expert consulting, s4access access management best practices, and cloud-based analytics into a single, streamlined service—offered at a fixed monthly price. This proven model reduces complexity, ensures compliance, and actively manages access risks, Segregation of Duties (SoD), and SAP license compliance.
+                                    SAM combines expert consulting, s4access access management best practices, and cloud-based analytics into a single, streamlined service—offered at a fixed monthly price. This proven model reduces complexity, ensures compliance, and actively manages access risks, Segregation of Duties (SoD), and <Link to="/services/sap-license-optimisation" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP license compliance.</Link>
                                 </p>
                                 <p className="text-white">
-                                    With SAM, organizations gain a scalable, low-risk service that delivers consistent results and frees internal SAP teams to focus on other priorities.
+                                    With SAM, organizations gain a <Link to="/customer-success/sam-service" style={{ color: 'inherit', textDecoration: 'underline' }}>scalable, low-risk service</Link> that delivers consistent results and frees internal SAP teams to focus on other priorities.
                                 </p>
                             </div>
                         </div>
@@ -164,10 +164,10 @@ design, SoD compliance, and seamless provisioning for secure, efficient enterpri
                                     SAM (SAP Access Management) is our complete outsourcing service covering all key areas of SAP access management. Developed in close collaboration with our clients over more than a decade, SAM has been successfully implemented across a wide range of industries and organization sizes.
                                 </p>
                                 <p className="text-white">
-                                    SAM combines expert consulting, s4access access management best practices, and cloud-based analytics into a single, streamlined service—offered at a fixed monthly price. This proven model reduces complexity, ensures compliance, and actively manages access risks, Segregation of Duties (SoD), and SAP license compliance.
+                                    SAM combines expert consulting, s4access access management best practices, and cloud-based analytics into a single, streamlined service—offered at a fixed monthly price. This proven model reduces complexity, ensures compliance, and actively manages access risks, Segregation of Duties (SoD), and <Link to="/services/sap-license-optimisation" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP license compliance.</Link>
                                 </p>
                                 <p className="text-white">
-                                    With SAM, organizations gain a scalable, low-risk service that delivers consistent results and frees internal SAP teams to focus on other priorities.
+                                    With SAM, organizations gain a <Link to="/customer-success/sam-service" style={{ color: 'inherit', textDecoration: 'underline' }}>scalable, low-risk service</Link> that delivers consistent results and frees internal SAP teams to focus on other priorities.
                                 </p>
                             </div>
                         </div>

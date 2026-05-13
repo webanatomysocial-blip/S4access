@@ -17,9 +17,9 @@ const SapUconImplementation = () => {
         style={{ justifyContent: "normal", gap: "225px" }}
       >
         <div className="Coustomer-success-page-hero-container-left">
-          <p className="big-heading-text-white">
+          <h1 className="big-heading-text-white">
             SAP UCON Implementation – Reducing the Attack Surface in Production
-          </p>
+          </h1>
           <p className="text-white">
             SAP Unified Connectivity (UCON) helps reduce the attack surface by
             controlling access to Remote-Enabled Function Modules (RFMs).

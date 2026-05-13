@@ -31,7 +31,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://s4access.com/s4-access-architecture-design</loc>
+    <loc>https://s4access.com/services/s4-access-architecture-design</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -41,62 +41,62 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/sap-access-management-review</loc>
+    <loc>https://s4access.com/services/sap-access-management-review</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/sod-strategy-approach</loc>
+    <loc>https://s4access.com/services/sod-strategy-approach</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/sap-access-management-automation</loc>
+    <loc>https://s4access.com/services/sap-access-management-automation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/sap-s4-access-implementation</loc>
+    <loc>https://s4access.com/services/sap-s4-access-implementation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/sod-role-redesign</loc>
+    <loc>https://s4access.com/services/sod-role-redesign</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/reorganisation-ma-projects</loc>
+    <loc>https://s4access.com/services/reorganisation-ma-projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/outsourced-access-management</loc>
+    <loc>https://s4access.com/services/outsourced-access-management</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/authorisation-concept-owner</loc>
+    <loc>https://s4access.com/services/authorisation-concept-owner</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/security-architect</loc>
+    <loc>https://s4access.com/services/security-architect</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/access-risk-sod-management</loc>
+    <loc>https://s4access.com/services/access-risk-sod-management</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/ff-log-review-automation</loc>
+    <loc>https://s4access.com/services/ff-log-review-automation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://s4access.com/sap-license-optimisation</loc>
+    <loc>https://s4access.com/services/sap-license-optimisation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -131,6 +131,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://s4access.com/blogs/sap-certification-2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://s4access.com/blogs/autumn-2025-outlook</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -155,20 +160,20 @@
   </url>
 
   <url>
-    <loc>https://s4access.com/blogs/ricefw-security-guidelines</loc>
+    <loc>https://s4access.com/blogs/ricefw-security-guidelines-building-security-into-custom-developments-part-i</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://s4access.com/blogs/ricefw-security-guidelines-part-2</loc>
+    <loc>https://s4access.com/blogs/ricefw-security-guidelines-building-security-into-custom-developments-part-ii</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
 
   <url>
-    <loc>https://s4access.com/blogs/how-firefighter-ids-help-you-stay-compliant</loc>
+    <loc>https://s4access.com/blogs/when-access-becomes-a-risk-how-firefighter-ids-help-you-stay-compliant</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -195,7 +200,32 @@
   </url>
 
   <url>
-    <loc>https://s4access.com/blogs/how-leading-cisos-are-approaching-sap-access-management-in-2026</loc>
+    <loc>https://s4access.com/blogs/sap-access-management-ciso-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://s4access.com/blogs/a-year-of-strong-growth-s4access-and-its-customers-moving-forward-together</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://s4access.com/blogs/your-partner-for-efficient-sap-access</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://s4access.com/blogs/sap-access-management-consultant-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://s4access.com/blogs/sod-management-concepts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://s4access.com/blogs/sap-access-governance-sod-risk</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

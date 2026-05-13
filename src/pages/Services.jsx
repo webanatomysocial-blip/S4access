@@ -68,10 +68,10 @@ audits, and compliance support to protect your enterprise and streamline governa
       <section className="services-page-hero-banner">
 
         <div className="services-hero-left">
-          <p className="big-heading-text-white">
+          <h1 className="big-heading-text-white">
             Services designed to solve <br className='only-windows' />
             SAP access management challenges
-          </p>
+          </h1>
           <p className="text-white">
             We deliver services—from design and implementation to ongoing operations—in true partnership with our clients to achieve lasting results.
           </p>

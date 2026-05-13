@@ -49,10 +49,10 @@ export default function SAPAuthorisationRedesign() {
         <>
             <Helmet>
 
-                <title>SAP S/4HANA Access Implementation & Governance | s4access</title>
-                <meta name="title" content="SAP S/4HANA Access Implementation & Governance | s4access" />
-                <meta name="description" content="Implement SAP S/4HANA access controls with s4access: expert role design,
-risk mitigation, SoD alignment & seamless governance to secure your enterprise systems." />
+                <title>SAP S/4HANA Access Implementation & Role Design | s4access</title>
+                <meta name="title" content="SAP S/4HANA Access Implementation & Role Design | s4access" />
+                <meta name="description" content="Secure and compliant SAP S/4HANA access implementation. Expert role design, Fiori authorisation, governance and security roadmap by Nordic SAP specialists." />
+                <meta name="keywords" content="sap s/4hana access implementation, sap s4 access design, sap s/4hana security, sap role design, sap fiori authorisation, sap s4 transition, sap access management specialists, sap s4hana implementation, sap security roadmap, sap access governance" />
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
@@ -114,9 +114,9 @@ risk mitigation, SoD alignment & seamless governance to secure your enterprise s
 
             <section className="service-container-1">
                 <div className="service-left">
-                    <h2 className="extra-big-heading-text-white">
+                    <h1 className="extra-big-heading-text-white">
                         SAP S/4 Access Implementation
-                    </h2>
+                    </h1>
                     <p className="text-white">
                         We deliver a secure and compliant access design for SAP S/4HANA, ensuring smooth transitions, minimizing project risks, and building an evergreen foundation for the maintenance phase.
                     </p>
@@ -136,15 +136,15 @@ risk mitigation, SoD alignment & seamless governance to secure your enterprise s
 
 
                         <div className="card-sub-content card-sub-content-only-some">
-                            <h3 className="sub-big-heading-text-white">
+                            <h2 className="sub-big-heading-text-white">
                                 Modernizing SAP Access Management During S/4 Transformation
-                            </h3>
+                            </h2>
                             <p className="text-white">
-                                The transition to SAP S/4 presents a valuable opportunity to modernize your SAP access design. However, the complexity of the environment and heightened security requirements make this task more challenging than ever. <br /><br />
+                                The transition to SAP S/4 presents a valuable opportunity to modernize your <Link to="/services/sod-role-redesign" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP access design</Link>. However, the complexity of the environment and heightened security requirements make this task more challenging than ever. <br /><br />
 
                                 In many cases, access management is underplanned and underbudgeted—especially when relying on a single large system integrator. This often results in costly rework during implementation and ongoing maintenance. A common issue is the lack of deep expertise and strategic focus in this area. <br /><br />
 
-                                Recognizing these challenges, a growing number of organizations are choosing to carve out SAP access management and partner with specialist firms to ensure it is handled with the attention and expertise it demands.
+                                Recognizing these challenges, a growing number of organizations are choosing to carve out <Link to="/blogs/your-partner-for-efficient-sap-access" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP access management and partner</Link> with specialist firms to ensure it is handled with the attention and expertise it demands.
                             </p>
 
                         </div>
@@ -152,12 +152,12 @@ risk mitigation, SoD alignment & seamless governance to secure your enterprise s
 
 
                         <div className="card-sub-content card-sub-content-only-some">
-                            <h3 className="sub-big-heading-text-white">
+                            <h2 className="sub-big-heading-text-white">
                                 From Planning to Execution – SAP S/4 Access Done Right!
-                            </h3>
+                            </h2>
 
                             <p className="text-white">
-                                We’ve supported numerous organizations in designing and successfully implementing their complete SAP S/4HANA security roadmap—on time and within budget. We believe there’s no one-size-fits-all solution, just honest, focused work.
+                                We’ve supported numerous organizations in designing and successfully implementing their complete <Link to="/services/security-architect" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP S/4HANA security</Link> roadmap—on time and within budget. We believe there’s no one-size-fits-all solution, just honest, focused work.
                             </p>
                             <p className="text-white">
                                 Success comes from having a detailed plan, the right level of deep expertise, and fit-for-purpose tools. When these elements are in place from the start, organizations can achieve sustainable results, avoid costly rework, and ensure a smooth implementation and balanced maintenance phase.

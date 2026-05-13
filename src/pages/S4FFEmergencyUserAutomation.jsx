@@ -46,10 +46,10 @@ export default function SAPSoDApproach() {
     <>
      <Helmet>
 
-        <title>Firefighter Log Review Automation for SAP GRC | s4access</title>
-        <meta name="title" content="Firefighter Log Review Automation for SAP GRC | s4access" />
-        <meta name="description" content="Automate SAP GRC Firefighter log reviews with s4access: reduce manual
-effort, ensure compliance, and enhance audit efficiency through intelligent automation." />
+        <title>SAP GRC Firefighter Log Review Automation | s4access</title>
+        <meta name="title" content="SAP GRC Firefighter Log Review Automation | s4access" />
+        <meta name="description" content="Automate SAP GRC firefighter log reviews. Operational within weeks, 80–92% automated approval rates, fixed monthly fee and validated by major audit firms." />
+        <meta name="keywords" content="sap grc firefighter, sap firefighter log review, ff log review automation, sap grc firefighter log report, firefighter access sap, grac_ff application log, emergency access management, sap firefighter best practices, ff log analysis, sap access control" />
 
  <script type="application/ld+json">
           {JSON.stringify({
@@ -105,9 +105,9 @@ effort, ensure compliance, and enhance audit efficiency through intelligent auto
 
       <section className="service-container-1">
         <div className="service-left">
-          <h2 className="extra-big-heading-text-white">
+          <h1 className="extra-big-heading-text-white">
             FF Log Review Automation
-          </h2>
+          </h1>
           <p className="text-white">
             We automate Firefighter (FF) log reviews to improve accuracy, reduce manual workload, and ensure faster, compliant audit reporting.
           </p>
@@ -123,9 +123,9 @@ effort, ensure compliance, and enhance audit efficiency through intelligent auto
         <div className="service-journey-content ">
           <div className="journey-card ">
             <div className="card-header">
-              <h3 className="big-heading-text-white">
+              <h2 className="big-heading-text-white">
                 The Challenge of Managing Emergency Access in SAP
-              </h3>
+              </h2>
               <div className="card-sub-content">
                 <p className="text-white">
                   In SAP landscapes, terms like break glass users,{" "}
@@ -142,7 +142,7 @@ effort, ensure compliance, and enhance audit efficiency through intelligent auto
                   review effectively. Without a streamlined process or automated
                   analysis, organizations frequently face{" "}
                   thousands of unreviewed logs, leading to{" "}
-                  audit findings and compliance risks.
+                  <Link to="/services/access-risk-sod-management" style={{ color: 'inherit', textDecoration: 'underline' }}>audit findings and compliance risks.</Link>
                 </p>
               </div>
             </div>
@@ -160,7 +160,7 @@ effort, ensure compliance, and enhance audit efficiency through intelligent auto
               <div className="card-sub-content">
                 <p className="text-white">
                   In collaboration with our customers, s4access has
-                  developed an automated log review service that effectively addresses
+                  developed an <Link to="/blogs/RICEFW-Security-Guidelines" style={{ color: 'inherit', textDecoration: 'underline' }}>automated log review</Link> service that effectively addresses
                   the common challenges of managing emergency access in SAP environments.
                   The solution is quick to deploy, typically operational within a few
                   weeks, and requires no formal implementation project.

@@ -91,7 +91,7 @@ export default function DynamicBlog() {
         }`
       : `${SITE_ORIGIN}/images/black-logo-400.png`;
 
-  const pageUrl = `${SITE_ORIGIN}/blogs/${metadata?.id ?? blogName}`;
+  const pageUrl = `${SITE_ORIGIN}/blogs/${metadata?.slug ?? metadata?.id ?? blogName}`;
 
   // Lazy load the blog component using the exact glob key
   const BlogComponent = React.lazy(async () => {
@@ -132,6 +132,9 @@ export default function DynamicBlog() {
       <Helmet>
         <title>{(metadata?.title ?? "Blog") + " | s4access"}</title>
         <meta name="description" content={description} />
+        {metadata?.keywords && (
+          <meta name="keywords" content={metadata.keywords} />
+        )}
         <link rel="canonical" href={pageUrl} />
 
         <meta
@@ -176,7 +179,7 @@ export default function DynamicBlog() {
 
         <section className="news-blogs-section-inner-blog-page">
           <div className="heading-news-blog">
-            <h1 className="big-heading-text-black">Recent Blogs</h1>
+            <h2 className="big-heading-text-black">Recent Blogs</h2>
           </div>
           <div className="news-blogs-container">
             <Blogs />

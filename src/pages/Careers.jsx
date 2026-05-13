@@ -29,11 +29,9 @@ const Careers = () => {
 
       <section className="careers-hero-section">
         <div className="careers-hero-left-content">
-          <p className="big-heading-text-white">
+          <h1 className="big-heading-text-white">
             Your Next Chapter <br /> Starts Here
-
-
-          </p>
+          </h1>
           <p className="text-white">
             We believe that great people build great companies. Whether you're just starting your career or looking to take the next big step, we offer opportunities to grow, innovate, and make a real impact. Explore our open roles and discover how you can be part of something meaningful.
           </p>
@@ -103,13 +101,14 @@ const Careers = () => {
       <section className="careers-why-s4access-section only-mobile">
         <div className="careers-why-s4access-content">
           <h2 className="big-heading-text-white" style={{ textTransform: "none" }}>Why s4access?</h2> <br />
-          <p className="sub-big-heading-text-white">
-            We are different </p> <br />
+          <h3 className="sub-big-heading-text-white">
+            We are different </h3>
+ <br />
           <p className="text-white">
             At s4access, 'We are different' isn't just a slogan—it's a promise. Here, you might work remote but never alone with a challenge. Whether you're leading a major project or navigating a new role, there's always a colleague ready to support you. We believe in collaboration over competition, and we foster a culture where asking for help is a strength, not a weakness. This is how we grow together—and why our people stay and thrive.
           </p>
           <br />
-          < p className="sub-big-heading-text-white">We grow</p>
+          <h3 className="sub-big-heading-text-white">We grow</h3>
           <br />
           <p className="text-white">
             Growth brings opportunities for the staff to grow and develop.
@@ -135,29 +134,29 @@ const Careers = () => {
         <div className="careers-our-promise-content-right">
           <div className="careers-our-promise-content-right-inner">
             <FaUsers className="text-black" size={24} />
-            <p className="sub-big-heading-text-black-lite">
+            <h3 className="sub-big-heading-text-black-lite">
               Community and teamwork
-            </p>
+            </h3>
           </div>
           <div className="careers-our-promise-content-right-inner">
             <FaTrophy className="text-black" size={24} />
-            <p className="sub-big-heading-text-black-lite">
+            <h3 className="sub-big-heading-text-black-lite">
               Professional excellence
-            </p>
+            </h3>
           </div>
         </div>
         <div className="careers-our-promise-content-right">
           <div className="careers-our-promise-content-right-inner">
             <FaDove className="text-black" size={24} />
-            <p className="sub-big-heading-text-black-lite">
+            <h3 className="sub-big-heading-text-black-lite">
               Freedom and responsibility
-            </p>
+            </h3>
           </div>
           <div className="careers-our-promise-content-right-inner">
             <FaHeartbeat className="text-black" size={24} />
-            <p className="sub-big-heading-text-black-lite">
+            <h3 className="sub-big-heading-text-black-lite">
               Modern benefits with health care
-            </p>
+            </h3>
           </div>
         </div>
       </section>

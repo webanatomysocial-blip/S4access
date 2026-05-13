@@ -80,7 +80,7 @@ const HomeSlider = () => {
               <img src={slide.image} alt={`Slide ${index + 1}`} style={slides.objectPosition} />
               <div className="slide-content">
                 {slide.textImg && <img src={slide.textImg} alt="Slide logo" />}
-                <p>{slide.text}</p>
+                {index === 0 ? <h1>{slide.text}</h1> : <p>{slide.text}</p>}
                 {slide.link && (
                   <Link to={slide.link} className="slide-button">
                     <span>Learn More</span>

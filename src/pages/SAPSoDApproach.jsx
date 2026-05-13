@@ -50,19 +50,19 @@ export default function SAPSoDApproach() {
     <>
       <Helmet>
 
-        <title>S/4HANA SoD Strategy & SAP Access Governance | s4access</title>
-        <meta name="title" content="S/4HANA SoD Strategy & SAP Access Governance | s4access" />
-        <meta name="description" content="Learn s4access’s strategy for Segregation of Duties in S/4HANA—optimize role
-design, governance and compliance to reduce risk and strengthen access controls." />
+        <title>SAP SoD Strategy & Access Governance Consulting | s4access</title>
+        <meta name="title" content="SAP SoD Strategy & Access Governance Consulting | s4access" />
+        <meta name="description" content="Build a proactive SAP SoD strategy. Governance frameworks, tool selection, audit-ready access controls and continuous SoD compliance for Nordic companies." />
+        <meta name="keywords" content="sap sod strategy, segregation of duties sap, sod management, sap sod analysis, sod governance, sap access controls, sod compliance, sap sod tool, sod risks in sap, sap access management consulting" />
 
       </Helmet>
       <Header />
 
       <section className="service-container-1">
         <div className="service-left">
-          <h2 className="extra-big-heading-text-white">
+          <h1 className="extra-big-heading-text-white">
             SoD strategy and approach
-          </h2>
+          </h1>
           <p className="text-white">
             We design and implement a clear Segregation of Duties (SoD) strategy, reducing risks of conflicts, strengthening compliance, and ensuring secure, sustainable access management.
           </p>
@@ -78,14 +78,14 @@ design, governance and compliance to reduce risk and strengthen access controls.
         <div className="service-journey-content ">
           <div className="journey-card ">
             <div className="card-header">
-              <h3 className="big-heading-text-white">Effective SoD Management in SAP: Why a Proactive Approach Matters</h3>
+              <h2 className="big-heading-text-white">Effective SoD Management in SAP: Why a Proactive Approach Matters</h2>
               <div className="card-sub-content">
                 <p className="text-white">
                   Every organization running SAP must manage Segregation of Duties (SoD) to ensure compliance and security.
                   However, we often see this handled reactively—triggered by audit findings—without a clear strategy, defined objectives, or the right tools in place.
                 </p>
                 <p className="text-white">
-                  This ad-hoc approach can lead to increased costs in SAP access management, while delivering limited improvements in actual compliance and security.
+                  This ad-hoc approach can lead to <Link to="/services/sap-license-optimisation" style={{ color: 'inherit', textDecoration: 'underline' }}>increased costs in SAP access management</Link>, while delivering limited improvements in actual compliance and security.
                   A proactive, well-structured SoD strategy is essential to achieve sustainable control, reduce risk, and optimize resource use.
                 </p>
               </div>
@@ -105,7 +105,7 @@ design, governance and compliance to reduce risk and strengthen access controls.
               <div className="card-sub-content">
                 <p className="text-white">
                   Our consulting service helps organizations design a structured, proactive approach to managing Segregation of Duties (SoD) and SAP access controls.
-                  We work with you to define clear objectives, organize responsibilities, and select the right tools—moving beyond reactive audit responses to a sustainable, cost-effective access management model.
+                  We work with you to define clear objectives, organize responsibilities, and select the right tools—moving beyond reactive audit responses to a sustainable, <Link to="/services/outsourced-access-management" style={{ color: 'inherit', textDecoration: 'underline' }}>cost-effective access management</Link> model.
                 </p>
                 <p className="text-white">Key deliverables include:</p>
               </div>

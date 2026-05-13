@@ -23,10 +23,10 @@ function Home() {
     <div>
 
       <Helmet>
-        <title>Leading SAP Access Management Specialists | s4access</title>
-        <meta name="title" content="Leading SAP Access Management Specialists | s4access" />
-        <meta name="description" content="s4access provides SAP access governance, automation, and risk reduction solutions to help organisations stay secure, compliant, and efficient across SAP systems." />
-        
+        <title>SAP Access Management & SoD Specialists | Nordic | s4access</title>
+        <meta name="title" content="SAP Access Management & SoD Specialists | Nordic | s4access" />
+        <meta name="description" content="Finland-based SAP access management specialists for Nordic enterprises. SoD strategy, S/4HANA design, licence optimisation and firefighter log automation." />
+        <meta name="keywords" content="sap access management, sap access management automation, sap license optimisation, sap s/4hana security, sod management, sap sod, firefighter access sap, sap access risk management, sap consulting finland, sap security architect" />
 
 
         {/* ✅ ENHANCED OG TAGS FOR ALL PLATFORMS */}
@@ -53,6 +53,123 @@ function Home() {
         <meta name="twitter:description" content="Welcome to s4access, your go-to solution for SAP access management!" />
         <meta name="twitter:image" content="https://s4access.com/images/black-logo-400.png" />
         <meta name="twitter:image:alt" content="s4access logo" />
+
+        {/* ✅ SCHEMA.ORG JSON-LD */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": ["Organization", "LocalBusiness"],
+                "@id": "https://s4access.com/#organization",
+                "name": "s4access",
+                "url": "https://s4access.com/",
+                "logo": "https://s4access.com/assets/Mainlogo-9IvBezmq.png",
+                "image": "https://s4access.com/assets/Mainlogo-9IvBezmq.png",
+                "description": "Nordic SAP Access Management and GRC specialist delivering SAP S/4HANA security, SoD remediation, SAP GRC implementation, access automation, role redesign, outsourced access management, and SAP security consulting services across Finland, Sweden, Norway, and Denmark.",
+                "foundingDate": "2021",
+                "telephone": "+358207191010",
+                "email": "contact@s4access.com",
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "telephone": "+358207191010",
+                  "contactType": "customer support",
+                  "email": "contact@s4access.com",
+                  "url": "https://s4access.com/contact",
+                  "availableLanguage": ["English"]
+                },
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Helsinki",
+                  "addressCountry": "FI"
+                },
+                "areaServed": [
+                  { "@type": "Country", "name": "Finland" },
+                  { "@type": "Country", "name": "Sweden" },
+                  { "@type": "Country", "name": "Norway" },
+                  { "@type": "Country", "name": "Denmark" }
+                ],
+                "sameAs": [
+                  "https://fi.linkedin.com/company/s4access",
+                  "https://www.crunchbase.com/organization/s4access"
+                ],
+                "serviceType": [
+                  "SAP Access Design",
+                  "SAP Access Management Review",
+                  "SoD Strategy Approach",
+                  "SAP Access Management Automation",
+                  "SAP Access Projects",
+                  "SAP S/4 Access Implementation",
+                  "SoD / Role Redesign",
+                  "Reorganisation / M&A Projects",
+                  "SAP Access Services",
+                  "Outsourced Access Management",
+                  "Authorisation Concept Owner",
+                  "Security Architect",
+                  "SAP Access Solutions",
+                  "Access Risk SoD Management",
+                  "FF Log Review Automation",
+                  "SAP License Optimisation"
+                ],
+                "knowsAbout": [
+                  "SAP Security",
+                  "SAP GRC",
+                  "SAP S/4HANA",
+                  "Segregation of Duties",
+                  "SAP Access Management",
+                  "SAP Authorization",
+                  "SAP Role Design",
+                  "SAP License Optimization"
+                ]
+              },
+              {
+                "@type": "Service",
+                "@id": "https://s4access.com/#service",
+                "name": "SAP Access Management Services",
+                "provider": { "@id": "https://s4access.com/#organization" },
+                "areaServed": [
+                  { "@type": "Country", "name": "Finland" },
+                  { "@type": "Country", "name": "Sweden" },
+                  { "@type": "Country", "name": "Norway" },
+                  { "@type": "Country", "name": "Denmark" }
+                ],
+                "serviceType": [
+                  "SAP Access Management Review",
+                  "SoD Strategy Approach",
+                  "SAP Access Management Automation",
+                  "SAP S/4 Access Implementation",
+                  "SoD / Role Redesign",
+                  "Reorganisation / M&A Projects",
+                  "Outsourced Access Management",
+                  "Authorisation Concept Owner",
+                  "Security Architect",
+                  "Access Risk SoD Management",
+                  "FF Log Review Automation",
+                  "SAP License Optimisation"
+                ],
+                "url": "https://s4access.com/services"
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://s4access.com/#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://s4access.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://s4access.com/services"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
 
@@ -71,9 +188,9 @@ function Home() {
       {/* Our Highlights section start*/}
       <section className="our-hightlights-section" id="go-down-section">
         <div className="hightlight-tittle-container">
-          <p className="big-heading-text-black">
+          <h2 className="big-heading-text-black">
             Our <br className="only-windows" /> Highlights
-          </p>
+          </h2>
         </div>
 
         <div className="hightlight-number-containers">
@@ -143,7 +260,7 @@ function Home() {
 
       <section className="services-section">
         <div>
-          <p className="big-heading-text-white">Services</p>
+          <h2 className="big-heading-text-white">Services</h2>
         </div>
 
         <ServiceTabs />
@@ -166,7 +283,7 @@ function Home() {
       {/* news and blogs section start  */}
       <section className="news-blogs-section">
         <div className=" heading-news-blog">
-          <p className="big-heading-text-black">News & Blogs</p>
+          <h2 className="big-heading-text-black">News & Blogs</h2>
 
           <Link to="/insights" className="read-more-btn-blue">
             Read More <i className="bi bi-arrow-right arrow-icon"></i>

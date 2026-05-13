@@ -100,9 +100,9 @@ const Blogs = ({ backgroundColor, limit = 3 }) => {
                       to={`/blogs/${metadata.slug}`}
                       style={{ textDecoration: "none" }}
                     >
-                      <p className="sub-big-heading-text-black">
+                      <h3 className="sub-big-heading-text-black">
                         {metadata.title}
-                      </p>
+                      </h3>
                     </Link>
                   </div>
                   <div

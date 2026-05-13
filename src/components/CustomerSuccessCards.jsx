@@ -48,14 +48,14 @@ const successStories = [
     title: "SAM Service",
     description:
       "For a large Scandinavian city, we implemented a structured SAP access management model, improving service predictability and ensuring zero audit observations during the first two years.",
-    link: "/customer-success/sam-service-sap-access-management",
+    link: "/customer-success/sam-service",
   },
 ];
 
 const CustomerSuccessCards = () => (
   <section className="Customer-success-stories-section">
     <div>
-      <p className="big-heading-text-black">Customer Success Stories</p>
+      <h2 className="big-heading-text-black">Customer Success Stories</h2>
     </div>
     <div className="coustomer-success-container">
       <Swiper
@@ -85,7 +85,7 @@ const CustomerSuccessCards = () => (
           <SwiperSlide key={index}>
             <div className="innercoustomer-success-container-left h-100">
               <div className="innercoustomer-heading-cont">
-                <p className="sub-heading-text-white">{story.title}</p>
+                <h3 className="sub-heading-text-white">{story.title}</h3>
                 <p className="small-text-white">{story.description}</p>
               </div>
               <div>

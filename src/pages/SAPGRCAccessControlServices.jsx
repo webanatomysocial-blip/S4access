@@ -47,13 +47,13 @@ export default function SAPGRCAccessControlServices() {
         <>
             <Helmet>
 
-                <title>SAP Security Architect Role & Responsibilities | s4access</title>
-                <meta name="title" content="SAP Security Architect Role & Responsibilities | s4access" />
-                <meta name="description" content="Explore the SAP Security Architect role at s4access: design secure SAP
-landscapes, implement SoD controls, and ensure compliance across S/4HANA systems." />
+                <title>SAP Security Architect & Architecture Consulting | s4access</title>
+                <meta name="title" content="SAP Security Architect & Architecture Consulting | s4access" />
+                <meta name="description" content="Hard to find a qualified SAP Security Architect? Ongoing consulting to build and maintain your SAP security architecture, compliance and access governance." />
+                <meta name="keywords" content="sap security architect, sap security architecture, sap security and authorization, system security architect, sap access governance, sap security design, sap authorization concept, sap security consulting, sap access management specialists, abap secure coding" />
                 <script type="application/ld+json">
                     {JSON.stringify({
-                        "@context": "https://schema.org",
+                        "@context": "https://schema.org",    
                         "@type": "FAQPage",
                         mainEntity: [
                             {
@@ -113,9 +113,9 @@ landscapes, implement SoD controls, and ensure compliance across S/4HANA systems
 
             <section className="service-container-1">
                 <div className="service-left">
-                    <h2 className="extra-big-heading-text-white">
+                    <h1 className="extra-big-heading-text-white">
                         Security Architect
-                    </h2>
+                    </h1>
                     <p className="text-white">
                         We provide expert Security Architecture services, designing robust SAP security frameworks that safeguard systems, reduce risks, and support long-term business goals.          </p>
                 </div>
@@ -130,13 +130,13 @@ landscapes, implement SoD controls, and ensure compliance across S/4HANA systems
                 <div className="service-journey-content ">
                     <div className="journey-card ">
                         <div className="card-header">
-                            <h3 className="big-heading-text-white">The Growing Demand for SAP Security Architects</h3>
+                                                        <h2 className="big-heading-text-white">The Growing Demand for SAP Security Architects</h2>
                             <div className="card-sub-content">
                                 <p className="text-white">
                                     Every SAP system has an access management design—whether intentionally crafted or shaped over time through ad hoc decisions. In many cases, the current state is the result of years of incremental changes made without a clear strategy or long-term objective.
                                 </p>
                                 <p className="text-white">
-                                    As SAP landscapes become more complex and tightly integrated with broader IT environments, the need for a robust and well-aligned SAP security architecture has grown significantly. Organizations now require dedicated design services to ensure their access management aligns with compliance, operational, and business goals.
+                                    As SAP landscapes become more complex and tightly integrated with broader IT environments, the need for a robust and well-aligned <Link to="/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP security architecture</Link> has grown significantly. Organizations now require dedicated design services to ensure their access management aligns with compliance, operational, and business goals.
                                 </p>
                                 <p className="text-white">
                                     In larger enterprises, this often translates into a need for permanent SAP security architect roles—positions that are increasingly difficult to fill due to the scarcity of qualified professionals.
@@ -154,7 +154,7 @@ landscapes, implement SoD controls, and ensure compliance across S/4HANA systems
                             <h2 className="big-heading-text-white">SAP Security Architecture & Design – Ongoing Consulting Service</h2>
                             <div className="card-sub-content">
                                 <p className="text-white">
-                                    We provide continuous support to help organizations build and maintain a strong SAP security architecture that evolves with their business and IT landscape. Our ongoing consulting service ensures your SAP access management remains aligned with compliance requirements, operational needs, and enterprise architecture.
+                                    We provide continuous support to help organizations build and maintain a strong SAP security architecture that evolves with their business and IT landscape. Our ongoing consulting service ensures your <Link to="/" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP access management</Link> remains aligned with compliance requirements, operational needs, and enterprise architecture.
                                 </p >
                                 <p className="text-white"  >Delivered by experienced SAP security professionals, the service includes:</p>
                             </div>

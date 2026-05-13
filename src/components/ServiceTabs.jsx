@@ -98,13 +98,13 @@ const ServiceTabs = () => {
                                 className={`tab ${activeTab === index ? 'active' : ''}`}
                                 onClick={() => setActiveTab(activeTab === index ? -1 : index)}
                             >
-                                <p className='sub-heading-text'>{index + 1}. {service.category}</p>
+                                <h3 className='sub-heading-text'>{index + 1}. {service.category}</h3>
                             </div>
                             {activeTab === index && (
                                 <div className="tab-content">
                                     {service.items.map((item, idx) => (
                                         <div key={idx} className="service-item" style={{ marginBottom: '20px' }}>
-                                            <p className='sub-big-heading-text-black'>{item.title}</p>
+                                            <h4 className='sub-big-heading-text-black'>{item.title}</h4>
                                             <p className='text-black'>{item.desc}</p>
                                             <a className='read-more-btn-blue' href={item.link}>
                                                 Read More <i className="bi bi-arrow-right arrow-icon"></i>
@@ -126,7 +126,7 @@ const ServiceTabs = () => {
                                 className={`tab ${activeTab === index ? 'active' : ''}`}
                                 onClick={() => setActiveTab(index)}
                             >
-                                <p className='sub-heading-text'>{index + 1}. {service.category}</p>
+                                <h3 className='sub-heading-text'>{index + 1}. {service.category}</h3>
                             </div>
                         ))}
                     </div>
@@ -134,7 +134,7 @@ const ServiceTabs = () => {
                         <div className="tab-content">
                             {services[activeTab].items.map((item, idx) => (
                                 <div key={idx} className="service-item" style={{ marginBottom: '20px' }}>
-                                    <p className='sub-big-heading-text-black'>{item.title}</p>
+                                    <h4 className='sub-big-heading-text-black'>{item.title}</h4>
                                     <p className='text-black'>{item.desc}</p>
                                     <a className='read-more-btn-blue' href={item.link}>
                                         Read More <i className="bi bi-arrow-right arrow-icon"></i>

@@ -51,8 +51,8 @@ export default function SAPAccessSecurityConsulting() {
 
                 <title>SAP Access Management for M&A & Reorganisation | s4access</title>
                 <meta name="title" content="SAP Access Management for M&A & Reorganisation | s4access" />
-                <meta name="description" content="Navigate SAP access during mergers, acquisitions & reorganizations with
-s4access: expert role mapping, SoD compliance, and seamless user provisioning." />
+                <meta name="description" content="Support SAP access management through mergers, reorganisations and process changes. Risk mitigation, rapid assessment and compliance for Nordic SAP companies." />
+                <meta name="keywords" content="sap access management, sap m&a transitions, sap reorganisation, sap access risk management, sap outsourcing services, sap access compliance, sap security outsourcing, sap access management consulting, sap access changes, sap access management specialists" />
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
@@ -114,9 +114,9 @@ s4access: expert role mapping, SoD compliance, and seamless user provisioning." 
 
             <section className="service-container-1">
                 <div className="service-left">
-                    <h2 className="extra-big-heading-text-white">
+                    <h1 className="extra-big-heading-text-white">
                         Reorganisation/ Process changes / M&A
-                    </h2>
+                    </h1>
                     <p className="text-white">
                         We support access management through organisational shifts, process changes, and mergers & acquisitions, ensuring compliance and security remain intact during transitions.
                     </p>
@@ -137,13 +137,13 @@ s4access: expert role mapping, SoD compliance, and seamless user provisioning." 
                             </h2>
                             <div className="card-sub-content">
                                 <p className="text-white">
-                                    Businesses are constantly evolving—through reorganizations, outsourcing, insourcing, process changes, and mergers or acquisitions. For organizations running SAP, these transitions are particularly challenging from an access management perspective.
+                                    Businesses are constantly evolving—through reorganizations, <Link to="/services/outsourced-access-management" style={{ color: 'inherit', textDecoration: 'underline' }}>outsourcing</Link>, insourcing, process changes, and mergers or acquisitions. For organizations running SAP, these transitions are particularly challenging from an access management perspective.
                                 </p>
                                 <p className="text-white">
                                     Business decisions are often made behind closed doors, leaving SAP teams with limited time to implement critical access changes. This reactive approach not only increases the risk of compliance and security issues, but also leads to unplanned costs due to rushed implementations, rework, and audit findings.
                                 </p>
                                 <p className="text-white">
-                                    Moreover, poorly managed access changes can result in availability risks, where key users are unable to perform essential tasks due to missing or incorrect access. This can disrupt operations, delay decision-making, and impact business continuity.
+                                    Moreover, poorly managed access changes can result in availability risks, where key users are unable to perform essential tasks due to missing or incorrect access. This can disrupt operations, <Link to="/blogs/sap-access-management-ciso-2026" style={{ color: 'inherit', textDecoration: 'underline' }}>delay decision-making</Link>, and impact business continuity.
                                 </p>
                             </div>
                         </div>

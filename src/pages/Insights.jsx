@@ -22,10 +22,9 @@ security best practices and expert resources to empower your enterprise strategy
 
       <Header backgroundColor="#000000ff" />
       <section className="insights-hero-section">
-        <p className="big-heading-text-black" style={{ marginBottom: "40px" }}>
-          {" "}
+        <h1 className="big-heading-text-black" style={{ marginBottom: "40px" }}>
           Blogs
-        </p>
+        </h1>
 
         <Blogs limit="all" />
       </section>

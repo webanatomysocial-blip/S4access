@@ -3,6 +3,7 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 // import img22 from '../assets/images/About-img/Top-banner-img22.jpg';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import "../css/Coustomer.css";
 import { FaUserMinus, FaChartPie, FaShieldAlt, FaExchangeAlt, FaUserCog, FaFileAlt } from 'react-icons/fa';
 import img10 from "../assets/images/success-images/10.jpg";
@@ -12,13 +13,84 @@ import img11 from "../assets/images/success-images/11.jpg";
 const SAPAuthorizationConceptOwner = () => {
   return (
     <div>
+      <Helmet>
+        <title>SAP Licence Optimisation for Steel Manufacturer | s4access</title>
+        <meta name="title" content="SAP Licence Optimisation for Steel Manufacturer | s4access" />
+        <meta name="description" content="How s4access structured SAP authorization concept ownership for a steel manufacturer reducing SAP_ALL usage, optimising licences and eliminating audit risks." />
+        <meta name="keywords" content="sap authorization concept owner, sap licence optimisation, sap_all profile reduction, sap passive user removal, sap audit compliance, sap role management, sap access governance, sap license optimization, sap access management case study, outsourced sap access management" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Article",
+                "@id": "https://s4access.com/customer-success/sap-authorisation-concept-owner",
+                "headline": "SAP Licence Optimisation for Steel Manufacturer | s4access",
+                "description": "How s4access structured SAP authorization concept ownership for a steel manufacturer — reducing SAP_ALL usage, optimising licences and eliminating audit risks.",
+                "url": "https://s4access.com/customer-success/sap-authorisation-concept-owner",
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "s4access",
+                  "url": "https://s4access.com",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://s4access.com/images/black-logo-400.png",
+                    "width": 400,
+                    "height": 400
+                  }
+                },
+                "author": {
+                  "@type": "Organization",
+                  "name": "s4access",
+                  "url": "https://s4access.com"
+                },
+                "about": [
+                  "SAP Authorization Concept Owner",
+                  "SAP Licence Optimisation",
+                  "SAP Access Management",
+                  "SAP_ALL Profile Reduction",
+                  "SAP Audit Compliance"
+                ],
+                "mentions": {
+                  "@type": "Organization",
+                  "name": "Steel Manufacturer",
+                  "industry": "Steel Manufacturing"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://s4access.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Customer Success",
+                    "item": "https://s4access.com/customer-success"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "SAP Licence Optimisation for Steel Manufacturer",
+                    "item": "https://s4access.com/customer-success/sap-authorisation-concept-owner"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
       <Header />
 
       <section className="Coustomer-success-page-hero-section">
         <div className="Coustomer-success-page-hero-container-left">
-          <p className="big-heading-text-white">SAP Authorization Concept Owner Service</p>
+          <h1 className="big-heading-text-white">SAP Authorization Concept Owner Service</h1>
           <p className="text-white">
-            We took on SAP Authorization Concept Ownership for a leading steel manufacturer. With their SAP environment stuck in “project mode,” user and authorization management lacked structure. Our task was to bring consistency, security, and efficiency.
+            We took on <Link to="/services/authorisation-concept-owner" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP Authorization Concept Owner service</Link> for a leading steel manufacturer. With their SAP environment stuck in “project mode,” user and authorization management lacked structure. Our task was to bring consistency, security, and efficiency.
           </p>
         </div>
         <div className="Coustomer-success-page-hero-container-right">
@@ -32,11 +104,11 @@ const SAPAuthorizationConceptOwner = () => {
         <div className="Coustomer-success-page-card">
           <h2 className='big-heading-text-black'>Scope of Service</h2>
           <p className='text-black'>
-            Our SAP Authorization Concept Owner service has delivered comprehensive support, including:
+            Our <Link to="/services/authorisation-concept-owner" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP Authorization Concept Owner service</Link> has delivered comprehensive support, including:
           </p>
           <ul className='text-black'>
             <li>Passive user removals</li>
-            <li>SAP user license optimization and measurement</li>
+            <li><Link to="/services/sap-license-optimisation" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP user license optimization</Link> and measurement</li>
             <li>Access reviews for selected users and authorization roles</li>
             <li>Transaction code usage analysis and clean-up</li>
             <li>Evidence gathering for external audits</li>

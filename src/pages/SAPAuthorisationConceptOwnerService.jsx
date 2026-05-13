@@ -59,10 +59,10 @@ export default function SAPAuthorisationConceptOwnerService() {
     <>
       <Helmet>
 
-        <title>SAP Authorization Concept Owner & Roles | s4accesss</title>
-        <meta name="title" content="SAP Authorization Concept Owner & Roles | s4accesss" />
-        <meta name="description" content="Understand the role of SAP Authorization Concept Owner: define, implement,
-and maintain authorization concepts to ensure compliance and secure access management." />
+        <title>SAP Authorization Concept Owner Service | s4access</title>
+        <meta name="title" content="SAP Authorization Concept Owner Service | s4access" />
+        <meta name="description" content="Struggling to fill your SAP Authorization Concept Owner role? Outsourced service delivering SAP expertise, audit compliance and licence cost savings daily." />
+        <meta name="keywords" content="sap authorization concept owner, sap authorisation concept, sap access governance, authorization concept, sap security outsourcing, sap access management specialists, sap authorization management, concept owner sap, sap security professionals, outsourced sap access management" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -125,9 +125,9 @@ and maintain authorization concepts to ensure compliance and secure access manag
 
       <section className="service-container-1">
         <div className="service-left">
-          <h2 className="extra-big-heading-text-white">
+          <h1 className="extra-big-heading-text-white">
             Authorisation <br />Concept Owner
-          </h2>
+          </h1>
           <p className="text-white">
             We act as your dedicated Authorization Concept Owner, ensuring your SAP access framework stays consistent, compliant, and aligned with both business and regulatory needs.          </p>
         </div>
@@ -142,13 +142,13 @@ and maintain authorization concepts to ensure compliance and secure access manag
         <div className="service-journey-content ">
           <div className="journey-card ">
             <div className="card-header">
-              <h3 className="big-heading-text-white">The SAP Authorization Concept Owner: A Role Under Pressure</h3>
+              <h2 className="big-heading-text-white">The SAP Authorization Concept Owner: A Role Under Pressure</h2>
               <div className="card-sub-content">
                 <p className="text-white">
-                  In every SAP organization, the role of the SAP Authorization Concept Owner is critical for ensuring secure and compliant access management. However, filling this position internally has become increasingly difficult due to several converging factors.
+                  In every SAP organization, the role of the SAP Authorization Concept Owner is critical for ensuring <Link to="/services/sap-access-management-review" style={{ color: 'inherit', textDecoration: 'underline' }}>secure and compliant access management</Link>. However, filling this position internally has become increasingly difficult due to several converging factors.
                 </p>
                 <p className="text-white">
-                  Modern SAP landscapes are more complex than ever, requiring deep technical expertise to manage effectively. At the same time, organizations face heightened security and compliance demands, driven by evolving regulations and increased risk exposure. Compounding these challenges is a global shortage of experienced SAP security professionals, making it harder to recruit and retain the right talent.
+                  Modern SAP landscapes are more complex than ever, requiring deep technical expertise to manage effectively. At the same time, organizations face heightened security and compliance demands, driven by evolving regulations and increased risk exposure. Compounding these challenges is a global shortage of experienced <Link to="/blogs/sap-certification-2025" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP security professionals</Link>, making it harder to recruit and retain the right talent.
                 </p>
                 <p className="text-white">
                   As a result, many organizations are actively seeking sustainable solutions—such as partnering with specialized providers or outsourcing the role—to ensure continuity, gain access to specialist skills, and manage costs effectively.

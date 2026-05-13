@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import "../css/App.css";
@@ -10,16 +11,92 @@ function CustomerSuccess() {
   return (
     <div>
       <Helmet>
-        <title>Customer Success Stories – s4access SAP Access Projects</title>
+        <title>SAP Access Management Customer Success Stories | s4access</title>
         <meta
           name="title"
-          content="Customer Success Stories – s4access SAP Access Projects"
+          content="SAP Access Management Customer Success Stories | s4access"
         />
         <meta
           name="description"
-          content="Discover s4access customer success stories in SAP access governance
-and compliance—real-world case studies showcasing risk mitigation and enterprise security."
+          content="See how Nordic companies achieve long-term SAP access management success with s4access. Real customer results, easy onboarding and partnerships built to last."
         />
+        <meta
+          name="keywords"
+          content="sap access management success, sap customer success stories, sap access management specialists, sap access management consulting, sap access management services, outsourced sap access management, sap security outsourcing, nordic sap consulting, sap access management partners, sap access management solutions"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://s4access.com/customer-success/#webpage",
+                "url": "https://s4access.com/customer-success",
+                "name": "SAP Access Management Customer Success Stories | s4access",
+                "description": "See how Nordic companies achieve long-term SAP access management success with s4access. Real customer results, easy onboarding and partnerships built to last.",
+                "inLanguage": "en",
+                "breadcrumb": {
+                  "@id": "https://s4access.com/customer-success/#breadcrumb"
+                }
+              },
+              {
+                "@type": "Service",
+                "@id": "https://s4access.com/customer-success/#service",
+                "name": "SAP Access Management Services",
+                "serviceType": "SAP Access Management Consulting",
+                "url": "https://s4access.com/customer-success",
+                "description": "SAP access management consulting and customer success services for Nordic enterprises.",
+                "provider": {
+                  "@id": "https://s4access.com/#organization"
+                },
+                "areaServed": {
+                  "@type": "Place",
+                  "name": "Nordic Region"
+                },
+                "keywords": [
+                  "sap access management success",
+                  "sap customer success stories",
+                  "sap access management specialists",
+                  "sap access management consulting",
+                  "sap access management services",
+                  "outsourced sap access management",
+                  "sap security outsourcing",
+                  "nordic sap consulting",
+                  "sap access management partners",
+                  "sap access management solutions"
+                ]
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://s4access.com/#organization",
+                "name": "s4access",
+                "url": "https://s4access.com/",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://s4access.com/wp-content/uploads/2024/09/cropped-s4access-logo.png"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://s4access.com/customer-success/#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://s4access.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Customer Success",
+                    "item": "https://s4access.com/customer-success"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <section
@@ -37,8 +114,8 @@ and compliance—real-world case studies showcasing risk mitigation and enterpri
             on our current customers, and we do this in true long-term
             partnership. SAP security is never fixed overnight. It requires deep
             expertise, consistency, and trust. From day one, we bring together
-            the collective knowledge of our company to ensure your SAP Access
-            Management is handled with more care than even you might expect.
+            the collective knowledge of our company to ensure your <Link to="/">SAP Access
+            Management</Link> is handled with more care than even you might expect.
           </p>
         </div>
       </section>
@@ -59,8 +136,8 @@ and compliance—real-world case studies showcasing risk mitigation and enterpri
             onboarding, no endless paperwork—just a straightforward start to a
             partnership that’s built to last. We understand our approach might
             differ from other vendors in the market. But that’s exactly why it
-            works. In case you are not already our customer, kindly contact us
-            and we are happy to discuss a partnership with you!
+            works. In case you are not already our customer, kindly <Link to="/contact">contact us</Link> {" "}
+             and we are happy to discuss a partnership with you!
           </p>
 
           <div className="customer-quote-block">

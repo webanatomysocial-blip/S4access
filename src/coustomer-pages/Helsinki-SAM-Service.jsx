@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import "../css/Coustomer.css";
 import {
   FaShieldAlt,
@@ -20,6 +21,79 @@ import img3 from "../assets/images/success-images/12.jpg";
 const HelsinkiSAMService = () => {
   return (
     <div>
+      <Helmet>
+        <title>Zero Audit Observations: SAP Access Management | s4access</title>
+        <meta name="title" content="Zero Audit Observations: SAP Access Management | s4access" />
+        <meta name="description" content="Achieved zero audit observations after outsourcing SAP access management structured governance, SoD automation and GDPR monitoring delivered by s4access." />
+        <meta name="keywords" content="sap access management outsourcing, outsourced sap access management, sap access governance, sap sod automation, sap gdpr monitoring, sap license management, sap access management specialists, sap security outsourcing, sap access management services, sap audit compliance." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Article",
+                "@id": "https://s4access.com/customer-success/sam-service",
+                "headline": "Zero Audit Observations: SAP Access Management | s4access",
+                "description": "Achieved zero audit observations after outsourcing SAP access management — structured governance, SoD automation and GDPR monitoring delivered by s4access.",
+                "url": "https://s4access.com/customer-success/sam-service",
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "s4access",
+                  "url": "https://s4access.com",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://s4access.com/images/black-logo-400.png",
+                    "width": 400,
+                    "height": 400
+                  }
+                },
+                "author": {
+                  "@type": "Organization",
+                  "name": "s4access",
+                  "url": "https://s4access.com"
+                },
+                "about": [
+                  "Outsourced Access Management",
+                  "SAP Authorization Management",
+                  "Segregation of Duties Automation",
+                  "GDPR Monitoring",
+                  "SAP License Management",
+                  "Super User Monitoring",
+                  "SAP Access Governance"
+                ],
+                "mentions": {
+                  "@type": "Organization",
+                  "name": "Large Scandinavian City",
+                  "description": "Large Scandinavian city outsourcing SAP access management to s4access"
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://s4access.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Customer Success",
+                    "item": "https://s4access.com/customer-success"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Zero Audit Observations: SAP Access Management",
+                    "item": "https://s4access.com/customer-success/sam-service"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
       <Header />
 
       <section
@@ -27,10 +101,10 @@ const HelsinkiSAMService = () => {
         style={{ justifyContent: "normal", gap: "225px" }}
       >
         <div className="Coustomer-success-page-hero-container-left">
-          <p className="big-heading-text-white">
+          <h1 className="big-heading-text-white">
             SAM Service: SAP Access Management for a Large Scandinavian
             City
-          </p>
+          </h1>
           <p className="text-white">
             A large Scandinavian city had been running SAP for several years,
             but access rights issues were recurring: skilled SAP authorization
@@ -90,11 +164,11 @@ const HelsinkiSAMService = () => {
             <li>SAP authorization management concept</li>
             <li>SAP Access management support and development services</li>
             <li>
-              Automation tools to manage segregation of duties (SoD) conflicts
+              Automation tools to manage <Link to="/services/access-risk-sod-management" style={{ color: 'inherit', textDecoration: 'underline' }}>segregation of duties (SoD)</Link> conflicts
             </li>
             <li>Monitoring of production super users (privileged users)</li>
             <li>GDPR monitoring for the SAP system</li>
-            <li>License management</li>
+            <li><Link to="/services/sap-license-optimisation" style={{ color: 'inherit', textDecoration: 'underline' }}>License management</Link></li>
           </ul>
         </div>
         <div className="Coustomer-success-page-card-right">

@@ -49,11 +49,10 @@ export default function SAPaccess() {
         <>
             <Helmet>
 
-                <title>SAP Access Management Automation | s4access Governance</title>
-                <meta name="title" content="SAP Access Management Automation | s4access Governance" />
-                <meta name="description" content="Automate SAP access management with s4access: streamline user
-provisioning, enforce SoD controls, boost compliance & reduce cost across S/4HANA access
-landscapes." />
+                <title>SAP Access Management Automation Consulting | s4access</title>
+                <meta name="title" content="SAP Access Management Automation Consulting | s4access" />
+                <meta name="description" content="Automate SAP access management the right way. Tool selection, vendor evaluation and technology strategy aligned to your SoD governance and compliance needs." />
+                <meta name="keywords" content="sap access management automation, sap access management tools, sap access automation, sod automation, sap tool selection, sap access management consulting, sap segregation of duties tools, sap access technology, sap compliance automation, sap access management software" />
                 <script type="application/ld+json">
                     {JSON.stringify({
                         "@context": "https://schema.org",
@@ -115,9 +114,9 @@ landscapes." />
 
             <section className="service-container-1">
                 <div className="service-left">
-                    <h2 className="extra-big-heading-text-white">
+                    <h1 className="extra-big-heading-text-white">
                         SAP Access <br /> Management Automation
-                    </h2>
+                    </h1>
                     <p className="text-white">
                         We simplify and accelerate access processes with automation, reducing manual effort, minimizing errors, and ensuring compliance with greater efficiency.
                     </p>
@@ -133,12 +132,12 @@ landscapes." />
                 <div className="service-journey-content ">
                     <div className="journey-card ">
                         <div className="card-header">
-                            <h3 className="big-heading-text-white">Technology-Driven SAP Access Management: Avoiding Common Pitfalls
-                            </h3>
+                            <h2 className="big-heading-text-white">Technology-Driven SAP Access Management: Avoiding Common Pitfalls
+                            </h2>
                             <div className="card-sub-content">
                                 <p className="text-white">
                                     Effective SAP Access Management is nearly impossible without the right supporting technology. While SAP offers native tools, many third-party vendors provide solutions with varying capabilities and cost to enhance efficiency across your access landscape.
-                                    However, a common mistake is selecting a tool without aligning it to a broader access management approach. Without a clear plan and integration into your overall approach, these tools often result in unnecessary costs—without delivering meaningful improvements in compliance, security, or operational value.
+                                    However, a common mistake is selecting a tool without aligning it to a broader access management approach. Without a clear plan and integration into your overall approach, these tools often result in <Link to="/services/sap-license-optimisation" style={{ color: 'inherit', textDecoration: 'underline' }}>unnecessary costs</Link>—without delivering meaningful improvements in compliance, security, or operational value.
                                 </p>
                             </div>
                         </div>
@@ -157,7 +156,7 @@ landscapes." />
                             </h2>
                             <div className="card-sub-content">
                                 <p className="text-white">
-                                    This service helps organizations design a technology strategy that supports effective SAP Access Management and Segregation of Duties (SoD). We guide you in aligning tool selection with your overall access management approach—ensuring that technology investments deliver real value in compliance, security, and efficiency.
+                                    This service helps organizations design a technology strategy that supports effective SAP Access Management and <Link to="/blogs/SoD-Management-Concepts" style={{ color: 'inherit', textDecoration: 'underline' }}>Segregation of Duties (SoD)</Link>. We guide you in aligning tool selection with your overall access management approach—ensuring that technology investments deliver real value in compliance, security, and efficiency.
                                 </p>
                                 <p className="text-white">What we deliver:
                                 </p>
