@@ -13,6 +13,11 @@ const LinkTree = () => {
       url: "https://s4access.com/blogs/your-partner-for-efficient-sap-access",
       date: "2024-03-15",
     },
+    {
+      title: "Is The SAP Certification Still Valid For Your Career In 2025?",
+      url: "https://s4access.com/blogs/sap-certification-2025",
+      date: "2025-08-26",
+    },
   ];
 
   const otherLinks = [

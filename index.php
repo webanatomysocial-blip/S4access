@@ -91,7 +91,7 @@ $blogMetadata = [
         "slug" => "a-year-of-strong-growth-s4access-and-its-customers-moving-forward-together",
         "metaDescription" => "Explore how s4access and its customers achieved growth in 2025 through SAP Access Management, compliance, and innovation—while looking ahead to 2026.",
         "image" => "/blogs-images/9298.jpg",
-        "url" => "https://s4access.com/blogs/a-year-of-strong-growth-s4access-and-its-customers-moving-forward-together"
+        "url" => "https://s4access.com/blogs/a-year-of-strong-growth-s4access-and-Its-customers-moving-forward-together"
     ],
     [
         "id" => "Your-Partner-for-Efficient-SAP-Access",
@@ -109,14 +109,6 @@ $blogMetadata = [
         "image" => "/blogs-images/Blog-img012.jpg",
         "url" => "https://s4access.com/blogs/native-hana-database-authorizations"
     ],
-    // [
-    //     "id" => "When-a-company-grows-what-opportunities-can-it-create-for-its-people",
-    //     "title" => "When a company grows, what opportunities can it create for its people?",
-    //     "slug" => "when-a-company-grows-what-opportunities-can-it-create-for-its-people",
-    //     "metaDescription" => "Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
-    //     "image" => "/blogs-images/2290.webp",
-    //     "url" => "https://s4access.com/blogs/when-a-company-grows-what-opportunities-can-it-create-for-its-people"
-    // ],
     [
         "id" => "SoD-Management-Concepts",
         "title" => "SoD Management Concepts: Keeping Access Risks Under Control",
@@ -141,8 +133,27 @@ $blogMetadata = [
         "image" => "/blogs-images/ciso-sap-access-2026.jpg",
         "url" => "https://s4access.com/blogs/sap-access-management-ciso-2026"
     ],
-
+    [
+        "id" => "SAP-Access-Management-Automation",
+        "title" => "SAP Access Management Automation : The real cost of manual processes",
+        "slug" => "sap-access-management-automation",
+        "metaDescription" => "SAP access management automation reduces security risks, improves compliance, and eliminates inefficiencies caused by manual processes.",
+        "image" => "/blogs-images/blog20.jpg",
+        "url" => "https://s4access.com/blogs/sap-access-management-automation"
+    ],
 ];
+
+// Bot Detection
+function isBot() {
+    if (isset($_GET['bot']) && $_GET['bot'] === 'true') return true;
+    $bots = array('googlebot', 'bingbot', 'slurp', 'duckduckgo', 'baiduspider', 'yandexbot', 'facebookexternalhit', 'twitterbot', 'rogerbot', 'linkedinbot', 'embedly', 'quora link preview', 'showyoubot', 'outbrain', 'pinterest/0.', 'developers.google.com/+/web/snippet', 'slackbot', 'vkShare', 'W3C_Validator', 'redditbot', 'Applebot', 'WhatsApp', 'flipboard', 'tumblr', 'bitlybot', 'SkypeShell', 'msnbot', 'ZSTVAndroid', 'AhrefsBot', 'ClaudeBot', 'Claude', 'GPTBot', 'ChatGPT-User', 'PerplexityBot', 'CCBot', 'anthropic-ai', 'Claude-Web');
+    $userAgent = strtolower($_SERVER['HTTP_USER_AGENT'] ?? '');
+    foreach ($bots as $bot) { if (strpos($userAgent, strtolower($bot)) !== false) return true; }
+    return false;
+}
+
+// Include static content generator (for SSR)
+if (file_exists('content.php')) { include_once('content.php'); }
 
 // Determine protocol and host dynamically
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
@@ -150,15 +161,10 @@ $host = $_SERVER['HTTP_HOST'];
 $baseUrl = $protocol . $host;
 
 // Default Meta Tags
-$defaultTitle = "Leading SAP Access Management Specialists | s4access";
-$defaultDesc = "Welcome to s4access, your go-to solution for SAP access management!";
-$defaultImage = "https://s4access.com/images/black-logo-400.png";
-$defaultUrl = $baseUrl . "/";
-
-$title = $defaultTitle;
-$description = $defaultDesc;
-$image = $defaultImage;
-$url = $defaultUrl;
+$title = "Leading SAP Access Management Specialists | s4access";
+$description = "Welcome to s4access, your go-to solution for SAP access management!";
+$image = "https://s4access.com/images/black-logo-400.png";
+$url = $baseUrl . $path;
 
 // Check if we are on a blog page
 if (strpos($path, '/blogs/') !== false) {
@@ -175,25 +181,28 @@ if (strpos($path, '/blogs/') !== false) {
 }
 
 // Read index.html
+if (!file_exists('index.html')) { die("Error: index.html not found."); }
 $html = file_get_contents('index.html');
 
-// Replace Meta Tags
-$html = str_replace('content="Leading SAP Access Management Specialists | s4access"', 'content="' . htmlspecialchars($title) . '"', $html);
-$html = str_replace('content="Welcome to s4access, your go-to solution for SAP access management!"', 'content="' . htmlspecialchars($description) . '"', $html);
+// Inject Static Content for Bots (SSR)
+if (isBot() && function_exists('getStaticContent')) {
+    header("X-SSR-Enabled: true");
+    $staticContent = getStaticContent($path, $blogMetadata);
+    $debugInfo = "<!-- SSR Injection Active for path: " . htmlspecialchars($path) . " -->\n";
+    $html = str_replace('<div id="root"></div>', '<div id="root">' . $debugInfo . $staticContent . '</div>', $html);
+}
+
+// Replace Meta Tags via Regex (Targeting standard and OG tags)
+$html = preg_replace('/<title>.*?<\/title>/is', '<title>' . htmlspecialchars($title) . '</title>', $html);
+$html = preg_replace('/(<meta[^>]*name=["\']title["\'][^>]*content=["\'])(.*?)(["\'][^>]*>)/is', '$1' . htmlspecialchars($title) . '$3', $html);
+$html = preg_replace('/(<meta[^>]*name=["\']description["\'][^>]*content=["\'])(.*?)(["\'][^>]*>)/is', '$1' . htmlspecialchars($description) . '$3', $html);
+$html = preg_replace('/(<meta[^>]*property=["\']og:title["\'][^>]*content=["\'])(.*?)(["\'][^>]*>)/is', '$1' . htmlspecialchars($title) . '$3', $html);
+$html = preg_replace('/(<meta[^>]*property=["\']og:description["\'][^>]*content=["\'])(.*?)(["\'][^>]*>)/is', '$1' . htmlspecialchars($description) . '$3', $html);
+$html = preg_replace('/(<meta[^>]*property=["\']og:url["\'][^>]*content=["\'])(.*?)(["\'][^>]*>)/is', '$1' . htmlspecialchars($url) . '$3', $html);
+
+// Handle specific standard replacements for other tags
 $html = str_replace('content="https://s4access.com/images/black-logo-400.png"', 'content="' . htmlspecialchars($image) . '"', $html);
 $html = str_replace('content="https://s4access.com/"', 'content="' . htmlspecialchars($url) . '"', $html);
-
-// Remove conflicting OG tags if we are serving a custom blog image
-if ($image !== $defaultImage) {
-    $html = preg_replace('/<meta property="og:image:type" content="image\/png"\s*\/>/i', '', $html);
-    $html = preg_replace('/<meta property="og:image:width" content="400"\s*\/>/i', '', $html);
-    $html = preg_replace('/<meta property="og:image:height" content="400"\s*\/>/i', '', $html);
-    $html = preg_replace('/<meta property="og:image:alt" content="s4access logo"\s*\/>/i', '', $html);
-
-    // Inject og:image:secure_url before </head>
-    $secureTag = '<meta property="og:image:secure_url" content="' . htmlspecialchars($image) . '" />';
-    $html = str_replace('</head>', $secureTag . "\n</head>", $html);
-}
 
 echo $html;
 ?>

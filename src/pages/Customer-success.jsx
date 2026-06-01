@@ -114,7 +114,7 @@ function CustomerSuccess() {
             on our current customers, and we do this in true long-term
             partnership. SAP security is never fixed overnight. It requires deep
             expertise, consistency, and trust. From day one, we bring together
-            the collective knowledge of our company to ensure your <Link to="/">SAP Access
+            the collective knowledge of our company to ensure your <Link style={{color : "white"}} to="/">SAP Access
             Management</Link> is handled with more care than even you might expect.
           </p>
         </div>

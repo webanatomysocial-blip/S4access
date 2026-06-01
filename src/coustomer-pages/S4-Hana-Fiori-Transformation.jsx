@@ -129,13 +129,12 @@ const S4HanaFioriTransformation = () => {
             <section className="CustomerSuccess-service-cta">
               
                 <div className="CustomerSuccess-cta-content">
-                  <h2 className="big-heading-text-white">
+                  <h2 className="big-heading-text-white" style={{ textTransform: 'none' }}>
                     Customer Comments About <br className='only-windows' /> s4access Service
                   </h2>
                   <p className="text-white">
                    “Without the help of the specialist company, we would have been completely stuck.” <br /> – SAP Manager
 
-            
                   </p>
                 </div>
                 <div className="CustomerSuccess-cta-actions">

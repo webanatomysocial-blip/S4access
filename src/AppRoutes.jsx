@@ -32,6 +32,7 @@ import S4HanaFioriTransformation from "./coustomer-pages/S4-Hana-Fiori-Transform
 import StabilisingSAPAccessAtScale from "./coustomer-pages/Stabilising-SAP-Access-at-Scale.jsx";
 import HelsinkiSAMService from "./coustomer-pages/Helsinki-SAM-Service.jsx";
 import SAPUCONImplementation from "./coustomer-pages/SAP-UCON-Implementation.jsx";
+import S4HanaAccessManagementTransformation from "./coustomer-pages/S4-Hana-Access-Management-Transformation.jsx";
 import LinkTree from "./pages/LinkTree.jsx";
 
 export default function AppRoutes() {
@@ -128,6 +129,10 @@ export default function AppRoutes() {
           <Route
             path="/customer-success/sap-ucon-implementation"
             element={<SAPUCONImplementation />}
+          />
+          <Route
+            path="/customer-success/sap-s4hana-access-management-transformation"
+            element={<S4HanaAccessManagementTransformation />}
           />
           <Route path="/link-tree" element={<LinkTree />} />
         </Routes>

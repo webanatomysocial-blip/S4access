@@ -140,6 +140,14 @@ $blogMetadata = [
         "image" => "/blogs-images/ciso-sap-access-2026.jpg",
         "url" => "https://s4access.com/blogs/sap-access-management-ciso-2026"
     ],
+    [
+        "id" => "SAP-Access-Management-Automation",
+        "title" => "SAP Access Management Automation : The real cost of manual processes",
+        "slug" => "sap-access-management-automation",
+        "metaDescription" => "SAP access management automation reduces security risks, improves compliance, and eliminates inefficiencies caused by manual processes.",
+        "image" => "/blogs-images/blog20.jpg",
+        "url" => "https://s4access.com/blogs/sap-access-management-automation"
+    ],
 
 ];
 

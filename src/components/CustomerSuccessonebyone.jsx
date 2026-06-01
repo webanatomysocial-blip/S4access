@@ -5,11 +5,16 @@ import { customerSuccessMetadata } from "../coustomer-pages/metadata";
 import "./CustomerSuccessonebyone.css";
 
 const CustomerSuccessonebyone = () => {
+  // Dynamically sort stories by date in descending order (newest first)
+  const sortedStories = [...customerSuccessMetadata].sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
+
   return (
     <div className="customer-success-onebyone-container">
       <h2 className="big-heading-text-black ">Customer success stories</h2>
       <div className="customer-success-grid">
-        {customerSuccessMetadata.map((story) => (
+        {sortedStories.map((story) => (
           <Link
             to={story.link}
             key={story.id}
@@ -19,6 +24,7 @@ const CustomerSuccessonebyone = () => {
               <img src={story.image} alt={story.title} />
             </div>
             <div className="customer-success-content">
+           
               <h3 className="customer-success-card-title">{story.title}</h3>
               <p className="customer-success-card-desc">
                 {story.description.slice(0, 140) + "..."}

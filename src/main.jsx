@@ -33,6 +33,9 @@ import S4HanaFioriTransformation from './coustomer-pages/S4-Hana-Fiori-Transform
 import StabilisingSAPAccessAtScale from './coustomer-pages/Stabilising-SAP-Access-at-Scale.jsx';
 import HelsinkiSAMService from './coustomer-pages/Helsinki-SAM-Service.jsx';
 import SapUconImplementation from './coustomer-pages/SAP-UCON-Implementation.jsx';
+import S4HanaAccessManagementTransformation from './coustomer-pages/S4-Hana-Access-Management-Transformation.jsx';
+import Quiz from './quiz/Quiz.jsx';
+import QuizApp from './quiz/QuizApp.jsx';
 import LinkTree from './pages/LinkTree.jsx';
 
 
@@ -100,6 +103,9 @@ createRoot(document.getElementById('root')).render(
             <Route path="/customer-success/stabilising-sap-access-at-scale" element={<StabilisingSAPAccessAtScale />} />
             <Route path="/customer-success/sam-service" element={<HelsinkiSAMService />} />
             <Route path="/customer-success/sap-ucon-implementation" element={<SapUconImplementation />} />
+            <Route path="/customer-success/sap-s4hana-access-management-transformation" element={<S4HanaAccessManagementTransformation />} />
+            <Route path="/quiz" element={<Quiz />} />
+            <Route path="/quiz/start" element={<QuizApp />} />
             <Route path="/links" element={<LinkTree />} />
 
 

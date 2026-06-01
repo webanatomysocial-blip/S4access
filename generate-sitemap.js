@@ -1,6 +1,6 @@
-import { Sitemap } from 'sitemap';
-import { writeFileSync } from 'fs';
-import { blogMetadata } from './src/blogs/metadata.js';
+import { SitemapStream, streamToPromise } from 'sitemap';
+import { Readable } from 'stream';
+import { writeFileSync, readFileSync } from 'fs';
 
 // Static routes from main.jsx
 const staticRoutes = [
@@ -30,34 +30,48 @@ const staticRoutes = [
   { url: '/customer-success/s4-transition-analysis', changefreq: 'monthly', priority: 0.7 },
   { url: '/customer-success/s4-hana-fiori-transformation', changefreq: 'monthly', priority: 0.7 },
   { url: '/customer-success/stabilising-sap-access-at-scale', changefreq: 'monthly', priority: 0.7 },
+  { url: '/customer-success/sam-service', changefreq: 'monthly', priority: 0.7 },
+  { url: '/customer-success/sap-ucon-implementation', changefreq: 'monthly', priority: 0.7 },
+  { url: '/customer-success/sap-s4hana-access-management-transformation', changefreq: 'monthly', priority: 0.7 },
 ];
 
 // Generate sitemap
 (async () => {
-  // Get dynamic blog routes from blogMetadata
-  const dynamicBlogRoutes = blogMetadata.map(blog => ({
-    url: `/blogs/${blog.slug}`,
-    changefreq: 'weekly',
-    priority: 0.9,
-    lastmod: blog.date || new Date().toISOString(), // Use blog.date if available
-  }));
+  // Parse dynamic blog routes from blogMetadata (reading the file directly to avoid import issues with .jpg files in Node.js)
+  const dynamicBlogRoutes = [];
+  try {
+    const metadataContent = readFileSync('./src/blogs/metadata.js', 'utf8');
+    // Remove single line comments to avoid processing commented-out blogs
+    const cleanContent = metadataContent
+      .split('\n')
+      .filter(line => !line.trim().startsWith('//'))
+      .join('\n');
+
+    const blogBlockRegex = /\{[\s\S]*?slug:\s*["']([^"']+)["'][\s\S]*?date:\s*["']([^"']+)["'][\s\S]*?\}/g;
+    let match;
+    while ((match = blogBlockRegex.exec(cleanContent)) !== null) {
+      const slug = match[1];
+      const date = match[2];
+      dynamicBlogRoutes.push({
+        url: `/blogs/${slug}`,
+        changefreq: 'weekly',
+        priority: 0.9,
+        lastmod: date,
+      });
+    }
+  } catch (err) {
+    console.error('Error parsing blogs metadata for sitemap:', err);
+  }
 
   const allRoutes = [...staticRoutes, ...dynamicBlogRoutes];
 
-  const sitemapInstance = new Sitemap({
-    hostname: 'https://s4access.com',
-    cacheTime: 600000, // Cache for 10 minutes
-  });
+  try {
+    const stream = new SitemapStream({ hostname: 'https://s4access.com' });
+    const sitemapXml = await streamToPromise(Readable.from(allRoutes).pipe(stream)).then(data => data.toString());
 
-  allRoutes.forEach(route => {
-    sitemapInstance.add({
-      url: route.url,
-      changefreq: route.changefreq,
-      priority: route.priority,
-      lastmod: route.lastmod || new Date().toISOString(),
-    });
-  });
-
-  writeFileSync('dist/sitemap.xml', sitemapInstance.toString());
-  console.log('Sitemap generated at dist/sitemap.xml');
+    writeFileSync('dist/sitemap.xml', sitemapXml);
+    console.log('Sitemap generated successfully at dist/sitemap.xml');
+  } catch (err) {
+    console.error('Error building sitemap:', err);
+  }
 })();

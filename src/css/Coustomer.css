@@ -433,8 +433,11 @@
   .Coustomer-success-page-hero-container-left {
     width: 100%;
   }
+  .Coustomer-success-page-hero-container-right {
+    width: 100%;
+  }
   .Coustomer-success-page-hero-container-right img {
-    width: 300px;
+    width: 100%;
     height: auto;
     border-radius: 5px;
   }
@@ -565,6 +568,13 @@
     align-items: end;
     justify-content: center;
   }
+  .Coustomer-success-page-card-right {
+    width: 100%;
+  }
+  .Coustomer-success-page-card-right img {
+  width: 100%;
+
+}
   .careers-hero-right-content-reverse img {
     width: 370px;
     height: auto;

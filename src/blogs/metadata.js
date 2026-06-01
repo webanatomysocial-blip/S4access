@@ -6,6 +6,7 @@ import blog15 from "../blogs/blogs-images/blog15.jpg";
 import blog16 from "../blogs/blogs-images/blog16.jpg";
 import blogCiso2026 from "../blogs/blogs-images/ciso-sap-access-2026.jpg";
 import blog45 from "../blogs/blogs-images/own.jpeg";
+import blog20 from "../blogs/blogs-images/blog20.jpg";
 // import blog15 from "../blogs/blogs-images/2290.webp";
 
 
@@ -174,6 +175,15 @@ export const blogMetadata = [
     excerpt: "In many organizations, employees can approve their own purchase orders—often without anyone realizing it. Learn how inadequate SAP access controls enable this risky practice and what to do about it.",
     image: blog45,
     date: "2026-04-29",
+  },
+  {
+    id: "SAP-Access-Management-Automation",
+    title: "SAP Access Management Automation : The real cost of manual processes",
+    slug: "sap-access-management-automation",
+    metaDescription: "SAP access management automation reduces security risks, improves compliance, and eliminates inefficiencies caused by manual processes.",
+    excerpt: "SAP access management automation reduces security risks, improves compliance, and eliminates inefficiencies caused by manual processes. In complex SAP environments, managing access manually does not scale, making automation essential for maintaining control, security, and operational efficiency.",
+    image: blog20,
+    date: "2026-05-25",
   },
 ];
 

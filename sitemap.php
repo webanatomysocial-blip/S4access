@@ -1,33 +1,35 @@
 <?php
-// sitemap.php - Dynamic XML Sitemap Generator
+/**
+ * sitemap.php - Fully Dynamic XML Sitemap Generator
+ * Automatically discovers all routes using the DiscoveryEngine.
+ */
 header("Content-Type: application/xml; charset=UTF-8");
+include_once('DiscoveryEngine.php');
 
-include_once('routes_metadata.php');
+$engine = new DiscoveryEngine();
+$routes = $engine->getRoutes();
 
-$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
-$host = $_SERVER['HTTP_HOST'];
-$baseUrl = $protocol . $host;
+$baseUrl = "https://s4access.com";
 
 echo '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL;
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL;
 
-// 1. Static Routes
-foreach ($staticRoutes as $route) {
-    echo '  <url>' . PHP_EOL;
-    echo '    <loc>' . $baseUrl . $route['url'] . '</loc>' . PHP_EOL;
-    echo '    <changefreq>' . $route['changefreq'] . '</changefreq>' . PHP_EOL;
-    echo '    <priority>' . $route['priority'] . '</priority>' . PHP_EOL;
-    echo '  </url>' . PHP_EOL;
-}
+foreach ($routes as $category => $categoryRoutes) {
+    foreach ($categoryRoutes as $url => $data) {
+        // Skip hidden or technical files if necessary
+        if (strpos($url, 'linktree') !== false) continue;
 
-// 2. Blog Routes
-foreach ($blogMetadata as $blog) {
-    echo '  <url>' . PHP_EOL;
-    echo '    <loc>' . $baseUrl . '/blogs/' . $blog['slug'] . '</loc>' . PHP_EOL;
-    echo '    <lastmod>' . ($blog['date'] ?? date('Y-m-d')) . '</lastmod>' . PHP_EOL;
-    echo '    <changefreq>weekly</changefreq>' . PHP_EOL;
-    echo '    <priority>0.9</priority>' . PHP_EOL;
-    echo '  </url>' . PHP_EOL;
+        $priority = "0.8";
+        if ($url === "/") $priority = "1.0";
+        if ($category === "blogs") $priority = "0.9";
+
+        echo '  <url>' . PHP_EOL;
+        echo '    <loc>' . $baseUrl . $url . '</loc>' . PHP_EOL;
+        echo '    <lastmod>' . $data['lastmod'] . '</lastmod>' . PHP_EOL;
+        echo '    <changefreq>weekly</changefreq>' . PHP_EOL;
+        echo '    <priority>' . $priority . '</priority>' . PHP_EOL;
+        echo '  </url>' . PHP_EOL;
+    }
 }
 
 echo '</urlset>';

@@ -53,6 +53,17 @@
   flex-grow: 1;
 }
 
+.customer-success-card-date {
+  font-family: "barlow", monospace;
+  font-size: 13px;
+  color: #64748b; /* Sleek slate grey color for the date */
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 .customer-success-card-title {
   font-family: "barlow", monospace;
   font-size: 20px;

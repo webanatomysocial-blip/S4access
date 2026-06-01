@@ -161,7 +161,7 @@ const S4AccessManagementReview = () => {
            <section className="CustomerSuccess-service-cta">
              
                <div className="CustomerSuccess-cta-content">
-                 <h2 className="big-heading-text-white">
+                 <h2 className="big-heading-text-white" style={{ textTransform: 'none' }}>
                    Customer Comments About <br className='only-windows' /> s4access Service
                  </h2>
                  <p className="text-white">
