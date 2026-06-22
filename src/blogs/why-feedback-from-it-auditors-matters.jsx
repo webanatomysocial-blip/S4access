@@ -1,8 +1,14 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: "\n          Feedback Is a Gift – Even When It Comes from an External IT Auditor |\n          s4access\n        ",
+  description: "Engaging external auditors is a strategic decision. Learn how to use auditor feedback to improve security and operations.",
+};
+
 
 export default function FeedbackIsAGift() {
   const faqs = [
@@ -26,92 +32,7 @@ export default function FeedbackIsAGift() {
   ];
   return (
     <>
-      <Helmet>
-        <title>
-          Feedback Is a Gift – Even When It Comes from an External IT Auditor |
-          s4access
-        </title>
-        <meta
-          name="title"
-          content="Feedback Is a Gift – Even When It Comes from an External IT Auditor | s4access"
-        />
-        <meta
-          name="description"
-          content="Engaging external auditors is a strategic decision. Learn how to use auditor feedback to improve security and operations."
-        />
-
-        {/* ======================= ARTICLE SCHEMA ======================= */}
-        <script type="application/ld+json">
-          {`
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "SAP Access Management Audits: Reduce Risk | s4access",
-      "description": "Learn how to turn SAP Access Management Audits into opportunities for improvement. Work effectively with external auditors and minimize access risks year-round.",
-      "author": {
-        "@type": "Organization",
-        "name": "s4access"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "s4access",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://s4access.com/logo.png"
-        }
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://s4access.com/blogs/why-feedback-from-it-auditors-matters"
-      },
-      "keywords": [
-        "SAP Access Management Audits",
-        "External IT Auditors",
-        "SAP Audit Findings",
-        "SAP Access Risks",
-        "SAP Security Reviews",
-        "Audit Feedback in SAP",
-        "SAP Risk Management"
-      ]
-    }
-    `}
-        </script>
-
-        {/* Faq Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Why is IT auditor feedback important for SAP access controls?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "IT auditors identify access risks based on real incidents they have seen across organizations. Their feedback helps uncover hidden risks such as excessive or overlapping SAP access before they lead to financial or operational losses."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can organizations accept SAP access risks flagged by auditors?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Auditors act as advisors rather than enforcers. If SAP access risks are clearly understood, properly documented, and supported by compensating controls, organizations can formally accept them."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Why should SAP access be reviewed beyond annual audits?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "SAP access risks change throughout the year due to role changes, new projects, and system updates. Continuous monitoring and periodic reviews help identify issues early instead of waiting for annual audits."
-                }
-              }
-            ]
-          }
-          )}
-        </script>
-      </Helmet>
+      
 
       <div className="breach-article-wrapper">
         <div className="breach-article-content">
@@ -227,7 +148,7 @@ export default function FeedbackIsAGift() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <img src="/blogs-images/Group.png" alt="Contact Us" />
+            <Image src="/blogs-images/Group.png" alt="Contact Us" />
           </div>
 
           {/* Right Content */}
@@ -239,7 +160,7 @@ export default function FeedbackIsAGift() {
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

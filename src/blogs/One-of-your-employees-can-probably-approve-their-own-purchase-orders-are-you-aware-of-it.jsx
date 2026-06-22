@@ -1,9 +1,15 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import cta from "../blogs/blogs-images/Group.png";
-import { Helmet } from "react-helmet-async";
 import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: "SAP Access Governance SoD Risk in Controls | s4access",
+  description: "SAP Access Governance SoD Risk exposes control gaps where users can create and approve transactions, increasing fraud risk and audit exposure in SAP system now",
+};
+
 
 export default function Blog40() {
   const faqs = [
@@ -27,142 +33,13 @@ export default function Blog40() {
 
   return (
     <>
-      <Helmet>
-        <title>SAP Access Governance SoD Risk in Controls | s4access</title>
-        <meta name="title" content="SAP Access Governance SoD Risk in Controls | s4access" />
-        <meta name="description" content="SAP Access Governance SoD Risk exposes control gaps where users can create and approve transactions, increasing fraud risk and audit exposure in SAP system now" />
-        <meta name="keywords" content="SAP access reviews, Segregation of Duties conflicts, financial control gaps, audit findings, governance failure, compensating controls, SAP roles accumulation, financial fraud cases, access governance model, conflicting access" />
-        <script type="application/ld+json">
-          {`
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://s4access.com/blogs/sap-access-governance-sod-risk/" 
-  },
-  "headline": "SAP Access Governance SoD Risk in Controls",
-  "description": "SAP Access Governance SoD Risk exposes control gaps where users can create and approve transactions, increasing fraud risk and audit exposure in SAP system now",
-  "image": "https://s4access.com/wp-content/uploads/2026/05/sap-access-governance-sod-risk.jpg",
-  "author": {
-    "@type": "Organization",
-    "name": "s4access"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "s4access",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://s4access.com/wp-content/uploads/2024/09/cropped-s4access-logo.png"
-    }
-  },
-  "datePublished": "2026-05-11",
-  "dateModified": "2026-05-11",
-  "articleSection": "SAP Security",
-  "keywords": [
-    "SAP access reviews",
-    "Segregation of Duties conflicts",
-    "financial control gaps",
-    "audit findings",
-    "governance failure",
-    "compensating controls",
-    "SAP roles accumulation",
-    "financial fraud cases",
-    "access governance model",
-    "conflicting access"
-  ],
-  "about": [
-    {
-      "@type": "Thing",
-      "name": "SAP Access Governance"
-    },
-    {
-      "@type": "Thing",
-      "name": "Segregation of Duties"
-    },
-    {
-      "@type": "Thing",
-      "name": "SAP Security"
-    }
-  ],
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://s4access.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blogs",
-        "item": "https://s4access.com/blogs/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "SAP Access Governance SoD Risk",
-        "item": "https://s4access.com/blogs/sap-access-governance-sod-risk/"
-      }
-    ]
-  },
-  "inLanguage": "en",
-  "url": "https://s4access.com/blogs/sap-access-governance-sod-risk/"
-}
-`}
-        </script>
-
-        <script type="application/ld+json">
-          {`
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How do Segregation of Duties conflicts develop in SAP environments?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "SAP roles accumulate over time when no governance model is in place. A project ends the access stays. When a person moves to a new role the old permissions remain. Over time, one user gains the ability to start and complete a financial transaction without any independent check. It does not happen by design. It happens through years of unmanaged access."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why should a CFO be concerned about unresolved SoD conflicts?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Unresolved SoD conflicts create a real gap in financial controls whether that gap has been exploited or not. Auditors treat it as a material control failure under SOX and COSO frameworks. When personal data is involved, it also conflicts with GDPR access control requirements. Remediation after an audit finding costs multiples of what prevention costs."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is this a CIO concern and not just a compliance issue?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "This is a governance failure, not a technical one. The SAP system is operating exactly as configured. The issue is the absence of a governance model that prevents conflicting access from accumulating over time. When an auditor or board-level risk committee asks about SAP access controls, the answer reflects directly on the function responsible for maintaining them. Identifying conflicts proactively is a manageable task doing so reactively after an audit discovery is a very different experience."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why do SoD conflicts persist even when organisations are aware of them?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Awareness is rarely the problem ownership is. IT manages the system. Compliance tracks the findings. The business approves access requests. The conflicts persist in the space between those functions because no single named owner has the authority and accountability to make access decisions and enforce them. That is precisely the gap s4access addresses through a structured governance model."
-      }
-    }
-  ]
-}
-`}
-        </script>
-      </Helmet>
+      
       <div className="breach-article-wrapper">
         <div className="breach-article-content">
           <section>
             <p>
               One of your employees can probably approve their own purchase
-              orders. In most SAP environments where <Link to="/services/sod-role-redesign">role design</Link> has not been
+              orders. In most SAP environments where <Link href="/services/sod-role-redesign">role design</Link> has not been
               actively governed, at least one user has the ability to create and
               approve their own financial transactions.
             </p>
@@ -254,7 +131,7 @@ export default function Blog40() {
             <p>
               <strong>Your name appears on the controls report.</strong>
               When an auditor or a board‑level risk committee asks about the
-              effectiveness of <Link to="/">SAP access controls</Link>, the answer reflects directly
+              effectiveness of <Link href="/">SAP access controls</Link>, the answer reflects directly
               on the function responsible for maintaining them. An unresolved
               SoD conflict identified in an audit is rarely a system finding. It
               is a finding related to process ownership, decision‑making, and
@@ -295,7 +172,7 @@ export default function Blog40() {
           <section>
             <h2>The fix is not complicated. But it requires a decision.</h2>
             <p>
-              Addressing <Link to="/blogs/sod-management-concepts">SAP SoD conflicts</Link> does not require new technology. It
+              Addressing <Link href="/blogs/sod-management-concepts">SAP SoD conflicts</Link> does not require new technology. It
               requires three things:
             </p>
             <ul>
@@ -347,7 +224,7 @@ export default function Blog40() {
       <section className="blog-container">
         <div className="blog-contact-us-section">
           <div className="blog-left-image only-windows">
-            <img src={cta} alt="Contact s4access" />
+            <Image src={cta} alt="Contact s4access" />
           </div>
 
           <div className="blog-right-content">
@@ -358,7 +235,7 @@ export default function Blog40() {
             </div>
 
             <div className="blog-right-button">
-              <Link to="/Contact" className="button-green">
+              <Link href="/Contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

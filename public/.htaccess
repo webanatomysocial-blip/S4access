@@ -1,13 +1,54 @@
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^index\.html$ - [L]
+
+  # 1. Remove trailing slash
+  RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+  # 2. If the requested path + .html exists, serve that file instead
+  # (This prevents Apache from serving the directory listing if a .html file shares the same name)
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*)$ /$1.html [L]
+
+  # 3. If the requested file or directory exists, serve it
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # 4. If nothing matches, serve the Next.js 404 page
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /index.php [L]
+  RewriteRule ^ /404.html [L]
 </IfModule>
 
 # SEO Redirects
 Redirect 301 /blogs/How-Firefighter-IDs-Help-You-Stay-Compliant https://s4access.com/blogs/when-access-becomes-a-risk-how-firefighter-ids-help-you-stay-compliant
 Redirect 301 /blogs/how-firefighter-ids-help-you-stay-compliant https://s4access.com/blogs/when-access-becomes-a-risk-how-firefighter-ids-help-you-stay-compliant
+
+# Services Redirections
+Redirect 301 /sap-access-management-review https://s4access.com/services/sap-access-management-review
+Redirect 301 /sod-strategy-approach https://s4access.com/services/sod-strategy-approach
+Redirect 301 /sap-access-management-automation https://s4access.com/services/sap-access-management-automation
+Redirect 301 /sap-s4-access-implementation https://s4access.com/services/sap-s4-access-implementation
+Redirect 301 /sod-role-redesign https://s4access.com/services/sod-role-redesign
+Redirect 301 /reorganisation-ma-projects https://s4access.com/services/reorganisation-ma-projects
+Redirect 301 /outsourced-access-management https://s4access.com/services/outsourced-access-management
+Redirect 301 /authorisation-concept-owner https://s4access.com/services/authorisation-concept-owner
+Redirect 301 /security-architect https://s4access.com/services/security-architect
+Redirect 301 /access-risk-sod-management https://s4access.com/services/access-risk-sod-management
+Redirect 301 /ff-log-review-automation https://s4access.com/services/ff-log-review-automation
+Redirect 301 /sap-license-optimisation https://s4access.com/services/sap-license-optimisation
+
+# Blogs Redirections
+Redirect 301 /blogs/ricefw-security-guidelines-part-2 https://s4access.com/blogs/ricefw-security-guidelines-building-security-into-custom-developments-part-ii
+Redirect 301 /blogs/how-leading-cisos-are-approaching-sap-access-management-in-2026 https://s4access.com/blogs/sap-access-management-ciso-2026
+
+# Add proper MIME types
+<IfModule mod_mime.c>
+    AddType text/html .html
+    AddType text/css .css
+    AddType application/javascript .js
+</IfModule>

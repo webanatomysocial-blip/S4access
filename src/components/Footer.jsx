@@ -1,15 +1,25 @@
-import { Link } from "react-router-dom";
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import mainlogo from "../assets/images/Mainlogo.png";
 import '../css/Footer.css';
 import '../css/Header.css';
 
 function Footer() {
+  const pathname = usePathname();
+
+  if (pathname === '/quiz' || pathname === '/quiz/start') {
+    return null;
+  }
+
   return (
     <footer>
       <div className="footer">
 
         <div className="left-logo-container-footer">
-          <img src={mainlogo} alt="S4access Logo" width="210" height="40" />
+          <Image src={mainlogo} alt="S4access Logo" width="210" height="40" />
           <p className="text-white only-windows">
            A New Era in SAP Access Management Begins. Backed by deep expertise and experience, we deliver sustainable SAP Access management solutions.
           </p>
@@ -19,24 +29,24 @@ function Footer() {
 
             <div className="info-contact-inner">
               <a href="tel:+358 20 719 1010">
-                <span><svg id="fi_17486479" enable-background="new 0 0 100 100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m97.4972763 82.1141434c.0027695 8.7985001-7.3660278 15.8329773-16.1520081 15.3636627-17.9030838-.9563217-37.4408378-9.7243195-53.2625522-25.5465851-15.8331375-15.8237877-24.603457-35.3706779-25.5578964-53.2793598-.4681449-8.7840672 6.5623119-16.1518612 15.3588455-16.1518612h9.9519863c2.4168205 0 3.8527546 2.0451765 4.400322 4.4003186l4.3269119 18.7974339c.5525246 2.4003391-.18293 4.9152927-1.9416771 6.6397419l-4.5546856 4.4658546c-3.2576084 3.1940765-3.7772274 8.2572289-1.233017 12.0441971 2.8479004 4.2390022 6.217371 8.3523521 10.0855618 12.2275314 3.8692322 3.8692284 7.9856758 7.2397728 12.2282028 10.0881691 3.7870102 2.5425644 8.8487968 2.022644 12.0422516-1.2343292l4.4671249-4.5559845c1.7244492-1.7587471 4.2394028-2.4941978 6.63974-1.9416733l18.7974396 4.3269119c2.3551407.5475616 4.4003143 1.9827957 4.4003143 4.4003143z" fill-rule="evenodd"></path></svg></span><span>
+                <span><svg id="fi_17486479" enableBackground="new 0 0 100 100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path clipRule="evenodd" d="m97.4972763 82.1141434c.0027695 8.7985001-7.3660278 15.8329773-16.1520081 15.3636627-17.9030838-.9563217-37.4408378-9.7243195-53.2625522-25.5465851-15.8331375-15.8237877-24.603457-35.3706779-25.5578964-53.2793598-.4681449-8.7840672 6.5623119-16.1518612 15.3588455-16.1518612h9.9519863c2.4168205 0 3.8527546 2.0451765 4.400322 4.4003186l4.3269119 18.7974339c.5525246 2.4003391-.18293 4.9152927-1.9416771 6.6397419l-4.5546856 4.4658546c-3.2576084 3.1940765-3.7772274 8.2572289-1.233017 12.0441971 2.8479004 4.2390022 6.217371 8.3523521 10.0855618 12.2275314 3.8692322 3.8692284 7.9856758 7.2397728 12.2282028 10.0881691 3.7870102 2.5425644 8.8487968 2.022644 12.0422516-1.2343292l4.4671249-4.5559845c1.7244492-1.7587471 4.2394028-2.4941978 6.63974-1.9416733l18.7974396 4.3269119c2.3551407.5475616 4.4003143 1.9827957 4.4003143 4.4003143z" fillRule="evenodd"></path></svg></span><span>
                   +358 20 719 1010
                 </span>
               </a>
 
               <a href="mailto:contact@s4access.com">
-                <span><svg id="fi_16935745" enable-background="new 0 0 100 100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m45.7953949 57.5565643-43.1575694-31.3894138c-.0835295.0425339-.0542982.0276489-.1378276.0701828v47.5c0 5.2467041 4.2532949 9.5 9.5 9.5h76c5.2467041 0 9.5-4.2532959 9.5-9.5v-47.6137638c-.0153503-.0078182-.0099869-.0050869-.0253372-.012907l-43.2689913 31.4473705c-2.5074387 1.8223762-5.9034691 1.821785-8.4102745-.0014687z"></path><path d="m54.205761 45.826828 38.328907-27.8734989c-1.3426667-.7346668-2.8880005-1.1906662-4.534668-1.1906662h-76c-1.6466665 0-3.166667.4560013-4.534667 1.1906662l38.328906 27.8734989c2.5073853 1.8234177 5.9041367 1.8234177 8.411522 0z"></path></svg></span><span>
+                <span><svg id="fi_16935745" enableBackground="new 0 0 100 100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="m45.7953949 57.5565643-43.1575694-31.3894138c-.0835295.0425339-.0542982.0276489-.1378276.0701828v47.5c0 5.2467041 4.2532949 9.5 9.5 9.5h76c5.2467041 0 9.5-4.2532959 9.5-9.5v-47.6137638c-.0153503-.0078182-.0099869-.0050869-.0253372-.012907l-43.2689913 31.4473705c-2.5074387 1.8223762-5.9034691 1.821785-8.4102745-.0014687z"></path><path d="m54.205761 45.826828 38.328907-27.8734989c-1.3426667-.7346668-2.8880005-1.1906662-4.534668-1.1906662h-76c-1.6466665 0-3.166667.4560013-4.534667 1.1906662l38.328906 27.8734989c2.5073853 1.8234177 5.9041367 1.8234177 8.411522 0z"></path></svg></span><span>
                   contact(at)s4access(dot)com
                 </span>
               </a>
               
               <a>
-                <span><svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" id="fi_3179068"><path d="m12 0c-4.962 0-9 4.066-9 9.065 0 7.103 8.154 14.437 8.501 14.745.143.127.321.19.499.19s.356-.063.499-.189c.347-.309 8.501-7.643 8.501-14.746 0-4.999-4.038-9.065-9-9.065zm0 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg></span><span>
+                <span><svg enableBackground="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" id="fi_3179068"><path d="m12 0c-4.962 0-9 4.066-9 9.065 0 7.103 8.154 14.437 8.501 14.745.143.127.321.19.499.19s.356-.063.499-.189c.347-.309 8.501-7.643 8.501-14.746 0-4.999-4.038-9.065-9-9.065zm0 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg></span><span>
                   Main office Helsinki / Finland
                 </span>
               </a>
               <a>
-                <span><svg enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" id="fi_3179068"><path d="m12 0c-4.962 0-9 4.066-9 9.065 0 7.103 8.154 14.437 8.501 14.745.143.127.321.19.499.19s.356-.063.499-.189c.347-.309 8.501-7.643 8.501-14.746 0-4.999-4.038-9.065-9-9.065zm0 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg></span><span>
+                <span><svg enableBackground="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" id="fi_3179068"><path d="m12 0c-4.962 0-9 4.066-9 9.065 0 7.103 8.154 14.437 8.501 14.745.143.127.321.19.499.19s.356-.063.499-.189c.347-.309 8.501-7.643 8.501-14.746 0-4.999-4.038-9.065-9-9.065zm0 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg></span><span>
                   HQ Porvoo / Finland
 
                 </span>
@@ -52,39 +62,39 @@ function Footer() {
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/" className="footer-link">
+                  <Link href="/" className="footer-link">
                     Home
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/services" className="footer-link">
+                  <Link href="/services" className="footer-link">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/customer-success" className="footer-link">
+                  <Link href="/customer-success" className="footer-link">
                     Customer Success
                   </Link>
                 </li>
                 <li>
-                  <Link to="/insights" className="footer-link">
+                  <Link href="/insights" className="footer-link">
                     Insights
                   </Link>
                 </li>
                 <li>
-                  <Link to="/careers" className="footer-link">
+                  <Link href="/careers" className="footer-link">
                     Careers
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/about" className="footer-link">
+                  <Link href="/about" className="footer-link">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="footer-link">
+                  <Link href="/contact" className="footer-link">
                     Contact
                   </Link>
                 </li>
@@ -95,18 +105,18 @@ function Footer() {
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/services/sap-access-management-review" className="footer-link">
+                  <Link href="/services/sap-access-management-review" className="footer-link">
                     SAP Access Management Review
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/sod-stratergy-approach" className="footer-link">
+                  <Link href="/services/sod-strategy-approach" className="footer-link">
                     SOD Strategy Approach
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/sap-access-management-automation" className="footer-link">
+                  <Link href="/services/sap-access-management-automation" className="footer-link">
                     SAP Access Management Automation
                   </Link>
                 </li>
@@ -118,18 +128,18 @@ function Footer() {
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/services/sap-s4-access-implementation" className="footer-link">
+                  <Link href="/services/sap-s4-access-implementation" className="footer-link">
                     SAP S/4 Access Implementation
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/services/sod-role-redesign" className="footer-link">
+                  <Link href="/services/sod-role-redesign" className="footer-link">
                     SoD / Role redesign
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/reorganisation-ma-projects" className="footer-link">
+                  <Link href="/services/reorganisation-ma-projects" className="footer-link">
                     Reorganisation / M&A projects
                   </Link>
                 </li>
@@ -141,39 +151,39 @@ function Footer() {
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/" className="footer-link">
+                  <Link href="/" className="footer-link">
                     Home
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/services" className="footer-link">
+                  <Link href="/services" className="footer-link">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/customer-success" className="footer-link">
+                  <Link href="/customer-success" className="footer-link">
                     Customer Success
                   </Link>
                 </li>
                 <li>
-                  <Link to="/insights" className="footer-link">
+                  <Link href="/insights" className="footer-link">
                     Insights
                   </Link>
                 </li>
                 <li>
-                  <Link to="/careers" className="footer-link">
+                  <Link href="/careers" className="footer-link">
                     Careers
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/about" className="footer-link">
+                  <Link href="/about" className="footer-link">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="footer-link">
+                  <Link href="/contact" className="footer-link">
                     Contact
                   </Link>
                 </li>
@@ -187,18 +197,18 @@ function Footer() {
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/services/outsourced-access-management" className="footer-link">
+                  <Link href="/services/outsourced-access-management" className="footer-link">
                     Outsourced Access Management
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/services/authorisation-concept-owner" className="footer-link">
+                  <Link href="/services/authorisation-concept-owner" className="footer-link">
                     Authorisation Concept Owner
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/security-architect" className="footer-link">
+                  <Link href="/services/security-architect" className="footer-link">
                     Security Architect
                   </Link>
                 </li>
@@ -210,18 +220,18 @@ function Footer() {
 
               <ul className="footer-nav">
                 <li>
-                  <Link to="/services/access-risk-sod-management" className="footer-link">
+                  <Link href="/services/access-risk-sod-management" className="footer-link">
                     Access Risk SoD Management
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/services/ff-log-review-automation" className="footer-link">
+                  <Link href="/services/ff-log-review-automation" className="footer-link">
                     FF Log Review Automation
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/sap-license-optimisation" className="footer-link">
+                  <Link href="/services/sap-license-optimisation" className="footer-link">
                     SAP License Optimisation
                   </Link>
                 </li>

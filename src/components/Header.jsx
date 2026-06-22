@@ -1,6 +1,10 @@
+"use client";
+
+import Image from "next/image";
 import React, { useRef, useState, useEffect } from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import logo from '../assets/images/mainlogo.png';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import logo from '../assets/images/Mainlogo.png';
 import fav from '../assets/images/favic-white.svg';
 import '../css/Header.css';
 import MegaMenu from './MegaMenu.jsx';
@@ -10,9 +14,10 @@ function Header(props) {
   const [showMegaMenu, setShowMegaMenu] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const hideTimeout = useRef();
+  const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = ( ) => {
+    const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
     window.addEventListener('scroll', handleScroll);
@@ -36,76 +41,71 @@ function Header(props) {
     setIsMobileMenuOpen(false);
   };
 
+  const getActiveClass = (path, end = false) => {
+    if (end) {
+      return pathname === path ? 'active' : '';
+    }
+    return pathname?.startsWith(path) ? 'active' : '';
+  };
+
+  const isBlackBg = pathname === '/insights' || pathname?.startsWith('/blogs') || pathname?.startsWith('/customer-success') || pathname?.startsWith('/services');
+  const initialBgColor = isBlackBg ? '#000000' : 'transparent';
+
+  if (pathname === '/quiz' || pathname === '/quiz/start') {
+    return null;
+  }
+
   return (
     <>
       {/* Desktop Header */}
-      <nav className={`only-windows navbar ${isScrolled ? 'scrolled' : ''}` } style={{ background: props.backgroundColor }}>
+      <nav className={`only-windows navbar ${isScrolled ? 'scrolled' : ''}` } style={{ background: isScrolled ? undefined : initialBgColor }}>
         <div className="logo">
-          <Link to="/">
-            <img className="main-logo" src={logo} alt="S4access Logo" width="210" height="40" />
+          <Link href="/">
+            <Image className="main-logo" src={logo} alt="S4access Logo" width="210" height="40" />
           </Link>
-          <img className="star-logo" src={fav} alt="Star Logo" width="40" height="40" />
+          <Image className="star-logo" src={fav} alt="Star Logo" width="40" height="40" />
         </div>
         <div className="nav-list">
           <ul>
             <li>
-              <NavLink
-                to="/"
-                end
-                className={({ isActive }) => (isActive ? 'active' : '')}
-              >
+              <Link href="/" className={getActiveClass('/', true)}>
                 Home
-              </NavLink>
+              </Link>
             </li>
            
             <li
               onMouseEnter={handleMenuEnter}
               onMouseLeave={handleMenuLeave}
             >
-              <NavLink
-                to="/services"
-                className={({ isActive }) => (isActive ? 'active' : '')}
-              >
+              <Link href="/services" className={getActiveClass('/services')}>
                 Services
-              </NavLink>
+              </Link>
               <MegaMenu show={showMegaMenu} setShow={setShowMegaMenu} />
             </li>
             <li>
-              <NavLink
-                to="/customer-success"
-                className={({ isActive }) => (isActive ? 'active' : '')}
-              >
+              <Link href="/customer-success" className={getActiveClass('/customer-success')}>
                 Customer Success
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="/insights"
-                className={({ isActive }) => (isActive ? 'active' : '')}
-              >
+              <Link href="/insights" className={getActiveClass('/insights')}>
                 Insights
-              </NavLink>
+              </Link>
             </li>
           <li>
-            <NavLink
-              to="/careers"
-              className={({ isActive }) => (isActive ? 'active' : '')}
-            >
+            <Link href="/careers" className={getActiveClass('/careers')}>
               Careers
-            </NavLink>
+            </Link>
           </li>
            <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? 'active' : '')}
-              >
+              <Link href="/about" className={getActiveClass('/about')}>
                 About
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </div>
         <div className="button-contact">
-          <Link to="/contact">Contact Us</Link>
+          <Link href="/contact">Contact Us</Link>
         </div>
       </nav>
 
@@ -113,8 +113,8 @@ function Header(props) {
       <nav className={`only-mobile mobile-navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="mobile-nav-top">
           <div className="mobile-logo">
-            <Link to="/" onClick={closeMobileMenu}>
-              <img src={logo} alt="S4access Logo" width="210" height="40" />
+            <Link href="/" onClick={closeMobileMenu}>
+              <Image src={logo} alt="S4access Logo" width="210" height="40" />
             </Link>
           </div>
           <button 
@@ -131,63 +131,37 @@ function Header(props) {
         <div className={`mobile-nav-menu ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul>
             <li>
-              <NavLink
-                to="/"
-                end
-                className={({ isActive }) => (isActive ? 'active' : '')}
-                onClick={closeMobileMenu}
-              >
+              <Link href="/" className={getActiveClass('/', true)} onClick={closeMobileMenu}>
                 Home
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="/services"
-                className={({ isActive }) => (isActive ? 'active' : '')}
-                onClick={closeMobileMenu}
-              >
+              <Link href="/services" className={getActiveClass('/services')} onClick={closeMobileMenu}>
                 Services
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="/customer-success"
-                className={({ isActive }) => (isActive ? 'active' : '')}
-                onClick={closeMobileMenu}
-              >
+              <Link href="/customer-success" className={getActiveClass('/customer-success')} onClick={closeMobileMenu}>
                 Customer Success
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="/insights"
-                className={({ isActive }) => (isActive ? 'active' : '')}
-                onClick={closeMobileMenu}
-              >
+              <Link href="/insights" className={getActiveClass('/insights')} onClick={closeMobileMenu}>
                 Insights
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="/careers"
-                className={({ isActive }) => (isActive ? 'active' : '')}
-                onClick={closeMobileMenu}
-              >
+              <Link href="/careers" className={getActiveClass('/careers')} onClick={closeMobileMenu}>
                 Careers
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? 'active' : '')}
-                onClick={closeMobileMenu}
-              >
+              <Link href="/about" className={getActiveClass('/about')} onClick={closeMobileMenu}>
                 About
-              </NavLink>
+              </Link>
             </li>
-            <li >
-              <Link to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}
-                onClick={closeMobileMenu}>
+            <li>
+              <Link href="/contact" className={getActiveClass('/contact')} onClick={closeMobileMenu}>
                 Contact Us
               </Link>
             </li>

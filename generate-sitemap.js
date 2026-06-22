@@ -1,6 +1,6 @@
 import { SitemapStream, streamToPromise } from 'sitemap';
 import { Readable } from 'stream';
-import { writeFileSync, readFileSync } from 'fs';
+import { writeFileSync, readFileSync, existsSync } from 'fs';
 
 // Static routes from main.jsx
 const staticRoutes = [
@@ -69,8 +69,11 @@ const staticRoutes = [
     const stream = new SitemapStream({ hostname: 'https://s4access.com' });
     const sitemapXml = await streamToPromise(Readable.from(allRoutes).pipe(stream)).then(data => data.toString());
 
-    writeFileSync('dist/sitemap.xml', sitemapXml);
-    console.log('Sitemap generated successfully at dist/sitemap.xml');
+    writeFileSync('public/sitemap.xml', sitemapXml);
+    if (existsSync('out')) {
+      writeFileSync('out/sitemap.xml', sitemapXml);
+    }
+    console.log('Sitemap generated successfully at public/sitemap.xml and out/sitemap.xml');
   } catch (err) {
     console.error('Error building sitemap:', err);
   }

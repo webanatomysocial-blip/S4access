@@ -1,11 +1,17 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
 // import img22 from './blogs-images/2.jpg';
 import Blogs from "../components/Blog";
 // import cta from "../blogs/blogs-images/Group.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: "Autumn 2025 SAP Access Trends & Strategies | s4access",
+  description: "Explore the Autumn 2025 outlook for SAP access management: economic pressures, emerging trends, and actionable strategies to strengthen security and compliance.",
+};
+
 
 export default function Blog10() {
   const faqs = [
@@ -29,99 +35,12 @@ export default function Blog10() {
   ];
   return (
     <>
-      <Helmet>
-        <title>Autumn 2025 SAP Access Trends & Strategies | s4access</title>
-        <meta
-          name="title"
-          content="Autumn 2025 SAP Access Trends & Strategies | s4access"
-        />
-        <meta
-          name="description"
-          content="Explore the Autumn 2025 outlook for SAP access management: economic pressures, emerging trends, and actionable strategies to strengthen security and compliance."
-        />
-
-        {/* ================= ARTICLE SCHEMA ================= */}
-        <script type="application/ld+json">
-          {`
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "Smart Guide to Building SAP S/4HANA Display Roles | s4access",
-      "description": "Discover how to build smart and secure SAP S/4HANA Display Roles to improve compliance, prevent unauthorized changes, and enhance overall system control.",
-      "author": {
-        "@type": "Organization",
-        "name": "s4access"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "s4access",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://s4access.com/logo.png"
-        }
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA"
-      },
-      "keywords": [
-        "SAP S/4HANA Display Roles",
-        "SAP Authorization Roles",
-        "SAP Fiori Security",
-        "SAP Role Design Best Practices",
-        "Display-Only Roles in SAP",
-        "SAP Authorization Logging",
-        "SAP PFCG Roles",
-        "SAP Security Compliance",
-        "SAP Role Management",
-        "S4HANA Security",
-        "SAP Display Role Setup",
-        "s4access"
-      ]
-    }
-    `}
-        </script>
-
-        {/* Faq Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is a display role in SAP S/4HANA?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A display role in SAP S/4HANA allows users to view data and reports without the ability to create, change, or delete information. It helps prevent accidental changes and supports audit and compliance requirements."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How do you create a display-only role in SAP S/4HANA?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "In on-premise SAP S/4HANA systems, a standard role is copied in PFCG and change activities such as ACTVT 01, 02, and 06 are removed, leaving only ACTVT 03 (Display). The role is then tested to confirm read-only access."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Are SAP Fiori apps always read-only for display roles?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "No. Some SAP Fiori apps marked as display can still allow changes. Negative testing in the SAP Fiori Launchpad is required to confirm that no modifications are possible."
-                }
-              }
-            ]
-          }
-          )}
-        </script>
-      </Helmet>
+      
 
       <div className="breach-article-wrapper">
         {/* Hero Section */}
         {/* <div className="breach-hero-banner">
-        <img src={img22} alt="" />
+        <Image src={img22} alt="" />
         <div className="hero-overlay-section">
           <h1>Autumn 2025 Outlook: Navigating SAP Security and Access Management in a New Market Reality – Is There a Way Forward?</h1>
         </div>
@@ -260,7 +179,7 @@ export default function Blog10() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <img src="/blogs-images/Group.png" />
+            <Image src="/blogs-images/Group.png" />
           </div>
 
           {/* Right Content */}
@@ -275,7 +194,7 @@ export default function Blog10() {
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

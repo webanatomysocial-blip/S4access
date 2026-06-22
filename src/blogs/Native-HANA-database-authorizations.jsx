@@ -1,9 +1,15 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
 import cta from "../blogs/blogs-images/Group.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: "\n          Native HANA Database Authorizations – Best Practices | s4access\n        ",
+  description: "Learn how to design secure and maintainable native SAP HANA database authorizations. Avoid ad-hoc privilege assignments and build a sustainable role-based access model.",
+};
+
 
 export default function Blog12() {
   const faqs = [
@@ -31,113 +37,7 @@ export default function Blog12() {
   ];
   return (
     <>
-      <Helmet>
-        {/* SEO Meta */}
-        <title>
-          Native HANA Database Authorizations – Best Practices | s4access
-        </title>
-        <meta
-          name="title"
-          content="Native HANA Database Authorizations – Best Practices | s4access"
-        />
-        <meta
-          name="description"
-          content="Learn how to design secure and maintainable native SAP HANA database authorizations. Avoid ad-hoc privilege assignments and build a sustainable role-based access model."
-        />
-
-        {/* Article Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline:
-              "Native HANA Database Authorizations Best Practices | s4access",
-            description:
-              "Native HANA Database Authorizations often fail due to ad-hoc privileges. Learn how role-based access prevents user dependency and access issues in SAP systems.",
-            url: "https://s4access.com/blogs/Native-HANA-database-authorizations",
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://s4access.com/blogs/Native-HANA-database-authorizations",
-            },
-            sameAs:
-              "https://s4access.com/blogs/Native-HANA-database-authorizations",
-            author: {
-              "@type": "Organization",
-              name: "s4access",
-              url: "https://s4access.com/",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "s4access",
-              url: "https://s4access.com/",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://s4access.com/wp-content/uploads/2023/09/s4access-logo.png",
-              },
-            },
-            about: [
-              "Native HANA Database Authorizations",
-              "SAP HANA authorizations",
-              "HANA database users",
-              "Ad-hoc privileges",
-              "HANA role concept",
-              "Role-based access",
-            ],
-            keywords: [
-              "Native HANA Database Authorizations",
-              "HANA database users",
-              "SAP HANA authorizations",
-              "Ad-hoc privileges",
-              "HANA role concept",
-              "Role-based access",
-            ],
-          })}
-        </script>
-
-        {/* Faq Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What are native SAP HANA database authorizations?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Native SAP HANA database authorizations are privileges assigned directly to database users for schemas, tables, and objects. When managed without a structured role concept, they can create long-term access and ownership issues."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Why is assigning SAP HANA privileges directly to users risky?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Direct privilege assignment creates dependency on individual user IDs. When users leave or are deleted, access breaks and database objects can be lost, causing system instability and audit risks."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Why is a role-based authorization concept important in SAP HANA?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A role-based authorization concept provides structure and consistency across systems such as DEV, QA, and PROD. It allows authorizations to be transported safely and reduces reliance on individual developers."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Can ad-hoc SAP HANA privileges be converted to roles later?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Existing privilege assignments can be analyzed, redesigned into proper SAP HANA roles, and then replaced. This removes random access patterns and stabilizes long-term authorization management."
-                }
-              }
-            ]
-          }
-          )}
-        </script>
-      </Helmet>
+      
 
       <div className="breach-article-wrapper">
         <div className="breach-article-content">
@@ -256,7 +156,7 @@ export default function Blog12() {
       <section className="blog-container">
         <div className="blog-contact-us-section">
           <div className="blog-left-image only-windows">
-            <img src={cta} alt="Contact s4access" />
+            <Image src={cta} alt="Contact s4access" />
           </div>
 
           <div className="blog-right-content">
@@ -267,7 +167,7 @@ export default function Blog12() {
             </div>
 
             <div className="blog-right-button">
-              <Link to="/Contact" className="button-green">
+              <Link href="/Contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

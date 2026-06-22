@@ -1,3 +1,6 @@
+"use client";
+
+import Image from "next/image";
 import React, { useState, useEffect } from 'react';
 import random1 from '../assets/images/Careeres-img/random-imgs/random-1.jpg';
 import random2 from '../assets/images/Careeres-img/random-imgs/random-2.jpg';
@@ -37,21 +40,23 @@ const CareersGallerySection = () => {
     setShuffledImages(shuffleArray(initialImages));
   }, []);
 
+  if (shuffledImages.length === 0) return null;
+
   return (
     <section className="careers-gallery-section">
       <div className="careers-gallery-grid">
         {/* Top row: 4 smaller images */}
-        <img src={shuffledImages[0]?.src} alt={shuffledImages[0]?.alt} className="gallery-img top-row" />
-        <img src={shuffledImages[1]?.src} alt={shuffledImages[1]?.alt} className="gallery-img top-row" />
-        <img src={shuffledImages[2]?.src} alt={shuffledImages[2]?.alt} className="gallery-img top-row" />
-        <img src={shuffledImages[3]?.src} alt={shuffledImages[3]?.alt} className="gallery-img top-row" />
+        <Image src={shuffledImages[0]?.src} alt={shuffledImages[0]?.alt} className="gallery-img top-row" />
+        <Image src={shuffledImages[1]?.src} alt={shuffledImages[1]?.alt} className="gallery-img top-row" />
+        <Image src={shuffledImages[2]?.src} alt={shuffledImages[2]?.alt} className="gallery-img top-row" />
+        <Image src={shuffledImages[3]?.src} alt={shuffledImages[3]?.alt} className="gallery-img top-row" />
         {/* Middle row: 3 larger images, rightmost wider */}
-        <img src={shuffledImages[4]?.src} alt={shuffledImages[4]?.alt} className="gallery-img middle-row left" />
-        <img src={shuffledImages[5]?.src} alt={shuffledImages[5]?.alt} className="gallery-img middle-row center" />
-        <img src={shuffledImages[6]?.src} alt={shuffledImages[6]?.alt} className="gallery-img middle-row right" />
+        <Image src={shuffledImages[4]?.src} alt={shuffledImages[4]?.alt} className="gallery-img middle-row left" />
+        <Image src={shuffledImages[5]?.src} alt={shuffledImages[5]?.alt} className="gallery-img middle-row center" />
+        <Image src={shuffledImages[6]?.src} alt={shuffledImages[6]?.alt} className="gallery-img middle-row right" />
         {/* Bottom row: 2 larger images */}
-        <img src={shuffledImages[7]?.src} alt={shuffledImages[7]?.alt} className="gallery-img bottom-row left" />
-        <img src={shuffledImages[8]?.src} alt={shuffledImages[8]?.alt} className="gallery-img bottom-row right" />
+        <Image src={shuffledImages[7]?.src} alt={shuffledImages[7]?.alt} className="gallery-img bottom-row left" />
+        <Image src={shuffledImages[8]?.src} alt={shuffledImages[8]?.alt} className="gallery-img bottom-row right" />
       </div>
     </section>
   );

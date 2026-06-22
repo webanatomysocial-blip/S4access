@@ -1,8 +1,14 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: " Expert Guide: Choosing Your SAP Access Consultant | s4access",
+  description: "Learn when to bring in external SAP Access, Security, and GRC experts. Discover how to choose the right SAP consultant to strengthen compliance, controls, and role design.",
+};
+
 
 export default function RightSAPAccessConsultant() {
     const faqs = [
@@ -25,100 +31,7 @@ export default function RightSAPAccessConsultant() {
 
     return (
         <>
-            <Helmet>
-                <title> Expert Guide: Choosing Your SAP Access Consultant | s4access</title>
-                <meta
-                    name="title"
-                    content=" Expert Guide: Choosing Your SAP Access Consultant | s4access"
-                />
-                <meta
-                    name="description"
-                    content="Learn when to bring in external SAP Access, Security, and GRC experts. Discover how to choose the right SAP consultant to strengthen compliance, controls, and role design."
-                />
-                <script type="application/ld+json">
-                    {`
-    {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://s4access.com/sap-access-management-consultant-guide" 
-  },
-  "headline": "Expert Guide: Choosing Your SAP Access Consultant | s4access",
-  "description": "Learn when to bring in external SAP Access, Security, and GRC experts. Discover how to choose the right SAP consultant to strengthen compliance, controls, and role design.",
-  "author": {
-    "@type": "Organization",
-    "name": "s4access",
-    "url": "https://s4access.com/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "s4access",
-    "url": "https://s4access.com/"
-  },
-  "datePublished": "2026-01-30",
-  "dateModified": "2026-01-30",
-  "keywords": [
-    "SAP Access Consultant",
-    "SAP access management",
-    "SAP Security",
-    "SAP GRC",
-    "Segregation of Duties",
-    "SoD risk analysis",
-    "SAP S/4HANA migration",
-    "access risk management",
-    "role design",
-    "legacy SAP roles",
-    "audit findings",
-    "compliance pressures",
-    "firefighter access",
-    "SAP access governance",
-    "GRC Access Control",
-    "least privilege access",
-    "SAP security controls"
-  ]
-}
-
-    `}
-                </script>
-
-                {/* Faq Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "When is external SAP access expertise needed?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "External SAP access expertise is required during SAP S/4HANA migrations, system upgrades, or integrations that introduce new access risks. It is also needed when audit findings, compliance pressures, or complex legacy role designs cannot be handled by internal teams."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "What SAP access issues are commonly identified in audits?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Audits commonly highlight excessive user privileges, outdated or undocumented roles, segregation-of-duties conflicts, and gaps in emergency or sensitive access controls. These issues increase compliance and operational risk."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "What should be evaluated when choosing an SAP Access Consultant?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "A consultant should demonstrate strong SAP Security and GRC expertise, understand business and process impact, and work independently and transparently. Experience with scalable role design, clear documentation, and change management is also critical."
-                                }
-                            }
-                        ]
-                    }
-
-
-                    )}
-                </script>
-            </Helmet>
+            
 
             <div className="breach-article-wrapper">
                 <div className="breach-article-content">
@@ -300,7 +213,7 @@ export default function RightSAPAccessConsultant() {
             <section className="blog-container">
                 <div className="blog-contact-us-section">
                     <div className="blog-left-image only-windows">
-                        <img src="/blogs-images/Group.png" alt="Contact Us" />
+                        <Image src="/blogs-images/Group.png" alt="Contact Us" />
                     </div>
 
                     <div className="blog-right-content">
@@ -310,7 +223,7 @@ export default function RightSAPAccessConsultant() {
                             </p>
                         </div>
                         <div className="blog-right-button">
-                            <Link to="/contact" className="button-green">
+                            <Link href="/contact" className="button-green">
                                 <span>Get Started</span>
                                 <span>
                                     <i className="bi bi-arrow-up"></i>

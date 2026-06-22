@@ -1,3 +1,6 @@
+"use client";
+
+import Image from "next/image";
 import React, { useEffect } from "react";
 import "../../css/Popup.css";
 
@@ -40,7 +43,7 @@ const Popup = ({
 
           <div className="popup-image-container">
             {image && (
-              <img src={image} alt="Popup banner" className="popup-image" />
+              <Image src={image} alt="Popup banner" className="popup-image" />
             )}
           </div>
           <div
@@ -56,7 +59,7 @@ const Popup = ({
           )}
 
           {image2 && (
-              <img src={image2} alt="Popup banner" className="popup-image-down" />
+              <Image src={image2} alt="Popup banner" className="popup-image-down" />
             )}
           {title2 && (
             <h2 className="sub-heading-text-black ">{title2}</h2>
@@ -65,7 +68,7 @@ const Popup = ({
             <p className="text-black">{description2}</p>
           )}
           {image3 && (
-              <img src={image3} alt="Popup banner" className="popup-image-down" />
+              <Image src={image3} alt="Popup banner" className="popup-image-down" />
             )}
           {title3 && (
             <h2 className="sub-heading-text-black ">{title3}</h2>

@@ -3,7 +3,7 @@ import blog13 from "../blogs/blogs-images/9298.jpg";
 import blog11 from "../blogs/blogs-images/Blog-img011.jpg";
 import blog14 from "../blogs/blogs-images/1165.webp";
 import blog15 from "../blogs/blogs-images/blog15.jpg";
-import blog16 from "../blogs/blogs-images/blog16.jpg";
+import blog16 from "../blogs/blogs-images/Blog16.jpg";
 import blogCiso2026 from "../blogs/blogs-images/ciso-sap-access-2026.jpg";
 import blog45 from "../blogs/blogs-images/own.jpeg";
 import blog20 from "../blogs/blogs-images/blog20.jpg";
@@ -35,7 +35,7 @@ export const blogMetadata = [
     id: "Turning-Frustration-into-Value",
     title: "Understanding SAP Access Management Audits: Turning Frustration Into Value ",
     slug: "turning-frustration-into-value",
-    metaDescription: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
+    metaDescription: "Learn how businesses can transform customer frustrations into valuable insights, stronger relationships, and sustainable growth opportunities.",
     excerpt: "When speaking with SAP customers, one sentiment comes up again and again: audits are frustrating. Many teams feel that audit processes are disconnected from the realities of day-to-day SAP operations. Findings often focus on technical details that seem minor or irrelevant, while overlooking business context and practical constraints.",
     image: "/blogs-images/1.jpg",
     date: "2025-09-16",
@@ -62,7 +62,7 @@ export const blogMetadata = [
     id: "RICEFW-Security-Guidelines",
     title: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part I",
     slug: "ricefw-security-guidelines-building-security-into-custom-developments-part-i",
-    metaDescription: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
+    metaDescription: "Build secure SAP custom solutions with RICEFW security guidelines that minimize vulnerabilities, strengthen controls, and support compliance.",
     excerpt: "When talking about SAP security, most conversations revolve around roles, authorizations, and segregation of duties. But there’s another critical piece that often slips under the radar: RICEFW objects.",
     image: "/blogs-images/Blog-6.jpg",
     date: "2025-10-09",
@@ -71,7 +71,7 @@ export const blogMetadata = [
     id: "RICEFW-Security-Guidelines-Part-2",
     title: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part II",
     slug: "ricefw-security-guidelines-building-security-into-custom-developments-part-ii",
-    metaDescription: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
+    metaDescription: "Learn RICEFW security guidelines for SAP custom developments and discover best practices to reduce risks, strengthen controls, and improve compliance.",
     excerpt: "When discussing SAP security, the focus often stays on roles, authorizations, and segregation of duties. However, an equally critical aspect tends to go unnoticed, RICEFW objects. In Part II of our blog series, we’ll dive deeper into other key RICEFW artifacts, namely Enhancements, Forms, and Workflows. ",
     image: "/blogs-images/Blog-7.jpg",
     date: "2025-10-15",
@@ -89,7 +89,7 @@ export const blogMetadata = [
     id: "Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA",
     title: "Building Display Roles The Smart Way In SAP S/4HANA",
     slug: "building-display-roles-the-smart-way-in-sap-s4hana",
-    metaDescription: "How SAP Firefighter IDs provide controlled emergency access, prevent security risks, and keep systems audit-compliant with logging and timely review processes.",
+    metaDescription: "Build SAP S/4HANA display roles the smart way with best practices that improve security, simplify access management, and support compliance.",
     excerpt: "In many SAP S/4HANA implementations, one of the under-appreciated tasks is defining roles that only allow viewing of data and functions, the so-called “display” roles. Why does this matter? Because letting users see without the risk of accidental change or authorization excess is key for audit and compliance purposes as well as for smooth operations. In this post I’ll walk through why display roles are important, what you should watch out for, how to build them, and some real-life tips to avoid common pitfalls.",
     image: "/blogs-images/Blog10.jpg",
     date: "2025-11-11",
@@ -186,16 +186,3 @@ export const blogMetadata = [
     date: "2026-05-25",
   },
 ];
-
-// Preload images with error handling`
-if (typeof Image !== 'undefined') {
-  blogMetadata.forEach(blog => {
-    const img = new Image();
-    img.src = blog.image;
-    img.onload = () => console.log(`Successfully preloaded image: ${blog.image}`);
-    img.onerror = () => {
-      console.error(`Failed to preload image: ${blog.image}`);
-      blog.image = "/images/placeholder.jpg";
-    };
-  });
-}

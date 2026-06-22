@@ -1,11 +1,17 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
 // import img23 from './blogs-images/1.jpg';
 import Blogs from "../../src/components/Blog";
 import cta from "./blogs-images/Group.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: "Challenges in Approving SAP Access Requests | s4access",
+  description: "Discover common challenges in approving SAP access requests: balancing\nsecurity, compliance, and efficiency to mitigate risks and ensure effective governance.",
+};
+
 
 export default function Blog5() {
   const faqs = [
@@ -28,53 +34,7 @@ export default function Blog5() {
   ];
   return (
     <>
-      <Helmet>
-        <title>Challenges in Approving SAP Access Requests | s4access</title>
-        <meta
-          name="title"
-          content="Challenges in Approving SAP Access Requests | s4access"
-        />
-        <meta
-          name="description"
-          content="Discover common challenges in approving SAP access requests: balancing
-security, compliance, and efficiency to mitigate risks and ensure effective governance."
-        />
-
-        {/* Faq Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Why is approving SAP access not just a formality?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Approving SAP access directly affects security and compliance. Incorrect approvals can create segregation-of-duties conflicts and lead to long-term audit risks."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What problems do unclear SAP role names cause?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Unclear or poorly named SAP roles make it difficult for approvers to understand what access is being granted. This often leads to over-approval or incorrect access."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Why is having too many SAP roles per user risky?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "When users have multiple SAP roles, authorizations can overlap and unintentionally grant excessive access. This increases compliance risk and makes access reviews more difficult."
-                }
-              }
-            ]
-          }
-          )}
-        </script>
-      </Helmet>
+      
       <div className="breach-article-wrapper">
         {/* Blog Content */}
         <div className="breach-article-content">
@@ -170,7 +130,7 @@ security, compliance, and efficiency to mitigate risks and ensure effective gove
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <img src={cta} />
+            <Image src={cta} />
           </div>
 
           {/* Right Content */}
@@ -185,7 +145,7 @@ security, compliance, and efficiency to mitigate risks and ensure effective gove
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

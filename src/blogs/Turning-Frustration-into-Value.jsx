@@ -1,11 +1,17 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
 // import img23 from './blogs-images/1.jpg';
 import Blogs from "../components/Blog";
 import cta from "../blogs/blogs-images/Group.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: "\n          Turning SAP Access Audit Frustration into Value | s4access\n        ",
+  description: "Transform SAP access audit challenges into actionable insights: streamline processes, enhance compliance, and drive value with s4access’s expert strategies.",
+};
+
 
 export default function Blog3() {
   const faqs = [
@@ -29,103 +35,12 @@ export default function Blog3() {
   ];
   return (
     <>
-      <Helmet>
-        <title>
-          Turning SAP Access Audit Frustration into Value | s4access
-        </title>
-        <meta
-          name="title"
-          content="Turning SAP Access Audit Frustration into Value | s4access"
-        />
-        <meta
-          name="description"
-          content="Transform SAP access audit challenges into actionable insights: streamline processes, enhance compliance, and drive value with s4access’s expert strategies."
-        />
-
-        {/* ======================= ARTICLE SCHEMA ======================= */}
-        <script type="application/ld+json">
-          {`
-    {
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "Turning SAP Access Audits into Opportunities | S4Access",
-      "description": "Transform SAP Access Audits from frustration into improvement. Learn how to clarify scope, align with auditors, and gain real value from every audit process.",
-      "author": {
-        "@type": "Organization",
-        "name": "s4access"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "s4access",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://s4access.com/logo.png"
-        }
-      },
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://s4access.com/blogs/Turning-Frustration-into-Value"
-      },
-      "keywords": [
-        "SAP Access Audits",
-        "SAP Audit Preparation",
-        "SAP Access Management",
-        "SAP Audit Process",
-        "SAP Compliance",
-        "SAP Security Review",
-        "Audit Communication in SAP",
-        "Working with IT Auditors"
-      ],
-      "articleSection": [
-        "SAP Access Management",
-        "SAP Audit Best Practices",
-        "Audit Communication Strategies",
-        "Audit Preparation Guide"
-      ]
-    }
-    `}
-        </script>
-
-        {/* Faq Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Why do SAP access management audits feel frustrating?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "SAP access management audits often rely on generic checklists and lack SAP-specific context. This creates gaps between daily SAP operations and what auditors expect to see."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What types of audits review SAP access controls?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "SAP access controls are reviewed during financial audits, internal audits, tax audits, privacy or GDPR audits, industry-standard audits, and special audits such as fraud investigations."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Why is it important to understand the audit scope in SAP audits?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Each audit type has different objectives and risk focus. Understanding the audit scope helps align evidence, controls, and explanations with what is actually being assessed."
-                }
-              }
-            ]
-          }
-          )}
-        </script>
-      </Helmet>
+      
 
       <div className="breach-article-wrapper">
         {/* Hero Section */}
         {/* <div className="breach-hero-banner">
-        <img src={img23} alt="" />
+        <Image src={img23} alt="" />
         <div className="hero-overlay-section">
           <h1>Understanding SAP Access Management Audits: Turning Frustration into Value</h1>
         </div>
@@ -284,7 +199,7 @@ export default function Blog3() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <img src={cta} />
+            <Image src={cta} />
           </div>
 
           {/* Right Content */}
@@ -298,7 +213,7 @@ export default function Blog3() {
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

@@ -1,11 +1,17 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
 // import img22 from './blogs-images/2.jpg';
 import Blogs from "../components/Blog";
 import cta from "../blogs/blogs-images/Group.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate";
+
+export const metadata = {
+  title: "SoD Management Concepts for Access Risk Control | s4access",
+  description: " Learn how SoD management helps control access risks, prevent fraud, and strengthen ERP security through risk-based controls, SAP GRC, and governance practices.",
+};
+
 export default function Blog2() {
     const faqs = [
         {
@@ -28,96 +34,12 @@ export default function Blog2() {
     ];
     return (
         <>
-            <Helmet>
-                <title>SoD Management Concepts for Access Risk Control | s4access</title>
-                <meta
-                    name="title"
-                    content="SoD Management Concepts: Keeping Access Risks Under Control  | s4access"
-                />
-                <meta
-                    name="description"
-                    content=" Learn how SoD management helps control access risks, prevent fraud, and strengthen ERP security through risk-based controls, SAP GRC, and governance practices."
-                />
-                <meta
-                    name="keywords"
-                    content="Segregation of Duties, SoD management, Access risks, SAP GRC Access Control, Identity governance solutions"
-                />
-                <script type="application/ld+json">
-                    {`
-                {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "SoD Management Concepts for Access Risk Control | s4access",
-  "description": "Learn how SoD management helps control access risks, prevent fraud, and strengthen ERP security through risk-based controls, SAP GRC, and governance practices.",
-  "url": "https://s4access.com/blogs/SoD-Management-Concepts ",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://s4access.com/blogs/SoD-Management-Concepts"
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "s4access"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "s4access",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://s4access.com/logo.png"
-    }
-  },
-  "keywords": [
-    "Segregation of Duties",
-    "SoD management",
-    "Access risks",
-    "SAP GRC Access Control",
-    "Identity governance solutions"
-  ]
-}
-
-    
-    `}
-                </script>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "What is Segregation of Duties (SoD) and why is it important?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Segregation of Duties (SoD) is an internal control that prevents a single user from having end-to-end control over a critical business process. It helps reduce errors, fraud, and misuse of authority while protecting business integrity."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Why do access risks increase in ERP environments?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Access risks increase because integrated systems and role-based authorization models often grant extensive permissions. Without structured SoD management, these risks can grow unnoticed until discovered during audits."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "How does SAP GRC Access Control support SoD management?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "SAP GRC Access Control helps define SoD rules, detect conflicts when roles are assigned, and monitor violations in real time. This makes SoD part of everyday access management instead of an audit-time surprise."
-                                }
-                            }
-                        ]
-                    }
-
-                    )}
-                </script>
-            </Helmet>
+            
 
             <div className="breach-article-wrapper">
                 {/* Hero Section */}
                 {/* <div className="breach-hero-banner">
-        <img src={img22} alt="" />
+        <Image src={img22} alt="" />
         <div className="hero-overlay-section">
           <h1>Autumn 2025 Outlook: Navigating SAP Security and Access Management in a New Market Reality – Is There a Way Forward?</h1>
         </div>
@@ -157,7 +79,7 @@ export default function Blog2() {
                 <div className="blog-contact-us-section">
                     {/* Left Image */}
                     <div className="blog-left-image only-windows">
-                        <img src={cta} />
+                        <Image src={cta} alt="Call to action" />
                     </div>
 
                     {/* Right Content */}
@@ -171,7 +93,7 @@ export default function Blog2() {
                             </p>
                         </div>
                         <div className="blog-right-button">
-                            <Link to="/contact" className="button-green">
+                            <Link href="/contact" className="button-green">
                                 <span>Get Started</span>
                                 <span>
                                     <i className="bi bi-arrow-up"></i>

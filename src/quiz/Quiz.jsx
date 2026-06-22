@@ -2,9 +2,10 @@ import React from 'react';
 import { BsClockHistory, BsClipboardCheck } from 'react-icons/bs';
 import { IoBarChartSharp } from 'react-icons/io5';
 import { FaChevronRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import blueIcon from '../assets/blue-icon.png';
 import bannerBg from '../../src/QUIZ/background.png';
+import Image from 'next/image';
 import './Quiz.css';
 
 const cards = [
@@ -32,7 +33,7 @@ export default function Quiz() {
   return (
     <section
       className="quiz-hero-section"
-      style={{ backgroundImage: `url(${bannerBg})` }}
+      style={{ backgroundImage: `url(${bannerBg.src || bannerBg})` }}
     >
     
 
@@ -51,8 +52,7 @@ export default function Quiz() {
         {/* Feature cards */}
         <div className="quiz-cards">
           {cards.map((card) => (
-            <Link 
-              to="/quiz/start" 
+            <Link href="/quiz/start" 
               key={card.id} 
               className="quiz-card" 
               style={{ textDecoration: 'none' }}
@@ -64,7 +64,7 @@ export default function Quiz() {
                 <h3 className="quiz-card-title">{card.title}</h3>
                 <p className="quiz-card-desc">{card.description}</p>
               </div>
-              <img
+              <Image
                 src={blueIcon}
                 alt="s4access"
                 className="quiz-card-logo"
@@ -74,13 +74,13 @@ export default function Quiz() {
         </div>
 
         {/* CTA Button */}
-        <Link to="/quiz/start" className="quiz-start-btn">
+        <Link href="/quiz/start" className="quiz-start-btn">
           Start Assessment <FaChevronRight className="quiz-btn-arrow" />
         </Link>
 
         {/* Footnote */}
         <p className="quiz-footnote">
-          Benchmark based on assessment of 1,200+ Nordic SAP environments
+Benchmark based on analysis of SAP environments
         </p>
       </div>
     </section>

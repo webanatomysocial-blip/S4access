@@ -1,12 +1,18 @@
+import Image from "next/image";
 import React from 'react';
 import './Internal-Blog.css';
 // import img23 from './blogs-images/1.jpg';
 import Blogs from '../components/Blog';
 import cta from '../blogs/blogs-images/Group.png';
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import '../css/Header.css';
-import { Helmet } from 'react-helmet-async';
 import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: "RICEFW Security Guidelines for SAP Access | s4access",
+  description: "Enhance SAP security with RICEFW guidelines: implement secure custom\ndevelopments, enforce SoD, and ensure compliance across your SAP landscape with s4access.",
+};
+
 
 export default function Blog3() {
     const faqs = [
@@ -30,50 +36,11 @@ export default function Blog3() {
     ];
     return (
         <>
-            <Helmet>
-                <title>RICEFW Security Guidelines for SAP Access | s4access</title>
-                <meta name="title" content="RICEFW Security Guidelines for SAP Access | s4access" />
-                <meta name="description" content="Enhance SAP security with RICEFW guidelines: implement secure custom
-developments, enforce SoD, and ensure compliance across your SAP landscape with s4access." />
-                {/* Faq Schema */}
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": [
-                            {
-                                "@type": "Question",
-                                "name": "What are RICEFW objects in SAP?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "RICEFW stands for Reports, Interfaces, Conversions, Enhancements, Forms, and Workflows. These custom objects extend SAP functionality but can introduce security risks if not governed properly."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "Why do custom SAP reports pose security risks?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Custom SAP reports can expose sensitive payroll, financial, or personal data if authorization checks and data masking are missing. Reports must be secured like any other business transaction."
-                                }
-                            },
-                            {
-                                "@type": "Question",
-                                "name": "How should custom SAP reports be secured?",
-                                "acceptedAnswer": {
-                                    "@type": "Answer",
-                                    "text": "Each report should be linked to a transaction code and protected with authorization objects. AUTHORITY-CHECK statements and restricted download options are critical."
-                                }
-                            }
-                        ]
-                    }
-                    )}
-                </script>
-            </Helmet>
+            
             <div className="breach-article-wrapper">
                 {/* Hero Section */}
                 {/* <div className="breach-hero-banner">
-        <img src={img23} alt="" />
+        <Image src={img23} alt="" />
         <div className="hero-overlay-section">
           <h1>Understanding SAP Access Management Audits: Turning Frustration into Value</h1>
         </div>
@@ -170,7 +137,7 @@ developments, enforce SoD, and ensure compliance across your SAP landscape with 
                     </section>
 
                     <section>
-                        <div className="front-btn-container" ><Link to="/blogs/RICEFW-Security-Guidelines-Part-2" className="front-btn">Continue reading part II, to learn more about RICEFW security in custom developments.</Link></div>
+                        <div className="front-btn-container" ><Link href="/blogs/RICEFW-Security-Guidelines-Part-2" className="front-btn">Continue reading part II, to learn more about RICEFW security in custom developments.</Link></div>
                         <p>In the next post, we'll explore Enhancements, Forms, and Workflows - components that often bypass standard SAP controls. Learn how to secure them effectively.</p>
                     </section>
                 </div>
@@ -199,7 +166,7 @@ developments, enforce SoD, and ensure compliance across your SAP landscape with 
 
                     {/* Left Image */}
                     <div className="blog-left-image only-windows">
-                        <img src={cta} />
+                        <Image src={cta} />
                     </div>
 
                     {/* Right Content */}
@@ -211,7 +178,7 @@ developments, enforce SoD, and ensure compliance across your SAP landscape with 
                             <p className="text-white" style={{ fontWeight: 600 }}>Secure Your Custom Developments — Make RICEFW Security Effortless.</p>
                         </div>
                         <div className="blog-right-button">
-                            <Link to="/Contact" className="button-green">
+                            <Link href="/Contact" className="button-green">
                                 <span>Get Started</span>
                                 <span>
                                     <i className="bi bi-arrow-up"></i>

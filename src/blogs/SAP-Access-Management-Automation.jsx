@@ -1,23 +1,19 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
 import cta from "../blogs/blogs-images/Group.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
+
+export const metadata = {
+  title: "SAP Access Management Automation: The real cost of manual processes | s4access",
+  description: "SAP access management automation reduces security risks, improves compliance, and eliminates inefficiencies caused by manual processes.",
+};
+
 
 export default function Blog20() {
   return (
     <>
-      <Helmet>
-        <title>SAP Access Management Automation: The real cost of manual processes | s4access</title>
-        <meta
-          name="title"
-          content="SAP Access Management Automation: The real cost of manual processes | s4access"
-        />
-        <meta
-          name="description"
-          content="SAP access management automation reduces security risks, improves compliance, and eliminates inefficiencies caused by manual processes."
-        />
-      </Helmet>
+      
 
       <div className="breach-article-wrapper">
         <div className="breach-article-content">
@@ -135,7 +131,7 @@ export default function Blog20() {
       <section className="blog-container">
         <div className="blog-contact-us-section">
           <div className="blog-left-image only-windows">
-            <img src={cta} alt="Contact us" />
+            <Image src={cta} alt="Contact us" />
           </div>
 
           <div className="blog-right-content">
@@ -145,7 +141,7 @@ export default function Blog20() {
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Contact us</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

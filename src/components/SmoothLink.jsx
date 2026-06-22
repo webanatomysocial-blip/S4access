@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useCallback, useRef } from 'react';
 
 function SmoothLink({ to = '#', children, ...props }) {

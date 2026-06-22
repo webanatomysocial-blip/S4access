@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "../css/HomeSlidersMobile.css";
 import banner1 from "../assets/images/home-img/banner-home/4.png";
@@ -8,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import mainlogo from "../assets/images/Mainlogo.png";
 
 const slideData = [
@@ -72,7 +73,7 @@ const HomeSlidersMobile = () => {
             <div
               className="hsm-slider-card"
               style={{
-                backgroundImage: `url(${slide.image})`,
+                backgroundImage: `url(${slide.image?.src || slide.image})`,
                 backgroundColor: "#1a1a1a",
                 minHeight: "350px",
                 backgroundPosition: slide.backgroundPosition,
@@ -81,7 +82,7 @@ const HomeSlidersMobile = () => {
               <div className="hsm-slider-content-overlay">
                 {slide.textImg && (
                   <img
-                    src={slide.textImg}
+                    src={slide.textImg.src || slide.textImg}
                     alt="Slide logo"
                     className="mobile-logo-s4-car"
                     width="210"
@@ -94,7 +95,7 @@ const HomeSlidersMobile = () => {
                   <p className="sub-heading-text-white">{slide.text}</p>
                 )}
                 {slide.link && (
-                  <Link to={slide.link} className="button-green">
+                  <Link href={slide.link} className="button-green">
                     Learn More
                   </Link>
                 )}

@@ -1,8 +1,14 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
 // import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: "\n          When a company grows, what opportunities can it create for its people?\n        ",
+  description: "description",
+};
+
 
 export default function CompanyGrows() {
   //   const faqs = [
@@ -25,16 +31,7 @@ export default function CompanyGrows() {
 
   return (
     <>
-      <Helmet>
-        <title>
-          When a company grows, what opportunities can it create for its people?
-        </title>
-        <meta
-          name="title"
-          content="When a company grows, what opportunities can it create for its people?"
-        />
-        <meta name="description" content="description" />
-      </Helmet>
+      
 
       <div className="breach-article-wrapper">
         <div className="breach-article-content">
@@ -142,7 +139,7 @@ export default function CompanyGrows() {
       <section className="blog-container">
         <div className="blog-contact-us-section">
           <div className="blog-left-image only-windows">
-            <img src="/blogs-images/Group.png" alt="Contact Us" />
+            <Image src="/blogs-images/Group.png" alt="Contact Us" />
           </div>
 
           <div className="blog-right-content">
@@ -152,7 +149,7 @@ export default function CompanyGrows() {
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

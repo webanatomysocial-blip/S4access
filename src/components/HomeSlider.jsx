@@ -1,3 +1,6 @@
+"use client";
+
+import Image from "next/image";
 import React, { useState, useEffect } from 'react';
 import '../css/HomeSlider.css';
 // import banner1 from '../assets/images/home-img/home-bgimg.jpg';
@@ -7,12 +10,11 @@ import banner4 from '../assets/images/home-img/banner-home/3.jpg';
 import banner5 from '../assets/images/home-img/banner-home/4.png'
 import mainlogo from "../assets/images/Mainlogo.png";
 
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 
 // SmoothLink component for smooth scrolling
 const SmoothLink = ({ to, className, children }) => (
-  <Link
-    to={to}
+  <Link href={to}
     className={className}
     onClick={(e) => {
       e.preventDefault();
@@ -77,12 +79,12 @@ const HomeSlider = () => {
         >
           {slides.map((slide, index) => (
             <div key={index} className="carousel-slide">
-              <img src={slide.image} alt={`Slide ${index + 1}`} style={slides.objectPosition} />
+              <Image src={slide.image} alt={`Slide ${index + 1}`} style={slides.objectPosition} />
               <div className="slide-content">
-                {slide.textImg && <img src={slide.textImg} alt="Slide logo" />}
+                {slide.textImg && <Image src={slide.textImg} alt="Slide logo" />}
                 {index === 0 ? <h1>{slide.text}</h1> : <p>{slide.text}</p>}
                 {slide.link && (
-                  <Link to={slide.link} className="slide-button">
+                  <Link href={slide.link} className="slide-button">
                     <span>Learn More</span>
                     <span>
                       <i className="bi bi-arrow-up"></i>

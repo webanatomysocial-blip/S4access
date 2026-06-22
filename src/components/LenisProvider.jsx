@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from 'react';
 import { LenisContext } from './LenisContext';
 import Lenis from '@studio-freight/lenis';

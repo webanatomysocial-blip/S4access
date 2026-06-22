@@ -1,30 +1,25 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
 // import img22 from './blogs-images/blog1-img.jpg'
 import Blogs from "../components/Blog";
 import cta from "../blogs/blogs-images/Group.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
+
+export const metadata = {
+  title: " Is SAP Certification Still Valid in 2025? | s4access",
+  description: "Explore the relevance of SAP certification in 2025: its value in cloud adoption,\ncareer growth, and staying competitive in the evolving SAP ecosystem.",
+};
+
 
 export default function Blog1() {
   return (
     <>
-      <Helmet>
-        <title> Is SAP Certification Still Valid in 2025? | s4access</title>
-        <meta
-          name="title"
-          content=" Is SAP Certification Still Valid in 2025? | s4access"
-        />
-        <meta
-          name="description"
-          content="Explore the relevance of SAP certification in 2025: its value in cloud adoption,
-career growth, and staying competitive in the evolving SAP ecosystem."
-        />
-      </Helmet>
+      
       <div className="breach-article-wrapper">
         {/* Hero Section */}
         {/* <div className="breach-hero-banner">
-        <img src={img22} alt="" />
+        <Image src={img22} alt="" />
 
         <div className="hero-overlay-section">
           <h1>Is the SAP Certification Still Valid for Your Career in 2025?</h1>
@@ -172,7 +167,7 @@ career growth, and staying competitive in the evolving SAP ecosystem."
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <img src={cta} />
+            <Image src={cta} />
           </div>
 
           {/* Right Content */}
@@ -186,7 +181,7 @@ career growth, and staying competitive in the evolving SAP ecosystem."
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

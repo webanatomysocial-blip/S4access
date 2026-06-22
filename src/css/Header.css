@@ -9,17 +9,18 @@ html {
   /* background-color: #003377; */
 }
 
-
-.only-windows {
-  display: block !important;
+a{
+  color: inherit ;
+  text-decoration: underline;
 }
+
 
 .only-mobile {
   display: none !important;
 }
 
 .green-bg-text-heading {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255) ;
   font-family: "barlow", monospace;
   font-size: 20px;
   font-weight: 300;
@@ -208,7 +209,7 @@ html {
   justify-content: space-between;
   font-size: 14px;
   width: fit-content;
-  background-color: #40ffc9;
+  background-color: #40ffc9 !important; 
   border: #40ffc9 2px solid;
   color: #003377;
   text-decoration: none;
@@ -230,7 +231,7 @@ html {
 .border-button {
   padding: 16px 20px;
   background-color: rgb(0, 0, 0, 0.5);
-  color: #40ffc9;
+  color: #40ffc9 !important;
   border: 1px solid #40ffc9;
   text-decoration: none;
   cursor: pointer;
@@ -239,7 +240,7 @@ html {
   justify-content: space-evenly;
   font-size: 14px;
   font-family: "Roboto Mono", sans-serif;
-  width: 110px;
+  width: fit-content;
   overflow: hidden;
   transition: 0.3s ease-in-out;
   border-radius: 5px;
@@ -259,7 +260,7 @@ html {
   display: inline-block;
   font-family: "Roboto Mono";
   font-size: 12px;
-  color: #40ffc9;
+  color: #40ffc9 !important;
   font-weight: 400;
   text-decoration: none;
   padding-bottom: 4px;
@@ -299,7 +300,7 @@ html {
   display: inline-block;
   font-family: "Roboto Mono";
   font-size: 12px;
-  color: #003377;
+  color: #003377 !important;
   font-weight: 400;
   text-decoration: none;
   padding-bottom: 4px;
@@ -604,7 +605,7 @@ nav.scrolled {
   }
 
   .only-mobile {
-    display: block !important;
+    display: inherit !important;
   }
 
   .extra-big-heading-text-white {
@@ -718,10 +719,7 @@ nav.scrolled {
 }
 
 
-/* Mobile Header Styles */
-.only-mobile {
-  display: none;
-}
+
 
 .mobile-navbar {
   position: sticky;

@@ -1,63 +1,23 @@
+"use client";
+
 import React, { useState, useEffect, Suspense } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { blogMetadata } from "../blogs/metadata.js";
 import "../css/Blog.css";
 
-// Dynamically import all JSX files from blogs folder
-const blogModules = import.meta.glob("../blogs/*.jsx", { eager: false });
-const blogKeys = Object.keys(blogModules);
-
-// Sort blogKeys by date in descending order (most recent first)
-// AND Filter out blogs that are not in metadata (e.g., commented out)
-const sortedBlogKeys = blogKeys
-  .filter((key) => {
-    const blogName = key.split("/").pop().replace(".jsx", "");
-    return blogMetadata.some((blog) => blog.id === blogName);
-  })
-  .sort((a, b) => {
-    const blogNameA = a.split("/").pop().replace(".jsx", "");
-    const blogNameB = b.split("/").pop().replace(".jsx", "");
-    const metadataA = blogMetadata.find((blog) => blog.id === blogNameA) || {
-      date: "1970-01-01",
-    };
-    const metadataB = blogMetadata.find((blog) => blog.id === blogNameB) || {
-      date: "1970-01-01",
-    };
-    return new Date(metadataB.date) - new Date(metadataA.date);
-  });
+// Sort blogs by date in descending order (most recent first)
+const sortedBlogs = [...blogMetadata].sort((a, b) => {
+  const dateA = new Date(a.date || "1970-01-01");
+  const dateB = new Date(b.date || "1970-01-01");
+  return dateB - dateA;
+});
 
 const Blogs = ({ backgroundColor, limit = 3 }) => {
-  // Log props for debugging
-  console.log("Blogs component props:", { backgroundColor, limit });
-
-  const totalBlogs = sortedBlogKeys.length;
-  // Determine initial number of blogs to show: all for 'all', otherwise use limit
-  const initialVisible =
-    limit === "all" ? totalBlogs : Math.min(limit, totalBlogs);
+  const totalBlogs = sortedBlogs.length;
+  const initialVisible = limit === "all" ? totalBlogs : Math.min(limit, totalBlogs);
   const [visibleCount, setVisibleCount] = useState(initialVisible);
 
-  // Log sortedBlogKeys for debugging
-  console.log("Sorted blog keys:", sortedBlogKeys);
 
-  // Preload blog components and images
-  useEffect(() => {
-    sortedBlogKeys.slice(0, visibleCount).forEach((key) => {
-      // Preload blog module
-      blogModules[key]().catch((error) => {
-        console.error(`Error preloading blog ${key}:`, error);
-      });
-      // Preload image
-      const blogName = key.split("/").pop().replace(".jsx", "");
-      const metadata = blogMetadata.find((blog) => blog.id === blogName);
-      if (metadata?.image) {
-        const img = new Image();
-        img.src = metadata.image;
-        img.onerror = () => {
-          console.error(`Failed to preload image: ${metadata.image}`);
-        };
-      }
-    });
-  }, [visibleCount]);
 
   const loadMore = () => {
     const newCount = totalBlogs;
@@ -67,39 +27,21 @@ const Blogs = ({ backgroundColor, limit = 3 }) => {
     }, 0);
   };
 
-  // Only show "Load More" if limit='all' and there are more blogs to load
   const showLoadMore = limit === "all" && visibleCount < totalBlogs;
 
   return (
     <div className="whole-blog-section" style={{ backgroundColor }}>
       <div className="blogs-container">
         <div className="blogs-grid">
-          {sortedBlogKeys.length === 0 && <p>No blogs found.</p>}
-          {sortedBlogKeys.slice(0, visibleCount).map((key, index) => {
-            const blogName = key.split("/").pop().replace(".jsx", "");
-            const metadata = blogMetadata.find(
-              (blog) => blog.id === blogName,
-            ) || {
-              title: blogName,
-              slug: blogName.toLowerCase(),
-              excerpt: "No excerpt available.",
-              image: "/images/placeholder.jpg",
-              date: "No date",
-            };
-            // Log each blog's metadata for debugging
-            console.log(
-              `Blog: ${blogName}, URL: /blogs/${blogName}, Metadata:`,
-              metadata,
-            );
+          {sortedBlogs.length === 0 && <p>No blogs found.</p>}
+          {sortedBlogs.slice(0, visibleCount).map((metadata, index) => {
+            const imageUrl = typeof metadata.image === 'string' ? metadata.image : (metadata.image?.src || "/images/placeholder.jpg");
             return (
               <div key={index} className="inner-news-blogs-container">
                 <Suspense fallback={<BlogCardSkeleton />}>
                   <div className="blog-text">
                     <p className="text-black">BLOG</p>
-                    <Link
-                      to={`/blogs/${metadata.slug}`}
-                      style={{ textDecoration: "none" }}
-                    >
+                    <Link href={`/blogs/${metadata.slug}`} style={{ textDecoration: "none" }}>
                       <h3 className="sub-big-heading-text-black">
                         {metadata.title}
                       </h3>
@@ -107,19 +49,15 @@ const Blogs = ({ backgroundColor, limit = 3 }) => {
                   </div>
                   <div
                     className="image-hover-text-come"
-                    style={{ backgroundImage: `url(${metadata.image})` }}
+                    style={{ backgroundImage: `url(${imageUrl.src || imageUrl})` }}
                   >
                     <div className="inner-text-come">
                       <div>
-                        <Link
-                          to={`/blogs/${metadata.slug}`}
-                          style={{ textDecoration: "none" }}
-                        >
+                        <Link href={`/blogs/${metadata.slug}`} style={{ textDecoration: "none" }}>
                           <p className="small-text-black">{metadata.excerpt}</p>
                         </Link>
                       </div>
-                      <Link
-                        to={`/blogs/${metadata.slug}`}
+                      <Link href={`/blogs/${metadata.slug}`}
                         className="read-more-btn-blue"
                         aria-label={`Read more about ${metadata.title}`}
                       >
@@ -143,7 +81,6 @@ const Blogs = ({ backgroundColor, limit = 3 }) => {
   );
 };
 
-// Skeleton loader for blog cards
 const BlogCardSkeleton = () => (
   <div className="inner-news-blogs-container">
     <div className="blog-text">

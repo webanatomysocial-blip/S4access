@@ -1,3 +1,6 @@
+"use client";
+
+import Image from "next/image";
 import React, { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -8,7 +11,7 @@ import "../css/Testimonial.css";
 import testimonialImg from "../assets/images/Careeres-img/testimmonial-1.jpg";
 import team1 from '../assets/images/About-img/our-team/Bozhena.jpg';
 import team2 from '../assets/images/About-img/our-team/Julius.jpg';
-import team3 from '../assets/images/About-img/our-team/Palavi.jpg';
+import team3 from '../assets/images/About-img/our-team/palavi.jpg';
 import quoteImg from "../assets/images/Careeres-img/Union.png";
 
 const testimonials = [
@@ -94,10 +97,10 @@ const TestimonialCarousel = () => {
           <SwiperSlide key={idx}>
             <div className="testimonialcarousel-card">
               <div className="testimonialcarousel-img-container">
-                <img src={testimonial.Images} alt="Employee" className="testimonialcarousel-img" />
+                <Image src={testimonial.Images} alt="Employee" className="testimonialcarousel-img" />
               </div>
               <div className="testimonialcarousel-content">
-                <img src={quoteImg} alt="Quote" className="testimonialcarousel-quote-img" />
+                <Image src={quoteImg} alt="Quote" className="testimonialcarousel-quote-img" />
                 <TextWithReadMore text={testimonial.text} index={idx} />
                 <div className="testimonialcarousel-meta">
                   <span className="testimonialcarousel-name">{testimonial.name}</span>

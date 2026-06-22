@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { FaProjectDiagram, FaCogs, FaUserShield, FaUsersCog, FaUserTie, FaClipboardCheck, FaIdBadge, FaDraftingCompass, FaBalanceScale, FaUserSecret, FaShieldAlt, FaSyncAlt, FaArrowRight } from "react-icons/fa";
 import "../css/Header.css";
 import "../css/MegaMenu.css";
@@ -81,7 +83,7 @@ const MegaMenu = ({ show, setShow }) => {
               {category.items.map((item, itemIdx) => (
                 <div key={itemIdx} className="megamenu-service-item">
                   <span className="megamenu-service-icon">{item.icon}</span>
-                  <Link to={item.link} className="megamenu-service-text">{item.name}</Link>
+                  <Link href={item.link} className="megamenu-service-text">{item.name}</Link>
                 </div>
               ))}
             </div>

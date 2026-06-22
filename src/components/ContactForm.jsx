@@ -1,3 +1,5 @@
+"use client";
+
 import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
 import '../css/Contact.css';

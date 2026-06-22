@@ -1,6 +1,8 @@
+"use client";
+
 // src/components/DynamicBlog.jsx
 import React, { Suspense, useMemo } from "react";
-import { useParams, Link } from "react-router-dom";
+import Link from "next/link";
 import { blogMetadata } from "../blogs/metadata.js";
 import Blogs from "./Blog";
 import "../blogs/Internal-Blog.css";
@@ -72,7 +74,7 @@ export default function DynamicBlog() {
       <div className="breach-article-wrapper">
         <h1>Blog Not Found</h1>
         <p>No blog found with the ID: {blogName}</p>
-        <Link to="/insights" className="back-btn">
+        <Link href="/insights" className="back-btn">
           Back to Blogs
         </Link>
       </div>
@@ -80,14 +82,15 @@ export default function DynamicBlog() {
   }
 
   // Build absolute image URL (ensure full URL)
+  const imageSrc = typeof metadata?.image === "string" ? metadata.image : (metadata?.image?.src ?? "");
   const imageUrl =
-    metadata?.image &&
-    (metadata.image.startsWith("http://") ||
-      metadata.image.startsWith("https://"))
-      ? metadata.image
-      : metadata?.image
-      ? `${SITE_ORIGIN}${metadata.image.startsWith("/") ? "" : "/"}${
-          metadata.image
+    imageSrc &&
+    (imageSrc.startsWith("http://") ||
+      imageSrc.startsWith("https://"))
+      ? imageSrc
+      : imageSrc
+      ? `${SITE_ORIGIN}${imageSrc.startsWith("/") ? "" : "/"}${
+          imageSrc
         }`
       : `${SITE_ORIGIN}/images/black-logo-400.png`;
 
@@ -101,7 +104,7 @@ export default function DynamicBlog() {
         default: () => (
           <div>
             <p>Blog content unavailable.</p>
-            <Link to="/insights">Back to Blogs</Link>
+            <Link href="/insights">Back to Blogs</Link>
           </div>
         ),
       };
@@ -115,7 +118,7 @@ export default function DynamicBlog() {
         default: () => (
           <div>
             <p>Error loading blog content. Please try again later.</p>
-            <Link to="/insights">Back to Blogs</Link>
+            <Link href="/insights">Back to Blogs</Link>
           </div>
         ),
       };
@@ -163,7 +166,7 @@ export default function DynamicBlog() {
       <div className="breach-article-wrapper">
         <div className="breach-hero-banner">
           <img
-            src={metadata?.image ?? "/images/black-logo-400.png"}
+            src={imageSrc || "/images/black-logo-400.png"}
             alt={metadata?.title ?? "s4access blog"}
           />
           <div className="hero-overlay-section">

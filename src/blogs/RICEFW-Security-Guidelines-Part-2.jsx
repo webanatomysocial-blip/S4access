@@ -1,9 +1,15 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
 import cta from "../blogs/blogs-images/Group.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: "\n          SAP Access Controls - RICEFW Security Guidelines | s4access\n        ",
+  description: "Enhance SAP security with RICEFW guidelines: implement secure custom developments, enforce SoD, and ensure compliance across your SAP landscape with s4access.",
+};
+
 
 export default function Blog9() {
   const faqs = [
@@ -27,88 +33,12 @@ export default function Blog9() {
   ];
   return (
     <>
-      <Helmet>
-        <title>
-          SAP Access Controls - RICEFW Security Guidelines | s4access
-        </title>
-        <meta
-          name="title"
-          content="SAP Access Controls - RICEFW Security Guidelines | s4access"
-        />
-        <meta
-          name="description"
-          content="Enhance SAP security with RICEFW guidelines: implement secure custom developments, enforce SoD, and ensure compliance across your SAP landscape with s4access."
-        />
-
-        {/* ======================= ARTICLE SCHEMA ======================= */}
-        <script type="application/ld+json">
-          {`
-        {
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://s4access.com/blogs/RICEFW-Security-Guidelines-Part-2"
-          },
-          "headline": "RICEFW Security Guidelines: Building Security into Custom Developments – Part II",
-          "description": "A detailed guide on securing SAP RICEFW objects including Enhancements, Forms, Workflows, and Tables. Learn how poor custom development can bypass SAP security controls and how to apply secure coding, approval workflows, and access governance.",
-          "author": {
-            "@type": "Organization",
-            "name": "s4access"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "s4access"
-          },
-          "datePublished": "2025-11-17",
-          "dateModified": "2025-11-17",
-          "inLanguage": "en-GB",
-          "keywords": "RICEFW security, SAP custom developments, SAP enhancements security, SAP forms security, workflow security SAP, SAP table access risks, RICEFW guidelines, SAP audit readiness"
-        }
-        `}
-        </script>
-
-        {/* ======================= FAQ SCHEMA ======================= */}
-        {/* Faq Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What security risks do SAP enhancements create?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "SAP enhancements can bypass standard SAP controls if not coded securely. Even small changes can weaken validations and create hidden access or compliance gaps if not reviewed properly."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Why are SAP forms a security concern?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "SAP forms often expose sensitive data such as bank details or personal IDs. Without proper masking, access control, and secure output handling, forms can lead to data leakage and audit issues."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How can SAP workflows bypass segregation of duties?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Poorly designed workflows can grant excessive access through background users or missing approvals. Without proper role separation and authorization checks, workflows may silently break segregation of duties controls."
-                }
-              }
-            ]
-          }
-          )}
-        </script>
-      </Helmet>
+      
 
       <div className="breach-article-wrapper">
         {/* Hero Section */}
         {/* <div className="breach-hero-banner">
-        <img src={img24} alt="" />
+        <Image src={img24} alt="" />
 
         <div className="hero-overlay-section">
           <h1>Managing Public Views in Fiori S/4HANA: Best Practices and Pitfalls</h1>
@@ -117,7 +47,7 @@ export default function Blog9() {
 
         {/* Blog Content */}
         <div className="back-btn-container">
-          <Link to="/blogs/RICEFW-Security-Guidelines" className="back-btn">
+          <Link href="/blogs/RICEFW-Security-Guidelines" className="back-btn">
             Click here to start with Part I to understand the basics of RICEFW
             security.
           </Link>
@@ -293,7 +223,7 @@ export default function Blog9() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <img src={cta} />
+            <Image src={cta} />
           </div>
 
           {/* Right Content */}
@@ -307,7 +237,7 @@ export default function Blog9() {
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/Contact" className="button-green">
+              <Link href="/Contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

@@ -1,30 +1,25 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
 // import img22 from './blogs-images/2.jpg';
 import Blogs from "../components/Blog";
 import cta from "../blogs/blogs-images/Group.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
+
+export const metadata = {
+  title: "Autumn 2025 SAP Access Trends & Strategies | s4access",
+  description: " Explore the Autumn 2025 outlook for SAP access management: economic\npressures, emerging trends, and actionable strategies to strengthen security and compliance.",
+};
+
 
 export default function Blog2() {
   return (
     <>
-      <Helmet>
-        <title>Autumn 2025 SAP Access Trends & Strategies | s4access</title>
-        <meta
-          name="title"
-          content="Autumn 2025 SAP Access Trends & Strategies | s4access"
-        />
-        <meta
-          name="description"
-          content=" Explore the Autumn 2025 outlook for SAP access management: economic
-pressures, emerging trends, and actionable strategies to strengthen security and compliance."
-        />
-      </Helmet>
+      
       <div className="breach-article-wrapper">
         {/* Hero Section */}
         {/* <div className="breach-hero-banner">
-        <img src={img22} alt="" />
+        <Image src={img22} alt="" />
         <div className="hero-overlay-section">
           <h1>Autumn 2025 Outlook: Navigating SAP Security and Access Management in a New Market Reality – Is There a Way Forward?</h1>
         </div>
@@ -135,7 +130,7 @@ pressures, emerging trends, and actionable strategies to strengthen security and
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <img src={cta} />
+            <Image src={cta} />
           </div>
 
           {/* Right Content */}
@@ -149,7 +144,7 @@ pressures, emerging trends, and actionable strategies to strengthen security and
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

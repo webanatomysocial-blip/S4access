@@ -1,10 +1,16 @@
+import Image from "next/image";
 import React from "react";
 import "./Internal-Blog.css";
 import Blogs from "../components/Blog";
 import cta from "./blogs-images/Group.png";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
+
+export const metadata = {
+  title: "\n          When Access Becomes a Risk: How Firefighter IDs Help You Stay\n          Compliant | s4access\n        ",
+  description: "How SAP Firefighter IDs provide controlled emergency access, prevent security risks, and keep systems audit-compliant with logging and timely review processes.",
+};
+
 
 export default function Blog5() {
   const faqs = [
@@ -27,101 +33,7 @@ export default function Blog5() {
   ];
   return (
     <>
-      <Helmet>
-        <title>
-          When Access Becomes a Risk: How Firefighter IDs Help You Stay
-          Compliant | s4access
-        </title>
-        <meta
-          name="title"
-          content="When Access Becomes a Risk: How Firefighter IDs Help You Stay Compliant | s4access"
-        />
-        <meta
-          name="description"
-          content="How SAP Firefighter IDs provide controlled emergency access, prevent security risks, and keep systems audit-compliant with logging and timely review processes."
-        />
-
-        {/* ======================= ARTICLE SCHEMA ======================= */}
-        <script type="application/ld+json">
-          {`
-    {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://s4access.com/blogs/How-Firefighter-IDs-Help-You-Stay-Compliant"
-      },
-      "headline": "When Access Becomes a Risk: How Firefighter IDs Help You Stay Compliant",
-      "description": "Learn how SAP Firefighter IDs protect systems during emergency access by enforcing approvals, time limits, logging, and audit-ready compliance processes.",
-      "author": {
-        "@type": "Organization",
-        "name": "s4access"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "s4access",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://s4access.com/path-to-logo.png"
-        }
-      },
-      "datePublished": "2025-11-17T00:00:00+00:00",
-      "dateModified": "2025-11-17T00:00:00+00:00",
-      "inLanguage": "en-GB",
-      "keywords": [
-        "Firefighter IDs",
-        "SAP emergency access",
-        "Emergency Access IDs",
-        "SAP security",
-        "SAP compliance",
-        "Firefighter access",
-        "segregation of duties (SoD)",
-        "Firefighter log reviews",
-        "elevated access",
-        "emergency access management",
-        "SAP audit compliance",
-        "Firefighter Controller",
-        "SAP risk management"
-      ]
-    }
-    `}
-        </script>
-
-        {/* Faq Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is a Firefighter ID in SAP?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "A Firefighter ID is an emergency access user that provides temporary elevated privileges in SAP. It is used to resolve critical issues without permanently assigning high-risk authorizations."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "When should Firefighter IDs be used in SAP?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Firefighter IDs should be used only during emergencies such as production outages, failed batch jobs, or urgent transports. They allow temporary bypass of SoD controls without creating long-term compliance risks."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How is Firefighter access controlled and audited?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Firefighter access follows a request and approval workflow, is time-bound, and logs all user activities. A designated Firefighter Controller reviews the logs to confirm the access was justified and compliant."
-                }
-              }
-            ]
-          }
-          )}
-        </script>
-      </Helmet>
+      
 
       <div className="breach-article-wrapper">
         {/* Blog Content */}
@@ -283,7 +195,7 @@ export default function Blog5() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <img src={cta} />
+            <Image src={cta} />
           </div>
 
           {/* Right Content */}
@@ -297,7 +209,7 @@ export default function Blog5() {
               </p>
             </div>
             <div className="blog-right-button">
-              <Link to="/services/ff-log-review-automation" className="button-green">
+              <Link href="/services/ff-log-review-automation" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

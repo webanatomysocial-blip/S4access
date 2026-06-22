@@ -83,6 +83,10 @@
   margin-bottom: 30px;
 }
 
+.card-sub-content a{
+  color: inherit !important;
+  text-decoration: underline;
+}
 
 
 .card-sub-content {
@@ -571,7 +575,7 @@
   left: 45vw;
   transform: scale(.8);
   z-index: 1;
-  background: url(../assets/images/About-img/our-team/Bozhena.jpg);
+  background: url("/images/About-img/our-team/Bozhena.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -582,7 +586,7 @@
   left: 48vw;
   z-index: 3;
   transform: translateY(-10px), scale(1.1);
-  background: url(../assets/images/About-img/our-team/Julius.jpg);
+  background: url("/images/About-img/our-team/Julius.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -593,7 +597,7 @@
   left: 51vw;
   transform: scale(.8);
   z-index: 2;
-  background: url(../assets/images/About-img/our-team/teammate-1.jpg.webp);
+  background: url("/images/About-img/our-team/teammate-1.jpg.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

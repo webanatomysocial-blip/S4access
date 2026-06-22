@@ -1,3 +1,6 @@
+"use client";
+
+import Image from "next/image";
 import React, { useState } from 'react';
 import '../css/About.css';
 import team1 from '../assets/images/About-img/our-team/teammate-1.jpg.webp';
@@ -91,7 +94,7 @@ const TeamSection = () => {
                   <div className="ourteam-logo">
                     <WholeWebsiteIcon color={member.color} />
                   </div>
-                  <img src={member.image} alt={member.name} />
+                  <Image src={member.image} alt={member.name} />
                   <div className="our-team-names">
                     <p className="team-ceo-text">{member.title}</p>
                   </div>
@@ -119,7 +122,7 @@ const TeamSection = () => {
                   <div className="ourteam-logo">
                     <WholeWebsiteIcon color={member.color} />
                   </div>
-                  <img src={member.image} alt={member.name} />
+                  <Image src={member.image} alt={member.name} />
                   <div className="our-team-names">
                     <p className="team-ceo-text">{member.title}</p>
                   </div>

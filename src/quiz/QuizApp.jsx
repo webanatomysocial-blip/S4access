@@ -1,6 +1,6 @@
 // src/quiz/QuizApp.jsx
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import { 
@@ -278,7 +278,7 @@ export default function QuizApp() {
   }
 
   // Calculate SVG arc dashboard gauge
-  const progressPercent = currentStep < 6 ? Math.round(((currentStep + 1) / 6) * 100) : 100;
+  const progressPercent = currentStep < 6 ? Math.round((currentStep / 6) * 100) : 100;
   
   // Radial gauge variables
   const radius = 70;
@@ -290,7 +290,7 @@ export default function QuizApp() {
     <div 
       className="quiz-app-container"
       style={{ 
-        backgroundImage: `url(${bannerBg})`, 
+        backgroundImage: `url(${bannerBg.src || bannerBg})`, 
         backgroundSize: 'cover', 
         backgroundPosition: 'center', 
         backgroundRepeat: 'no-repeat' 
@@ -302,22 +302,22 @@ export default function QuizApp() {
         {currentStep < 6 ? (
           /* ── ACTIVE QUIZ QUESTIONS STEP ── */
           <div key={currentStep} className="quiz-fade-in">
-            {/* Top Progress bar matching the layout */}
-            <div className="quiz-progress-section">
-              <div className="quiz-progress-track">
-                <div 
-                  className="quiz-progress-fill" 
-                  style={{ width: `${progressPercent}%` }} 
-                />
+            <div className="quiz-sticky-header">
+              {/* Top Progress bar matching the layout */}
+              <div className="quiz-progress-section">
+                <div className="quiz-progress-track">
+                  <div 
+                    className="quiz-progress-fill" 
+                    style={{ width: `${progressPercent}%` }} 
+                  />
+                </div>
+                <div className="quiz-progress-info">
+                  <span className="quiz-progress-step">Question <strong style={{color: '#40ffc9'}}>{currentStep + 1}</strong> of 6</span>
+                  <span className="quiz-progress-pct">{progressPercent}% Complete</span>
+                </div>
               </div>
-              <div className="quiz-progress-info">
-                <span className="quiz-progress-step">Question <strong style={{color: '#40ffc9'}}>{currentStep + 1}</strong> of 6</span>
-                <span className="quiz-progress-pct">{progressPercent}% Complete</span>
-              </div>
-            </div>
 
-            {/* Question Card */}
-            <div className="quiz-question-card">
+              {/* Question Card Header */}
               <div className="quiz-question-header">
                 <div className="quiz-category-icon-wrapper">
                   {questions[currentStep].icon}
@@ -329,8 +329,11 @@ export default function QuizApp() {
                   <strong>Answer Guidance:</strong> {questions[currentStep].guidance}
                 </div>
               </div>
+            </div>
 
-              {/* Options */}
+            {/* Question Card Options */}
+            <div className="quiz-question-card">
+              {/* Options */} {/* Options */}
               <div className="quiz-options-list">
                 {questions[currentStep].options.map((opt) => {
                   const isSelected = answers[currentStep]?.optionKey === opt.key;
@@ -361,7 +364,7 @@ export default function QuizApp() {
                     <FaChevronLeft size={12} /> Back
                   </button>
                 ) : (
-                  <Link to="/quiz" className="quiz-back-btn" style={{textDecoration: 'none'}}>
+                  <Link href="/quiz" className="quiz-back-btn" style={{textDecoration: 'none'}}>
                     <FaChevronLeft size={12} /> Exit
                   </Link>
                 )}
@@ -575,7 +578,7 @@ export default function QuizApp() {
               <button className="quiz-back-btn" onClick={handleReset}>
                 <FaUndoAlt size={13} /> Retake Assessment
               </button>
-              <Link to="/contact" className="quiz-next-btn" style={{textDecoration: 'none'}}>
+              <Link href="/contact" className="quiz-next-btn" style={{textDecoration: 'none'}}>
                 <FaEnvelope size={13} /> Contact Us for a Detailed Audit
               </Link>
             </div>

@@ -1,5 +1,6 @@
+import Image from "next/image";
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { customerSuccessMetadata } from "../coustomer-pages/metadata";
 import "./CustomerSuccessonebyone.css";
@@ -15,13 +16,12 @@ const CustomerSuccessonebyone = () => {
       <h2 className="big-heading-text-black ">Customer success stories</h2>
       <div className="customer-success-grid">
         {sortedStories.map((story) => (
-          <Link
-            to={story.link}
+          <Link href={story.link}
             key={story.id}
             className="customer-success-card"
           >
             <div className="customer-success-image-wrapper">
-              <img src={story.image} alt={story.title} />
+              <Image src={story.image} alt={story.title} />
             </div>
             <div className="customer-success-content">
            

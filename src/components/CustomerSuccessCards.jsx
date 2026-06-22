@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
 import "../css/Home.css";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -89,7 +90,7 @@ const CustomerSuccessCards = () => (
                 <p className="small-text-white">{story.description}</p>
               </div>
               <div>
-                <Link to={story.link} className="read-more-btn">
+                <Link href={story.link} className="read-more-btn">
                   Read More <i className="bi bi-arrow-right arrow-icon"></i>
                 </Link>
               </div>
