@@ -5,6 +5,7 @@ import imgSamService from '../assets/images/success-images/14.jpg';
 import imgFioriTrans from '../assets/images/success-images/1.jpg'; // Note: Reused in original file
 import imgAccessReview from '../assets/images/success-images/7.jpg';
 import imgS4Trans from '../assets/images/success-images/S4HanaAccessManagementTransformation/1.jpg';
+import imgSapLicenHero from '../assets/images/success-images/sapLicen/2149595842.jpg';
 
 export const customerSuccessMetadata = [
   {
@@ -62,5 +63,13 @@ export const customerSuccessMetadata = [
     image: imgAccessReview,
     date: "2026-02-28",
     link: "/customer-success/s4-access-management-review"
+  },
+  {
+    id: 8,
+    title: "Defining FUE scope for SAP license agreement",
+    description: "A Scandinavian stock-listed company was preparing a new SAP license agreement and needed to define the scope of Full Use Equivalent (FUE) licensing. s4access supported the customer in defining the FUE scope as part of the license negotiation process.",
+    image: imgSapLicenHero,
+    date: "2026-06-23",
+    link: "/customer-success/defining-fue-scope-sap-license-agreement"
   }
 ];

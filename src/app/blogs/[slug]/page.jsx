@@ -28,6 +28,8 @@ import ApproveOwnPurchaseOrders from "../../../blogs/One-of-your-employees-can-p
 import SAPAccessManagementAutomation from "../../../blogs/SAP-Access-Management-Automation.jsx";
 import SAPCertification2025 from "../../../blogs/Is-SAP-Certification-Still-Valid-for-Your-Career-in-2025.jsx";
 import WhenACompanyGrows from "../../../blogs/When-a-company-grows-what-opportunities-can-it-create-for-its-people.jsx";
+import SAPRoleBloat from "../../../blogs/SAP-Role-Bloat-FUE-Licensing-Costs.jsx";
+import SAPUserAccessLifecycle from "../../../blogs/SAP-User-Access-Lifecycle.jsx";
 
 const blogComponentMap = {
   "sap-certification-2025": SAPCertification2025,
@@ -48,7 +50,9 @@ const blogComponentMap = {
   "sap-access-management-ciso-2026": LeadingCISOs,
   "sap-access-governance-sod-risk": ApproveOwnPurchaseOrders,
   "sap-access-management-automation": SAPAccessManagementAutomation,
-  "when-a-company-grows-what-opportunities-can-it-create-for-its-people": WhenACompanyGrows
+  "when-a-company-grows-what-opportunities-can-it-create-for-its-people": WhenACompanyGrows,
+  "sap-role-bloat-fue-licensing-costs": SAPRoleBloat,
+  "sap-user-access-lifecycle": SAPUserAccessLifecycle
 };
 
 export async function generateMetadata({ params }) {

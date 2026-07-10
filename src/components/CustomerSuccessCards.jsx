@@ -9,10 +9,16 @@ import "swiper/css/pagination";
 
 const successStories = [
   {
-    title: "SAP Authorization Concept Owner",
+    title: "Defining FUE scope for SAP license agreement",
     description:
-      "For several years, we've successfully managed SAP access for a leading steel manufacturer—streamlining processes, ensuring audit compliance, and optimizing both security and license usage.",
-    link: "/customer-success/sap-authorisation-concept-owner",
+      "A Scandinavian stock-listed company was preparing a new SAP license agreement and needed to define the scope of Full Use Equivalent (FUE) licensing. s4access supported the customer in defining the FUE scope as part of the license negotiation process.",
+    link: "/customer-success/defining-fue-scope-sap-license-agreement",
+  },
+  {
+    title: "SAP S/4HANA Access Management Transformation",
+    description:
+      "A public sector organization needed to clean up years of overlapping access rights and migrate to S/4HANA with a fresh governance model. s4access delivered an end-to-end access management solution, ensuring a compliant and audit-ready go-live.",
+    link: "/customer-success/sap-s4hana-access-management-transformation",
   },
   {
     title: "S/4 Access Management Review",
@@ -21,16 +27,22 @@ const successStories = [
     link: "/customer-success/s4-access-management-review",
   },
   {
-    title: "S/4 Transition Analysis",
-    description:
-      "For a material handling solutions company, we analyzed their SAP S/4 upgrade needs. Our work delivered a clear resource plan, preventing disruptions and optimizing the transition process.",
-    link: "/customer-success/s4-transition-analysis",
-  },
-  {
     title: "S/4 HANA/Fiori Transformation",
     description:
       "We transformed SAP S/4 access and Fiori UX for a global home furnishing brand after a failed go-live. Our reengineered role design and GRC tools ensured a successful Fiori-first rollout.",
     link: "/customer-success/s4-hana-fiori-transformation",
+  },
+  {
+    title: "SAM Service",
+    description:
+      "For a large Scandinavian city, we implemented a structured SAP access management model, improving service predictability and ensuring zero audit observations during the first two years.",
+    link: "/customer-success/sam-service",
+  },
+  {
+    title: "S/4 Transition Analysis",
+    description:
+      "For a material handling solutions company, we analyzed their SAP S/4 upgrade needs. Our work delivered a clear resource plan, preventing disruptions and optimizing the transition process.",
+    link: "/customer-success/s4-transition-analysis",
   },
   {
     title: "Stabilising SAP Access at Scale During an S/4HANA Transformation",
@@ -39,17 +51,16 @@ const successStories = [
     link: "/customer-success/stabilising-sap-access-at-scale",
   },
   {
-    title:
-    "SAP UCON Implementation – Reducing the Attack Surface in Production",
+    title: "SAP UCON Implementation – Reducing the Attack Surface in Production",
     description:
-    "s4access successfully deployed SAP UCON in a production environment, identifying 47,000 RFMs and whitelisting only the 1,500 business-critical ones, reducing the attack surface by over 95%.",
+      "s4access successfully deployed SAP UCON in a production environment, identifying 47,000 RFMs and whitelisting only the 1,500 business-critical ones, reducing the attack surface by over 95%.",
     link: "/customer-success/sap-ucon-implementation",
   },
   {
-    title: "SAM Service",
+    title: "SAP Authorization Concept Owner",
     description:
-      "For a large Scandinavian city, we implemented a structured SAP access management model, improving service predictability and ensuring zero audit observations during the first two years.",
-    link: "/customer-success/sam-service",
+      "For several years, we've successfully managed SAP access for a leading steel manufacturer—streamlining processes, ensuring audit compliance, and optimizing both security and license usage.",
+    link: "/customer-success/sap-authorisation-concept-owner",
   },
 ];
 

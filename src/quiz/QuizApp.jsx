@@ -17,7 +17,8 @@ import {
   FaLock, 
   FaCheck,
   FaUndoAlt, 
-  FaEnvelope 
+  FaEnvelope,
+  FaInfoCircle
 } from 'react-icons/fa';
 import './QuizApp.css';
 import bannerBg from '../../src/QUIZ/background.png';
@@ -112,8 +113,14 @@ const questions = [
 export default function QuizApp() {
   const [currentStep, setCurrentStep] = useState(0); // 0 to 5 for questions, 6 for results
   const [answers, setAnswers] = useState(Array(6).fill(null));
-  const [leadData, setLeadData] = useState({ name: '', jobTitle: '', companyName: '', email: '' });
   const [leadCaptured, setLeadCaptured] = useState(false);
+  const [leadData, setLeadData] = useState({
+    name: '',
+    jobTitle: '',
+    companyName: '',
+    email: ''
+  });
+  const [emailError, setEmailError] = useState('');
 
   useEffect(() => {
     if (window.lenis) {
@@ -150,6 +157,17 @@ export default function QuizApp() {
 
   const handleLeadSubmit = (e) => {
     e.preventDefault();
+    
+    const freeEmailDomains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com', 'icloud.com'];
+    const emailDomain = leadData.email.split('@')[1]?.toLowerCase();
+    
+    if (freeEmailDomains.includes(emailDomain)) {
+      setEmailError('Please enter a valid work email address (free domains are not accepted).');
+      return;
+    }
+    
+    setEmailError('');
+
     if (leadData.name && leadData.jobTitle && leadData.companyName && leadData.email) {
       // Calculate results and trigger email dispatch at the end of the quiz when they submit the form
       const totalScore = answers.reduce((sum, ans) => sum + (ans ? ans.score : 0), 0);
@@ -220,6 +238,7 @@ export default function QuizApp() {
     setCurrentStep(0);
     setLeadCaptured(false);
     setLeadData({ name: '', jobTitle: '', companyName: '', email: '' });
+    setEmailError('');
   };
 
   // ── Computations ──
@@ -287,17 +306,7 @@ export default function QuizApp() {
   const strokeOffset = circumference - (averageScore / 5) * circumference;
 
   return (
-    <div 
-      className="quiz-app-container"
-      style={{ 
-        backgroundImage: `url(${bannerBg.src || bannerBg})`, 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
-        backgroundRepeat: 'no-repeat' 
-      }}
-    >
-
-
+    <div className="quiz-app-container">
       <main className="quiz-app-content-wrapper">
         {currentStep < 6 ? (
           /* ── ACTIVE QUIZ QUESTIONS STEP ── */
@@ -305,35 +314,45 @@ export default function QuizApp() {
             <div className="quiz-sticky-header">
               {/* Top Progress bar matching the layout */}
               <div className="quiz-progress-section">
+                <div className="quiz-progress-labels-top">
+                  <span className="quiz-assessment-protocol">ASSESSMENT PROTOCOL</span>
+                </div>
+                <div className="quiz-progress-info">
+                  <span className="quiz-progress-step"><strong>Question {currentStep + 1}</strong> of 6</span>
+                  <span className="quiz-progress-pct">{progressPercent}% Complete</span>
+                </div>
                 <div className="quiz-progress-track">
                   <div 
                     className="quiz-progress-fill" 
                     style={{ width: `${progressPercent}%` }} 
                   />
                 </div>
-                <div className="quiz-progress-info">
-                  <span className="quiz-progress-step">Question <strong style={{color: '#40ffc9'}}>{currentStep + 1}</strong> of 6</span>
-                  <span className="quiz-progress-pct">{progressPercent}% Complete</span>
-                </div>
               </div>
 
               {/* Question Card Header */}
               <div className="quiz-question-header">
-                <div className="quiz-category-icon-wrapper">
-                  {questions[currentStep].icon}
+                <div className="quiz-question-title-row">
+                  <div className="quiz-category-icon-wrapper">
+                    {questions[currentStep].icon}
+                  </div>
+                  <h2 className="quiz-question-title">
+                    {questions[currentStep].questionText}
+                  </h2>
                 </div>
-                <h2 className="quiz-question-title">
-                  {questions[currentStep].questionText}
-                </h2>
                 <div className="quiz-answer-guidance">
-                  <strong>Answer Guidance:</strong> {questions[currentStep].guidance}
+                  <div className="quiz-guidance-title">
+                    <FaInfoCircle className="quiz-guidance-icon" /> Answer Guidance
+                  </div>
+                  <div className="quiz-guidance-text">
+                    {questions[currentStep].guidance}
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Question Card Options */}
             <div className="quiz-question-card">
-              {/* Options */} {/* Options */}
+              {/* Options */}
               <div className="quiz-options-list">
                 {questions[currentStep].options.map((opt) => {
                   const isSelected = answers[currentStep]?.optionKey === opt.key;
@@ -343,10 +362,12 @@ export default function QuizApp() {
                       className={`quiz-option-row ${isSelected ? 'selected' : ''}`}
                       onClick={() => handleOptionSelect(opt.score, opt.key)}
                     >
+                      <div className="quiz-option-letter-box">
+                        {opt.key}
+                      </div>
                       <div className="quiz-option-content">
                         <span className="quiz-option-text">
-                          <strong style={{color: '#40ffc9', marginRight: '8px'}}>{opt.key})</strong> 
-                          {opt.text.split(' - ')[0]} - {opt.text.split(' - ').slice(1).join(' - ')}
+                          <strong>{opt.text.split(' - ')[0]}</strong> — {opt.text.split(' - ').slice(1).join(' - ')}
                         </span>
                       </div>
                       <div className="quiz-option-indicator-circle">
@@ -357,15 +378,17 @@ export default function QuizApp() {
                 })}
               </div>
 
+              <div className="quiz-footer-divider"></div>
+
               {/* Bottom Buttons */}
               <div className="quiz-footer-nav">
                 {currentStep > 0 ? (
                   <button className="quiz-back-btn" onClick={handleBack}>
-                    <FaChevronLeft size={12} /> Back
+                    <FaChevronLeft size={12} style={{marginRight: '8px'}} /> Back
                   </button>
                 ) : (
-                  <Link href="/quiz" className="quiz-back-btn" style={{textDecoration: 'none'}}>
-                    <FaChevronLeft size={12} /> Exit
+                  <Link href="/quiz" className="quiz-back-btn" style={{textDecoration: 'none', display: 'inline-flex', alignItems: 'center'}}>
+                    <FaChevronLeft size={12} style={{marginRight: '8px'}} /> Back
                   </Link>
                 )}
 
@@ -374,7 +397,7 @@ export default function QuizApp() {
                   onClick={handleNext}
                   disabled={!isQuestionAnswered}
                 >
-                  {currentStep === 5 ? 'See Results' : 'Next'} <FaChevronRight size={12} />
+                  {currentStep === 5 ? 'See Results' : 'Next Question'} <FaChevronRight size={12} style={{marginLeft: '8px'}} />
                 </button>
               </div>
             </div>
@@ -430,12 +453,16 @@ export default function QuizApp() {
                 <label className="quiz-form-label">Work Email</label>
                 <input 
                   type="email" 
-                  className="quiz-form-input" 
+                  className={`quiz-form-input ${emailError ? 'error' : ''}`} 
                   placeholder="your.email@company.com" 
                   value={leadData.email}
-                  onChange={(e) => setLeadData({ ...leadData, email: e.target.value })}
+                  onChange={(e) => {
+                    setLeadData({ ...leadData, email: e.target.value });
+                    if (emailError) setEmailError('');
+                  }}
                   required
                 />
+                {emailError && <div style={{ color: '#dc2626', fontSize: '13px', marginTop: '4px' }}>{emailError}</div>}
               </div>
               
               <button type="submit" className="quiz-lead-submit-btn">
@@ -478,7 +505,7 @@ export default function QuizApp() {
                     <span className="quiz-gauge-max">out of 5.0</span>
                   </div>
                 </div>
-                <div className="quiz-maturity-badge" style={{ background: 'rgba(255,255,255,0.06)', color: '#ffffff', borderColor: 'rgba(255,255,255,0.15)' }}>
+                <div className="quiz-maturity-badge">
                   {maturityLevel}
                 </div>
                 <p className="quiz-maturity-level-desc">

@@ -40,7 +40,7 @@ const Careers = () => {
 
 
         <div className="careers-hero-right-content">
-          <Image src={careersBanner} alt="Careers" />
+          <Image src={careersBanner} alt="Careers" priority={true} />
         </div>
 
       </section>

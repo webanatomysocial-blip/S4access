@@ -57,14 +57,12 @@ try {
         $weakestScore = $input['weakestScore'] ?? '0';
         
         $mail->setFrom('webanatomysocial@gmail.com', 'S4Access Maturity Assessment');
-        // Send to the user's email
-        $mail->addAddress($email, $name);
-        // Also copy the admin
-        $mail->addBCC('parceldropnetworks@gmail.com');
-        $mail->addReplyTo('contact@s4access.com', 'S4Access Team');
+        // Send only to the S4Access team
+        $mail->addAddress('contact@s4access.com', 'S4Access Team');
+        $mail->addReplyTo($email, $name);
 
         $mail->isHTML(true);
-        $mail->Subject = "Your SAP Access Maturity Report - S4Access";
+        $mail->Subject = "New Quiz Lead: {$name} ({$companyName}) - {$maturityLevel}";
 
         $htmlBody = "
         <div style='font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; color: #333333; line-height: 1.6;'>

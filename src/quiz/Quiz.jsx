@@ -12,29 +12,26 @@ const cards = [
   {
     id: 1,
     icon: <BsClockHistory />,
-    title: 'Quick Assessment',
+    title: <>Quick<br/>Assessment</>,
     description: '6 strategic questions',
   },
   {
     id: 2,
     icon: <IoBarChartSharp />,
-    title: 'Instant Results',
+    title: <>Instant<br/>Results</>,
     description: 'Benchmark comparison',
   },
   {
     id: 3,
     icon: <BsClipboardCheck />,
-    title: 'No Sign-up',
+    title: <>No<br/>Sign-up</>,
     description: 'See results immediately',
   },
 ];
 
 export default function Quiz() {
   return (
-    <section
-      className="quiz-hero-section"
-      style={{ backgroundImage: `url(${bannerBg.src || bannerBg})` }}
-    >
+    <section className="quiz-hero-section">
     
 
       <div className="quiz-content">
@@ -52,10 +49,9 @@ export default function Quiz() {
         {/* Feature cards */}
         <div className="quiz-cards">
           {cards.map((card) => (
-            <Link href="/quiz/start" 
+            <div 
               key={card.id} 
               className="quiz-card" 
-              style={{ textDecoration: 'none' }}
             >
               <div className="quiz-card-top">
                 <span className="quiz-card-react-icon">{card.icon}</span>
@@ -64,12 +60,7 @@ export default function Quiz() {
                 <h3 className="quiz-card-title">{card.title}</h3>
                 <p className="quiz-card-desc">{card.description}</p>
               </div>
-              <Image
-                src={blueIcon}
-                alt="s4access"
-                className="quiz-card-logo"
-              />
-            </Link>
+            </div>
           ))}
         </div>
 
@@ -80,7 +71,7 @@ export default function Quiz() {
 
         {/* Footnote */}
         <p className="quiz-footnote">
-Benchmark based on analysis of SAP environments
+          Benchmark based on assessment of SAP environments
         </p>
       </div>
     </section>

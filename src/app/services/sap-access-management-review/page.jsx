@@ -376,7 +376,7 @@ export default function SAPAccessReview() {
                             {/* <Link href="/customer-success" className="border-button">
                 Case Studies
               </Link> */}
-                            <a className="border-button" href="/customer-success">Case Studies</a>
+                            <Link href="/customer-success" className="border-button">Case Studies</Link>
                         </div>
                     </div>
                 </div>

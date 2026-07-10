@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
         {/* Leadfeeder Tracker */}
-        <Script id="leadfeeder-tracker" strategy="afterInteractive">
+        <Script id="leadfeeder-tracker" strategy="lazyOnload">
           {`
             (function (ss, ex) { window.ldfdr = window.ldfdr || function () { (ldfdr._q = ldfdr._q || []).push([].slice.call(arguments)); }; (function (d, s) { fs = d.getElementsByTagName(s)[0]; function ce(src) { var cs = d.createElement(s); cs.src = src; cs.async = 1; fs.parentNode.insertBefore(cs, fs); }; ce('https://sc.lfeeder.com/lftracker_v1_' + ss + (ex ? '_' + ex : '') + '.js'); })(document, 'script'); })('ywVkO4XxWwz4Z6Bj');
           `}
@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
           async
           defer
           src="//js-eu1.hs-scripts.com/148109206.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </head>
       <body>

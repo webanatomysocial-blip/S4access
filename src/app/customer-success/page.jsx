@@ -20,7 +20,7 @@ function CustomerSuccess() {
         className="customer-success-top-hero"
         style={{ backgroundImage: `url(${bannerBg.src || bannerBg})` }}
       >
-        <div className="customer-success-top-hero-content">
+        <div className="customer-success-top-hero-content"> 
           <h1 className="big-heading-text-white">
             Expert Care For SAP
             <br />

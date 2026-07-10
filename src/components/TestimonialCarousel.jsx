@@ -60,12 +60,13 @@ const TestimonialCarousel = () => {
           {text}
         </p>
         {isLongText && (
-          <a
+          <button
             className="read-more-btn-blue"
             onClick={() => toggleReadMore(index)}
+            style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
           >
             {expanded[index] ? 'Read Less' : 'Read More'}
-          </a>
+          </button>
         )}
       </div>
     );

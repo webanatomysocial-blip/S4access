@@ -7,7 +7,8 @@ import blog16 from "../blogs/blogs-images/Blog16.jpg";
 import blogCiso2026 from "../blogs/blogs-images/ciso-sap-access-2026.jpg";
 import blog45 from "../blogs/blogs-images/own.jpeg";
 import blog20 from "../blogs/blogs-images/blog20.jpg";
-// import blog15 from "../blogs/blogs-images/2290.webp";
+import blog21 from "../blogs/blogs-images/21.jpg";
+import blogAccessLife from "../blogs/blogs-images/accessLife.jpg";
 
 
 
@@ -178,11 +179,29 @@ export const blogMetadata = [
   },
   {
     id: "SAP-Access-Management-Automation",
-    title: "SAP Access Management Automation : The real cost of manual processes",
+    title: "The Hidden Cost of Manual SAP Access Management",
     slug: "sap-access-management-automation",
-    metaDescription: "SAP access management automation reduces security risks, improves compliance, and eliminates inefficiencies caused by manual processes.",
+    metaDescription: "Manual SAP Access Management creates security risks and operational inefficiencies. See how SAP Access Management Automation helps reduce costs.",
     excerpt: "SAP access management automation reduces security risks, improves compliance, and eliminates inefficiencies caused by manual processes. In complex SAP environments, managing access manually does not scale, making automation essential for maintaining control, security, and operational efficiency.",
     image: blog20,
     date: "2026-05-25",
+  },
+  // {
+  //   id: "SAP-Role-Bloat-FUE-Licensing-Costs",
+  //   title: "Understanding SAP Role Bloat and Rising FUE Licensing Cost",
+  //   slug: "sap-role-bloat-fue-licensing-costs",
+  //   metaDescription: "Find out how excessive SAP role permissions can inflate FUE requirements, raise licensing costs, and impact access governance over time.",
+  //   excerpt: "Most organisations assume their SAP licensing costs are a contract problem. In reality, they are often an access problem, one that has been quietly building for years. Understanding this connection is the first step to doing something about it.",
+  //   image: blog21,
+  //   date: "2026-06-23",
+  // },
+  {
+    id: "SAP-User-Access-Lifecycle",
+    title: "SAP User Access Lifecycle: From Onboarding to Offboarding",
+    slug: "sap-user-access-lifecycle",
+    metaDescription: "Learn how to manage the SAP user access lifecycle effectively — from onboarding new hires to securely offboarding departing employees — to sustain security, compliance, and operational efficiency.",
+    excerpt: "SAP user management is among the most important responsibilities in enterprise IT governance. Managing it well — from onboarding through active employment to secure offboarding — is how organisations sustain security, compliance, and operational efficiency.",
+    image: blogAccessLife,
+    date: "2026-06-26",
   },
 ];

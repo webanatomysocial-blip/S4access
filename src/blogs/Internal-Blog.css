@@ -15,6 +15,9 @@
   overflow: hidden;
   position: relative;
 }
+.faq-pad-section{
+  padding-top: 100px;
+}
 
 .blog-right-text{
     display: flex;
@@ -316,6 +319,9 @@
 
 .back-btn:hover::after {
   width: 0%;
+}
+.faq-pad-section{
+  padding-top: 50px;
 }
 
 }

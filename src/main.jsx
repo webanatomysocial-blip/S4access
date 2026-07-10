@@ -41,7 +41,7 @@ import LinkTree from './pages/LinkTree.jsx';
 
 import { HelmetProvider } from "react-helmet-async";
 
-console.log('Main.jsx loaded');
+
 
 const lenis = new Lenis({
   duration: 1.2,
@@ -55,7 +55,7 @@ const lenis = new Lenis({
   infinite: false,
 });
 window.lenis = lenis;
-console.log('Lenis initialized:', lenis);
+
 
 function raf(time) {
   lenis.raf(time);
