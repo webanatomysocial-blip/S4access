@@ -16,7 +16,6 @@ export const metadata = {
   }
 };
 
-
 const S4HanaAccessManagementTransformation = () => {
     return (
         <div>
@@ -103,11 +102,11 @@ const S4HanaAccessManagementTransformation = () => {
                     <Image src={img10} alt="SAP S/4HANA Access Management Transformation" />
                 </div>
             </section>
+            
             <div className="solution-intro-card-2">
                 <h2 className='big-heading-text-white'>The Challenge</h2>
                 <p className='text-white'>
                     The organization found itself dealing with complicated and contradictory authorization settings. The customer had years of messy, overlapping access rights in their SAP system and couldn't find skilled experts to fix it internally. They needed to clean up all those authorization issues, <Link href="/blogs/building-display-roles-the-smart-way-in-sap-s4hana" style={{ color: 'inherit', textDecoration: 'underline' }}>migrate to S/4HANA</Link> with a fresh governance model, and go live compliant and audit-ready, without disrupting daily operations.
-
                 </p>
             </div>
 
@@ -116,16 +115,14 @@ const S4HanaAccessManagementTransformation = () => {
                     <h2 className='big-heading-text-black'>Our Approach</h2>
                    
                     <p className='text-black' style={{ marginTop: '15px' }}>
-s4access team was tasked with the responsibility of delivering an end-to-end SAP access management solution through the ECC to S/4HANA upgrade initiative. The delivery encompassed governance, process, and technical components of access management in a controlled manner.
-
+                        s4access team was tasked with the responsibility of delivering an end-to-end SAP access management solution through the ECC to S/4HANA upgrade initiative. The delivery encompassed governance, process, and technical components of access management in a controlled manner.
                     </p>
                     <div className='text-black' style={{ marginTop: '15px' }}>
                         <strong>Key Activities:</strong>
                         <ul style={{ paddingLeft: '20px', marginTop: '10px' }}>
                             <li><strong>Authorisation concept alignment:</strong> <Link href="/services/sod-role-redesign" style={{ color: 'inherit', textDecoration: 'underline' }}>Role and user analysis</Link>, redesign and cleanup of authorizations.</li>
-                            <li style={{ marginTop: '5px' }}><strong>Access provisioning model setup:</strong> Structured governance and compliant <Link href="/services/sap-access-management-automation" style={{ color: 'inherit', textDecoration: 'underline' }}>access management model</Link> processes.</li>
-                            <li style={{ marginTop: '5px' }}>The work was executed in parallel with the S/4 upgrade to ensure access management supported both project needs and uninterrupted business operations.
-</li>
+                            <li style={{ marginTop: '5px' }}><strong>Access provisioning model setup:</strong> Structured governance and compliant access provisioning processes.</li>
+                            <li style={{ marginTop: '5px' }}>The work was executed in parallel with the S/4 upgrade to ensure access management supported both project needs and uninterrupted business operations.</li>
                         </ul>
                     </div>
                 </div>
@@ -144,7 +141,7 @@ s4access team was tasked with the responsibility of delivering an end-to-end SAP
                         s4access successfully delivered a fully functioning and sustainable access management setup for the new S/4HANA environment, supporting both go-live readiness and long-term operational stability.
                     </p>
                     <ul className="text-black" style={{ paddingLeft: '20px', marginTop: '10px' }}>
-                        <li>A structured and S/4-compliant access management model aligned with governance and audit requirements</li>
+                        <li>A structured and S/4-compliant <Link href="/services/sap-access-management-automation" style={{ color: 'inherit', textDecoration: 'underline' }}>access management model</Link> aligned with governance and audit requirements</li>
                         <li style={{ marginTop: '5px' }}>Cleaned-up and well-defined authorizations supporting business roles</li>
                         <li style={{ marginTop: '5px' }}>Controlled access provisioning during and after the upgrade</li>
                         <li style={{ marginTop: '5px' }}>Reduced access-related risk during a critical transformation phase</li>
@@ -173,7 +170,7 @@ s4access team was tasked with the responsibility of delivering an end-to-end SAP
                 </div>
             </section>
 
-                    </div>
+        </div>
     );
 };
 

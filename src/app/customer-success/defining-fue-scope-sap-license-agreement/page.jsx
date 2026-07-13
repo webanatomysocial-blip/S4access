@@ -97,7 +97,7 @@ const DefiningFUEScope = () => {
             <div className="solution-intro-card-2">
                 <h2 className='big-heading-text-white'>The challenge</h2>
                 <p className='text-white'>
-                    The customer understood that the number of FUE users would have a direct impact on license cost. At the same time, it was not fully clear how different user types, roles, and ways of working should be interpreted within <Link href="/services/sap-license-optimisation" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP's licensing model</Link>, or how the FUE concept would work in practice.
+                    The customer understood that the number of FUE users would have a direct impact on license cost. At the same time, it was not fully clear how different user types, roles, and ways of working should be interpreted within <Link href="/services/sap-license-optimisation" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP’s licensing model</Link>, or how the FUE concept would work in practice.
                 </p>
             </div>
 
@@ -112,7 +112,7 @@ const DefiningFUEScope = () => {
                     </div>
                 </div>
                 <div className="Coustomer-success-page-card-right">
-                    <Image src={img12} alt="Our Approach" />
+                    <Image src={img12} alt="Our approach" />
                 </div>
             </section>
 
@@ -139,7 +139,7 @@ const DefiningFUEScope = () => {
                     </p>
                 </div>
                 <div className="CustomerSuccess-cta-actions">
-                    <Link href="/Contact" className="button-green">
+                    <Link href="/contact" className="button-green">
                         Contact Us
                     </Link>
                     <Link href="/customer-success" className="border-button">

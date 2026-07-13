@@ -136,7 +136,7 @@ export default function Blog20() {
           <section>
             <h2>SAP Access Management Automation : The real cost of manual processes</h2>
             <p>
-              <Link href="/services/sap-access-management-review" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP access management</Link> automation reduces security risks, improves compliance, and eliminates inefficiencies caused by manual processes. In complex SAP environments, managing access manually does not scale, making automation essential for maintaining control, security, and operational efficiency.
+              SAP access management automation reduces security risks, improves compliance, and eliminates inefficiencies caused by manual processes. In complex SAP environments, managing access manually does not scale, making automation essential for maintaining control, security, and operational efficiency.
             </p>
             <p>
               Many organizations underestimate the real cost of manual SAP access management, until it becomes visible through audit findings, security incidents, or operational delays.
@@ -220,7 +220,7 @@ export default function Blog20() {
           <section>
             <h2>Why s4access?</h2>
             <p>
-              s4access focuses purely on SAP access management. We are familiar with the nuances of SAP authorization objects, role management, and compliance aspects not addressed by general IAM solutions.
+              s4access focuses purely on <Link href="/services/sap-access-management-review" style={{ color: 'inherit', textDecoration: 'underline' }}>SAP access management</Link>. We are familiar with the nuances of SAP authorization objects, role management, and compliance aspects not addressed by general IAM solutions.
               Our platform is built for SAP, not retrofitted.
             </p>
             <p>We help enterprises:</p>
@@ -238,7 +238,7 @@ export default function Blog20() {
               Manual SAP access management isn't just inefficient, it's expensive, risky, and unsustainable. Every day you delay automation is another day of unnecessary risk, wasted resources, and compliance exposure.
             </p>
             <p>
-              The question isn't whether you can afford automation. It's whether you can afford not to implement it. <Link href="/contact" style={{ color: 'inherit', textDecoration: 'underline' }}>Contact us</Link> today to learn how we can help.
+              The question isn't whether you can afford automation. It's whether you can afford not to implement it.
             </p>
           </section>
           <div className="faq-pad-section" style={{ paddingLeft: "10px" }}>
@@ -256,7 +256,7 @@ export default function Blog20() {
           <div className="blog-right-content">
             <div className="blog-right-text">
               <p className="text-white" style={{ fontWeight: 600 }}>
-                Ready to transform your SAP access management?
+                Ready to transform your SAP access management? <Link href="/contact" style={{ color: 'inherit', textDecoration: 'underline' }}>Contact us</Link>
               </p>
             </div>
             <div className="blog-right-button">
