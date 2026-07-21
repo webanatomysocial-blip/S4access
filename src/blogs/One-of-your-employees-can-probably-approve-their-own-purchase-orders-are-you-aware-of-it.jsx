@@ -235,7 +235,7 @@ export default function Blog40() {
             </div>
 
             <div className="blog-right-button">
-              <Link href="/Contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

@@ -8,8 +8,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate";
 
 export const metadata = {
-  title: "SoD Management Concepts for Access Risk Control | s4access",
-  description: " Learn how SoD management helps control access risks, prevent fraud, and strengthen ERP security through risk-based controls, SAP GRC, and governance practices.",
+  title: "SoD Management Concepts: Keeping Access Risks Under Control | s4access",
+  description: "Segregation of Duties (SoD) is a foundational internal control designed to reduce the risk of errors, fraud, and misuse of authority. In simple terms, it ensures that no single user has end-to-end control over a critical business process.",
 };
 
 export default function Blog2() {

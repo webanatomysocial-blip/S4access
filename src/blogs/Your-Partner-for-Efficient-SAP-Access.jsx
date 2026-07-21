@@ -6,7 +6,7 @@ import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
   title: "Your Partner for Efficient SAP Access | s4access",
-  description: "Learn how clear SAP access tickets improve service levels, reduce delays, and help support teams resolve issues faster.",
+  description: "Our SAP Access Management Services handle over 1,000 service requests every month. That’s a lot of tickets, and every single one matters. The quality of the initial request directly affects how quickly and accurately we can help.",
 };
 
  

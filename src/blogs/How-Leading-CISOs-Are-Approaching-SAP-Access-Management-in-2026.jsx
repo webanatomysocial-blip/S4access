@@ -6,8 +6,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "\n          How Leading CISOs Are Approaching SAP Access Management in 2026 |\n          s4access\n        ",
-  description: "How leading CISOs approach SAP access management in 2026 linking access governance, SoD controls, and S/4HANA migration to stronger audit and compliance outcomes.",
+  title: "How Leading CISOs Are Approaching SAP Access Management in 2026 | s4access",
+  description: "Learn how leading CISOs are transforming SAP access management from a technical IT issue into a strategic enterprise risk priority in 2026.",
 };
 
 

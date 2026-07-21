@@ -8,8 +8,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Challenges in Approving SAP Access Requests | s4access",
-  description: "Discover common challenges in approving SAP access requests: balancing\nsecurity, compliance, and efficiency to mitigate risks and ensure effective governance.",
+  title: "Typical Challenges In Approving SAP Access Requests | s4access",
+  description: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
 };
 
 
@@ -130,7 +130,7 @@ export default function Blog5() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <Image src={cta} />
+            <Image src={cta} alt="Contact s4access" />
           </div>
 
           {/* Right Content */}

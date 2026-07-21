@@ -7,7 +7,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "\n          When Access Becomes a Risk: How Firefighter IDs Help You Stay\n          Compliant | s4access\n        ",
+  title: "When Access Becomes A Risk: How Firefighter IDs Help You Stay Compliant | s4access",
   description: "How SAP Firefighter IDs provide controlled emergency access, prevent security risks, and keep systems audit-compliant with logging and timely review processes.",
 };
 
@@ -195,7 +195,7 @@ export default function Blog5() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <Image src={cta} />
+            <Image src={cta} alt="Contact s4access" />
           </div>
 
           {/* Right Content */}

@@ -8,8 +8,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "\n          Managing Fiori S/4HANA Public Views Best Practices | S4Access\n        ",
-  description: "Discover best practices for managing Fiori S/4HANA Public Views, avoid performance issues, maintain consistency, and enhance user experience across SAP systems.",
+  title: "Managing Public Views In Fiori S/4HANA: Best Practices And Pitfalls | s4access",
+  description: "In SAP S/4HANA Fiori apps—whether standard or extended—public views play a key role in tailoring user experiences. These views can be created with a transport request (TR) and mapped to user-specific roles, ensuring that only authorized users with the appropriate roles can access them.",
 };
 
 
@@ -149,7 +149,7 @@ export default function Blog4() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <Image src={cta} />
+            <Image src={cta} alt="Contact s4access" />
           </div>
 
           {/* Right Content */}

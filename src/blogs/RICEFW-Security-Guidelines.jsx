@@ -9,8 +9,8 @@ import '../css/Header.css';
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "RICEFW Security Guidelines for SAP Access | s4access",
-  description: "Enhance SAP security with RICEFW guidelines: implement secure custom\ndevelopments, enforce SoD, and ensure compliance across your SAP landscape with s4access.",
+  title: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part I | s4access",
+  description: "Build secure SAP custom solutions with RICEFW security guidelines that minimize vulnerabilities, strengthen controls, and support compliance.",
 };
 
 
@@ -166,7 +166,7 @@ export default function Blog3() {
 
                     {/* Left Image */}
                     <div className="blog-left-image only-windows">
-                        <Image src={cta} />
+                        <Image src={cta} alt="Contact s4access" />
                     </div>
 
                     {/* Right Content */}
@@ -178,7 +178,7 @@ export default function Blog3() {
                             <p className="text-white" style={{ fontWeight: 600 }}>Secure Your Custom Developments — Make RICEFW Security Effortless.</p>
                         </div>
                         <div className="blog-right-button">
-                            <Link href="/Contact" className="button-green">
+                            <Link href="/contact" className="button-green">
                                 <span>Get Started</span>
                                 <span>
                                     <i className="bi bi-arrow-up"></i>

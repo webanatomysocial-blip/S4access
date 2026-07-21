@@ -6,7 +6,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Understanding SAP Role Bloat and Rising FUE Licensing Cost",
+  title: "Understanding SAP Role Bloat and Rising FUE Licensing Cost | s4access",
   description: "Find out how excessive SAP role permissions can inflate FUE requirements, raise licensing costs, and impact access governance over time.",
 };
 

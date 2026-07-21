@@ -7,8 +7,8 @@ import cta from "../blogs/blogs-images/Group.png";
 import Link from "next/link";
 
 export const metadata = {
-  title: " Is SAP Certification Still Valid in 2025? | s4access",
-  description: "Explore the relevance of SAP certification in 2025: its value in cloud adoption,\ncareer growth, and staying competitive in the evolving SAP ecosystem.",
+  title: "Is The SAP Certification Still Valid For Your Career In 2025? | s4access",
+  description: "Discover if SAP certification is still worth it in 2025. Explore industry demand, SAP’s evolution, career benefits, and why continuous learning is key.",
 };
 
 
@@ -167,7 +167,7 @@ export default function Blog1() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <Image src={cta} />
+            <Image src={cta} alt="Contact s4access" />
           </div>
 
           {/* Right Content */}

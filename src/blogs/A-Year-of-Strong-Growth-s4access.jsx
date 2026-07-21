@@ -7,8 +7,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "\n          A Year of Strong Growth: s4access & Customers Moving Forward Together\n        ",
-  description: "2025 has been a year of growth, innovation, and collaboration at s4access. Discover key SAP Access Management trends and what lies ahead in 2026.",
+  title: "A Year Of Strong Growth: s4access And Its Customers Moving Forward Together | s4access",
+  description: "2025 has been a year of strong growth, innovation, and close collaboration with our customers and partners.",
 };
 
 

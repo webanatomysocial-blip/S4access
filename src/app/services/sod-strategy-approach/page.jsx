@@ -259,7 +259,7 @@ export default function SAPSoDApproach() {
               </p>
             </div>
             <div className="cta-buttons">
-              <Link href="/Contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 Contact Us
               </Link>
               <Link href="/customer-success" className="border-button">

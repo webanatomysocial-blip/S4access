@@ -125,7 +125,7 @@ const StabilisingSAPAccessAtScale = () => {
           </p>
         </div>
         <div className="CustomerSuccess-cta-actions">
-          <Link href="/Contact" className="button-green">
+          <Link href="/contact" className="button-green">
             Contact Us
           </Link>
           <Link href="/customer-success" className="border-button">

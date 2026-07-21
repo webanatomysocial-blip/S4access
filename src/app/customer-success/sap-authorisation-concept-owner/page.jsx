@@ -9,7 +9,7 @@ import img11 from '../../../assets/images/success-images/11.jpg';
 
 export const metadata = {
   title: "SAP Licence Optimisation for Steel Manufacturer | s4access",
-  description: "How s4access structured SAP authorization concept ownership for a steel manufacturer reducing SAP_ALL usage, optimising licences and eliminating audit risks.",
+  description: "See how s4access restructured SAP authorization ownership, reducing SAP_ALL usage, optimizing licenses, and strengthening compliance.",
   openGraph: {
     images: [
       { url: img10.src }
@@ -124,7 +124,7 @@ const SAPAuthorizationConceptOwner = () => {
       </p>
     </div>
     <div className="CustomerSuccess-cta-actions">
-      <Link href="/Contact" className="button-green">
+      <Link href="/contact" className="button-green">
         Contact Us
       </Link>
       <Link href="/customer-success" className="border-button">

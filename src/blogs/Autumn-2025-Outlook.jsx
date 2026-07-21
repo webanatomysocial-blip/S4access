@@ -7,8 +7,8 @@ import cta from "../blogs/blogs-images/Group.png";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Autumn 2025 SAP Access Trends & Strategies | s4access",
-  description: " Explore the Autumn 2025 outlook for SAP access management: economic\npressures, emerging trends, and actionable strategies to strengthen security and compliance.",
+  title: "Autumn 2025 Outlook: Navigating SAP Security And Access Management In A New Market Reality – Is There A Way Forward ? | s4access",
+  description: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
 };
 
 
@@ -130,7 +130,7 @@ export default function Blog2() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <Image src={cta} />
+            <Image src={cta} alt="Contact s4access" />
           </div>
 
           {/* Right Content */}

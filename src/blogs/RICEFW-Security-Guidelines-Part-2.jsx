@@ -6,8 +6,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "\n          SAP Access Controls - RICEFW Security Guidelines | s4access\n        ",
-  description: "Enhance SAP security with RICEFW guidelines: implement secure custom developments, enforce SoD, and ensure compliance across your SAP landscape with s4access.",
+  title: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part II | s4access",
+  description: "Learn RICEFW security guidelines for SAP custom developments and discover best practices to reduce risks, strengthen controls, and improve compliance.",
 };
 
 
@@ -223,7 +223,7 @@ export default function Blog9() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <Image src={cta} />
+            <Image src={cta} alt="Contact s4access" />
           </div>
 
           {/* Right Content */}
@@ -237,7 +237,7 @@ export default function Blog9() {
               </p>
             </div>
             <div className="blog-right-button">
-              <Link href="/Contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

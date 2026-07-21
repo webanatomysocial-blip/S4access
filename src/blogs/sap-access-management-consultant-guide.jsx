@@ -5,8 +5,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: " Expert Guide: Choosing Your SAP Access Consultant | s4access",
-  description: "Learn when to bring in external SAP Access, Security, and GRC experts. Discover how to choose the right SAP consultant to strengthen compliance, controls, and role design.",
+  title: "How to Choose the Right SAP Access Consultant: When to Bring in External SAP Security & GRC Experts | s4access",
+  description: "One of the most important and frequently underappreciated tasks in an organization's IT and risk landscape is managing SAP access. It gets harder to make sure that the correct individuals have adequate access at the right time, as organisations expand, systems change, and compliance requirements tighten. External SAP access consultants are essential in this situation.",
 };
 
 
@@ -47,7 +47,7 @@ export default function RightSAPAccessConsultant() {
 
                         <h2>Major System Migrations or Upgrades</h2>
                         <p>
-                            Segregation-of-duties conflicts and new risks may arise from moving to <a href="https://s4access.com/blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA">S/4HANA</a>, combining systems, or integrating new modules.Expert consultants help:
+                            Segregation-of-duties conflicts and new risks may arise from moving to <a href="https://s4access.com/blogs/building-display-roles-the-smart-way-in-sap-s4hana">S/4HANA</a>, combining systems, or integrating new modules.Expert consultants help:
                         </p>
                         <ul>
                             <li>Redesign role architecture</li>

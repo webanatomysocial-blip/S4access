@@ -19,7 +19,7 @@ import FirefighterIDs from "../../../blogs/How-Firefighter-IDs-Help-You-Stay-Com
 import BuildingDisplayRoles from "../../../blogs/Building-Display-Roles-the-Smart-Way-in-SAP-S4HANA.jsx";
 import FeedbackFromITAuditors from "../../../blogs/why-feedback-from-it-auditors-matters.jsx";
 import NativeHANADatabaseAuthorizations from "../../../blogs/Native-HANA-database-authorizations.jsx";
-import StrongGrowth from "../../../blogs/A-Year-of-Strong-Growth-s4access-and-Its-Customers-Moving-Forward-Together.jsx";
+import StrongGrowth from "../../../blogs/A-Year-of-Strong-Growth-s4access.jsx";
 import YourPartner from "../../../blogs/Your-Partner-for-Efficient-SAP-Access.jsx";
 import SAPAccessManagementConsultantGuide from "../../../blogs/sap-access-management-consultant-guide.jsx";
 import SoDManagementConcepts from "../../../blogs/SoD-Management-Concepts.jsx";
@@ -44,6 +44,7 @@ const blogComponentMap = {
   "why-feedback-from-it-auditors-matters": FeedbackFromITAuditors,
   "native-hana-database-authorizations": NativeHANADatabaseAuthorizations,
   "a-year-of-strong-growth-s4access-and-its-customers-moving-forward-together": StrongGrowth,
+  "a-year-of-strong-growth-s4access": StrongGrowth,
   "your-partner-for-efficient-sap-access": YourPartner,
   "sap-access-management-consultant-guide": SAPAccessManagementConsultantGuide,
   "sod-management-concepts": SoDManagementConcepts,
@@ -67,11 +68,11 @@ export async function generateMetadata({ params }) {
   const imageUrl = typeof metadata.image === 'string' ? metadata.image : (metadata.image?.src || "/images/black-logo-400.png");
 
   return {
-    title: `${metadata.title} | s4access`,
+    title: `${metadata.metaTitle || metadata.title} | s4access`,
     description,
     keywords: metadata.keywords || "",
     openGraph: {
-      title: `${metadata.title} | s4access`,
+      title: `${metadata.metaTitle || metadata.title} | s4access`,
       description,
       url: `https://s4access.com/blogs/${slug}`,
       images: [

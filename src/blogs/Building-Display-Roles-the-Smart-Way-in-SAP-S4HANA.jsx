@@ -8,8 +8,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Autumn 2025 SAP Access Trends & Strategies | s4access",
-  description: "Explore the Autumn 2025 outlook for SAP access management: economic pressures, emerging trends, and actionable strategies to strengthen security and compliance.",
+  title: "Building Display Roles The Smart Way In SAP S/4HANA | s4access",
+  description: "Build SAP S/4HANA display roles the smart way with best practices that improve security, simplify access management, and support compliance.",
 };
 
 
@@ -179,7 +179,7 @@ export default function Blog10() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <Image src="/blogs-images/Group.png" />
+            <Image src="/blogs-images/Group.png" alt="Contact s4access" />
           </div>
 
           {/* Right Content */}

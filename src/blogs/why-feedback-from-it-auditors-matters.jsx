@@ -5,7 +5,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "\n          Feedback Is a Gift – Even When It Comes from an External IT Auditor |\n          s4access\n        ",
+  title: "Feedback Is A Gift – Even When It Comes From An External IT Auditor | s4access",
   description: "Engaging external auditors is a strategic decision. Learn how to use auditor feedback to improve security and operations.",
 };
 

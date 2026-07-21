@@ -8,8 +8,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "\n          Turning SAP Access Audit Frustration into Value | s4access\n        ",
-  description: "Transform SAP access audit challenges into actionable insights: streamline processes, enhance compliance, and drive value with s4access’s expert strategies.",
+  title: "Understanding SAP Access Management Audits: Turning Frustration Into Value | s4access",
+  description: "Learn how businesses can transform customer frustrations into valuable insights, stronger relationships, and sustainable growth opportunities.",
 };
 
 
@@ -199,7 +199,7 @@ export default function Blog3() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <Image src={cta} />
+            <Image src={cta} alt="Contact s4access" />
           </div>
 
           {/* Right Content */}

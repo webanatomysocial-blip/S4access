@@ -135,6 +135,7 @@
 
 .Coustomer-success-page-hero-container-right img {
   width: 400px;
+  max-width: 100%;
   height: auto;
   border-radius: 5px;
 }
@@ -271,6 +272,7 @@
 }
 .Coustomer-success-inner-achievements-right img {
   width: 400px;
+  max-width: 100%;
   height: auto;
   position: sticky;
   top: 130px;

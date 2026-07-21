@@ -5,6 +5,10 @@ DirectoryIndex index.html
   RewriteEngine On
   RewriteBase /
 
+  # 0. Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
   # 1. Remove trailing slash
   RewriteRule ^(.*)/$ /$1 [L,R=301]
 

@@ -7,8 +7,8 @@ import img2 from '../../../assets/images/success-images/17.jpg';
 import img3 from '../../../assets/images/success-images/16.jpg';
 
 export const metadata = {
-  title: "s4access Customer Success",
-  description: "s4access Customer Success Stories",
+  title: "SAP UCON Implementation – Reducing the Attack Surface in Production | s4access",
+  description: "s4access successfully deployed SAP UCON in a production environment, identifying 47,000 RFMs and whitelisting only the 1,500 business-critical ones, reducing the attack surface by over 95%.",
   openGraph: {
     images: [{ url: img1.src }]
   }
@@ -145,7 +145,7 @@ const SapUconImplementation = () => {
           </p>
         </div>
         <div className="CustomerSuccess-cta-actions">
-          <Link href="/Contact" className="button-green">
+          <Link href="/contact" className="button-green">
             Contact Us
           </Link>
           <Link href="/customer-success" className="border-button">

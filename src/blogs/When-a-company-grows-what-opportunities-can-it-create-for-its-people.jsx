@@ -5,8 +5,8 @@ import Link from "next/link";
 // import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "\n          When a company grows, what opportunities can it create for its people?\n        ",
-  description: "description",
+  title: "When a company grows, what opportunities can it create for its people? | s4access",
+  description: "Company growth is not only about expanding business operations – it is also a significant opportunity for employees.",
 };
 
 

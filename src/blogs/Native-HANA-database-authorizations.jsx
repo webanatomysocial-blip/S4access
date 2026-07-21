@@ -6,8 +6,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "\n          Native HANA Database Authorizations – Best Practices | s4access\n        ",
-  description: "Learn how to design secure and maintainable native SAP HANA database authorizations. Avoid ad-hoc privilege assignments and build a sustainable role-based access model.",
+  title: "Native HANA Database Authorizations | s4access",
+  description: "When creating HANA database users and authorizations for custom-made schema structures",
 };
 
 
@@ -167,7 +167,7 @@ export default function Blog12() {
             </div>
 
             <div className="blog-right-button">
-              <Link href="/Contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 <span>Get Started</span>
                 <span>
                   <i className="bi bi-arrow-up"></i>

@@ -10,7 +10,7 @@ import case2img from '../../../assets/images/inner-services-images/SAP-Access-ma
 
 export const metadata = {
   title: "SAP License Optimisation & S/4HANA Cost Reduction | s4access",
-  description: "Reduce SAP licence costs without risk. Analyse usage, eliminate unused licences and stay fully compliant with S/4HANA licensing agreements. Fixed monthly fee.",
+  description: "Reduce SAP licensing costs with SAP License Optimisation services. Improve license utilization, ensure compliance, and maximize ROI with S4Access",
 };
 
 
@@ -220,7 +220,7 @@ export default function SAPLicenseCompliance() {
               </p>
             </div>
             <div className="cta-buttons">
-              <Link href="/Contact" className="button-green">
+              <Link href="/contact" className="button-green">
                 Contact Us
               </Link>
               <Link href="/customer-success" className="border-button">
