@@ -9,8 +9,11 @@ import case1img from '../../../assets/images/inner-services-images/SAP-Access-ma
 import case2img from '../../../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/sap-license-optimisation",
+  },
   title: "SAP License Optimisation & S/4HANA Cost Reduction | s4access",
-  description: "Reduce SAP licensing costs with SAP License Optimisation services. Improve license utilization, ensure compliance, and maximize ROI with S4Access",
+  description: "Reduce SAP licensing costs with SAP License Optimisation services. Improve license utilization, ensure compliance, and maximize ROI with S4Access.",
 };
 
 

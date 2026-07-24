@@ -7,6 +7,9 @@ import img12 from '../../../assets/images/success-images/S4HanaAccessManagementT
 import img13 from '../../../assets/images/success-images/S4HanaAccessManagementTransformation/3.jpg'
 
 export const metadata = {
+  alternates: {
+    canonical: "/customer-success/sap-s4hana-access-management-transformation",
+  },
   title: "SAP S/4HANA Access Management Transformation | s4access",
   description: "Read how s4access helped a public sector organization successfully deliver a secure, audit-ready SAP S/4HANA access management transformation.",
   openGraph: {

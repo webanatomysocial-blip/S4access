@@ -8,6 +8,9 @@ import img5 from '../../../assets/images/success-images/5.jpg'
 import img6 from '../../../assets/images/success-images/6.jpg'
 
 export const metadata = {
+  alternates: {
+    canonical: "/customer-success/s4-transition-analysis",
+  },
   title: "SAP S/4 Transition Analysis Zero Disruptions | s4access",
   description: "A multinational material handling company used SAP S/4 transition analysis to plan resources optimally, assess Fiori readiness and prevent project disruptions",
   openGraph: {

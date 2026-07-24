@@ -9,8 +9,11 @@ import case1img from '../../../assets/images/inner-services-images/SAP-Access-ma
 import case2img from '../../../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/outsourced-access-management",
+  },
   title: "Outsourced SAP Access Management & Governance | s4access",
-  description: "Outsource SAP access management to Nordic specialists. End-to-end SAM service covering SoD, compliance, licence management and security at a fixed monthly price.",
+  description: "Enhance SAP security with outsourced access management services. Reduce risks, improve compliance, and optimize user access controls.",
 };
 
 

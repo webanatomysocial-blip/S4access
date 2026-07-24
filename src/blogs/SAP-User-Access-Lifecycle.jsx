@@ -6,8 +6,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "SAP User Access Lifecycle: From Onboarding to Offboarding | s4access",
-  description: "Learn how to manage the SAP user access lifecycle effectively — from onboarding new hires to securely offboarding departing employees — to sustain security, compliance, and operational efficiency.",
+  title: "SAP User Access Lifecycle: Improve Security & Compliance | s4access",
+  description: "Understand the SAP User Access Lifecycle and learn how effective access management reduces risks, strengthens compliance, and improves security.",
 };
 export default function SAPUserAccessLifecycle() {
   const faqs = [

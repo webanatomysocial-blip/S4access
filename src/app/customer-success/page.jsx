@@ -7,6 +7,9 @@ import bannerBg from '../../assets/images/coustomer-success-page/banner.png';
 import banner2 from '../../assets/images/home-img/Success-top-img-2.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/customer-success",
+  },
   title: "SAP Access Management Customer Success Stories | s4access",
   description: "See how Nordic companies achieve long-term SAP access management success with s4access. Real customer results, easy onboarding and partnerships built to last.",
 };

@@ -6,7 +6,7 @@ import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
   title: "Your Partner for Efficient SAP Access | s4access",
-  description: "Our SAP Access Management Services handle over 1,000 service requests every month. That’s a lot of tickets, and every single one matters. The quality of the initial request directly affects how quickly and accurately we can help.",
+  description: "See how s4access simplifies SAP access management with secure user provisioning, stronger governance, improved compliance, and reduced risks.",
 };
 
  

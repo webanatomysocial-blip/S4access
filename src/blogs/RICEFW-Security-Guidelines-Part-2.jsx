@@ -6,8 +6,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part II | s4access",
-  description: "Learn RICEFW security guidelines for SAP custom developments and discover best practices to reduce risks, strengthen controls, and improve compliance.",
+  title: "RICEFW Security Guidelines for Secure SAP Custom Development | s4access",
+  description: "Explore RICEFW security guidelines for SAP custom development to minimize security risks, ensure compliance, and improve code quality.",
 };
 
 

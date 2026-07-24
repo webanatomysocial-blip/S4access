@@ -7,8 +7,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "When Access Becomes A Risk: How Firefighter IDs Help You Stay Compliant | s4access",
-  description: "How SAP Firefighter IDs provide controlled emergency access, prevent security risks, and keep systems audit-compliant with logging and timely review processes.",
+  title: "Why SAP Firefighter IDs Are Essential for Secure Access | s4access",
+  description: "Discover how SAP Firefighter IDs help control emergency access, improve compliance, reduce audit risks, and strengthen SAP security",
 };
 
 

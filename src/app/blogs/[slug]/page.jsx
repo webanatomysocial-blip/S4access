@@ -71,6 +71,9 @@ export async function generateMetadata({ params }) {
     title: `${metadata.metaTitle || metadata.title} | s4access`,
     description,
     keywords: metadata.keywords || "",
+    alternates: {
+      canonical: `/blogs/${slug}`,
+    },
     openGraph: {
       title: `${metadata.metaTitle || metadata.title} | s4access`,
       description,

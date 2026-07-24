@@ -9,6 +9,9 @@ import case2img from '../../../assets/images/inner-services-images/sap-s4-access
 import image from '../../../assets/images/inner-services-images/sap-s4-access-implementation-banner.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/sap-s4-access-implementation",
+  },
   title: "SAP S/4HANA Access Implementation & Role Design | s4access",
   description: "Secure and compliant SAP S/4HANA access implementation. Expert role design, Fiori authorisation, governance and security roadmap by Nordic SAP specialists.",
 };

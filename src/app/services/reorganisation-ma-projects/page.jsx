@@ -9,8 +9,11 @@ import case1img from '../../../assets/images/inner-services-images/SAP-Access-ma
 import case2img from '../../../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/reorganisation-ma-projects",
+  },
   title: "SAP Access Management for M&A & Reorganisation | s4access",
-  description: "Support SAP access management through mergers, reorganisations and process changes. Risk mitigation, rapid assessment and compliance for Nordic SAP companies.",
+  description: "Manage SAP access seamlessly during mergers, acquisitions, and reorganisations with expert support for security, compliance, and governance.",
 };
 
 

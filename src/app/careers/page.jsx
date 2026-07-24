@@ -8,8 +8,11 @@ import { FaUsers, FaTrophy, FaDove, FaHeartbeat } from 'react-icons/fa';
 // import Blogs from '../../components/Blog.jsx';
 
 export const metadata = {
+  alternates: {
+    canonical: "/careers",
+  },
   title: "SAP Access Management Careers | s4access\n        ",
-  description: "s4access provides SAP access governance, automation, and risk reduction solutions to help organisations stay secure, compliant, and efficient across SAP systems.",
+  description: "Join S4Access and build your career in SAP consulting. Explore exciting opportunities, grow your skills, and make an impact with our team.",
 };
 
 

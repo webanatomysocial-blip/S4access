@@ -3,7 +3,7 @@ import React from "react";
 import "./Internal-Blog.css";
 // import img22 from './blogs-images/2.jpg';
 import Blogs from "../components/Blog";
-// import cta from "../blogs/blogs-images/Group.png";
+import cta from "../blogs/blogs-images/Group.png";
 import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
@@ -179,7 +179,7 @@ export default function Blog10() {
         <div className="blog-contact-us-section">
           {/* Left Image */}
           <div className="blog-left-image only-windows">
-            <Image src="/blogs-images/Group.png" alt="Contact s4access" />
+            <Image src={cta} alt="Contact s4access" />
           </div>
 
           {/* Right Content */}

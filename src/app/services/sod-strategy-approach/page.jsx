@@ -10,6 +10,9 @@ import case1img from '../../../assets/images/inner-services-images/SAP-Access-ma
 import case2img from '../../../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/sod-strategy-approach",
+  },
   title: "SAP SoD Strategy & Access Governance Consulting | s4access",
   description: "Build a proactive SAP SoD strategy. Governance frameworks, tool selection, audit-ready access controls and continuous SoD compliance for Nordic companies.",
 };

@@ -18,6 +18,9 @@ import img2 from '../../../assets/images/success-images/13.jpg';
 import img3 from '../../../assets/images/success-images/12.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/customer-success/sam-service",
+  },
   title: "Zero Audit Observations: SAP Access Management | s4access",
   description: "Achieved zero audit observations after outsourcing SAP access management structured governance, SoD automation and GDPR monitoring delivered by s4access.",
   openGraph: {

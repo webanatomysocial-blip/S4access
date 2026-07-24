@@ -3,10 +3,11 @@ import React from "react";
 import "./Internal-Blog.css";
 import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
+import cta from "../blogs/blogs-images/Group.png";
 
 export const metadata = {
-  title: "How to Choose the Right SAP Access Consultant: When to Bring in External SAP Security & GRC Experts | s4access",
-  description: "One of the most important and frequently underappreciated tasks in an organization's IT and risk landscape is managing SAP access. It gets harder to make sure that the correct individuals have adequate access at the right time, as organisations expand, systems change, and compliance requirements tighten. External SAP access consultants are essential in this situation.",
+  title: "How to Choose the Right SAP Access Consultant Guide | s4access",
+  description: "Find the right SAP Access Consultant to strengthen SAP Security, improve GRC compliance, reduce risks, and support business growth.",
 };
 
 
@@ -213,7 +214,7 @@ export default function RightSAPAccessConsultant() {
             <section className="blog-container">
                 <div className="blog-contact-us-section">
                     <div className="blog-left-image only-windows">
-                        <Image src="/blogs-images/Group.png" alt="Contact Us" />
+                        <Image src={cta} alt="Contact Us" />
                     </div>
 
                     <div className="blog-right-content">

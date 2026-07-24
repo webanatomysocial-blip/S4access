@@ -8,8 +8,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Understanding SAP Access Management Audits: Turning Frustration Into Value | s4access",
-  description: "Learn how businesses can transform customer frustrations into valuable insights, stronger relationships, and sustainable growth opportunities.",
+  title: "Turning Frustration into Value with Smarter SAP Access | s4access",
+  description: "Explore practical strategies to overcome SAP access challenges, improve governance, reduce risks, and create lasting business value.",
 };
 
 

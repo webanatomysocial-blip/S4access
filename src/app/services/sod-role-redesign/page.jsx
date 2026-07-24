@@ -8,6 +8,9 @@ import case1img from '../../../assets/images/inner-services-images/SAP-Access-ma
 import case2img from '../../../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/sod-role-redesign",
+  },
   title: "SAP SoD Role Redesign & Access Governance | s4access",
   description: "Break the SAP role redesign cycle for good. Root cause analysis, SoD-compliant access design and evergreen role governance for Nordic SAP organisations.",
 };

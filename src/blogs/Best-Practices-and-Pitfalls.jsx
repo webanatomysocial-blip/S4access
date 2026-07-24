@@ -8,8 +8,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Managing Public Views In Fiori S/4HANA: Best Practices And Pitfalls | s4access",
-  description: "In SAP S/4HANA Fiori apps—whether standard or extended—public views play a key role in tailoring user experiences. These views can be created with a transport request (TR) and mapped to user-specific roles, ensuring that only authorized users with the appropriate roles can access them.",
+  title: "SAP Access Management: Best Practices and Common Pitfalls | s4access",
+  description: "Understand SAP access control best practices, avoid costly mistakes, and strengthen compliance with effective access governance.",
 };
 
 

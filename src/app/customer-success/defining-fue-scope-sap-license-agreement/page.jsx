@@ -7,6 +7,9 @@ import img12 from '../../../assets/images/success-images/sapLicen/2694.jpg'
 import img13 from '../../../assets/images/success-images/sapLicen/6536.jpg'
 
 export const metadata = {
+  alternates: {
+    canonical: "/customer-success/defining-fue-scope-sap-license-agreement",
+  },
   title: "Defining FUE scope for SAP license agreement | s4access",
   description: "How s4access supported a Scandinavian stock-listed company in defining the scope of Full Use Equivalent (FUE) licensing for a new SAP license agreement.",
   openGraph: {

@@ -1,47 +1,61 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "../index.css";
-import '../css/App.css';
+import "../css/App.css";
 import LenisProvider from "../components/LenisProvider";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 
 export const metadata = {
-  metadataBase: new URL('https://s4access.com'),
+  metadataBase: new URL("https://s4access.com"),
   title: "Leading SAP Access Management Specialists | s4access",
-  description: "Welcome to s4access, your go-to solution for SAP access management!",
+  description:
+    "Welcome to s4access, your go-to solution for SAP access management!",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Leading SAP Access Management Specialists | s4access",
-    description: "Welcome to s4access, your go-to solution for SAP access management!",
-    url: 'https://s4access.com',
-    siteName: 's4access',
+    description:
+      "Welcome to s4access, your go-to solution for SAP access management!",
+    url: "https://s4access.com",
+    siteName: "s4access",
     images: [
       {
-        url: '/images/black-logo-400.png',
+        url: "/images/black-logo-400.png",
         width: 400,
         height: 400,
-        alt: 's4access logo',
+        alt: "s4access logo",
       },
     ],
-    type: 'website',
+    type: "website",
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 import Script from "next/script";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
           rel="stylesheet"
         />
         {/* Google Tag Manager */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
+        <Script id="google-tag-manager" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -66,13 +80,13 @@ export default function RootLayout({ children }) {
           strategy="lazyOnload"
         />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         {/* Google Tag Manager (noscript) */}
         <noscript>
-          <iframe 
-            src="https://www.googletagmanager.com/ns.html?id=GTM-T4BT5FC9" 
-            height="0" 
-            width="0" 
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-T4BT5FC9"
+            height="0"
+            width="0"
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>

@@ -8,6 +8,9 @@ import whoweare from '../../assets/images/About-img/Who-We-Are.jpg';
 import TeamSection from '../../components/TeamSection';
 
 export const metadata = {
+  alternates: {
+    canonical: "/about",
+  },
   title: "About Us – s4access SAP Access Management",
   description: "Learn about s4access, our core principles, and the team redefining SAP access management with deep expertise and innovative solutions.",
 };

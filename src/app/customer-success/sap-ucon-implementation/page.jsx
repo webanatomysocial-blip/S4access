@@ -7,8 +7,11 @@ import img2 from '../../../assets/images/success-images/17.jpg';
 import img3 from '../../../assets/images/success-images/16.jpg';
 
 export const metadata = {
-  title: "SAP UCON Implementation – Reducing the Attack Surface in Production | s4access",
-  description: "s4access successfully deployed SAP UCON in a production environment, identifying 47,000 RFMs and whitelisting only the 1,500 business-critical ones, reducing the attack surface by over 95%.",
+  alternates: {
+    canonical: "/customer-success/sap-ucon-implementation",
+  },
+  title: "SAP UCON Implementation Case Study | Improve SAP Security | s4access",
+  description: "See how s4access delivered SAP UCON implementation to enhance security, control access, improve compliance, and reduce system risks.",
   openGraph: {
     images: [{ url: img1.src }]
   }

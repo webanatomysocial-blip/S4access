@@ -7,6 +7,9 @@ import ServiceTabs from "../components/ServiceTabs";
 import Blogs from "../components/Blog";
 
 export const metadata = {
+  alternates: {
+    canonical: "/",
+  },
   title: "SAP Access Management & SoD Specialists | Nordic | s4access",
   description: "Finland-based SAP access management specialists for Nordic enterprises. SoD strategy, S/4HANA design, licence optimisation and firefighter log automation.",
   keywords: "sap access management, sap access management automation, sap license optimisation, sap s/4hana security, sod management, sap sod, firefighter access sap, sap access risk management, sap consulting finland, sap security architect"

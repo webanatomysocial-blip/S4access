@@ -9,6 +9,9 @@ import case1img from '../../../assets/images/inner-services-images/SAP-Access-ma
 import case2img from '../../../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/ff-log-review-automation",
+  },
   title: "SAP GRC Firefighter Log Review Automation | s4access",
   description: "Automate SAP GRC firefighter log reviews. Operational within weeks, 80–92% automated approval rates, fixed monthly fee and validated by major audit firms.",
 };

@@ -8,6 +8,9 @@ import img2 from '../../../assets/images/success-images/2.jpg'
 import img3 from '../../../assets/images/success-images/3.jpg'
 
 export const metadata = {
+  alternates: {
+    canonical: "/customer-success/s4-hana-fiori-transformation",
+  },
   title: "From Failed Go-Live to Full Fiori Adoption | s4access",
   description: "How s4access rescued a failed SAP S/4HANA go-live reengineered role design, GRC implementation, SoD checks and full transition from SAP GUI to Fiori.",
   openGraph: {

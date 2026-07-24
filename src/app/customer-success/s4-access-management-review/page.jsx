@@ -8,6 +8,9 @@ import img8 from '../../../assets/images/success-images/8.jpg';
 import img9 from '../../../assets/images/success-images/9.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/customer-success/s4-access-management-review",
+  },
   title: "Critical SAP Access Issues Found How s4access Fixed Them | s4access",
   description: "External audit uncovered critical SAP S/4 access issues. s4access delivered governance, process and technical review with prioritized improvement roadmap.",
   openGraph: {

@@ -8,6 +8,9 @@ import img10 from '../../../assets/images/success-images/10.jpg';
 import img11 from '../../../assets/images/success-images/11.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/customer-success/sap-authorisation-concept-owner",
+  },
   title: "SAP Licence Optimisation for Steel Manufacturer | s4access",
   description: "See how s4access restructured SAP authorization ownership, reducing SAP_ALL usage, optimizing licenses, and strengthening compliance.",
   openGraph: {

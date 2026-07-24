@@ -7,7 +7,7 @@ import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
   title: "SAP Access Governance SoD Risk in Controls | s4access",
-  description: "SAP Access Governance SoD Risk exposes control gaps where users can create and approve transactions, increasing fraud risk and audit exposure in SAP system now",
+  description: "SAP Access Governance SoD Risk reveals control gaps where users can create and approve transactions, increasing fraud and audit risks.",
 };
 
 

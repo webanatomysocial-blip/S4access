@@ -7,8 +7,8 @@ import cta from "../blogs/blogs-images/Group.png";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Autumn 2025 Outlook: Navigating SAP Security And Access Management In A New Market Reality – Is There A Way Forward ? | s4access",
-  description: "Explore SAP security and access management in Autumn 2025’s cost-conscious market. Learn key challenges, solutions, and a proactive approach to optimize SAP systems.",
+  title: "Autumn 2025 Outlook: SAP Security & Access Governance | s4access",
+  description: "Explore the Autumn 2025 Outlook with insights on SAP security, access governance, compliance trends, and strategies for reducing business risks.",
 };
 
 

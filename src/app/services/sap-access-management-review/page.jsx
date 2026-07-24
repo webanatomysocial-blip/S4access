@@ -19,6 +19,9 @@ import {    FaUserPlus,
 } from "react-icons/fa";
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/sap-access-management-review",
+  },
   title: "SAP Access Management Review & Audit Consulting | s4access",
   description: "Get a clear view of your SAP access management. Governance, process and technical review with actionable plan to improve compliance, security and reduce costs.",
 };

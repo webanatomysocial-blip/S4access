@@ -16,6 +16,15 @@ import {
 } from "react-icons/fa";
 import image from '../../assets/images/About-img/Access.png';
 
+export const metadata = {
+  title: "S4accessprojects | s4access",
+  description: "Learn more about S4accessprojects services and expertise from s4access.",
+  alternates: {
+    canonical: "/s4accessprojects",
+  },
+};
+
+
 export default function S4AccessArchitectureDesign() {
 
 

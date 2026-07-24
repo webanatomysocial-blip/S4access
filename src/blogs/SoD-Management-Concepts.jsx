@@ -8,8 +8,8 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate";
 
 export const metadata = {
-  title: "SoD Management Concepts: Keeping Access Risks Under Control | s4access",
-  description: "Segregation of Duties (SoD) is a foundational internal control designed to reduce the risk of errors, fraud, and misuse of authority. In simple terms, it ensures that no single user has end-to-end control over a critical business process.",
+  title: "SoD Management Concepts in SAP | Reduce Access Risks Today",
+  description: "Understand SAP SoD Management Concepts, reduce segregation of duties risks, improve compliance, and strengthen access governance controls.",
 };
 
 export default function Blog2() {

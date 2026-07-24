@@ -9,6 +9,9 @@ import case1img from '../../../assets/images/inner-services-images/SAP-Access-ma
 import case2img from '../../../assets/images/inner-services-images/SAP-Access-managment-review-case2.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/sap-access-management-automation",
+  },
   title: "SAP Access Management Automation Consulting | s4access",
   description: "Automate SAP access management the right way. Tool selection, vendor evaluation and technology strategy aligned to your SoD governance and compliance needs.",
 };

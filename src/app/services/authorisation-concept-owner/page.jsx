@@ -19,6 +19,9 @@ import {
 import image from '../../../assets/images/inner-services-images/authorisation-concept-owner-banner.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/authorisation-concept-owner",
+  },
   title: "SAP Authorization Concept Owner Service | s4access",
   description: "Struggling to fill your SAP Authorization Concept Owner role? Outsourced service delivering SAP expertise, audit compliance and licence cost savings daily.",
 };

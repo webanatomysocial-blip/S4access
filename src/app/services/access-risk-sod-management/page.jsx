@@ -9,6 +9,9 @@ import case2img from '../../../assets/images/inner-services-images/SAP-Access-ma
 import image from '../../../assets/images/inner-services-images/access-risk-sod-management-banner.jpg';
 
 export const metadata = {
+  alternates: {
+    canonical: "/services/access-risk-sod-management",
+  },
   title: "SAP Access Risk & SoD Management Solutions | s4access",
   description: "Identify and prevent SAP SoD conflicts with a fully managed access risk service. Operational within weeks, no specialist skills needed and fixed monthly fee.",
 };
