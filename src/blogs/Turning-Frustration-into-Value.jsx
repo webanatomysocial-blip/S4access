@@ -8,7 +8,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Turning Frustration into Value with Smarter SAP Access | s4access",
+  title: "Turning Frustration into Value with Smarter SAP Access",
   description: "Explore practical strategies to overcome SAP access challenges, improve governance, reduce risks, and create lasting business value.",
 };
 

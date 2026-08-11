@@ -5,7 +5,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Your Partner for Efficient SAP Access | s4access",
+  title: "Your Partner for Efficient SAP Access",
   description: "See how s4access simplifies SAP access management with secure user provisioning, stronger governance, improved compliance, and reduced risks.",
 };
 

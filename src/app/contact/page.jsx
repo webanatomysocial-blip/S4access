@@ -4,7 +4,7 @@ export const metadata = {
   alternates: {
     canonical: "/contact",
   },
-  title: "Contact us SAP Access Management Specialist | s4access",
+  title: "Contact us SAP Access Management Specialist",
   description: "Get in touch with s4access – SAP access governance & compliance\nspecialists. Fill out our contact form or call us to secure your enterprise access management",
 };
 

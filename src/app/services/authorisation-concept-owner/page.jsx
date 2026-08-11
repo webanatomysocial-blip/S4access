@@ -22,7 +22,7 @@ export const metadata = {
   alternates: {
     canonical: "/services/authorisation-concept-owner",
   },
-  title: "SAP Authorization Concept Owner Service | s4access",
+  title: "SAP Authorization Concept Owner Service",
   description: "Struggling to fill your SAP Authorization Concept Owner role? Outsourced service delivering SAP expertise, audit compliance and licence cost savings daily.",
 };
 

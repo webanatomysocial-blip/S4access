@@ -6,7 +6,7 @@ import cta from "../blogs/blogs-images/Group.png";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "SAP Access Governance SoD Risk in Controls | s4access",
+  title: "SAP Access Governance SoD Risk in Controls",
   description: "SAP Access Governance SoD Risk reveals control gaps where users can create and approve transactions, increasing fraud and audit risks.",
 };
 

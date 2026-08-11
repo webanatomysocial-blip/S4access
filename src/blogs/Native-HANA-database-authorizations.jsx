@@ -6,7 +6,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Native HANA Database Authorizations | s4access",
+  title: "Native HANA Database Authorizations",
   description: "When creating HANA database users and authorizations for custom-made schema structures",
 };
 

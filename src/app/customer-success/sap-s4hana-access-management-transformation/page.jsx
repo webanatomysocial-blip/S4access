@@ -10,7 +10,7 @@ export const metadata = {
   alternates: {
     canonical: "/customer-success/sap-s4hana-access-management-transformation",
   },
-  title: "SAP S/4HANA Access Management Transformation | s4access",
+  title: "SAP S/4HANA Access Management Transformation",
   description: "Read how s4access helped a public sector organization successfully deliver a secure, audit-ready SAP S/4HANA access management transformation.",
   openGraph: {
     images: [
@@ -86,7 +86,7 @@ const S4HanaAccessManagementTransformation = () => {
         "name": "Public Sector Organization"
       },
       "itemReviewed": {
-        "@type": "Service",
+        "@type": "Product",
         "name": "SAP Access Management Services"
       }
     }

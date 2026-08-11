@@ -12,7 +12,7 @@ export const metadata = {
   alternates: {
     canonical: "/services/security-architect",
   },
-  title: "SAP Security Architect & Architecture Consulting | s4access",
+  title: "SAP Security Architect & Architecture Consulting",
   description: "Hard to find a qualified SAP Security Architect? Ongoing consulting to build and maintain your SAP security architecture, compliance and access governance.",
 };
 

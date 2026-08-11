@@ -17,7 +17,7 @@ import {
 import image from '../../../assets/images/About-img/Access.png';
 
 export const metadata = {
-  title: "S4 Access Architecture Design | s4access",
+  title: "S4 Access Architecture Design",
   description: "Learn more about S4 Access Architecture Design services and expertise from s4access.",
   alternates: {
     canonical: "/services/s4-access-architecture-design",

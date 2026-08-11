@@ -8,7 +8,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "SAP Access Management: Best Practices and Common Pitfalls | s4access",
+  title: "SAP Access Management: Best Practices and Common Pitfalls",
   description: "Understand SAP access control best practices, avoid costly mistakes, and strengthen compliance with effective access governance.",
 };
 
@@ -70,12 +70,12 @@ export default function Blog4() {
               To maintain governance and consistency, public views should be
               created in the Development system by the AMS team, based on a
               Ticket raised by the business key user. This ensures:
-              <ul>
-                <li>Proper testing and validation</li>
-                <li>Adherence to naming conventions</li>
-                <li>Controlled deployment through the landscape</li>
-              </ul>
             </p>
+            <ul>
+              <li>Proper testing and validation</li>
+              <li>Adherence to naming conventions</li>
+              <li>Controlled deployment through the landscape</li>
+            </ul>
           </section>
 
           <section>
@@ -84,36 +84,36 @@ export default function Blog4() {
               While SAP allows business users -including key users -to create
               public views directly in the Production environment, this
               flexibility comes with limitations and risks:
-              <ul>
-                <li>Role-specific views cannot be created in Production</li>
-                <li>Untested changes may be introduced without oversight</li>
-                <li>Naming conventions are often ignored</li>
-                <li>Hundreds of views per app can accumulate rapidly</li>
-                <li>App loading times may suffer due to excessive views</li>
-                <li>
-                  User confusion grows as more views clutter the interface
-                </li>
-                <li>Monitoring overhead increases significantly</li>
-              </ul>
             </p>
+            <ul>
+              <li>Role-specific views cannot be created in Production</li>
+              <li>Untested changes may be introduced without oversight</li>
+              <li>Naming conventions are often ignored</li>
+              <li>Hundreds of views per app can accumulate rapidly</li>
+              <li>App loading times may suffer due to excessive views</li>
+              <li>
+                User confusion grows as more views clutter the interface
+              </li>
+              <li>Monitoring overhead increases significantly</li>
+            </ul>
           </section>
 
           <section>
             <h2>Recommendation</h2>
             <p>
               To avoid these pitfalls, organizations should:
-              <ul>
-                <li>
-                  Centralize public view creation in the Development system
-                </li>
-                <li>Use structured service requests to initiate changes</li>
-                <li>
-                  Limit direct creation in Production to specific, well-trained
-                  users
-                </li>
-                <li>Regularly audit and clean up unused or redundant views</li>
-              </ul>
             </p>
+            <ul>
+              <li>
+                Centralize public view creation in the Development system
+              </li>
+              <li>Use structured service requests to initiate changes</li>
+              <li>
+                Limit direct creation in Production to specific, well-trained
+                users
+              </li>
+              <li>Regularly audit and clean up unused or redundant views</li>
+            </ul>
             <p>
               By following these practices, you can ensure a clean, performant,
               and user-friendly Fiori experience across your{" "}

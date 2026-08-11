@@ -6,7 +6,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "SAP User Access Lifecycle: Improve Security & Compliance | s4access",
+  title: "SAP User Access Lifecycle: Improve Security & Compliance",
   description: "Understand the SAP User Access Lifecycle and learn how effective access management reduces risks, strengthens compliance, and improves security.",
 };
 export default function SAPUserAccessLifecycle() {

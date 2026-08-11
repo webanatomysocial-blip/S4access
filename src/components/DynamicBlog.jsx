@@ -82,17 +82,17 @@ export default function DynamicBlog() {
   }
 
   // Build absolute image URL (ensure full URL)
-  const imageSrc = typeof metadata?.image === "string" ? metadata.image : (metadata?.image?.src ?? "");
+  const imageSrc =
+    typeof metadata?.image === "string"
+      ? metadata.image
+      : (metadata?.image?.src ?? "");
   const imageUrl =
     imageSrc &&
-    (imageSrc.startsWith("http://") ||
-      imageSrc.startsWith("https://"))
+    (imageSrc.startsWith("http://") || imageSrc.startsWith("https://"))
       ? imageSrc
       : imageSrc
-      ? `${SITE_ORIGIN}${imageSrc.startsWith("/") ? "" : "/"}${
-          imageSrc
-        }`
-      : `${SITE_ORIGIN}/images/black-logo-400.png`;
+        ? `${SITE_ORIGIN}${imageSrc.startsWith("/") ? "" : "/"}${imageSrc}`
+        : `${SITE_ORIGIN}/images/black-logo-400.png`;
 
   const pageUrl = `${SITE_ORIGIN}/blogs/${metadata?.slug ?? metadata?.id ?? blogName}`;
 
@@ -133,17 +133,14 @@ export default function DynamicBlog() {
   return (
     <>
       <Helmet>
-        <title>{(metadata?.title ?? "Blog") + " | s4access"}</title>
+        <title>{metadata?.title ?? "Blog"}</title>
         <meta name="description" content={description} />
         {metadata?.keywords && (
           <meta name="keywords" content={metadata.keywords} />
         )}
         <link rel="canonical" href={pageUrl} />
 
-        <meta
-          property="og:title"
-          content={`${metadata?.title ?? "Blog"} | s4access`}
-        />
+        <meta property="og:title" content={`${metadata?.title ?? "Blog"}`} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={imageUrl} />
         <meta property="og:image:secure_url" content={imageUrl} />
@@ -152,7 +149,7 @@ export default function DynamicBlog() {
         <meta property="og:image:height" content="627" />
         <meta
           property="og:image:alt"
-          content={`${metadata?.title ?? "Blog"} - s4access`}
+          content={`${metadata?.title ?? "Blog"}`}
         />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:type" content="article" />

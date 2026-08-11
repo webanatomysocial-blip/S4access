@@ -8,7 +8,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Building Display Roles The Smart Way In SAP S/4HANA | s4access",
+  title: "Building Display Roles The Smart Way In SAP S/4HANA",
   description: "Build SAP S/4HANA display roles the smart way with best practices that improve security, simplify access management, and support compliance.",
 };
 

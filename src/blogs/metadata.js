@@ -64,7 +64,8 @@ export const blogMetadata = [
   },
   {
     id: "RICEFW-Security-Guidelines",
-    title: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part I",
+    title: "RICEFW Security Guidelines: Part I",
+    metaTitle: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part I",
     slug: "ricefw-security-guidelines-building-security-into-custom-developments-part-i",
     metaDescription: "Build secure SAP custom solutions with RICEFW security guidelines that minimize vulnerabilities, strengthen controls, and support compliance.",
     excerpt: "When talking about SAP security, most conversations revolve around roles, authorizations, and segregation of duties. But there’s another critical piece that often slips under the radar: RICEFW objects.",

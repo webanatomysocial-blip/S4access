@@ -5,12 +5,13 @@ import HomeSlidersMobile from '../components/HomeSlidersMobile';
 import Link from "next/link";
 import ServiceTabs from "../components/ServiceTabs";
 import Blogs from "../components/Blog";
+import HomeQuizPopup from "../components/HomeQuizPopup";
 
 export const metadata = {
   alternates: {
     canonical: "/",
   },
-  title: "SAP Access Management & SoD Specialists | Nordic | s4access",
+  title: "SAP Access Management & SoD Specialists | Nordic",
   description: "Finland-based SAP access management specialists for Nordic enterprises. SoD strategy, S/4HANA design, licence optimisation and firefighter log automation.",
   keywords: "sap access management, sap access management automation, sap license optimisation, sap s/4hana security, sod management, sap sod, firefighter access sap, sap access risk management, sap consulting finland, sap security architect"
 };
@@ -18,6 +19,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
+      <HomeQuizPopup />
       {/* carousel section start */}
       <HomeSlider />
       <HomeSlidersMobile />

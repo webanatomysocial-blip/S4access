@@ -11,7 +11,7 @@ export const metadata = {
   alternates: {
     canonical: "/customer-success/s4-transition-analysis",
   },
-  title: "SAP S/4 Transition Analysis Zero Disruptions | s4access",
+  title: "SAP S/4 Transition Analysis Zero Disruptions",
   description: "A multinational material handling company used SAP S/4 transition analysis to plan resources optimally, assess Fiori readiness and prevent project disruptions",
   openGraph: {
     images: [

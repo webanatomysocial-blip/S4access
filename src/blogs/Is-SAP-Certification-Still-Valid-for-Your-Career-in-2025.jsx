@@ -7,7 +7,7 @@ import cta from "../blogs/blogs-images/Group.png";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Is The SAP Certification Still Valid For Your Career In 2025? | s4access",
+  title: "Is The SAP Certification Still Valid For Your Career In 2025?",
   description: "Discover if SAP certification is still worth it in 2025. Explore industry demand, SAP’s evolution, career benefits, and why continuous learning is key.",
 };
 

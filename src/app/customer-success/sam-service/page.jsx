@@ -21,7 +21,7 @@ export const metadata = {
   alternates: {
     canonical: "/customer-success/sam-service",
   },
-  title: "Zero Audit Observations: SAP Access Management | s4access",
+  title: "Zero Audit Observations: SAP Access Management",
   description: "Achieved zero audit observations after outsourcing SAP access management structured governance, SoD automation and GDPR monitoring delivered by s4access.",
   openGraph: {
     images: [

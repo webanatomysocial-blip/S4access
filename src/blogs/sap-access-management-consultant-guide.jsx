@@ -6,7 +6,7 @@ import FAQTemplate from "../components/FAQTemplate.jsx";
 import cta from "../blogs/blogs-images/Group.png";
 
 export const metadata = {
-  title: "How to Choose the Right SAP Access Consultant Guide | s4access",
+  title: "How to Choose the Right SAP Access Consultant Guide",
   description: "Find the right SAP Access Consultant to strengthen SAP Security, improve GRC compliance, reduce risks, and support business growth.",
 };
 

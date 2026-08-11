@@ -12,7 +12,7 @@ export const metadata = {
   alternates: {
     canonical: "/services/sap-access-management-automation",
   },
-  title: "SAP Access Management Automation Consulting | s4access",
+  title: "SAP Access Management Automation Consulting",
   description: "Automate SAP access management the right way. Tool selection, vendor evaluation and technology strategy aligned to your SoD governance and compliance needs.",
 };
 

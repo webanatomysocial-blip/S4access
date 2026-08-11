@@ -68,14 +68,14 @@ export async function generateMetadata({ params }) {
   const imageUrl = typeof metadata.image === 'string' ? metadata.image : (metadata.image?.src || "/images/black-logo-400.png");
 
   return {
-    title: `${metadata.metaTitle || metadata.title} | s4access`,
+    title: `${metadata.metaTitle || metadata.title}`,
     description,
     keywords: metadata.keywords || "",
     alternates: {
       canonical: `/blogs/${slug}`,
     },
     openGraph: {
-      title: `${metadata.metaTitle || metadata.title} | s4access`,
+      title: `${metadata.metaTitle || metadata.title}`,
       description,
       url: `https://s4access.com/blogs/${slug}`,
       images: [

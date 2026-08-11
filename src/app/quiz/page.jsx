@@ -5,7 +5,7 @@ export const metadata = {
   alternates: {
     canonical: "/quiz",
   },
-  title: "SAP Access Governance Maturity Quiz | s4access",
+  title: "SAP Access Governance Maturity Quiz",
   description: "Take the SAP Access Governance Maturity Quiz to benchmark your organization.",
 };
 

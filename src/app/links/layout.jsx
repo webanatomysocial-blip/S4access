@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Links | s4access",
+  title: "Links",
   description: "All your s4access links in one place.",
   alternates: {
     canonical: "/links",

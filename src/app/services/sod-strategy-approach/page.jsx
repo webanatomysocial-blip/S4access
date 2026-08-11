@@ -13,7 +13,7 @@ export const metadata = {
   alternates: {
     canonical: "/services/sod-strategy-approach",
   },
-  title: "SAP SoD Strategy & Access Governance Consulting | s4access",
+  title: "SAP SoD Strategy & Access Governance Consulting",
   description: "Build a proactive SAP SoD strategy. Governance frameworks, tool selection, audit-ready access controls and continuous SoD compliance for Nordic companies.",
 };
 

@@ -8,7 +8,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Typical Challenges In Approving SAP Access Requests | s4access",
+  title: "Typical Challenges In Approving SAP Access Requests",
   description: "Explore the common challenges organizations face when approving SAP access requests. Learn best practices to streamline the process and enhance security.",
 };
 

@@ -11,7 +11,7 @@ export const metadata = {
   alternates: {
     canonical: "/customer-success/sap-authorisation-concept-owner",
   },
-  title: "SAP Licence Optimisation for Steel Manufacturer | s4access",
+  title: "SAP Licence Optimisation for Steel Manufacturer",
   description: "See how s4access restructured SAP authorization ownership, reducing SAP_ALL usage, optimizing licenses, and strengthening compliance.",
   openGraph: {
     images: [

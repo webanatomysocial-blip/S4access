@@ -11,7 +11,7 @@ export const metadata = {
   alternates: {
     canonical: "/careers",
   },
-  title: "SAP Access Management Careers | s4access\n        ",
+  title: "SAP Access Management Careers\n        ",
   description: "Join S4Access and build your career in SAP consulting. Explore exciting opportunities, grow your skills, and make an impact with our team.",
 };
 

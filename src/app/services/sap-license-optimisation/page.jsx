@@ -12,7 +12,7 @@ export const metadata = {
   alternates: {
     canonical: "/services/sap-license-optimisation",
   },
-  title: "SAP License Optimisation & S/4HANA Cost Reduction | s4access",
+  title: "SAP License Optimisation & S/4HANA Cost Reduction",
   description: "Reduce SAP licensing costs with SAP License Optimisation services. Improve license utilization, ensure compliance, and maximize ROI with S4Access.",
 };
 

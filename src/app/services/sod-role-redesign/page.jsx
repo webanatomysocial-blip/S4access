@@ -11,7 +11,7 @@ export const metadata = {
   alternates: {
     canonical: "/services/sod-role-redesign",
   },
-  title: "SAP SoD Role Redesign & Access Governance | s4access",
+  title: "SAP SoD Role Redesign & Access Governance",
   description: "Break the SAP role redesign cycle for good. Root cause analysis, SoD-compliant access design and evergreen role governance for Nordic SAP organisations.",
 };
 

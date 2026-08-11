@@ -7,7 +7,7 @@ import cta from "../blogs/blogs-images/Group.png";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Autumn 2025 Outlook: SAP Security & Access Governance | s4access",
+  title: "Autumn 2025 Outlook: SAP Security & Access Governance",
   description: "Explore the Autumn 2025 Outlook with insights on SAP security, access governance, compliance trends, and strategies for reducing business risks.",
 };
 

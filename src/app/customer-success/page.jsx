@@ -10,7 +10,7 @@ export const metadata = {
   alternates: {
     canonical: "/customer-success",
   },
-  title: "SAP Access Management Customer Success Stories | s4access",
+  title: "SAP Access Management Customer Success Stories",
   description: "See how Nordic companies achieve long-term SAP access management success with s4access. Real customer results, easy onboarding and partnerships built to last.",
 };
 

@@ -6,7 +6,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "The Hidden Cost of Manual SAP Access Management | s4access",
+  title: "The Hidden Cost of Manual SAP Access Management",
   description: "Manual SAP Access Management creates security risks and operational inefficiencies. See how SAP Access Management Automation helps reduce costs.",
 };
 

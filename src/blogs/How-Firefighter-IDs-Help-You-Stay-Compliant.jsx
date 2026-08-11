@@ -7,7 +7,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "Why SAP Firefighter IDs Are Essential for Secure Access | s4access",
+  title: "Why SAP Firefighter IDs Are Essential for Secure Access",
   description: "Discover how SAP Firefighter IDs help control emergency access, improve compliance, reduce audit risks, and strengthen SAP security",
 };
 

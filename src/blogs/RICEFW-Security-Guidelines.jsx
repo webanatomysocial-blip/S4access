@@ -9,7 +9,7 @@ import '../css/Header.css';
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part I | s4access",
+  title: "RICEFW Security Guidelines: Building Security Into Custom Developments – Part I",
   description: "Build secure SAP custom solutions with RICEFW security guidelines that minimize vulnerabilities, strengthen controls, and support compliance.",
 };
 

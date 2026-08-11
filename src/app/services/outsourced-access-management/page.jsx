@@ -12,7 +12,7 @@ export const metadata = {
   alternates: {
     canonical: "/services/outsourced-access-management",
   },
-  title: "Outsourced SAP Access Management & Governance | s4access",
+  title: "Outsourced SAP Access Management & Governance",
   description: "Enhance SAP security with outsourced access management services. Reduce risks, improve compliance, and optimize user access controls.",
 };
 

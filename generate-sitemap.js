@@ -25,14 +25,7 @@ const staticRoutes = [
   { url: '/ff-log-review-automation', changefreq: 'monthly', priority: 0.7 },
   { url: '/sap-license-optimisation', changefreq: 'monthly', priority: 0.7 },
   { url: '/s4accessprojects', changefreq: 'monthly', priority: 0.7 },
-  { url: '/customer-success/sap-authorisation-concept-owner', changefreq: 'monthly', priority: 0.7 },
-  { url: '/customer-success/s4-access-management-review', changefreq: 'monthly', priority: 0.7 },
-  { url: '/customer-success/s4-transition-analysis', changefreq: 'monthly', priority: 0.7 },
-  { url: '/customer-success/s4-hana-fiori-transformation', changefreq: 'monthly', priority: 0.7 },
-  { url: '/customer-success/stabilising-sap-access-at-scale', changefreq: 'monthly', priority: 0.7 },
-  { url: '/customer-success/sam-service', changefreq: 'monthly', priority: 0.7 },
   { url: '/customer-success/sap-ucon-implementation', changefreq: 'monthly', priority: 0.7 },
-  { url: '/customer-success/sap-s4hana-access-management-transformation', changefreq: 'monthly', priority: 0.7 },
 ];
 
 // Generate sitemap
@@ -63,7 +56,30 @@ const staticRoutes = [
     console.error('Error parsing blogs metadata for sitemap:', err);
   }
 
-  const allRoutes = [...staticRoutes, ...dynamicBlogRoutes];
+  // Parse dynamic customer-success routes from customerSuccessMetadata
+  const dynamicCustomerSuccessRoutes = [];
+  try {
+    const metadataContent = readFileSync('./src/coustomer-pages/metadata.js', 'utf8');
+    const cleanContent = metadataContent
+      .split('\n')
+      .filter(line => !line.trim().startsWith('//'))
+      .join('\n');
+
+    const caseBlockRegex = /\{[\s\S]*?link:\s*["']([^"']+)["'][\s\S]*?\}/g;
+    let caseMatch;
+    while ((caseMatch = caseBlockRegex.exec(cleanContent)) !== null) {
+      const link = caseMatch[1];
+      dynamicCustomerSuccessRoutes.push({
+        url: link,
+        changefreq: 'monthly',
+        priority: 0.7,
+      });
+    }
+  } catch (err) {
+    console.error('Error parsing customer-success metadata for sitemap:', err);
+  }
+
+  const allRoutes = [...staticRoutes, ...dynamicBlogRoutes, ...dynamicCustomerSuccessRoutes];
 
   try {
     const stream = new SitemapStream({ hostname: 'https://s4access.com' });

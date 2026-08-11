@@ -7,7 +7,7 @@ import Link from "next/link";
 import FAQTemplate from "../components/FAQTemplate.jsx";
 
 export const metadata = {
-  title: "s4access Growth Journey with Customers in 2025 | s4access",
+  title: "s4access Growth Journey with Customers in 2025",
   description: "Read how s4access supported customers with SAP access management, security improvements, and long-term business success over the year.",
 };
 

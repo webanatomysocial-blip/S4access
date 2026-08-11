@@ -12,7 +12,7 @@ export const metadata = {
   alternates: {
     canonical: "/services/sap-s4-access-implementation",
   },
-  title: "SAP S/4HANA Access Implementation & Role Design | s4access",
+  title: "SAP S/4HANA Access Implementation & Role Design",
   description: "Secure and compliant SAP S/4HANA access implementation. Expert role design, Fiori authorisation, governance and security roadmap by Nordic SAP specialists.",
 };
 

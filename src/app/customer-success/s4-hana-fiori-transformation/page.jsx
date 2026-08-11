@@ -11,7 +11,7 @@ export const metadata = {
   alternates: {
     canonical: "/customer-success/s4-hana-fiori-transformation",
   },
-  title: "From Failed Go-Live to Full Fiori Adoption | s4access",
+  title: "From Failed Go-Live to Full Fiori Adoption",
   description: "How s4access rescued a failed SAP S/4HANA go-live reengineered role design, GRC implementation, SoD checks and full transition from SAP GUI to Fiori.",
   openGraph: {
     images: [

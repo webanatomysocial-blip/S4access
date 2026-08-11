@@ -9,14 +9,14 @@ import ScrollToTop from "../components/ScrollToTop";
 
 export const metadata = {
   metadataBase: new URL("https://s4access.com"),
-  title: "Leading SAP Access Management Specialists | s4access",
+  title: "Leading SAP Access Management Specialists",
   description:
     "Welcome to s4access, your go-to solution for SAP access management!",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Leading SAP Access Management Specialists | s4access",
+    title: "Leading SAP Access Management Specialists",
     description:
       "Welcome to s4access, your go-to solution for SAP access management!",
     url: "https://s4access.com",

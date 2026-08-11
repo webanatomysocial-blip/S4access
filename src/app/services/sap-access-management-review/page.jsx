@@ -22,7 +22,7 @@ export const metadata = {
   alternates: {
     canonical: "/services/sap-access-management-review",
   },
-  title: "SAP Access Management Review & Audit Consulting | s4access",
+  title: "SAP Access Management Review & Audit Consulting",
   description: "Get a clear view of your SAP access management. Governance, process and technical review with actionable plan to improve compliance, security and reduce costs.",
 };
 

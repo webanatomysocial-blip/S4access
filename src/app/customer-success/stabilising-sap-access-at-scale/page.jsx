@@ -17,7 +17,7 @@ export const metadata = {
   alternates: {
     canonical: "/customer-success/stabilising-sap-access-at-scale",
   },
-  title: "SAP S/4HANA Access Redesign for Global Manufacturer | s4access",
+  title: "SAP S/4HANA Access Redesign for Global Manufacturer",
   description:
     "How s4access redesigned SAP authorization concept for a global manufacturer — 4,000+ users live across 6 European countries with less than 5% defect rate.",
   openGraph: {

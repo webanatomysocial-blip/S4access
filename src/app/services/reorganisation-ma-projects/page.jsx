@@ -12,7 +12,7 @@ export const metadata = {
   alternates: {
     canonical: "/services/reorganisation-ma-projects",
   },
-  title: "SAP Access Management for M&A & Reorganisation | s4access",
+  title: "SAP Access Management for M&A & Reorganisation",
   description: "Manage SAP access seamlessly during mergers, acquisitions, and reorganisations with expert support for security, compliance, and governance.",
 };
 
