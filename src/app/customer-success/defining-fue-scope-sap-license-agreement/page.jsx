@@ -21,73 +21,72 @@ export const metadata = {
 const DefiningFUEScope = () => {
   return (
     <div>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: `
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://s4access.com/customer-success/defining-fue-scope-sap-license-agreement/",
-      "url": "https://s4access.com/customer-success/defining-fue-scope-sap-license-agreement/",
-      "name": "Defining FUE Scope for SAP License Agreement",
-      "description": "Learn how a Scandinavian stock-listed company worked with s4access to define Full Use Equivalent (FUE) scope for an SAP license agreement and establish a practical framework for ongoing FUE management."
-    },
-    {
       "@type": "Article",
+      "@id": "https://s4access.com/customer-success/defining-fue-scope-sap-license-agreement#article",
+      "url": "https://s4access.com/customer-success/defining-fue-scope-sap-license-agreement",
       "headline": "Defining FUE Scope for SAP License Agreement",
-      "description": "A customer success story showing how s4access helped a Scandinavian stock-listed company define FUE scope, reduce licensing risk, and establish a sustainable approach to SAP FUE management.",
+      "description": "Learn how s4access helped define the right FUE scope for an SAP license agreement and provided specialist guidance to support accurate licensing decisions.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://s4access.com/_next/static/media/2149595842.0d_4-4w4k0udb.jpg"
+      },
+      "articleSection": "Customer Success",
+      "inLanguage": "en-US",
       "author": {
         "@type": "Organization",
-        "name": "s4access"
+        "@id": "https://s4access.com/#organization",
+        "name": "s4access",
+        "url": "https://s4access.com/"
       },
       "publisher": {
         "@type": "Organization",
+        "@id": "https://s4access.com/#organization",
         "name": "s4access",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://s4access.com/wp-content/uploads/logo.png"
-        }
+        "url": "https://s4access.com/"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://s4access.com/customer-success/defining-fue-scope-sap-license-agreement/"
-      },
-      "keywords": [
-        "SAP FUE",
-        "Full Use Equivalent",
-        "SAP Licensing",
-        "SAP License Agreement",
-        "SAP User Classification",
-        "SAP Access Management",
-        "SAP Licensing Optimization",
-        "SAP S/4HANA Licensing"
-      ]
+        "@id": "https://s4access.com/customer-success/defining-fue-scope-sap-license-agreement"
+      }
     },
     {
-      "@type": "Review",
-      "reviewBody": "Without the specialist support from s4access, we would not have been able to complete this work with the required level of confidence. Their expertise helped us not only to define the right scope, but also to understand how the model works and how to manage it going forward.",
-      "author": {
-        "@type": "Organization",
-        "name": "Scandinavian Stock-Listed Company"
-      },
-      "itemReviewed": {
-        "@type": "Product",
-        "name": "SAP FUE Scope Definition and Licensing Advisory Services"
-      },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      }
+      "@type": "BreadcrumbList",
+      "@id": "https://s4access.com/customer-success/defining-fue-scope-sap-license-agreement#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://s4access.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Customer Success",
+          "item": "https://s4access.com/customer-success/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Defining FUE Scope for SAP License Agreement",
+          "item": "https://s4access.com/customer-success/defining-fue-scope-sap-license-agreement"
+        }
+      ]
     }
   ]
 }
-            `,
-        }}
-      />
+    `,
+  }}
+/>
+
 
       <section className="Coustomer-success-page-hero-section">
         <div className="Coustomer-success-page-hero-container-left">

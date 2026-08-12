@@ -22,78 +22,71 @@ export const metadata = {
 const S4HanaAccessManagementTransformation = () => {
     return (
         <div>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `
+  <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
-      "@id": "https://s4access.com/customer-success/sap-s4hana-access-management-transformation/",
-      "url": "https://s4access.com/customer-success/sap-s4hana-access-management-transformation/",
-      "name": "SAP S/4HANA Access Management Transformation",
-      "description": "Learn how s4access helped a public sector organization transform SAP access management during a complex SAP ECC to S/4HANA migration, ensuring secure governance, compliant provisioning, and audit-ready access controls."
-    },
-    {
       "@type": "Article",
+      "@id": "https://s4access.com/customer-success/sap-s4hana-access-management-transformation#article",
+      "url": "https://s4access.com/customer-success/sap-s4hana-access-management-transformation",
       "headline": "SAP S/4HANA Access Management Transformation",
-      "description": "A customer success story demonstrating how s4access delivered end-to-end SAP access management, authorization redesign, governance improvements, and compliant access provisioning during an SAP ECC to S/4HANA transformation.",
+      "description": "Learn how s4access supported an SAP S/4HANA access management transformation to improve access governance and streamline SAP access management.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://s4access.com/_next/static/media/1.0wonmbjtqp5mr.jpg"
+      },
+      "articleSection": "Customer Success",
+      "inLanguage": "en-US",
       "author": {
         "@type": "Organization",
-        "name": "s4access"
+        "@id": "https://s4access.com/#organization",
+        "name": "s4access",
+        "url": "https://s4access.com/"
       },
       "publisher": {
         "@type": "Organization",
+        "@id": "https://s4access.com/#organization",
         "name": "s4access",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://s4access.com/wp-content/uploads/logo.png"
-        }
+        "url": "https://s4access.com/"
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://s4access.com/customer-success/sap-s4hana-access-management-transformation/"
-      },
-      "articleSection": "Customer Success",
-      "keywords": [
-        "SAP S/4HANA",
-        "SAP Access Management",
-        "SAP Authorization Management",
-        "SAP Security",
-        "SAP Governance",
-        "SAP ECC Migration",
-        "SAP Access Provisioning",
-        "SAP Role Design",
-        "SAP Compliance",
-        "SAP Audit Readiness"
-      ]
-    },
-    {
-      "@type": "Service",
-      "name": "SAP Access Management Services",
-      "provider": {
-        "@type": "Organization",
-        "name": "s4access",
-        "url": "https://s4access.com"
-      },
-      "serviceType": "SAP Access Management and SAP S/4HANA Transformation Support",
-      "description": "Specialist SAP access management services including authorization redesign, role cleanup, governance implementation, compliant access provisioning, and SAP S/4HANA transformation support."
-    },
-    {
-      "@type": "Review",
-      "reviewBody": "A stable and secure S/4HANA go-live with access management fully under control, enabling the business to operate without disruptions and meeting compliance expectations from day one.",
-      "author": {
-        "@type": "Organization",
-        "name": "Public Sector Organization"
-      },
-      "itemReviewed": {
-        "@type": "Product",
-        "name": "SAP Access Management Services"
+        "@id": "https://s4access.com/customer-success/sap-s4hana-access-management-transformation"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://s4access.com/customer-success/sap-s4hana-access-management-transformation#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://s4access.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Customer Success",
+          "item": "https://s4access.com/customer-success/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SAP S/4HANA Access Management Transformation",
+          "item": "https://s4access.com/customer-success/sap-s4hana-access-management-transformation"
+        }
+      ]
     }
   ]
 }
-            ` }} />
-
+    `,
+  }}
+/>
             <section className="Coustomer-success-page-hero-section">
                 <div className="Coustomer-success-page-hero-container-left">
                     <h1 className="big-heading-text-white">SAP S/4HANA Access Management Transformation</h1>

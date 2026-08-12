@@ -8,14 +8,7 @@ import imgS4Trans from '../assets/images/success-images/S4HanaAccessManagementTr
 import imgSapLicenHero from '../assets/images/success-images/sapLicen/2149595842.jpg';
 
 export const customerSuccessMetadata = [
-  {
-    id: 7,
-    title: "SAP S/4HANA Access Management Transformation",
-    description: "The customer, a public sector organization, was preparing for a major SAP ECC to S/4HANA transformation in a complex multi-system landscape. Secure and reliable access management was important for the program’s success because user access permissions needed to be cleaned up and redesigned. s4access proved to be an ideal choice for the customer as a dedicated specialist partner to fully manage access in the S/4 transformation process.",
-    image: imgS4Trans,
-    date: "2026-03-11",
-    link: "/customer-success/sap-s4hana-access-management-transformation"
-  },
+ 
   {
     id: 1,
     title: "SAP Authorization Concept Owner",
@@ -61,8 +54,16 @@ export const customerSuccessMetadata = [
     title: "S/4 Access Management Review",
     description: "The customer had initiated an SAP S/4 implementation project in collaboration with a large international service integrator. During the process, an external audit uncovered fundamental issues in SAP access management, raising concerns at the top management level.",
     image: imgAccessReview,
-    date: "2026-02-28",
+    date: "2026-08-28",
     link: "/customer-success/s4-access-management-review"
+  },
+   {
+    id: 7,
+    title: "SAP S/4HANA Access Management Transformation",
+    description: "The customer, a public sector organization, was preparing for a major SAP ECC to S/4HANA transformation in a complex multi-system landscape. Secure and reliable access management was important for the program’s success because user access permissions needed to be cleaned up and redesigned. s4access proved to be an ideal choice for the customer as a dedicated specialist partner to fully manage access in the S/4 transformation process.",
+    image: imgS4Trans,
+    date: "2026-03-11",
+    link: "/customer-success/sap-s4hana-access-management-transformation"
   },
   {
     id: 8,

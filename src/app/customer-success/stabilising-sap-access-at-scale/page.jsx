@@ -28,6 +28,71 @@ export const metadata = {
 const StabilisingSAPAccessAtScale = () => {
   return (
     <div>
+   <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: `
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://s4access.com/customer-success/stabilising-sap-access-at-scale#article",
+      "url": "https://s4access.com/customer-success/stabilising-sap-access-at-scale",
+      "headline": "Stabilising SAP Access at Scale",
+      "description": "Learn how s4access helped stabilise SAP access management at scale and improve access governance for a complex SAP environment.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://s4access.com/_next/static/media/1.0b5abtf3x-~z0.jpg"
+      },
+      "articleSection": "Customer Success",
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://s4access.com/#organization",
+        "name": "s4access",
+        "url": "https://s4access.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://s4access.com/#organization",
+        "name": "s4access",
+        "url": "https://s4access.com/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://s4access.com/customer-success/stabilising-sap-access-at-scale"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://s4access.com/customer-success/stabilising-sap-access-at-scale#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://s4access.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Customer Success",
+          "item": "https://s4access.com/customer-success/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Stabilising SAP Access at Scale",
+          "item": "https://s4access.com/customer-success/stabilising-sap-access-at-scale"
+        }
+      ]
+    }
+  ]
+}
+    `,
+  }}
+/>
       <section
         className="Coustomer-success-page-hero-section"
         style={{ justifyContent: "normal", gap: "225px" }}
