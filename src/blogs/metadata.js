@@ -9,13 +9,23 @@ import blog45 from "../blogs/blogs-images/own.jpeg";
 import blog20 from "../blogs/blogs-images/blog20.jpg";
 import blog21 from "../blogs/blogs-images/21.jpg";
 import blogAccessLife from "../blogs/blogs-images/accessLife.jpg";
+import blog17 from "../blogs/blogs-images/Blog17.jpg";
 
 
 
 
 export const blogMetadata = [
   {
-    id: "Is-SAP-Certification-Still-Valid-for-Your-Career-in-2025", 
+    id: "The-Hardest-Part-of-SAP-Security-Isnt-the-Technology",
+    title: "The Hardest Part of SAP Security Isn't the Technology",
+    slug: "hardest-part-of-sap-security-isnt-the-technology",
+    metaDescription: "Keeping small SAP security teams energized in a world of competing priorities — the structural patterns that cause friction, and how to design them away.",
+    excerpt: "The hardest part of SAP security isn't the technology — it's standing between end users, business leaders, IT management, audit and control teams, all with legitimate but partly incompatible expectations. Here's how to design the friction away.",
+    image: blog17,
+    date: "2026-08-19",
+  },
+  {
+    id: "Is-SAP-Certification-Still-Valid-for-Your-Career-in-2025",
     title: "Is The SAP Certification Still Valid For Your Career In 2025?",
     slug: "sap-certification-2025",
     metaDescription: "Discover if SAP certification is still worth it in 2025. Explore industry demand, SAP’s evolution, career benefits, and why continuous learning is key.",

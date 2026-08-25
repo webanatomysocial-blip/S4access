@@ -353,7 +353,7 @@ padding: 0px 10px;
   border: none;
   color: #ffffff;
   padding: 10px 28px;
-  border-radius: 6px;
+  border-radius: 2px;
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
@@ -755,7 +755,7 @@ padding: 0px 10px;
 .quiz-lead-subtitle {
   font-size: clamp(14px, 2vw, 17px);
   color: #4b5563;
-  margin-bottom: 48px;
+
   line-height: 1.5;
 }
 

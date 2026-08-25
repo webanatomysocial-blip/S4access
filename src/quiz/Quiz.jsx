@@ -2,9 +2,10 @@ import React from 'react';
 import { BsClockHistory, BsClipboardCheck } from 'react-icons/bs';
 import { IoBarChartSharp } from 'react-icons/io5';
 import { FaChevronRight } from 'react-icons/fa';
+import { Asterisk } from 'lucide-react';
 import Link from 'next/link';
-import blueIcon from '../assets/blue-icon.png';
-import bannerBg from '../../src/QUIZ/background.png';
+import bannerBg from '../assets/quiz-assets/bg..png';
+import twoMinIcon from '../assets/quiz-assets/2-min.png';
 import Image from 'next/image';
 import './Quiz.css';
 
@@ -19,26 +20,28 @@ const cards = [
     id: 2,
     icon: <IoBarChartSharp />,
     title: <>Instant<br/>Results</>,
-    description: 'Benchmark comparison',
+    description: 'Get your score immediately',
   },
   {
     id: 3,
     icon: <BsClipboardCheck />,
-    title: <>No<br/>Sign-up</>,
-    description: 'See results immediately',
+    title: <>
+Confidential & <br/>Secure
+</>,
+    description: 'Your answers are never shared publicly',
   },
 ];
 
 export default function Quiz() {
   return (
     <section className="quiz-hero-section">
-    
+      <Image src={bannerBg} alt="" fill priority className="quiz-bg-image" />
 
       <div className="quiz-content">
         {/* Badge */}
         <div className="quiz-badge">
-          <IoBarChartSharp className="quiz-badge-icon" />
-          <span>Industry Benchmark</span>
+          <Image src={twoMinIcon} alt="" className="quiz-badge-icon" />
+          <span>2-Minute Assessment</span>
         </div>
 
         {/* Title */}
@@ -55,6 +58,7 @@ export default function Quiz() {
             >
               <div className="quiz-card-top">
                 <span className="quiz-card-react-icon">{card.icon}</span>
+                <Asterisk className="quiz-card-star" strokeWidth={3} />
               </div>
               <div className="quiz-card-body">
                 <h3 className="quiz-card-title">{card.title}</h3>
@@ -70,9 +74,9 @@ export default function Quiz() {
         </Link>
 
         {/* Footnote */}
-        <p className="quiz-footnote">
+        {/* <p className="quiz-footnote">
           Benchmark based on assessment of SAP environments
-        </p>
+        </p> */}
       </div>
     </section>
   );

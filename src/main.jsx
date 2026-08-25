@@ -104,8 +104,8 @@ createRoot(document.getElementById('root')).render(
             <Route path="/customer-success/sam-service" element={<HelsinkiSAMService />} />
             <Route path="/customer-success/sap-ucon-implementation" element={<SapUconImplementation />} />
             <Route path="/customer-success/sap-s4hana-access-management-transformation" element={<S4HanaAccessManagementTransformation />} />
-            <Route path="/quiz" element={<Quiz />} />
-            <Route path="/quiz/start" element={<QuizApp />} />
+            {/* <Route path="/quiz" element={<Quiz />} /> */}
+            {/* <Route path="/quiz/start" element={<QuizApp />} /> */}
             <Route path="/links" element={<LinkTree />} />
 
 

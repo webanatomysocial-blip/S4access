@@ -69,7 +69,7 @@ const QuizPopup = ({ open, onClose }) => {
 
           <p className="quiz-popup-desc">
             Answer 6 quick questions and see exactly where your SAP environment
-            sits against industry benchmarks.
+            stands today - and what to fix first.
           </p>
 
           <div className="quiz-popup-feature">
@@ -110,9 +110,9 @@ const QuizPopup = ({ open, onClose }) => {
               </svg>
             </div>
             <div>
-              <p className="quiz-popup-feature-title">Instant benchmark</p>
+              <p className="quiz-popup-feature-title">Instant maturity score</p>
               <p className="quiz-popup-feature-sub">
-                See how you compare to similar SAP teams
+                Get your result immediately, no waiting
               </p>
             </div>
           </div>

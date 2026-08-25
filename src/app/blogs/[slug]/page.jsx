@@ -30,8 +30,10 @@ import SAPCertification2025 from "../../../blogs/Is-SAP-Certification-Still-Vali
 import WhenACompanyGrows from "../../../blogs/When-a-company-grows-what-opportunities-can-it-create-for-its-people.jsx";
 import SAPRoleBloat from "../../../blogs/SAP-Role-Bloat-FUE-Licensing-Costs.jsx";
 import SAPUserAccessLifecycle from "../../../blogs/SAP-User-Access-Lifecycle.jsx";
+import TheHardestPartOfSAPSecurity from "../../../blogs/The-Hardest-Part-of-SAP-Security-Isnt-the-Technology.jsx";
 
 const blogComponentMap = {
+  "hardest-part-of-sap-security-isnt-the-technology": TheHardestPartOfSAPSecurity,
   "sap-certification-2025": SAPCertification2025,
   "autumn-2025-outlook": Autumn2025Outlook,
   "turning-frustration-into-value": TurningFrustrationIntoValue,
